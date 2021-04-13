@@ -12,7 +12,7 @@
 
 A landscaping exercise is being carried out to identify existing training courses and materials relevant to Pathogen Genomics and Epidemiology. Information about courses and training materials are being collated into a central resource that may be used in training the various role players in this area, most notably in the public health sector.<br>
 
-The survey can be accessed [here](https://redcap.link/3e1tqgwt).
+The survey can be accessed [here](https://redcap.link/3e1tqgwt){:target="_blank"}.
 
 <div class="paragraph"><p><br>
 </p></div>
