@@ -6,7 +6,7 @@
 ### Upcoming Courses
 
 Schedule of upcoming courses
-
+[Schedule of upcoming courses](./upcoming_courses.html)
 
 ### Tools and Resources
 
