@@ -6,6 +6,10 @@
 ### Upcoming Courses
 
 Schedule of upcoming courses
+
+<div class="paragraph"><p><br>
+</p></div>
+
 [Schedule of upcoming courses](./upcoming_courses.html)
 
 ### Tools and Resources
