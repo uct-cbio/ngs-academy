@@ -12,7 +12,7 @@
 
 [Schedule of upcoming courses](./upcoming_courses.html)
 
-e<div class="paragraph"><p><br>
+<div class="paragraph"><p><br>
 </p></div>
 
 ### Tools and Resources
