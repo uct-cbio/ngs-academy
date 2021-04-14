@@ -22,7 +22,7 @@ More information is available [here](https://discoveridseq.com/vr){:target="_bla
 <div class="paragraph"><p><br>
 </p></div>
 
-**BaseStack** <br>
+**Basestack** <br>
 Basestack is a platform for rapid and real time analysis of Nanopore generated sequencing data. <br>
 [https://github.com/jhuapl-bio/Basestack](https://github.com/jhuapl-bio/Basestack){:target="_blank"}
 
