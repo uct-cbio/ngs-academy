@@ -11,7 +11,7 @@ layout: default
 
 ## Pathogen Genomics
 
-<div class="paragraph"><p><br>Basestack is a platform for rapid and real time analysis of Nanopore generated sequencing data.
+<div class="paragraph"><p><br>
 </p></div>
 
 **IDSeq** <br>
