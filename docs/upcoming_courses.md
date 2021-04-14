@@ -9,7 +9,7 @@ layout: default
 <div class="paragraph"><p><br>
 </p></div>
 
-## Relevant course offered by Coursera
+## Relevant courses offered by Coursera
 
 <div class="paragraph"><p><br>
 </p></div>
