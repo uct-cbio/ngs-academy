@@ -26,4 +26,4 @@ The survey can be accessed [here](https://redcap.link/3e1tqgwt){:target="_blank"
 
 ### Tools and Resources
 
-A list of relevant tools & resources.
+[List of relevant tools & resources](./tools_and_resources.html)
