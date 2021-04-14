@@ -11,5 +11,8 @@ layout: default
 
 ## Relevant course offered by Coursera:
 
+<div class="paragraph"><p><br>
+</p></div>
+
 Bacterial Bioinformatics <br>
 [https://www.coursera.org/learn/informatics](https://www.coursera.org/learn/informatics)
