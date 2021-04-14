@@ -16,13 +16,13 @@ layout: default
 
 **IDSeq** <br>
 IDseq is a hypothesis-free global software platform that helps scientists identify pathogens in metagenomic sequencing data. <br>
-More information is available [here](https://discoveridseq.com/vr). <br>
-[https://idseq.net/](https://idseq.net/)
+More information is available [here](https://discoveridseq.com/vr){:target="_blank"}. <br>
+[https://idseq.net/](https://idseq.net/){:target="_blank"}
 
 <div class="paragraph"><p><br>
 </p></div>
 
 **BaseStack** <br>
 Basestack is a platform for rapid and real time analysis of Nanopore generated sequencing data. <br>
-[https://github.com/jhuapl-bio/Basestack](https://github.com/jhuapl-bio/Basestack)
+[https://github.com/jhuapl-bio/Basestack](https://github.com/jhuapl-bio/Basestack){:target="_blank"}
 
