@@ -3,7 +3,7 @@
 <div class="paragraph"><p><br>
 </p></div>
 
-[Africa Pathogen Genomics Initiative Fact Sheet](https://africacdc.org/download/africa-pathogen-genomics-initiative-factsheet/){:target="_blank"}
+[Africa Pathogen Genomics Initiative Web Page](https://africacdc.org/institutes/africa-pathogen-genomics-initiative/){:target="_blank"}
 
 <div class="paragraph"><p><br>
 </p></div>
