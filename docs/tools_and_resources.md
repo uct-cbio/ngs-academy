@@ -23,6 +23,6 @@ More information is available [here](https://discoveridseq.com/vr){:target="_bla
 </p></div>
 
 **Basestack** <br>
-Basestack is a platform for rapid and real time analysis of Nanopore generated sequencing data. <br>
+Basestack is a platform for local deployment of standardized genomic surveillance analysis tools. It currently enables real-time analysis of Nanopore generated sequencing data for SARS-CoV-2. <br>
 [https://github.com/jhuapl-bio/Basestack](https://github.com/jhuapl-bio/Basestack){:target="_blank"}
 
