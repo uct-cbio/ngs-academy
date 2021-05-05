@@ -44,7 +44,7 @@ Essentials of Genomics and Biomedical Informatics <br>
 <div class="paragraph"><p><br>
 </p></div>
 
-## Chan Zuckerberg Seminars
+## Chan Zuckerberg Initiative Seminars
 
 <div class="paragraph"><p><br>
 </p></div>
