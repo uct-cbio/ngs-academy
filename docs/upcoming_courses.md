@@ -28,7 +28,7 @@ Bacterial Bioinformatics <br>
 <div class="paragraph"><p><br>
 </p></div>
 
-Essentials of Genomics and Biomedical Informatics
+Essentials of Genomics and Biomedical Informatics <br>
 [https://www.edx.org/course/essentials-of-genomics-and-biomedical-informatics](https://www.edx.org/course/essentials-of-genomics-and-biomedical-informatics)
 
 <div class="paragraph"><p><br>
@@ -40,6 +40,9 @@ Essentials of Genomics and Biomedical Informatics
 </p></div>
 
 [https://datacarpentry.org/genomics-workshop/](https://datacarpentry.org/genomics-workshop/)
+
+<div class="paragraph"><p><br>
+</p></div>
 
 ## Chan Zuckerberg Seminars
 
