@@ -23,7 +23,7 @@ Bacterial Bioinformatics <br>
 <div class="paragraph"><p><br>
 </p></div>
 
-## Relevant courses offered by Coursera
+## Relevant courses offered by edX
 
 <div class="paragraph"><p><br>
 </p></div>
