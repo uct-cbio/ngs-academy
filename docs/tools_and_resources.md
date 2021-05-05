@@ -15,9 +15,8 @@ layout: default
 </p></div>
 
 **IDseq** <br>
-IDseq is a hypothesis-free global software platform that helps scientists identify pathogens in metagenomic sequencing data. <br>
-More information is available [here](https://discoveridseq.com/vr){:target="_blank"}. <br>
-[https://idseq.net/](https://idseq.net/){:target="_blank"}
+IDseq is user-friendly software platform, originally developed for metagenomics studies that has since been re-purposed to include SC2 consensus assembly calling from paired-end Illumina data. <br>
+[https://www.discoveridseq.com/](https://www.discoveridseq.com/){:target="_blank"}
 
 <div class="paragraph"><p><br>
 </p></div>
