@@ -15,7 +15,7 @@ layout: default
 </p></div>
 
 **IDseq** <br>
-IDseq is user-friendly software platform, originally developed for metagenomics studies that has since been re-purposed to include SC2 consensus assembly calling from paired-end Illumina data. <br>
+IDseq is user-friendly software platform, originally developed for metagenomics studies. Functionality has since been added for SC2 consensus assembly calling from paired-end Illumina data. <br>
 [https://www.discoveridseq.com/](https://www.discoveridseq.com/){:target="_blank"}
 
 <div class="paragraph"><p><br>
