@@ -15,7 +15,7 @@ layout: default
 </p></div>
 
 Monday, 28 June - Thursday, 22 July 2021 <br>
-[Course Outline](/ngs-academy/documents/course_outline.pdf)
+[Course Outline](./documents/course_outline.pdf)
 
 <div class="paragraph"><p><br>
 </p></div>
