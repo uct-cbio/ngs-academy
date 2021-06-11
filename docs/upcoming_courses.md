@@ -14,6 +14,18 @@ layout: default
 <div class="paragraph"><p><br>
 </p></div>
 
+SARS-CoV-2 NGS Training | NGS Academy for the Africa PGI <br>
+Monday, 28 June - Thursday, 22 July 2021 <br>
+[Course Outline](https://drive.google.com/file/d/1qOW_mofvsa-CBY21PsqmT_kGDS9JJrKH/view?usp=sharing)
+
+<div class="paragraph"><p><br>
+</p></div>
+
+## Relevant courses offered by Coursera
+
+<div class="paragraph"><p><br>
+</p></div>
+
 Genetic Epidemiology Foundations <br>
 [https://www.coursera.org/learn/genetic-epidemiology](https://www.coursera.org/learn/genetic-epidemiology)
 
