@@ -15,7 +15,7 @@ layout: default
 </p></div>
 
 Monday, 28 June - Thursday, 22 July 2021 <br>
-[Course Outline](documents/course_outline.pdf)
+[Course Outline](documents/course_outline.pdf){:target="_blank"}
 
 <div class="paragraph"><p><br>
 </p></div>
