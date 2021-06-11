@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Tools and Resources
+# TOOLS AND RESOURCES
 
 [back to home page](./)
 
