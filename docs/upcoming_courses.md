@@ -15,7 +15,7 @@ layout: default
 </p></div>
 
 Monday, 28 June - Thursday, 22 July 2021 <br>
-[Course Outline](https://github.com/uct-cbio/ngs-academy/blob/b957acb5ddac2af0a5e9b4a83904f646a623557e/documents/course_outline.pdf)
+<a href="./assets/users_guide.pdf" target="_blank">Course Outline</a>
 
 <div class="paragraph"><p><br>
 </p></div>
