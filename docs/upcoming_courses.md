@@ -15,7 +15,7 @@ layout: default
 </p></div>
 
 Monday, 28 June - Thursday, 22 July 2021 <br>
-[Course Outline](https://drive.google.com/file/d/1qOW_mofvsa-CBY21PsqmT_kGDS9JJrKH/view?usp=sharing)
+[Course Outline](documents/course_outline.pdf)
 
 <div class="paragraph"><p><br>
 </p></div>
