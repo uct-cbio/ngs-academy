@@ -16,6 +16,9 @@ layout: default
 
 Monday, 28 June - Thursday, 22 July 2021 <br>
 <a href="./docs/course_outline.pdf">Course Outline</a> <br>
+<a href="docs/course_outline.pdf">Course Outline</a> <br>
+Course outline: [ Africa NGS SARS-COV-2 training course 2021]({{ site.url }}/uploads/NGS_SARS-COV-2course_outline.pdf) 
+
 <div class="paragraph"><p><br>
 </p></div>
 
