@@ -36,7 +36,7 @@ permalink: /courses/
     {% for post in site.posts %}
     {% if post.categories contains "upcoming" %}
     <li class="list-unstyled">
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
       <p>{{post.course_overview}}</p><small class="text-muted">posted: {{post.date
         | date_to_string}} </small>
 
@@ -52,7 +52,7 @@ permalink: /courses/
     {% for post in site.posts %}
     {% if post.categories contains "available" %}
     <li class="list-unstyled">
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> <small class="text-muted">posted: {{
+      <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a> <small class="text-muted">posted: {{
         post.date
         |
         date_to_string}} </small>
