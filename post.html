@@ -1,0 +1,76 @@
+---
+layout: default
+title: Posts
+permalink: /poststest/
+date:
+---
+
+<div class="post-categories">
+  {% if post %}
+  {% assign categories = post.categories %}
+  {% else %}
+  {% assign categories = page.categories %}
+  {% endif %}
+  {% for category in categories %}
+  <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+  {% unless forloop.last %}&nbsp;{% endunless %}
+  {% endfor %}
+</div>
+
+
+
+
+
+<div class="row">
+
+
+  <!-- Course Sidebar Widgets Column -->
+  <div class="col-md-4">
+
+
+    <!-- Course categories -->
+    <div class="well">
+
+
+
+      <div class="row">
+        <div class="col-lg-12">
+
+          <ul id="nav">
+            <li><a href="#section-1" class="js-anchor-link">Section 1</a></li>
+            <li><a href="#section-2" class="js-anchor-link">Section 2</a></li>
+            <li><a href="#section-3" class="js-anchor-link">Section 3</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- /.row -->
+    </div>
+  </div>
+
+
+
+  <!-- Course content Column -->
+  <div class="col-lg-8" class="my-auto">
+
+
+
+
+
+
+    {% for post in site.posts %}
+    {% if post.categories %}
+
+    <p><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> <small class="text-muted">posted:
+        {{post.date
+        | date_to_string}} </small>
+
+    </p>
+
+    {% endif %}
+    {% endfor %}
+
+  </div>
+
+
+</div>

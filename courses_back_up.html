@@ -1,0 +1,104 @@
+---
+layout: default
+title: Courses
+permalink: /courses_old/
+---
+{% include subpage-header.html %}
+
+<!-- contact form start -->
+
+<div class="container main_container_padding">
+
+  <!-- contact form start -->
+
+
+
+
+
+
+
+
+  <div class="row">
+
+    <div class="col-sm-4 col-md-4">
+      <h3>Upcoming Courses</h3>
+      {% for post in site.posts %}
+      {% if post.categories contains "upcoming" %}
+      <li>
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> <small class="text-muted">posted: {{post.date
+          | date_to_string}} </small>
+
+
+      </li>
+      {% endif %}
+      {% endfor %}
+    </div>
+    <div class="col-sm-4 col-md-4">
+      <h3>Available Courses</h3>
+      {% for post in site.posts %}
+      {% if post.categories contains "available" %}
+      <li>
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> <small class="text-muted">posted: {{
+          post.date
+          |
+          date_to_string}} </small>
+
+
+      </li>
+      {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="col-sm-4 col-md-4">
+      <h3>Available Courses</h3>
+      {% for post in site.posts %}
+      {% if post.categories contains "available" %}
+      <li>
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> <small class="text-muted">posted: {{
+          post.date
+          |
+          date_to_string}} </small>
+
+
+      </li>
+      {% endif %}
+      {% endfor %}
+    </div>
+
+
+
+  </div>
+
+
+
+
+  <!-- back for a list view just incase requirements change
+    
+    {% for cat in site.categories %}
+
+
+  <p>
+  <h3>{{cat[0] | capitalize}}</h3>
+  </p>
+  {% for post in cat[1] %}
+  <li>
+    <p><a href="{{ site.baseurl }}{{post.url}}"> {{post.title}}</a> <small class="text-muted">posted: {{
+        post.date
+        |
+        date_to_string}} </small>
+  </li>
+  <p>
+    {% endfor %}
+    {% endfor%}
+ -->
+
+
+
+
+</div>
+
+
+
+
+
+<!-- footer Start -->

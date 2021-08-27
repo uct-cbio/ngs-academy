@@ -1,0 +1,116 @@
+<style>
+    * {
+        padding: 0px;
+        margin: 0;
+    }
+
+    .side-main-nav a {
+        text-decoration: none;
+        color: black;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .side-main-nav a {
+
+
+        display: block;
+    }
+
+
+    .side-main-nav a:hover {
+        background: #8c2133;
+        color: #fff !important;
+    }
+
+    .side-main-nav-ul ul {
+        display: none;
+    }
+
+    .side-main-nav-ul li:hover ul {
+        display: block;
+    }
+
+    .side-main-nav-ul ul li a:before {
+        margin-left: 50px;
+    }
+
+    .side-main-nav .sub-arrow:after {
+        content: "\203A";
+        float: right;
+        margin-right: 50px;
+        transform: rotate(90deg);
+    }
+
+    .side-main-nav li:hover .sub-arrow:after {
+        content: "\2039";
+
+
+    }
+
+
+    .sub_color {
+        background-color: #e8eaed;
+        color: #fff !important;
+    }
+
+    .indent_sub_list {
+
+        margin-left: 13px;
+    }
+
+    .yelcolor {
+        background-color: yellow !important;
+    }
+</style>
+<div class="row side_nav_border">
+
+    <nav class="side-main-nav">
+        <ul class="side-main-nav-ul">
+
+
+            <li {% if page.url=="/" %}class="sub_color" {% endif %}><a href="{{ site.url }}"> Home </a>
+            </li>
+
+            <li {% if page.url=="/about/" %}class="sub_color" {% endif %}><a href="/about/">
+                    About</a>
+            </li>
+
+            <li id="01courselist" {% if page.url=="/courses/" %}class="sub_color" {% endif %} id="left_menu_item"><a
+                    href="/courses/">
+                    Courses<span class="sub-arrow"></span></a>
+                <ul class="courselist indent_sub_list">
+                    <li {% if page.url=="/courses/upcoming-courses/" %} class="sub_color" {% endif %}><a
+                            href="/courses/upcoming-courses/">
+                            Upcoming courses </a></li>
+
+                </ul>
+
+                <ul class="courselist indent_sub_list">
+                    <li {% if page.url=="/courses/available-courses/" %} class="sub_color" {% endif %}><a
+                            href="/courses/available-courses/"> Available courses </a></li>
+
+                </ul>
+
+                <ul class="courselist indent_sub_list">
+                    <li {% if page.url=="/courses/past-courses/" %} class="sub_color" {% endif %}><a
+                            href="/courses/past-courses/"> Past courses and training events </a></li>
+                </ul>
+
+            </li>
+            <li id="01resource" {% if page.url=="/resources/" %}class="sub_color" {% endif %}> <a
+                    href="/resources/">Resources
+                    <span class="sub-arrow"></span></a>
+                <ul class="resourcelist indent_sub_list">
+                    <li {% if page.url=="/resources/publications/" %} class="sub_color" {% endif %}><a
+                            href="/resources/publications/"> Publications </a></li>
+                </ul>
+            </li>
+            <li {% if page.url=="/contact/" %}class="sub_color" {% endif %}><a href="/contact/">Contact</a>
+            </li>
+        </ul>
+
+    </nav>
+</div>

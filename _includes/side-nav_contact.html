@@ -1,0 +1,9 @@
+<ul class="menu-siderbar nav flex-column">
+    <h3>{{ site.data.side_navigation.contact_list_title }}</h3>
+    <ul>
+        {% for item in site.data.side_navigation.contact %}
+        <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+        {% endfor %}
+    </ul>
+
+</ul>

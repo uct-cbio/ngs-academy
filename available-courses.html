@@ -1,0 +1,34 @@
+---
+layout: default
+title: Available courses
+permalink: /courses/available-courses/
+---
+<div class="row">
+  <div class="col-sm-12">
+    <p>
+
+    </p>
+
+    <div id="section1" class="blockx side_menu_bg ">
+      <h3>Available courses</h3>
+      <hr>
+
+
+      {% for post in site.posts %}
+      {% if post.categories contains "available" %}
+      <li class="list-unstyled">
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        <p></p><small class="text-muted">posted: {{post.date
+          | date_to_string}} </small>
+
+
+      </li>
+      {% endif %}
+      {% endfor %}
+
+
+
+    </div>
+
+  </div>
+</div>

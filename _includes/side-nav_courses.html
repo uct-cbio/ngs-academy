@@ -1,0 +1,40 @@
+<ul class="menu-siderbar nav flex-column">
+    <!-- <h3>{{ site.data.side_navigation.courses_list_title }}</h3>
+    <ul>
+        {% for item in site.data.side_navigation.courses %}
+        <li><a href="{{ item.url }}">{{ item.title }}</a>
+
+            <ul>
+                {% for subentry in side_navigation.subcourses %}
+                <li><a href="{{ subentry.url }}">{{ subentry.title }}</a></li>
+                {% endfor %}
+            </ul>
+
+        </li>
+        {% endfor %}
+    </ul>
+
+
+    {% for sublink in site.data.side_navigation.subcourses %}
+
+
+    <li>
+        <a href="{{sublink.url }}">{{ sublink.title }}</a>
+    </li>
+
+    {% endfor %} -->
+
+    <!-- 
+    <ul>
+        {% for node in site.pages %}
+        {% if node.url contains base_url %}
+        {% assign node_url_parts = node.url | split: '/' %}
+        {% assign node_url_parts_size = node_url_parts | size %}
+        {% assign filename = node_url_parts | last %}
+        {% if url_parts_size == node_url_parts_size and filename != 'index.html' %}
+        <li><a href='{{node.url}}'>{{node.title}}</a></li>
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+    </ul> -->
+</ul>

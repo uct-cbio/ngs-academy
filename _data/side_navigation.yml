@@ -1,0 +1,95 @@
+
+about_list_title: About us
+about:
+
+# - title: Home
+#   url: /index/
+
+- title: About
+  url: /about/
+
+# - title: Courses
+#   url: /courses/
+
+# - title: Resources
+#   url: /resources/
+  
+# - title: Contact
+#   url: /contact/
+  
+
+
+index_list_title: Home
+index:
+
+- title: Home
+  url: /index/
+
+# # - title: About
+# #   url: /about/
+
+# - title: Courses
+#   url: /courses/
+
+# - title: Resources
+#   url: /resources/
+  
+# - title: Contact
+#   url: /contact/
+  
+
+contact_list_title: Contact
+contact:
+
+# - title: Home
+#   url: /index/
+
+# # - title: About
+# #   url: /about/
+
+# - title: Courses
+#   url: /courses/
+
+# - title: Resources
+#   url: /resources/
+  
+- title: Contact
+  url: /contact/
+  
+
+courses_list_title: Courses
+courses:
+- title: Courses
+  url: /courses/
+  subcourses:
+    - title: Upcoming courses
+      url: /courses/upcoming-courses/
+    - title: Related courses
+      url: /courses/related-courses/
+    - title: Past courses and training
+      url: /courses/past-courses/
+   
+
+
+resources_list_title: Resources
+resources:
+
+
+# - title: Home
+#   url: /index/
+
+# # - title: About
+# #   url: /about/
+
+# - title: Courses
+#   url: /courses/
+
+- title: Resources
+  url: /resources/
+  
+# - title: Contact
+#   url: /contact/
+
+
+
+

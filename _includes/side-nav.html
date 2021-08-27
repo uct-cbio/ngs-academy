@@ -1,0 +1,71 @@
+<style>
+    .current {
+        color: #df3e23;
+    }
+</style>
+
+<div class="container-fluid">
+
+    {{page.url}}
+    <div class="row">
+
+        <ul class="menu-siderbar nav flex-column">
+            <li class="nav-item">
+                <a href="/index" class="nav-link">
+                    <i class=""></i> Home
+                </a>
+            </li>
+
+
+            <li class="nav-item">
+                <a href="/about/" class="nav-link">
+                    <i class=" "></i> About
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="javascript:void(0)" class="nav-link nav-link-parent">
+                    <i class=" "></i> Courses
+                </a>
+                <ul class="menu-siderbar-child nav flex-column">
+
+                    <li class="nav-item">
+                        <a href="/courses/upcoming-courses/" class="nav-link">
+                            <i class=" "></i> Upcoming Courses
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/courses/related-courses/" class="nav-link">
+                            <i class=" "></i> Related Courses
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/courses/past-courses/" class="nav-link">
+                            <i class=" "></i> Past Courses & Training
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+
+
+            <li class="nav-item open">
+                <a href="resources" class="nav-link nav-link-parent">
+                    <i class=" "></i> Resources
+                </a>
+                <ul class="menu-siderbar-child nav flex-column">
+                    <li class="nav-item">
+                        <a href="/resources/publications" class="nav-link">
+                            <i class=" "></i> Publications
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="/contact/" class="nav-link"><i class=""></i> Contact</a>
+            </li>
+        </ul>
+
+    </div>
+
+</div>
