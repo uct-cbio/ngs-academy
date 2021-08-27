@@ -3,7 +3,7 @@ layout: default
 title:  "SARS-CoV-2 NGS Bioinformatics Course 2021"
 date: 2021-08-03
 main_menu: courses
-permalink: :year/:title
+permalink: /:year/:title
 category: upcoming
 course_overview : The bioinformatics course is a follow-up to our SARS-CoV-2 NGS training. The focus for this new set of modules is more advanced bioinformatics analysis, data curation and dissemination of findings. 
 start_date: 2021-06-28
