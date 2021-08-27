@@ -1,6 +1,6 @@
 <style>
     * {
-        padding: 0px;
+        padding: 0;
         margin: 0;
     }
 
@@ -71,44 +71,41 @@
         <ul class="side-main-nav-ul">
 
 
-            <li {% if page.url=="/" %}class="sub_color" {% endif %}><a href="{{ site.url }}"> Home </a>
-            </li>
+            <li {% if page.url=="/" %}class="sub_color" {% endif %}><a href="{{ site.url }}"> Home </a></li>
 
-            <li {% if page.url=="/about/" %}class="sub_color" {% endif %}><a href="/about/">
-                    About</a>
-            </li>
+            <li {% if page.url=="/about/" %}class="sub_color" {% endif %}><a href="{{ site.url }}about/"> About</a></li>
 
             <li id="01courselist" {% if page.url=="/courses/" %}class="sub_color" {% endif %} id="left_menu_item"><a
-                    href="/courses/">
+                    href="{{ site.url }}courses/">
                     Courses<span class="sub-arrow"></span></a>
                 <ul class="courselist indent_sub_list">
                     <li {% if page.url=="/courses/upcoming-courses/" %} class="sub_color" {% endif %}><a
-                            href="/courses/upcoming-courses/">
+                            href="{{ site.url }}courses/upcoming-courses/">
                             Upcoming courses </a></li>
 
                 </ul>
 
                 <ul class="courselist indent_sub_list">
                     <li {% if page.url=="/courses/available-courses/" %} class="sub_color" {% endif %}><a
-                            href="/courses/available-courses/"> Available courses </a></li>
+                            href="{{ site.url }}courses/available-courses/"> Available courses </a></li>
 
                 </ul>
 
                 <ul class="courselist indent_sub_list">
                     <li {% if page.url=="/courses/past-courses/" %} class="sub_color" {% endif %}><a
-                            href="/courses/past-courses/"> Past courses and training events </a></li>
+                            href="{{ site.url }}courses/past-courses/"> Past courses and training events</a></li>
                 </ul>
 
             </li>
             <li id="01resource" {% if page.url=="/resources/" %}class="sub_color" {% endif %}> <a
-                    href="/resources/">Resources
+                    href="{{ site.url }}resources/">Resources
                     <span class="sub-arrow"></span></a>
                 <ul class="resourcelist indent_sub_list">
                     <li {% if page.url=="/resources/publications/" %} class="sub_color" {% endif %}><a
-                            href="/resources/publications/"> Publications </a></li>
+                            href="{{ site.url }}resources/publications/"> Publications </a></li>
                 </ul>
             </li>
-            <li {% if page.url=="/contact/" %}class="sub_color" {% endif %}><a href="/contact/">Contact</a>
+            <li {% if page.url=="/contact/" %}class="sub_color" {% endif %}><a href="{{ site.url }}contact/">Contact</a>
             </li>
         </ul>
 
