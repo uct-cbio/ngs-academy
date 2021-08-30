@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "SARS-CoV-2 NGS Bioinformatics Course 2021"
+title:  "SARS-CoV-2 NGS bioinformatics course 2021"
 date: 2021-08-03
 main_menu: courses
 permalink: /:year/:title
@@ -11,13 +11,13 @@ end_date: 2021-07-22
 group: group1
 ---
   
-### SARS-CoV-2 NGS Bioinformatics Course 2021
+### SARS-CoV-2 NGS bioinformatics course 2021
 The NGS Academy forms part of the Africa PGI. This initiative is funded by the Bill & Melinda Gates Foundation. Our training initiatives are carried out in partnership with the African Society for Laboratory Medicine (ASLM).
 <hr>
 
 <!-- <b>Course outline:</b> [ SARS-CoV-2 NGS Bioinformatics Course 2021]({{ site.url }}/docs/course_outline.pdf) -->
 
-<p align="left"><b >Course Overview:</b></p>
+<p align="left"><b >Course overview:</b></p>
 
  <p align="left">The bioinformatics course is a follow-up to our SARS-CoV-2 NGS training. The focus for this new set of modules is more advanced bioinformatics analysis, data curation and dissemination of findings from SARS-CoV-2 NGS data.  
  <p>
@@ -26,7 +26,7 @@ The NGS Academy forms part of the Africa PGI. This initiative is funded by the B
 
 <p align="left"><b class="text-left">Intended audience:</b></p>
 
-<p>The course is designed for individuals looking to increase their knowledge on the use of different bioinformatics tools for SARS-CoV-2 NGS data. </p>
+<p>Personnel of national public health institutions on the African continent, who are carry out bioinformatics analyses, and individuals involved in SARS-CoV-2 research. </p>
 
 <a class="btn btn-secondary btn-lg" href="https://redcap.h3abionet.org/redcap/surveys/?s=C787XMMYNA" role="button" target="_blank">Click here to apply</a>
 
@@ -51,25 +51,22 @@ The NGS Academy forms part of the Africa PGI. This initiative is funded by the B
 
 <u><li><b>Participant applications</b></li></u>
 
-<li><b>Registration for participants opens:</b></li>
+<li><b>Registration for participants opens:</b> 01 September 2021</li>
 
 <li><b>Registration for participants closes:</b> 30 September 2021</li>
 
-<li><b>Notification date for successful Applicants:</b> </li>
+<!-- <li><b>Notification date for successful Applicants:</b> </li> -->
 </ol>
 
-<b>Prerequisites</b>
+<b>Pre-course workshop:</b>
 <ol>
-<li>1. Unix/Linux knowledge</li>
-
-<li>2. Familiar with programming in R</li>
+<li> A pre-course workshop and links to introductory material will be provided. Participants do not need to already have experience with unix/command line tools</li>
 </ol>
 
 <b>Objectives and expected outcomes:</b> 
 
 <ol>
-<li>The course is designed for individuals looking to increase their knowledge on the use of different
-bioinformatics tools for SARS-CoV-2 NGS data. The training will focus on key topics such as data curation
+<li>The course is designed for individuals who are currently, or will soon be, involved in bioinformatics analysis of SARS-CoV-2 data. The training will focus on key topics such as data curation
 and sharing, advanced bioinformatics analysis, and presenting data to inform policy makers.</li>
 
 </ol>
