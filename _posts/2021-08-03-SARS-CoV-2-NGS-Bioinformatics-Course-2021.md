@@ -11,7 +11,7 @@ end_date: 2021-07-22
 group: group1
 ---
   
-### SARS-CoV-2 NGS bioinformatics course 2021
+<!-- ### SARS-CoV-2 NGS bioinformatics course 2021 -->
 The NGS Academy forms part of the Africa PGI. This initiative is funded by the Bill & Melinda Gates Foundation. Our training initiatives are carried out in partnership with the African Society for Laboratory Medicine (ASLM).
 <hr>
 
@@ -60,7 +60,7 @@ The NGS Academy forms part of the Africa PGI. This initiative is funded by the B
 
 <b>Pre-course workshop:</b>
 <ol>
-<li> A pre-course workshop and links to introductory material will be provided. Participants do not need to already have experience with unix/command line tools</li>
+<li> A pre-course workshop and links to introductory materials will be provided. Participants do not need to have experience with Unix/command line tools</li>
 </ol>
 
 <b>Objectives and expected outcomes:</b> 
@@ -75,11 +75,11 @@ and sharing, advanced bioinformatics analysis, and presenting data to inform pol
 <b>Course curriculum:</b>
 <hr>
 <ol class="list-unstyled">
-<li>Module 1 Workflows for SARS-CoV-2 Analysis</li>
+<li>Module 1 Workflows for SARS-CoV-2 analysis</li>
 <li>Module 2 Data curation and sharing</li>
-<li>Module 3 Advanced Bioinformatics Analysis</li>
-<li>Module 4 Presenting Data to Inform Policy</li>
-<li>Recommended materials: Model Bioinformatics Analysis</li>
+<li>Module 3 Advanced bioinformatics analysis</li>
+<li>Module 4 Presenting data to inform policy</li>
+<li>Recommended materials: Model bioinformatics analysis</li>
 </ol>
 
 <!-- <b>Course schedule</b> -->
