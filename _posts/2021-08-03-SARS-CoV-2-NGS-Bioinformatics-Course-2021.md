@@ -60,7 +60,7 @@ The NGS Academy forms part of the Africa PGI. This initiative is funded by the B
 
 <b>Pre-course workshop:</b>
 <ol>
-<li> A pre-course workshop and links to introductory material will be provided. Participants do not need to already have experience with unix/command line tools</li>
+<li> A pre-course workshop and links to introductory materials will be provided. Participants do not need to have experience with Unix/command line tools</li>
 </ol>
 
 <b>Objectives and expected outcomes:</b> 
