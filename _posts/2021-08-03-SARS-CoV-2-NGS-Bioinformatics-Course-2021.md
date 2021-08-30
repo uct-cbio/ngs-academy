@@ -75,11 +75,11 @@ and sharing, advanced bioinformatics analysis, and presenting data to inform pol
 <b>Course curriculum:</b>
 <hr>
 <ol class="list-unstyled">
-<li>Module 1 Workflows for SARS-CoV-2 Analysis</li>
+<li>Module 1 Workflows for SARS-CoV-2 analysis</li>
 <li>Module 2 Data curation and sharing</li>
-<li>Module 3 Advanced Bioinformatics Analysis</li>
-<li>Module 4 Presenting Data to Inform Policy</li>
-<li>Recommended materials: Model Bioinformatics Analysis</li>
+<li>Module 3 Advanced bioinformatics analysis</li>
+<li>Module 4 Presenting data to inform policy</li>
+<li>Recommended materials: Model bioinformatics analysis</li>
 </ol>
 
 <!-- <b>Course schedule</b> -->
