@@ -218,7 +218,9 @@ Course objectives to be updated
       Module 2
       Session 1 &nbsp;&nbsp; &nbsp;&nbsp; </th>
       <td>    <ul>
-                <li> <p>TBA</p></li>
+      <li> <a href="https://www.youtube.com/watch?v=Z1AlWEw4eEI&t=6s#0" target="_blank">Study design for SARS-CoV-2.</a></li>
+        <li> <a href="{{ site.url }}uploads/risk_assessment.pdf" target="_blank">Risk assessment and biosafety.</a></li>
+                
 </ul></td>
       <td><ul>
   
@@ -239,7 +241,8 @@ Course objectives to be updated
       Module 2
       Session 2</th>
       <td>    <ul>
-             <li> <p>TBA</p></li>
+             <li> <a href="{{ site.url }}uploads/sample_management.pdf" target="_blank">Sample collection, handling, storage and referral.</a></li>
+                <li> <a href="{{ site.url }}uploads/manual_rna_extraction.pptx" target="_blank">Manual Viral RNA extraction.</a></li>
 </ul></td>
       <td><ul>
   
