@@ -38,7 +38,7 @@ The NGS Academy forms part of the Africa PGI. This initiative is funded by the B
  <li><b>Venue of course</b>: Online through Zoom </li>
 
 
-<li><b>Dates for the course:</b> 11 October 2021 - 12 November 2021</li>
+<li><b>Dates for the course:</b> 11 October 2021 - 19 November 2021</li>
 
 <!-- 
 <li><b>Course organisers:</b> Tony Li, Kirsty Lee Garson, Perceval Maturure and Prof Nicola Mulder</li> -->
@@ -51,16 +51,22 @@ The NGS Academy forms part of the Africa PGI. This initiative is funded by the B
 
 <u><li><b>Participant applications</b></li></u>
 
-<li><b>Registration for participants opens:</b> 01 September 2021</li>
+<li><b>Registration for participants opens:</b> 13 September 2021</li>
 
-<li><b>Registration for participants closes:</b> 30 September 2021</li>
+<li><b>Registration for participants closes:</b> 25 September 2021</li>
 
 <!-- <li><b>Notification date for successful Applicants:</b> </li> -->
 </ol>
 
 <b>Pre-course workshop:</b>
 <ol>
-<li> A pre-course workshop and links to introductory materials will be provided. Participants do not need to have experience with Unix/command line tools</li>
+<li> A pre-course workshop will be presented from 5-7 October 2021. A number of topics relevant to the course will be introduced, including:
+<ul>
+<li>1. Unix, commandline</li>
+<li>2. Git, version control</li>
+<li>3. High perfomance computing</li>
+</ul>
+</li>
 </ol>
 
 <b>Objectives and expected outcomes:</b> 

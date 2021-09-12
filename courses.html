@@ -36,9 +36,9 @@ permalink: /courses/
     {% for post in site.posts %}
     {% if post.categories contains "upcoming" %}
     <li class="list-unstyled">
-      <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-      <p>{{post.course_overview}}</p><small class="text-muted">posted: {{post.date
-        | date_to_string}} </small>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      <p>{{post.course_overview}} <small class="text-muted">posted: {{post.date
+          | date_to_string}} </small></p>
 
 
     </li>
