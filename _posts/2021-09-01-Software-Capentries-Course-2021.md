@@ -4,8 +4,8 @@ title:  "Software capentry"
 date: 2021-08-31
 main_menu: courses
 permalink: /:year/:title
-category: 
-course_overview : The bioinformatics course is a follow-up to our SARS-CoV-2 NGS training. The focus for this new set of modules is more advanced bioinformatics analysis, data curation and dissemination of findings. 
+category: upcoming
+course_overview : The Carpentries virtual training workshop is a pre-course to our bioinformatics NGS course. The main focus for this virtual training is to introduce some powerful tools that will allow users to perform complex and powerful tasks, often with just a few keystrokes or lines of code. This will all help users automate repetitive tasks, and easily combine smaller tasks into larger, more powerful workflows.
 start_date: 2021-06-28
 end_date: 2021-07-22
 group: group1
@@ -19,16 +19,27 @@ The NGS Academy forms part of the Africa PGI. This initiative is funded by the B
 
 <p align="left"><b >Course overview:</b></p>
 
- <p align="left">The bioinformatics course is a follow-up to our SARS-CoV-2 NGS training. The focus for this new set of modules is more advanced bioinformatics analysis, data curation and dissemination of findings from SARS-CoV-2 NGS data.  
+ <p align="left"> The Carpentries virtual training workshop is a pre-course to our <a href="{{ site.baseurl }}2021/SARS-CoV-2-NGS-Bioinformatics-Course-2021" target="_blank"> bioinformatics NGS course</a>. The main focus for this virtual training is to introduce some powerful tools that will allow users to perform complex and powerful tasks, often with just a few keystrokes or lines of code. This will all help users automate repetitive tasks, and easily combine smaller tasks into larger, more powerful workflows.  
  <p>
 
 
 
-<p align="left"><b class="text-left">Intended audience:</b></p>
+<p align="left"><b class="text-left">The virtual training will cover:</b></p>
 
-<p>Personnel of national public health institutions on the African continent, who are carry out bioinformatics analyses, and individuals involved in SARS-CoV-2 research. </p>
-
+<div class="row">
+    <div class="col-sm-6">
+     <div><img alt="..." src="{{ site.baseurl }}img/soft_carpt.png" />
+    <!-- <p class="small"> Source: CBIO UCT</p> -->
+  </div>
+    </div>
+    <div class="col-sm-6">
+    <div>
+    <b>Please note</b>: you DO NOT NEED to have experience with any particular software. All prerequisites will be addressed during the online training, during the pre-course workshop or links will be provided to introductory material. <br>
 <a class="btn btn-secondary btn-lg" href="https://redcap.h3abionet.org/redcap/surveys/?s=C787XMMYNA" role="button" target="_blank">Click here to apply</a>
+    </div>
+    </div>
+  </div>
+
 
 <h3>Logistics: </h3>
 <hr>
@@ -51,38 +62,24 @@ The NGS Academy forms part of the Africa PGI. This initiative is funded by the B
 
 <u><li><b>Participant applications</b></li></u>
 
-<li><b>Registration for participants opens:</b> 01 September 2021</li>
+<li><b>Registration for participants opens:</b> 13 September 2021</li>
 
-<li><b>Registration for participants closes:</b> 30 September 2021</li>
+<li><b>Registration for participants closes:</b> 25 September 2021</li>
 
 <!-- <li><b>Notification date for successful Applicants:</b> </li> -->
-</ol>
-
-<b>Pre-course workshop:</b>
-<ol>
-<li> A pre-course workshop and links to introductory materials will be provided. Participants do not need to have experience with Unix/command line tools</li>
 </ol>
 
 <b>Objectives and expected outcomes:</b> 
 
 <ol>
-<li>The course is designed for individuals who are currently, or will soon be, involved in bioinformatics analysis of SARS-CoV-2 data. The training will focus on key topics such as data curation
-and sharing, advanced bioinformatics analysis, and presenting data to inform policy makers.</li>
+<li>The Carpentries virtual training workshop is 3 hours a day for 3 days, designed with the utilization of
+Unix/Command lines, which are fundamental to a wide range of advanced computing tasks, including
+many of the high-performance computing. The lessons covered will introduce the participants to some
+powerful new tools and upskill themselves in the more advanced computational area of Bioinformatics.
+The training includes live Q&A sessions with experts over Zoom, group discussions.</li>
 
 </ol>
 
-<!-- <b>Course limitations</b>: None -->
-<b>Course curriculum:</b>
-<hr>
-<ol class="list-unstyled">
-<li>Module 1 Workflows for SARS-CoV-2 analysis</li>
-<li>Module 2 Data curation and sharing</li>
-<li>Module 3 Advanced bioinformatics analysis</li>
-<li>Module 4 Presenting data to inform policy</li>
-<li>Recommended materials: Model bioinformatics analysis</li>
-</ol>
-
-<!-- <b>Course schedule</b> -->
 
 
 
