@@ -4,7 +4,7 @@ title:  "Software carpentry 2021"
 date: 2021-08-31
 main_menu: courses
 permalink: /:year/:title
-category: upcoming
+category: 
 course_overview : The Carpentries virtual training workshop is a pre-course to our bioinformatics NGS course. The main focus for this virtual training is to introduce some powerful tools that will allow users to perform complex and powerful tasks, often with just a few keystrokes or lines of code. This will all help users automate repetitive tasks, and easily combine smaller tasks into larger, more powerful workflows.
 start_date: 2021-06-28
 end_date: 2021-07-22
