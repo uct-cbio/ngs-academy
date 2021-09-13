@@ -28,7 +28,7 @@ The NGS Academy forms part of the Africa PGI. This initiative is funded by the B
 
 <div class="row">
     <div class="col-sm-6">
-     <div><img alt="..." src="{{ site.baseurl }}img/soft_carpt.png" />
+     <div><img alt="..." src="/ngs-academy/img/soft_carpt.png" />
     <!-- <p class="small"> Source: CBIO UCT</p> -->
   </div>
     </div>
