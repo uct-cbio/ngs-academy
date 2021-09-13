@@ -55,7 +55,7 @@ The content provided theoretical knowledge on the steps required for the workflo
     </li>
 
 
-<li><b>Participation:</b> The course was available to any participant who was able to attend the Zoom sessions and the interactive hours with the course instructors for the days of the course</li>
+<li><b>Participation:</b> The course was available to any participant who was able to attend the Zoom sessions and the interactive hours with the course instructors for the days of the course.</li>
 
 
 <u><li><b>Participant applications</b></li></u>
