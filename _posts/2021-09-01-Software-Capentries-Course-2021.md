@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "Software capentry"
+title:  "Software carpentry 2021"
 date: 2021-08-31
 main_menu: courses
 permalink: /:year/:title
