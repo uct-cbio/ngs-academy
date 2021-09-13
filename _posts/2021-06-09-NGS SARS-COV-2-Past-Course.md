@@ -23,7 +23,7 @@ The content provided theoretical knowledge on the steps required for the workflo
 
 
 
-<p align="left"><b class="text-left">Intended audience:</b> It was primarily aimed at staff preparing samples, doing the sequencing, and running basic data analysis</p>
+<p align="left"><b class="text-left">Intended audience:</b> It was primarily aimed at staff preparing samples, doing the sequencing, and running basic data analysis.</p>
 
 <!-- code to display picture of course participants -->
 <!-- 
