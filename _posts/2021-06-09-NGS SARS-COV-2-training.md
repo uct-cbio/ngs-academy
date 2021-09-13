@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "SARS-CoV-2 NGS training course 2021 for Africa CDC"
+title:  "SARS-CoV-2 NGS training course 2021 for Africa CDC old"
 date: 2021-06-09
 permalink: /:year/:title
 category: upcoming_old
