@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "Software carpentry 2021"
+title:  "Virtual software capentry training workshop 2021"
 date: 2021-08-31
 main_menu: courses
 permalink: /:year/:title
@@ -19,7 +19,7 @@ The NGS Academy forms part of the Africa PGI. This initiative is funded by the B
 
 <p align="left"><b >Course overview:</b></p>
 
- <p align="left"> The Carpentries virtual training workshop is a pre-course to our <a href="{{ site.baseurl }}2021/SARS-CoV-2-NGS-Bioinformatics-Course-2021" target="_blank"> bioinformatics NGS course</a>. The main focus for this virtual training is to introduce some powerful tools that will allow users to perform complex and powerful tasks, often with just a few keystrokes or lines of code. This will all help users automate repetitive tasks, and easily combine smaller tasks into larger, more powerful workflows.  
+ <p align="left"> The Carpentries virtual training workshop is a pre-course to our <a href="{{ site.baseurl }}2021/SARS-CoV-2-NGS-Bioinformatics-Course-2021" target="_blank"> bioinformatics NGS course</a>. The main focus for this virtual training is to introduce participants to the fundamental tools used to interact with the computer without a graphical user interface, some of which will allow users to perform more advanced tasks in the NGS course, such as automate repetitive tasks, and combine smaller tasks into larger, more complex workflows.  
  <p>
 
 
@@ -36,6 +36,10 @@ The NGS Academy forms part of the Africa PGI. This initiative is funded by the B
     <div>
     <b>Please note</b>: you DO NOT NEED to have experience with any particular software. All prerequisites will be addressed during the online training, during the pre-course workshop or links will be provided to introductory material. <br>
 <a class="btn btn-secondary btn-lg" href="https://redcap.h3abionet.org/redcap/surveys/?s=C787XMMYNA" role="button" target="_blank">Click here to apply</a>
+
+<p><a href="https://verena90.github.io/2021-10-05-online-NGS_Academy/" target="_blank">Priliminary course schedule</a></p>
+
+
     </div>
     </div>
   </div>
@@ -72,15 +76,30 @@ The NGS Academy forms part of the Africa PGI. This initiative is funded by the B
 <b>Objectives and expected outcomes:</b> 
 
 <ol>
-<li>The Carpentries virtual training workshop is 3 hours a day for 3 days, designed with the utilization of
-Unix/Command lines, which are fundamental to a wide range of advanced computing tasks, including
-many of the high-performance computing. The lessons covered will introduce the participants to some
-powerful new tools and upskill themselves in the more advanced computational area of Bioinformatics.
-The training includes live Q&A sessions with experts over Zoom, group discussions.</li>
+<li>The Carpentries virtual training workshop on Linux is 3 hours a day for 3 days, designed to introduce the utilization of Unix/Command Line, which is fundamental to a wide range of advanced computing tasks. The course will also provide an introduction to high-performance computing. The training includes live Q&A sessions with experts over Zoom and group discussions.</li>
 
 </ol>
 
+<b>Course limitations:</b> 
+
+<ol>
+<li>The Carpentries virtual training will introduce participants to Unix/Command Line and GitHub, focusing on a basic overview, functionality and features. This is not an advanced course, it will only teach basic skills for research computing.</li>
+
+</ol>
+
+<b>Intended audience:</b> 
+
+<ol>
+<li>
+Software Carpentry has been teaching researchers the computing skills they need to get more done in less time. If you would like to learn the foundational skills to work effectively and reproducibly with data and code such as Unix/Command line. Then the course will empower you to learn new skills and build confidence in using them in your work.</li>
+
+</ol>
+<ol>
+<li><b>Training partners include:</b> UCT, CBIO-H3ABioNet</li>
 
 
+
+<!-- <li><b>Notification date for successful Applicants:</b> </li> -->
+</ol>
 
 
