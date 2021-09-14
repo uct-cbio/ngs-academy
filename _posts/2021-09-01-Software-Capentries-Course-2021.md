@@ -28,7 +28,7 @@ The NGS Academy forms part of the Africa PGI. This initiative is funded by the B
 
 <div class="row">
     <div class="col-sm-6">
-     <div><img alt="..." src="{{ site.baseurl }}img/soft_carpt.png" />
+     <div><img alt="..." src="{{ site.baseurl }}img/soft_carpt.png" width="100%"/>
     <!-- <p class="small"> Source: CBIO UCT</p> -->
   </div>
     </div>
@@ -38,8 +38,6 @@ The NGS Academy forms part of the Africa PGI. This initiative is funded by the B
 <a class="btn btn-secondary btn-lg" href="https://redcap.h3abionet.org/redcap/surveys/?s=C787XMMYNA" role="button" target="_blank">Click here to apply</a>
 
 <p><a href="https://verena90.github.io/2021-10-05-online-NGS_Academy/" target="_blank">Priliminary course schedule</a></p>
-
-
     </div>
     </div>
   </div>

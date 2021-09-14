@@ -26,9 +26,35 @@ The NGS Academy forms part of the Africa PGI. This initiative is funded by the B
 
 <p align="left"><b class="text-left">Intended audience:</b></p>
 
-<p>Personnel of national public health institutions on the African continent, who are carry out bioinformatics analyses, and individuals involved in SARS-CoV-2 research. </p>
+<p>Personnel of national public health institutions on the African continent, who are carrying out bioinformatics analyses, and individuals involved in SARS-CoV-2 research. </p>
 
+<!-- test -->
+<div class="row">
+    <div class="col-sm-6">
+     <div><img alt="..." src="{{ site.baseurl }}img/bio_info1.png" width="100%"/>
+    <!-- <p class="small"> Source: CBIO UCT</p> -->
+  </div>
+    </div>
+    <div class="col-sm-6">
+    <div>
+  
+<ol>
+<li> A pre-course workshop will be presented from 5-7 October 2021. A number of topics relevant to the course will be introduced, including:
+<ul>
+<li>1. Unix, command line</li>
+<li>2. Git, version control</li>
+<li>3. High perfomance computing</li>
+</ul>
+</li>
+</ol> <br>
 <a class="btn btn-secondary btn-lg" href="https://redcap.h3abionet.org/redcap/surveys/?s=C787XMMYNA" role="button" target="_blank">Click here to apply</a>
+    </div>
+    </div>
+  </div>
+<!-- test -->
+
+
+
 
 <h3>Logistics: </h3>
 <hr>
@@ -57,18 +83,6 @@ The NGS Academy forms part of the Africa PGI. This initiative is funded by the B
 
 <!-- <li><b>Notification date for successful Applicants:</b> </li> -->
 </ol>
-
-<b>Pre-course workshop:</b>
-<ol>
-<li> A pre-course workshop will be presented from 5-7 October 2021. A number of topics relevant to the course will be introduced, including:
-<ul>
-<li>1. Unix, command line</li>
-<li>2. Git, version control</li>
-<li>3. High perfomance computing</li>
-</ul>
-</li>
-</ol>
-
 <b>Objectives and expected outcomes:</b> 
 
 <ol>
