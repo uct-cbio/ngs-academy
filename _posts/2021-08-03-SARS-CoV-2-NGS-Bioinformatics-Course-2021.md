@@ -62,7 +62,7 @@ The NGS Academy forms part of the Africa PGI. This initiative is funded by the B
 <ol>
 <li> A pre-course workshop will be presented from 5-7 October 2021. A number of topics relevant to the course will be introduced, including:
 <ul>
-<li>1. Unix, commandline</li>
+<li>1. Unix, command line</li>
 <li>2. Git, version control</li>
 <li>3. High perfomance computing</li>
 </ul>
