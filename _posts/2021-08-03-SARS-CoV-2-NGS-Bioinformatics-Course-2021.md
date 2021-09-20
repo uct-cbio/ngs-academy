@@ -104,10 +104,9 @@ and sharing, advanced bioinformatics analysis, and presenting data to inform pol
 
 <h3>Preliminary Course schedule:</h3>
 
-
 <div class="row">
     <div class="col-sm-12">
-     <div><img alt="..." src="/ngs-academy/img/course_schedule_4.png" width="100%"/>
+     <div><img alt="..." src="/ngs-academy/img/course_schedule_5.png" width="100%"/>
    
   </div>
 </div>
