@@ -102,7 +102,7 @@ and sharing, advanced bioinformatics analysis, and presenting data to inform pol
 <li>Recommended materials: Model bioinformatics analysis</li>
 </ol>
 
-<h3>Course schedule:</h3>
+<h3>Preliminary Course schedule:</h3>
 
 
 <div class="row">
