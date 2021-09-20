@@ -102,8 +102,15 @@ and sharing, advanced bioinformatics analysis, and presenting data to inform pol
 <li>Recommended materials: Model bioinformatics analysis</li>
 </ol>
 
-<!-- <b>Course schedule</b> -->
+
+<h3>Course schedule:</h3>
 
 
-
-
+<div class="row">
+    <div class="col-sm-12">
+     <div><img alt="..." src="{{ site.baseurl }}img/course_schedule_2.png" width="100%"/>
+    <!-- <p class="small"> Source: CBIO UCT</p> -->
+  </div>
+</div>
+   
+  
