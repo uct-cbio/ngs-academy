@@ -92,7 +92,7 @@ and sharing, advanced bioinformatics analysis, and presenting data to inform pol
 </ol>
 
 <!-- <b>Course limitations</b>: None -->
-<b>Course curriculum:</b>
+<b>Preliminary course curriculum:</b>
 <hr>
 <ol class="list-unstyled">
 <li>Module 1 Workflows for SARS-CoV-2 analysis</li>
