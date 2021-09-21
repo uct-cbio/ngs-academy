@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "Virtual software capentry training workshop 2021"
+title:  "Virtual software carpentry training workshop 2021"
 date: 2021-08-31
 main_menu: courses
 permalink: /:year/:title
