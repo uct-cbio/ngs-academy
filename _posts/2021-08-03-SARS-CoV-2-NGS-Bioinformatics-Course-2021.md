@@ -1,11 +1,11 @@
 ---
 layout: default
-title:  "SARS-CoV-2 NGS bioinformatics course 2021"
+title:  "SARS-CoV-2 Bioinformatics Training"
 date: 2021-08-03
 main_menu: courses
 permalink: /:year/:title
 category: upcoming
-course_overview : The bioinformatics course is a follow-up to our SARS-CoV-2 NGS training. The focus for this new set of modules is more advanced bioinformatics analysis, data curation and dissemination of findings. 
+course_overview : The SARS-CoV-2 Bioinformatics Training is a follow-up to our SARS-CoV-2 NGS training. The focus for this new set of modules is more advanced bioinformatics analysis, data curation and dissemination of findings. 
 start_date: 2021-06-28
 end_date: 2021-07-22
 group: group1
@@ -19,7 +19,7 @@ The NGS Academy forms part of the Africa PGI. This initiative is funded by the B
 
 <p align="left"><b >Course overview:</b></p>
 
- <p align="left">The bioinformatics course is a follow-up to our SARS-CoV-2 NGS training. The focus for this new set of modules is more advanced bioinformatics analysis, data curation and dissemination of findings from SARS-CoV-2 NGS data.  
+ <p align="left">The SARS-CoV-2 Bioinformatics Training is a follow-up to our SARS-CoV-2 NGS training. The focus for this new set of modules is more advanced bioinformatics analysis, data curation and dissemination of findings from SARS-CoV-2 NGS data.  
  <p>
 
 
