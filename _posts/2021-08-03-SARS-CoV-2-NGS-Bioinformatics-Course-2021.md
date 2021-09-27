@@ -108,7 +108,7 @@ and sharing, advanced bioinformatics analysis, and presenting data to inform pol
 
 <div class="row">
     <div class="col-sm-12">
-     <div><img alt="..." src="{{ site.baseurl }}img/course_schedule_2.png" width="75%"/>
+     <div><img alt="..." src="{{ site.baseurl }}img/course_schedule_6.png" width="100%"/>
     <!-- <p class="small"> Source: CBIO UCT</p> -->
   </div>
 </div>
