@@ -106,7 +106,7 @@ and sharing, advanced bioinformatics analysis, and presenting data to inform pol
 
 <div class="row">
     <div class="col-sm-12">
-     <div><img alt="..." src="/ngs-academy/img/course_schedule_5.png" width="100%"/>
+     <div><img alt="..." src="/ngs-academy/img/course_schedule_6.png" width="100%"/>
    
   </div>
 </div>
