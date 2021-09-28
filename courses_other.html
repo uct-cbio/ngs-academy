@@ -5,80 +5,144 @@ permalink: /courses/other-courses/
 ---
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.0/bootstrap-table.min.css">
+<link rel="stylesheet" href="../dist/bootstrap-table-filter.min.css">
+
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.0/bootstrap-table.min.js"></script>
+<script src="../dist/bootstrap-table-filter.min.js"></script>
 
 
+<div class="col-sm-12">
 
-<div class="row">
-  <div class="col-sm-12">
 
-    <input class="form-control" id="myInput" type="text" placeholder="Search..">
-    <br>
-    <table class="table table-bordered table-striped">
-      <thead>
-        <tr>
-          <th>Organisation name</th>
-          <th>Course title</th>
-          <th>Location</th>
-          <th>Context course developed and presented</th>
-          <th>Course content appropriate for use in a public health setting</th>
-          <th>Target audience</th>
-        </tr>
-      </thead>
-      <tbody id="myTable">
-        <tr>
-          <td>Wellcome Connecting Science</td>
-          <td>Mathematical Models for Infectious Disease Dynamics</td>
-          <td>UK</td>
-          <td>Research/academia</td>
-          <td>Yes</td>
-          <td>bioinformaticians based at health institutes and experimental biologists at research institutions</td>
-        </tr>
-        <tr>
-          <td>Wellcome Connecting Science</td>
-          <td>Computational Molecular Evolution</td>
-          <td>UK</td>
-          <td>Research/academia</td>
-          <td>Yes</td>
+    <p>A table with third party integration extension Filter control extension Data export</a> pour exporter</p>
 
-          <td>bioinformaticians based at health institutes and experimental biologists at research institutions</td>
-        </tr>
-        <tr>
-          <td>Wellcome Connecting Science</td>
-          <td>Systems Biology: From Large Datasets to Biological Insight</td>
-          <td>UK</td>
-          <td>Research/academia</td>
-          <td>Yes</td>
+    <div id="toolbar">
+        <select class="form-control">
+            <option value="">Export Basic</option>
+            <option value="all">Export All</option>
+            <option value="selected">Export Selected</option>
+        </select>
+    </div>
 
-          <td>bioinformaticians based at health institutes and experimental biologists at research institutions</td>
-        </tr>
-        <tr>
-          <td>Wellcome Connecting Science</td>
-          <td>Working with Protozoan Parasite Database</td>
-          <td>UK</td>
-          <td>Research/academia</td>
-          <td>Yes</td>
-
-          <td>bioinformaticians based at health institutes and experimental biologists at research institutions</td>
-        </tr>
-      </tbody>
+    <table id="table" data-toggle="table" data-search="true" data-filter-control="true" data-show-export="true"
+        data-click-to-select="true" data-toolbar="#toolbar" class="table-responsive">
+        <thead>
+            <tr>
+                <th data-field="state" data-checkbox="true"></th>
+                <th data-field="prenom" data-filter-control="input" data-sortable="true">First Name</th>
+                <th data-field="date" data-filter-control="select" data-sortable="true">Date</th>
+                <th data-field="examen" data-filter-control="select" data-sortable="true">Examination</th>
+                <th data-field="note" data-sortable="true">Note</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="bs-checkbox "><input data-index="0" name="btSelectItem" type="checkbox"></td>
+                <td>Jitender</td>
+                <td>01/09/2015</td>
+                <td>Français</td>
+                <td>12/20</td>
+            </tr>
+            <tr>
+                <td class="bs-checkbox "><input data-index="1" name="btSelectItem" type="checkbox"></td>
+                <td>Jahid</td>
+                <td>05/09/2015</td>
+                <td>Philosophie</td>
+                <td>8/20</td>
+            </tr>
+            <tr>
+                <td class="bs-checkbox "><input data-index="2" name="btSelectItem" type="checkbox"></td>
+                <td>Valentin</td>
+                <td>05/09/2015</td>
+                <td>Philosophie</td>
+                <td>4/20</td>
+            </tr>
+            <tr>
+                <td class="bs-checkbox "><input data-index="3" name="btSelectItem" type="checkbox"></td>
+                <td>Milton</td>
+                <td>05/09/2015</td>
+                <td>Philosophie</td>
+                <td>10/20</td>
+            </tr>
+            <tr>
+                <td class="bs-checkbox "><input data-index="4" name="btSelectItem" type="checkbox"></td>
+                <td>Gonesh</td>
+                <td>01/09/2015</td>
+                <td>Français</td>
+                <td>14/20</td>
+            </tr>
+            <tr>
+                <td class="bs-checkbox "><input data-index="5" name="btSelectItem" type="checkbox"></td>
+                <td>Valérie</td>
+                <td>07/09/2015</td>
+                <td>Mathématiques</td>
+                <td>19/20</td>
+            </tr>
+            <tr>
+                <td class="bs-checkbox "><input data-index="6" name="btSelectItem" type="checkbox"></td>
+                <td>Valentin</td>
+                <td>01/09/2015</td>
+                <td>Français</td>
+                <td>11/20</td>
+            </tr>
+            <tr>
+                <td class="bs-checkbox "><input data-index="7" name="btSelectItem" type="checkbox"></td>
+                <td>Eric</td>
+                <td>01/10/2015</td>
+                <td>Philosophie</td>
+                <td>8/20</td>
+            </tr>
+            <tr>
+                <td class="bs-checkbox "><input data-index="8" name="btSelectItem" type="checkbox"></td>
+                <td>Valentin</td>
+                <td>07/09/2015</td>
+                <td>Mathématiques</td>
+                <td>14/20</td>
+            </tr>
+            <tr>
+                <td class="bs-checkbox "><input data-index="9" name="btSelectItem" type="checkbox"></td>
+                <td>Valérie</td>
+                <td>01/10/2015</td>
+                <td>Philosophie</td>
+                <td>12/20</td>
+            </tr>
+            <tr>
+                <td class="bs-checkbox "><input data-index="10" name="btSelectItem" type="checkbox"></td>
+                <td>Eric</td>
+                <td>07/09/2015</td>
+                <td>Mathématiques</td>
+                <td>14/20</td>
+            </tr>
+            <tr>
+                <td class="bs-checkbox "><input data-index="11" name="btSelectItem" type="checkbox"></td>
+                <td>Valentin</td>
+                <td>01/10/2015</td>
+                <td>Philosophie</td>
+                <td>10/20</td>
+            </tr>
+        </tbody>
     </table>
-  </div>
-
-
-</div>
-
-
 </div>
 
 <script>
-  $(document).ready(function () {
-    $("#myInput").on("keyup", function () {
-      var value = $(this).val().toLowerCase();
-      $("#myTable tr").filter(function () {
-        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-      });
+    //exporte les données sélectionnées
+    var $table = $('#table');
+    $(function () {
+        $('#toolbar').find('select').change(function () {
+            $table.bootstrapTable('refreshOptions', {
+                exportDataType: $(this).val()
+            });
+        });
+    })
+
+    var trBoldBlue = $("table");
+
+    $(trBoldBlue).on("click", "tr", function () {
+        $(this).toggleClass("bold-blue");
     });
-  });
 </script>
