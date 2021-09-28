@@ -79,7 +79,7 @@ The NGS Academy forms part of the Africa PGI. This initiative is funded by the B
 
 <li><b>Registration for participants opens:</b> 13 September 2021</li>
 
-<li><b>Registration for participants closes:</b> 30 September 2021</li>
+<li><b>Registration for participants closes:</b> 25 September 2021</li>
 
 <!-- <li><b>Notification date for successful Applicants:</b> </li> -->
 </ol>
