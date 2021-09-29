@@ -10,7 +10,6 @@ start_date: 2021-06-28
 end_date: 2021-07-22
 group: group1
 
-
 bioschemas:
   "@context": https://schema.org/
   "@type": LearningResource
