@@ -58,7 +58,7 @@ The NGS Academy forms part of the Africa PGI. This initiative is funded by the B
     <div class="col-sm-6">
     <div>
     <b>Please note</b>: you DO NOT NEED to have experience with any particular software. All prerequisites will be addressed during the online training, during the pre-course workshop or links will be provided to introductory material. <br>
-<a class="btn btn-secondary btn-lg" href="https://redcap.h3abionet.org/redcap/surveys/?s=C787XMMYNA" role="button" target="_blank">Click here to apply</a>
+<a class="btn btn-secondary btn-lg" href="https://redcap.h3abionet.org/redcap/surveys/?s=FCDMERDT8T" role="button" target="_blank">Click here to apply</a>
 
 <p><a href="https://verena90.github.io/2021-10-05-online-NGS_Academy/" target="_blank">Priliminary course schedule</a></p>
     </div>
