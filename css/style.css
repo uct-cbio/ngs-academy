@@ -1013,8 +1013,9 @@ div{
   border-radius:4px;
 padding: 10px;
 
-
- /* table sorting css*/
+}
+ 
+/* table sorting css*/
   
 
 .table-sortable th {
@@ -1027,6 +1028,7 @@ padding: 10px;
 
 .table-sortable .th-sort-desc::after {
   content: "\25be";
+  
 }
 
 .table-sortable .th-sort-asc::after,
