@@ -1014,7 +1014,8 @@ div{
 padding: 10px;
 
 
-
+ /* table sorting css*/
+  
 
 .table-sortable th {
   cursor: pointer;
