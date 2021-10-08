@@ -5,7 +5,7 @@ date: 2021-08-31
 main_menu: courses
 permalink: /:year/:title
 category: past-course
-course_overview : The Carpentries virtual training workshop was a pre-course to our bioinformatics NGS course. The main focus for this virtual training was to introduce some powerful tools that would allow users to perform complex and powerful tasks, often with just a few keystrokes or lines of code. This helped users to automate repetitive tasks, and easily combine smaller tasks into larger, more powerful workflows.
+course_overview : The Carpentries virtual training workshop was a pre-course to our bioinformatics NGS course. The main focus for this virtual training was to introduce some powerful tools that would allow users to perform complex and powerful tasks, often with just a few keystrokes or lines of code. This helped participants to automate repetitive tasks, easily combine smaller tasks into larger and more powerful workflows.
 start_date: 2021-06-28
 end_date: 2021-07-22
 group: group1
@@ -42,7 +42,7 @@ The NGS Academy forms part of the Africa PGI. This initiative is funded by the B
 
 <p align="left"><b >Course overview:</b></p>
 
- <p align="left"> The Carpentries virtual training workshop was a pre-course to our <a href="{{ site.baseurl }}2021/SARS-CoV-2-NGS-Bioinformatics-Course-2021" target="_blank"> bioinformatics NGS course</a>. The main focus for this virtual training was to introduce participants to the fundamental tools used to interact with the computer without a graphical user interface, some of which would allow users to perform more advanced tasks in the NGS course, such as automate repetitive tasks, and combine smaller tasks into larger, more complex workflows.  
+ <p align="left"> The Carpentries virtual training workshop was a pre-course to our <a href="{{ site.baseurl }}2021/SARS-CoV-2-NGS-Bioinformatics-Course-2021" target="_blank"> bioinformatics NGS course</a>. The main focus for this virtual training was to introduce some powerful tools that would allow users to perform complex and powerful tasks, often with just a few keystrokes or lines of code. This helped participants to automate repetitive tasks, easily combine smaller tasks into larger and more powerful workflows.
  <p>
 
 
@@ -87,9 +87,9 @@ The NGS Academy forms part of the Africa PGI. This initiative is funded by the B
 
 <u><li><b>Participant applications</b></li></u>
 
-<li><b>Registration for participants opens:</b> 13 September 2021</li>
+<li><b>Registration for participants opened:</b> 13 September 2021</li>
 
-<li><b>Registration for participants closes:</b> 25 September 2021</li>
+<li><b>Registration for participants closed:</b> 25 September 2021</li>
 
 <!-- <li><b>Notification date for successful Applicants:</b> </li> -->
 </ol>
@@ -112,7 +112,7 @@ The NGS Academy forms part of the Africa PGI. This initiative is funded by the B
 
 <ol>
 <li>
-Software Carpentry has been teaching researchers the computing skills they need to get more done in less time. The course offered those who wanted to learn the foundational skills to work effectively and reproducibly with data and code such as Unix/Command line. Then the course empowered participants to learn new skills and build confidence in using them in their line of work.</li>
+Software Carpentry has been teaching researchers the computing skills they need to get more tasks done in less time. The course offered those who wanted to learn the foundational skills to work effectively and reproducibly with data and code such as Unix/Command line. Then the course empowered participants to learn new skills and build confidence in using them in their line of work.</li>
 
 </ol>
 <ol>
