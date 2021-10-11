@@ -47,7 +47,7 @@ The NGS Academy forms part of the Africa PGI. This initiative is funded by the B
 </ul>
 </li>
 </ol> <br>
-<a class="btn btn-secondary btn-lg" href="https://redcap.h3abionet.org/redcap/surveys/?s=C787XMMYNA" role="button" target="_blank">Click here to apply</a>
+<!-- <a class="btn btn-secondary btn-lg" href="https://redcap.h3abionet.org/redcap/surveys/?s=C787XMMYNA" role="button" target="_blank">Click here to apply</a> -->
     </div>
     </div>
   </div>
@@ -108,7 +108,7 @@ and sharing, advanced bioinformatics analysis, and presenting data to inform pol
 
 <div class="row">
     <div class="col-sm-12">
-     <div><img alt="..." src="{{ site.baseurl }}img/course_schedule_6.png" width="100%"/>
+     <div><img alt="..." src="{{ site.baseurl }}img/course_schedule.png" width="100%"/>
     <!-- <p class="small"> Source: CBIO UCT</p> -->
   </div>
 </div>
