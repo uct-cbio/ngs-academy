@@ -1040,3 +1040,26 @@ padding: 10px;
 .table-sortable .th-sort-desc {
   background: rgba(0, 0, 0, 0.1);
 }
+
+.button_background_color{
+
+  background-color:#8c2133 !important ;
+}
+
+
+.modal {
+  text-align: center;
+}
+
+.modal:before {
+  display: inline-block;
+  vertical-align: middle;
+  content: " ";
+  height: 100%;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
