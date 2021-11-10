@@ -3,16 +3,45 @@ layout: default
 title: Other pathogen surveillance courses
 permalink: /courses/other-courses/
 ---
-
+<!-- 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript" language="javascript"
+    src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
+
+<script>
+
+
+    // $(document).ready(function () {
+    //     $('#example').DataTable();
+    // });
+
+    // $(document).ready(function () {
+    //     var table = $('#example').DataTable({
+    //         responsive: true
+    //     });
+    // });
+
+    $(document).ready(function () {
+        var table = $('#example').DataTable({
+            "sDom": 'Rlfrtip',
+            // colReorder: true,
+            "oColReorder": {
+                "bAddFixed": false
+            },
+
+        });
+    })
 
 
 
-
-
-
+</script>
 
 
 <div class="container-fluid">
@@ -21,22 +50,24 @@ permalink: /courses/other-courses/
         <div class="col">
 
 
-            <input class="form-control" id="myInput" type="text" placeholder="Search..">
-            <br>
             <div class="table-responsive">
-                <table class="table table-sortable  table-bordered table-striped">
+
+                <table id="example" class="stripe row-border order-column" cellspacing="0" width="100%">
                     <thead>
                         <tr>
                             <th>Organisation</th>
                             <th>Course Title</th>
                             <th>Course Level</th>
-                            <th>Context </th>
+                            <th>Context</th>
                             <th>Audience</th>
-                            <th>Primary focus areas of the course</th>
-
+                            <th>Primary focus areas</th>
+                            <th>More</th>
+                            <!-- <th>Extn.</th>
+                            <th>E-mail</th> -->
                         </tr>
                     </thead>
-                    <tbody id="myTable">
+
+                    <tbody>
                         <tr>
                             <td>Wellcome Connecting Science</td>
                             <td>
@@ -52,6 +83,80 @@ permalink: /courses/other-courses/
                             <td>Pathogen genomics for clinicians, Bioinformatics, Data analysis, data visualization,
                                 data
                                 management or a related topic</td>
+                            <td>
+
+
+
+                                <!-- inside modal-->
+                                <!-- Button to Open the Modal -->
+                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                    data-target="#myModal1">
+                                    more
+                                </button>
+
+                                <!-- The Modal -->
+                                <div class="modal fade" id="myModal1">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <p class="modal-title font-weight-bold">Mathematical Models for
+                                                    Infectious Disease
+                                                    Dynamics </p>
+                                                <button type="button" class="close"
+                                                    data-dismiss="modal">&times;</button><br>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <table class="table table-striped">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Location</th>
+                                                            <th>Sub-topics</th>
+                                                            <th>Formal assessment</th>
+                                                            <th>Accredited</th>
+                                                            <th>Available</th>
+                                                            <th>Duration</th>
+                                                            <th>Live/Online</th>
+                                                            <th>With subtitles</th>
+                                                        </tr>
+
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>UK </td>
+                                                            <td>Mathematical review (calculus, probability, etc.).
+                                                                Population dynamics. Deterministic and stochastic
+                                                                models. Modelling structured populations:
+                                                                age-structured, spatial and network models. Applied
+                                                                programming with R. Statistical estimation of models.
+                                                                Computer-based simulations.</td>
+                                                            <td>No</td>
+                                                            <td>No</td>
+                                                            <td>once a year or every two years</td>
+                                                            <td>5 days</td>
+                                                            <td>Face-to-face sessions, Virtual</td>
+                                                            <td>No</td>
+                                                        </tr>
+                                                    </tbody>
+
+                                                </table>
+                                            </div>
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger btn-sm"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </td>
                         </tr>
                         <tr>
                             <td>Wellcome Connecting Science</td>
@@ -68,11 +173,90 @@ permalink: /courses/other-courses/
                             <td>Pathogen genomics for clinicians, Bioinformatics, Data analysis, data visualization,
                                 data
                                 management or a related topic</td>
+
+
+
+                            <td>
+
+                                <!-- Button to Open the Modal -->
+                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                    data-target="#myModal01">
+                                    more
+                                </button>
+
+                                <!-- The Modal -->
+                                <div class="modal fade" id="myModal01">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <p class="modal-title font-weight-bold">Computational Molecular
+                                                    Evolution </p>
+                                                <button type="button" class="close"
+                                                    data-dismiss="modal">&times;</button>
+                                                <br>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <table class="table table-striped table-sortable ">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Location</th>
+                                                            <th>Sub-topics</th>
+                                                            <th>Formal assessment</th>
+                                                            <th>Accredited</th>
+                                                            <th>Available</th>
+                                                            <th>Duration</th>
+                                                            <th>Live or Online</th>
+                                                            <th>With subtitles</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>UK </td>
+                                                            <td>Data retrieval and assembly. Alignment techniques.
+                                                                Phylogeny reconstruction (including maximum likelihood
+                                                                and Bayesian methods). Hypothesis testing. Population
+                                                                genetics approaches. Protein and nucleotide sequence
+                                                                analysis, including NGS data (Please note however that
+                                                                the course focuses on NGS analyses for molecular
+                                                                evolution, we do not cover traditional NGS analyses
+                                                                e.g., QC, read mapping, variant calling, assembly etc.).
+                                                            </td>
+                                                            <td>No</td>
+                                                            <td>No</td>
+                                                            <td>Once a year or every two years</td>
+                                                            <td>5 days</td>
+                                                            <td>Face-to-face sessions, Virtual</td>
+                                                            <td>No</td>
+                                                        </tr>
+                                                    </tbody>
+
+                                                </table>
+                                            </div>
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger btn-sm"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </td>
                         </tr>
+
+
                         <tr>
                             <td>Wellcome Connecting Science</td>
                             <td>
-                                <li><a href="https://coursesandconferences.wellcomeconnectingscience.org/our-events/overseas-courses/"
+                                <li><a href="https://coursesandconferences.wellcomeconnectingscience.org/event/systems-biology-from-large-datasets-to-biological-insight-20190708/"
                                         target="_blank">Systems Biology: From Large Datasets to Biological Insight</a>
                                 </li>
                             </td>
@@ -85,7 +269,87 @@ permalink: /courses/other-courses/
                             <td>Pathogen genomics for clinicians, Bioinformatics, Data analysis, data visualization,
                                 data
                                 management or a related topic</td>
+
+                            <td>
+
+                                <!-- Button to Open the Modal -->
+                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                    data-target="#myModal02">
+                                    more
+                                </button>
+
+                                <!-- The Modal -->
+                                <div class="modal fade" id="myModal02">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <p class="modal-title font-weight-bold">Systems Biology: From Large
+                                                    Datasets to Biological Insight</p>
+                                                <button type="button" class="close"
+                                                    data-dismiss="modal">&times;</button>
+                                                <br>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <table class="table table-striped table-sortable ">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Location</th>
+                                                            <th>Sub-topics</th>
+                                                            <th>Formal assessment</th>
+                                                            <th>Accredited</th>
+                                                            <th>Available</th>
+                                                            <th>Duration</th>
+                                                            <th>Live or Online</th>
+                                                            <th>With subtitles</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>UK </td>
+                                                            <td>Data reduction and data integration methods – including
+                                                                comparison of major approaches through lectures and
+                                                                practical exercises. Machine and deep learning –
+                                                                practical exercises on supervised machine learning,
+                                                                including classification and regression, and deep
+                                                                learning. Functional inference from omics data –
+                                                                approaches to extract signatures of cell state from
+                                                                -omics data including transcription factor activation
+                                                                and kinase activity states. Extraction of upstream
+                                                                signalling pathways from transcriptomics datasets.
+                                                                Network inference and signal propagation – network
+                                                                inference approaches from -omics data.
+                                                            </td>
+                                                            <td>No</td>
+                                                            <td>No</td>
+                                                            <td>Once a year or every two years</td>
+                                                            <td>5 days</td>
+                                                            <td>Face-to-face sessions, Virtual</td>
+                                                            <td>No</td>
+                                                        </tr>
+                                                    </tbody>
+
+                                                </table>
+                                            </div>
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger btn-sm"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </td>
                         </tr>
+
                         <tr>
                             <td>Wellcome Connecting Science</td>
                             <td>
@@ -100,8 +364,85 @@ permalink: /courses/other-courses/
                             <td>Pathogen genomics for clinicians, Bioinformatics, Data analysis, data visualization,
                                 data
                                 management or a related topic</td>
-                        </tr>
+                            <td>
+                                <!-- Button to Open the Modal -->
+                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                    data-target="#myModal03">
+                                    more
+                                </button>
 
+                                <!-- The Modal -->
+                                <div class="modal fade" id="myModal03">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <p class="modal-title font-weight-bold">Working with Protozoan Parasite
+                                                    Database</p>
+                                                <button type="button" class="close"
+                                                    data-dismiss="modal">&times;</button>
+                                                <br>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <table class="table table-striped table-sortable ">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Location</th>
+                                                            <th>Sub-topics</th>
+                                                            <th>Formal assessment</th>
+                                                            <th>Accredited</th>
+                                                            <th>Available</th>
+                                                            <th>Duration</th>
+                                                            <th>Live or Online</th>
+                                                            <th>With subtitles</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>UK </td>
+                                                            <td>Visualisation of sequence features and next generation
+                                                                sequencing data using the Artemis genome browser and
+                                                                annotation tool. Genome browsing and comparative
+                                                                genomics (ACT and JBrowse/GBrowse). Formulating complex
+                                                                biological queries in computationally accessible form.
+                                                                Web-based resources including the GeneDB.org and
+                                                                VEuPathDB.org family of databases. Integrating
+                                                                functional genomics data (RNA-seq, ChIP-seq, ChIP-chip,
+                                                                microarrays, proteomics, etc) with genome sequence data.
+                                                                Theoretical aspects of genome re-sequencing. Querying
+                                                                genetic diversity on a genome-wide scale. Metabolic
+                                                                pathways and pathway and GO enrichment analysis. Working
+                                                                with next-generation sequence data (mapping, variant
+                                                                calling, RNA-Seq etc) using both command-line and
+                                                                web-based (Galaxy) methods. Introduction to community
+                                                                curation tools
+                                                            </td>
+                                                            <td>No</td>
+                                                            <td>No</td>
+                                                            <td>Once a year or every two years</td>
+                                                            <td>5 days</td>
+                                                            <td>Face-to-face sessions, Virtual</td>
+                                                            <td>No</td>
+                                                        </tr>
+                                                    </tbody>
+
+                                                </table>
+                                            </div>
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger btn-sm"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
 
                         <tr>
                             <td>Wellcome Connecting Science</td>
@@ -117,6 +458,76 @@ permalink: /courses/other-courses/
                             <td>Pathogen genomics for clinicians, Bioinformatics, Data analysis, data visualization,
                                 data
                                 management or a related topic</td>
+                            <td>
+                                <!-- Button to Open the Modal -->
+                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                    data-target="#myModal04">
+                                    more
+                                </button>
+
+                                <!-- The Modal -->
+                                <div class="modal fade" id="myModal04">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <p class="modal-title font-weight-bold">RNA transcriptomics</p>
+                                                <button type="button" class="close"
+                                                    data-dismiss="modal">&times;</button>
+                                                <br>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <table class="table table-striped table-sortable ">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Location</th>
+                                                            <th>Sub-topics</th>
+                                                            <th>Formal assessment</th>
+                                                            <th>Accredited</th>
+                                                            <th>Available</th>
+                                                            <th>Duration</th>
+                                                            <th>Live or Online</th>
+                                                            <th>With subtitles</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>UK </td>
+                                                            <td>Overview of single molecule long read sequencing
+                                                                technologies. Full length total RNA sequencing. Full
+                                                                length cDNA sequencing. Small RNA sequencing. Single
+                                                                cell transcriptome data generation and analysis.
+                                                                Identification of post-transcriptional modifications in
+                                                                RNA (epi-transcriptomics). Functional assays for lncRNA
+                                                                biology. Integration of microRNA and mRNA data;
+                                                                functional analysis of microRNAs. Expression network and
+                                                                pathway integration and analysis
+                                                            </td>
+                                                            <td>No</td>
+                                                            <td>No</td>
+                                                            <td>Once a year or every two years</td>
+                                                            <td>5 days</td>
+                                                            <td>Face-to-face sessions, Virtual</td>
+                                                            <td>No</td>
+                                                        </tr>
+                                                    </tbody>
+
+                                                </table>
+                                            </div>
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger btn-sm"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
                         </tr>
 
                         <tr>
@@ -133,8 +544,86 @@ permalink: /courses/other-courses/
                             <td>Pathogen genomics for clinicians, Bioinformatics, Data analysis, data visualization,
                                 data
                                 management or a related topic</td>
-                        </tr>
+                            <td>
+                                <!-- Button to Open the Modal -->
+                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                    data-target="#myModal05">
+                                    more
+                                </button>
 
+                                <!-- The Modal -->
+                                <div class="modal fade" id="myModal05">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <p class="modal-title font-weight-bold">Fungal Pathogen Genomics</p>
+                                                <button type="button" class="close"
+                                                    data-dismiss="modal">&times;</button>
+                                                <br>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <table class="table table-striped table-sortable ">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Location</th>
+                                                            <th>Sub-topics</th>
+                                                            <th>Formal assessment</th>
+                                                            <th>Accredited</th>
+                                                            <th>Available</th>
+                                                            <th>Duration</th>
+                                                            <th>Live or Online</th>
+                                                            <th>With subtitles</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>UK </td>
+                                                            <td>Perform RNA-seq and SNP analysis and visualization via
+                                                                EuPathDB Galaxy workspace in FungiDB. Identify secondary
+                                                                metabolite clusters in MycoCosm. Find virulence genes
+                                                                and annotation in Ensembl. Access genetic interactions
+                                                                in CGD/SGD. Comparative genomics and browsers: GBrowse,
+                                                                JBrowse, ACT, Artemis, Ensembl. Use of Apollo annotation
+                                                                tools for fungal genomes. Web-based resources for fungal
+                                                                genomic data including: FungiDB, EnsemblFungi, PomBase,
+                                                                SGD/CGD, MycoCosm/JGI, etc.. Identification of
+                                                                orthologs, and orthology-based inference (using
+                                                                OrthoMCL, Compara, etc.). Next generation sequence
+                                                                analysis, including variant calling (EuPathDB Galaxy).
+                                                                RNA-Seq analysis and visualization. Developing advanced
+                                                                biologically relevant queries, using FungiDB ‘search
+                                                                strategies’. Best practices using ontologies to generate
+                                                                hypotheses and analyse data (ontology structure,
+                                                                evidence, available tools, slimming and enrichment,
+                                                                etc.).
+                                                            </td>
+                                                            <td>No</td>
+                                                            <td>No</td>
+                                                            <td>Once a year or every two years</td>
+                                                            <td>5 days</td>
+                                                            <td>Face-to-face sessions, Virtual</td>
+                                                            <td>No</td>
+                                                        </tr>
+                                                    </tbody>
+
+                                                </table>
+                                            </div>
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger btn-sm"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
                         <tr>
                             <td>Wellcome Connecting Science</td>
                             <td>
@@ -149,7 +638,84 @@ permalink: /courses/other-courses/
                             <td>Pathogen genomics for clinicians, Bioinformatics, Data analysis, data visualization,
                                 data
                                 management or a related topic</td>
+                            <td>
+
+
+                                <!-- Button to Open the Modal -->
+                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                    data-target="#myModal06">
+                                    more
+                                </button>
+
+                                <!-- The Modal -->
+                                <div class="modal fade" id="myModal06">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <p class="modal-title font-weight-bold">Genomics and Clinical Virology
+                                                </p>
+                                                <button type="button" class="close"
+                                                    data-dismiss="modal">&times;</button>
+                                                <br>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <table class="table table-striped table-sortable ">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Location</th>
+                                                            <th>Sub-topics</th>
+                                                            <th>Formal assessment</th>
+                                                            <th>Accredited</th>
+                                                            <th>Available</th>
+                                                            <th>Duration</th>
+                                                            <th>Live or Online</th>
+                                                            <th>With subtitles</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>UK </td>
+                                                            <td>Background to viral WGS approaches. Sample handling and
+                                                                preparation. Library preparation techniques. Target
+                                                                enrichment methods e.g. probe-based sequence capture or
+                                                                PCR-based. Viral metagenomics. Technique discrimination
+                                                                – the appropriate technique to use in different
+                                                                scenarios. Next generation and third generation
+                                                                sequencing platforms. Bioinformatics analysis including
+                                                                different viral genome assembly approaches. Data
+                                                                interpretation. Validation and accreditation of viral
+                                                                WGS diagnostic service, Case studies in outbreak
+                                                                investigation and infection control.
+                                                            </td>
+                                                            <td>No</td>
+                                                            <td>No</td>
+                                                            <td>Once a year or every two years</td>
+                                                            <td>5 days</td>
+                                                            <td>Face-to-face sessions, Virtual</td>
+                                                            <td>No</td>
+                                                        </tr>
+                                                    </tbody>
+
+                                                </table>
+                                            </div>
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger btn-sm"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </td>
                         </tr>
+
 
                         <tr>
                             <td>Wellcome Connecting Science</td>
@@ -165,7 +731,79 @@ permalink: /courses/other-courses/
                             <td>Pathogen genomics for clinicians, Bioinformatics, Data analysis, data visualization,
                                 data
                                 management or a related topic</td>
+                            <td>
+                                <!-- Button to Open the Modal -->
+                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                    data-target="#myModal06">
+                                    more
+                                </button>
+
+                                <!-- The Modal -->
+                                <div class="modal fade" id="myModal06">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <p class="modal-title font-weight-bold">Genomics and Clinical Virology
+                                                </p>
+                                                <button type="button" class="close"
+                                                    data-dismiss="modal">&times;</button>
+                                                <br>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <table class="table table-striped table-sortable ">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Location</th>
+                                                            <th>Sub-topics</th>
+                                                            <th>Formal assessment</th>
+                                                            <th>Accredited</th>
+                                                            <th>Available</th>
+                                                            <th>Duration</th>
+                                                            <th>Live or Online</th>
+                                                            <th>With subtitles</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>UK </td>
+                                                            <td>Data analysis, display and dissemination. Design,
+                                                                implementation, and interpretation of real-time PCR
+                                                                tests for pathogen detection. Molecular approaches to
+                                                                detect multiple pathogens. Whole genome sequencing
+                                                                (WGS). PCR and sequence-based isolate characterisation.
+                                                                Outbreak investigation and applications to public
+                                                                health. Bioinformatics and data interpretation. Data
+                                                                analysis, display and dissemination
+                                                            </td>
+                                                            <td>No</td>
+                                                            <td>No</td>
+                                                            <td>Once a year or every two years</td>
+                                                            <td>5 days</td>
+                                                            <td>Face-to-face sessions, Virtual</td>
+                                                            <td>No</td>
+                                                        </tr>
+                                                    </tbody>
+
+                                                </table>
+                                            </div>
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger btn-sm"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
                         </tr>
+
+
 
                         <tr>
                             <td>Wellcome Connecting Science</td>
@@ -181,6 +819,80 @@ permalink: /courses/other-courses/
                             <td>Pathogen genomics for clinicians, Bioinformatics, Data analysis, data visualization,
                                 data
                                 management or a related topic</td>
+
+                            <td>
+                                <!-- Button to Open the Modal -->
+                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                    data-target="#myModal07">
+                                    more
+                                </button>
+
+                                <!-- The Modal -->
+                                <div class="modal fade" id="myModal07">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <p class="modal-title font-weight-bold">Malaria Experimental Genetics
+                                                </p>
+                                                <button type="button" class="close"
+                                                    data-dismiss="modal">&times;</button>
+                                                <br>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <table class="table table-striped table-sortable ">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Location</th>
+                                                            <th>Sub-topics</th>
+                                                            <th>Formal assessment</th>
+                                                            <th>Accredited</th>
+                                                            <th>Available</th>
+                                                            <th>Duration</th>
+                                                            <th>Live or Online</th>
+                                                            <th>With subtitles</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>UK </td>
+                                                            <td>CRISPR-Cas9 based approaches. Consideration of the
+                                                                relative merits of different conditional expression
+                                                                approaches. Mechanics of transfection in P. falciparum
+                                                                and P. knowlesi. Verification of gene targeting using
+                                                                multiple genotyping techniques. Drug-response assays of
+                                                                genome edited parasites. Application of next generation
+                                                                sequencing to transcriptional profiling and quantitating
+                                                                parasite growth. Flow cytometry-based phenotyping
+                                                                platforms.
+                                                            </td>
+                                                            <td>No</td>
+                                                            <td>No</td>
+                                                            <td>Once a year or every two years</td>
+                                                            <td>5 days</td>
+                                                            <td>Face-to-face sessions, Virtual</td>
+                                                            <td>No</td>
+                                                        </tr>
+                                                    </tbody>
+
+                                                </table>
+                                            </div>
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger btn-sm"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </td>
                         </tr>
 
 
@@ -198,6 +910,87 @@ permalink: /courses/other-courses/
                             <td>Pathogen genomics for clinicians, Bioinformatics, Data analysis, data visualization,
                                 data
                                 management or a related topic</td>
+                            <td>
+
+                                <!-- Button to Open the Modal -->
+                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                    data-target="#myModal08">
+                                    more
+                                </button>
+
+                                <!-- The Modal -->
+                                <div class="modal fade" id="myModal08">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <p class="modal-title font-weight-bold">Antimicrobial Resistance in
+                                                    Bacterial Pathogens
+                                                </p>
+                                                <button type="button" class="close"
+                                                    data-dismiss="modal">&times;</button>
+                                                <br>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <table class="table table-striped table-sortable ">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Location</th>
+                                                            <th>Sub-topics</th>
+                                                            <th>Formal assessment</th>
+                                                            <th>Accredited</th>
+                                                            <th>Available</th>
+                                                            <th>Duration</th>
+                                                            <th>Live or Online</th>
+                                                            <th>With subtitles</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>UK </td>
+                                                            <td>Historical and epidemiological aspects of antimicrobial
+                                                                resistance (AMR). Clinical importance of AMR. Causes and
+                                                                biological mechanisms of resistance in Gram-positive and
+                                                                Gram-negative bacteria. Antimicrobial susceptibility
+                                                                testing (AST) methods, e.g. disc testing, automated
+                                                                systems, minimum inhibitory concentration (MIC),
+                                                                breakpoints and reporting. Molecular methods for
+                                                                detection of AMR. Internal quality control (QC) and
+                                                                external quality assurance (QA) for AST. AMR pathogens
+                                                                in Africa. AMR in veterinary medicine. Antibiotic
+                                                                policies and stewardship. AMR surveillance methods and
+                                                                study design. Tackling AMR using a One Health Approac.
+                                                                Introduction to genomic surveillance of AMR. Local AMR
+                                                                epidemiology – investigating transmission of clones and
+                                                                AMR. Analysis of resistance in genomes
+                                                            </td>
+                                                            <td>No</td>
+                                                            <td>No</td>
+                                                            <td>Once a year or every two years</td>
+                                                            <td>5 days</td>
+                                                            <td>Face-to-face sessions, Virtual</td>
+                                                            <td>No</td>
+                                                        </tr>
+                                                    </tbody>
+
+                                                </table>
+                                            </div>
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger btn-sm"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </td>
                         </tr>
 
                         <tr>
@@ -214,11 +1007,81 @@ permalink: /courses/other-courses/
                             <td>Pathogen genomics for clinicians, Bioinformatics, Data analysis, data visualization,
                                 data
                                 management or a related topic</td>
+                            <td>
+                                <!-- Button to Open the Modal -->
+                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                    data-target="#myModal09">
+                                    more
+                                </button>
+
+                                <!-- The Modal -->
+                                <div class="modal fade" id="myModal09">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <p class="modal-title font-weight-bold">Helminth Bioinformatics
+                                                </p>
+                                                <button type="button" class="close"
+                                                    data-dismiss="modal">&times;</button>
+                                                <br>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <table class="table table-striped table-sortable ">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Location</th>
+                                                            <th>Sub-topics</th>
+                                                            <th>Formal assessment</th>
+                                                            <th>Accredited</th>
+                                                            <th>Available</th>
+                                                            <th>Duration</th>
+                                                            <th>Live or Online</th>
+                                                            <th>With subtitles</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>UK </td>
+                                                            <td>The WormBase ParaSite database. IGV/JBrowse genome
+                                                                browsers. Variant calling. Differential gene expression.
+                                                                Unix/Linux command-line. Introduction to R
+                                                            </td>
+                                                            <td>No</td>
+                                                            <td>No</td>
+                                                            <td>Once a year or every two years</td>
+                                                            <td>5 days</td>
+                                                            <td>Face-to-face sessions, Virtual</td>
+                                                            <td>No</td>
+                                                        </tr>
+                                                    </tbody>
+
+                                                </table>
+                                            </div>
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger btn-sm"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </td>
                         </tr>
+
+
+
                         <tr>
                             <td>Wellcome Connecting Science</td>
                             <td>
-                                <li><a href="https://coursesandconferences.wellcomeconnectingscience.org/event/next-generation-sequencing-bioinformatics-chile-2019/"
+                                <li><a href="https://coursesandconferences.wellcomeconnectingscience.org/our-events/overseas-courses/"
                                         target="_blank">Next Generation Sequencing Bioinformatics</a></li>
                             </td>
                             <td>Beginner</td>
@@ -229,11 +1092,84 @@ permalink: /courses/other-courses/
                             <td>Pathogen genomics for clinicians, Bioinformatics, Data analysis, data visualization,
                                 data
                                 management or a related topic</td>
+                            <td>
+                                <!-- Button to Open the Modal -->
+                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                    data-target="#myModal10">
+                                    more
+                                </button>
+
+                                <!-- The Modal -->
+                                <div class="modal fade" id="myModal10">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <p class="modal-title font-weight-bold">Next Generation Sequencing
+                                                    Bioinformatics
+                                                </p>
+                                                <button type="button" class="close"
+                                                    data-dismiss="modal">&times;</button>
+                                                <br>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <table class="table table-striped table-sortable ">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Location</th>
+                                                            <th>Sub-topics</th>
+                                                            <th>Formal assessment</th>
+                                                            <th>Accredited</th>
+                                                            <th>Available</th>
+                                                            <th>Duration</th>
+                                                            <th>Live or Online</th>
+                                                            <th>With subtitles</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>UK </td>
+                                                            <td>Introduction to NGS technologies. Introduction to the
+                                                                unix command line. NGS data formats and tools. Sequence
+                                                                alignment and QC. SNP/indel theory and practical.
+                                                                Structural variation theory and practical. RNA-seq
+                                                                analysis. ChiP-seq analysis. Sequencing data
+                                                                visualisation with the Integrated Genomics Viewer (IGV).
+                                                                Accessing public sequencing repositories. Genome
+                                                                assembly theory and practical. Participant projects and
+                                                                presentations
+                                                            </td>
+                                                            <td>No</td>
+                                                            <td>No</td>
+                                                            <td>Once a year or every two years</td>
+                                                            <td>5 days</td>
+                                                            <td>Face-to-face sessions, Virtual</td>
+                                                            <td>No</td>
+                                                        </tr>
+                                                    </tbody>
+
+                                                </table>
+                                            </div>
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger btn-sm"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </td>
                         </tr>
                         <tr>
-                            <td>Wellcome Connecting Science</td>
+                            <td>Wellcome Connecting Science (Makerere University)</td>
                             <td>
-                                <li><a href="https://coursesandconferences.wellcomeconnectingscience.org/event/viral-bioinformatics-genomics-uruguay-2021/"
+                                <li><a href="https://coursesandconferences.wellcomeconnectingscience.org/event/viral-bioinformatics-and-genomics-kampala-uganda-20190623/"
                                         target="_blank">Viral Genomics and Bioinformatics</a></li>
                             </td>
                             <td>Beginner</td>
@@ -244,10 +1180,84 @@ permalink: /courses/other-courses/
                             <td>Pathogen genomics for clinicians, Bioinformatics, Data analysis, data visualization,
                                 data
                                 management or a related topic</td>
+                            <td>
+
+                                <!-- Button to Open the Modal -->
+                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                    data-target="#myModal11">
+                                    more
+                                </button>
+
+                                <!-- The Modal -->
+                                <div class="modal fade" id="myModal11">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <p class="modal-title font-weight-bold">Viral Genomics and
+                                                    Bioinformatics
+                                                </p>
+                                                <button type="button" class="close"
+                                                    data-dismiss="modal">&times;</button>
+                                                <br>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <table class="table table-striped table-sortable ">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Location</th>
+                                                            <th>Sub-topics</th>
+                                                            <th>Formal assessment</th>
+                                                            <th>Accredited</th>
+                                                            <th>Available</th>
+                                                            <th>Duration</th>
+                                                            <th>Live or Online</th>
+                                                            <th>With subtitles</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Uganda </td>
+                                                            <td>Introduction to Linux/Unix. NGS file formats. NGS data
+                                                                quality check and cleaning. Reference assembly. Assembly
+                                                                statistics and visualisation. Consensus and variant
+                                                                calling. De novo assembly. De novo contig consolidation
+                                                                and gap filling. Pathogen sequence detection using
+                                                                sequence classifiers. BLAST. Sequence submission.
+                                                                Multiple sequence alignment. Recombination detection.
+                                                                Introduction to phylogenetics methods. BASH scripting
+                                                            </td>
+                                                            <td>No</td>
+                                                            <td>No</td>
+                                                            <td>Once a year or every two years</td>
+                                                            <td>5 days</td>
+                                                            <td>Face-to-face sessions, Virtual</td>
+                                                            <td>No</td>
+                                                        </tr>
+                                                    </tbody>
+
+                                                </table>
+                                            </div>
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger btn-sm"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </td>
                         </tr>
 
                         <tr>
-                            <td>Wellcome Connecting Science</td>
+                            <td>Wellcome Connecting Science (KEMRI)</td>
                             <td>
                                 <li><a href="https://coursesandconferences.wellcomeconnectingscience.org/event/molecular-approaches-to-clinical-microbiology-in-africa-nairobi-kenya-20180908/"
                                         target="_blank">Molecular Approaches to Clinical Microbiology in Africa</a></li>
@@ -260,6 +1270,79 @@ permalink: /courses/other-courses/
                             <td>Pathogen genomics for clinicians, Bioinformatics, Data analysis, data visualization,
                                 data
                                 management or a related topic</td>
+                            <td>
+                                <!-- Button to Open the Modal -->
+                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                    data-target="#myModal12">
+                                    more
+                                </button>
+
+                                <!-- The Modal -->
+                                <div class="modal fade" id="myModal12">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <p class="modal-title font-weight-bold">Molecular Approaches to Clinical
+                                                    Microbiology in Africa
+                                                </p>
+                                                <button type="button" class="close"
+                                                    data-dismiss="modal">&times;</button>
+                                                <br>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <table class="table table-striped table-sortable ">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Location</th>
+                                                            <th>Sub-topics</th>
+                                                            <th>Formal assessment</th>
+                                                            <th>Accredited</th>
+                                                            <th>Available</th>
+                                                            <th>Duration</th>
+                                                            <th>Live or Online</th>
+                                                            <th>With subtitles</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>UK </td>
+                                                            <td>Fundamental molecular biology techniques including
+                                                                preparing, handling, and storing DNA. PCR, including
+                                                                real-time PCR, with an emphasis on, methods,
+                                                                applications and data interpretation. Determining
+                                                                sequence variation, its visualisation and
+                                                                interpretation, concentrating on conventional
+                                                                approaches. Bioinformatic analysis of molecular and
+                                                                genomic data, particularly the exploitation of web-based
+                                                                tools. An overview of future technologies, and their
+                                                                potential for application in clinical microbiology.
+                                                            </td>
+                                                            <td>No</td>
+                                                            <td>No</td>
+                                                            <td>Once a year or every two years</td>
+                                                            <td>5 days</td>
+                                                            <td>Face-to-face sessions, Virtual</td>
+                                                            <td>No</td>
+                                                        </tr>
+                                                    </tbody>
+
+                                                </table>
+                                            </div>
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger btn-sm"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
                         </tr>
 
 
@@ -279,8 +1362,83 @@ permalink: /courses/other-courses/
                             <td>Pathogen genomics for clinicians, Bioinformatics, Data analysis, data visualization,
                                 data
                                 management or a related topic</td>
-                        </tr>
+                            <td>
+                                <!-- Button to Open the Modal -->
+                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                    data-target="#myModal13">
+                                    more
+                                </button>
 
+                                <!-- The Modal -->
+                                <div class="modal fade" id="myModal13">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <p class="modal-title font-weight-bold">Genomics and Epidemiological
+                                                    Surveillance of Bacterial
+                                                    Pathogens
+                                                </p>
+                                                <button type="button" class="close"
+                                                    data-dismiss="modal">&times;</button>
+                                                <br>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <table class="table table-striped table-sortable ">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Location</th>
+                                                            <th>Sub-topics</th>
+                                                            <th>Formal assessment</th>
+                                                            <th>Accredited</th>
+                                                            <th>Available</th>
+                                                            <th>Duration</th>
+                                                            <th>Live or Online</th>
+                                                            <th>With subtitles</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>UK </td>
+                                                            <td>Practical bioinformatics skills needed to manipulate raw
+                                                                sequence data (some of which will be generated on the
+                                                                course), including: mapping and de novo assemblies, SNP
+                                                                calling, annotation and analysis of genomic information.
+                                                                Sequence analysis and comparative genomics of next
+                                                                generation sequencing data using Artemis and ACT.
+                                                                Principles of phylogeny and construction of accurate
+                                                                phylogenies. Group exercises designed to teach everyday
+                                                                skills required to work in genomic surveillance.
+                                                                Practical exercises for using GPS to map cases of
+                                                                infectious disease and phenotypes (such as AMR) across
+                                                                the world.
+                                                            </td>
+                                                            <td>No</td>
+                                                            <td>No</td>
+                                                            <td>Once a year or every two years</td>
+                                                            <td>5 days</td>
+                                                            <td>Face-to-face sessions, Virtual</td>
+                                                            <td>No</td>
+                                                        </tr>
+                                                    </tbody>
+
+                                                </table>
+                                            </div>
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger btn-sm"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
 
                         <tr>
                             <td>Wellcome Sanger Institute</td>
@@ -298,6 +1456,72 @@ permalink: /courses/other-courses/
                             <td>Pathogen genomics for clinicians, Bioinformatics, Data analysis, data visualization,
                                 data
                                 management or a related topic</td>
+                            <td>
+                                <!-- Button to Open the Modal -->
+                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                    data-target="#myModal14">
+                                    more
+                                </button>
+
+                                <!-- The Modal -->
+                                <div class="modal fade" id="myModal14">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <p class="modal-title font-weight-bold">Bioinformatics
+                                                    training -
+                                                    JUNO/GPS
+                                                </p>
+                                                <button type="button" class="close"
+                                                    data-dismiss="modal">&times;</button>
+                                                <br>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <table class="table table-striped table-sortable ">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Location</th>
+                                                            <th>Sub-topics</th>
+                                                            <th>Formal assessment</th>
+                                                            <th>Accredited</th>
+                                                            <th>Available</th>
+                                                            <th>Duration</th>
+                                                            <th>Live or Online</th>
+                                                            <th>With subtitles</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>UK </td>
+                                                            <td>Visualisation, Genomics, Phylogentcics, Clustering,
+                                                                MLST, serotyping, PathogenWatch, Microreact.
+                                                            </td>
+                                                            <td>No</td>
+                                                            <td>No</td>
+                                                            <td>N/A</td>
+                                                            <td>N/A</td>
+                                                            <td>Virtual</td>
+                                                            <td>No</td>
+                                                        </tr>
+                                                    </tbody>
+
+                                                </table>
+                                            </div>
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger btn-sm"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
                         </tr>
 
 
@@ -315,14 +1539,86 @@ permalink: /courses/other-courses/
                                 health
                                 labs</td>
                             <td>Epidemiology, Sample processing, DNA/RNA extraction, Library prep, Sequencing</td>
-                        </tr>
 
+                            <td>
+                                <!-- Button to Open the Modal -->
+                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                    data-target="#myModal15">
+                                    more
+                                </button>
+
+                                <!-- The Modal -->
+                                <div class="modal fade" id="myModal15">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <p class="modal-title font-weight-bold">COVID-19 Virtual Lab
+                                                    Training for Genomic Epidemiology
+                                                </p>
+                                                <button type="button" class="close"
+                                                    data-dismiss="modal">&times;</button>
+                                                <br>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <table class="table table-striped table-sortable ">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Location</th>
+                                                            <th>Sub-topics</th>
+                                                            <th>Formal assessment</th>
+                                                            <th>Accredited</th>
+                                                            <th>Available</th>
+                                                            <th>Duration</th>
+                                                            <th>Live or Online</th>
+                                                            <th>With subtitles</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>USA </td>
+                                                            <td>RNA extraction in BSC Clinical specimen (mock NP swab
+                                                                sample) Library Preparation in Sequencing Lab
+                                                                Pre-amplification area and Post-amplification area
+                                                                Reagent preparation at start of day Qubit Analyzer to
+                                                                check libraries for concentration and quality Load
+                                                                sequencer flow cells and reagent cartridge Sequencing
+                                                                run- Miseq Review of results after sequencing run Upload
+                                                                of data to Explify or Illumina software
+                                                            </td>
+                                                            <td>Yes</td>
+                                                            <td>Not yet</td>
+                                                            <td>Regular intervals</td>
+                                                            <td>5-7 days</td>
+                                                            <td>Pre-recorded materials</td>
+                                                            <td>Plan subtitles in French</td>
+                                                        </tr>
+                                                    </tbody>
+
+                                                </table>
+                                            </div>
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger btn-sm"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
 
                         <tr>
                             <td>Johns Hopkins University</td>
                             <td>
                                 <li> <a href="https://www.youtube.com/playlist?list=PLWQWtO75LakmVZZRQKqGIMRyvEiCD-y2T"
-                                        target="_blank">JHU/NCDC Sequencing Workshop</a>
+                                        target="_blank">JHU/NCDC
+                                        Sequencing Workshop</a>
                                 </li>
                             </td>
                             <td>Intermediate</td>
@@ -334,8 +1630,89 @@ permalink: /courses/other-courses/
                             <td>Epidemiology, Sample processing, DNA/RNA extraction, Library prep, Sequencing,
                                 Bioinformatics
                             </td>
-                        </tr>
 
+                            <td>
+                                <!-- Button to Open the Modal -->
+                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                    data-target="#myModal16">
+                                    more
+                                </button>
+
+                                <!-- The Modal -->
+                                <div class="modal fade" id="myModal16">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <p class="modal-title font-weight-bold">JHU/NCDC
+                                                    Sequencing Workshop
+                                                </p>
+                                                <button type="button" class="close"
+                                                    data-dismiss="modal">&times;</button>
+                                                <br>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <table class="table table-striped table-sortable ">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Location</th>
+                                                            <th>Sub-topics</th>
+                                                            <th>Formal assessment</th>
+                                                            <th>Accredited</th>
+                                                            <th>Available</th>
+                                                            <th>Duration</th>
+                                                            <th>Live or Online</th>
+                                                            <th>With subtitles</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>USA </td>
+                                                            <td>Module 1. Introduction to Pathogen Sequencing
+                                                                Module 2.Introduction to Genomic Epidemiology
+                                                                Module 3.Sequencing with the MinION: Laboratory Methods
+                                                                Module 4.Sequencing with the MinION: Loading and
+                                                                Interpretation
+                                                                Module 5. Introduction to Bioinformatics
+                                                                Module 6.Running the Assembly Pipeline (including
+                                                                Command Line
+                                                                Introduction)
+                                                                Module 7. Working with Sequence Data
+                                                                Module 8. Sequence Alignments and Building Trees
+                                                                Module 9. Interpreting Phylogenetic Trees
+                                                            </td>
+                                                            <td>No</td>
+                                                            <td>No</td>
+                                                            <td>Other</td>
+                                                            <td>Two 1-2 hour Zoom sessions per week for 4 weeks.
+                                                                Participants are expected to watch up to 1 hour of
+                                                                pre-recorded material between sessions, and to attempt
+                                                                laboratory methods or bioinformatic analysis as
+                                                                appropriate.</td>
+                                                            <td>Pre-recorded materials</td>
+                                                            <td>Yes - pre-recorded videos will have English and French
+                                                                subtitle options. All materials and slides will be
+                                                                available in English.</td>
+                                                        </tr>
+                                                    </tbody>
+
+                                                </table>
+                                            </div>
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger btn-sm"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
 
 
                         <tr>
@@ -356,9 +1733,81 @@ permalink: /courses/other-courses/
                             </td>
                             <td>Epidemiology, Pathogen genomics for clinicians, Bioinformatics, Data analysis, data
                                 visualization, data management or a related topic</td>
+
+                            <td>
+                                <!-- Button to Open the Modal -->
+                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                    data-target="#myModal17">
+                                    more
+                                </button>
+
+                                <!-- The Modal -->
+                                <div class="modal fade" id="myModal17">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <p class="modal-title font-weight-bold">Canadian Bioinformatics
+                                                    Workshop: Infectious Disease
+                                                    Epidemiology Analysis
+                                                </p>
+                                                <button type="button" class="close"
+                                                    data-dismiss="modal">&times;</button>
+                                                <br>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <table class="table table-striped table-sortable ">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Location</th>
+                                                            <th>Sub-topics</th>
+                                                            <th>Formal assessment</th>
+                                                            <th>Accredited</th>
+                                                            <th>Available</th>
+                                                            <th>Duration</th>
+                                                            <th>Live or Online</th>
+                                                            <th>With subtitles</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Canada </td>
+                                                            <td>Understand next generation sequencing (NGS) platforms
+                                                                as applied to pathogen genomics and metagenomics
+                                                                sequencing - Analyze NGS data for pathogen surveillance
+                                                                and outbreak investigations - Analyze antimicrobial
+                                                                resistance genes - Detect emerging pathogens in
+                                                                metagenomics data - Perform phylogeographic analysis -
+                                                                Use different visualization tools for genomic
+                                                                epidemiology analysis
+                                                            </td>
+                                                            <td>No</td>
+                                                            <td>No</td>
+                                                            <td>Presented at regular intervals</td>
+                                                            <td>3-day workshop with lectures and hands-on tutorials
+                                                                usually in-person although digital during COVID.</td>
+                                                            <td>Face-to-face sessions, Live, remote sessions</td>
+                                                            <td>No</td>
+                                                        </tr>
+                                                    </tbody>
+
+                                                </table>
+                                            </div>
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger btn-sm"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
                         </tr>
-
-
 
                         <tr>
                             <td>Chan Zuckerberg Biohub</td>
@@ -375,9 +1824,75 @@ permalink: /courses/other-courses/
                             </td>
                             <td>Pathogen genomics for clinicians, Sample processing, DNA/RNA extraction, Library prep,
                                 Sequencing, Bioinformatics</td>
+                            <td>
+                                <!-- Button to Open the Modal -->
+                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                    data-target="#myModal18">
+                                    more
+                                </button>
+
+                                <!-- The Modal -->
+                                <div class="modal fade" id="myModal18">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <p class="modal-title font-weight-bold">Metagenomic
+                                                    Sequencing for Detection, Identification and Surveillance of
+                                                    Infectious
+                                                    Disease
+                                                </p>
+                                                <button type="button" class="close"
+                                                    data-dismiss="modal">&times;</button>
+                                                <br>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <table class="table table-striped table-sortable ">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Location</th>
+                                                            <th>Sub-topics</th>
+                                                            <th>Formal assessment</th>
+                                                            <th>Accredited</th>
+                                                            <th>Available</th>
+                                                            <th>Duration</th>
+                                                            <th>Live or Online</th>
+                                                            <th>With subtitles</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>USA </td>
+                                                            <td>Sample collection; lab set up; enrichment strategies
+                                                                (amplicon based)
+                                                            </td>
+                                                            <td>No</td>
+                                                            <td>No</td>
+                                                            <td>Other</td>
+                                                            <td>5-day workshop when remote. We would extend into a
+                                                                two-week workshop with hands-on wet lab work..</td>
+                                                            <td>Face-to-face sessions, Live, remote sessions</td>
+                                                            <td>No</td>
+                                                        </tr>
+                                                    </tbody>
+
+                                                </table>
+                                            </div>
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger btn-sm"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
                         </tr>
-
-
 
                         <tr>
                             <td>IsraelX</td>
@@ -395,7 +1910,72 @@ permalink: /courses/other-courses/
                                 management
                                 or
                                 a related topic</td>
+                            <td>
+                                <!-- Button to Open the Modal -->
+                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                    data-target="#myModal19">
+                                    more
+                                </button>
+
+                                <!-- The Modal -->
+                                <div class="modal fade" id="myModal19">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <p class="modal-title font-weight-bold">Essentials of Genomics and
+                                                    Biomedical Informatics
+                                                </p>
+                                                <button type="button" class="close"
+                                                    data-dismiss="modal">&times;</button>
+                                                <br>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <table class="table table-striped table-sortable ">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Location</th>
+                                                            <th>Sub-topics</th>
+                                                            <th>Formal assessment</th>
+                                                            <th>Accredited</th>
+                                                            <th>Available</th>
+                                                            <th>Duration</th>
+                                                            <th>Live or Online</th>
+                                                            <th>With subtitles</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Israel </td>
+                                                            <td>https://www.edx.org/course/essentials-of-genomics-and-biomedical-informatics
+                                                            </td>
+                                                            <td>Yes, weekly quizzes and practical assignments</td>
+                                                            <td>Yes, there is verified certificate for $49</td>
+                                                            <td>Presented at regular intervals</td>
+                                                            <td>2-3 hours per week for 12 weeks</td>
+                                                            <td>Pre-recorded materials</td>
+                                                            <td>Video transcript: English, Hebrew, Arabic</td>
+                                                        </tr>
+                                                    </tbody>
+
+                                                </table>
+                                            </div>
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger btn-sm"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
                         </tr>
+
 
                         <tr>
                             <td>University of Colorado </td>
@@ -412,7 +1992,75 @@ permalink: /courses/other-courses/
                             </td>
                             <td>Epidemiology, Pathogen genomics for clinicians, Bioinformatics, Data analysis, data
                                 visualization, data management or a related topic, Biostatistics</td>
+                            <td>
+                                <!-- Button to Open the Modal -->
+                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                    data-target="#myModal20">
+                                    more
+                                </button>
+
+                                <!-- The Modal -->
+                                <div class="modal fade" id="myModal20">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <p class="modal-title font-weight-bold">Genetic
+                                                    Epidemiology Foundations
+                                                </p>
+                                                <button type="button" class="close"
+                                                    data-dismiss="modal">&times;</button>
+                                                <br>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <table class="table table-striped table-sortable ">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Location</th>
+                                                            <th>Sub-topics</th>
+                                                            <th>Formal assessment</th>
+                                                            <th>Accredited</th>
+                                                            <th>Available</th>
+                                                            <th>Duration</th>
+                                                            <th>Live or Online</th>
+                                                            <th>With subtitles</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>USA </td>
+                                                            <td>https://www.coursera.org/learn/genetic-epidemiology
+                                                            </td>
+                                                            <td>Weekly or Modular practice exercises and quizzes</td>
+                                                            <td>Yes, course offers 'Certificate of Completion' after
+                                                                successful completion</td>
+                                                            <td>Constantly available</td>
+                                                            <td>Approximately 17 hours to complete entire course. Start
+                                                                instantly and learn at your own schedule.</td>
+                                                            <td>Pre-recorded materials</td>
+                                                            <td>Course is presented in English with Subtitles in English
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+
+                                                </table>
+                                            </div>
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger btn-sm"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
                         </tr>
+
 
                         <tr>
                             <td>University of Virginia</td>
@@ -431,6 +2079,76 @@ permalink: /courses/other-courses/
                             <td>Pathogen genomics for clinicians, Bioinformatics, Data analysis, data visualization,
                                 data
                                 management or a related topic</td>
+                            <td>
+                                <!-- Button to Open the Modal -->
+                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                    data-target="#myModal21">
+                                    more
+                                </button>
+
+                                <!-- The Modal -->
+                                <div class="modal fade" id="myModal21">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <p class="modal-title font-weight-bold">Genetic
+                                                    Epidemiology Foundations
+                                                </p>
+                                                <button type="button" class="close"
+                                                    data-dismiss="modal">&times;</button>
+                                                <br>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <table class="table table-striped table-sortable ">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Location</th>
+                                                            <th>Sub-topics</th>
+                                                            <th>Formal assessment</th>
+                                                            <th>Accredited</th>
+                                                            <th>Available</th>
+                                                            <th>Duration</th>
+                                                            <th>Live or Online</th>
+                                                            <th>With subtitles</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>USA </td>
+                                                            <td>https://www.coursera.org/learn/informatics
+                                                            </td>
+                                                            <td>Weekly practice exercise and quizzes</td>
+                                                            <td>Yes, course offers 'Certificate of Completion' after
+                                                                successful completion</td>
+                                                            <td>Presented at regular intervals</td>
+                                                            <td>1 - 3 hours per week, or approximately 14 hours to
+                                                                complete</td>
+                                                            <td>Pre-recorded materials</td>
+                                                            <td>Presented in English with Subtitles including French,
+                                                                Portuguese (European), Russian, English, Spanish
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+
+                                                </table>
+                                            </div>
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger btn-sm"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </td>
                         </tr>
 
                         <tr>
@@ -451,7 +2169,78 @@ permalink: /courses/other-courses/
                             <td>Pathogen genomics for clinicians, Sequencing, Bioinformatics, Data analysis, data
                                 visualization,
                                 data management or a related topic, Other</td>
+                            <td>
+
+                                <!-- Button to Open the Modal -->
+                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                    data-target="#myModal22">
+                                    more
+                                </button>
+
+                                <!-- The Modal -->
+                                <div class="modal fade" id="myModal22">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <p class="modal-title font-weight-bold">Whole genome
+                                                    sequencing of bacterial genomes - tools and
+                                                    applications
+                                                </p>
+                                                <button type="button" class="close"
+                                                    data-dismiss="modal">&times;</button>
+                                                <br>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <table class="table table-striped table-sortable ">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Location</th>
+                                                            <th>Sub-topics</th>
+                                                            <th>Formal assessment</th>
+                                                            <th>Accredited</th>
+                                                            <th>Available</th>
+                                                            <th>Duration</th>
+                                                            <th>Live or Online</th>
+                                                            <th>With subtitles</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Denmark </td>
+                                                            <td>https://www.coursera.org/learn/wgs-bacteria
+                                                            </td>
+                                                            <td>Weekly or Modular quizzes</td>
+                                                            <td>Yes, course offers 'Certificate of Completion' </td>
+                                                            <td>Other</td>
+                                                            <td>Approximately 7 hours to complete the modules.</td>
+                                                            <td>Pre-recorded materials</td>
+                                                            <td>Subtitles are provided in the following languages:
+                                                                Arabic, French, Portuguese (European), Italian,
+                                                                Vietnamese, German, Russian, English, Spanish
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+
+                                                </table>
+                                            </div>
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger btn-sm"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </td>
                         </tr>
+
 
                         <tr>
                             <td>Johns Hopkins University</td>
@@ -470,7 +2259,82 @@ permalink: /courses/other-courses/
                             <td>Epidemiology, Pathogen genomics for clinicians, Sample processing, DNA/RNA extraction,
                                 Library
                                 prep, Sequencing, Bioinformatics</td>
+                            <td>
+
+
+                                <!-- Button to Open the Modal -->
+                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                    data-target="#myModal23">
+                                    more
+                                </button>
+
+                                <!-- The Modal -->
+                                <div class="modal fade" id="myModal23">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <p class="modal-title font-weight-bold">Metagenomics applied to
+                                                    surveillance of pathogens and
+                                                    antimicrobial
+                                                    resistance
+                                                </p>
+                                                <button type="button" class="close"
+                                                    data-dismiss="modal">&times;</button>
+                                                <br>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <table class="table table-striped table-sortable ">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Location</th>
+                                                            <th>Sub-topics</th>
+                                                            <th>Formal assessment</th>
+                                                            <th>Accredited</th>
+                                                            <th>Available</th>
+                                                            <th>Duration</th>
+                                                            <th>Live or Online</th>
+                                                            <th>With subtitles</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>USA </td>
+                                                            <td>https://www.coursera.org/learn/metagenomics/home/info
+                                                            </td>
+                                                            <td>Short quizzes which are (MCQs - multiple choices
+                                                                questions)</td>
+                                                            <td>Yes - The course offers 'Certificate of Completion'
+                                                            </td>
+                                                            <td>Presented at regular intervals</td>
+                                                            <td>1 - 3 hours per week - approximately 15 hours to
+                                                                complete entire course</td>
+                                                            <td>Pre-recorded materials</td>
+                                                            <td>Yes, course is available in English; Subtitles available
+                                                                in French, Portuguese (European), Russian, English,
+                                                                Spanish
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+
+                                                </table>
+                                            </div>
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger btn-sm"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
                         </tr>
+
                         <tr>
                             <td>Universidad de los Andes</td>
                             <td>
@@ -488,30 +2352,78 @@ permalink: /courses/other-courses/
                             <td>Epidemiology, Pathogen genomics for clinicians, Sample processing, DNA/RNA extraction,
                                 Bioinformatics, Data analysis, data visualization, data management or a related topic
                             </td>
-                        </tr>
+                            <td>
 
-                        <tr>
-                            <td>Chan Zuckerberg Initiative</td>
-                            <td><a href="https://covidtracker.czbiohub.org/resources" target="_blank">Foundations of
-                                    genomic
-                                    epidemiology</a>
 
+                                <!-- Button to Open the Modal -->
+                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                    data-target="#myModal24">
+                                    more
+                                </button>
+
+                                <!-- The Modal -->
+                                <div class="modal fade" id="myModal24">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <p class="modal-title font-weight-bold">Applied
+                                                    bioinformatics, molecular epidemiology, and the SARS-CoV-2 pandemic
+                                                </p>
+                                                <button type="button" class="close"
+                                                    data-dismiss="modal">&times;</button>
+                                                <br>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <table class="table table-striped table-sortable ">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Location</th>
+                                                            <th>Sub-topics</th>
+                                                            <th>Formal assessment</th>
+                                                            <th>Accredited</th>
+                                                            <th>Available</th>
+                                                            <th>Duration</th>
+                                                            <th>Live or Online</th>
+                                                            <th>With subtitles</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Colombia </td>
+                                                            <td>https://www.ebi.ac.uk/training/events/cabana-workshop-applied-bioinformatics-molecular-epidemiology-and-sars-cov-2-pandemic/
+                                                            </td>
+                                                            <td>Final exam</td>
+                                                            <td>No
+                                                            </td>
+                                                            <td>Other</td>
+                                                            <td>4 days</td>
+                                                            <td>Live remote sessions</td>
+                                                            <td>No
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+
+                                                </table>
+                                            </div>
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger btn-sm"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
 
                             </td>
-                            <td>Beginner</td>
-                            <td>Public health</td>
-
-                            <td>These seminars were developed to help teach the foundational theory and components of
-                                genomic
-                                epidemiology to surveillance epidemiologists, molecular epidemiologists, and public
-                                health
-                                microbiologists conducting sequencing at county-level public health agencies.
-                            </td>
-                            <td>Epidemiology, Sequencing, Bioinformatics, Data analysis, data visualization, data
-                                management
-                                or
-                                a related topic</td>
                         </tr>
+
+
 
                         <tr>
                             <td>Chan Zuckerberg Initiative</td>
@@ -528,7 +2440,78 @@ permalink: /courses/other-courses/
                                 bringing
                                 genomic sequencing into their lab.
                             <td>Data analysis, data visualization, data management or a related topic</td>
+                            <td>
+                                <!-- Button to Open the Modal -->
+                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                    data-target="#myModal25">
+                                    more
+                                </button>
+
+                                <!-- The Modal -->
+                                <div class="modal fade" id="myModal25">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <p class="modal-title font-weight-bold">Foundations of
+                                                    genomic
+                                                    epidemiology
+                                                </p>
+                                                <button type="button" class="close"
+                                                    data-dismiss="modal">&times;</button>
+                                                <br>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <table class="table table-striped table-sortable ">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Location</th>
+                                                            <th>Sub-topics</th>
+                                                            <th>Formal assessment</th>
+                                                            <th>Accredited</th>
+                                                            <th>Available</th>
+                                                            <th>Duration</th>
+                                                            <th>Live or Online</th>
+                                                            <th>With subtitles</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>USA </td>
+                                                            <td>Inferring genetic divergence trees, molecular clocks and
+                                                                time trees, phylogeography, consensus genome QC, genomic
+                                                                epi sampling design, Pango nomenclature,
+                                                                pathogen-specific genomic epi.
+                                                            </td>
+                                                            <td>No</td>
+                                                            <td>No
+                                                            </td>
+                                                            <td>Presented at regular intervals</td>
+                                                            <td>1 Hour seminar</td>
+                                                            <td>Pre-recorded</td>
+                                                            <td>No
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+
+                                                </table>
+                                            </div>
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger btn-sm"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
                         </tr>
+
 
                         <tr>
                             <td>Centers for Disease Control and Prevention/ OAMD</td>
@@ -545,14 +2528,90 @@ permalink: /courses/other-courses/
                             <td>Sequencing, Bioinformatics, Data analysis, data visualization, data management or a
                                 related
                                 topic</td>
+                            <td>
+
+
+                                <!-- Button to Open the Modal -->
+                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                    data-target="#myModal26">
+                                    more
+                                </button>
+
+                                <!-- The Modal -->
+                                <div class="modal fade" id="myModal26">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <p class="modal-title font-weight-bold">AMD
+                                                    Academy Bioinformatics course
+                                                </p>
+                                                <button type="button" class="close"
+                                                    data-dismiss="modal">&times;</button>
+                                                <br>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <table class="table table-striped table-sortable ">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Location</th>
+                                                            <th>Sub-topics</th>
+                                                            <th>Formal assessment</th>
+                                                            <th>Accredited</th>
+                                                            <th>Available</th>
+                                                            <th>Duration</th>
+                                                            <th>Live or Online</th>
+                                                            <th>With subtitles</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>USA </td>
+                                                            <td>Introduction to Bioinformatics Introduction to Bacterial
+                                                                Genomics Intro to Linux Environment Bioinformatics
+                                                                resources for public health Getting things done in Linux
+                                                                Quality control of NGS Data Genome Assembly Sequence
+                                                                alignment and searching Pathogen Characterization and
+                                                                Annotation Genetic inference Data Visualization
+                                                                Communication of NGS data
+                                                            </td>
+                                                            <td>Yes</td>
+                                                            <td>No; the course does offer CEU via APHL.
+                                                            </td>
+                                                            <td>Other</td>
+                                                            <td>Typically 5-day in person workshop. Other offerings were
+                                                                in place during COVID-19.</td>
+                                                            <td>Face-to-face sessions, Live, remote sessions,
+                                                                Pre-recorded materials</td>
+                                                            <td>No
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+
+                                                </table>
+                                            </div>
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger btn-sm"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
                         </tr>
 
-
                         <tr>
-                            <td>(US) Centers for Disease Control and Prevention</td>
+                            <td>Centers for Disease Control and Prevention</td>
                             <td>
                                 <li><a href="https://www.cdc.gov/amd/what-we-do/building-capacity-workforce.html"
-                                        target="_blank">Molecular Epidemiology for Epidemiologists</a></li>
+                                        target="_blank">Molecular
+                                        Epidemiology for Epidemiologists</a></li>
 
                             </td>
                             <td>Beginner</td>
@@ -560,13 +2619,91 @@ permalink: /courses/other-courses/
 
                             <td>Epidemiologists working in US state and local health departments.
                             <td>Epidemiology, Data analysis, data visualization, data management or a related topic</td>
+                            <td>
+
+                                <!-- Button to Open the Modal -->
+                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                    data-target="#myModal27">
+                                    more
+                                </button>
+
+                                <!-- The Modal -->
+                                <div class="modal fade" id="myModal27">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <p class="modal-title font-weight-bold">Molecular
+                                                    Epidemiology for Epidemiologists
+                                                </p>
+                                                <button type="button" class="close"
+                                                    data-dismiss="modal">&times;</button>
+                                                <br>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <table class="table table-striped table-sortable ">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Location</th>
+                                                            <th>Sub-topics</th>
+                                                            <th>Formal assessment</th>
+                                                            <th>Accredited</th>
+                                                            <th>Available</th>
+                                                            <th>Duration</th>
+                                                            <th>Live or Online</th>
+                                                            <th>With subtitles</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>USA </td>
+                                                            <td>Microbial evolution Next-gen sequencing technology
+                                                                Genome assembly Phylogenetic trees hqSNP and MLST
+                                                                Epidemiologic inference from sequence data Phenotypic
+                                                                inference (antimicrobial resistance) Outbreak
+                                                                investigation Network analysis (contact tracing)
+                                                                Diagnostics Challenges in IT and data integration
+                                                            </td>
+                                                            <td>Not at present, planned for online</td>
+                                                            <td>Not at present, planned for online
+                                                            </td>
+                                                            <td>Present at regular intervals</td>
+                                                            <td>Two-day workshop with lectures and hands-on exercises.
+                                                            </td>
+                                                            <td>Face-to-face sessions, Live, remote sessions,
+                                                                Pre-recorded materials</td>
+                                                            <td>No
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+
+                                                </table>
+                                            </div>
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger btn-sm"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </td>
                         </tr>
+
+
 
                         <tr>
                             <td>NGS Academy for the Africa Pathogen Genomics Initiative</td>
                             <td>
                                 <li><a href="https://uct-cbio.github.io/ngs-academy/2021/NGS-SARS-CoV-2-past-course"
-                                        target="_blank">Next Generation Sequencing Bioinformatics Training Course</a>
+                                        target="_blank">Next
+                                        Generation Sequencing Bioinformatics Training Course</a>
                                 </li>
 
                             </td>
@@ -580,14 +2717,93 @@ permalink: /courses/other-courses/
                             <td>Pathogen genomics for clinicians, Bioinformatics, Data analysis, data visualization,
                                 data
                                 management or a related topic, Biostatistics</td>
+                            <td>
+
+                                <!-- Button to Open the Modal -->
+                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                    data-target="#myModal28">
+                                    more
+                                </button>
+
+                                <!-- The Modal -->
+                                <div class="modal fade" id="myModal28">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <p class="modal-title font-weight-bold">Next
+                                                    Generation Sequencing Bioinformatics Training Course
+                                                </p>
+                                                <button type="button" class="close"
+                                                    data-dismiss="modal">&times;</button>
+                                                <br>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <table class="table table-striped table-sortable ">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Location</th>
+                                                            <th>Sub-topics</th>
+                                                            <th>Formal assessment</th>
+                                                            <th>Accredited</th>
+                                                            <th>Available</th>
+                                                            <th>Duration</th>
+                                                            <th>Live or Online</th>
+                                                            <th>With subtitles</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Cape Town South Africa </td>
+                                                            <td>The programme will cover the following topics: Intro
+                                                                to Unix/Linux & running workflows, Introduction to
+                                                                NGS Technologies, NGS data pre-processing and QC,
+                                                                Alignment to reference sequences, Variant calling and
+                                                                annotation, ChIP-Seq â€¢ RNA-Seq and Genome assembly
+                                                            </td>
+                                                            <td>Includes multiple tests and assignments</td>
+                                                            <td>Course certificate will be offered
+                                                            </td>
+                                                            <td>Present at regular intervals</td>
+                                                            <td>The course will run for 8 weeks on Tuesdays and
+                                                                Thursdays (4 hours per session) from the 13th of April
+                                                                until the 10th of June 2021
+                                                            </td>
+                                                            <td>Face-to-face sessions, Live, remote sessions,
+                                                                Pre-recorded materials</td>
+                                                            <td>No
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+
+                                                </table>
+                                            </div>
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger btn-sm"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </td>
                         </tr>
+
 
 
                         <tr>
                             <td>Institut Pasteur de Tunis</td>
                             <td>
                                 <li><a href="https://www.h3abionet.org/categories/training/"
-                                        target="_blank">Introduction to NGS Technologies and their applications</a></li>
+                                        target="_blank">Introduction to NGS Technologies
+                                        and their applications</a></li>
                                 </li>
                             </td>
                             <td>Beginner</td>
@@ -595,10 +2811,83 @@ permalink: /courses/other-courses/
 
                             <td>Mainly experimental biologists at research institutions
                             <td>Sequencing</td>
+
+                            <td>
+
+
+                                <!-- Button to Open the Modal -->
+                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                    data-target="#myModal29">
+                                    more
+                                </button>
+
+                                <!-- The Modal -->
+                                <div class="modal fade" id="myModal29">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <p class="modal-title font-weight-bold">Introduction to NGS Technologies
+                                                    and their applications
+                                                </p>
+                                                <button type="button" class="close"
+                                                    data-dismiss="modal">&times;</button>
+                                                <br>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <table class="table table-striped table-sortable ">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Location</th>
+                                                            <th>Sub-topics</th>
+                                                            <th>Formal assessment</th>
+                                                            <th>Accredited</th>
+                                                            <th>Available</th>
+                                                            <th>Duration</th>
+                                                            <th>Live or Online</th>
+                                                            <th>With subtitles</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Tunisia </td>
+                                                            <td>- Human Genome Project - Evolution of Sequencing
+                                                                Technologies - Databases and resources to retrieve
+                                                                relevant Omics information - Applications of NGS
+                                                            </td>
+                                                            <td>No</td>
+                                                            <td>Not alone, but as part of a H3ABioNet course
+                                                            </td>
+                                                            <td>Present at regular intervals</td>
+                                                            <td>2 hours long
+                                                            </td>
+                                                            <td>
+                                                                Pre-recorded materials</td>
+                                                            <td>No
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+
+                                                </table>
+                                            </div>
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger btn-sm"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </td>
                         </tr>
 
-
-
+                        <!-- without modal -->
                         <tr>
                             <td>University of Glasglow</td>
                             <td>
@@ -613,9 +2902,9 @@ permalink: /courses/other-courses/
 
                             <td>Experimental biologists at research institutions</td>
                             <td></td>
+                            <td>
+                            <td>
                         </tr>
-
-
 
                         <tr>
                             <td>University of Pennsylvania</td>
@@ -630,11 +2919,8 @@ permalink: /courses/other-courses/
 
                             <td>Experimental biologists</td>
                             <td></td>
+                            <td></td>
                         </tr>
-
-
-
-
 
                         <tr>
                             <td>Wellcome connecting science</td>
@@ -650,8 +2936,8 @@ permalink: /courses/other-courses/
 
                             <td>Bioinformaticians based at health institute</td>
                             <td></td>
+                            <td></td>
                         </tr>
-
 
                         <tr>
                             <td>Monash University</td>
@@ -665,7 +2951,10 @@ permalink: /courses/other-courses/
                             <td>Researchers and public health officials interested in viral genomics and bioinformatics.
                             </td>
                             <td></td>
+                            <td></td>
                         </tr>
+
+
 
                         <tr>
                             <td>Wellcome connecting science</td>
@@ -680,7 +2969,9 @@ permalink: /courses/other-courses/
 
                             <td>Researchers working in the field of infectious diseases in Asia. </td>
                             <td></td>
+                            <td></td>
                         </tr>
+
 
                         <tr>
                             <td>University of Ibadan</td>
@@ -694,10 +2985,12 @@ permalink: /courses/other-courses/
 
                             <td>Postgraduate students</td>
                             <td></td>
+                            <td></td>
                         </tr>
 
 
 
+                        <!-- with a Modal -->
                         <tr>
                             <td>University of Ibadan</td>
                             <td>
@@ -714,10 +3007,83 @@ permalink: /courses/other-courses/
                             <td>Pathogen genomics for clinicians, Bioinformatics, Data analysis, data visualization,
                                 data
                                 management or a related topic</td>
+
+                            <td>
+
+                                <!-- Button to Open the Modal -->
+                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                    data-target="#myModal30">
+                                    more
+                                </button>
+
+                                <!-- The Modal -->
+                                <div class="modal fade" id="myModal30">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <p class="modal-title font-weight-bold">Sustainable development in
+                                                    bioinformatics to support public
+                                                    health
+                                                </p>
+                                                <button type="button" class="close"
+                                                    data-dismiss="modal">&times;</button>
+                                                <br>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <table class="table table-striped table-sortable ">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Location</th>
+                                                            <th>Sub-topics</th>
+                                                            <th>Formal assessment</th>
+                                                            <th>Accredited</th>
+                                                            <th>Available</th>
+                                                            <th>Duration</th>
+                                                            <th>Live or Online</th>
+                                                            <th>With subtitles</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Nigeria </td>
+                                                            <td>1. Next-Generation Sequencing technologies 2. The use of
+                                                                online platforms and user-friendly workflows to conduct
+                                                                bioinformatic analyses (genome assembly, speciation, SNP
+                                                                phylogeny, AMR gene prediction), 3. How to visualize and
+                                                                interpret the results from bioinformatic analyses
+                                                            </td>
+                                                            <td>No</td>
+                                                            <td>No
+                                                            </td>
+                                                            <td>Other</td>
+                                                            <td>A one or two-week course every month for three months
+                                                            </td>
+                                                            <td>
+                                                                Pre-recorded materials</td>
+                                                            <td>No
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+
+                                                </table>
+                                            </div>
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger btn-sm"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </td>
                         </tr>
-
-
-
                         <tr>
                             <td>Makerere University</td>
                             <td>
@@ -734,16 +3100,84 @@ permalink: /courses/other-courses/
                                 analysis,
                                 data
                                 visualization, data management or a related topic</td>
+                            <td>
+                                <!-- Button to Open the Modal -->
+                                <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                    data-target="#myModal31">
+                                    more
+                                </button>
+
+                                <!-- The Modal -->
+                                <div class="modal fade" id="myModal31">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <p class="modal-title font-weight-bold">
+                                                    Applied Microbial Genomics
+                                                </p>
+                                                <button type="button" class="close"
+                                                    data-dismiss="modal">&times;</button>
+                                                <br>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <table class="table table-striped table-sortable ">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Location</th>
+                                                            <th>Sub-topics</th>
+                                                            <th>Formal assessment</th>
+                                                            <th>Accredited</th>
+                                                            <th>Available</th>
+                                                            <th>Duration</th>
+                                                            <th>Live or Online</th>
+                                                            <th>With subtitles</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Uganda </td>
+                                                            <td>Bioinformatics tools in clinical microbiology
+                                                            </td>
+                                                            <td>Yes</td>
+                                                            <td>Yes
+                                                            </td>
+                                                            <td>Constantly available</td>
+                                                            <td>Hour long seminar
+                                                            </td>
+                                                            <td>
+                                                                Live, remote sessions</td>
+                                                            <td>English
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+
+                                                </table>
+                                            </div>
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger btn-sm"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
                         </tr>
 
 
-
-                        <!-- Additional -->
+                        <!-- no modal -->
                         <tr>
                             <td>Wellcome connecting science</td>
                             <td>
                                 <li> <a href="https://www.futurelearn.com/courses/linux-for-bioinformatics"
-                                        target="_blank">Bioinformatics for Biologists: An Introduction to Linux, Bash
+                                        target="_blank">Bioinformatics for
+                                        Biologists: An Introduction to Linux, Bash
                                         Scripting, and R</a>
                                 </li>
 
@@ -754,15 +3188,16 @@ permalink: /courses/other-courses/
                             <td>Bioinformaticians based at health institutes and experimental biologists at research
                                 institutions</td>
                             <td></td>
+                            <td></td>
                         </tr>
-
 
                         <!-- Additional -->
                         <tr>
                             <td>Wellcome connecting science</td>
                             <td>
                                 <li> <a href="https://www.futurelearn.com/courses/antimicrobial-resistance"
-                                        target="_blank">Bacterial Genomes: Antimicrobial Resistance in Bacterial
+                                        target="_blank">Bacterial Genomes:
+                                        Antimicrobial Resistance in Bacterial
                                         Pathogens</a>
                                 </li>
 
@@ -773,8 +3208,8 @@ permalink: /courses/other-courses/
                             <td>Bioinformaticians based at health institutes and experimental biologists at research
                                 institutions</td>
                             <td></td>
+                            <td></td>
                         </tr>
-
 
 
                         <!-- Additional -->
@@ -782,7 +3217,8 @@ permalink: /courses/other-courses/
                             <td>Wellcome connecting science</td>
                             <td>
                                 <li> <a href="https://www.futurelearn.com/courses/bacterial-genomes-bioinformatics"
-                                        target="_blank">Bacterial Genomes I: From DNA to Protein Function Using
+                                        target="_blank">Bacterial
+                                        Genomes I: From DNA to Protein Function Using
                                         Bioinformatics</a>
                                 </li>
 
@@ -793,7 +3229,9 @@ permalink: /courses/other-courses/
                             <td>Bioinformaticians based at health institutes and experimental biologists at research
                                 institutions</td>
                             <td></td>
+                            <td></td>
                         </tr>
+
 
 
                         <tr>
@@ -811,7 +3249,10 @@ permalink: /courses/other-courses/
                             <td>Bioinformaticians based at health institutes and experimental biologists at research
                                 institutions</td>
                             <td></td>
+                            <td></td>
                         </tr>
+
+
 
                         <tr>
                             <td>Wellcome connecting science</td>
@@ -828,6 +3269,7 @@ permalink: /courses/other-courses/
                             <td>Bioinformaticians based at health institutes and experimental biologists at research
                                 institutions</td>
                             <td></td>
+                            <td></td>
                         </tr>
 
                         <tr>
@@ -843,6 +3285,7 @@ permalink: /courses/other-courses/
 
                             <td>Bioinformaticians based at health institutes and experimental biologists at research
                                 institutions</td>
+                            <td></td>
                             <td></td>
                         </tr>
 
@@ -862,14 +3305,23 @@ permalink: /courses/other-courses/
                             <td>Bioinformaticians based at health institutes and experimental biologists at research
                                 institutions</td>
                             <td></td>
+                            <td></td>
                         </tr>
-
-
-
+                    <tfoot>
+                        <tr>
+                            <th>Organisation</th>
+                            <th>Course Title</th>
+                            <th>Course Level</th>
+                            <th>Context</th>
+                            <th>Audience</th>
+                            <th>Primary focus areas</th>
+                            <th>More</th>
+                        </tr>
+                    </tfoot>
                     </tbody>
                 </table>
             </div>
-            <script src="js/tablesort.js"></script>
+
 
         </div>
 
@@ -880,12 +3332,6 @@ permalink: /courses/other-courses/
 
 
 <script>
-    $(document).ready(function () {
-        $("#myInput").on("keyup", function () {
-            var value = $(this).val().toLowerCase();
-            $("#myTable tr").filter(function () {
-                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-            });
-        });
-    });
+
+
 </script>
