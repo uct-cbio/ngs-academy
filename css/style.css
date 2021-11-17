@@ -1080,3 +1080,8 @@ padding: 10px;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.59);
 
 }
+
+.btn-danger{
+  background-color: hsl(349.91, 62%, 34%) !important;
+  border-color: white !important;
+}
