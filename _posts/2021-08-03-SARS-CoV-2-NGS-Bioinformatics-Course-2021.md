@@ -440,13 +440,13 @@ and sharing, advanced bioinformatics analysis, and presenting data to inform pol
     <ul>
   <li>Fogarty International Center, NIH</li>
   
-    <li>Chan Zuckerberg Biohub</li> -->
+  
 </ul></td>
             <td> <ul>
               <li>
 Dr Nídia Trovão, Dr James Otieno</li>
 
-<li>Dr Alli Black</li> -->
+
 </ul></td>
     </tr>
 
@@ -482,7 +482,7 @@ Dr Nídia Trovão, Dr James Otieno</li>
       </th>
       <td> <ul>
              <li>                      
-    - Spatiotemporal dynamics
+     Spatiotemporal dynamics
 </li>
              
 </ul></td>
