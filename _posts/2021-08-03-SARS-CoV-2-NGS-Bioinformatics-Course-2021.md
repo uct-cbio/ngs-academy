@@ -419,7 +419,7 @@ and sharing, advanced bioinformatics analysis, and presenting data to inform pol
       Module 3
        &nbsp;&nbsp; &nbsp;&nbsp; </th>
       <td>   
-      Phylodynamics - Evolutionary and Temporal Patterns
+      Phylodynamics 
       <ul>
       <li><a href="https://protect-za.mimecast.com/s/vGmRCr0qw9iEB74Ps76wVQ" target="_blank" title="https://protect-za.mimecast.com/s/vGmRCr0qw9iEB74Ps76wVQ" contenteditable="false">Session 1: Phylodynamics 101 - What is Phylodynamics?</a></li>
       <li>
