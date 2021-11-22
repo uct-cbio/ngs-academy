@@ -439,16 +439,66 @@ and sharing, advanced bioinformatics analysis, and presenting data to inform pol
       <td>
     <ul>
   <li>Fogarty International Center, NIH</li>
-    <li>Bedford Lab at the Fred Hutch</li>
-    <li>Chan Zuckerberg Biohub</li>
+  
+    <li>Chan Zuckerberg Biohub</li> -->
 </ul></td>
             <td> <ul>
               <li>
 Dr Nídia Trovão, Dr James Otieno</li>
-<li>Dr John Huddleston</li>
-<li>Dr Alli Black</li>
+
+<li>Dr Alli Black</li> -->
 </ul></td>
     </tr>
+
+<tr>
+      <th scope="row">2-12 Nov 2021
+      <br>
+      Module 3
+      </th>
+      <td> <ul>
+             <li>                      
+     Evolutionary Temporal Patterns
+</li>
+             
+</ul></td>
+      <td>
+    <ul>
+  <li>Bedford Lab at the Fred Hutch</li>
+
+</ul></td>
+            <td> <ul>
+            
+ <li>Dr John Huddleston</li>
+
+</ul></td>
+    </tr>
+
+
+
+<tr>
+      <th scope="row">2-12 Nov 2021
+      <br>
+      Module 3
+      </th>
+      <td> <ul>
+             <li>                      
+    - Spatiotemporal dynamics
+</li>
+             
+</ul></td>
+      <td>
+    <ul>
+  <li>Chan Zuckerberg Biohub</li>
+
+</ul></td>
+            <td> <ul>
+            
+ <li>Dr Alli Black</li>
+
+</ul></td>
+    </tr>
+
+
 <tr>
       <th scope="row">2-12 Nov 2021
       <br>
