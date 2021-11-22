@@ -86,8 +86,7 @@ The NGS Academy forms part of the Africa PGI. This initiative is funded by the B
 <b>Objectives and expected outcomes:</b> 
 
 <ol>
-<li>The course was designed for individuals who were currently, or would be, involved in bioinformatics analysis of SARS-CoV-2 data. The training will focused on key topics such as data curation
-and sharing, advanced bioinformatics analysis, and presenting data to inform policy makers.</li>
+<li>The course was designed for individuals who were currently, or would be, involved in bioinformatics analysis of SARS-CoV-2 data. The training focused on key topics such as data curation and sharing, advanced bioinformatics analysis, and presenting data to inform policy makers.</li>
 
 </ol>
 
