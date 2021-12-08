@@ -289,18 +289,11 @@ The NGS Academy forms part of the Africa PGI. This initiative is funded by the B
       <td>
       <ul>
   
-  <li>ENA</li>
-
-  <li>NCBI</li>
-    <li>KRISP/CERI</li>
+  <li>PHA4GE, Simon Fraser University</li>
  
 </ul></td>
             <td><ul>
              <li>Dr Emma Griffiths</li>
-  <li>Carla Cummins</li>
-   <li>Ilene Mizrachi, Linda Yankie, Lydia Fleischmann, Rick LaPoint</li>
-
-   <li>San Emmanuel James, Houriiyah Tegally</li>
 </ul></td>
     </tr>
  <tr>
@@ -309,7 +302,7 @@ The NGS Academy forms part of the Africa PGI. This initiative is funded by the B
       Module 2
       Session 2</th>
       <td> <ul>
-                         <li> <a href="{{ site.url }}uploads/data_submission.pdf" target="_blank"> SARS-CoV-2 data submission</a></li>
+                         <li> <a href="{{ site.url }}uploads/data_submission.pdf" target="_blank"> SARS-CoV-2 data submission: INSDC</a></li>
     
 </ul></td>
       <td>
@@ -318,14 +311,11 @@ The NGS Academy forms part of the Africa PGI. This initiative is funded by the B
   <li>ENA</li>
 
   <li>NCBI</li>
-    <li>KRISP/CERI</li>
 </ul></td>
             <td><ul>
-               <li>Dr Emma Griffiths</li>
-  <li>Carla Cummins</li>
-   <li>Ilene Mizrachi, Linda Yankie, Lydia Fleischmann, Rick LaPoint</li>
+               <li>Carla Cummins</li>
 
-   <li>San Emmanuel James, Houriiyah Tegally</li>
+   <li>Ilene Mizrachi, Linda Yankie, Lydia Fleischmann, Rick LaPoint</li>
 </ul></td>
     </tr>
  <tr>
@@ -342,18 +332,9 @@ The NGS Academy forms part of the Africa PGI. This initiative is funded by the B
 </ul></td>
       <td>
       <ul>
-  
- 
-  <li>ENA</li>
-
-  <li>NCBI</li>
     <li>KRISP/CERI</li>
 </ul></td>
             <td>  <ul>
-           <li>Dr Emma Griffiths</li>
-  <li>Carla Cummins</li>
-   <li>Ilene Mizrachi, Linda Yankie, Lydia Fleischmann, Rick LaPoint</li>
-
    <li>San Emmanuel James, Houriiyah Tegally</li>
 </ul></td>
     </tr>
