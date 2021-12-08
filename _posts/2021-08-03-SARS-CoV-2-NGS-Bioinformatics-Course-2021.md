@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "SARS-CoV-2 Bioinformatics Training"
-date: 2021-08-03
+date: 2021-08-31
 main_menu: courses
 permalink: /:year/:title
 category: past-course
@@ -86,8 +86,7 @@ The NGS Academy forms part of the Africa PGI. This initiative is funded by the B
 <b>Objectives and expected outcomes:</b> 
 
 <ol>
-<li>The course was designed for individuals who were currently, or would be, involved in bioinformatics analysis of SARS-CoV-2 data. The training will focused on key topics such as data curation
-and sharing, advanced bioinformatics analysis, and presenting data to inform policy makers.</li>
+<li>The course was designed for individuals who were currently, or would be, involved in bioinformatics analysis of SARS-CoV-2 data. The training focused on key topics such as data curation and sharing, advanced bioinformatics analysis, and presenting data to inform policy makers.</li>
 
 </ol>
 
@@ -280,7 +279,9 @@ and sharing, advanced bioinformatics analysis, and presenting data to inform pol
       Module 2
       Session 1 &nbsp;&nbsp; &nbsp;&nbsp; </th>
       <td>  <ul>
-             <li>  PHA4GE SARS-CoV-2 contextual data specification and template</li>
+             <li>  
+             <a href="https://github.com/pha4ge/SARS-CoV-2-Contextual-Data-Specification#sars-cov-2-contextual-data-specification-overview" target="_blank"> PHA4GE SARS-CoV-2 contextual data specification and template</a>
+            </li>
                 
 
                                               
@@ -333,7 +334,7 @@ and sharing, advanced bioinformatics analysis, and presenting data to inform pol
       Module 2
       Session 3</th>
       <td>   <ul>
-                    <li>  PHA4GE SARS-CoV-2 contextual data specification and template demonstration</li>
+                    <li>SARS-CoV-2 data submission: GISAID</li>
 
              
 </ul></td>
@@ -419,7 +420,7 @@ and sharing, advanced bioinformatics analysis, and presenting data to inform pol
       Module 3
        &nbsp;&nbsp; &nbsp;&nbsp; </th>
       <td>   
-      Phylodynamics - Evolutionary and Temporal Patterns
+      Phylodynamics 
       <ul>
       <li><a href="https://protect-za.mimecast.com/s/vGmRCr0qw9iEB74Ps76wVQ" target="_blank" title="https://protect-za.mimecast.com/s/vGmRCr0qw9iEB74Ps76wVQ" contenteditable="false">Session 1: Phylodynamics 101 - What is Phylodynamics?</a></li>
       <li>
