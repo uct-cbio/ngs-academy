@@ -279,7 +279,9 @@ The NGS Academy forms part of the Africa PGI. This initiative is funded by the B
       Module 2
       Session 1 &nbsp;&nbsp; &nbsp;&nbsp; </th>
       <td>  <ul>
-             <li>  PHA4GE SARS-CoV-2 contextual data specification and template</li>
+             <li>  
+             <a href="https://github.com/pha4ge/SARS-CoV-2-Contextual-Data-Specification#sars-cov-2-contextual-data-specification-overview" target="_blank"> PHA4GE SARS-CoV-2 contextual data specification and template</a>
+            </li>
                 
 
                                               
@@ -332,7 +334,7 @@ The NGS Academy forms part of the Africa PGI. This initiative is funded by the B
       Module 2
       Session 3</th>
       <td>   <ul>
-                    <li>  PHA4GE SARS-CoV-2 contextual data specification and template demonstration</li>
+                    <li>SARS-CoV-2 data submission: GISAID</li>
 
              
 </ul></td>
