@@ -334,7 +334,9 @@ The NGS Academy forms part of the Africa PGI. This initiative is funded by the B
       Module 2
       Session 3</th>
       <td>   <ul>
-                    <li>SARS-CoV-2 data submission: GISAID</li>
+                    <li>
+                    <a href="{{ site.url }}uploads/GISAID_intro_talk_FINAL_VMRC_HT.pdf" target="_blank"> SARS-CoV-2 data submission: GISAID</a>
+                    </li>
 
              
 </ul></td>
