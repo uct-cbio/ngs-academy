@@ -360,7 +360,7 @@ The NGS Academy forms part of the Africa PGI. This initiative is funded by the B
       <br>
   &nbsp;&nbsp; &nbsp;&nbsp; </th>
       <td>  <ul>
-             <li>1. <a href="{{ site.url }}uploads/XMLCSSMarkdowntraining_2021.pdf" target="_blank">File formats including XML, Markdown </a></li>
+             <li>1. <a href="{{ site.url }}uploads/XMLCSSMarkdowntraining_2021.pdf" target="_blank">File formats including CSS, XML & Markdown </a></li>
              <li>2. Recap: Phylogenetics Analysis (19-22 July 2021 )</li>
              <li>3. <a href="https://phylodynamics.github.io/" target="_blank">Phylogenetics software </a></li>
                 
