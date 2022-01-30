@@ -81,6 +81,13 @@
             <li id="01courselist" {% if page.url=="/courses/" %}class="sub_color" {% endif %} id="left_menu_item"><a
                     href="/courses/">
                     Courses<span class="sub-arrow"></span></a>
+
+                <ul class="courselist indent_sub_list">
+                    <li {% if page.url=="/calendar/" %} class="sub_color" {% endif %}><a href="/calendar/">Calendar</a>
+                    </li>
+
+                </ul>
+
                 <ul class="courselist indent_sub_list">
                     <li {% if page.url=="/courses/upcoming-courses/" %} class="sub_color" {% endif %}><a
                             href="/courses/upcoming-courses/">
@@ -88,11 +95,11 @@
 
                 </ul>
 
-                <ul class="courselist indent_sub_list">
+                <!-- <ul class="courselist indent_sub_list">
                     <li {% if page.url=="/courses/available-courses/" %} class="sub_color" {% endif %}><a
                             href="/courses/available-courses/"> Available courses </a></li>
 
-                </ul>
+                </ul> -->
 
                 <ul class="courselist indent_sub_list">
                     <li {% if page.url=="/courses/past-courses/" %} class="sub_color" {% endif %}><a
