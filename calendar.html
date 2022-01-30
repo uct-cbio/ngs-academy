@@ -1,0 +1,54 @@
+---
+layout: default
+title: Calendar
+permalink: /calendar/
+---
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8' />
+  <link href='fullcalendarlib/main.css' rel='stylesheet' />
+  <script src='fullcalendarlib/main.js'></script>
+
+
+  <script>
+
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var calendarEl = document.getElementById('calendar');
+
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        googleCalendarApiKey: 'AIzaSyAuKfoAVLavplIfA-lajpZ2hE_-NKIDFqs',
+        eventSources: [
+          {
+            googleCalendarId: 'perceval.maturure@gmail.com'
+          },
+          // {
+          //   googleCalendarId: 'efgh5678@group.calendar.google.com',
+          //   className: 'nice-event'
+          // }
+        ]
+      });
+
+      calendar.render();
+    });
+
+
+
+  </script>
+</head>
+
+<body>
+
+
+  <div class="row">
+
+    <div class="col-sm-12">
+
+      <div id='calendar'></div>
+    </div>
+  </div>
+</body>
+
+</html>
