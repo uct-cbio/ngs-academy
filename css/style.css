@@ -1085,3 +1085,11 @@ padding: 10px;
   background-color: hsl(349.91, 62%, 34%) !important;
   border-color:#8c2133 !important;
 }
+/* 
+calendar colors  */
+
+.fc-h-event{
+  border: 1px solid var(--fc-event-border-color, #8c2133) !important;
+  background-color: var(--fc-event-bg-color, #8c2133) !important;
+}
+
