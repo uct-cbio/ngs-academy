@@ -35,7 +35,7 @@ The course will cover:
     <!-- <p class="small"> Source: CBIO UCT</p> -->
   </div>
     </div>
-    <div class="col-sm-6">
+    <div class="col-sm-6 my-auto">
          <div><img alt="..." src="/ngs-academy/img/imp2.png" width="100%"/>
     <!-- <p class="small"> Source: CBIO UCT</p> -->
   </div>
