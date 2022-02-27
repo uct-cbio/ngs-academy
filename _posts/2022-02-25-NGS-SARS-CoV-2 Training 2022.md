@@ -35,9 +35,10 @@ The course will cover:
     <!-- <p class="small"> Source: CBIO UCT</p> -->
   </div>
     </div>
-    <div class="col-sm-6 my-auto">
+    <div class="col-sm-6 ">
          <div><img alt="..." src="/ngs-academy/img/imp2.png" width="100%"/>
     <!-- <p class="small"> Source: CBIO UCT</p> -->
+    <a class="btn btn-secondary btn-lg" href="https://redcap.h3abionet.org/redcap/surveys/?s=P3AAXNPKJ84MTHAC" role="button" target="_blank">Click here to apply</a>
   </div>
     <div>
 
@@ -45,10 +46,10 @@ The course will cover:
     </div>
   </div>
 
-  <div class="row">
+  <!-- <div class="row">
   <div class="col-sm-12 text-center"><a class="btn btn-secondary btn-lg" href="https://redcap.h3abionet.org/redcap/surveys/?s=P3AAXNPKJ84MTHAC" role="button" target="_blank">Click here to apply</a></div>
  
-</div>
+</div> -->
 <!-- test -->
 
 <h3>Logistics: </h3>
