@@ -3,7 +3,7 @@ layout: default
 title:  "Genetic Analysis of Population-based Association Studies (Virtual) "
 date: 2021-07-10
 permalink: /:year/:title
-category: available
+category: available_ng
 
 course_dates: "20-24 September 2021"
 ---
