@@ -3,7 +3,7 @@ layout: default
 title:  " Bioinformatics for Immunologists  "
 date: 2021-07-10
 permalink: /:year/:title
-category: available
+category: available_tag
 
 course_dates: "27 Sept - 01 October 2021"
 ---
