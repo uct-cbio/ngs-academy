@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "Training on the Genomic Surveillance of SARS-CoV-2 2022"
+title:  "SARS-CoV-2 NGS for Surveillance Training 2022"
 date: 2022-02-25
 main_menu: courses
 permalink: /:year/:title
@@ -12,20 +12,21 @@ group: group1
 ---
   
 <!-- ### SARS-CoV-2 NGS bioinformatics course 2021 -->
-The NGS Academy forms part of the Africa PGI. This initiative is funded by the Bill & Melinda Gates Foundation. Our training initiatives are carried out in partnership with the African Society for Laboratory Medicine (ASLM).
+The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI). This initiative is funded by the Bill & Melinda Gates Foundation. Our training initiatives are carried out in partnership with the African Society for Laboratory Medicine (ASLM).
 <hr>
 
 <!-- <b>Course outline:</b> [ SARS-CoV-2 NGS Bioinformatics Course 2021]({{ site.url }}/docs/course_outline.pdf) -->
 
 <p align="left"><b >Course overview:</b></p>
 
- <p align="left">The course is designed for individuals looking to broaden their knowledge and build skills in the use of next generation sequencing (NGS) for SARS-CoV-2 surveillance.   
+ <p align="left">The course is designed for individuals looking to broaden their knowledge and build skills in the use of next generation sequencing (NGS) for SARS-CoV-2 surveillance particularly those who work in the laboratory on sample preparation, sequencing and basic data analysis.   
  <p>
 
 
 <p align="left"><b class="text-left">Intended audience:</b></p>
 
-<p>Personnel of national public health institutions on the African continent, carrying out bioinformatics analyses, and individuals involved in SARS-CoV-2 research. </p>
+<p>Personnel of national public health institutions on the African continent, carrying out the sequencing and bioinformatics analysis of SARS-CoV-2.
+</p>
 
 <!-- test -->
 The course will cover:
@@ -66,7 +67,7 @@ The course will cover:
 <li><b>Course organisers:</b> Tony Li, Kirsty Lee Garson, Perceval Maturure and Prof Nicola Mulder</li> -->
 
 
-<li><b>Participation:</b> The course is selfpaced,  available to any participant who is able to attend the Zoom sessions and the interactive hours with the course instructors for the days of the course</li>
+<li><b>Participation:</b> The course materials are openly available for self paced learning.  Interactive online sessions with the course instructors will be organized as required for specific participants that are due to attend in person wet-lab training.</li>
 
 
 <!-- <li><b>Course sponsors</b>: TBA</li> -->
@@ -82,9 +83,8 @@ The course will cover:
 <b>Objectives and expected outcomes:</b> 
 
 <ol>
-<li>The training will focus on key topics such as sample preparation, sequencing, data analysis, curation and sharing, basic phylogenetics and epidemiology in a set of 7 independent modules. The topics are all related to the application of genomics to epidemiological investigations and public health response to SARS-CoV-2. 
-The modules are designed to ensure an engaging online learning experience. Youâ€™ll be exposed to a wide variety of material throughout the online course with live Q&A sessions with experts, group discussions.
- .</li>
+<li>The training will focus on key topics such as sample preparation, sequencing, data analysis, curation and sharing, basic phylogenetics and epidemiology in a set of 7 independent modules. The topics are all related to the application of genomics to epidemiological investigations and public health response to SARS-CoV-2. The modules are designed to ensure an engaging online learning experience.
+</li>
 
 </ol>
 
@@ -149,6 +149,7 @@ The modules are designed to ensure an engaging online learning experience. Youâ€
     <tr>
       <th scope="col">Date</th>
       <th scope="col">Course materials</th>
+        <th scope="col">Total Time (HH:MM:SS)</th> 
       <th scope="col">Training partner</th>
     </tr>
   </thead>
@@ -162,6 +163,11 @@ The modules are designed to ensure an engaging online learning experience. Youâ€
       <ul>
              <li> <a href="https://www.cdc.gov/amd/training/covid-19-gen-epi-toolkit.html" target="_blank">Introduction to genomic epidemiology and the SARS-CoV-2 genome.</a></li>
 </ul></td>
+      <td> <ul>
+  <li></li>
+  00:09:14
+ 
+</ul> </td>
       <td> <ul>
   <li>US CDC</li>
   <li>MRIGlobal</li>
@@ -179,6 +185,7 @@ The modules are designed to ensure an engaging online learning experience. Youâ€
     <tr>
       <th scope="col">Date</th>
       <th scope="col">Course materials</th>
+        <th scope="col">Total Time (HH:MM:SS)</th> 
       <th scope="col">Training partner</th>
     </tr>
   </thead>
@@ -193,6 +200,11 @@ The modules are designed to ensure an engaging online learning experience. Youâ€
         <li> <a href="{{ site.url }}uploads/risk_assessment.pdf" target="_blank">Risk assessment and biosafety.</a></li>
                 
 </ul></td>
+      <td> <ul>
+  <li> 00:37:29</li>
+ <br>
+ 
+</ul> </td>
       <td><ul>
   
   <li>MRIGlobal</li>
@@ -210,6 +222,10 @@ The modules are designed to ensure an engaging online learning experience. Youâ€
              <li> <a href="{{ site.url }}uploads/sample_management.pdf" target="_blank">Sample collection, handling, storage and referral.</a></li>
                 <li> <a href="{{ site.url }}uploads/manual_rna_extraction.pdf" target="_blank">Manual Viral RNA extraction.</a></li>
 </ul></td>
+      <td> <ul>
+  <li>  00:10:00</li>
+
+</ul> </td>
       <td><ul>
   
   <li>MRIGlobal</li>
@@ -228,6 +244,7 @@ The modules are designed to ensure an engaging online learning experience. Youâ€
     <tr>
       <th scope="col">Date</th>
       <th scope="col">Course materials</th>
+      <th scope="col">Total Time (HH:MM:SS)</th> 
       <th scope="col">Training partner</th>
     </tr>
   </thead>
@@ -244,6 +261,10 @@ The modules are designed to ensure an engaging online learning experience. Youâ€
                          <li> <a href="https://www.youtube.com/watch?v=Uaa4DqZrDn8#0" target="_blank">Loading Samples onto an Oxford Nanopore MinION flow cell.</a></li>
                           <li> <a href="https://www.youtube.com/watch?v=cRee50VzXJc&t=4s#0" target="_blank">Starting MinKNOW.</a></li>                         
 </ul></td>
+    <td> <ul>
+  <li>  00:37:20</li>
+
+</ul> </td>
       <td>
       <ul>
   
@@ -263,6 +284,7 @@ The modules are designed to ensure an engaging online learning experience. Youâ€
     <tr>
       <th scope="col">Date</th>
       <th scope="col">Course materials</th>
+      <th scope="col">Total Time (HH:MM:SS)</th> 
       <th scope="col">Training partner</th>
     </tr>
   </thead>
@@ -276,6 +298,10 @@ The modules are designed to ensure an engaging online learning experience. Youâ€
       <a href="{{ site.url }}uploads/session_1.pdf" target="_blank">Concepts, library prep, starting a sequencing run.</a>
 
 </ul></td>
+    <td> <ul>
+  <li>  00:37:20</li>
+
+</ul> </td>
       <td>
     <ul>
   <li>MRIGlobal</li>
@@ -294,6 +320,10 @@ The modules are designed to ensure an engaging online learning experience. Youâ€
 </li>
              
 </ul></td>
+   <td> <ul>
+  <li>  00:15:00</li>
+
+</ul> </td>
       <td>
     <ul>
   <li>MRIGlobal</li>
@@ -312,6 +342,10 @@ The modules are designed to ensure an engaging online learning experience. Youâ€
      <a href="{{ site.url }}uploads/session_3.pdf" target="_blank">Building and analyzing SARS-CoV-2 consensus genomes.</a>
 </li>
 </ul></td>
+   <td> <ul>
+  <li>  00:15:00</li>
+
+</ul> </td>
       <td>
     <ul>
   <li>MRIGlobal</li>
@@ -328,6 +362,7 @@ The modules are designed to ensure an engaging online learning experience. Youâ€
     <tr>
       <th scope="col">Date</th>
       <th scope="col">Course materials</th>
+       <th scope="col">Total Time (HH:MM:SS)</th> 
       <th scope="col">Training partner</th>
     </tr>
   </thead>
@@ -345,6 +380,10 @@ The modules are designed to ensure an engaging online learning experience. Youâ€
 </a></li>
 
 </ul></td>
+ <td> <ul>
+  <li>  00:17:24</li>
+
+</ul> </td>
       <td>
     <ul>
   <li>NIH</li>
@@ -362,6 +401,10 @@ The modules are designed to ensure an engaging online learning experience. Youâ€
              <li> <a href="https://www.youtube.com/watch?v=D-c0zmHi9Wk#0" target="_blank">Building and Interpreting Phylogenetic Trees.</a></li>
 
 </ul></td>
+ <td> <ul>
+  <li>  00:34:13</li>
+
+</ul> </td>
       <td>
     <ul>
   <li>NIH</li>
@@ -386,6 +429,10 @@ The modules are designed to ensure an engaging online learning experience. Youâ€
 
 
 </ul></td>
+ <td> <ul>
+  <li>  00:15:00</li>
+
+</ul> </td>
       <td>
     <ul>
   <li>NIH</li>
@@ -403,6 +450,7 @@ The modules are designed to ensure an engaging online learning experience. Youâ€
     <tr>
       <th scope="col">Date</th>
       <th scope="col">Course materials</th>
+       <th scope="col">Total Time (HH:MM:SS)</th> 
       <th scope="col">Training partner</th>
     </tr>
   </thead>
@@ -417,6 +465,10 @@ The modules are designed to ensure an engaging online learning experience. Youâ€
         
                 
 </ul></td>
+ <td> <ul>
+  <li>  00:15:00</li>
+
+</ul> </td>
       <td><ul>
   
   <li>KEMRI-Wellcome Trust</li>
@@ -434,7 +486,13 @@ The modules are designed to ensure an engaging online learning experience. Youâ€
              <li> <a href="{{ site.url }}uploads/sars-cov_analysis_workflows.pdf" target="_blank">Sequence analysis workflows.</a></li>
                 <li> <a href="{{ site.url }}uploads/example_module1.pdf" target="_blank"> Sequence analysis: A worked example.</a></li>
 </ul></td>
-      <td><ul>
+      <td>
+       <ul>
+  <li>  00:15:00</li>
+
+</ul> </td>
+<td>
+      <ul>
   
    <li>KEMRI-Wellcome Trust</li>
 
@@ -451,6 +509,10 @@ The modules are designed to ensure an engaging online learning experience. Youâ€
 "Bioinformatics Solutions for SARS-CoV-2 Genomic Analysis".</a></li>
               
 </ul></td>
+ <td> <ul>
+  <li>  00:15:00</li>
+
+</ul> </td>
       <td><ul>
   
    <li>KEMRI-Wellcome Trust</li>
@@ -471,6 +533,7 @@ The modules are designed to ensure an engaging online learning experience. Youâ€
     <tr>
       <th scope="col">Date</th>
       <th scope="col">Course materials</th>
+       <th scope="col">Total Time (HH:MM:SS)</th> 
       <th scope="col">Training partner</th>
     </tr>
   </thead>
@@ -505,6 +568,10 @@ The modules are designed to ensure an engaging online learning experience. Youâ€
                                             Nextstrain views.</a></p></li>
 
 </ul></td>
+ <td> <ul>
+  <li>  00:44:23</li>
+
+</ul> </td>
       <td>
     <ul>
   <li>Bedford Lab at the Fred Hutch</li>
@@ -521,4 +588,3 @@ The modules are designed to ensure an engaging online learning experience. Youâ€
   </div>
 </div>
    
-  
