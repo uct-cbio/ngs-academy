@@ -155,7 +155,7 @@ The course will cover:
   </thead>
   <tbody>
     <tr>
-      <th scope="row">Mar 2022
+      <th scope="row"> 2022
       <br>
       Module 1
       Session 1 &nbsp;&nbsp; &nbsp;&nbsp; </th>
@@ -191,7 +191,7 @@ The course will cover:
   </thead>
   <tbody>
     <tr>
-      <th scope="row">Mar 2022
+      <th scope="row"> 2022
       <br>
       Module 2
       Session 1 &nbsp;&nbsp; &nbsp;&nbsp; </th>
@@ -214,7 +214,7 @@ The course will cover:
 </ul></td>
     </tr>
     <tr>
-      <th scope="row">Mar 2022
+      <th scope="row"> 2022
       <br>
       Module 2
       Session 2</th>
@@ -250,7 +250,7 @@ The course will cover:
   </thead>
   <tbody>
     <tr>
-      <th scope="row">Mar 2022
+      <th scope="row"> 2022
       <br>
       Module 3
       Session 1 &nbsp;&nbsp; &nbsp;&nbsp; </th>
@@ -290,7 +290,7 @@ The course will cover:
   </thead>
   <tbody>
      <tr>
-      <th scope="row">Mar 2022
+      <th scope="row"> 2022
       <br>
       Module 4
       Session 1 &nbsp;&nbsp; &nbsp;&nbsp; </th>
@@ -370,7 +370,7 @@ The course will cover:
   
 
 <tr>
-      <th scope="row">Mar 2022
+      <th scope="row"> 2022
       <br>
       Module 5
       Session 1 &nbsp;&nbsp; &nbsp;&nbsp;  </th>
@@ -393,7 +393,7 @@ The course will cover:
 
 
 <tr>
-      <th scope="row">Mar 2022
+      <th scope="row"> 2022
       <br>
       Module 5
       Session 2</th>
@@ -412,7 +412,7 @@ The course will cover:
 </ul></td>
     </tr>
     <tr>
-      <th scope="row">Mar 2022
+      <th scope="row"> 2022
       <br>
       Module 5
       Session 3</th>
@@ -456,7 +456,7 @@ The course will cover:
   </thead>
   <tbody>
     <tr>
-      <th scope="row">Mar 2022
+      <th scope="row"> 2022
       <br>
       Module 6
       Session 1 &nbsp;&nbsp; &nbsp;&nbsp; </th>
@@ -478,7 +478,7 @@ The course will cover:
 </ul></td>
     </tr>
     <tr>
-      <th scope="row">Mar 2022
+      <th scope="row"> 2022
       <br>
       Module 6
       Session 2</th>
@@ -500,7 +500,7 @@ The course will cover:
 </ul></td>
     </tr>
     <tr>
-      <th scope="row">Mar 2022
+      <th scope="row"> 2022
       <br>
       Module 6
       Session 3</th>
@@ -541,7 +541,7 @@ The course will cover:
   
 
 <tr>
-      <th scope="row">Mar 2022
+      <th scope="row"> 2022
       <br>
       Module 7
      &nbsp;&nbsp; &nbsp;&nbsp;  </th>
