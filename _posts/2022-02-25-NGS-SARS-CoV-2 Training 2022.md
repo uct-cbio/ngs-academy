@@ -6,8 +6,8 @@ main_menu: courses
 permalink: /:year/:title
 category: upcoming
 course_overview : The course is designed for individuals looking to broaden their knowledge and build skills in the use of next generation sequencing (NGS) for SARS-CoV-2 surveillance.  
-start_date: 2021-06-28
-end_date: 2021-07-22
+start_date: 2022-03-01
+end_date: 2022-11-30
 group: group1
 ---
   
@@ -71,11 +71,11 @@ The course will cover:
 
 <!-- <li><b>Course sponsors</b>: TBA</li> -->
 
-<u><li><b>Participant applications</b></li></u>
+<!-- <u><li><b>Participant applications</b></li></u>
 
-<li><b>Registration for participants opened:</b> 25 Feb 2022</li>
+<li><b>Registration for participants opened:</b> 25 Feb 2022</li> -->
 
-<li><b>Registration for participants closed:</b> 04 March 2022</li>
+<!-- <li><b>Registration for participants closed:</b> 04 March 2022</li> -->
 
 <!-- <li><b>Notification date for successful Applicants:</b> </li> -->
 </ol>
