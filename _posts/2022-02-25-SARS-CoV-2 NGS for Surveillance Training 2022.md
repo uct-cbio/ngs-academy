@@ -5,7 +5,7 @@ date: 2022-02-25
 main_menu: courses
 permalink: /:year/:title
 category: upcoming
-course_overview : The course is designed for individuals looking to broaden their knowledge and build skills in the use of next generation sequencing (NGS) for SARS-CoV-2 surveillance.  
+course_overview : The course is designed for individuals looking to broaden their knowledge and build skills in the use of next generation sequencing (NGS) for SARS-CoV-2 surveillance particularly those who work in the laboratory on sample preparation, sequencing and basic data analysis. 
 start_date: 2022-03-01
 end_date: 2022-11-30
 group: group1
