@@ -3,7 +3,7 @@ layout: default
 title:  "Relevant courses offered by edX"
 date: 2021-06-05
 permalink: /:year/:title
-category: available 
+category: available_ng
 
 ---
 ### Relevant courses offered by edX
