@@ -162,10 +162,16 @@ The course will cover:
       <td>
       <ul>
              <li> <a href="https://www.cdc.gov/amd/training/covid-19-gen-epi-toolkit.html" target="_blank">Introduction to genomic epidemiology and the SARS-CoV-2 genome.</a></li>
+                <li> <a href="https://www.cdc.gov/amd/training/covid-19-gen-epi-toolkit.html" target="_blank">The SARS-CoV-2 genome
+.</a></li>
+                <li> <a href="https://www.cdc.gov/amd/training/covid-19-gen-epi-toolkit.html" target="_blank">How to read a phylogenetic tree
+.</a></li>
+                <li> <a href="https://www.cdc.gov/amd/training/covid-19-gen-epi-toolkit.html" target="_blank">Emerging Variants of SARS-CoV-2
+.</a></li>
 </ul></td>
       <td> <ul>
   <li></li>
-  00:09:14
+  00:56:42
  
 </ul> </td>
       <td> <ul>
