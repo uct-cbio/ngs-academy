@@ -184,7 +184,10 @@ Course objectives to be updated
       Session 1 &nbsp;&nbsp; &nbsp;&nbsp; </th>
       <td>
       <ul>
-             <li> <a href="https://www.cdc.gov/amd/training/covid-19-gen-epi-toolkit.html" target="_blank">Introduction to genomic epidemiology and the SARS-CoV-2 genome.</a></li>
+               <li> <a href="https://www.cdc.gov/amd/training/covid-19-gen-epi-toolkit.html" target="_blank">Introduction to genomic epidemiology and the SARS-CoV-2 genome.</a></li>
+                <li> <a href="https://www.cdc.gov/amd/training/covid-19-gen-epi-toolkit.html" target="_blank">The SARS-CoV-2 genome.</a></li>
+                <li> <a href="https://www.cdc.gov/amd/training/covid-19-gen-epi-toolkit.html" target="_blank">How to read a phylogenetic tree.</a></li>
+                <li> <a href="https://www.cdc.gov/amd/training/covid-19-gen-epi-toolkit.html" target="_blank">Emerging Variants of SARS-CoV-2.</a></li>
 </ul></td>
       <td> <ul>
   <li>US CDC</li>
