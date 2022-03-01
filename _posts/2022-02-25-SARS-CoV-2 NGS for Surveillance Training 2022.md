@@ -277,6 +277,37 @@ The course will cover:
  
 </ul></td>
     </tr>
+ <tr>
+      <th scope="row"> 2022
+      <br>
+      Module 3
+      Session 2 &nbsp;&nbsp; &nbsp;&nbsp; </th>
+      <td>  <ul>
+             <li> <a href="https://www.youtube.com/watch?v=wouqQKJCMDo#0" target="_blank">Introduction to Bioinformatics</a></li>
+                 <li> <a href="https://www.youtube.com/watch?v=Iih_rIr1lJU#0" target="_blank">Bioinformatics II - Installing Docker</a></li>
+                     <li> <a href="https://www.youtube.com/watch?v=NE3RmYNPlKI#0" target="_blank">Bioinformatics II - Installing BaseStack.</a></li>
+                         <li> <a href="https://www.youtube.com/watch?v=Mj-qsdYj0rk#0" target="_blank">Bioinformatics II - Starting BaseStack.</a></li>
+                             <li> <a href="https://www.youtube.com/watch?v=ah_RVGbo-kI&t=1s#0" target="_blank">Bioinformatics II - BaseStack Consensus Sequence Modules.</a></li>
+                               <li> <a href="https://www.youtube.com/watch?v=HpKUxOCCq4U#0" target="_blank">Bioinformatics II - BaseStack Consensus Sequence Reports.</a></li>
+                                    <li> <a href="https://www.youtube.com/watch?v=btmtAxdlz7M#0" target="_blank">Bioinformatics II - BaseStack Additional Tabs.</a></li>
+</ul></td>
+    <td> <ul>
+  <li>  00:56:07</li>
+
+</ul> </td>
+      <td>
+      <ul>
+  
+  <li>NIH</li>
+
+  <li>JHU</li>
+ 
+</ul></td>
+    </tr>
+
+
+
+
   </tbody>
 </table></p>
 	</div>
