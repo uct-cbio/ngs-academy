@@ -159,12 +159,12 @@ The course will cover:
                             </td>
                             <td>
                                 <ul>
-                                    <li> 00:44:23</li>
+                                    <li> 03:00:00</li>
                                 </ul>
                             </td>
                             <td>
                                 <ul>
-                                    <li>Bedford Lab at the Fred Hutch</li>
+                                    <li>H3ABioNet/The Carpentries</li>
                                 </ul>
                             </td>
                         </tr>
