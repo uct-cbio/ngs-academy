@@ -17,6 +17,10 @@
             width: 540px;
 
         }
+
+        .survey_button {
+            color: white !important;
+        }
     </style>
     <!-- CSS -->
     <link rel="stylesheet" href="css/owl.carousel.css">
@@ -70,6 +74,7 @@
         {{ page.bioschemas | jsonify }}
      </script>
 
+
 </head>
 <!-- Header Start -->
 <header>
@@ -102,10 +107,11 @@
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav navbar-right">
 
-                                <li {% if page.url=="/" %}class="active" {% endif %}><a href="index">Home</a>
+                                <li {% if page.url=="/" %}class="active" {% endif %}><a href="{{ site.url }}">Home</a>
                                 </li>
 
-                                <li {% if page.url=="/about/" %}class="active" {% endif %}><a href="about">About</a>
+                                <li {% if page.url=="/about/" %}class="active" {% endif %}><a
+                                        href="{{ site.url }}about/">About</a>
 
 
                                     <!-- <li {% if page.url=="/courses/" %}class="active" {% endif %}><a
@@ -114,28 +120,31 @@
 
 
                                 <li class="nav-item dropdown" {% if page.url=="/courses/" %}class="active" {% endif %}>
-                                    <a class="nav-link  dropdown-toggle" href="courses"
+                                    <a class="nav-link  dropdown-toggle" href="{{ site.url }}courses/"
                                         data-bs-toggle="dropdown-1">Courses</a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="/calendar/">
-                                                Calendar</a>
+
+                                        <li><a class="dropdown-item" href="{{ site.url }}calendar/">Calendar</a>
                                         </li>
-                                        <li><a class="dropdown-item" href="{{ site.url }}/courses/upcoming-courses">
+                                        <li><a class="dropdown-item" href="{{ site.url }}courses/upcoming-courses/">
                                                 Upcoming
                                                 Courses</a>
                                         </li>
 
-                                        <!-- <li><a class="dropdown-item" href="/courses/available-courses">Available
-                                                Courses</a>
+                                        <!-- <li><a class="dropdown-item"
+                                                href="{{ site.url }}courses/available-courses/">Available Courses</a>
                                         </li> -->
 
-                                        <li><a class="dropdown-item" href="/courses/past-courses"> Past Courses and
+                                        <li><a class="dropdown-item" href="{{ site.url }}courses/past-courses/"> Past
+                                                Courses and
                                                 Training Events</a>
                                         </li>
 
-                                        <li><a class="dropdown-item" href="/courses/other-courses">Other Pathogen
+                                        <li><a class="dropdown-item" href="{{ site.url }}/courses/other-courses">Other
+                                                Pathogen
                                                 Surveillance Courses</a>
                                         </li>
+
                                         <!-- <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
                                         <li><a class="dropdown-item" href="#"> Submenu item 3 </a></li> -->
                                     </ul>
@@ -145,10 +154,11 @@
 
 
                                 <li class="nav-item dropdown" {% if page.url=="/resources/" %}class="active" {% endif
-                                    %}><a class="nav-link  dropdown-toggle" href="resources"
+                                    %}><a class="nav-link  dropdown-toggle" href="{{ site.url }}resources"
                                         data-bs-toggle="dropdown-1">Resources</a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="/resources/publications"> Publications</a>
+                                        <li><a class="dropdown-item" href="{{ site.url }}resources/publications/">
+                                                Publications</a>
                                         </li>
                                         <!-- <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
                                         <li><a class="dropdown-item" href="#"> Submenu item 3 </a></li> -->
@@ -159,7 +169,7 @@
 
 
                                 <li {% if page.url=="/contact/" %}class="active" {% endif %}><a
-                                        href="contact">Contact</a>
+                                        href="{{ site.url }}contact">Contact</a>
                                 </li>
 
 
@@ -182,17 +192,22 @@
         <div class="row">
             <p></p>
             <div class="container">
+                <div>
 
-                <div class="col-sm-2 col-md-2 col-lg-2">
-                    {% include side-nav_js.html %}
+                    <div class="col-sm-2 col-md-2 col-lg-2">
+                        <div>
+                            {% include side-nav_js.html %}
+                            <hr>
+                            Click <a href="https://redcap.h3abionet.org/redcap/surveys/?s=FCA9MTKHPH"
+                                class="btn btn-sm btn-default">here</a> for the training survey
+
+                        </div>
+                    </div>
 
                 </div>
-                <!-- <div class="col-sm-1 col-md-1 col-lg-1">
 
 
-                </div> -->
-
-                <div class="col-sm-10 col-md-10 col-lg-10" class="my-auto">
+                <div class="col-lg-10 col-md-10 col-sm-10" class="my-auto">
                     {{content}}
                 </div>
 
@@ -201,7 +216,9 @@
 
         </div>
 
+
     </div>
+
     <hr>
     <footer>
         <div class="container">
