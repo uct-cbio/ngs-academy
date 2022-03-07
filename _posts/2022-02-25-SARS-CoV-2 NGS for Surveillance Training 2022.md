@@ -42,7 +42,6 @@ The course will cover:
     <a class="btn btn-secondary btn-lg" href="https://redcap.h3abionet.org/redcap/surveys/?s=P3AAXNPKJ84MTHAC" role="button" target="_blank">Click here to apply</a>
   </div>
     <div>
-
     </div>
     </div>
   </div>
@@ -92,6 +91,7 @@ The course will cover:
 <b>Course curriculum:</b>
 <hr>
 <ol class="list-unstyled">
+<li>Pre-course workshop</li>
 <li>Module 1 Introduction to Genomic Epidemiology and NGS</li>
 <li>Module 2 Wetlab & Sample preparation</li>
 <li>Module 3 ONT workflow</li>
@@ -105,46 +105,72 @@ The course will cover:
 <h3>Course schedule and Materials:</h3>
 
 
-<div class="row">
-    <div class="col-sm-12">
-     <!-- <div><img alt="..." src="{{ site.baseurl }}img/course_schedule.png" width="100%"/></div> --> 
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Pre-course workshop</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Module 1</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Module 2</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Module 3</a>
+  </li>
+    <li class="nav-item" role="presentation">
+    <a class="nav-link" id="settings-tab1" data-toggle="tab" href="#settings1" role="tab" aria-controls="settings1" aria-selected="false">Module 4</a>
+  </li>
+     <li class="nav-item" role="presentation">
+    <a class="nav-link" id="settings-tab2" data-toggle="tab" href="#settings2" role="tab" aria-controls="settings2" aria-selected="false">Module 5</a>
+  </li>
+     <li class="nav-item" role="presentation">
+    <a class="nav-link" id="settings-tab3" data-toggle="tab" href="#settings3" role="tab" aria-controls="settings3" aria-selected="false">Module 6</a>
+  </li>
+      <li class="nav-item" role="presentation">
+    <a class="nav-link" id="settings-tab4" data-toggle="tab" href="#settings4" role="tab" aria-controls="settings4" aria-selected="false">Module 7</a>
+  </li>
+</ul>
 
-<ul class="nav nav-tabs" role="tablist">
-	<li class="nav-item">
-		<a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Module 1
-</a>
-	</li>
-	<li class="nav-item">
-		<a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Module 2</a>
-	</li>
-	<li class="nav-item">
-		<a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Module 3</a>
-	</li>
-
-
-   	<li class="nav-item">
-		<a class="nav-link" data-toggle="tab" href="#tabs-4" role="tab">Module 4</a>
-	</li>
-
-  	<li class="nav-item">
-		<a class="nav-link" data-toggle="tab" href="#tabs-5" role="tab">Module 5</a>
-	</li>
-
-  
-  	<li class="nav-item">
-		<a class="nav-link" data-toggle="tab" href="#tabs-6" role="tab">Module 6</a>
-	</li>
-
-  	<li class="nav-item">
-		<a class="nav-link" data-toggle="tab" href="#tabs-7" role="tab">Module 7</a>
-	</li>
-
-
-  
-</ul><!-- Tab panes -->
 <div class="tab-content">
-	<div class="tab-pane active" id="tabs-1" role="tabpanel">
-		<p>   <table class="table table-bordered">
+  <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">   <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">Date</th>
+                            <th scope="col">Course materials</th>
+                            <th scope="col">Total Time (HH:MM:SS)</th>
+                            <th scope="col">Training partner</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"> 2022
+                                <br>
+                                Session 1
+                            </th>
+                            <td>
+                                <ul>
+                                    <li>
+                                    <li> <a href="https://verena90.github.io/2021-10-05-online-NGS_Academy/"
+                                            target="_blank"> Unix, command line, git and version control. Introduction
+                                            to HPC, software containerization, workflow tools </a></li>
+                                    </li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li> 00:44:23</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Bedford Lab at the Fred Hutch</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table></div>
+  <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab"><p>   <table class="table table-bordered">
   <thead>
     <tr>
       <th scope="col">Date</th>
@@ -179,10 +205,8 @@ The course will cover:
 </ul> </td>
     </tr>
   </tbody>
-</table></p>
-	</div>
-<div class="tab-pane" id="tabs-2" role="tabpanel">
-		<p>
+</table></p></div>
+  <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab"><p>
  <table class="table table-bordered">
   <thead>
     <tr>
@@ -240,9 +264,8 @@ The course will cover:
   </tbody>
 </table>    
 </p>
-	</div>
-	<div class="tab-pane" id="tabs-3" role="tabpanel">
-		<p>  <table class="table table-bordered">
+</div>
+  <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab"><p>  <table class="table table-bordered">
    <thead>
     <tr>
       <th scope="col">Date</th>
@@ -309,11 +332,8 @@ The course will cover:
 
 
   </tbody>
-</table></p>
-	</div>
-
-  	<div class="tab-pane" id="tabs-4" role="tabpanel">
-	<p><table class="table table-bordered">
+</table></p></div>
+    <div class="tab-pane" id="settings1" role="tabpanel" aria-labelledby="settings-tab1"><p><table class="table table-bordered">
   <thead>
     <tr>
       <th scope="col">Date</th>
@@ -388,10 +408,8 @@ The course will cover:
 </ul></td>
     </tr>
   </tbody>
-</table></p>
-	</div>
-    	<div class="tab-pane" id="tabs-5" role="tabpanel">
-		<p><table class="table table-bordered">
+</table></p></div>
+    <div class="tab-pane" id="settings2" role="tabpanel" aria-labelledby="settings-tab2"><p><table class="table table-bordered">
   <thead>
     <tr>
       <th scope="col">Date</th>
@@ -475,10 +493,8 @@ The course will cover:
     </tr>
 
   </tbody>
-</table></p>
-	</div>
-  <div class="tab-pane" id="tabs-6" role="tabpanel">
-			<p>
+</table></p></div>
+     <div class="tab-pane" id="settings3" role="tabpanel" aria-labelledby="settings-tab3"><p>
  <table class="table table-bordered">
   <thead>
     <tr>
@@ -557,11 +573,8 @@ The course will cover:
 
   </tbody>
 </table></p>
-	</div>
-
-
-  <div class="tab-pane" id="tabs-7" role="tabpanel">
-		<p><table class="table table-bordered">
+</div>
+      <div class="tab-pane" id="settings4" role="tabpanel" aria-labelledby="settings-tab4"><p><table class="table table-bordered">
 
   <thead>
     <tr>
@@ -614,11 +627,11 @@ The course will cover:
     </tr>
 
   </tbody>
-</table></p>
-	</div>
+</table></p></div>
 </div>
 
-   
-  </div>
-</div>
-   
+<script>
+  $(function () {
+    $('#myTab li:last-child a').tab('show')
+  })
+</script>
