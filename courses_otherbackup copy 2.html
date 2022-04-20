@@ -1,0 +1,110 @@
+---
+layout: default
+title: Other pathogen surveillance courses
+permalink:
+---
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col">
+
+
+            <input class="form-control" id="myInput" type="text" placeholder="Search..">
+            <br>
+            <div class="table-responsive">
+                <table class="table table-sortable  table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Organisation</th>
+                            <th>Course Title</th>
+                            <th>Course Level</th>
+                            <th>Context </th>
+                            <th>Audience</th>
+                            <th>Primary focus areas of the course</th>
+                            <th>more</th>
+                        </tr>
+                    </thead>
+                    <tbody id="myTable">
+
+                       
+
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    
+
+
+
+
+
+
+                    
+
+
+
+                   
+
+
+
+                        <!-- Additional -->
+                    
+
+
+                 
+
+
+
+
+
+
+
+
+                    </tbody>
+                </table>
+            </div>
+            <script src="js/tablesort.js"></script>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<script>
+    $(document).ready(function () {
+        $("#myInput").on("keyup", function () {
+            var value = $(this).val().toLowerCase();
+            $("#myTable tr").filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    });
+</script>
