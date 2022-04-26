@@ -1,10 +1,10 @@
 ---
 layout: default
-title:  "wip-Advanced Training: Developing Workflows"
+title:  "Advanced Training: Developing Workflows"
 date: 2022-04-13
 main_menu: courses
 permalink: /:year/:title
-category: upcoming_wip
+category: upcoming
 course_overview : High-throughput laboratory machines generate large quantities of raw biological data.  Processing the data to generate useful information involves using several tools and sometimes setting up complex bioinformatics analysis environments across heterogeneous computing devices. Bioinformatics workflows and workflow managers allow reproducibility and portability of analysis plans and optimization of available computing resources.  We would like to develop and run an advanced  bioinformatics workflow workshop  aimed at introducing and deploying Nextflow, a tool that enables scalable and reproducible scientific workflows. 
 start_date: 2022-04-25
 end_date: 2022-04-29
@@ -72,9 +72,6 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
 <li><b>Dates for the course:</b> 25-29 April 2022</li>
 
 
-<li><b>Participation:</b> Participipation. Participipation Participipation Participipation Participipation Participipation ParticipipationParticipipation ParticipipationParticipipationParticipipationParticipipationParticipipation</li>
-
-
 <!-- <li><b>Course sponsors</b>: TBA</li> -->
 
 <!-- <u><li><b>Participant applications</b></li></u>
@@ -86,22 +83,6 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
 <!-- <li><b>Notification date for successful Applicants:</b> </li> -->
 </ol>
 
-<b>Pre-requisite:</b> 
-
-<ol>
-<li>For the course, participants do not need a high-performance computer since the trainers will provide access to KEMRI's cluster
-</li>
-
-</ol>
-<b>Objectives and expected outcomes:</b> 
-
-<ol>
-<li>Objectives and outcomes Objectives and outcomesObjectives and outcomesObjectives and outcomesObjectives and outcomesObjectives and outcomesObjectives and outcomes
-</li>
-
-</ol>
-
-<!-- <b>Course limitations</b>: None -->
 <b>Course curriculum:</b>
 <hr>
 <ol class="list-unstyled">
@@ -125,18 +106,19 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
 	<li class="nav-item">
 		<a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Tues 26 April 2022</a>
 	</li>
+   <!--
 	<li class="nav-item">
 		<a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Wed 27 April 2022</a>
 	</li>
-
   	<li class="nav-item">
 		<a class="nav-link" data-toggle="tab" href="#tabs-4" role="tab">Thur 28 April 2022</a>
 	</li>
-
+-->
+<!-- 
    	<li class="nav-item">
 		<a class="nav-link" data-toggle="tab" href="#tabs-5" role="tab">Fri 29 April 2022</a>
 	</li>
-
+-->
   
 </ul><!-- Tab panes -->
 <div class="tab-content">
@@ -152,58 +134,80 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
   </thead>
   <tbody>
     <tr>
-      <th scope="row">AM session
+      <th scope="row">9:00 am - 10:00am
       <br>
      </th>
       <td>    <ul>
-      <li> <a href="#" target="_blank">Get setup working on the HPC set-up</a></li>
-      <li> <a href="{{ site.url }}uploads/Cond_and_Conda_environments.pdf" target="_blank">Introduction to conda and conda environments.</a></li>
+      <li><b> Get setup working on the HPC set-up</b></li>
 <ol>
-  <li>1. Miniconda installation</li>
-  <li>2. Use of mamba instead</li>
-  <li>3. Different ways of specifying (cmd line, yaml file)</li>
-  <li>4. Ways of saving/exporting/sharing </li>
+  <li>1. Draw Scientific Journey (Includes your current needs for intermediate/advanced training)</li>
+  <li>2. Get setup working on HPC</li>
 </ol>                 
 </ul></td>
       <td><ul>
   
   <li>Malawi-Liverpool-Wellcome Trust </li>
 
+ <li>KEMRI </li>
+ 
+</ul></td>
+            <td><ul>
+             <li>Dr Philip Ashton</li>
+              <li>Dr George Githinji</li>
+</ul></td>
+    </tr>
+  <tr>
+      <th scope="row">10:30 am - 1:00pm
+      <br>
+     </th>
+      <td>    <ul>
+      <li> <a href="{{ site.url }}uploads/Cond_and_Conda_environments.pdf" target="_blank">Introduction to conda and conda environments.</a></li>
+<ol>
+  <li>3. Miniconda Installation</li>
+  <li>4. Use of mamba</li>
+    <li>6. Conda environments</li>
+     <li>7. Different ways of specifying (cmd line, yaml file)</li>
+       <li>Ways of saving/exporting/sharing</li>
+</ol>                 
+</ul></td>
+      <td><ul>
+  
+  <li>Malawi-Liverpool-Wellcome Trust </li>
+ <li>KEMRI </li>
 
  
 </ul></td>
             <td><ul>
              <li>Dr Philip Ashton</li>
+              <li>Dr George Githinji</li>
 </ul></td>
     </tr>
-    <tr>
-      <th scope="row">
+  <tr>
+      <th scope="row">2:00 pm - 4:00pm
       <br>
-      PM session</th>
+     </th>
       <td>    <ul>
-             <li> <a href="#" target="_blank"> Introduction to containers.</a></li>
-               <ol>
-  <li>1. Introduction to docker </li>
-  <li>2. Finding and rolling out containers </li>
-  <li>3. Run docker </li>
-  <li>4. Build a docker container </li>
-  <li>5. Sharing a docker container via docker hub. </li>
-  <li>6. Theory session on Singularity, similarities and differences with docker.  </li>
-  <li>7. s(materials from CLIMB guys) </li>
-</ol> 
+        <li> <a href="{{ site.url }}uploads/Cond_and_Conda_environments.pdf" target="_blank">Introduction to Containers.</a></li>
+<ol>
+  <li>8. Introduction to docker</li>
+  <li>9. Finding and rolling out containers</li>
+   <li>10. Run docker</li>
+    <li>11. Build a docker container</li>
+    <li>12. Modifying a docker container</li>
+     <li>13. Theory session on Singularity, similarities and differences with docker</li>
+</ol>                 
 </ul></td>
       <td><ul>
+  
+  <li>Malawi-Liverpool-Wellcome Trust </li>
+   <li>KEMRI </li>
 
-   <li>KEMRI
-</li>
- <li>MRIGlobal
-</li>
 
+ 
 </ul></td>
-            <td> <ul>
-            
-  <li>Dr George Githinji</li>
-    
+            <td><ul>
+             <li>Dr Philip Ashton</li>
+              <li>Dr George Githinji</li>
 </ul></td>
     </tr>
     
@@ -221,45 +225,66 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">AM session
+
+  <tr>
+      <th scope="row">9:00 am - 10:00am
       <br>
      </th>
       <td>    <ul>
-      <li> Introduction to git.</li>
-                     <ol>
-  <li>1. <a href="https://verena90.github.io/2021-10-05-online-NGS_Academy/" target="_blank">Software carpentry</a> </li>
-   <li>2. Scientific talk </li>
-
-</ol>
-                      
+      <li><b>Introduction to Git</b></li>
+<ol>
+  <li> <a href="https://verena90.github.io/2021-10-05-online-NGS_Academy/" target="_blank">Software carpentry</a> </li>
+ 
+</ol>                 
 </ul></td>
       <td><ul>
   
-  <li>KEMRI</li>
+  <li>Malawi-Liverpool-Wellcome Trust </li>
+
+ <li>KEMRI </li>
  
 </ul></td>
             <td><ul>
-             <li>Dr George Githinji</li>
+             <li>Dr Philip Ashton</li>
+              <li>Dr George Githinji</li>
+</ul></td>
+    </tr>
+ <tr>
+      <th scope="row">10:30 am - 1:00pm
+      <br>
+     </th>
+      <td>    <ul>
+      <li><b> Scientific talk</b></li>                 
+</ul></td>
+      <td><ul>
+  
+  <li>Malawi-Liverpool-Wellcome Trust </li>
+
+ <li>KEMRI </li>
+ 
+</ul></td>
+            <td><ul>
+             <li>Dr Philip Ashton</li>
+              <li>Dr George Githinji</li>
 </ul></td>
     </tr>
     <tr>
       <th scope="row">
       <br>
-      PM session</th>
+      2:00 pm - 3:00 pm</th>
       <td>    <ul>
              <li>File organisation.</li>
                 
 </ul></td>
       <td><ul>
   
-  <li>....</li>
+  <li>KEMRI</li>
  
-  <li>......</li>
+ 
 </ul></td>
             <td> <ul>
             
-  <li>Dr .....</li>
+  <li>Dr George Githinji</li>
     
 </ul></td>
     </tr>
