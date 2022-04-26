@@ -28,6 +28,11 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
 <p>Beginner - Intermediate  level  Bioinformaticians working with next-generation sequencing data in East-Africa.
 </p>
 
+<b>Pre-requisite:</b> 
+
+<ol>
+<li>For the course, participants do not need a high-performance computer since the trainers will provide access to KEMRI's cluster
+</li>
 <!-- test -->
 <p>The course will cover:</p>
 
