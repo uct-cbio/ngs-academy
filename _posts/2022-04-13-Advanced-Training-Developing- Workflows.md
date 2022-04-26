@@ -236,7 +236,11 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
       <br>
      </th>
       <td>    <ul>
-      <li><b>Introduction to Git</b></li>
+      <li>Recap from yesterday </li>
+      <li>Introduction to docker mounts and volumes </li>
+<li>Working with volumes and
+persisting data</li>
+        <li><b>Introduction to Git</b></li>
 <ol>
   <li> <a href="https://verena90.github.io/2021-10-05-online-NGS_Academy/" target="_blank">Software carpentry</a> </li>
  
