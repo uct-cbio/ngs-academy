@@ -111,10 +111,10 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
 	<li class="nav-item">
 		<a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Tues 26 April 2022</a>
 	</li>
-   <!--
 	<li class="nav-item">
 		<a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Wed 27 April 2022</a>
 	</li>
+   <!--
   	<li class="nav-item">
 		<a class="nav-link" data-toggle="tab" href="#tabs-4" role="tab">Thur 28 April 2022</a>
 	</li>
@@ -139,14 +139,14 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
   </thead>
   <tbody>
     <tr>
-      <th scope="row">9:00 am - 10:00am
+      <th scope="row">9:00am - 10:00am 
       <br>
      </th>
       <td>    <ul>
       <li><b> Get setup working on the HPC set-up</b></li>
 <ol>
   <li>1. Draw Scientific Journey (Includes your current needs for intermediate/advanced training)</li>
-  <li>2. Get setup working on HPC</li>
+  <li>1.1 Get setup working on HPC</li>
 </ol>                 
 </ul></td>
       <td><ul>
@@ -162,17 +162,17 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
 </ul></td>
     </tr>
   <tr>
-      <th scope="row">10:30 am - 1:00pm
+      <th scope="row">10:30am - 1:00pm
       <br>
      </th>
       <td>    <ul>
-      <li> <a href="{{ site.url }}uploads/Cond_and_Conda_environments.pdf" target="_blank">Introduction to conda and conda environments.</a></li>
+      <li>2. <a href="{{ site.url }}uploads/Cond_and_Conda_environments.pdf" target="_blank">Introduction to conda and conda environments.</a></li>
 <ol>
-  <li>3. Miniconda Installation</li>
-  <li>4. Use of mamba</li>
-    <li>6. Conda environments</li>
-     <li>7. Different ways of specifying (cmd line, yaml file)</li>
-       <li>Ways of saving/exporting/sharing</li>
+  <li>2.1 Miniconda Installation</li>
+  <li>2.2 Use of mamba</li>
+    <li>2.3 Conda environments</li>
+     <li>2.4 Different ways of specifying (cmd line, yaml file)</li>
+       <li>2.5 Ways of saving/exporting/sharing</li>
 </ol>                 
 </ul></td>
       <td><ul>
@@ -188,18 +188,18 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
 </ul></td>
     </tr>
   <tr>
-      <th scope="row">2:00 pm - 4:00pm
+      <th scope="row">2:00pm - 4:00pm
       <br>
      </th>
       <td>    <ul>
         <li> <a href="#" target="_blank">Introduction to Containers.</a></li>
 <ol>
-  <li>8. Introduction to docker</li>
-  <li>9. Finding and rolling out containers</li>
-   <li>10. Run docker</li>
-    <li>11. Build a docker container</li>
-    <li>12. Modifying a docker container</li>
-     <li>13. Theory session on Singularity, similarities and differences with docker</li>
+  <li>3. Introduction to docker</li>
+  <li>3.1 Finding and rolling out containers</li>
+   <li>3.2 Run docker</li>
+    <li>3.3 Build a docker container</li>
+    <li>3.4 Modifying a docker container</li>
+     <li>3.5 Theory session on Singularity, similarities and differences with docker</li>
 </ol>                 
 </ul></td>
       <td><ul>
@@ -232,17 +232,17 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
   <tbody>
 
   <tr>
-      <th scope="row">9:00 am - 10:00am
+      <th scope="row">9:00am - 10:00am
       <br>
      </th>
       <td>    <ul>
       <li>1. Recap from yesterday </li>
-      <li>2. Introduction to docker mounts and volumes </li>
-<li>3. Working with volumes and
+      <li>1.1 Introduction to docker mounts and volumes </li>
+<li>1.2 Working with volumes and
 persisting data</li>
-        <li><b>Introduction to Git</b></li>
+        <li>1.3 Introduction to singularity</li>
 <ol>
-  <li> <a href="https://verena90.github.io/2021-10-05-online-NGS_Academy/" target="_blank">Software carpentry</a> </li>
+ 
  
 </ol>                 
 </ul></td>
@@ -258,12 +258,15 @@ persisting data</li>
               <li>Dr George Githinji</li>
 </ul></td>
     </tr>
+
  <tr>
-      <th scope="row">10:30 am - 1:00pm
+      <th scope="row">10:30am - 1:00pm
       <br>
      </th>
       <td>    <ul>
-      <li><b> Scientific talk</b></li>                 
+      <li>2. Introduction to Git</li> 
+       <li>2.1  Software carpentry <a href="https://verena90.github.io/2021-10-05-online-NGS_Academy/" target="_blank">Basic Unix and Git</a> </li> 
+                      
 </ul></td>
       <td><ul>
   
@@ -280,9 +283,9 @@ persisting data</li>
     <tr>
       <th scope="row">
       <br>
-      2:00 pm - 3:00 pm</th>
+      2:00pm - 3:00pm</th>
       <td>    <ul>
-             <li>File organisation.</li>
+             <li>3. File organisation.</li>
                 
 </ul></td>
       <td><ul>
@@ -313,60 +316,56 @@ persisting data</li>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">AM session
+   
+  <tr>
+      <th scope="row">9:00am - 1:00pm
       <br>
      </th>
       <td>    <ul>
-                   <li> <a href="#" target="_blank"> Introduction to snakemake.</a></li>
-               <ol>
-  <li>1. Scripting </li>
-  <li>2. Basic Concerpts </li>
-  <li>3. Running a basic pipeline</li>
-  <li>4. Configurations </li>
-
-
-</ol>
-                
+      <li>1. Introduction to Snakemake </li>
+      <li>1.1 Scripting </li>
+<li>1.2 Basic concerpts</li>
+        <li>1.3 Running a basic pipeline</li>
+          <li>1.4 Configurations</li>
+<ol>
+ 
+ 
+</ol>                 
 </ul></td>
       <td><ul>
   
-  <li>Malawi-Liverpool-Wellcome Trust</li>
+  <li>Malawi-Liverpool-Wellcome Trust </li>
 
-  <li></li>
+ <li>KEMRI </li>
  
 </ul></td>
             <td><ul>
              <li>Dr Philip Ashton</li>
- 
+              <li>Dr George Githinji</li>
 </ul></td>
     </tr>
     <tr>
       <th scope="row">
       <br>
-      PM session</th>
+      2:00pm - 4:00pm</th>
       <td>    <ul>
-                                <li> <a href="#" target="_blank"> Introduction to snakemake contd..</a></li>
-               <ol>
-  <li>5. Run Snakemake with conda </li>
-
- 
-
-</ol>
+             <li>2. Running snakemake.</li>
+                  <li>2.1 Run snakemake with conda</li>
+                    <li>2.2 Running snakemake on HPC</li>
 </ul></td>
       <td><ul>
-  
-  <li>Malawi-Liverpool-Wellcome Trust</li>
+   <li>Malawi-Liverpool-Wellcome Trust </li>
+  <li>KEMRI</li>
  
  
 </ul></td>
             <td> <ul>
             
   <li>Dr Philip Ashton</li>
+   <li>Dr George Githinji</li>
     
 </ul></td>
     </tr>
-    
   </tbody>
 </table>  </p>
 	</div>
