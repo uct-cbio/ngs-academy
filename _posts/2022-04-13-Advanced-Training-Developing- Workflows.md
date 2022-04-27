@@ -265,7 +265,7 @@ persisting data</li>
      </th>
       <td>    <ul>
       <li>2. Introduction to Git</li> 
-       <li>2.1  Software carpentry <a href="https://verena90.github.io/2021-10-05-online-NGS_Academy/" target="_blank">Basic Unix and Git</a> </li> 
+       <li>2.1  Software carpentry (<a href="https://verena90.github.io/2021-10-05-online-NGS_Academy/" target="_blank">Basic Unix and Git</a>)</li> 
                       
 </ul></td>
       <td><ul>
