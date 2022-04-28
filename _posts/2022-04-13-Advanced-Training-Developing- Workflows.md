@@ -165,7 +165,7 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
       <br>
      </th>
       <td>    <ul>
-      <li>2. <a href="{{ site.url }}uploads/Cond_and_Conda_environments.pdf" target="_blank">Practical 1</a></li>
+      <li>2. <a href="{{ site.url }}uploads/Cond_and_Conda_environments.pdf" target="_blank">Introduction to Conda and Conda environments</a></li>
 <ol>
   <li>2.1 Miniconda Installation</li>
   <li>2.2 Use of mamba</li>
@@ -193,7 +193,7 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
       <br>
      </th>
       <td>    <ul>
-        <li>3. <a href="#" target="_blank">Introduction to Containers.</a></li>
+        <li>3. <a href="{{ site.url }}uploads/Cond_and_Conda_environments.pdf" target="_blank">Introduction to Containers.</a></li>
 <ol>
   <li>3.1 Introduction to docker</li>
   <li>3.2 Finding and rolling out containers</li>
@@ -201,7 +201,7 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
     <li>3.4 Build a docker container</li>
     <li>3.5 Modifying a docker container</li>
      <li>3.6 Theory session on Singularity, similarities and differences with docker</li>
-      <li>3.6.1 <a href="{{ site.url }}uploads/docker_practical_exercise.docx" target="_blank">Introduction to Conda and Conda environments.</a></li>
+      <li>3.6.1 Practical 2 <a href="{{ site.url }}uploads/docker_practical_exercise.docx" target="_blank">Docker.</a></li>
 
 </ol>                 
 </ul></td>
