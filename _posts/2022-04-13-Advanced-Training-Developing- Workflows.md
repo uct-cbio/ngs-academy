@@ -267,7 +267,7 @@ persisting data</li>
       <br>
      </th>
       <td>    <ul>
-      <li>2. Introduction to Git</li> 
+      <li>2. <a href="{{ site.url }}uploads/git.pptx" target="_blank">Introduction to Git</a> </li> 
        <li>2.1  Software carpentry (<a href="https://verena90.github.io/2021-10-05-online-NGS_Academy/" target="_blank">Basic Unix and Git</a>)</li> 
                       
 </ul></td>
@@ -289,6 +289,11 @@ persisting data</li>
       2:00pm - 3:00pm</th>
       <td>    <ul>
              <li>3. File organisation.</li>
+              <li>3.1 <a href="{{ site.url }}uploads/guide_to_organizing_CB_projects.pdf" target="_blank">Guide to organisation of Computational Biology projects</a></li>
+               <li>3.2 <a href="{{ site.url }}uploads/modern_bioinformatician_work_organisation.pdf" target="_blank">Mordern file organisation </a></li>
+                <li>3.2.1 <a href="{{ site.url }}uploads/practical_1.zip" target="_blank">Practical 1 </a></li>
+                 <li>3.2.2 <a href="{{ site.url }}uploads/practical_2.zip" target="_blank">Practical 2 </a></li>
+                  <li>3.2.3 <a href="{{ site.url }}uploads/practical_3.zip" target="_blank">Practical 3 </a></li>
                 
 </ul></td>
       <td><ul>
