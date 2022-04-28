@@ -330,11 +330,15 @@ persisting data</li>
       <br>
      </th>
       <td>    <ul>
-      <li>1. Introduction to Snakemake </li>
+      <li>1. <a href="{{ site.url }}uploads/Introduction_to_Snakemake.pptx" target="_blank">Introduction to Snakemake  </a> </li>
       <li>1.1 Scripting </li>
 <li>1.2 Basic concerpts</li>
         <li>1.3 Running a basic pipeline</li>
           <li>1.4 Configurations</li>
+            <li>1.5 <a href="{{ site.url }}uploads/reproducible_pipelines.pdf" target="_blank"> Reproducible, scalable, and shareable analysis
+pipelines with bioinformatics workflow managers</a></li>
+
+   
 <ol>
  
  
@@ -360,6 +364,7 @@ persisting data</li>
              <li>2. Running snakemake.</li>
                   <li>2.1 Run snakemake with conda</li>
                     <li>2.2 Running snakemake on HPC</li>
+                     <li>2.3 <a href="{{ site.url }}uploads/practical_snakemake_2.zip" target="_blank">Practical: Snakemake</a></li>
 </ul></td>
       <td><ul>
    <li>Malawi-Liverpool-Wellcome Trust </li>
