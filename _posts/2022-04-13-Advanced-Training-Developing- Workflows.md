@@ -172,6 +172,8 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
     <li>2.3 Conda environments</li>
      <li>2.4 Different ways of specifying (cmd line, yaml file)</li>
        <li>2.5 Ways of saving/exporting/sharing</li>
+        <li>2.5.1 <a href="{{ site.url }}uploads/practical_1_mamba.docx" target="_blank">Introduction to Conda and Conda environments.</a></li>
+        
 </ol>                 
 </ul></td>
       <td><ul>
@@ -199,6 +201,8 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
     <li>3.4 Build a docker container</li>
     <li>3.5 Modifying a docker container</li>
      <li>3.6 Theory session on Singularity, similarities and differences with docker</li>
+      <li>3.6.1 <a href="{{ site.url }}uploads/docker_practical_exercise.docx" target="_blank">Introduction to Conda and Conda environments.</a></li>
+
 </ol>                 
 </ul></td>
       <td><ul>
@@ -490,4 +494,3 @@ persisting data</li>
 </div>
 
 
-https://github.com/ajodeh-juma/ngs-academy-africa-nfcore
