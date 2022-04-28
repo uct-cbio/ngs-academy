@@ -119,11 +119,10 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
 		<a class="nav-link" data-toggle="tab" href="#tabs-4" role="tab">Thur 28 April 2022</a>
 	</li>
 
-<!-- 
+
    	<li class="nav-item">
 		<a class="nav-link" data-toggle="tab" href="#tabs-5" role="tab">Fri 29 April 2022</a>
 	</li>
--->
   
 </ul><!-- Tab panes -->
 <div class="tab-content">
@@ -166,7 +165,7 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
       <br>
      </th>
       <td>    <ul>
-      <li>2. <a href="{{ site.url }}uploads/Cond_and_Conda_environments.pdf" target="_blank">Introduction to conda and conda environments.</a></li>
+      <li>2. <a href="{{ site.url }}uploads/Cond_and_Conda_environments.pdf" target="_blank">Introduction to Conda and Conda environments.</a></li>
 <ol>
   <li>2.1 Miniconda Installation</li>
   <li>2.2 Use of mamba</li>
@@ -192,14 +191,14 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
       <br>
      </th>
       <td>    <ul>
-        <li> <a href="#" target="_blank">Introduction to Containers.</a></li>
+        <li>3. <a href="#" target="_blank">Introduction to Containers.</a></li>
 <ol>
-  <li>3. Introduction to docker</li>
-  <li>3.1 Finding and rolling out containers</li>
-   <li>3.2 Run docker</li>
-    <li>3.3 Build a docker container</li>
-    <li>3.4 Modifying a docker container</li>
-     <li>3.5 Theory session on Singularity, similarities and differences with docker</li>
+  <li>3.1 Introduction to docker</li>
+  <li>3.2 Finding and rolling out containers</li>
+   <li>3.3 Run docker</li>
+    <li>3.4 Build a docker container</li>
+    <li>3.5 Modifying a docker container</li>
+     <li>3.6 Theory session on Singularity, similarities and differences with docker</li>
 </ol>                 
 </ul></td>
       <td><ul>
@@ -340,7 +339,7 @@ persisting data</li>
  
 </ul></td>
             <td><ul>
-             <li>Dr Philip Ashton</li>
+             <li>Dr Philip Ashton, Belson Kutambe</li>
               <li>Dr George Githinji</li>
 </ul></td>
     </tr>
@@ -361,7 +360,7 @@ persisting data</li>
 </ul></td>
             <td> <ul>
             
-  <li>Dr Philip Ashton</li>
+  <li>Dr Philip Ashton, Belson</li>
    <li>Dr George Githinji</li>
     
 </ul></td>
@@ -391,13 +390,13 @@ persisting data</li>
       <td><ul>
   
   <li>ILRI </li>
-
  <li>KEMRI </li>
- 
+  <li>Malawi-Liverpool-Wellcome Trust </li>
 </ul></td>
             <td><ul>
              <li>John Juma</li>
               <li>Dr George Githinji</li>
+               <li>Belson Kutambe</li>
 </ul></td>
     </tr>
   <tr>
@@ -412,12 +411,15 @@ persisting data</li>
   
   <li>Malawi-Liverpool-Wellcome Trust </li>
  <li>KEMRI </li>
+ <li>ILRI </li>
+ 
 
  
 </ul></td>
             <td><ul>
-             <li>Dr Philip Ashton</li>
-              <li>Dr George Githinji</li>
+             <li>Dr Philip Ashton, Belson Kutambe</li>
+              <li>John Juma</li>
+             
 </ul></td>
     </tr>
   <tr>
@@ -425,7 +427,6 @@ persisting data</li>
       <br>
      </th>
       <td>    <ul>
-        <li> <a href="#" target="_blank">Introduction to Containers.</a></li>
 <ol>
   <li>3. Advanced workflows (Nextflow and Common Workflow Language)</li>
   <li>3.1 Compare and contrast with Snakemake</li>
@@ -437,14 +438,14 @@ persisting data</li>
 </ul></td>
       <td><ul>
   
-  <li>Malawi-Liverpool-Wellcome Trust </li>
+  <li>ILRI</li>
    <li>KEMRI </li>
 
 
  
 </ul></td>
             <td><ul>
-             <li>Dr Philip Ashton</li>
+             <li>John Juma</li>
               <li>Dr George Githinji</li>
 </ul></td>
     </tr>
@@ -465,27 +466,20 @@ persisting data</li>
   </thead>
   <tbody>
     <tr>
-      <th scope="row">AM-PM session
+      <th scope="row">9:00am - 1:00pm
       <br>
      </th>
       <td>    <ul>
-                 <li> Practical project on implementing your own workflow</li>
-               <ol>
-<li>1. Provide 3/4/5 datasets and desired workflows and divide the participants into groups to work on those.</li> 
-</ol>
-                
+      <li>Practical project on implementing your own workflow</li>                
 </ul></td>
       <td><ul>
   
-  <li>KEMRI</li>
-
- <li>Malawi-Liverpool-Wellcome Trust</li>
- 
+ <li>KEMRI </li>
+  <li>Malawi-Liverpool-Wellcome Trust </li>
 </ul></td>
             <td><ul>
-             <li>Dr George Githinji</li>
-  <li>Dr Philip Ashton</li>
-   
+              <li>Dr George Githinji</li>
+               <li>Dr Philip Ashton</li>
 </ul></td>
     </tr>
    
