@@ -330,12 +330,12 @@ persisting data</li>
       <br>
      </th>
       <td>    <ul>
-      <li>1. <a href="{{ site.url }}uploads/Introduction_to_Snakemake.pptx" target="_blank">Introduction to Snakemake  </a> </li>
+      <li>1. <a href="{{ site.url }}uploads/introduction_to_snakemake.pptx" target="_blank">Introduction to Snakemake  </a> </li>
       <li>1.1 Scripting </li>
 <li>1.2 Basic concerpts</li>
         <li>1.3 Running a basic pipeline</li>
           <li>1.4 Configurations</li>
-            <li>1.5 <a href="{{ site.url }}uploads/reproducible_pipelines.pdf" target="_blank"> Reproducible, scalable, and shareable analysis
+            <li>1.5 <a href="{{ site.url }}uploads/reproducible_pipelines_1.pdf" target="_blank"> Reproducible, scalable, and shareable analysis
 pipelines with bioinformatics workflow managers</a></li>
 
    
