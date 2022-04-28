@@ -28,11 +28,6 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
 <p>Beginner - Intermediate  level  Bioinformaticians working with next-generation sequencing data in East-Africa.
 </p>
 
-<b>Pre-requisite:</b> 
-
-<ol>
-<li>For the course, participants do not need a high-performance computer since the trainers will provide access to KEMRI's cluster
-</li>
 <!-- test -->
 <p>The course will cover:</p>
 
@@ -111,18 +106,19 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
 	<li class="nav-item">
 		<a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Tues 26 April 2022</a>
 	</li>
+   <!--
 	<li class="nav-item">
 		<a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Wed 27 April 2022</a>
 	</li>
- 
   	<li class="nav-item">
 		<a class="nav-link" data-toggle="tab" href="#tabs-4" role="tab">Thur 28 April 2022</a>
 	</li>
-
-
+-->
+<!-- 
    	<li class="nav-item">
 		<a class="nav-link" data-toggle="tab" href="#tabs-5" role="tab">Fri 29 April 2022</a>
 	</li>
+-->
   
 </ul><!-- Tab panes -->
 <div class="tab-content">
@@ -138,14 +134,14 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
   </thead>
   <tbody>
     <tr>
-      <th scope="row">9:00am - 10:00am 
+      <th scope="row">9:00 am - 10:00am
       <br>
      </th>
       <td>    <ul>
-      <li><b> <a href="{{ site.url }}uploads/introduction_to_the_course.pptx" target="_blank">Introduction to the Course</a></b></li>
+      <li><b> Get setup working on the HPC set-up</b></li>
 <ol>
   <li>1. Draw Scientific Journey (Includes your current needs for intermediate/advanced training)</li>
-  <li>1.1 Get setup working on HPC</li>
+  <li>2. Get setup working on HPC</li>
 </ol>                 
 </ul></td>
       <td><ul>
@@ -161,19 +157,17 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
 </ul></td>
     </tr>
   <tr>
-      <th scope="row">10:30am - 1:00pm
+      <th scope="row">10:30 am - 1:00pm
       <br>
      </th>
       <td>    <ul>
-      <li>2. <a href="{{ site.url }}uploads/Cond_and_Conda_environments.pdf" target="_blank">Introduction to Conda and Conda environments</a></li>
+      <li> <a href="{{ site.url }}uploads/Cond_and_Conda_environments.pdf" target="_blank">Introduction to conda and conda environments.</a></li>
 <ol>
-  <li>2.1 Miniconda Installation</li>
-  <li>2.2 Use of mamba</li>
-    <li>2.3 <a href="{{ site.url }}uploads/conda_environments.pptx" target="_blank">Conda environments</a></li>
-     <li>2.4 Different ways of specifying (cmd line, yaml file)</li>
-       <li>2.5 Ways of saving/exporting/sharing</li>
-        <li>2.5.1 <a href="{{ site.url }}uploads/practical_1_mamba.docx" target="_blank">Practical 1: Conda installation, mamba installation and activation of virtual environments</a></li>
-        
+  <li>3. Miniconda Installation</li>
+  <li>4. Use of mamba</li>
+    <li>6. Conda environments</li>
+     <li>7. Different ways of specifying (cmd line, yaml file)</li>
+       <li>Ways of saving/exporting/sharing</li>
 </ol>                 
 </ul></td>
       <td><ul>
@@ -189,20 +183,18 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
 </ul></td>
     </tr>
   <tr>
-      <th scope="row">2:00pm - 4:00pm
+      <th scope="row">2:00 pm - 4:00pm
       <br>
      </th>
       <td>    <ul>
-        <li>3. <a href="{{ site.url }}uploads/Cond_and_Conda_environments.pdf" target="_blank">Introduction to Containers.</a></li>
+        <li> <a href="{{ site.url }}uploads/Cond_and_Conda_environments.pdf" target="_blank">Introduction to Containers.</a></li>
 <ol>
-  <li>3.1 Introduction to docker</li>
-  <li>3.2 <a href="{{ site.url }}uploads/containers.pptx" target="_blank">Finding and rolling out containers</a></li>
-   <li>3.3 Run docker</li>
-    <li>3.4 Build a docker container</li>
-    <li>3.5 Modifying a docker container</li>
-     <li>3.6 Theory session on Singularity, similarities and differences with docker</li>
-      <li>3.6.1 <a href="{{ site.url }}uploads/docker_practical_exercise.docx" target="_blank">Practical 2: Docker.</a></li>
-
+  <li>8. Introduction to docker</li>
+  <li>9. Finding and rolling out containers</li>
+   <li>10. Run docker</li>
+    <li>11. Build a docker container</li>
+    <li>12. Modifying a docker container</li>
+     <li>13. Theory session on Singularity, similarities and differences with docker</li>
 </ol>                 
 </ul></td>
       <td><ul>
@@ -235,17 +227,13 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
   <tbody>
 
   <tr>
-      <th scope="row">9:00am - 10:00am
+      <th scope="row">9:00 am - 10:00am
       <br>
      </th>
       <td>    <ul>
-      <li>1. Recap from yesterday </li>
-      <li>1.1 Introduction to docker mounts and volumes </li>
-<li>1.2 Working with volumes and
-persisting data</li>
-        <li>1.3 Introduction to singularity</li>
+      <li><b>Introduction to Git</b></li>
 <ol>
- 
+  <li> <a href="https://verena90.github.io/2021-10-05-online-NGS_Academy/" target="_blank">Software carpentry</a> </li>
  
 </ol>                 
 </ul></td>
@@ -261,15 +249,12 @@ persisting data</li>
               <li>Dr George Githinji</li>
 </ul></td>
     </tr>
-
  <tr>
-      <th scope="row">10:30am - 1:00pm
+      <th scope="row">10:30 am - 1:00pm
       <br>
      </th>
       <td>    <ul>
-      <li>2. <a href="{{ site.url }}uploads/git.pptx" target="_blank">Introduction to Git</a> </li> 
-       <li>2.1  Software carpentry (<a href="https://verena90.github.io/2021-10-05-online-NGS_Academy/" target="_blank">Basic Unix and Git</a>)</li> 
-                      
+      <li><b> Scientific talk</b></li>                 
 </ul></td>
       <td><ul>
   
@@ -286,14 +271,9 @@ persisting data</li>
     <tr>
       <th scope="row">
       <br>
-      2:00pm - 3:00pm</th>
+      2:00 pm - 3:00 pm</th>
       <td>    <ul>
-             <li>3. File organisation.</li>
-              <li>3.1 <a href="{{ site.url }}uploads/guide_to_organizing_CB_projects.pdf" target="_blank">Guide to organisation of Computational Biology projects</a></li>
-               <li>3.2 <a href="{{ site.url }}uploads/modern_bioinformatician_work_organisation.pdf" target="_blank">Mordern file organisation </a></li>
-                <li>3.2.1 <a href="{{ site.url }}uploads/practical_1.zip" target="_blank">Practical 1 </a></li>
-                 <li>3.2.2 <a href="{{ site.url }}uploads/practical_2.zip" target="_blank">Practical 2 </a></li>
-                  <li>3.2.3 <a href="{{ site.url }}uploads/practical_3.zip" target="_blank">Practical 3 </a></li>
+             <li>File organisation.</li>
                 
 </ul></td>
       <td><ul>
@@ -324,56 +304,60 @@ persisting data</li>
     </tr>
   </thead>
   <tbody>
-   
-  <tr>
-      <th scope="row">9:00am - 1:00pm
+    <tr>
+      <th scope="row">AM session
       <br>
      </th>
       <td>    <ul>
-      <li>1. Introduction to Snakemake </li>
-      <li>1.1 Scripting </li>
-<li>1.2 Basic concerpts</li>
-        <li>1.3 Running a basic pipeline</li>
-          <li>1.4 Configurations</li>
-<ol>
- 
- 
-</ol>                 
+                   <li> <a href="#" target="_blank"> Introduction to snakemake.</a></li>
+               <ol>
+  <li>1. Scripting </li>
+  <li>2. Basic Concerpts </li>
+  <li>3. Running a basic pipeline</li>
+  <li>4. Configurations </li>
+
+
+</ol>
+                
 </ul></td>
       <td><ul>
   
-  <li>Malawi-Liverpool-Wellcome Trust </li>
+  <li>Malawi-Liverpool-Wellcome Trust</li>
 
- <li>KEMRI </li>
+  <li></li>
  
 </ul></td>
             <td><ul>
-             <li>Dr Philip Ashton, Belson Kutambe</li>
-              <li>Dr George Githinji</li>
+             <li>Dr Philip Ashton</li>
+ 
 </ul></td>
     </tr>
     <tr>
       <th scope="row">
       <br>
-      2:00pm - 4:00pm</th>
+      PM session</th>
       <td>    <ul>
-             <li>2. Running snakemake.</li>
-                  <li>2.1 Run snakemake with conda</li>
-                    <li>2.2 Running snakemake on HPC</li>
+                                <li> <a href="#" target="_blank"> Introduction to snakemake contd..</a></li>
+               <ol>
+  <li>5. Run Snakemake with conda </li>
+
+ 
+
+</ol>
 </ul></td>
       <td><ul>
-   <li>Malawi-Liverpool-Wellcome Trust </li>
-  <li>KEMRI</li>
+  
+  <li>Malawi-Liverpool-Wellcome Trust</li>
  
  
 </ul></td>
             <td> <ul>
             
-  <li>Dr Philip Ashton, Belson</li>
-   <li>Dr George Githinji</li>
+  <li>Dr Philip Ashton</li>
     
 </ul></td>
     </tr>
+    
   </tbody>
 </table>  </p>
 	</div>
@@ -390,75 +374,61 @@ persisting data</li>
   </thead>
   <tbody>
     <tr>
-      <th scope="row">9:00am - 10:00am 
+      <th scope="row">AM session
       <br>
      </th>
       <td>    <ul>
-      <li>1. Running Snakemate cont...</li>                
-</ul></td>
-      <td><ul>
-  
-  <li>ILRI </li>
- <li>KEMRI </li>
-  <li>Malawi-Liverpool-Wellcome Trust </li>
-</ul></td>
-            <td><ul>
-             <li>John Juma</li>
-              <li>Dr George Githinji</li>
-               <li>Belson Kutambe</li>
-</ul></td>
-    </tr>
-  <tr>
-      <th scope="row">10:30am - 1:00pm
-      <br>
-     </th>
-      <td>    <ul>
-      <li>2. Sharing pipelines</li>
+      <ul>
+                   <li> <a href="#" target="_blank"> Introduction to snakemake contd..</a></li>
+               <ol>
+  <li>6. Run Snakemake on HPC </li>
+  <li>7. Sharing pipelines </li>
+ 
+
+</ol>
                 
+</ul>   
 </ul></td>
       <td><ul>
   
-  <li>Malawi-Liverpool-Wellcome Trust </li>
- <li>KEMRI </li>
- <li>ILRI </li>
- 
+  <li>Malawi-Liverpool-Wellcome Trust</li>
+
 
  
 </ul></td>
             <td><ul>
-             <li>Dr Philip Ashton, Belson Kutambe</li>
-              <li>John Juma</li>
-             
+             <li>Dr Philip Ashton</li>
 </ul></td>
     </tr>
-  <tr>
-      <th scope="row">2:00pm - 4:00pm
+    <tr>
+      <th scope="row">
       <br>
-     </th>
+      PM session</th>
       <td>    <ul>
-<ol>
-  <li>3. Advanced workflows (Nextflow and Common Workflow Language) (<a href="https://github.com/ajodeh-juma/ngs-academy-africa-nfcore" target="_blank">Nextflow Exercises</a>)</li>
-  <li>3.1 Compare and contrast with Snakemake</li>
-   <li>3.2 Simple worklfows</li>
-    <li>3.3 Using docker in worklfows</li>
-    <li>3.4 Using HPC</li>
-     <li>3.5 Introduction to Common Workflow language (CWL)</li>
-</ol>                 
-</ul></td>
-      <td><ul>
-  
-  <li>ILRI</li>
-   <li>KEMRI </li>
+               <li> <a href="#" target="_blank">Advanced workflows (Nextflow and CWL)</a></li>
+               <ol>
+<li>1. Compare and contrast with snakemake</li>
+<li>2. Simple workflows </li>
+<li>3. Using Docker in workflows </li>
+<li>4. Using HPC </li>
+<li>5. Introduction to Common Workflow language </li>
 
 
  
+</ol>
 </ul></td>
-            <td><ul>
-             <li>John Juma</li>
-              <li>Dr George Githinji</li>
+      <td><ul>
+  
+  <li>CGIAR</li>
+ 
+  
+</ul></td>
+            <td> <ul>
+            
+  <li>John Juma</li>
+    
 </ul></td>
     </tr>
-    
     
   </tbody>
 </table>  </p>
@@ -475,20 +445,27 @@ persisting data</li>
   </thead>
   <tbody>
     <tr>
-      <th scope="row">9:00am - 1:00pm
+      <th scope="row">AM-PM session
       <br>
      </th>
       <td>    <ul>
-      <li>Practical project on implementing your own workflow</li>                
+                 <li> Practical project on implementing your own workflow</li>
+               <ol>
+<li>1. Provide 3/4/5 datasets and desired workflows and divide the participants into groups to work on those.</li> 
+</ol>
+                
 </ul></td>
       <td><ul>
   
- <li>KEMRI </li>
-  <li>Malawi-Liverpool-Wellcome Trust </li>
+  <li>KEMRI</li>
+
+ <li>Malawi-Liverpool-Wellcome Trust</li>
+ 
 </ul></td>
             <td><ul>
-              <li>Dr George Githinji</li>
-               <li>Dr Philip Ashton</li>
+             <li>Dr George Githinji</li>
+  <li>Dr Philip Ashton</li>
+   
 </ul></td>
     </tr>
    
@@ -497,5 +474,3 @@ persisting data</li>
 </table>  </p>
 	</div>
 </div>
-
-
