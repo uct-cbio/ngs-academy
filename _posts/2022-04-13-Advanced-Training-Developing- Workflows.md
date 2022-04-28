@@ -428,7 +428,7 @@ persisting data</li>
      </th>
       <td>    <ul>
 <ol>
-  <li>3. Advanced workflows (Nextflow and Common Workflow Language)</li>
+  <li>3. Advanced workflows (Nextflow and Common Workflow Language) (<a href="https://github.com/ajodeh-juma/ngs-academy-africa-nfcore" target="_blank">Nextflow Exercises</a>)</li>
   <li>3.1 Compare and contrast with Snakemake</li>
    <li>3.2 Simple worklfows</li>
     <li>3.3 Using docker in worklfows</li>
@@ -488,3 +488,6 @@ persisting data</li>
 </table>  </p>
 	</div>
 </div>
+
+
+https://github.com/ajodeh-juma/ngs-academy-africa-nfcore
