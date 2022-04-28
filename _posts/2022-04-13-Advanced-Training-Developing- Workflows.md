@@ -114,11 +114,11 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
 	<li class="nav-item">
 		<a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Wed 27 April 2022</a>
 	</li>
-   <!--
+ 
   	<li class="nav-item">
 		<a class="nav-link" data-toggle="tab" href="#tabs-4" role="tab">Thur 28 April 2022</a>
 	</li>
--->
+
 <!-- 
    	<li class="nav-item">
 		<a class="nav-link" data-toggle="tab" href="#tabs-5" role="tab">Fri 29 April 2022</a>
@@ -265,7 +265,7 @@ persisting data</li>
      </th>
       <td>    <ul>
       <li>2. Introduction to Git</li> 
-       <li>2.1  Software carpentry <a href="https://verena90.github.io/2021-10-05-online-NGS_Academy/" target="_blank">Basic Unix and Git</a> </li> 
+       <li>2.1  Software carpentry (<a href="https://verena90.github.io/2021-10-05-online-NGS_Academy/" target="_blank">Basic Unix and Git</a>)</li> 
                       
 </ul></td>
       <td><ul>
@@ -382,61 +382,73 @@ persisting data</li>
   </thead>
   <tbody>
     <tr>
-      <th scope="row">AM session
+      <th scope="row">9:00am - 10:00am 
       <br>
      </th>
       <td>    <ul>
-      <ul>
-                   <li> <a href="#" target="_blank"> Introduction to snakemake contd..</a></li>
-               <ol>
-  <li>6. Run Snakemake on HPC </li>
-  <li>7. Sharing pipelines </li>
- 
-
-</ol>
-                
-</ul>   
+      <li>1. Running Snakemate cont...</li>                
 </ul></td>
       <td><ul>
   
-  <li>Malawi-Liverpool-Wellcome Trust</li>
+  <li>ILRI </li>
+
+ <li>KEMRI </li>
+ 
+</ul></td>
+            <td><ul>
+             <li>John Juma</li>
+              <li>Dr George Githinji</li>
+</ul></td>
+    </tr>
+  <tr>
+      <th scope="row">10:30am - 1:00pm
+      <br>
+     </th>
+      <td>    <ul>
+      <li>2. Sharing pipelines</li>
+                
+</ul></td>
+      <td><ul>
+  
+  <li>Malawi-Liverpool-Wellcome Trust </li>
+ <li>KEMRI </li>
+
+ 
+</ul></td>
+            <td><ul>
+             <li>Dr Philip Ashton</li>
+              <li>Dr George Githinji</li>
+</ul></td>
+    </tr>
+  <tr>
+      <th scope="row">2:00pm - 4:00pm
+      <br>
+     </th>
+      <td>    <ul>
+        <li> <a href="#" target="_blank">Introduction to Containers.</a></li>
+<ol>
+  <li>3. Advanced workflows (Nextflow and Common Workflow Language)</li>
+  <li>3.1 Compare and contrast with Snakemake</li>
+   <li>3.2 Simple worklfows</li>
+    <li>3.3 Using docker in worklfows</li>
+    <li>3.4 Using HPC</li>
+     <li>3.5 Introduction to Common Workflow language (CWL)</li>
+</ol>                 
+</ul></td>
+      <td><ul>
+  
+  <li>Malawi-Liverpool-Wellcome Trust </li>
+   <li>KEMRI </li>
 
 
  
 </ul></td>
             <td><ul>
              <li>Dr Philip Ashton</li>
+              <li>Dr George Githinji</li>
 </ul></td>
     </tr>
-    <tr>
-      <th scope="row">
-      <br>
-      PM session</th>
-      <td>    <ul>
-               <li> <a href="#" target="_blank">Advanced workflows (Nextflow and CWL)</a></li>
-               <ol>
-<li>1. Compare and contrast with snakemake</li>
-<li>2. Simple workflows </li>
-<li>3. Using Docker in workflows </li>
-<li>4. Using HPC </li>
-<li>5. Introduction to Common Workflow language </li>
-
-
- 
-</ol>
-</ul></td>
-      <td><ul>
-  
-  <li>CGIAR</li>
- 
-  
-</ul></td>
-            <td> <ul>
-            
-  <li>John Juma</li>
     
-</ul></td>
-    </tr>
     
   </tbody>
 </table>  </p>
