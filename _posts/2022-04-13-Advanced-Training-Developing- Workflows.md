@@ -165,14 +165,14 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
       <br>
      </th>
       <td>    <ul>
-      <li>2. <a href="{{ site.url }}uploads/Cond_and_Conda_environments.pdf" target="_blank">Introduction to Conda and Conda environments.</a></li>
+      <li>2. <a href="{{ site.url }}uploads/Cond_and_Conda_environments.pdf" target="_blank">Practical 1</a></li>
 <ol>
   <li>2.1 Miniconda Installation</li>
   <li>2.2 Use of mamba</li>
     <li>2.3 Conda environments</li>
      <li>2.4 Different ways of specifying (cmd line, yaml file)</li>
        <li>2.5 Ways of saving/exporting/sharing</li>
-        <li>2.5.1 <a href="{{ site.url }}uploads/practical_1_mamba.docx" target="_blank">Introduction to Conda and Conda environments.</a></li>
+        <li>2.5.1 <a href="{{ site.url }}uploads/practical_1_mamba.docx" target="_blank">Practical 2</a></li>
         
 </ol>                 
 </ul></td>
