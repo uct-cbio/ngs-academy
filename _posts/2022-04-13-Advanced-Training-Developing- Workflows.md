@@ -142,7 +142,7 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
       <br>
      </th>
       <td>    <ul>
-      <li><b> Get setup working on the HPC set-up</b></li>
+      <li><b> <a href="{{ site.url }}uploads/introduction_to_the_course.pptx" target="_blank">Introduction to the Course</a></b></li>
 <ol>
   <li>1. Draw Scientific Journey (Includes your current needs for intermediate/advanced training)</li>
   <li>1.1 Get setup working on HPC</li>
@@ -169,7 +169,7 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
 <ol>
   <li>2.1 Miniconda Installation</li>
   <li>2.2 Use of mamba</li>
-    <li>2.3 Conda environments</li>
+    <li>2.3 <a href="{{ site.url }}uploads/conda_environments.pptx" target="_blank">Conda environments</a></li>
      <li>2.4 Different ways of specifying (cmd line, yaml file)</li>
        <li>2.5 Ways of saving/exporting/sharing</li>
         <li>2.5.1 <a href="{{ site.url }}uploads/practical_1_mamba.docx" target="_blank">Practical 1: Conda installation, mamba installation and activation of virtual environments</a></li>
@@ -196,7 +196,7 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
         <li>3. <a href="{{ site.url }}uploads/Cond_and_Conda_environments.pdf" target="_blank">Introduction to Containers.</a></li>
 <ol>
   <li>3.1 Introduction to docker</li>
-  <li>3.2 Finding and rolling out containers</li>
+  <li>3.2 <a href="{{ site.url }}uploads/containers.pptx" target="_blank">Finding and rolling out containers</a></li>
    <li>3.3 Run docker</li>
     <li>3.4 Build a docker container</li>
     <li>3.5 Modifying a docker container</li>
