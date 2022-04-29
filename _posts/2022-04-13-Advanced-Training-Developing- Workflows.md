@@ -443,12 +443,13 @@ pipelines with bioinformatics workflow managers</a></li>
      </th>
       <td>    <ul>
 <ol>
-  <li>3. Advanced workflows (Nextflow and Common Workflow Language) (<a href="https://github.com/ajodeh-juma/ngs-academy-africa-nfcore" target="_blank">Nextflow Exercises</a>)</li>
-  <li>3.1 Compare and contrast with Snakemake</li>
-   <li>3.2 Simple worklfows</li>
-    <li>3.3 Using docker in worklfows</li>
-    <li>3.4 Using HPC</li>
-     <li>3.5 Introduction to Common Workflow language (CWL)</li>
+  <li>3. <a href="{{ site.url }}uploads/nextflow_presentation.pdf" target="_blank">Introduction to Bioinformatics workflows with Nextflow and nf-core</a></li>
+  <li>3.1 Advanced workflows (Nextflow and Common Workflow Language) (<a href="https://github.com/ajodeh-juma/ngs-academy-africa-nfcore" target="_blank">Nextflow Exercises</a>)</li>
+  <li>3.2 Compare and contrast with Snakemake</li>
+   <li>3.3 Simple worklfows</li>
+    <li>3.4 Using docker in worklfows</li>
+    <li>3.5 Using HPC</li>
+     <li>3.6 Introduction to Common Workflow language (CWL)</li>
 </ol>                 
 </ul></td>
       <td><ul>
