@@ -331,7 +331,7 @@ persisting data</li>
       <br>
      </th>
       <td>    <ul>
-      <li>1. <a href="{{ site.url }}uploads/snakemake_introduction.pptx" target="_blank">Introduction to Snakemake  </a> </li>
+      <li>1. <a href="{{ site.url }}uploads/snakemake_introduction.pdf" target="_blank">Introduction to Snakemake  </a> </li>
       <li>1.1 Scripting </li>
 <li>1.2 Basic concerpts</li>
         <li>1.3 Running a basic pipeline</li>
