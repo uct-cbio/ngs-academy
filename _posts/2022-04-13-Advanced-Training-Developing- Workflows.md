@@ -267,7 +267,8 @@ persisting data</li>
       <br>
      </th>
       <td>    <ul>
-      <li>2. <a href="{{ site.url }}uploads/git.pptx" target="_blank">Introduction to Git</a> </li> 
+      <li>2. <a href="{{ site.url }}uploads/git_t.pdf" target="_blank">Introduction to Git</a>
+       </li> 
        <li>2.1  Software carpentry (<a href="https://verena90.github.io/2021-10-05-online-NGS_Academy/" target="_blank">Basic Unix and Git</a>)</li> 
                       
 </ul></td>
@@ -330,12 +331,12 @@ persisting data</li>
       <br>
      </th>
       <td>    <ul>
-      <li>1. <a href="{{ site.url }}uploads/Introduction_to_Snakemake.pptx" target="_blank">Introduction to Snakemake  </a> </li>
+      <li>1. <a href="{{ site.url }}uploads/snakemake_introduction.pdf" target="_blank">Introduction to Snakemake  </a> </li>
       <li>1.1 Scripting </li>
 <li>1.2 Basic concerpts</li>
         <li>1.3 Running a basic pipeline</li>
           <li>1.4 Configurations</li>
-            <li>1.5 <a href="{{ site.url }}uploads/reproducible_pipelines.pdf" target="_blank"> Reproducible, scalable, and shareable analysis
+            <li>1.5 <a href="{{ site.url }}uploads/reproducible_pipelines_1.pdf" target="_blank"> Reproducible, scalable, and shareable analysis
 pipelines with bioinformatics workflow managers</a></li>
 
    
@@ -364,7 +365,7 @@ pipelines with bioinformatics workflow managers</a></li>
              <li>2. Running snakemake.</li>
                   <li>2.1 Run snakemake with conda</li>
                     <li>2.2 Running snakemake on HPC</li>
-                     <li>2.3 <a href="{{ site.url }}uploads/practical_snakemake_2.zip" target="_blank">Practical: Snakemake</a></li>
+                     <li>2.3 <a href="{{ site.url }}uploads/snakemake_practical.zip" target="_blank">Practical: Snakemake</a></li>
 </ul></td>
       <td><ul>
    <li>Malawi-Liverpool-Wellcome Trust </li>
@@ -442,12 +443,13 @@ pipelines with bioinformatics workflow managers</a></li>
      </th>
       <td>    <ul>
 <ol>
-  <li>3. Advanced workflows (Nextflow and Common Workflow Language) (<a href="https://github.com/ajodeh-juma/ngs-academy-africa-nfcore" target="_blank">Nextflow Exercises</a>)</li>
-  <li>3.1 Compare and contrast with Snakemake</li>
-   <li>3.2 Simple worklfows</li>
-    <li>3.3 Using docker in worklfows</li>
-    <li>3.4 Using HPC</li>
-     <li>3.5 Introduction to Common Workflow language (CWL)</li>
+  <li>3. <a href="{{ site.url }}uploads/nextflow_presentation.pdf" target="_blank">Introduction to Bioinformatics workflows with Nextflow and nf-core</a></li>
+  <li>3.1 Advanced workflows (Nextflow and Common Workflow Language) (<a href="https://github.com/ajodeh-juma/ngs-academy-africa-nfcore" target="_blank">Nextflow Exercises</a>)</li>
+  <li>3.2 Compare and contrast with Snakemake</li>
+   <li>3.3 Simple worklfows</li>
+    <li>3.4 Using docker in worklfows</li>
+    <li>3.5 Using HPC</li>
+     <li>3.6 Introduction to Common Workflow language (CWL)</li>
 </ol>                 
 </ul></td>
       <td><ul>
