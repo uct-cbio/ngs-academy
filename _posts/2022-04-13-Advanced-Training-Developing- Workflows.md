@@ -267,7 +267,9 @@ persisting data</li>
       <br>
      </th>
       <td>    <ul>
-      <li>2. <a href="{{ site.url }}uploads/git_1.pptx" target="_blank">Introduction to Git</a> </li> 
+      <li>2. <a href="{{ site.url }}uploads/docker_practical_exercise.docxpwd" target="_blank">Introduction to Git</a>
+      <a href="{{ site.url }}uploads/docker_practical_exercise.docx" target="_blank">Practical 2: Docker.</a>
+       </li> 
        <li>2.1  Software carpentry (<a href="https://verena90.github.io/2021-10-05-online-NGS_Academy/" target="_blank">Basic Unix and Git</a>)</li> 
                       
 </ul></td>
