@@ -267,7 +267,7 @@ persisting data</li>
       <br>
      </th>
       <td>    <ul>
-      <li>2. <a href="{{ site.url }}uploads/advwf/git_t.pdf" target="_blank">Introduction to Git</a>
+      <li>2. <a href="{{ site.url }}uploads/git_t.pdf" target="_blank">Introduction to Git</a>
        </li> 
        <li>2.1  Software carpentry (<a href="https://verena90.github.io/2021-10-05-online-NGS_Academy/" target="_blank">Basic Unix and Git</a>)</li> 
                       
