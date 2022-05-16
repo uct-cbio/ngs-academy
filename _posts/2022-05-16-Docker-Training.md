@@ -1,12 +1,12 @@
 ---
 layout: default
-title:  "Advanced Training: Developing Workflows"
+title:  "Docker training"
 date: 2022-04-13
 main_menu: courses
 permalink: /:year/:title
-category: past-course
-course_overview :  High-throughput laboratory machines generate large quantities of raw biological data. Processing the data to generate useful information involves using several tools and sometimes setting up complex bioinformatics analysis environments across heterogeneous computing devices. Bioinformatics workflows and workflow managers allow reproducibility and portability of analysis plans and optimization of available computing resources. The Advanced Training in Developing Workflows workshop was aimed at introducing, deploying Nextflow, a too which enables scalable and reproducible scientific workflows.    
-start_date: 2022-04-25
+category: upcoming
+course_overview :  You will learn the fundamentals of Docker and containers from a bioinformatics perspective. First, you will learn what docker is, docker commands and alternatives to docker. Along the way, you will learn how to create Docker images and understand the concept of containers.  
+start_date: 2022-5-16
 end_date: 2022-04-29
 group: group1
 ---
@@ -19,7 +19,7 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
 
 <p align="left"><b >Course overview:</b></p>
 
- <p align="left">High-throughput laboratory machines generate large quantities of raw biological data. Processing the data to generate useful information involves using several tools and sometimes setting up complex bioinformatics analysis environments across heterogeneous computing devices. Bioinformatics workflows and workflow managers allow reproducibility and portability of analysis plans and optimization of available computing resources. The Advanced Training: Developing Workflows workshop was aimed at introducing, deploying Nextflow, a too which enables scalable and reproducible scientific workflows.   
+ <p align="left">You will learn the fundamentals of Docker and containers from a bioinformatics perspective. First, you will learn what docker is, docker commands and alternatives to docker. Along the way, you will learn how to create Docker images and understand the concept of containers.
  <p>
 
 
