@@ -129,7 +129,7 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
       <td>    <ul>
       <li><b> <a href="{{ site.url }}uploads/311653_Docker slides_rev1.pdf" target="_blank">Introduction to the Course</a></b></li>
 <ol>
-  <li>1. <a href="{{ site.url }}uploads/311653_Docker slides_rev1.pdf" target="_blank">Introduction to docker containers</a></li>
+  <li>1. <a href="https://figshare.com/s/b5e15bc8e3bd2141c031" target="_blank">Introduction to docker containers part 1 </a></li>
 
  
 </ol>                 
