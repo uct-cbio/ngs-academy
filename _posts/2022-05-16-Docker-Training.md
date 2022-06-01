@@ -142,7 +142,7 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
  
 </ul></td>
             <td><ul>
-             <li>TBA</li>
+             <li>August Thomas</li>
               
 </ul></td>
     </tr>
@@ -163,7 +163,7 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
  
 </ul></td>
             <td><ul>
-             <li>TBA</li>
+             <li>August Thomas</li>
               
 </ul></td>
     </tr>
