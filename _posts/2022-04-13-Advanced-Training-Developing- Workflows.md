@@ -128,7 +128,6 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
 <div class="tab-content">
 	<div class="tab-pane active" id="tabs-1" role="tabpanel">
 		<p>   <table class="table table-bordered table-responsive">
-      <p>  <a href="https://www.youtube.com/playlist?list=PL0uR29Znf38y6mat_wuIQEja3JhrC9fD3" target="_blank">Day 1 Training Videos</a> <p>
   <thead>
     <tr>
       <th scope="col">Session</th>
