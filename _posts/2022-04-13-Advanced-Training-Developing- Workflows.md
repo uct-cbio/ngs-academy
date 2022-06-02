@@ -107,6 +107,7 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
 <ul class="nav nav-tabs" role="tablist">
 	<li class="nav-item">
 		<a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Mon 25 April 2022</a>
+    <p>  <a href="https://www.youtube.com/playlist?list=PL0uR29Znf38y6mat_wuIQEja3JhrC9fD3" target="_blank">Day 1 Training Videos</a> <p>
 	</li>
 	<li class="nav-item">
 		<a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Tues 26 April 2022</a>
