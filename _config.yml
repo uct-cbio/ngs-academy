@@ -25,10 +25,11 @@ description: >- # this means to ignore newlines until "baseurl:"
   The NGS Academy draws on the expertise of H3ABioNet, a pan African bioinformatics network, which runs an extensive training and outreach program and which is led by CBIO.
 
 baseurl: "/ngs-academy" # the subpath of your site, e.g. /blog
-url: "https://uct-cbio.github.io/ngs-academy/" # the base hostname & protocol for your site, e.g. http://example.com
+# url: "https://uct-cbio.github.io/ngs-academy/" # the base hostname & protocol for your site, e.g. http://example.com
 
-twitter_username: jekyllrb
-github_username: jekyll
+site.url: "https://uct-cbio.github.io/ngs-academy/"
+# twitter_username: jekyllrb
+# github_username: jekyll
 
 # Build settings
 
