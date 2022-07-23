@@ -8,7 +8,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
+# If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
@@ -19,7 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: NGS Academy for the Africa Pathogen Genomics Initiative
-email: NGS_Academy_info@h3abionet.org 
+email: NGS_Academy_info@h3abionet.org
 description: >- # this means to ignore newlines until "baseurl:"
   The NGS Academy for the Africa CDC's Africa Pathogen Genomics Initiative is coordinated by the University of Cape Town's Computational Biology Division (CBIO) in collaboration with Africa CDC and ACEGID. 
   The NGS Academy draws on the expertise of H3ABioNet, a pan African bioinformatics network, which runs an extensive training and outreach program and which is led by CBIO.
@@ -27,9 +27,9 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://127.0.0.1:4000/" # the base hostname & protocol for your site, e.g. http://example.com
 
-
-twitter_username: jekyllrb
-github_username:  jekyll
+site.url: "http://localhost:4000/"
+# twitter_username: jekyllrb
+# github_username:  jekyll
 
 # Build settings
 
@@ -58,7 +58,4 @@ plugins:
 #   - vendor/ruby/
 
 sidebars:
-- lb2_sidebar
-
-
-
+  - lb2_sidebar
