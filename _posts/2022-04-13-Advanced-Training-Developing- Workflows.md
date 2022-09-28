@@ -4,12 +4,14 @@ title:  "Advanced Training: Developing Workflows"
 date: 2022-04-13
 main_menu: courses
 permalink: /:year/:title
-category: upcoming
-course_overview : High-throughput laboratory machines generate large quantities of raw biological data.  Processing the data to generate useful information involves using several tools and sometimes setting up complex bioinformatics analysis environments across heterogeneous computing devices. Bioinformatics workflows and workflow managers allow reproducibility and portability of analysis plans and optimization of available computing resources.  We would like to develop and run an advanced  bioinformatics workflow workshop  aimed at introducing and deploying Nextflow, a tool that enables scalable and reproducible scientific workflows. 
+category: past-course
+course_overview :  High-throughput laboratory machines generate large quantities of raw biological data. Processing the data to generate useful information involves using several tools and sometimes setting up complex bioinformatics analysis environments across heterogeneous computing devices. Bioinformatics workflows and workflow managers allow reproducibility and portability of analysis plans and optimization of available computing resources. The Advanced Training in Developing Workflows workshop was aimed at introducing, deploying Nextflow, a too which enables scalable and reproducible scientific workflows.    
 start_date: 2022-04-25
 end_date: 2022-04-29
 group: group1
 ---
+
+
   
 <!-- ### SARS-CoV-2 NGS bioinformatics course 2021 -->
 The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI). This initiative is funded by the Bill & Melinda Gates Foundation. Our training initiatives are carried out in partnership with the African Society for Laboratory Medicine (ASLM).
@@ -19,7 +21,7 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
 
 <p align="left"><b >Course overview:</b></p>
 
- <p align="left">High-throughput laboratory machines generate large quantities of raw biological data. Processing the data to generate useful information involves using several tools and sometimes setting up complex bioinformatics analysis environments across heterogeneous computing devices. Bioinformatics workflows and workflow managers allow reproducibility and portability of analysis plans and optimization of available computing resources. We would like to develop and run an advanced bioinformatics workflow workshop aimed at introducing and deploying Nextflow, a tool that enables scalable and reproducible scientific workflows.   
+ <p id="description" align="left">High-throughput laboratory machines generate large quantities of raw biological data. Processing the data to generate useful information involves using several tools and sometimes setting up complex bioinformatics analysis environments across heterogeneous computing devices. Bioinformatics workflows and workflow managers allow reproducibility and portability of analysis plans and optimization of available computing resources. The Advanced Training: Developing Workflows workshop was aimed at introducing, deploying Nextflow, a too which enables scalable and reproducible scientific workflows.   
  <p>
 
 
@@ -71,11 +73,12 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
 
 <ol class="list-unstyled">
 
- <li><b>Venue of course</b>: KEMRI / WELLCOME TRUST Kilifi, Kenya  </li>
+ <li id="location"><b>Venue of course</b>: KEMRI / WELLCOME TRUST Kilifi, Kenya  </li>
 
 
-<li><b>Dates for the course:</b> 25-29 April 2022</li>
+<li id ="startDate"><b>Start date:</b>2022-04-25</li>
 
+<li id="endDate"><b>End date:</b>2022-04-29</li>
 
 <!-- <li><b>Course sponsors</b>: TBA</li> -->
 
@@ -127,6 +130,7 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
 </ul><!-- Tab panes -->
 <div class="tab-content">
 	<div class="tab-pane active" id="tabs-1" role="tabpanel">
+  <p><a href="https://www.youtube.com/playlist?list=PL0uR29Znf38y6mat_wuIQEja3JhrC9fD3" target="_blank">Day 1 Training Videos</a></p>
 		<p>   <table class="table table-bordered table-responsive">
   <thead>
     <tr>
@@ -134,7 +138,7 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
       <th scope="col">Course materials</th>
       <th scope="col">Training partner</th>
        <th scope="col">Interactive Sessions with Instructor/s</th>
-    </tr>
+    </tr> 
   </thead>
   <tbody>
     <tr>
@@ -223,6 +227,7 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
 </table>    </p>
 	</div>
 	<div class="tab-pane" id="tabs-2" role="tabpanel">
+    <p><a href="https://www.youtube.com/playlist?list=PL0uR29Znf38xvz8LiXgxD52aqkuZRWnKn" target="_blank">Day 2 Training Videos</a></p>
 		<p> <table class="table table-bordered table-responsive">
   <thead>
     <tr>
@@ -315,6 +320,7 @@ persisting data</li>
 </p>
 	</div>
 	<div class="tab-pane" id="tabs-3" role="tabpanel">
+    <p><a href="https://www.youtube.com/playlist?list=PL0uR29Znf38wucNE_0Is6c3aYtXbOxsHW" target="_blank">Day 3 Training Videos</a></p>
 		<p>   <table class="table table-bordered table-responsive">
   <thead>
     <tr>
@@ -385,6 +391,7 @@ pipelines with bioinformatics workflow managers</a></li>
 	</div>
 
   	<div class="tab-pane" id="tabs-4" role="tabpanel">
+      <p><a href="https://www.youtube.com/playlist?list=PL0uR29Znf38zuz3USTQkW09cXIV7JHamr" target="_blank">Day 4 Training Videos</a></p>
 		<p> <table class="table table-bordered">
   <thead>
     <tr>
