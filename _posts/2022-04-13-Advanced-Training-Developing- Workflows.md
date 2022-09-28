@@ -10,6 +10,8 @@ start_date: 2022-04-25
 end_date: 2022-04-29
 group: group1
 ---
+
+
   
 <!-- ### SARS-CoV-2 NGS bioinformatics course 2021 -->
 The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI). This initiative is funded by the Bill & Melinda Gates Foundation. Our training initiatives are carried out in partnership with the African Society for Laboratory Medicine (ASLM).
@@ -19,7 +21,7 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
 
 <p align="left"><b >Course overview:</b></p>
 
- <p align="left">High-throughput laboratory machines generate large quantities of raw biological data. Processing the data to generate useful information involves using several tools and sometimes setting up complex bioinformatics analysis environments across heterogeneous computing devices. Bioinformatics workflows and workflow managers allow reproducibility and portability of analysis plans and optimization of available computing resources. The Advanced Training: Developing Workflows workshop was aimed at introducing, deploying Nextflow, a too which enables scalable and reproducible scientific workflows.   
+ <p id="description" align="left">High-throughput laboratory machines generate large quantities of raw biological data. Processing the data to generate useful information involves using several tools and sometimes setting up complex bioinformatics analysis environments across heterogeneous computing devices. Bioinformatics workflows and workflow managers allow reproducibility and portability of analysis plans and optimization of available computing resources. The Advanced Training: Developing Workflows workshop was aimed at introducing, deploying Nextflow, a too which enables scalable and reproducible scientific workflows.   
  <p>
 
 
@@ -71,11 +73,12 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
 
 <ol class="list-unstyled">
 
- <li><b>Venue of course</b>: KEMRI / WELLCOME TRUST Kilifi, Kenya  </li>
+ <li id="location"><b>Venue of course</b>: KEMRI / WELLCOME TRUST Kilifi, Kenya  </li>
 
 
-<li><b>Dates for the course:</b> 25-29 April 2022</li>
+<li id ="startDate"><b>Start date:</b>2022-04-25</li>
 
+<li id="endDate"><b>End date:</b>2022-04-29</li>
 
 <!-- <li><b>Course sponsors</b>: TBA</li> -->
 
