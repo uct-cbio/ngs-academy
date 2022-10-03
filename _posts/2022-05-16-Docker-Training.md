@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Docker training"
-date: 2022-10-03
+date: 2022-04-13
 main_menu: courses
 permalink: /:year/:title
 category: upcoming

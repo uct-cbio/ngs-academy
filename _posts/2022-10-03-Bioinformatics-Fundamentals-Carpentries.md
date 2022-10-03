@@ -2,7 +2,7 @@
 layout: default
 title:  "Bioinformatics Fundamentals using the
 Carpentries virtual training workshop 2022"
-date: 2022-04-13
+date: 2022-10-03
 main_menu: courses
 permalink: /:year/:title
 category: upcoming
