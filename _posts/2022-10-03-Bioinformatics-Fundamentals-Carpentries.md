@@ -30,7 +30,7 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
             <!-- <p class="small"> Source: CBIO UCT</p> -->
         </div>
     </div>
-    <div class="col-sm-6">
+    <div class="col-sm-6 d-flex justify-content-center">
         <div>
         <a href="https://redcap.h3abionet.org/redcap/surveys/?s=3EPAM9AYER9KRH7H" class="link-danger" target="_blank">Apply Now</a>
         <br>
