@@ -21,6 +21,7 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
 <p align="left"><b >Course overview:</b></p>
 
  <p id="description" align="left">This Bioinformatics Fundamentals virtual workshop will use the Carpentries team to provide training on Linux, Shell Scripts, and other foundational skills. The main focus for this virtual training is to introduce participants to the fundamental tools used to interact with the computer without a graphical user interface, some of which will allow users to perform more advanced tasks, such as automate repetitive tasks, and combine smaller tasks into larger, more complex workflows.
+
 <p><b>The course will cover:</b></p>
 
 <div class="row">
@@ -45,7 +46,7 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
     </div>
   
 </div>
-
+<br>
 <p align="left"><b class="text-left">Objectives and expected outcomes:</b></p>
 
 <p>The Carpentries virtual training workshop on Linux, Shell Scripts, fundamentals on bioinformatics is 3
