@@ -84,9 +84,9 @@ confidence in using them in your work.
  <li id="location"><b>Venue of course</b>: online via Zoom </li>
 
 
-<li id ="startDate"><b>Start date:</b>2022-10-17</li>
+<li id ="startDate"><b>Start date: </b>2022-10-17</li>
 
-<li id="endDate"><b>End date:</b>2022-10-19</li>
+<li id="endDate"><b>End date: </b>2022-10-19</li>
 
 <!-- <li><b>Course sponsors</b>: TBA</li> -->
 
