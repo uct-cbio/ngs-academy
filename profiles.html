@@ -136,38 +136,6 @@ permalink: /profiles/bioinformatics-profiles/
 
             ;
     }
-
-
-
-    function format(e) {
-
-        // `d` is the original data object for the row
-        return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">' +
-            '<tr>' +
-            '<td><b> Foundational Skills </b></td>' +
-            // '<td>' + d.job_title + '</td>' +
-            '</tr>' +
-            '<tr>' +
-            // '<td>Extension number:</td>' +
-            '<tr>' +
-            '<td>' + e.skill_1 + '</td>' +
-            '</tr>' +
-            '<tr>' +
-            '<td>' + e.skill_2 + '</td>' +
-            '</tr>' +
-            '<tr>' +
-            '<td>' + e.skill_3 + '</td>' +
-            '</tr>' +
-            '<tr>' +
-            '<td>' + e.skill_4 + '</td>' +
-            '</tr>' +
-            '<tr>' +
-            // '<td>Extra info:</td>' +
-            // '<td>And any further details here (images etc)...</td>' +
-            '</tr>' +
-            '</table>';
-    }
-
     var testdata = {
         "data": [
             {
@@ -195,7 +163,11 @@ permalink: /profiles/bioinformatics-profiles/
                 // "salary": "$86,000",
                 "start_date": "2009/01/12",
                 // "office": "San Francisco",
-                "extn": "1562"
+                "extn": "1562",
+                "skill_1": "Unix/Linux, Scripting",
+                "skill_2": "Programming",
+                "skill_3": "Bioinformatics",
+                "skill_4": "Workflows, HPC"
             },
             {
                 "job_title": "Systems Administrator",
@@ -203,7 +175,8 @@ permalink: /profiles/bioinformatics-profiles/
                 // "salary": "$433,060",
                 "start_date": "2012/03/29",
                 // "office": "Edinburgh",
-                "extn": "6224"
+                "extn": "6224",
+                "skill_1": "Unix/Linux, Scripting",
             }
 
 
