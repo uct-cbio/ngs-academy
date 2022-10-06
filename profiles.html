@@ -1,0 +1,213 @@
+---
+layout: default
+title: Bioinformatics Profiles
+permalink: /profiles/bioinformatics-profiles/
+---
+<!-- https://code.jquery.com/jquery-3.5.1.js
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript" language="javascript"
+    src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/select/1.2.1/js/dataTables.select.min.js" type="text/javascript"></script>
+
+
+<style>
+    td.details-control {
+        text-align: center;
+        color: forestgreen;
+        cursor: pointer;
+    }
+
+    tr.shown td.details-control {
+        text-align: center;
+        color: red;
+    }
+</style>
+
+
+
+<table width="100%" class="display" id="example" cellspacing="0">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Job Title</th>
+
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <th></th>
+            <th>Job Title</th>
+
+        </tr>
+    </tfoot>
+</table>
+
+<script>
+
+
+    $(document).ready(function () {
+
+        var table = $('#example').DataTable({
+            "data": testdata.data,
+            select: "single",
+            "columns": [
+                {
+                    "className": 'details-control',
+                    "orderable": false,
+                    "data": null,
+                    "defaultContent": '',
+                    "render": function () {
+                        return '<i class="fa fa-plus-square" aria-hidden="true"></i>';
+                    },
+                    width: "15px"
+                },
+                { "data": "job_title" },
+                // { "data": "position" },
+                // { "data": "office" },
+                // { "data": "salary" }
+            ],
+            "order": [[1, 'asc']]
+        });
+
+        // Add event listener for opening and closing details
+        $('#example tbody').on('click', 'td.details-control', function () {
+            var tr = $(this).closest('tr');
+            var tdi = tr.find("i.fa");
+            var row = table.row(tr);
+
+            if (row.child.isShown()) {
+                // This row is already open - close it
+                row.child.hide();
+                tr.removeClass('shown');
+                tdi.first().removeClass('fa-minus-square');
+                tdi.first().addClass('fa-plus-square');
+            }
+            else {
+                // Open this row
+                row.child(format(row.data())).show();
+                tr.addClass('shown');
+                tdi.first().removeClass('fa-plus-square');
+                tdi.first().addClass('fa-minus-square');
+            }
+        });
+
+        table.on("user-select", function (e, dt, type, cell, originalEvent) {
+            if ($(cell.node()).hasClass("details-control")) {
+                e.preventDefault();
+            }
+        });
+    });
+
+    function format(mk) {
+
+        // `d` is the original data object for the row
+        return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">' +
+            '<tr>' +
+            '<td><b> Foundational Skills </b></td>' +
+            // '<td>' + d.job_title + '</td>' +
+            '</tr>' +
+            '<tr>' +
+            // '<td>Extension number:</td>' +
+            '<tr>' +
+            '<td>' + mk.skill_1 + '</td>' +
+            '</tr>' +
+            '<tr>' +
+            '<td>' + mk.skill_2 + '</td>' +
+            '</tr>' +
+            '<tr>' +
+            '<td>' + mk.skill_3 + '</td>' +
+            '</tr>' +
+            '<tr>' +
+            '<td>' + mk.skill_4 + '</td>' +
+            '</tr>' +
+            '<tr>' +
+            // '<td>Extra info:</td>' +
+            // '<td>And any further details here (images etc)...</td>' +
+            '</tr>' +
+            '</table>'
+
+
+            ;
+    }
+
+
+
+    function format(e) {
+
+        // `d` is the original data object for the row
+        return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">' +
+            '<tr>' +
+            '<td><b> Foundational Skills </b></td>' +
+            // '<td>' + d.job_title + '</td>' +
+            '</tr>' +
+            '<tr>' +
+            // '<td>Extension number:</td>' +
+            '<tr>' +
+            '<td>' + e.skill_1 + '</td>' +
+            '</tr>' +
+            '<tr>' +
+            '<td>' + e.skill_2 + '</td>' +
+            '</tr>' +
+            '<tr>' +
+            '<td>' + e.skill_3 + '</td>' +
+            '</tr>' +
+            '<tr>' +
+            '<td>' + e.skill_4 + '</td>' +
+            '</tr>' +
+            '<tr>' +
+            // '<td>Extra info:</td>' +
+            // '<td>And any further details here (images etc)...</td>' +
+            '</tr>' +
+            '</table>';
+    }
+
+    var testdata = {
+        "data": [
+            {
+                "job_title": "Laboratory Manager",
+                // "position": "System Architect",
+                // "salary": "$320,800",
+                "start_date": "2011/04/25",
+                // "office": "Edinburgh",
+                "extn": "5421",
+                "skill_1": "Health and Safety",
+                "skill_2": "Ethics and Policy",
+                "skill_3": "Introduction to Genetic Epidemiology",
+            },
+            {
+                "job_title": "Wetlab Scientist",
+                // "position": "Accountant",
+                // "salary": "$170,750",
+                "start_date": "2011/07/25",
+                // "office": "Tokyo",
+                "extn": "8422"
+            },
+            {
+                "job_title": "Bioinformatics Scientist",
+                // "position": "Junior Technical Author",
+                // "salary": "$86,000",
+                "start_date": "2009/01/12",
+                // "office": "San Francisco",
+                "extn": "1562"
+            },
+            {
+                "job_title": "Systems Administrator",
+                // "position": "Senior Javascript Developer",
+                // "salary": "$433,060",
+                "start_date": "2012/03/29",
+                // "office": "Edinburgh",
+                "extn": "6224"
+            }
+
+
+
+        ]
+    };
+</script>
