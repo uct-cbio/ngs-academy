@@ -444,8 +444,8 @@ font header .navbar-default .navbar-nav li a:hover {
 #global-header .block {
   color: white;
   margin: 0 auto;
-  padding-left: 2px;
-  padding-right: 9px;
+  padding-left: 0px;
+  padding-right: 5px;
   text-align: center;
 }
 
