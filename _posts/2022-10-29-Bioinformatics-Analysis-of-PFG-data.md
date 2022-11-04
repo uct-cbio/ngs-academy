@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "Introduction to bioinformatics analysis of Plasmodium Falciparum Genome data training 2022"
+title: "Introduction to Bioinformatics Analysis of Plasmodium Falciparum Genome data training 2022"
 date: 2022-10-28
 main_menu: courses
 permalink: /:year/:title
-category: upcoming
-course_overview : Genomic epidemiology of resistant P. falciparum in Côte d’Ivoire with the aim to uncover the genomic signatures due to various selection pressures to be identified (host immune system? background genetics? epidemiological facies? or other).To understand the spread over the country of populations of parasites carrying any malaria drug resistant-conferring markers (the withdrawn ones as well as the ones on official uset).
+category: upcoming_devel
+course_overview : Genomic Epidemiology of resistant Plasmodium Falciparum in Côte d’Ivoire with the aim to uncover the genomic signatures due to various selection pressures to be identified (host immune system? background genetics? epidemiological facies? or other).To understand the spread over the country of populations of parasites carrying any malaria drug resistant-conferring markers (the withdrawn ones as well as the ones on official uset).
   
 start_date: 2022-11-28
 end_date: 2022-12-02
@@ -27,17 +27,24 @@ To understand the spread over the country of populations of parasites carrying a
 
 <div class="row">
     <div class="col-sm-6">
-        <div>text/pic   
+        <div>
+        <ol>
+  <li>1. Overview of Malaria. Epidemiology</li>
+  <li>2. Programming. Data generation and analysis</li>
+  <li>3. Compliance. Ethics</li>
+</ol> 
         </div>
     </div>
     <div class="col-sm-6">
         <div>
-     text/pic
-        <br>
-       text
+            <ol>
+  <li>4. Different Frameworks</li>
+    <li>5. NGS Sequencing</li>
+
+</ol> 
          <div class="card">
   <div class="card-body">
-text
+
   </div>
 </div>
         </div>
@@ -45,29 +52,26 @@ text
   
 </div>
 
+<p align="left"><b class="text-left">Pre-requisites and eligibility:</b></p>
+
+<p>No prior bioinformatics knowledge is required.
+</p>
+
 <p align="left"><b class="text-left">Objectives and expected outcomes:</b></p>
 
-<p>The Carpentries virtual training workshop on Linux, Shell Scripts, fundamentals on bioinformatics is 3
-hours a day for 3 days, designed to introduce the utilization of Unix/Command Line, which is fundamental
-to a wide range of advanced computing tasks. The course will also provide an introduction to
-high-performance computing. The training includes live Q&A sessions with experts over Zoom and group
-discussions.
+<p>.....
 </p>
 
 <p align="left"><b class="text-left">Course limitations:</b></p>
 
-<p>The Carpentries virtual training will introduce participants to Unix/Command Line and GitHub, focusing on
-a basic overview, functionality and features. This is not an advanced course, it will only teach basic skills
-for research computing.
+<p>....
 </p>
 
 
 
 <p align="left"><b class="text-left">Intended audience:</b></p>
 
-<p>Software Carpentry has been teaching researchers the computing skills they need to get more done in
-less time. If you would like to learn the foundational skills to work effectively and reproducibly with data and code such as Unix/Command line. Then the course will empower you to learn new skills and build
-confidence in using them in your work.
+<p>Beginner - Intermediate  level  Bioinformaticians working with next-generation sequencing data in Africa.
 </p>
 
 
