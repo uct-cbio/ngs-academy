@@ -4,7 +4,7 @@ title: "Introduction to Bioinformatics Analysis of Plasmodium Falciparum Genome 
 date: 2022-10-28
 main_menu: courses
 permalink: /:year/:title
-category: upcoming_devel
+category: upcoming
 course_overview : Genomic Epidemiology of resistant Plasmodium Falciparum in Côte d’Ivoire with the aim to uncover the genomic signatures due to various selection pressures to be identified (host immune system? background genetics? epidemiological facies? or other).To understand the spread over the country of populations of parasites carrying any malaria drug resistant-conferring markers (the withdrawn ones as well as the ones on official uset).
   
 start_date: 2022-11-28
@@ -25,49 +25,45 @@ To understand the spread over the country of populations of parasites carrying a
 
 <p><b>The course will cover:</b></p>
 
+
 <div class="row">
-    <div class="col-sm-6">
-        <div>
-        <ol>
-  <li>1. Overview of Malaria. Epidemiology</li>
-  <li>2. Programming. Data generation and analysis</li>
-  <li>3. Compliance. Ethics</li>
-</ol> 
+    <div class="col-sm-2">
+        <div><img alt="..." src="/ngs-academy/img/nextflow.png" width="100%" />
+            <!-- <p class="small"> Source: CBIO UCT</p> -->
         </div>
     </div>
-    <div class="col-sm-6">
-        <div>
-            <ol>
-  <li>4. Different Frameworks</li>
-    <li>5. NGS Sequencing</li>
-
-</ol> 
-         <div class="card">
-  <div class="card-body">
-
-  </div>
-</div>
+    <div class="col-sm-2">
+        <div><img alt="..." src="/ngs-academy/img/r.jpg" width="100%" />
+            <!-- <p class="small"> Source: CBIO UCT</p> -->
         </div>
     </div>
-  
+    <div class="col-sm-2">
+        <div><img alt="..." src="/ngs-academy/img/git.png" width="100%" />
+            <!-- <p class="small"> Source: CBIO UCT</p> -->
+        </div>
+    </div>
+    <div class="col-sm-2">
+        <div><img alt="..." src="/ngs-academy/img/HPC.jpg" width="100%" />
+            <!-- <p class="small"> Source: CBIO UCT</p> -->
+        </div>
+    </div>
+         <div class="col-sm-2">
+        <div><img alt="..." src="/ngs-academy/img/snakemake.png" width="100%" />
+            <!-- <p class="small"> Source: CBIO UCT</p> -->
+        </div>
+    </div>
+
 </div>
+
 
 <p align="left"><b class="text-left">Pre-requisites and eligibility:</b></p>
 
 <p>No prior bioinformatics knowledge is required.
 </p>
 
-<p align="left"><b class="text-left">Objectives and expected outcomes:</b></p>
-
-<p>.....
+<p align="left"><b class="text-left">Objectives and expected outcomes:</b>
+The training has a double objective, to understand the genomic epidemiology of resistant P. falciparum in Côte d'Ivoire in order to discover the genomic signatures due to the different selection pressures to be identified (immune system of the host, genetic background, facies epidemiological, etc.). It is also a question of understanding the mode of diffusion and the distribution on the territory of the populations of parasites carrying markers conferring resistance to antimalarial drugs.
 </p>
-
-<p align="left"><b class="text-left">Course limitations:</b></p>
-
-<p>....
-</p>
-
-
 
 <p align="left"><b class="text-left">Intended audience:</b></p>
 
@@ -102,18 +98,33 @@ To understand the spread over the country of populations of parasites carrying a
 <!-- <li><b>Notification date for successful Applicants:</b> </li> -->
 </ol>
 
-<!-- <b>Course curriculum:</b>
+ <b>Course curriculum:</b>
 <hr>
 <ol class="list-unstyled">
 
-<li>Day 1 HPC and introduction to containers </li>
-<li>Day 2 Introduction to git and file organisation</li>
-<li>Day 3 Introduction to snakemake</li>
-<li>Day 4 Advanced workflows (Nextflow, CWL) </li>
-<li>Day 5 Practical application </li>
+<li>1. Malaria, NGS, software tools, snakemake </li>
+<li>2. Phylodynamics and phylogeography </li>
+<li>3. Machine learning/modeling </li>
+<li>4. Git, version control  </li>
+<li>5. QC/Sequence assembly Workflows</li>
+<li>6. Metagenomic analysis</li>
+<li>7. Genome Analysis Pipeline</li>
+<li>8. Snakemake </li>
+<li>9. R programming </li> 
+<li>10. Workflow management and Nextflow Conda environment </li>
+</ol>
 
-</ol> -->
 
+ <b>Practical work:</b>
+<hr>
+<ol class="list-unstyled">
+
+<li>MSA and construction of phylogenetic trees </li>
+<li>Advanced HPC usage and maintenance </li>
+<li>Development and maintenance of bioinformatics tools</li>
+<li>Implementing Machine Learning in Bioinformatics </li>
+<li>Bash, Python and R scripting and version control.</li>
+</ol>
 
 
 
