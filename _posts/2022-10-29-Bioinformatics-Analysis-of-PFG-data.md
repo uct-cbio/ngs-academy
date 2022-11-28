@@ -27,22 +27,27 @@ To understand the spread over the country of populations of parasites carrying a
 
 
 <div class="row">
-    <div class="col-sm-3">
+    <div class="col-sm-2">
+        <div><img alt="..." src="/ngs-academy/img/py.png" width="60%" />
+            <!-- <p class="small"> Source: CBIO UCT</p> -->
+        </div>
+    </div>
+    <div class="col-sm-2">
         <div><img alt="..." src="/ngs-academy/img/r.jpg" width="50%" />
             <!-- <p class="small"> Source: CBIO UCT</p> -->
         </div>
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-2">
         <div><img alt="..." src="/ngs-academy/img/git.png" width="90%" />
             <!-- <p class="small"> Source: CBIO UCT</p> -->
         </div>
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-2">
         <div><img alt="..." src="/ngs-academy/img/HPC.jpg" width="100%" />
             <!-- <p class="small"> Source: CBIO UCT</p> -->
         </div>
     </div>
-         <div class="col-sm-3">
+         <div class="col-sm-2">
         <div><img alt="..." src="/ngs-academy/img/snakemake.png" width="100%" />
             <!-- <p class="small"> Source: CBIO UCT</p> -->
         </div>
@@ -97,19 +102,14 @@ The training has a double objective, to understand the genomic epidemiology of r
 <hr>
 <ol class="list-unstyled">
 
-<li>1. Malaria, NGS, software tools, snakemake </li>
+<li>1. Malaria, NGS, software tools, snakemake. </li>
 <li>2. Phylodynamics and phylogeography </li>
 <li>3. Machine learning/modeling </li>
-<li>4. Git, version control  </li>
-<li>5. QC/Sequence assembly Workflows</li>
-<li>6. Metagenomic analysis</li>
-<li>7. Genome Analysis Pipeline</li>
-<li>8. Snakemake </li>
-<li>9. R programming </li> 
-<li>10. Workflow management and Nextflow Conda environment </li>
+<li>4. Git, version control. QC/Sequence assembly </li>
+<li>5. Workflows. Metagenomic analysis and Genome Analysis Pipeline</li>
+<li>6. Snakemake & R programming.</li>
+<li>7. Workflow management and Nextflow Conda environment</li>
 </ol>
-
-
  <b>Practical work:</b>
 <hr>
 <ol class="list-unstyled">
