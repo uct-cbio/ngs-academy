@@ -33,7 +33,7 @@ To understand the spread over the country of populations of parasites carrying a
         </div>
     </div>
     <div class="col-sm-2">
-        <div><img alt="..." src="/ngs-academy/img/r.jpg" width="90%" />
+        <div><img alt="..." src="/ngs-academy/img/r.jpg" width="60%" />
             <!-- <p class="small"> Source: CBIO UCT</p> -->
         </div>
     </div>
