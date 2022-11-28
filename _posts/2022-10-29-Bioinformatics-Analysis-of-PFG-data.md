@@ -27,27 +27,22 @@ To understand the spread over the country of populations of parasites carrying a
 
 
 <div class="row">
-    <div class="col-sm-2">
-        <div><img alt="..." src="/ngs-academy/img/nextflow.png" width="100%" />
-            <!-- <p class="small"> Source: CBIO UCT</p> -->
-        </div>
-    </div>
-    <div class="col-sm-2">
+    <div class="col-sm-3">
         <div><img alt="..." src="/ngs-academy/img/r.jpg" width="100%" />
             <!-- <p class="small"> Source: CBIO UCT</p> -->
         </div>
     </div>
-    <div class="col-sm-2">
+    <div class="col-sm-3">
         <div><img alt="..." src="/ngs-academy/img/git.png" width="100%" />
             <!-- <p class="small"> Source: CBIO UCT</p> -->
         </div>
     </div>
-    <div class="col-sm-2">
+    <div class="col-sm-3">
         <div><img alt="..." src="/ngs-academy/img/HPC.jpg" width="100%" />
             <!-- <p class="small"> Source: CBIO UCT</p> -->
         </div>
     </div>
-         <div class="col-sm-2">
+         <div class="col-sm-3">
         <div><img alt="..." src="/ngs-academy/img/snakemake.png" width="100%" />
             <!-- <p class="small"> Source: CBIO UCT</p> -->
         </div>
