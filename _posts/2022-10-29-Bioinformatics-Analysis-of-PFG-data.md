@@ -28,17 +28,17 @@ To understand the spread over the country of populations of parasites carrying a
 
 <div class="row">
     <div class="col-sm-2">
-        <div><img alt="..." src="/ngs-academy/img/py.png" width="60%" />
+        <div><img alt="..." src="/ngs-academy/img/py.png" width="105%" />
             <!-- <p class="small"> Source: CBIO UCT</p> -->
         </div>
     </div>
     <div class="col-sm-2">
-        <div><img alt="..." src="/ngs-academy/img/r.jpg" width="50%" />
+        <div><img alt="..." src="/ngs-academy/img/r.jpg" width="60%" />
             <!-- <p class="small"> Source: CBIO UCT</p> -->
         </div>
     </div>
     <div class="col-sm-2">
-        <div><img alt="..." src="/ngs-academy/img/git.png" width="90%" />
+        <div><img alt="..." src="/ngs-academy/img/git.png" width="100%" />
             <!-- <p class="small"> Source: CBIO UCT</p> -->
         </div>
     </div>
@@ -98,8 +98,11 @@ The training has a double objective, to understand the genomic epidemiology of r
 <!-- <li><b>Notification date for successful Applicants:</b> </li> -->
 </ol>
 
- <b>Course curriculum:</b>
-<hr>
+
+ <div class="row">
+    <div class="col-sm-6">
+     <b>Course curriculum:</b>
+
 <ol class="list-unstyled">
 
 <li>1. Malaria, NGS, software tools, snakemake. </li>
@@ -110,16 +113,23 @@ The training has a double objective, to understand the genomic epidemiology of r
 <li>6. Snakemake & R programming.</li>
 <li>7. Workflow management and Nextflow Conda environment</li>
 </ol>
- <b>Practical work:</b>
-<hr>
-<ol class="list-unstyled">
+    </div>
+    <div class="col-sm-6">
+     
 
+<ol class="list-unstyled">
+ <b>Practical work:</b>
 <li>MSA and construction of phylogenetic trees </li>
 <li>Advanced HPC usage and maintenance </li>
 <li>Development and maintenance of bioinformatics tools</li>
 <li>Implementing Machine Learning in Bioinformatics </li>
 <li>Bash, Python and R scripting and version control.</li>
 </ol>
+   </div>
+
+  </div>
+
+
 
 
 
