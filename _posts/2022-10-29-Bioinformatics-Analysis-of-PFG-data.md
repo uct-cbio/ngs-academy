@@ -98,8 +98,11 @@ The training has a double objective, to understand the genomic epidemiology of r
 <!-- <li><b>Notification date for successful Applicants:</b> </li> -->
 </ol>
 
- <b>Course curriculum:</b>
-<hr>
+
+ <div class="row">
+    <div class="col-sm-6">
+     <b>Course curriculum:</b>
+
 <ol class="list-unstyled">
 
 <li>1. Malaria, NGS, software tools, snakemake. </li>
@@ -110,16 +113,23 @@ The training has a double objective, to understand the genomic epidemiology of r
 <li>6. Snakemake & R programming.</li>
 <li>7. Workflow management and Nextflow Conda environment</li>
 </ol>
- <b>Practical work:</b>
-<hr>
-<ol class="list-unstyled">
+    </div>
+    <div class="col-sm-6">
+     
 
+<ol class="list-unstyled">
+ <b>Practical work:</b>
 <li>MSA and construction of phylogenetic trees </li>
 <li>Advanced HPC usage and maintenance </li>
 <li>Development and maintenance of bioinformatics tools</li>
 <li>Implementing Machine Learning in Bioinformatics </li>
 <li>Bash, Python and R scripting and version control.</li>
 </ol>
+   </div>
+
+  </div>
+
+
 
 
 
