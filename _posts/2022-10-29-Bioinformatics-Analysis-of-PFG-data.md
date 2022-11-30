@@ -169,23 +169,26 @@ The training has a double objective, to understand the genomic epidemiology of r
      </th>
       <td>    <ul>
       <li><b> 
-      <!-- <a href="{{ site.url }}uploads/introduction_to_the_course.pptx" target="_blank">Introduction to the Course</a> -->
+  
       </b></li>
 <ol>
-  <li>1. </li>
-  <li>1.1 </li>
+  <li>1. <a href="{{ site.url }}uploads/NGS_workflow.pptx" target="_blank">NGS workflows</a>  </li>
+  <!-- <li>1.1 <a href="" target="_blank">Day 1 Session 1</a></li>
+   <li>1.2 <a href="#" target="_blank">Day 1 Session 2</a></li>
+    <li>1.3 <a href="#" target="_blank">Day 1 Session 3</a></li>
+     <li>1.4 <a href="#" target="_blank">Day 1 Session 4</a></li> -->
 </ol>                 
 </ul></td>
       <td><ul>
   
-  <li>-- </li>
+  <li>University of Ghana</li>
 
- <li>-- </li>
+ <li> </li>
  
 </ul></td>
             <td><ul>
-             <li>--</li>
-              <li>--</li>
+             <li>Dr Lucas Amengha</li>
+              <li>Alfred Ngwa</li>
 </ul></td>
     </tr>
   <tr>
@@ -198,7 +201,7 @@ The training has a double objective, to understand the genomic epidemiology of r
       </li>
 <ol>
   <li>2.1 </li>
-  <li>2.2 </li>        
+  <li></li>        
 </ol>                 
 </ul></td>
       <td><ul>
@@ -231,8 +234,8 @@ The training has a double objective, to understand the genomic epidemiology of r
   </thead>
   <tbody>
 
-  <tr>
-      <th scope="row">Morning
+  <!-- <tr>
+  <th scope="row">Morning
       <br>
      </th>
       <td>    <ul>
@@ -241,23 +244,17 @@ The training has a double objective, to understand the genomic epidemiology of r
 <li>1.2 </li>
         <li>1.3 </li>
 <ol>
- 
- 
 </ol>                 
 </ul></td>
       <td><ul>
-  
   <li>-- </li>
-
  <li>-- </li>
- 
 </ul></td>
-            <td><ul>
-             <li>--</li>
-              <li>--</li>
+  <td><ul>
+  <li>--</li>
+  <li>--</li>
 </ul></td>
     </tr>
-
  <tr>
       <th scope="row">Afternoon
       <br>
@@ -265,23 +262,17 @@ The training has a double objective, to understand the genomic epidemiology of r
       <td>    <ul>
       <li>2. 
        </li> 
-       <li>2.1 </li> 
-                      
+       <li>2.1 </li>                     
 </ul></td>
       <td><ul>
-  
   <li>-- </li>
-
  <li>-- </li>
- 
 </ul></td>
-            <td><ul>
-             <li>--</li>
-              <li>--</li>
+  <td><ul>
+    <li>--</li>
+   <li>--</li>
 </ul></td>
-    </tr>
-  
-    
+    </tr>   -->
   </tbody>
 </table>  
 </p>
@@ -299,8 +290,8 @@ The training has a double objective, to understand the genomic epidemiology of r
   </thead>
   <tbody>
    
-  <tr>
-      <th scope="row">Morning
+  <!-- <tr>
+  <th scope="row">Morning
       <br>
      </th>
       <td>    <ul>
@@ -308,25 +299,16 @@ The training has a double objective, to understand the genomic epidemiology of r
       <li>1.1  </li>
 <li>1.2 </li>
         <li>1.3 </li>
-          <li>1.4</li>
-        
-
-   
-<ol>
- 
- 
+          <li>1.4</li><ol>
 </ol>                 
 </ul></td>
       <td><ul>
-  
   <li>--</li>
-
- <li>--</li>
- 
+ <li>--</li> 
 </ul></td>
-            <td><ul>
-             <li>--</li>
-              <li>--</li>
+<td><ul>
+<li>--</li>
+<li>--</li>
 </ul></td>
     </tr>
     <tr>
@@ -336,22 +318,18 @@ The training has a double objective, to understand the genomic epidemiology of r
       <td>    <ul>
              <li>2. .</li>
                   <li>2.1 </li>
-                    <li>2.2 </li>
-                     <li>2.3</li>
+                    <li>2.2 </li>  <li>2.3</li>
 </ul></td>
       <td><ul>
    <li>-- </li>
   <li>--</li>
- 
- 
 </ul></td>
-            <td> <ul>
-            
+  <td> <ul>         
   <li>--</li>
    <li>--</li>
     
 </ul></td>
-    </tr>
+    </tr> -->
   </tbody>
 </table>  </p>
 	</div>
@@ -368,48 +346,40 @@ The training has a double objective, to understand the genomic epidemiology of r
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">Morning
+    <!-- <tr>
+    <th scope="row">Morning
       <br>
      </th>
       <td>    <ul>
       <li>1.</li>                
 </ul></td>
-      <td><ul>
-  
+  <td><ul>
   <li>-- </li>
  <li>--</li>
   <li>--</li>
 </ul></td>
-            <td><ul>
-             <li>--</li>
-              <li>--</li>
-               <li>--</li>
+<td><ul>
+<li>--</li>
+<li>--</li>
+<li>--</li>
 </ul></td>
-    </tr>
-  <tr>
-      <th scope="row">Afternoon
+  </tr>
+  <tr> <th scope="row">Afternoon
       <br>
      </th>
       <td>    <ul>
-      <li>2. </li>
-                
+      <li>2. </li>              
 </ul></td>
-      <td><ul>
-  
+      <td><ul>  
   <li>-- </li>
  <li>-- </li>
  <li>-- </li>
- 
-
- 
 </ul></td>
-            <td><ul>
-             <li>--</li>
-              <li>--</li>
-             
+  <td><ul>
+  <li>--</li>
+  <li>--</li>         
 </ul></td>
-    </tr>   
+    </tr> -->
   </tbody>
 </table>  </p>
 	</div>
@@ -424,15 +394,14 @@ The training has a double objective, to understand the genomic epidemiology of r
     </tr>
   </thead>
   <tbody>
-    <tr>
+   <!-- <tr>
       <th scope="row">Morning
       <br>
      </th>
       <td>    <ul>
       <li>--</li>                
 </ul></td>
-      <td><ul>
-  
+      <td><ul> 
  <li>-- </li>
   <li>--</li>
 </ul></td>
@@ -449,17 +418,12 @@ The training has a double objective, to understand the genomic epidemiology of r
       <li>--</li>                
 </ul></td>
       <td><ul>
-  
  <li>-- </li>
   <li>--</li>
+</ul></td> <td><ul>
+              <li>--</li><li>--</li>
 </ul></td>
-            <td><ul>
-              <li>--</li>
-               <li>--</li>
-</ul></td>
-    </tr>
-   
-    
+    </tr>  -->
   </tbody>
 </table>  </p>
 	</div>
