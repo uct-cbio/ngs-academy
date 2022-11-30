@@ -130,6 +130,309 @@ The training has a double objective, to understand the genomic epidemiology of r
   </div>
 
 
+<ul class="nav nav-tabs" role="tablist">
+	<li class="nav-item">
+		<a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Mon 28 Nov 2022</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Tues 29 Nov 2022</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Wed 30 Nov 2022</a>
+	</li>
+ 
+  	<li class="nav-item">
+		<a class="nav-link" data-toggle="tab" href="#tabs-4" role="tab">Thur 01 Dec 2022</a>
+	</li>
+
+
+   	<li class="nav-item">
+		<a class="nav-link" data-toggle="tab" href="#tabs-5" role="tab">Fri 02 Dec 2022</a>
+	</li>
+  
+</ul><!-- Tab panes -->
+<div class="tab-content">
+	<div class="tab-pane active" id="tabs-1" role="tabpanel">
+  <p><a href="#" target="_blank">Day 1 Training Videos</a></p>
+		<p>   <table class="table table-bordered table-responsive">
+  <thead>
+    <tr>
+      <th scope="col">Session</th>
+      <th scope="col">Course materials</th>
+      <th scope="col">Training partner</th>
+       <th scope="col">Interactive Sessions with Instructor/s</th>
+    </tr> 
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Morning 
+     </th>
+      <td>    <ul>
+      <li><b> 
+  
+      </b></li>
+<ol>
+  <li>1. <a href="{{ site.url }}uploads/NGS_workflow.pptx" target="_blank">NGS workflows</a>  </li>
+  <!-- <li>1.1 <a href="" target="_blank">Day 1 Session 1</a></li>
+   <li>1.2 <a href="#" target="_blank">Day 1 Session 2</a></li>
+    <li>1.3 <a href="#" target="_blank">Day 1 Session 3</a></li>
+     <li>1.4 <a href="#" target="_blank">Day 1 Session 4</a></li> -->
+</ol>                 
+</ul></td>
+      <td><ul>
+  
+  <li>University of Ghana</li>
+
+ <li> </li>
+ 
+</ul></td>
+            <td><ul>
+             <li>Dr Lucas Amengha</li>
+              <li>Alfred Ngwa</li>
+</ul></td>
+    </tr>
+  <tr>
+      <th scope="row">Afternoon
+      <br>
+     </th>
+      <td>    <ul>
+      <li>2.
+       <!-- <a href="{{ site.url }}uploads/Cond_and_Conda_environments.pdf" target="_blank">Introduction to Conda and Conda environments</a> -->
+      </li>
+<ol>
+  <li>2.1 </li>
+  <li></li>        
+</ol>                 
+</ul></td>
+      <td><ul>
+  
+  <li>--</li>
+ <li>--</li>
+
+ 
+</ul></td>
+            <td><ul>
+             <li>--</li>
+              <li>--</li>
+</ul></td>
+    </tr>
+ 
+    
+  </tbody>
+</table>    </p>
+	</div>
+	<div class="tab-pane" id="tabs-2" role="tabpanel">
+    <p><a href="#" target="_blank">Day 2 Training Videos</a></p>
+		<p> <table class="table table-bordered table-responsive">
+  <thead>
+    <tr>
+      <th scope="col">Session</th>
+      <th scope="col">Course materials</th>
+      <th scope="col">Training partner</th>
+       <th scope="col">Interactive Sessions with Instructor/s</th>
+    </tr>
+  </thead>
+  <tbody>
+
+  <!-- <tr>
+  <th scope="row">Morning
+      <br>
+     </th>
+      <td>    <ul>
+      <li>1. </li>
+      <li>1.1  </li>
+<li>1.2 </li>
+        <li>1.3 </li>
+<ol>
+</ol>                 
+</ul></td>
+      <td><ul>
+  <li>-- </li>
+ <li>-- </li>
+</ul></td>
+  <td><ul>
+  <li>--</li>
+  <li>--</li>
+</ul></td>
+    </tr>
+ <tr>
+      <th scope="row">Afternoon
+      <br>
+     </th>
+      <td>    <ul>
+      <li>2. 
+       </li> 
+       <li>2.1 </li>                     
+</ul></td>
+      <td><ul>
+  <li>-- </li>
+ <li>-- </li>
+</ul></td>
+  <td><ul>
+    <li>--</li>
+   <li>--</li>
+</ul></td>
+    </tr>   -->
+  </tbody>
+</table>  
+</p>
+	</div>
+	<div class="tab-pane" id="tabs-3" role="tabpanel">
+    <p><a href="#" target="_blank">Day 3 Training Videos</a></p>
+		<p>   <table class="table table-bordered table-responsive">
+  <thead>
+    <tr>
+      <th scope="col">Session</th>
+      <th scope="col">Course materials</th>
+      <th scope="col">Training partner</th>
+       <th scope="col">Interactive Sessions with Instructor/s</th>
+    </tr>
+  </thead>
+  <tbody>
+   
+  <!-- <tr>
+  <th scope="row">Morning
+      <br>
+     </th>
+      <td>    <ul>
+      <li>1. </li>
+      <li>1.1  </li>
+<li>1.2 </li>
+        <li>1.3 </li>
+          <li>1.4</li><ol>
+</ol>                 
+</ul></td>
+      <td><ul>
+  <li>--</li>
+ <li>--</li> 
+</ul></td>
+<td><ul>
+<li>--</li>
+<li>--</li>
+</ul></td>
+    </tr>
+    <tr>
+      <th scope="row">
+      <br>
+      Afternoon</th>
+      <td>    <ul>
+             <li>2. .</li>
+                  <li>2.1 </li>
+                    <li>2.2 </li>  <li>2.3</li>
+</ul></td>
+      <td><ul>
+   <li>-- </li>
+  <li>--</li>
+</ul></td>
+  <td> <ul>         
+  <li>--</li>
+   <li>--</li>
+    
+</ul></td>
+    </tr> -->
+  </tbody>
+</table>  </p>
+	</div>
+
+  	<div class="tab-pane" id="tabs-4" role="tabpanel">
+      <p><a href="#" target="_blank">Day 4 Training Videos</a></p>
+		<p> <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Session</th>
+      <th scope="col">Course materials</th>
+      <th scope="col">Training partner</th>
+       <th scope="col">Interactive Sessions with Instructor/s</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- <tr>
+    <th scope="row">Morning
+      <br>
+     </th>
+      <td>    <ul>
+      <li>1.</li>                
+</ul></td>
+  <td><ul>
+  <li>-- </li>
+ <li>--</li>
+  <li>--</li>
+</ul></td>
+<td><ul>
+<li>--</li>
+<li>--</li>
+<li>--</li>
+</ul></td>
+  </tr>
+  <tr> <th scope="row">Afternoon
+      <br>
+     </th>
+      <td>    <ul>
+      <li>2. </li>              
+</ul></td>
+      <td><ul>  
+  <li>-- </li>
+ <li>-- </li>
+ <li>-- </li>
+</ul></td>
+  <td><ul>
+  <li>--</li>
+  <li>--</li>         
+</ul></td>
+    </tr> -->
+  </tbody>
+</table>  </p>
+	</div>
+    	<div class="tab-pane" id="tabs-5" role="tabpanel">
+		<p> <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Session</th>
+      <th scope="col">Course materials</th>
+      <th scope="col">Training partner</th>
+       <th scope="col">Interactive Sessions with Instructor/s</th>
+    </tr>
+  </thead>
+  <tbody>
+   <!-- <tr>
+      <th scope="row">Morning
+      <br>
+     </th>
+      <td>    <ul>
+      <li>--</li>                
+</ul></td>
+      <td><ul> 
+ <li>-- </li>
+  <li>--</li>
+</ul></td>
+            <td><ul>
+              <li>--</li>
+               <li>--</li>
+</ul></td>
+    </tr>
+       <tr>
+      <th scope="row">Afternoon
+      <br>
+     </th>
+      <td>    <ul>
+      <li>--</li>                
+</ul></td>
+      <td><ul>
+ <li>-- </li>
+  <li>--</li>
+</ul></td> <td><ul>
+              <li>--</li><li>--</li>
+</ul></td>
+    </tr>  -->
+  </tbody>
+</table>  </p>
+	</div>
+
+
+
+
+
+
 
 
 
