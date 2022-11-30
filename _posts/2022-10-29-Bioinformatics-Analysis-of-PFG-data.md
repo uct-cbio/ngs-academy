@@ -129,6 +129,7 @@ The training has a double objective, to understand the genomic epidemiology of r
 
   </div>
 
+<h3>Course schedule and Materials:</h3>
 
 <ul class="nav nav-tabs" role="tablist">
 	<li class="nav-item">
