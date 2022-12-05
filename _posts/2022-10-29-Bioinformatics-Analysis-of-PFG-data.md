@@ -100,7 +100,7 @@ The training has a double objective, to understand the genomic epidemiology of r
 
 
  <div class="row">
-    <div class="col-sm-6">
+    <div class="col-sm-7">
      <b>Course curriculum:</b>
 
 <ol class="list-unstyled">
@@ -114,7 +114,7 @@ The training has a double objective, to understand the genomic epidemiology of r
 <li>7. Workflow management and Nextflow Conda environment</li>
 </ol>
     </div>
-    <div class="col-sm-6">
+    <div class="col-sm-5">
      
 
 <ol class="list-unstyled">
