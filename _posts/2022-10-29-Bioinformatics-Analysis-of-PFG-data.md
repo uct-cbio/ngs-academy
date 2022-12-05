@@ -5,7 +5,7 @@ date: 2022-10-28
 main_menu: courses
 permalink: /:year/:title
 category: upcoming
-course_overview : Genomic Epidemiology of resistant Plasmodium Falciparum in Côte d’Ivoire with the aim to uncover the genomic signatures due to various selection pressures to be identified (host immune system? background genetics? epidemiological facies? or other).To understand the spread over the country of populations of parasites carrying any malaria drug resistant-conferring markers (the withdrawn ones as well as the ones on official uset).
+course_overview : Genomic Epidemiology of resistant Plasmodium Falciparum training was designed with the aim to uncover the genomic signatures due to various selection pressures to be identified (host immune system? background genetics? epidemiological facies? or other).To understand the spread over the country of populations of parasites carrying any malaria drug resistant-conferring markers (the withdrawn ones as well as the ones on official uset).
   
 start_date: 2022-11-28
 end_date: 2022-12-02
@@ -20,8 +20,7 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
 
 <p align="left"><b >Course overview:</b></p>
 
- <p id="description" align="left">Genomic epidemiology of resistant P. falciparum in Côte d’Ivoire with the aim to uncover the genomic signatures due to various selection pressures to be identified (host immune system? background genetics? epidemiological facies? or other).
-To understand the spread over the country of populations of parasites carrying any malaria drug resistant-conferring markers (the withdrawn ones as well as the ones on official uset). Training with a view to the proper understanding of implementing NGS sequencing (our institute was endowed with a NextSeq 550).</p>
+ <p id="description" align="left">Genomic Epidemiology of resistant Plasmodium Falciparum training was designed with the aim to uncover the genomic signatures due to various selection pressures to be identified (host immune system? background genetics? epidemiological facies? or other).To understand the spread over the country of populations of parasites carrying any malaria drug resistant-conferring markers (the withdrawn ones as well as the ones on official uset).</p>
 
 <p><b>The course will cover:</b></p>
 
@@ -58,8 +57,7 @@ To understand the spread over the country of populations of parasites carrying a
 
 <p align="left"><b class="text-left">Pre-requisites and eligibility:</b></p>
 
-<p>No prior bioinformatics knowledge is required.
-</p>
+<p>Beginner - Intermediate level Bioinformatics working with next-generation sequencing data in Africa
 
 <p align="left"><b class="text-left">Objectives and expected outcomes:</b>
 The training has a double objective, to understand the genomic epidemiology of resistant P. falciparum in Côte d'Ivoire in order to discover the genomic signatures due to the different selection pressures to be identified (immune system of the host, genetic background, facies epidemiological, etc.). It is also a question of understanding the mode of diffusion and the distribution on the territory of the populations of parasites carrying markers conferring resistance to antimalarial drugs.
@@ -174,10 +172,11 @@ The training has a double objective, to understand the genomic epidemiology of r
       </b></li>
 <ol>
   <li>1. <a href="{{ site.url }}uploads/NGS_workflow.pptx" target="_blank">NGS workflows</a>  </li>
-  <!-- <li>1.1 <a href="" target="_blank">Day 1 Session 1</a></li>
-   <li>1.2 <a href="#" target="_blank">Day 1 Session 2</a></li>
-    <li>1.3 <a href="#" target="_blank">Day 1 Session 3</a></li>
-     <li>1.4 <a href="#" target="_blank">Day 1 Session 4</a></li> -->
+ <li>1.1 Introductions and General malaria pathogen theories</li>
+   <li>1.2 NGS technologies</li>
+    <li>1.3 Linux and the command line</li>
+    <li>1.4 Coding, naming and files</li>
+
 </ol>                 
 </ul></td>
       <td><ul>
@@ -196,25 +195,22 @@ The training has a double objective, to understand the genomic epidemiology of r
       <th scope="row">Afternoon
       <br>
      </th>
-      <td>    <ul>
-      <li>2.
-       <!-- <a href="{{ site.url }}uploads/Cond_and_Conda_environments.pdf" target="_blank">Introduction to Conda and Conda environments</a> -->
+      <td><ul>
+      <li>1.5 Git and version control
       </li>
 <ol>
-  <li>2.1 </li>
+  <li> </li>
   <li></li>        
 </ol>                 
 </ul></td>
       <td><ul>
   
-  <li>--</li>
- <li>--</li>
-
+  <li>University of Ghana</li>
  
 </ul></td>
             <td><ul>
-             <li>--</li>
-              <li>--</li>
+           <li>Dr Lucas Amengha</li>
+              <li>Alfred Ngwa</li>
 </ul></td>
     </tr>
  
@@ -235,25 +231,27 @@ The training has a double objective, to understand the genomic epidemiology of r
   </thead>
   <tbody>
 
-  <!-- <tr>
+  <tr>
   <th scope="row">Morning
       <br>
      </th>
       <td>    <ul>
-      <li>1. </li>
-      <li>1.1  </li>
-<li>1.2 </li>
-        <li>1.3 </li>
+      <li>2. Use cases of Malaria NGS </li>
+      <li>2.1 Drug resistance surveillance </li>
+<li>2.2 Transmission Analysis </li>
+        <li>2.3 Diagnostic resistance </li>
+        <li>2.4 NGS file formats, QC and Trimming </li>
 <ol>
 </ol>                 
 </ul></td>
       <td><ul>
-  <li>-- </li>
- <li>-- </li>
+  <li>University of Ghana</li>
 </ul></td>
   <td><ul>
-  <li>--</li>
-  <li>--</li>
+
+ <li>Dr Lucas Amengha</li>
+              <li>Alfred Ngwa</li>
+                <li>Muhamadou Fadel</li>
 </ul></td>
     </tr>
  <tr>
@@ -261,19 +259,20 @@ The training has a double objective, to understand the genomic epidemiology of r
       <br>
      </th>
       <td>    <ul>
-      <li>2. 
+      <li>2.5 Mapping, Variant calling, Explore and filter VCF
        </li> 
-       <li>2.1 </li>                     
+                      
 </ul></td>
       <td><ul>
-  <li>-- </li>
- <li>-- </li>
+  <li>University of Ghana </li>
+
 </ul></td>
   <td><ul>
-    <li>--</li>
-   <li>--</li>
+   <li>Dr Lucas Amengha</li>
+              <li>Alfred Ngwa</li>
+              <li>Muhamadou Fadel</li>
 </ul></td>
-    </tr>   -->
+    </tr>   
   </tbody>
 </table>  
 </p>
@@ -291,25 +290,26 @@ The training has a double objective, to understand the genomic epidemiology of r
   </thead>
   <tbody>
    
-  <!-- <tr>
+   <tr>
   <th scope="row">Morning
       <br>
      </th>
       <td>    <ul>
-      <li>1. </li>
-      <li>1.1  </li>
-<li>1.2 </li>
-        <li>1.3 </li>
-          <li>1.4</li><ol>
+      <li>3. R </li>
+      <li>3.1 Working with R  </li>
+<li>3.2 Naming </li>
+        <li>3.3 Troubleshooting</li>
+          <li>3.4 Targeted Sequencing and Metagenomics</li><ol>
 </ol>                 
 </ul></td>
       <td><ul>
-  <li>--</li>
- <li>--</li> 
+ 
+ <li>University of Ghana</li> 
 </ul></td>
 <td><ul>
-<li>--</li>
-<li>--</li>
+   <li>Dr Lucas Amengha</li>
+              <li>Alfred Ngwa</li>
+              <li>Muhamadou Fadel</li>
 </ul></td>
     </tr>
     <tr>
@@ -317,20 +317,21 @@ The training has a double objective, to understand the genomic epidemiology of r
       <br>
       Afternoon</th>
       <td>    <ul>
-             <li>2. .</li>
-                  <li>2.1 </li>
-                    <li>2.2 </li>  <li>2.3</li>
+             <li>3.5 R</li>
+                  <li>3.6 Databases and tools</li>
+                  
 </ul></td>
       <td><ul>
-   <li>-- </li>
-  <li>--</li>
+   <li>University of Ghana</li>
+ 
 </ul></td>
   <td> <ul>         
-  <li>--</li>
-   <li>--</li>
+   <li>Dr Lucas Amengha</li>
+              <li>Alfred Ngwa</li>
+              <li>Muhamadou Fadel</li>
     
 </ul></td>
-    </tr> -->
+    </tr> 
   </tbody>
 </table>  </p>
 	</div>
@@ -347,40 +348,50 @@ The training has a double objective, to understand the genomic epidemiology of r
     </tr>
   </thead>
   <tbody>
-    <!-- <tr>
+    <tr>
     <th scope="row">Morning
       <br>
      </th>
-      <td>    <ul>
-      <li>1.</li>                
+      <td>    <ul>    
+          <li>4.1 R, Popgen indices and theorems</li>  
+              <li>4.2 Natural selection</li>  
+                  <li>4.3 Indices of selection</li>     
+                  <li>4.4 Differentiation</li>   
+                      <li>4.5 Multiple Sequence Alignment
+ </li>       
 </ul></td>
   <td><ul>
-  <li>-- </li>
- <li>--</li>
-  <li>--</li>
+  <li>University of Ghana </li>
+
 </ul></td>
 <td><ul>
-<li>--</li>
-<li>--</li>
-<li>--</li>
+   <li>Dr Lucas Amengha</li>
+              <li>Alfred Ngwa</li>
+              <li>Muhamadou Fadel</li>
+    
 </ul></td>
   </tr>
   <tr> <th scope="row">Afternoon
       <br>
      </th>
       <td>    <ul>
-      <li>2. </li>              
+      <li>4.6 Phylogenetic Analysis
+ </li>
+       <li>4.7 R, Population Structure
+ </li>
+                   
 </ul></td>
       <td><ul>  
-  <li>-- </li>
- <li>-- </li>
- <li>-- </li>
+  <li>University of Ghana </li>
+
 </ul></td>
   <td><ul>
-  <li>--</li>
-  <li>--</li>         
+   <li>Dr Lucas Amengha</li>
+              <li>Alfred Ngwa</li>
+              <li>Muhamadou Fadel</li>
+           
 </ul></td>
-    </tr> -->
+    </tr> 
   </tbody>
 </table>  </p>
 	</div>
@@ -395,20 +406,26 @@ The training has a double objective, to understand the genomic epidemiology of r
     </tr>
   </thead>
   <tbody>
-   <!-- <tr>
+    <tr>
       <th scope="row">Morning
       <br>
      </th>
       <td>    <ul>
-      <li>--</li>                
+      <li>5. R, Population Genetic Analysis (Part 1) </li>   
+         <li>5.2 R, Population Genetic Analysis (Part 2) </li>     
+           <li>5.2.1. Genome scans continue </li>     
+           <li>5.2.2. Intro to genome wide association analysis</li>            
 </ul></td>
       <td><ul> 
- <li>-- </li>
-  <li>--</li>
+   <li>University of Ghana</li>
+            
+           
 </ul></td>
             <td><ul>
-              <li>--</li>
-               <li>--</li>
+               <li>Dr Lucas Amengha</li>
+              <li>Alfred Ngwa</li>
+              <li>Muhamadou Fadel</li>
+           
 </ul></td>
     </tr>
        <tr>
@@ -416,15 +433,19 @@ The training has a double objective, to understand the genomic epidemiology of r
       <br>
      </th>
       <td>    <ul>
-      <li>--</li>                
+  <li>5.3 COI / IBD/ IBS and networks, examples. Final closing</li>   
+   <li>5.4 Review and Feedback for the lab visit</li>           
 </ul></td>
       <td><ul>
- <li>-- </li>
-  <li>--</li>
+ <li>University of Ghana</li>
+
 </ul></td> <td><ul>
-              <li>--</li><li>--</li>
+                <li>Dr Lucas Amengha</li>
+              <li>Alfred Ngwa</li>
+              <li>Muhamadou Fadel</li>
+           
 </ul></td>
-    </tr>  -->
+    </tr>
   </tbody>
 </table>  </p>
 	</div>
