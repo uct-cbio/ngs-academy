@@ -152,7 +152,7 @@ The training has a double objective, to understand the genomic epidemiology of r
 </ul><!-- Tab panes -->
 <div class="tab-content">
 	<div class="tab-pane active" id="tabs-1" role="tabpanel">
-  <p><a href="#" target="_blank">Day 1 Training Videos</a></p>
+  <p><a href="https://zivahub.uct.ac.za/articles/media/Day_1_Session_Recordings_of_Introduction_To_Bioinformatics_Analysis_Of_Plasmodium_Falciparum_Genome_Data_Training_2022_Training/21694709" target="_blank">Day 1 Training Videos</a></p>
 		<p>   <table class="table table-bordered table-responsive">
   <thead>
     <tr>
@@ -168,7 +168,6 @@ The training has a double objective, to understand the genomic epidemiology of r
      </th>
       <td>    <ul>
       <li><b> 
-  
       </b></li>
 <ol>
   <li>1. <a href="{{ site.url }}uploads/NGS_workflow.pptx" target="_blank">NGS workflows</a>  </li>
@@ -219,7 +218,7 @@ The training has a double objective, to understand the genomic epidemiology of r
 </table>    </p>
 	</div>
 	<div class="tab-pane" id="tabs-2" role="tabpanel">
-    <p><a href="#" target="_blank">Day 2 Training Videos</a></p>
+    <p><a href="https://zivahub.uct.ac.za/articles/media/Day_2_Session_Recordings_of_Introduction_To_Bioinformatics_Analysis_Of_Plasmodium_Falciparum_Genome_Data_Training_2022/21695762" target="_blank">Day 2 Training Videos</a></p>
 		<p> <table class="table table-bordered table-responsive">
   <thead>
     <tr>
@@ -278,7 +277,7 @@ The training has a double objective, to understand the genomic epidemiology of r
 </p>
 	</div>
 	<div class="tab-pane" id="tabs-3" role="tabpanel">
-    <p><a href="#" target="_blank">Day 3 Training Videos</a></p>
+    <p><a href="https://zivahub.uct.ac.za/articles/media/Day_3_Session_Recordings_of_Introduction_To_Bioinformatics_Analysis_Of_Plasmodium_Falciparum_Genome_Data_Training_2022_Training/21706154" target="_blank">Day 3 Training Videos</a></p>
 		<p>   <table class="table table-bordered table-responsive">
   <thead>
     <tr>
@@ -337,7 +336,7 @@ The training has a double objective, to understand the genomic epidemiology of r
 	</div>
 
   	<div class="tab-pane" id="tabs-4" role="tabpanel">
-      <p><a href="#" target="_blank">Day 4 Training Videos</a></p>
+      <p><a href="https://zivahub.uct.ac.za/articles/media/Day_4_Session_Recordings_of_Introduction_To_Bioinformatics_Analysis_Of_Plasmodium_Falciparum_Genome_Data_Training_2022_Training/21711233" target="_blank">Day 4 Training Videos</a></p>
 		<p> <table class="table table-bordered">
   <thead>
     <tr>
