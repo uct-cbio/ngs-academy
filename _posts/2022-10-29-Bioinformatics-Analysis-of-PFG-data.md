@@ -395,7 +395,7 @@ The training has a double objective, to understand the genomic epidemiology of r
 </table>  </p>
 	</div>
     	<div class="tab-pane" id="tabs-5" role="tabpanel">
-          <p><a href="#" target="_blank">Day 5 Training Videos</a></p>
+          <p><a href="https://zivahub.uct.ac.za/articles/media/Day_5_Session_Recordings_of_Introduction_To_Bioinformatics_Analysis_Of_Plasmodium_Falciparum_Genome_Data_Training_2022_Training/21711857" target="_blank">Day 5 Training Videos</a></p>
 		<p> <table class="table table-bordered">
   <thead>
     <tr>
