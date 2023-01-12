@@ -20,8 +20,7 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
 
 <p align="left"><b >Course overview:</b>
    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
-                                    data-target="#myModal1">
-                                    French Version
+                                    data-target="#myModal1">Version Française
                                 </button>
                                 <!-- The Modal -->
                                 <div class="modal fade" id="myModal1">
@@ -29,7 +28,8 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
                                         <div class="modal-content">
                                             <!-- Modal Header -->
                                             <div class="modal-header">
-                                                <div class="modal-title font-weight-bold text-center"><b>Atelier de formation</b></div>
+                                                <div class="modal-title font-weight-bold text-center"><b>Introduction to Bioinformatics Analysis of Plasmodium Falciparum Genome data training 2022 <br>
+                                                <br>Atelier de formation</b></div>
                                                 <button type="button" class="close"
                                                     data-dismiss="modal">&times;</button><br>
                                             </div>
@@ -96,7 +96,7 @@ Travaux pratiques :
                                             <!-- Modal footer -->
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-danger btn-sm"
-                                                    data-dismiss="modal">Close</button>
+                                                    data-dismiss="modal">Fermer</button>
                                             </div>
                                         </div>
                                     </div>
