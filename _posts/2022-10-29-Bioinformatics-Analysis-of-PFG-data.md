@@ -20,8 +20,7 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
 
 <p align="left"><b >Course overview:</b>
    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
-                                    data-target="#myModal1">
-                                    French Version
+                                    data-target="#myModal1">Version Française
                                 </button>
                                 <!-- The Modal -->
                                 <div class="modal fade" id="myModal1">
@@ -96,7 +95,7 @@ Travaux pratiques :
                                             <!-- Modal footer -->
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-danger btn-sm"
-                                                    data-dismiss="modal">Close</button>
+                                                    data-dismiss="modal">Fermer</button>
                                             </div>
                                         </div>
                                     </div>
