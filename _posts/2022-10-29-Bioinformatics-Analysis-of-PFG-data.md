@@ -18,7 +18,90 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
 
 <!-- <b>Course outline:</b> [ SARS-CoV-2 NGS Bioinformatics Course 2021]({{ site.url }}/docs/course_outline.pdf) -->
 
-<p align="left"><b >Course overview:</b></p>
+<p align="left"><b >Course overview:</b>
+   <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                    data-target="#myModal1">
+                                    French Version
+                                </button>
+                                <!-- The Modal -->
+                                <div class="modal fade" id="myModal1">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <div class="modal-title font-weight-bold text-center"><b>Atelier de formation</b></div>
+                                                <button type="button" class="close"
+                                                    data-dismiss="modal">&times;</button><br>
+                                            </div>
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                            <p><b>Contexte :</b> <br>
+                                            L’Institut Pasteur de Côte d’Ivoire vise à être un centre d’excellence en matière de recherche en santé humaine, animale, et environnementale. Depuis 16 ans, il héberge 20 Centres Nationaux de Référence dont celui de la surveillance de la chimiorésistance de Plasmodium falciparum. L’objectif de l’IPCI est de faire progresser les connaissances scientifiques et technologiques et de proposer des stratégies pertinentes dans le cadre du concept One Health susceptibles d’améliorer la santé et le bien-être des populations. A ce titre, l’Institut n’est pas resté en marge de la révolution qui a conduit toute l’Afrique vers les technologies de séquençage massif en parallèle et l’analyse bioinformatique du SARS-CoV-2. En effet, l’Afrique a pu déposer plus d’un millions de génomes consensus dans des banques de données grâce au support technique de l’académie NGS du CDC Africa. Aujourd’hui, l’Initiative de séquençage Génomique des agents Pathogènes du CDC Afrique (PGI) encourage les pays de l’Union Africaine à capitaliser leurs acquis majeurs en s’investissant dans l’exploration génomique de leurs pathogènes d’intérêts. Dans ce cadre, l'Académie NGS du PGI, à la demande de l’IPCI, organise un atelier de formation sur <b>l'épidémiologie génomique de P. falciparum résistant en Côte d'Ivoire</b> sur son site de Cocody, à Abidjan du 27 Novembre au 03 Décembre 2022.
+                                            </p>
+                                            <p><b>Objectif :</b><br>
+                                            La formation a un double objectif, comprendre l'épidémiologie génomique de P. falciparum résistant en Côte d'Ivoire dans le but de découvrir les signatures génomiques dues aux différentes pressions de sélection à identifier (système immunitaire de l'hôte, background génétique, faciès épidémiologique, etc). Il s’agit aussi de comprendre le mode de diffusion et la répartition sur le territoire des populations de parasites porteurs de marqueurs conférant une résistance aux médicaments antipaludiques.
+                                            <ul style="list-style: square;">
+                                            <li>- Lieu : Institut Pasteur de Côte d'Ivoire (IPCI, Côte d'Ivoire)</li>
+                                            <li>- Dates :  27 novembre (dimanche) au 3 décembre (samedi)</li>
+                                            <li>- Formation en présentiel : du 28 novembre (lundi) au 2 décembre (vendredi)</li>
+                                            <li>- Horaires : 9h00 - 17h30</li>
+                                            </ul>
+                                            </p>
+                                             <p><b>Formateurs :  :</b><br>
+                                             Il y aura quatre formateurs dont 2 conférenciers et 2 animateurs pour les aspects bio-informatiques. Ensemble, ils ont participé à une formation en génomique du paludisme et en bioinformatique à DELGEME pendant plus de 4 ans. <hr>
+                                             1. Prof. Alfred Amangua NGWA (Génétique des Populations), Malaria Research Council (Fajara, Gambie). 
+Prof. Alfred Amangua NGWA a étudié la biochimie et la parasitologie moléculaire à l'Université de Buea, obtenant un doctorat en 2004. Il a passé cinq ans à l'unité MRC Gambie de la London School of Hygiene and Tropical Medicine, où il a effectué des recherches sur les voies d'invasion et la diversité génétique de Plasmodium falciparum. Il a été pendant cinq ans un boursier de développement de carrière du MRCG au LSTMH, étudiant la génétique de la résistance aux médicaments. Il dirige le programme PAMGEN H3Africa. 
+<a href="https://scholar.google.com/citations?hl=en&user=1LtOciAAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">https://scholar.google.com/citations?hl=en&user=1LtOciAAAAAJ&view_op=list_works&sortby=pubdate</a>
+
+
+ <hr>
+                                              2. Dr Lucas Amengha de l'Université du Ghana (Génétique des Populations).
+Dr Lucas N. Amenga-Etego est chercheur au West African Centre for Cell Biology of Infectious Pathogens (WACCBIP), département de biochimie, biologie cellulaire et moléculaire, Université du Ghana. Il a été chercheur et chef du département des sciences biomédicales au Navrongo Health Research Centre, au Ghana, de juin 2013 à janvier 2018. Il a une formation en microbiologie et en épidémiologie génétique/génomique du paludisme et s'intéresse aux maladies infectieuses, en particulier à la contribution génétique à la sensibilité (ou à la résistance) aux maladies paludéennes et à la résistance aux médicaments antipaludiques. Au cours des dix dernières années, il a collaboré avec des collègues du Big Data Centre de l'Université d'Oxford et du Wellcome Trust Sanger Institute au Royaume-Uni pour mener des études sur la diversité génétique et la structure des populations de Plasmodium falciparum et des moustiques vecteurs du paludisme dans le nord du Ghana. Il mène également des études de surveillance de la résistance aux médicaments antipaludiques dans le nord du Ghana. Il est membre fondateur du Plasmodium Diversity Network Africa (PDNA) et Co-PI du réseau panafricain d'épidémiologie génomique du paludisme H3Africa (PAMGen)  <a href="https://scholar.google.com/scholar?as_ylo=2022&q=Lucas+N.+Amenga-Etego&hl=fr&as_sdt=0,5&as_vis=1" target="_blank">https://scholar.google.com/scholar?as_ylo=2022&q=Lucas+N.+Amenga-Etego&hl=fr&as_sdt=0,5&as_vis=1</a>
+ <hr>
+3. Archibald Kwame Worwui en bioinformatique.
+Archibald Worwui exerce à Fajara, en Gambie. Worwui est très bien noté dans six domaines d’expertise. Ses principaux domaines d'expertise sont la méningite à H. Influenzae, la méningite à pneumocoque, la méningite bactérienne et la méningite. Ses recherches cliniques consistent en la co-écriture de 40 articles évalués par des pairs au cours des 15 dernières années. <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Worwui+AK&cauthor_id=27756235" target="_blank">https://pubmed.ncbi.nlm.nih.gov/?term=Worwui+AK&cauthor_id=27756235</a>
+
+
+  <hr>
+  4. Mouhamadou Fadel DIOP, M.Sc en Bioinformatique, MRC Fajara (Gambie).
+Contrôle et élimination des maladies, Medical Research Council Unit The Gambia at LSHTM, Banjul, Gambie.
+<a href="https://pubmed.ncbi.nlm.nih.gov/?term=Diop%20MF%5BAuthor%5D " target="_blank">https://pubmed.ncbi.nlm.nih.gov/?term=Diop%20MF%5BAuthor%5D</a> <hr>
+
+<b>
+Sujets à couvrir : 
+</b>
+  <ul class="list-group">
+    <li class="list-group-item">Malaria, NGS, outils logiciels, snakemake. </li>
+    <li class="list-group-item">Phylodynamique et phylogéographie.</li>
+    <li class="list-group-item">Apprentissage automatique/modélisation</li>
+    <li class="list-group-item">Git, contrôle de version. CQ/Assemblage de séquences</li>
+      <li class="list-group-item">Workflows. Analyse métagénomique. Pipeline d'analyse du génome</li>
+        <li class="list-group-item">Programmation R Snakemake. </li>
+          <li class="list-group-item">Gestion des flux de travail et environnement Nextflow Conda</li>
+<br>
+  <b>
+Travaux pratiques :
+</b>        
+  </ul>
+    <ul class="list-group">
+    <li class="list-group-item">MSA et construction d'arbres phylogénétiques".</li>
+    <li class="list-group-item">Utilisation et maintenance avancées du HPC</li>
+    <li class="list-group-item">Développement et maintenance d'outils bioinformatiques</li>
+       <li class="list-group-item">Mise en œuvre de l'apprentissage automatique en bioinformatique
+</li>
+    <li class="list-group-item">Mise en œuvre de l'apprentissage automatique en bioinformatique
+</li>
+  </ul>                                        </p>
+                                            </div>
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger btn-sm"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+</p>
 
  <p id="description" align="left">Genomic Epidemiology of resistant Plasmodium Falciparum training was designed with the aim to uncover the genomic signatures due to various selection pressures to be identified (host immune system? background genetics? epidemiological facies? or other).To understand the spread over the country of populations of parasites carrying any malaria drug resistant-conferring markers (the withdrawn ones as well as the ones on official uset).</p>
 
