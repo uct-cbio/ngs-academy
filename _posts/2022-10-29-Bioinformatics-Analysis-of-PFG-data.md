@@ -28,7 +28,8 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
                                         <div class="modal-content">
                                             <!-- Modal Header -->
                                             <div class="modal-header">
-                                                <div class="modal-title font-weight-bold text-center"><b>Atelier de formation</b></div>
+                                                <div class="modal-title font-weight-bold text-center"><b>Introduction to Bioinformatics Analysis of Plasmodium Falciparum Genome data training 2022 <br>
+                                                <br>Atelier de formation</b></div>
                                                 <button type="button" class="close"
                                                     data-dismiss="modal">&times;</button><br>
                                             </div>
