@@ -108,9 +108,13 @@
 
             </li>
             <li id="01resource" {% if page.url=="/resources/" %}class="sub_color" {% endif %}> <a
-                    href="{{ site.url }}resources/">Resources
+                    href="{{ site.url }}resources/">Toools & Resources
                     <span class="sub-arrow"></span></a>
                 <ul class="resourcelist indent_sub_list">
+                    <li {% if page.url=="/resources/training-materials/" %} class="sub_color" {% endif %}><a
+                        href="{{ site.url }}resources/training-materials/"> Training materials</a></li>
+                        <li {% if page.url=="/resources/pha4ge/" %} class="sub_color" {% endif %}><a
+                            href="{{ site.url }}resources/pha4ge/"> PHA4GE </a></li>
                     <li {% if page.url=="/resources/publications/" %} class="sub_color" {% endif %}><a
                             href="{{ site.url }}resources/publications/"> Publications </a></li>
                 </ul>
