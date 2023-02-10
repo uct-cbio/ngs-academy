@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "Advanced Training: Developing Workflows"
+title:  "Advanced Training: Developing Workflows 2022"
 date: 2022-04-13
 main_menu: courses
 permalink: /:year/:title

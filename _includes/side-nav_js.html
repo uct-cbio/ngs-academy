@@ -113,9 +113,13 @@
 
             </li>
             <li id="01resource" {% if page.url=="/resources/" %}class="sub_color" {% endif %}> <a
-                    href="/resources/">Resources
+                    href="/resources/">Tools & Resources
                     <span class="sub-arrow"></span></a>
                 <ul class="resourcelist indent_sub_list">
+                    <li {% if page.url=="/resources/publications/" %} class="sub_color" {% endif %}><a
+                        href="/resources/training-materials/">Training materials</a></li>
+                    <li {% if page.url=="/resources/publications/" %} class="sub_color" {% endif %}><a
+                        href="/resources/pha4ge/">PHA4GE </a></li>
                     <li {% if page.url=="/resources/publications/" %} class="sub_color" {% endif %}><a
                             href="/resources/publications/"> Publications </a></li>
                 </ul>
