@@ -17,6 +17,10 @@
             width: 540px;
 
         }
+
+        .survey_button {
+            color: white !important;
+        }
     </style>
     <!-- CSS -->
     <link rel="stylesheet" href="css/owl.carousel.css">
@@ -59,7 +63,7 @@
     <script src="js/min/waypoints.min.js"></script>
     <script src="js/jquery.counterup.js"></script>
     <script type="text/javascript" src="js/bootstrap-sidermenu.js"></script>
-
+    <script src="js/jquery.dataTables.js"></script>
     <!-- Google Map -->
     <!-- <script src="https://maps.googleapis.com/maps/api/js"></script> -->
     <script src="js/google-map-init.js"></script>
@@ -67,25 +71,29 @@
 
     <script src="js/main.js"></script>
     <script type="application/ld+json">
+    
         {
-          "@context": "https://schema.org/",
-          "@id": "https://uct-cbio.github.io/ngs-academy/2022/Advanced-Training-Developing-Workflows",
-          "@type": "Course",
-          "name": "Advanced Training: Developing Workflows",
-          "description": "High-throughput laboratory machines generate large quantities of raw biological data. Processing the data to generate useful information involves using several tools and sometimes setting up complex bioinformatics analysis environments across heterogeneous computing devices. Bioinformatics workflows and workflow managers allow reproducibility and portability of analysis plans and optimization of available computing resources. The Advanced Training: Developing Workflows workshop was aimed at introducing, deploying Nextflow, a too which enables scalable and reproducible scientific workflows. ",
-          "hasCourseInstance": [
-            {
-              "@type": "CourseInstance",
-              "courseMode": "part-time",
-              "endDate": "2022-04-29",
-              "location": "KEMRI / WELLCOME TRUST Kilifi, Kenya",
-              "startDate": "2022-04-25"
-            }
-         
-          ]
-        }
+            "@context": "https://schema.org/",
+            "@id": "./",
+            "@type": "Course",
+            "name": "Advanced Training: Developing Workflows",
+            "description": "High-throughput laboratory machines generate large quantities of raw biological data. Processing the data to generate useful information involves using several tools and sometimes setting up complex bioinformatics analysis environments across heterogeneous computing devices. Bioinformatics workflows and workflow managers allow reproducibility and portability of analysis plans and optimization of available computing resources. The Advanced Training: Developing Workflows workshop was aimed at introducing, deploying Nextflow, a too which enables scalable and reproducible scientific workflows. ",
+            
+            "hasCourseInstance": 
+            [
+              {
+                "@type": "CourseInstance",
+                "courseMode": "part-time",
+                "endDate": "2022-04-29",
+                "location": "KEMRI / WELLCOME TRUST Kilifi, Kenya",
+                "startDate": "2022-04-25"
+              },
+          
+  
+            ]
+      
+          }
         </script>
-
 
 </head>
 <!-- Header Start -->
@@ -167,8 +175,14 @@
 
                                 <li class="nav-item dropdown" {% if page.url=="/resources/" %}class="active" {% endif
                                     %}><a class="nav-link  dropdown-toggle" href="{{ site.url }}resources"
-                                        data-bs-toggle="dropdown-1">Resources</a>
+                                        data-bs-toggle="dropdown-1"> Tools & Resources</a>
                                     <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="{{ site.url }}resources/training-materials/">
+                                            Training Materials</a>
+                                    </li>
+                                        <li><a class="dropdown-item" href="{{ site.url }}resources/pha4ge/">
+                                            PHA4GE</a>
+                                    </li>
                                         <li><a class="dropdown-item" href="{{ site.url }}resources/publications/">
                                                 Publications</a>
                                         </li>
@@ -204,17 +218,22 @@
         <div class="row">
             <p></p>
             <div class="container">
-                <div class="col-sm-2 col-md-2 col-lg-2">
-                    {% include side-nav_js.html %}
-                    <hr>
-                    Click <a href="https://redcap.h3abionet.org/redcap/surveys/?s=FCA9MTKHPH" target="_blank"
-                        class="btn btn-sm btn-default">here</a> for the training survey
+                <div>
+
+                    <div class="col-sm-2 col-md-2 col-lg-2">
+                        <div>
+                            {% include side-nav_js.html %}
+                            <hr>
+                            Click <a href="https://redcap.h3abionet.org/redcap/surveys/?s=FCA9MTKHPH"
+                                class="btn btn-sm btn-default">here</a> for the training survey
+
+                        </div>
+                    </div>
 
                 </div>
 
 
-
-                <div class="col-lg-9 col-md-9 col-sm-9" class="my-auto">
+                <div class="col-lg-10 col-md-10 col-sm-10 main_container_section" class="my-auto">
                     {{content}}
                 </div>
 
