@@ -15,7 +15,7 @@ permalink: /courses/upcoming-courses/
       <hr>
 
 
-      {% for post in site.posts %}
+      {% for post in site.posts reversed %}
       {% if post.categories contains "upcoming" %}
       <li class="list-unstyled">
         <a href="{{ post.link }}" target="_blank">{{ post.title }}</a><br>{{post.start_date | date_to_string}} - {{post.end_date| date_to_string}}
