@@ -1,20 +1,22 @@
 ---
 layout: default
-title: "Accelerating Microbiome Research"
-date: 2023-03-07
+title: "Next Generation Sequencing"
+date: 2023-03-06
 main_menu: courses
 permalink: /:year/:title
 category: upcoming
 course_overview: 
-start_date: 2023-04-17
-end_date: 2023-04-18
+
+start_date: 2023-03-24
+end_date: 2023-03-31
 group: group1
-link: https://coursesandconferences.wellcomeconnectingscience.org/our-events/courses/
+link: https://coursesandconferences.wellcomeconnectingscience.org/event/next-generation-sequencing-20230324/
 ---
   
 <!-- ### SARS-CoV-2 NGS bioinformatics course 2021 -->
 The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI). This initiative is funded by the Bill & Melinda Gates Foundation. Our training initiatives are carried out in partnership with the African Society for Laboratory Medicine (ASLM).
 <hr>
 
+<p align="left"><b >Course overview:</b></p>
 
 
