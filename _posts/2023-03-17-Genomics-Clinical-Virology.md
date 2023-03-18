@@ -6,7 +6,7 @@ main_menu: courses
 permalink: /:year/:title
 category: upcoming
 course_overview: 
-
+training_provider: Welcome Connecting Science
 start_date: 2023-06-11
 end_date: 2023-06-16
 group: group1

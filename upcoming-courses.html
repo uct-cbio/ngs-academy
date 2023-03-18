@@ -4,32 +4,75 @@ title: Upcoming courses
 permalink: /courses/upcoming-courses/
 ---
 
-<div class="row">
-  <div class="col-sm-12">
-    <p>
 
-    </p>
 
-    <div id="section1" class="blockx side_menu_bg ">
-      <h3>Upcoming and current courses</h3>
-      <hr>
 
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript" language="javascript"
+    src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
+
+    <div class="table-responsive">
+
+      <table id="upcoming_table_2" class="stripe row-border order-column" cellspacing="0" width="100%">
+    
+        <thead>
+          <tr>
+              <th width="35%">Title</th>
+              <th>Training Provider</th>
+      
+              <th>From</th>
+                  
+              <th>To</th>
+  
+          </tr>
+      </thead>
+    
+    
+      <tbody>
 
       {% for post in site.posts reversed %}
+
       {% if post.categories contains "upcoming" %}
-      <li class="list-unstyled">
-        <a href="{{ post.link }}" target="_blank">{{ post.title }}</a><br>{{post.start_date | date_to_string}} - {{post.end_date| date_to_string}}
-        <p>{{post.course_overview}}<small class="text-muted"> posted: {{post.date
-            | date_to_string}} </small></p>
-
-
-      </li>
+        <tr>
+          <td><a href="{{ post.link }}" target="_blank">{{ post.title }}</a><br><small class="text-muted"> posted: {{post.date
+            | date_to_string}} </small></td>
+          <td>{{ post.training_provider }} </td>
+          <td>{{post.start_date | date_to_string}}
+          </td>
+          <td>{{post.end_date| date_to_string}}</td>
+      </tr>  
+      
       {% endif %}
       {% endfor %}
-
-
-
+       <tfoot>
+      <tr>
+      <th>Title</th>
+      <th>Training Provider</th>
+      <th>From</th>
+      <th>To</th>
+      </tr>
+      </tfoot>
+      </tbody>
+    
+      </table>
+    
     </div>
 
-  </div>
-</div>
+
+
+
+
+<script>
+  $(document).ready(function () {
+      var table = $('#upcoming_table_2').DataTable({
+          "sDom": 'Rlfrtip',
+          // colReorder: true,
+          "oColReorder": {
+              "bAddFixed": false
+          },
+
+      });
+  })
+</script>
