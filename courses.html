@@ -4,90 +4,75 @@ title: Courses
 permalink: /courses/
 
 ---
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<style>
-  .blockx {
-    background-color: #EEE;
-    /* border: 1px solid #CCC; */
-    border-radius: 10px;
-    /* margin-top: 20px; */
-    min-height: 100px;
-    padding: 15px 2px 5px 20px;
-    margin-right: 15px;
-  }
-
-  .side_nav_courses {
-    margin-right: 15px !important;
-  }
-</style>
-
-
-<div class="row">
 
 
 
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript" language="javascript"
+    src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 
 
-  <div id="section1" class="blockx side_menu_bg ">
-    <h3>Upcoming and current courses</h3>
-    <hr>
+    <div class="table-responsive">
 
+      <table id="upcoming_table_2" class="stripe row-border order-column" cellspacing="0" width="100%">
+    
+        <thead>
+          <tr>
+              <th width="35%">Title</th>
+              <th>Training Provider</th>
+      
+              <th>From</th>
+                  
+              <th>To</th>
+  
+          </tr>
+      </thead>
+    
+    
+      <tbody>
 
-    {% for post in site.posts %}
-    {% if post.categories contains "upcoming" %}
-    <li class="list-unstyled">
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-      <p>{{post.course_overview}} <small class="text-muted">posted: {{post.date
-          | date_to_string}} </small></p>
+      {% for post in site.posts reversed %}
 
-
-    </li>
-    {% endif %}
-    {% endfor %}
-
-  </div>
-  <div id="section2" class="blockx side_menu_bg">
-    <!-- <h3>Available courses</h3> -->
-    <!-- <hr> -->
-    {% for post in site.posts %}
-    {% if post.categories contains "available" %}
-    <li class="list-unstyled">
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> <small class="text-muted">posted: {{
-        post.date
-        |
-        date_to_string}} </small>
-
-
-    </li>
-    {% endif %}
-    {% endfor %}
-
-  </div>
-  <!-- <div id="section3" class="blockx side_menu_bg">
-    <h3>Related courses</h3>
-    <hr>
-    {% for post in site.posts %}
-    {% if post.categories contains "related" %}
-    <li class="list-unstyled">
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} </a> {{post.course_dates}}<small class="text-muted">
-        posted:{{
-        post.date
-        |
-        date_to_string}} </small>
-
-
-    </li>
-    {% endif %}
-    {% endfor %}
-
-  </div> -->
+      {% if post.categories contains "upcoming" %}
+        <tr>
+          <td><a href="{{ post.link }}" target="_blank">{{ post.title }}</a><br><small class="text-muted"> posted: {{post.date
+            | date_to_string}} </small></td>
+          <td>{{ post.training_provider }} </td>
+          <td>{{post.start_date | date_to_string}}
+          </td>
+          <td>{{post.end_date| date_to_string}}</td>
+      </tr>  
+      
+      {% endif %}
+      {% endfor %}
+       <tfoot>
+      <tr>
+      <th>Title</th>
+      <th>Training Provider</th>
+      <th>From</th>
+      <th>To</th>
+      </tr>
+      </tfoot>
+      </tbody>
+    
+      </table>
+    
+    </div>
 
 
 
 
 
+<script>
+  $(document).ready(function () {
+      var table = $('#upcoming_table_2').DataTable({
+          "sDom": 'Rlfrtip',
+          // colReorder: true,
+          "oColReorder": {
+              "bAddFixed": false
+          },
 
-
-
-
-</div>
+      });
+  })
+</script>
