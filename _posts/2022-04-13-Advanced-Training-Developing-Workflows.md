@@ -79,16 +79,6 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
 <li id ="startDate"><b>Start date:</b>2022-04-25</li>
 
 <li id="endDate"><b>End date:</b>2022-04-29</li>
-
-<!-- <li><b>Course sponsors</b>: TBA</li> -->
-
-<!-- <u><li><b>Participant applications</b></li></u>
-
-<li><b>Registration for participants opened:</b> 25 Feb 2022</li> -->
-
-<!-- <li><b>Registration for participants closed:</b> 04 March 2022</li> -->
-
-<!-- <li><b>Notification date for successful Applicants:</b> </li> -->
 </ol>
 
 <b>Course curriculum:</b>
