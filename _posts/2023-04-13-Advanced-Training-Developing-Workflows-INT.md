@@ -26,7 +26,7 @@ group: group1
 	</li>
  
   	 <li class="nav-item">
-		<a class="nav-link" data-toggle="tab" href="#tabs-4" role="tab">Thur 28 April 2022</a>
+		<a class="nav-link" data-toggle="tab" href="#tabs-4" role="tab">Thur 30 March 2023</a>
 	</li>
 
 <!--
@@ -398,6 +398,7 @@ group: group1
             <td><ul>
               <li>Dr George Githinji</li>
                <li>Dr Philip Ashton</li>
+                 <li>John Juma</li>
 </ul></td>
     </tr>
    
