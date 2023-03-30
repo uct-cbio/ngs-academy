@@ -394,4 +394,4 @@ group: group1
     
   </tbody>
 </table>  </p>
-<!-- End here Introductory course materials -->
+<!-- End here Intr course materials -->
