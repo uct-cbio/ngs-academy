@@ -108,8 +108,6 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
 </ol>
 
 
-
-
 <h3>Introductory Stream</h3> Click <a href="{{site.baseurl}}/2023/Advanced-Training-Developing-Workflows-ADV" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">Advanced stream</a> to access the advanced stream training materials
 
 <!-- start here introductory course materials -->
@@ -136,7 +134,7 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
 </ul><!-- Tab panes -->
 <div class="tab-content">
 	<div class="tab-pane active" id="tabs-1" role="tabpanel">
-  <p><a href="#" target="_blank">Day 1 Training Videos</a></p>
+  <!-- <p><a href="#" target="_blank">Day 1 Training Videos</a></p> -->
 		<p>   <table class="table table-bordered table-responsive">
   <thead>
     <tr>
@@ -235,7 +233,7 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
 </table>    </p>
 	</div>
 	<div class="tab-pane" id="tabs-2" role="tabpanel">
-    <p><a href="#" target="_blank">Day 2 Training Videos</a></p>
+    <!-- <p><a href="#" target="_blank">Day 2 Training Videos</a></p> -->
 		<p> <table class="table table-bordered table-responsive">
   <thead>
     <tr>
@@ -322,7 +320,7 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
 </p>
 	</div>
 	<div class="tab-pane" id="tabs-3" role="tabpanel">
-    <p><a href="#" target="_blank">Day 3 Training Videos</a></p>
+    <!-- <p><a href="#" target="_blank">Day 3 Training Videos</a></p> -->
 		<p>   <table class="table table-bordered table-responsive">
   <thead>
     <tr>
@@ -392,7 +390,7 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
 	</div>
 
   	<div class="tab-pane" id="tabs-4" role="tabpanel">
-      <p><a href="#" target="_blank">Day 4 Training Videos</a></p>
+      <!-- <p><a href="#" target="_blank">Day 4 Training Videos</a></p> -->
 		<p> <table class="table table-bordered">
   <thead>
     <tr>
