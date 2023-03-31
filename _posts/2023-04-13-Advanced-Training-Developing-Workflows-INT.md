@@ -19,11 +19,7 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
 <hr>
 
 <!-- <b>Course outline:</b> [ SARS-CoV-2 NGS Bioinformatics Course 2021]({{ site.url }}/docs/course_outline.pdf) -->
-
-<p align="left"><b >Course overview:</b></p>
-
- <p id="description" align="left">High-throughput laboratory machines generate large quantities of raw biological data. Processing the data to generate useful information involves using several tools and sometimes setting up complex bioinformatics analysis environments across heterogeneous computing devices. Bioinformatics workflows and workflow managers allow reproducibility and portability of analysis plans and optimization of available computing resources. The Advanced Training: Developing Workflows workshop was aimed at introducing, deploying Nextflow, a too which enables scalable and reproducible scientific workflows.   
- <p>
+<h3>Introductory Stream</h3> Click <a href="{{site.baseurl}}/2023/Advanced-Training-Developing-Workflows-ADV" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">Advanced stream</a> to access the advanced stream training materials
 
 
 <p align="left"><b class="text-left">Intended audience:</b></p>
@@ -106,9 +102,6 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
 <li>Day 5 Practical application </li>
 
 </ol>
-
-
-<h3>Introductory Stream</h3> Click <a href="{{site.baseurl}}/2023/Advanced-Training-Developing-Workflows-ADV" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">Advanced stream</a> to access the advanced stream training materials
 
 <!-- start here introductory course materials -->
 <ul class="nav nav-tabs" role="tablist">
