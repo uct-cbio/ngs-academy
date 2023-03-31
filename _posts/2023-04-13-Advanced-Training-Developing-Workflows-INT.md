@@ -76,9 +76,9 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
  <li id="location"><b>Venue of course</b>: KEMRI / WELLCOME TRUST Kilifi, Kenya  </li>
 
 
-<li id ="startDate"><b>Start date:</b>2023-03-31</li>
+<li id ="startDate"><b>Start date:</b>2023-03-27</li>
 
-<li id="endDate"><b>End date:</b>2023-03-27</li>
+<li id="endDate"><b>End date:</b>2023-03-31</li>
 
 <!-- <li><b>Course sponsors</b>: TBA</li> -->
 
@@ -242,7 +242,7 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
       <th scope="row">9:00am - 10:30am
       <br>
      </th>
-      <td>    <ul>
+      <td>    <ul><li><b> <a href="#" target="_blank">Day 2 slides & files</a></b></li>
       <li>2.  <a href="{{ site.url }}uploads/git_t.pdf" target="_blank">Introduction to Git</a> </li>
       <li>2.1 Software carpentry (<a href="https://verena90.github.io/2021-10-05-online-NGS_Academy/" target="_blank">Basic Unix and Git</a>) </li>
 
@@ -267,7 +267,7 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
       <th scope="row">10:30am - 1:00pm
       <br>
      </th>
-      <td>    <ul> <li><b> <a href="#" target="_blank">Day 2 slides & files</a></b></li>
+      <td>    <ul> 
       <li>2.2 Scientific talk
        </li> 
      
