@@ -143,7 +143,7 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
       <br>
      </th>
       <td>    <ul>
-      <li><b> <a href="#" target="_blank">Introduction to the Course</a></b></li>
+      <li><b> <a href="#" target="_blank">Day 1 slides & files</a></b></li>
 <ol>
   <li>1. Get started working on HPC</li>
   <li>1.1 Confirm participant streams</li>
@@ -166,15 +166,15 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
       <br>
      </th>
       <td>    <ul>
-      <li>1.2 <a href="#" target="_blank">Introduction to Conda and Conda environments</a></li>
+      <li>1.2 Introduction to Conda and Conda environments</li>
 <ol>
   <li>1.3 Miniconda Installation</li>
   <li>1.4 Use of mamba</li>
-    <li>1.5 <a href="#" target="_blank">Conda environments</a></li>
+    <li>1.5 Conda environments</li>
      <li>1.6 Different ways of specifying (cmd line, yaml file)</li>
        <li>1.7 Ways of saving/exporting/sharing</li>
-        <li>1.8 <a href="#" target="_blank">Practical </a></li>
-         <li>1.9 <a href="#" target="_blank">Lecture </a></li>
+        <li>1.8 Practical </li>
+         <li>1.9 Lecture </li>
         
 </ol>                 
 </ul></td>
@@ -195,10 +195,10 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
       <br>
      </th>
       <td>    <ul>
-        <li>1.9.0 <a href="#" target="_blank">Introduction to Containers.</a></li>
+        <li>1.9.0 Introduction to Containers</li>
 <ol>
   <li>1.9.1 Introduction to docker</li>
-  <li>1.9.2 <a href="#" target="_blank">Finding and rolling out containers</a></li>
+  <li>1.9.2 Finding and rolling out containers</li>
    <li>1.9.3 Run docker</li>
     <li>1.9.4 Build a docker container</li>
     <li>1.9.5 Modifying a docker container</li>
@@ -267,7 +267,7 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
       <th scope="row">10:30am - 1:00pm
       <br>
      </th>
-      <td>    <ul>
+      <td>    <ul> <li><b> <a href="#" target="_blank">Day 2 slides & files</a></b></li>
       <li>2.2 Scientific talk
        </li> 
      
@@ -329,8 +329,8 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
       <th scope="row">9:00am - 1:00pm
       <br>
      </th>
-      <td>    <ul>
-      <li>3. <a href="{{ site.url }}uploads/snakemake_introduction.pdf" target="_blank">Introduction to Snakemake  </a> </li>
+      <td>    <ul> <li><b> <a href="#" target="_blank">Day 3 slides & files</a></b></li>
+      <li>3. Introduction to Snakemake  </li>
       <li>3.1 Scripting </li>
 <li>3.2 Basic concerpts</li>
         <li>3.3 Running a basic pipeline</li>
@@ -363,7 +363,7 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
              <li>3.6.0 Running snakemake.</li>
                   <li>3.6.1 Run snakemake with conda</li>
                     <li>3.6.2 Running snakemake on HPC</li>
-                     <li>3.6.3 <a href="{{ site.url }}uploads/snakemake_practical.zip" target="_blank">Practical: Snakemake</a></li>
+                     <li>3.6.3 Practical: Snakemake</li>
 </ul></td>
       <td><ul>
    <li>Malawi-Liverpool-Wellcome Trust </li>
@@ -398,7 +398,7 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
       <th scope="row">9:00am - 10:30am 
       <br>
      </th>
-      <td>    <ul>
+      <td>    <ul> <li><b> <a href="#" target="_blank">Day 4 slides & files</a></b></li>
       <li>4.0 Advanced workflows (Nextflow and CWL)</li> 
        <li>4.1 Compare and contrast with snakemake</li>                   
 </ul></td>
