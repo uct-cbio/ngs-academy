@@ -188,7 +188,7 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
       <th scope="row">1:00pm-5:00pm
       <br>
      </th>
-      <td>    <ul><li><b> <a href="{{ site.url }}uploads/Day_2_bioinformatics_modules.zip" target="_blank">Day 2 slides & files</a></b></li>
+      <td>    <ul>
         <li>1.3 Advanced Python cont..</li>
 <ol>
   <li>1.3.2 Writing your own classes</li>
@@ -230,7 +230,7 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
       <th scope="row">9:00am - 10:30am
       <br>
      </th>
-      <td>    <ul> 
+      <td>    <ul> <li><b> <a href="{{ site.url }}uploads/Day_2_bioinformatics_modules.zip" target="_blank">Day 2 slides & files</a></b></li>
       <li>2.0 Advanced python </li>
      <li>2.1 Using common bioinformatics modules (Bio python ) </li>
       <li>2.2 Lecture and practical </li>
