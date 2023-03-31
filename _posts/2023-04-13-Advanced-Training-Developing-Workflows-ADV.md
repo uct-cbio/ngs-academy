@@ -142,7 +142,7 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
       <br>
      </th>
       <td>    <ul>
-      <li><b> <a href="#" target="_blank">Day 1 slides & files</a></b></li>
+      <li><b> <a href="{{ site.url }}uploads/Day_1_advanced_python.custom_classes.zip" target="_blank">Day 1 slides & files</a></b></li>
 <ol>
   <li>1.0 Get started working on HPC</li>
   <li>1.1 Confirm participant streams</li>
@@ -188,7 +188,7 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
       <th scope="row">1:00pm-5:00pm
       <br>
      </th>
-      <td>    <ul><li><b> <a href="#" target="_blank">Day 2 slides & files</a></b></li>
+      <td>    <ul><li><b> <a href="{{ site.url }}uploads/Day_2_bioinformatics_modules.zip" target="_blank">Day 2 slides & files</a></b></li>
         <li>1.3 Advanced Python cont..</li>
 <ol>
   <li>1.3.2 Writing your own classes</li>
@@ -322,7 +322,7 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
       <th scope="row">9:00am - 10:30pm
       <br>
      </th>
-      <td>    <ul> <li><b> <a href="#" target="_blank">Day 3 slides & files</a></b></li>
+      <td>    <ul> <li><b> <a href="{{ site.url }}uploads/Day_3_nextflow.zip" target="_blank">Day 3 slides & files</a></b></li>
       <li>3. Nextflow </li>
       <li>3.1 Simple RNA-seq1 pipeline </li>
 <li>3.2 nf-core pipelines</li>
@@ -386,7 +386,7 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
       <th scope="row">9:00am - 10:30am 
       <br>
      </th>
-      <td>    <ul> <li><b> <a href="#" target="_blank">Day 4 slides & files</a></b></li>
+      <td>    <ul> <li><b> <a href="{{ site.url }}uploads/Day_4_building_docker_images.zip" target="_blank">Day 4 slides & files</a></b></li>
       <li>4.0 Advanced python</li> 
        <li>4.1 Compare and contrast with snakemake</li>                   
 </ul></td>
