@@ -13,6 +13,103 @@ group: group1
 training_provider:  MLWT, KEMRI, ILRI
 link: https://uct-cbio.github.io/ngs-academy/2023/Advanced-Training-Developing-Workflows-ADV
 ---
+  
+<!-- ### SARS-CoV-2 NGS bioinformatics course 2021 -->
+The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI). This initiative is funded by the Bill & Melinda Gates Foundation. Our training initiatives are carried out in partnership with the African Society for Laboratory Medicine (ASLM).
+<hr>
+
+<!-- <b>Course outline:</b> [ SARS-CoV-2 NGS Bioinformatics Course 2021]({{ site.url }}/docs/course_outline.pdf) -->
+
+<p align="left"><b >Course overview:</b></p>
+
+ <p id="description" align="left">High-throughput laboratory machines generate large quantities of raw biological data. Processing the data to generate useful information involves using several tools and sometimes setting up complex bioinformatics analysis environments across heterogeneous computing devices. Bioinformatics workflows and workflow managers allow reproducibility and portability of analysis plans and optimization of available computing resources. The Advanced Training: Developing Workflows workshop was aimed at introducing, deploying Nextflow, a too which enables scalable and reproducible scientific workflows.   
+ <p>
+
+
+<p align="left"><b class="text-left">Intended audience:</b></p>
+
+<p>Beginner - intermediate level bioinformaticians working with next-generation sequencing data for disease surveillance on the African continent
+</p>
+<p align="left"><b class="text-left">Purpose:</b></p>
+<p> High-throughput laboratory machines generate large quantities of primary biological data.  Processing these data to generate useful information involves several tools and setting up of complex bioinformatics environments across heterogeneous computing infrastructure. Bioinformatics workflow managers provide portability and reproducibility of analysis and optimization of available computing resources.  </p>
+<p>We would like to develop and run an advanced  bioinformatics workflow workshop  aimed at introducing and deploying Nextflow, a tool that enables scalable and reproducible scientific workflows. </p>
+
+<b>Pre-requisite:</b> 
+
+<ol>
+<li>For the course, participants do not need a high-performance computer since the trainers will provide access to KEMRI's cluster
+</li>
+<!-- test -->
+<p>The course will cover:</p>
+
+<div class="row">
+    <div class="col-sm-2">
+        <div><img alt="..." src="/ngs-academy/img/nextflow.png" width="100%" />
+            <!-- <p class="small"> Source: CBIO UCT</p> -->
+        </div>
+    </div>
+    <div class="col-sm-2">
+        <div><img alt="..." src="/ngs-academy/img/docker.png" width="100%" />
+            <!-- <p class="small"> Source: CBIO UCT</p> -->
+        </div>
+    </div>
+    <div class="col-sm-2">
+        <div><img alt="..." src="/ngs-academy/img/git.png" width="100%" />
+            <!-- <p class="small"> Source: CBIO UCT</p> -->
+        </div>
+    </div>
+    <div class="col-sm-2">
+        <div><img alt="..." src="/ngs-academy/img/HPC.jpg" width="100%" />
+            <!-- <p class="small"> Source: CBIO UCT</p> -->
+        </div>
+    </div>
+         <div class="col-sm-2">
+        <div><img alt="..." src="/ngs-academy/img/snakemake.png" width="100%" />
+            <!-- <p class="small"> Source: CBIO UCT</p> -->
+        </div>
+    </div>
+
+</div>
+
+
+<h3>Logistics: </h3>
+<hr>
+
+<ol class="list-unstyled">
+
+ <li id="location"><b>Venue of course</b>: KEMRI / WELLCOME TRUST Kilifi, Kenya  </li>
+
+
+<li id ="startDate"><b>Start date:</b>2023-03-31</li>
+
+<li id="endDate"><b>End date:</b>2023-03-27</li>
+
+<!-- <li><b>Course sponsors</b>: TBA</li> -->
+
+<!-- <u><li><b>Participant applications</b></li></u>
+
+<li><b>Registration for participants opened:</b> 25 Feb 2022</li> -->
+
+<!-- <li><b>Registration for participants closed:</b> 04 March 2022</li> -->
+
+<!-- <li><b>Notification date for successful Applicants:</b> </li> -->
+</ol>
+
+<b>Course curriculum:</b>
+<hr>
+<ol class="list-unstyled">
+
+<li>Day 1 HPC and introduction to containers </li>
+<li>Day 2 Introduction to git and file organisation</li>
+<li>Day 3 Introduction to snakemake</li>
+<li>Day 4 Advanced workflows (Nextflow, CWL) </li>
+<li>Day 5 Practical application </li>
+
+</ol>
+
+
+
+
 <h3>Introductory Stream</h3> Click <a href="{{site.baseurl}}/2023/Advanced-Training-Developing-Workflows-ADV" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">Advanced stream</a> to access the advanced stream training materials
 
 <!-- start here introductory course materials -->
