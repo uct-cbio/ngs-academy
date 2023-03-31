@@ -13,7 +13,95 @@ group: group1
 training_provider:  MLWT, KEMRI, ILRI
 link: https://uct-cbio.github.io/ngs-academy/2023/Advanced-Training-Developing-Workflows-ADV
 ---
+  
+<!-- ### SARS-CoV-2 NGS bioinformatics course 2021 -->
+The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI). This initiative is funded by the Bill & Melinda Gates Foundation. Our training initiatives are carried out in partnership with the African Society for Laboratory Medicine (ASLM).
+<hr>
+
+<!-- <b>Course outline:</b> [ SARS-CoV-2 NGS Bioinformatics Course 2021]({{ site.url }}/docs/course_outline.pdf) -->
 <h3>Introductory Stream</h3> Click <a href="{{site.baseurl}}/2023/Advanced-Training-Developing-Workflows-ADV" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">Advanced stream</a> to access the advanced stream training materials
+
+
+<p align="left"><b class="text-left">Intended audience:</b></p>
+
+<p>Beginner - intermediate level bioinformaticians working with next-generation sequencing data for disease surveillance on the African continent
+</p>
+<p align="left"><b class="text-left">Purpose:</b></p>
+<p> High-throughput laboratory machines generate large quantities of primary biological data.  Processing these data to generate useful information involves several tools and setting up of complex bioinformatics environments across heterogeneous computing infrastructure. Bioinformatics workflow managers provide portability and reproducibility of analysis and optimization of available computing resources.  </p>
+<p>We would like to develop and run an advanced  bioinformatics workflow workshop  aimed at introducing and deploying Nextflow, a tool that enables scalable and reproducible scientific workflows. </p>
+
+<b>Pre-requisite:</b> 
+
+<ol>
+<li>For the course, participants do not need a high-performance computer since the trainers will provide access to KEMRI's cluster
+</li>
+<!-- test -->
+<p>The course will cover:</p>
+
+<div class="row">
+    <div class="col-sm-2">
+        <div><img alt="..." src="/ngs-academy/img/nextflow.png" width="100%" />
+            <!-- <p class="small"> Source: CBIO UCT</p> -->
+        </div>
+    </div>
+    <div class="col-sm-2">
+        <div><img alt="..." src="/ngs-academy/img/docker.png" width="100%" />
+            <!-- <p class="small"> Source: CBIO UCT</p> -->
+        </div>
+    </div>
+    <div class="col-sm-2">
+        <div><img alt="..." src="/ngs-academy/img/git.png" width="100%" />
+            <!-- <p class="small"> Source: CBIO UCT</p> -->
+        </div>
+    </div>
+    <div class="col-sm-2">
+        <div><img alt="..." src="/ngs-academy/img/HPC.jpg" width="100%" />
+            <!-- <p class="small"> Source: CBIO UCT</p> -->
+        </div>
+    </div>
+         <div class="col-sm-2">
+        <div><img alt="..." src="/ngs-academy/img/snakemake.png" width="100%" />
+            <!-- <p class="small"> Source: CBIO UCT</p> -->
+        </div>
+    </div>
+
+</div>
+
+
+<h3>Logistics: </h3>
+<hr>
+
+<ol class="list-unstyled">
+
+ <li id="location"><b>Venue of course</b>: KEMRI / WELLCOME TRUST Kilifi, Kenya  </li>
+
+
+<li id ="startDate"><b>Start date:</b>2023-03-31</li>
+
+<li id="endDate"><b>End date:</b>2023-03-27</li>
+
+<!-- <li><b>Course sponsors</b>: TBA</li> -->
+
+<!-- <u><li><b>Participant applications</b></li></u>
+
+<li><b>Registration for participants opened:</b> 25 Feb 2022</li> -->
+
+<!-- <li><b>Registration for participants closed:</b> 04 March 2022</li> -->
+
+<!-- <li><b>Notification date for successful Applicants:</b> </li> -->
+</ol>
+
+<b>Course curriculum:</b>
+<hr>
+<ol class="list-unstyled">
+
+<li>Day 1 HPC and introduction to containers </li>
+<li>Day 2 Introduction to git and file organisation</li>
+<li>Day 3 Introduction to snakemake</li>
+<li>Day 4 Advanced workflows (Nextflow, CWL) </li>
+<li>Day 5 Practical application </li>
+
+</ol>
 
 <!-- start here introductory course materials -->
 <ul class="nav nav-tabs" role="tablist">
@@ -39,7 +127,7 @@ link: https://uct-cbio.github.io/ngs-academy/2023/Advanced-Training-Developing-W
 </ul><!-- Tab panes -->
 <div class="tab-content">
 	<div class="tab-pane active" id="tabs-1" role="tabpanel">
-  <p><a href="#" target="_blank">Day 1 Training Videos</a></p>
+  <!-- <p><a href="#" target="_blank">Day 1 Training Videos</a></p> -->
 		<p>   <table class="table table-bordered table-responsive">
   <thead>
     <tr>
@@ -55,7 +143,7 @@ link: https://uct-cbio.github.io/ngs-academy/2023/Advanced-Training-Developing-W
       <br>
      </th>
       <td>    <ul>
-      <li><b> <a href="#" target="_blank">Introduction to the Course</a></b></li>
+      <li><b> <a href="#" target="_blank">Day 1 slides & files</a></b></li>
 <ol>
   <li>1. Get started working on HPC</li>
   <li>1.1 Confirm participant streams</li>
@@ -78,15 +166,15 @@ link: https://uct-cbio.github.io/ngs-academy/2023/Advanced-Training-Developing-W
       <br>
      </th>
       <td>    <ul>
-      <li>1.2 <a href="#" target="_blank">Introduction to Conda and Conda environments</a></li>
+      <li>1.2 Introduction to Conda and Conda environments</li>
 <ol>
   <li>1.3 Miniconda Installation</li>
   <li>1.4 Use of mamba</li>
-    <li>1.5 <a href="#" target="_blank">Conda environments</a></li>
+    <li>1.5 Conda environments</li>
      <li>1.6 Different ways of specifying (cmd line, yaml file)</li>
        <li>1.7 Ways of saving/exporting/sharing</li>
-        <li>1.8 <a href="#" target="_blank">Practical </a></li>
-         <li>1.9 <a href="#" target="_blank">Lecture </a></li>
+        <li>1.8 Practical </li>
+         <li>1.9 Lecture </li>
         
 </ol>                 
 </ul></td>
@@ -107,10 +195,10 @@ link: https://uct-cbio.github.io/ngs-academy/2023/Advanced-Training-Developing-W
       <br>
      </th>
       <td>    <ul>
-        <li>1.9.0 <a href="#" target="_blank">Introduction to Containers.</a></li>
+        <li>1.9.0 Introduction to Containers</li>
 <ol>
   <li>1.9.1 Introduction to docker</li>
-  <li>1.9.2 <a href="#" target="_blank">Finding and rolling out containers</a></li>
+  <li>1.9.2 Finding and rolling out containers</li>
    <li>1.9.3 Run docker</li>
     <li>1.9.4 Build a docker container</li>
     <li>1.9.5 Modifying a docker container</li>
@@ -138,7 +226,7 @@ link: https://uct-cbio.github.io/ngs-academy/2023/Advanced-Training-Developing-W
 </table>    </p>
 	</div>
 	<div class="tab-pane" id="tabs-2" role="tabpanel">
-    <p><a href="#" target="_blank">Day 2 Training Videos</a></p>
+    <!-- <p><a href="#" target="_blank">Day 2 Training Videos</a></p> -->
 		<p> <table class="table table-bordered table-responsive">
   <thead>
     <tr>
@@ -179,7 +267,7 @@ link: https://uct-cbio.github.io/ngs-academy/2023/Advanced-Training-Developing-W
       <th scope="row">10:30am - 1:00pm
       <br>
      </th>
-      <td>    <ul>
+      <td>    <ul> <li><b> <a href="#" target="_blank">Day 2 slides & files</a></b></li>
       <li>2.2 Scientific talk
        </li> 
      
@@ -225,7 +313,7 @@ link: https://uct-cbio.github.io/ngs-academy/2023/Advanced-Training-Developing-W
 </p>
 	</div>
 	<div class="tab-pane" id="tabs-3" role="tabpanel">
-    <p><a href="#" target="_blank">Day 3 Training Videos</a></p>
+    <!-- <p><a href="#" target="_blank">Day 3 Training Videos</a></p> -->
 		<p>   <table class="table table-bordered table-responsive">
   <thead>
     <tr>
@@ -241,8 +329,8 @@ link: https://uct-cbio.github.io/ngs-academy/2023/Advanced-Training-Developing-W
       <th scope="row">9:00am - 1:00pm
       <br>
      </th>
-      <td>    <ul>
-      <li>3. <a href="{{ site.url }}uploads/snakemake_introduction.pdf" target="_blank">Introduction to Snakemake  </a> </li>
+      <td>    <ul> <li><b> <a href="#" target="_blank">Day 3 slides & files</a></b></li>
+      <li>3. Introduction to Snakemake  </li>
       <li>3.1 Scripting </li>
 <li>3.2 Basic concerpts</li>
         <li>3.3 Running a basic pipeline</li>
@@ -275,7 +363,7 @@ link: https://uct-cbio.github.io/ngs-academy/2023/Advanced-Training-Developing-W
              <li>3.6.0 Running snakemake.</li>
                   <li>3.6.1 Run snakemake with conda</li>
                     <li>3.6.2 Running snakemake on HPC</li>
-                     <li>3.6.3 <a href="{{ site.url }}uploads/snakemake_practical.zip" target="_blank">Practical: Snakemake</a></li>
+                     <li>3.6.3 Practical: Snakemake</li>
 </ul></td>
       <td><ul>
    <li>Malawi-Liverpool-Wellcome Trust </li>
@@ -295,7 +383,7 @@ link: https://uct-cbio.github.io/ngs-academy/2023/Advanced-Training-Developing-W
 	</div>
 
   	<div class="tab-pane" id="tabs-4" role="tabpanel">
-      <p><a href="#" target="_blank">Day 4 Training Videos</a></p>
+      <!-- <p><a href="#" target="_blank">Day 4 Training Videos</a></p> -->
 		<p> <table class="table table-bordered">
   <thead>
     <tr>
@@ -310,7 +398,7 @@ link: https://uct-cbio.github.io/ngs-academy/2023/Advanced-Training-Developing-W
       <th scope="row">9:00am - 10:30am 
       <br>
      </th>
-      <td>    <ul>
+      <td>    <ul> <li><b> <a href="#" target="_blank">Day 4 slides & files</a></b></li>
       <li>4.0 Advanced workflows (Nextflow and CWL)</li> 
        <li>4.1 Compare and contrast with snakemake</li>                   
 </ul></td>
