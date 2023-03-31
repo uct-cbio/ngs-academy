@@ -235,7 +235,8 @@ The training has a double objective, to understand the genomic epidemiology of r
 </ul><!-- Tab panes -->
 <div class="tab-content">
 	<div class="tab-pane active" id="tabs-1" role="tabpanel">
-  <p><a href="https://zivahub.uct.ac.za/articles/media/Day_1_Session_Recordings_of_Introduction_To_Bioinformatics_Analysis_Of_Plasmodium_Falciparum_Genome_Data_Training_2022_Training/21694709" target="_blank">Day 1 Training Videos</a></p>
+  <p><a href="https://zivahub.uct.ac.za/articles/media/Day_1_Session_Recordings_of_Introduction_To_Bioinformatics_Analysis_Of_Plasmodium_Falciparum_Genome_Data_Training_2022_Training/21694709" target="_blank">Day 1 Training </a>
+  </p>
 		<p>   <table class="table table-bordered table-responsive">
   <thead>
     <tr>
