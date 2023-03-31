@@ -143,7 +143,7 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
       <br>
      </th>
       <td>    <ul>
-      <li><b> <a href="#" target="_blank">Day 1 slides & files</a></b></li>
+      <li><b> <a href="#" target="{{ site.url }}uploads/day_1_intro.zip">Day 1 slides & files</a></b></li>
 <ol>
   <li>1. Get started working on HPC</li>
   <li>1.1 Confirm participant streams</li>
@@ -242,7 +242,7 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
       <th scope="row">9:00am - 10:30am
       <br>
      </th>
-      <td>    <ul><li><b> <a href="#" target="_blank">Day 2 slides & files</a></b></li>
+      <td>    <ul><li><b> <a href="{{ site.url }}uploads/day_2_intro.zip" target="_blank">Day 2 slides & files</a></b></li>
       <li>2.  <a href="{{ site.url }}uploads/git_t.pdf" target="_blank">Introduction to Git</a> </li>
       <li>2.1 Software carpentry (<a href="https://verena90.github.io/2021-10-05-online-NGS_Academy/" target="_blank">Basic Unix and Git</a>) </li>
 
@@ -329,7 +329,7 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
       <th scope="row">9:00am - 1:00pm
       <br>
      </th>
-      <td>    <ul> <li><b> <a href="#" target="_blank">Day 3 slides & files</a></b></li>
+      <td>    <ul> <li><b> <a href="{{ site.url }}uploads/day_3_intro.zip" target="_blank">Day 3 slides & files</a></b></li>
       <li>3. Introduction to Snakemake  </li>
       <li>3.1 Scripting </li>
 <li>3.2 Basic concerpts</li>
@@ -398,7 +398,7 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
       <th scope="row">9:00am - 10:30am 
       <br>
      </th>
-      <td>    <ul> <li><b> <a href="#" target="_blank">Day 4 slides & files</a></b></li>
+      <td>    <ul> <li><b> <a href="{{ site.url }}uploads/day_4_intro.zip" target="_blank">Day 4 slides & files</a></b></li>
       <li>4.0 Advanced workflows (Nextflow and CWL)</li> 
        <li>4.1 Compare and contrast with snakemake</li>                   
 </ul></td>
