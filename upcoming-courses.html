@@ -31,8 +31,10 @@ permalink: /courses/upcoming-courses/
     
     
       <tbody>
+       
 
       {% for post in site.posts reversed %}
+      <!-- {% assign post_items = site.posts | sort: 'end_date' | reverse %} -->
 
       {% if post.categories contains "upcoming" %}
         <tr>

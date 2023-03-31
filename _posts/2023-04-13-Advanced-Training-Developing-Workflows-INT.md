@@ -10,8 +10,10 @@ course_overview :  High-throughput laboratory machines generate large quantities
 start_date: 2023-03-27
 end_date: 2023-03-31
 group: group1
+training_provider:  MLWT, KEMRI, ILRI
+link: https://uct-cbio.github.io/ngs-academy/2023/Advanced-Training-Developing-Workflows-ADV
 ---
-<h3>Introductory Stream</h3> Click <a href="{{site.baseurl}}2023/Advanced-Training-Developing-Workflows-ADV" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">Advanced stream</a> to access the advanced stream training materials
+<h3>Introductory Stream</h3> Click <a href="{{site.baseurl}}/2023/Advanced-Training-Developing-Workflows-ADV" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">Advanced stream</a> to access the advanced stream training materials
 
 <!-- start here introductory course materials -->
 <ul class="nav nav-tabs" role="tablist">
