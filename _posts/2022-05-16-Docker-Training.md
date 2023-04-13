@@ -9,6 +9,7 @@ course_overview : In this course you will learn the fundamentals of Docker and c
 start_date: 2022-5-16
 end_date: 2022-04-29
 group: group1
+training_provider:  MRI GLOBAL
 ---
   
 <!-- ### SARS-CoV-2 NGS bioinformatics course 2021 -->

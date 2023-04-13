@@ -9,6 +9,7 @@ course_overview : The course is designed for individuals looking to broaden thei
 start_date: 2022-03-01
 end_date: 2022-11-30
 group: group1
+training_provider:  NGS Academy
 ---
   
 <!-- ### SARS-CoV-2 NGS bioinformatics course 2021 -->

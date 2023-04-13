@@ -6,7 +6,7 @@ main_menu: courses
 permalink: /:year/:title
 category: upcoming
 course_overview: 
-
+training_provider:  NGS Academy
 start_date: 2023-03-24
 end_date: 2023-03-31
 group: group1
