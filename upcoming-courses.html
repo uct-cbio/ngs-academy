@@ -31,9 +31,11 @@ permalink: /courses/upcoming-courses/
     
     
       <tbody>
+
        
 
-      {% for post in site.posts reversed %}
+
+      {% for post in site.posts %}
       <!-- {% assign post_items = site.posts | sort: 'end_date' | reverse %} -->
 
       {% if post.categories contains "upcoming" %}
@@ -46,8 +48,10 @@ permalink: /courses/upcoming-courses/
           <td>{{post.end_date| date_to_string}}</td>
       </tr>  
       
-      {% endif %}
+      {% endif %} 
+
       {% endfor %}
+
        <tfoot>
       <tr>
       <th>Title</th>
