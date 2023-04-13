@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Introduction to Bioinformatics Analysis of Plasmodium Falciparum Genome data training 2022"
-date: 2022-10-28
+posted_date: 2022-10-29
 main_menu: courses
 permalink: /:year/:title
 category: past-course

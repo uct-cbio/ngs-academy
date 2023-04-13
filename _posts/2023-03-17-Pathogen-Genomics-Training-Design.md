@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "How to design and deliver pathogen genomics training for health and research professionals"
-date: 2023-03-17
+posted_date: 2023-03-17
 main_menu: courses
 permalink: /:year/:title
 category: upcoming

@@ -30,8 +30,8 @@ permalink: /courses/past-courses/
     
       <tbody>
 
-     
-        {% for post in site.posts %}
+        {% assign sorted_posts = site.posts | where: "category", "past-course" | sort: 'start_date' | reverse %}
+        {% for post in sorted_posts %}
         <tr>
           <td>
              <li class="list-unstyled">
@@ -39,12 +39,12 @@ permalink: /courses/past-courses/
        
 
 
-          </li></a><br><small class="text-muted"> posted: {{post.date
+          </li></a><br><small class="text-muted"> posted: {{post.posted_date
             | date_to_string}} </small></td>
           <td>{{ post.training_provider }} </td>
-          <td>{{post.start_date | date_to_string}}
+          <td>{{post.start_date}}
           </td>
-          <td>{{post.end_date| date_to_string}}</td>
+          <td>{{post.end_date }}</td>
       </tr>  
       
       {% endfor %}

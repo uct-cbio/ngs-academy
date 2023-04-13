@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Genetic Analysis of Population-based Association Studies (Virtual) "
-date: 2021-07-10
+posted_date: 2021-07-09
 permalink: /:year/:title
 category: available_tag
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Virtual software carpentry training workshop"
-date: 2021-08-03
+posted_date: 2021-09-01
 main_menu: courses
 permalink: /:year/:title
 category: past-course
