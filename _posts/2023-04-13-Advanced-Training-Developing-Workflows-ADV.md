@@ -25,12 +25,12 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
 </p>
 <p align="left"><b class="text-left">Purpose:</b></p>
 <p> High-throughput laboratory machines generate large quantities of primary biological data.  Processing these data to generate useful information involves several tools and setting up of complex bioinformatics environments across heterogeneous computing infrastructure. Bioinformatics workflow managers provide portability and reproducibility of analysis and optimization of available computing resources.  </p>
-<p>We would like to develop and run an advanced  bioinformatics workflow workshop  aimed at introducing and deploying Nextflow, a tool that enables scalable and reproducible scientific workflows. </p>
+<p>The Advanced  Bioinformatics workflow workshop was aimed at introducing and deploying Nextflow, a tool that enables scalable and reproducible scientific workflows. </p>
 
 <b>Pre-requisite:</b> 
 
 <ol>
-<li>For the course, participants do not need a high-performance computer since the trainers will provide access to KEMRI's cluster
+<li>For the course, access to a high-performance computer was organised by trainers
 </li>
 <!-- test -->
 <p>The course will cover:</p>
@@ -73,9 +73,9 @@ The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI).
  <li id="location"><b>Venue of course</b>: KEMRI / WELLCOME TRUST Kilifi, Kenya  </li>
 
 
-<li id ="startDate"><b>Start date:</b>2023-03-27</li>
+<li id ="startDate"><b>Start date: </b>2023-03-27</li>
 
-<li id="endDate"><b>End date:</b>2023-03-31</li>
+<li id="endDate"><b>End date: </b>2023-03-31</li>
 
 <!-- <li><b>Course sponsors</b>: TBA</li> -->
 
