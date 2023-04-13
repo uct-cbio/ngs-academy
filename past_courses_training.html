@@ -4,44 +4,79 @@ title: Past courses and training events
 permalink: /courses/past-courses/
 
 ---
-<div class="row">
-
-  <div class="col-sm-12">
-    <div class="panel-group " id="accordion">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-              Past courses and training</a>
-          </h4>
-        </div>
-        <div id="collapse1" class="panel-collapse collapse in">
-          <div class="panel-body">
-            <p>
-              {% for post in site.posts %}
-              {% if post.categories contains "past-course" %}
-              <li class="list-unstyled">
-                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-                <p>{{post.course_overview}}</p>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript" language="javascript"
+    src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 
 
-              </li>
-              {% endif %}
-              {% endfor %}
-            </p>
+
+    <div class="table-responsive">
+
+      <table id="past_course_table_2" class="stripe row-border order-column" cellspacing="0" width="100%">
+    
+        <thead>
+          <tr>
+              <th width="45%">Title</th>
+              <th>Training Provider</th>
+      
+              <th>From</th>
+                  
+              <th>To</th>
+  
+          </tr>
+      </thead>
+    
+    
+      <tbody>
+
+        {% assign sorted_posts = site.posts | where: "category", "past-course" | sort: 'start_date' | reverse %}
+        {% for post in sorted_posts %}
+        <tr>
+          <td>
+             <li class="list-unstyled">
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+       
 
 
-          </div>
-        </div>
-      </div>
+          </li></a><br><small class="text-muted"> posted: {{post.posted_date
+            | date_to_string}} </small></td>
+          <td>{{ post.training_provider }} </td>
+          <td>{{post.start_date}}
+          </td>
+          <td>{{post.end_date }}</td>
+      </tr>  
+      
+      {% endfor %}
+
+
+       <tfoot>
+      <tr>
+      <th>Title</th>
+      <th>Training Provider</th>
+      <th>From</th>
+      <th>To</th>
+      </tr>
+      </tfoot>
+      </tbody>
+    
+      </table>
+    
     </div>
-  </div>
 
 
 
 
 
+<script>
+  $(document).ready(function () {
+      var table = $('#past_course_table_2').DataTable({
+          "sDom": 'Rlfrtip',
+          // colReorder: true,
+          "oColReorder": {
+              "bAddFixed": false
+          },
 
-
-
-</div>
+      });
+  })
+</script>

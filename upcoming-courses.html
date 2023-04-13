@@ -19,7 +19,7 @@ permalink: /courses/upcoming-courses/
     
         <thead>
           <tr>
-              <th width="35%">Title</th>
+              <th width="45%">Title</th>
               <th>Training Provider</th>
       
               <th>From</th>
@@ -32,20 +32,24 @@ permalink: /courses/upcoming-courses/
     
       <tbody>
 
-      {% for post in site.posts reversed %}
+       
 
-      {% if post.categories contains "upcoming" %}
+    
+    
+      {% assign sorted_posts = site.posts | where: "category", "upcoming" | sort: 'start_date' | reverse %}
+      {% for post in sorted_posts %}
         <tr>
-          <td><a href="{{ post.link }}" target="_blank">{{ post.title }}</a><br><small class="text-muted"> posted: {{post.date
+          <td><a href="{{ post.link }}" target="_blank">{{ post.title }}</a><br><small class="text-muted"> posted: {{post.posted_date
             | date_to_string}} </small></td>
           <td>{{ post.training_provider }} </td>
-          <td>{{post.start_date | date_to_string}}
+          <td>{{post.start_date}}
           </td>
-          <td>{{post.end_date| date_to_string}}</td>
+          <td>{{post.end_date }}</td>
       </tr>  
-      
-      {% endif %}
+
+
       {% endfor %}
+
        <tfoot>
       <tr>
       <th>Title</th>
