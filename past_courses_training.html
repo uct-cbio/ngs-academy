@@ -30,7 +30,7 @@ permalink: /courses/past-courses/
     
       <tbody>
 
-        {% assign sorted_posts = site.posts | where: "category", "past-course" | sort: 'start_date' | reverse %}
+        {% assign sorted_posts = site.posts | where: "category", "past-course" %}
         {% for post in sorted_posts %}
         <tr>
           <td>
