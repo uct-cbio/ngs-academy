@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Chan Zuckerberg Initiative Seminars"
-date: 2021-06-06
+posted_date: 2021-06-06
 permalink: /:year/:title
 category: available_ng
 
