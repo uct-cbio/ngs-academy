@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Advanced Training: Developing Workflows 2023 (Advanced)"
-posted_date: 2023-4-13
+posted_date: 2023-04-13
 main_menu: courses
 permalink: /:year/:title
 category: past-course
