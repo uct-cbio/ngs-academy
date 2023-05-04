@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "SARS-CoV-2 NGS for Surveillance Training 2022"
-date: 2022-02-25
+posted_date: 2022-02-25
 main_menu: courses
 permalink: /:year/:title
 category: past-course

@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "SARS-CoV-2 Bioinformatics Training"
-date: 2021-08-03
+posted_date: 2021-08-03
 main_menu: courses
 permalink: /:year/:title
 category: past-course

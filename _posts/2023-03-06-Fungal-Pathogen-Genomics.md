@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Fungal Pathogen Genomics"
-date: 2023-03-06
+posted_date: 2023-03-06
 main_menu: courses
 permalink: /:year/:title
 category: upcoming
