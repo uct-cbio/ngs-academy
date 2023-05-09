@@ -243,7 +243,7 @@ Course objectives to be updated
       Session 2</th>
       <td>    <ul>
              <li> <a href="{{ site.url }}uploads/sample_management.pdf" target="_blank">Sample collection, handling, storage and referral.</a></li>
-                <li> <a href="{{ site.url }}uploads/manual_rna_extraction.pptx" target="_blank">Manual Viral RNA extraction.</a></li>
+                <li> <a href="{{ site.url }}uploads/manual_rna_extraction.pdf" target="_blank">Manual Viral RNA extraction.</a></li>
 </ul></td>
       <td><ul>
   
