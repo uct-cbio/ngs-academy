@@ -333,7 +333,7 @@ Course objectives to be updated
       Session 3</th>
       <td>   <ul>
        <li> <a href="https://github.com/jhuapl-bio/Basestack/#1-install-docker" target="_blank">Software troubleshooting sesssion with Trainers.</a></li>
-             <li> <a href="https://jhuapl-bio.github.io/Basestack/" target="_blank">Practical sesssion.</a></li>
+             <li> <a href="https://basestackwebsite.readthedocs.io/en/latest/installation.html#installation" target="_blank">Practical sesssion.</a></li>
              
 </ul></td>
       <td>
