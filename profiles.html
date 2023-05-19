@@ -3,10 +3,6 @@ layout: default
 title: Bioinformatics Profiles
 permalink: /courses/bioinformatics-profiles/
 ---
-<!-- https://code.jquery.com/jquery-3.5.1.js
-
-<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
 
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -16,101 +12,63 @@ permalink: /courses/bioinformatics-profiles/
     src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/select/1.2.1/js/dataTables.select.min.js" type="text/javascript"></script>
 
-<p>Select the modules below <p>
+<head>
 
-<label for="healthsafetyCheckbox">
-    <input type="checkbox" id="healthsafetyCheckbox"> Health and Safety
-</label>
-  <br>
-<label for="ethicspolicyCheckbox">
-  <input type="checkbox" id="ethicspolicyCheckbox"> Ethics & Policy
-</label>
-<br>
-<label for="introGECheckbox">
-  <input type="checkbox" id="introGECheckbox"> Introduction to Genetic Epidemiology
-</label>
-<br>
-<label for="unixCheckbox">
-    <input type="checkbox" id="unixCheckbox"> Unix, Scripting
-  </label>
-  <br>
-<label for="progCheckbox">
-      <input type="checkbox" id="progCheckbox"> Programming
-</label>
-<br>
-<label for="bioinfCheckbox">
-        <input type="checkbox" id="bioinfCheckbox"> Bioinformatics
-</label>
-<br>
-<label for="wHPCCheckbox">
-        <input type="checkbox" id="wHPCCheckbox"> Workflows, HPC
-</label>
-<br>
+  <script>
+    function displayCourses() {
+      // Get the selected degree
+      var degreeSelect = document.getElementById("degreeSelect");
+      var selectedDegree = degreeSelect.options[degreeSelect.selectedIndex].value;
 
+      // Define the mapping between degrees and courses
+      var degreeCourses = {
+        "bioinformatics": ["Unix/Linux, Shell Scripting & the Commandline","Data Analytics","Phylogenetics", "Informatics Skills","Workflows, High Performance Computing", "Programming in Python", "R programming","Git and Version Control","Ontologies, Standards and Submission"],
+        "wetlab": ["Health & Safety", "Lab practical: DNA/RNA sequencing"],
+        "lab_manager": ["Ethics and Policies", "Introduction to Genomic Epidemiology for Pathogen Surveillance", "Study Design","Introduction to NGS","Dissemination of results"],
+      };
 
-<button onclick="displayDegreeTitle()" type="button" class="btn btn-danger btn-sm" data-toggle="modal"
-data-target="#myModal1">
-Display Bioinformatics Profile
-</button>
-  
-    <!-- The Modal -->
-    <div class="modal fade" id="myModal1">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
+      // Get the corresponding courses for the selected degree
+      var courses = degreeCourses[selectedDegree];
 
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <p class="modal-title font-weight-bold"> </p>
-                    <button type="button" class="close"
-                        data-dismiss="modal">&times;</button><br>
-                </div>
+      // Display the courses
+      var coursesList = document.getElementById("coursesList");
+      coursesList.innerHTML = ""; // Clear previous courses
 
-                <!-- Modal body -->
-                <div class="modal-body">
-                    <p><b>Your Profile:</b> <span id="degreeTitle">Can not generate profile, Please select the appropriate modules!</span></p>
-                </div>
-
-                <!-- Modal footer -->
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger btn-sm"
-                        data-dismiss="modal">Close</button>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-<br>
-<!-- <button class="btn btn-danger btn-sm" onclick="displayDegreeTitle()">Display Bioinformatics Profile</button>
-<br>
-<br>
-<p>Your Profile: <span id="degreeTitle">Undecided, Please</span></p> -->
-
-
-<script>
- function displayDegreeTitle() {
-      // Get the completed NGS courses
-      var healthsafetyCompleted = document.getElementById("healthsafetyCheckbox").checked;
-      var ethicspolicyCompleted = document.getElementById("ethicspolicyCheckbox").checked;
-      var introGECompleted = document.getElementById("introGECheckbox").checked;
-      var unixCompleted = document.getElementById("unixCheckbox").checked;
-      var progCompleted = document.getElementById("progCheckbox").checked;
-      var bioinfCompleted = document.getElementById("bioinfCheckbox").checked;
-      var wHPCCompleted = document.getElementById("wHPCCheckbox").checked;
-
-      // Determine the degree/profile title based on the completed courses
-      var degreeTitle = "Undecided";
-
-      if (ethicspolicyCompleted && introGECompleted && unixCompleted && progCompleted && bioinfCompleted ) {
-        degreeTitle = "Bioinformatics Scientist";
-      } else if (healthsafetyCompleted && ethicspolicyCompleted && introGECompleted ) {
-        degreeTitle = "Wetlab Scientist";
-      } else if (aaintroGECompleted) {
-        degreeTitle = "You have selected Introduction to Genetic Epidemiology";
+      if (courses) {
+        for (var i = 0; i < courses.length; i++) {
+          var courseItem = document.createElement("li");
+          courseItem.textContent = courses[i];
+          coursesList.appendChild(courseItem);
+        }
+      } else {
+        var courseItem = document.createElement("li");
+        courseItem.textContent = "No Modules available for the selected Profile";
+        coursesList.appendChild(courseItem);
       }
-
-      // Display the degree/profile title
-      document.getElementById("degreeTitle").textContent = degreeTitle;
     }
+  </script>
 
-</script>
+</head>
+<h3>Profile</h3>
+
+<label for="degreeSelect">Select a profile:</label>
+<select id="degreeSelect">
+  <option value="bioinformatics">Bioinformatics Scientist</option>
+  <option value="wetlab">Wetlab Scientist</option>
+  <option value="lab_manager">Policy Maker</option>
+</select>
+<br>
+<br>
+<button class="btn btn-danger btn-sm" onclick="displayCourses()">Display Skills</button>
+<br>
+<br>
+<ul id="coursesList"></ul>
+
+
+
+
+
+<br>
+
+
+
