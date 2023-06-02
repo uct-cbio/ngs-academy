@@ -15,8 +15,7 @@ link: https://uct-cbio.github.io/ngs-academy/2023/Advanced-Training-Developing-W
 ---
   
 <!-- ### SARS-CoV-2 NGS bioinformatics course 2021 -->
-The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI). This initiative is funded by the Bill & Melinda Gates Foundation. Our training initiatives are carried out in partnership with the African Society for Laboratory Medicine (ASLM).
-<hr>
+
 
 <!-- <b>Course outline:</b> [ SARS-CoV-2 NGS Bioinformatics Course 2021]({{ site.url }}/docs/course_outline.pdf) -->
 <h3>Introductory Stream</h3> Click <a href="{{site.baseurl}}/2023/Advanced-Training-Developing-Workflows-ADV" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">Advanced stream</a> to access the advanced stream training materials

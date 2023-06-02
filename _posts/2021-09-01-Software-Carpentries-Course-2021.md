@@ -35,8 +35,6 @@ bioschemas:
 ---
   
 <!-- ### SARS-CoV-2 NGS bioinformatics course 2021 -->
-The NGS Academy forms part of the Africa PGI. This initiative is funded by the Bill & Melinda Gates Foundation. Our training initiatives are carried out in partnership with the African Society for Laboratory Medicine (ASLM).
-<hr>
 
 <!-- <b>Course outline:</b> [ SARS-CoV-2 NGS Bioinformatics Course 2021]({{ site.url }}/docs/course_outline.pdf) -->
 

@@ -10,10 +10,6 @@ end_date: 2021-07-22
 ---
 <br>
 
-The NGS Academy forms part of the Africa CDC Pathogen Genomics Initiative (PGI). This initiative is funded by the Bill & Melinda Gates Foundation. Our training initiatives are carried out in partnership with the African Society for Laboratory Medicine (ASLM)
-
-<hr>
-
 <b>Course outline:</b> [ SARS-CoV-2 NGS training course 2021 for Africa CDC]({{ site.url }}docs/course_outline.pdf)
 
 <p align="left"><b >Course Overview:</b></p>
