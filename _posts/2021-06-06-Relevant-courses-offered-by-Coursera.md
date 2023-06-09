@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "Relevant courses offered by Coursera"
+title: "Relevant courses offered by Coursera"
 posted_date: 2021-06-06
 permalink: /:year/:title
 category: available_tag
