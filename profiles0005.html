@@ -1,0 +1,109 @@
+---
+layout: default
+title: Bioinformatics Profiles
+permalink: /courses/bioinformatics-profiles5/
+---
+
+<style>
+  .container {
+  overflow: hidden;
+}
+
+.items {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.item {
+  width: 10%;
+  height: 50px;
+  margin: 5px;
+  background-color: lightblue;
+  margin-left: 20px;
+
+}
+
+.twrap{
+
+  text-wrap: wrap;
+}
+
+.pagination {
+  margin-top: 10px;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  margin-right: 5px;
+}
+
+
+</style>
+
+
+<div class="container">
+  <div class="items">
+    <!-- Add your items here -->
+    <span class="item ">Item 1</span>
+    <span class="item">Item 2</span>
+    <span class="item">Item 3</span>
+    <span class="item twrap">Ite4mmmmmmmmmmm</span>
+    <span class="item">Item 5</span>
+    <span class="item">Item 6</span>
+    <span class="item">Item 7</span>
+    <span class="item">Item 8</span>
+    <span class="item">Item 9</span>
+    <span class="item">Item 10</span>
+    <span class="item">Item 11</span>
+    <span class="item">Item 12</span>
+    <span class="item">Item 13</span>
+    <span class="item">Item 14</span>
+    <span class="item">Item 15</span>
+    
+    <!-- ... -->
+  </div>
+</div>
+<div class="pagination">
+  <button class="prev-btn" onclick="prevPage()">Previous</button>
+  <button class="next-btn" onclick="nextPage()">Next</button>
+</div>
+
+
+
+<script>
+
+  const itemsPerPage = 10;
+let currentPage = 1;
+
+function showPage(page) {
+  const items = document.querySelectorAll('.item');
+  const startIndex = (page - 1) * itemsPerPage;
+  const endIndex = page * itemsPerPage;
+  
+  items.forEach((item, index) => {
+    item.style.display = index >= startIndex && index < endIndex ? 'block' : 'none';
+  });
+}
+
+function prevPage() {
+  if (currentPage > 1) {
+    currentPage--;
+    showPage(currentPage);
+  }
+}
+
+function nextPage() {
+  const items = document.querySelectorAll('.item');
+  const totalItems = items.length;
+  const totalPages = Math.ceil(totalItems / itemsPerPage);
+  
+  if (currentPage < totalPages) {
+    currentPage++;
+    showPage(currentPage);
+  }
+}
+
+showPage(currentPage);
+
+
+</script>
