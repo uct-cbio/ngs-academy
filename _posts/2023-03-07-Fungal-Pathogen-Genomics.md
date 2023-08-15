@@ -6,7 +6,7 @@ main_menu: courses
 permalink: /:year/:title
 category: past-course
 course_overview: 
-training_provider: Welcome Connecting Science
+training_provider: "Wellcome Connecting Science"
 start_date: 2023-05-09
 end_date: 2023-05-13
 group: group1
