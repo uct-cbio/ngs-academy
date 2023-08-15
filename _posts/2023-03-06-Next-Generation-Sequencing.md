@@ -19,4 +19,4 @@ link: https://coursesandconferences.wellcomeconnectingscience.org/event/next-gen
 <p align="left"><b >Course overview:</b></p>
 
 
-<p>Check out <a href="https://www.freecodecamp.org/">freeCodeCamp</a>.</p>
+<p><a href="https://coursesandconferences.wellcomeconnectingscience.org/event/next-generation-sequencing-20230324/">https://coursesandconferences.wellcomeconnectingscience.org/event/next-generation-sequencing-20230324/</a>.</p>

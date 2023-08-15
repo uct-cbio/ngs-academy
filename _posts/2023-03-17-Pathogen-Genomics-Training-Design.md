@@ -18,4 +18,4 @@ link: https://coursesandconferences.wellcomeconnectingscience.org/event/how-to-d
 <p align="left"><b >Course overview:</b></p>
 
 
-<p>Check out <a href="https://coursesandconferences.wellcomeconnectingscience.org/event/how-to-design-and-deliver-pathogen-genomics-training-for-health-and-research-professionals-20230626/">https://coursesandconferences.wellcomeconnectingscience.org/event/how-to-design-and-deliver-pathogen-genomics-training-for-health-and-research-professionals-20230626/</a>.</p>
+<p><a href="https://coursesandconferences.wellcomeconnectingscience.org/event/how-to-design-and-deliver-pathogen-genomics-training-for-health-and-research-professionals-20230626/">https://coursesandconferences.wellcomeconnectingscience.org/event/how-to-design-and-deliver-pathogen-genomics-training-for-health-and-research-professionals-20230626/</a>.</p>

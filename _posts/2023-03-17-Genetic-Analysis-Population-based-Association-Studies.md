@@ -19,4 +19,4 @@ link: https://coursesandconferences.wellcomeconnectingscience.org/event/genetic-
 
 
 
-<p>Check out <a href="https://coursesandconferences.wellcomeconnectingscience.org/event/genetic-analysis-of-population-based-association-studies-20230911/">https://coursesandconferences.wellcomeconnectingscience.org/event/genetic-analysis-of-population-based-association-studies-20230911/</a>.</p>
+<p><a href="https://coursesandconferences.wellcomeconnectingscience.org/event/genetic-analysis-of-population-based-association-studies-20230911/">https://coursesandconferences.wellcomeconnectingscience.org/event/genetic-analysis-of-population-based-association-studies-20230911/</a>.</p>

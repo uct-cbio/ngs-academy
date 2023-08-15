@@ -19,4 +19,4 @@ link: https://coursesandconferences.wellcomeconnectingscience.org/event/rna-tran
 <p align="left"><b >Course overview:</b></p>
 
 
-<p>Check out <a href="https://coursesandconferences.wellcomeconnectingscience.org/event/rna-transcriptomics-20230623/">https://coursesandconferences.wellcomeconnectingscience.org/event/rna-transcriptomics-20230623/</a>.</p>
+<p><a href="https://coursesandconferences.wellcomeconnectingscience.org/event/rna-transcriptomics-20230623/">https://coursesandconferences.wellcomeconnectingscience.org/event/rna-transcriptomics-20230623/</a>.</p>
