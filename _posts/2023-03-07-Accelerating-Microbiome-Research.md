@@ -18,3 +18,4 @@ link: https://coursesandconferences.wellcomeconnectingscience.org/our-events/cou
 
 
 
+<p>Check out <a href="https://coursesandconferences.wellcomeconnectingscience.org/our-events/courses/">https://coursesandconferences.wellcomeconnectingscience.org/our-events/courses/</a>.</p>

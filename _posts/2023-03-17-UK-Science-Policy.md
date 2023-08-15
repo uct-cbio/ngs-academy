@@ -19,3 +19,4 @@ link: https://coursesandconferences.wellcomeconnectingscience.org/event/science-
 
 
 
+<p>Check out <a href="https://coursesandconferences.wellcomeconnectingscience.org/event/bioinformatics-education-summit-20230515/">https://coursesandconferences.wellcomeconnectingscience.org/event/bioinformatics-education-summit-20230515/</a>.</p>

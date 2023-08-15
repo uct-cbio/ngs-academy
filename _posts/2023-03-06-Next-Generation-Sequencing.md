@@ -19,3 +19,4 @@ link: https://coursesandconferences.wellcomeconnectingscience.org/event/next-gen
 <p align="left"><b >Course overview:</b></p>
 
 
+<p>Check out <a href="https://www.freecodecamp.org/">freeCodeCamp</a>.</p>

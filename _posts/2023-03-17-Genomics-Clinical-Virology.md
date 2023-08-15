@@ -18,3 +18,4 @@ link: https://coursesandconferences.wellcomeconnectingscience.org/event/genomics
 <p align="left"><b >Course overview:</b></p>
 
 
+<p>Check out <a href="https://coursesandconferences.wellcomeconnectingscience.org/event/genomics-and-clinical-virology-20230611/">https://coursesandconferences.wellcomeconnectingscience.org/event/genomics-and-clinical-virology-20230611/</a></p>

@@ -19,4 +19,4 @@ link: https://coursesandconferences.wellcomeconnectingscience.org/event/fungal-p
 <p align="left"><b >Course overview:</b></p>
 
 
-
+<p>Check out <a href="https://coursesandconferences.wellcomeconnectingscience.org/event/fungal-pathogen-genomics-20230509/">https://coursesandconferences.wellcomeconnectingscience.org/event/fungal-pathogen-genomics-20230509/</a>.</p>
