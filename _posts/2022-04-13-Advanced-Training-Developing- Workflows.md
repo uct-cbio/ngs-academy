@@ -9,7 +9,7 @@ course_overview :  High-throughput laboratory machines generate large quantities
 start_date: 2022-04-25
 end_date: 2022-04-29
 group: group1
-training_provider:  MLWT, KEMRI, ILRI
+training_provider:  "MLWT, KEMRI, ILRI"
 ---
 
 

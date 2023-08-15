@@ -4,8 +4,10 @@ title: "Fungal Pathogen Genomics"
 posted_date: 2023-03-06
 main_menu: courses
 permalink: /:year/:title
-category: upcoming
+category: past-course
 course_overview: 
+
+training_provider:  "Wellcome Connecing Science"
 
 start_date: 2023-05-09
 end_date: 2023-05-13

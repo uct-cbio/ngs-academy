@@ -9,7 +9,7 @@ course_overview : The Carpentries virtual training workshop was a pre-course to 
 start_date: 2021-06-28
 end_date: 2021-07-22
 group: group1
-training_provider:  The Carpentries
+training_provider:  "NGS Academy and The Carpentries"
 ---
   
 <!-- ### SARS-CoV-2 NGS bioinformatics course 2021 -->

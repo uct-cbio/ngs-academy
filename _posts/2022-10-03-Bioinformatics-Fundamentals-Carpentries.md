@@ -10,7 +10,7 @@ course_overview :  This Bioinformatics Fundamentals virtual workshop used the Ca
 start_date: 2022-10-17
 end_date: 2022-10-19
 group: group1
-training_provider: The Carpentries
+training_provider: "NGS Academy & the Carpentries"
 ---
 
 <!-- ### SARS-CoV-2 NGS bioinformatics course 2021 -->

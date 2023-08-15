@@ -4,9 +4,9 @@ title: "RNA Transcriptomatics"
 posted_date: 2023-03-17
 main_menu: courses
 permalink: /:year/:title
-category: upcoming
+category: past-course
 course_overview: 
-training_provider: Welcome Connecting Science
+training_provider: "Wellcome Connecting Science"
 start_date: 2023-06-23
 end_date: 2023-06-30
 group: group1

@@ -4,8 +4,8 @@ title: "Accelerating Microbiome Research"
 posted_date: 2023-03-07
 main_menu: courses
 permalink: /:year/:title
-category: upcoming
-training_provider: Welcome Connecting Science
+category: past-course
+training_provider: "Wellcome Connecting Science"
 course_overview: 
 start_date: 2023-04-17
 end_date: 2023-04-18

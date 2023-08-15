@@ -4,9 +4,9 @@ title: "Next Generation Sequencing"
 posted_date: 2023-03-07
 main_menu: courses
 permalink: /:year/:title
-category: upcoming
+category: past-course
 course_overview: 
-training_provider:  NGS Academy
+training_provider:  "NGS Academy"
 start_date: 2023-03-24
 end_date: 2023-03-31
 group: group1

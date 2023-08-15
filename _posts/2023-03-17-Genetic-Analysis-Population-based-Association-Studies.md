@@ -4,9 +4,9 @@ title: "Genetic Analysis of Population-based Association Studies"
 posted_date: 2023-03-17
 main_menu: courses
 permalink: /:year/:title
-category: upcoming
+category: past-course
 course_overview: 
-training_provider: Welcome Connecting Science
+training_provider: "Wellcome Connecting Science"
 start_date: 2023-09-11
 end_date: 2023-09-15
 group: group1

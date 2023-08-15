@@ -9,7 +9,7 @@ course_overview : The SARS-CoV-2 Bioinformatics Training was a follow-up to our 
 start_date: 2021-06-28
 end_date: 2021-07-22
 group: group1
-training_provider:  NGS Academy
+training_provider:  "NGS Academy"
 ---
   
 <!-- ### SARS-CoV-2 NGS bioinformatics course 2021 -->

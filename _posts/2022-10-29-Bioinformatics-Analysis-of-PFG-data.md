@@ -6,7 +6,7 @@ main_menu: courses
 permalink: /:year/:title
 category: past-course
 course_overview : Genomic Epidemiology of resistant Plasmodium Falciparum training was designed with the aim to uncover the genomic signatures due to various selection pressures to be identified (host immune system? background genetics? epidemiological facies? or other).To understand the spread over the country of populations of parasites carrying any malaria drug resistant-conferring markers (the withdrawn ones as well as the ones on official uset).
-training_provider:  NGS Academy
+training_provider:  "NGS Academy"
 start_date: 2022-11-28
 end_date: 2022-12-02
 group: group1
