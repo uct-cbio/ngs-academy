@@ -4,7 +4,7 @@ title: "Bioinformatics Education Summit"
 posted_date: 2023-03-17
 main_menu: courses
 permalink: /:year/:title
-category: upcoming
+category: past-course
 course_overview: 
 training_provider: Welcome Connecting Science
 start_date: 2023-05-15

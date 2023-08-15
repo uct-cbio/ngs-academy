@@ -4,6 +4,7 @@ title: "Introduction to Bioinformatics Analysis of Plasmodium Falciparum Genome 
 posted_date: 2022-10-29
 main_menu: courses
 permalink: /:year/:title
+training_provider: "NGS Academy"
 category: past-course
 course_overview : Genomic Epidemiology of resistant Plasmodium Falciparum training was designed with the aim to uncover the genomic signatures due to various selection pressures to be identified (host immune system? background genetics? epidemiological facies? or other).To understand the spread over the country of populations of parasites carrying any malaria drug resistant-conferring markers (the withdrawn ones as well as the ones on official uset).
   

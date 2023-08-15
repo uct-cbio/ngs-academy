@@ -4,6 +4,7 @@ title:  "SARS-CoV-2 NGS for Surveillance Training 2022"
 posted_date: 2022-02-25
 main_menu: courses
 permalink: /:year/:title
+training_provider: "NGS Academy"
 category: upcoming_old
 course_overview : The course is designed for individuals looking to broaden their knowledge and build skills in the use of next generation sequencing (NGS) for SARS-CoV-2 surveillance particularly those who work in the laboratory on sample preparation, sequencing and basic data analysis. 
 start_date: 2022-03-01

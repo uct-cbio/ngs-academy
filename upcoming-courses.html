@@ -34,9 +34,12 @@ permalink: /courses/upcoming-courses/
 
        
 
+  
     
-    
-      {% assign sorted_posts = site.posts | where: "category", "upcoming" | sort: 'start_date' | reverse %}
+      {% assign sorted_posts = site.posts  | where: "category", "upcoming" %}
+     
+      
+
       {% for post in sorted_posts %}
         <tr>
           <td><a href="{{ post.link }}" target="_blank">{{ post.title }}</a><br><small class="text-muted"> posted: {{post.posted_date
@@ -46,9 +49,9 @@ permalink: /courses/upcoming-courses/
           </td>
           <td>{{post.end_date }}</td>
       </tr>  
-
-
       {% endfor %}
+
+
 
        <tfoot>
       <tr>

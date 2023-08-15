@@ -4,6 +4,7 @@ title:  "SARS-CoV-2 Bioinformatics Training"
 posted_date: 2021-08-03
 main_menu: courses
 permalink: /:year/:title
+training_provider: "NGS Academy"
 category: past-course
 course_overview : The SARS-CoV-2 Bioinformatics Training was a follow-up to our SARS-CoV-2 NGS training. The focus for the module was more advanced bioinformatics analysis, data curation and dissemination of findings. 
 start_date: 2021-06-28
