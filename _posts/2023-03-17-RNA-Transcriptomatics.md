@@ -16,4 +16,3 @@ link: https://coursesandconferences.wellcomeconnectingscience.org/event/rna-tran
 <!-- ### SARS-CoV-2 NGS bioinformatics course 2021 -->
 
 <p align="left"><b >Course overview:</b></p>
-

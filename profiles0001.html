@@ -1,85 +1,92 @@
 ---
 layout: default
-title: Bioinformatics Profiles
+title: Pathogen Surveillance Training Curricula
 permalink: /courses/bioinformatics-profiles1/
 ---
 
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+
+
+
+<h1>Course Selector</h1>
+
+<label for="degree">Select Degree Type:</label>
+<select id="degree">
+    <option value="bachelor">Bachelor's Degree</option>
+    <option value="master">Master's Degree</option>
+</select>
+
+<label for="category">Select Course Category:</label>
+<select id="category">
+    <option value="programming">Programming</option>
+    <option value="design">Design</option>
+    <option value="business">Business</option>
+</select>
+
+<div id="course-list">
+    <!-- Course records will be displayed here -->
+</div>
+
+
+<script>
+// Sample course data (you can replace this with your actual data)
+const courses = {
+    bachelor: {
+        programming: ["Introduction to Programming", "Web Development Basics"],
+        design: ["Graphic Design Fundamentals", "User Interface Design"],
+        business: ["Introduction to Marketing", "Entrepreneurship"]
+    },
+    master: {
+        programming: ["Advanced Algorithms", "Full Stack Development"],
+        design: ["Advanced Typography", "User Experience Design"],
+        business: ["Strategic Management", "Digital Marketing"]
+    }
+};
+
+// Function to update the course list based on user's selections
+function updateCourseList() {
+    const degreeSelect = document.getElementById("degree");
+    const categorySelect = document.getElementById("category");
+    const courseList = document.getElementById("course-list");
+
+    const selectedDegree = degreeSelect.value;
+    const selectedCategory = categorySelect.value;
+
+    // Clear the previous course list
+    courseList.innerHTML = "";
+
+    // Get courses based on user's selections
+    const selectedCourses = courses[selectedDegree][selectedCategory];
+
+    // Display selected courses
+    selectedCourses.forEach(course => {
+        const courseItem = document.createElement("p");
+        courseItem.textContent = course;
+        courseList.appendChild(courseItem);
+    });
+}
+
+// Attach event listeners to the selects
+document.getElementById("degree").addEventListener("change", updateCourseList);
+document.getElementById("category").addEventListener("change", updateCourseList);
+
+// Initial course list update
+updateCourseList();
+
+
+
+</script>
+
+
+
+
+
+
+
+
 <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script type="text/javascript" language="javascript"
     src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/select/1.2.1/js/dataTables.select.min.js" type="text/javascript"></script>
-
-<head>
-
-
-  <script>
-        function showCourses() {
-            var degree = document.getElementById("degree").value;
-            var courses = [];
-
-            // Retrieve courses based on the selected degree
-            if (degree === "bioinformatics") {
-                courses = [
-                    { name: "Unix/Linux, Shell Scripting & the Commandline", file: "unix.pdf" },
-                    { name: "Phylogenetics", file: "phylogenetics.pdf" }
-                
-                ];
-            } else if (degree === "wetlab") {
-                courses = [
-                    { name: "Marketing", file: "marketing.pdf" },
-                    { name: "Finance", file: "finance.pdf" },
-            
-                ];
-            } else if (degree === "lab_manager") {
-                courses = [
-                    { name: "Drawing", file: "drawing.pdf" },
-              
-                ];
-            }
-
-            // Generate HTML links for the courses
-            var courseList = document.getElementById("courseList");
-            courseList.innerHTML = ""; // Clear previous links
-
-            for (var i = 0; i < courses.length; i++) {
-                var course = courses[i];
-                var link = "uploads/" + course.file;
-
-                // Create link element
-                var courseLink = document.createElement("a");
-                courseLink.href = link;
-                courseLink.textContent = course.name;
-                courseLink.download = course.file; // Set the file name for download
-
-                // Append link to courseList
-                courseList.appendChild(courseLink);
-
-                // Add line break
-                courseList.appendChild(document.createElement("br"));
-            }
-        }
-    </script>
-
-
-</head>
-<h3>Select Profile</h3>
-<select id="degree" onchange="showCourses()">
-  <option value="">--Select--</option>
-  <option value="bioinformatics">Bioinformatics</option>
-  <option value="wetlab">Wetlab</option>
-  <option value="lab_manager">Lab Manager</option>
-
-</select>
-
-<h3>Available courses:</h3>
-<div id="courseList"></div>
-
-
-
-
-
-
-
