@@ -9,64 +9,37 @@ permalink: /courses/bioinformatics-profiles11/
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
 
 
-<h2>Select a Degree:</h2>
-<select id="degreeSelect">
-    <option value="computer-science">Computer Science</option>
-    <option value="engineering">Engineering</option>
-    <option value="business">Business</option>
-</select>
-
-<h2>Select a Course:</h2>
-<select id="courseSelect">
-    <option value="cs101" data-degrees="computer-science">Introduction to Programming</option>
-    <option value="eng101" data-degrees="engineering">Introduction to Engineering</option>
-    <option value="bus101" data-degrees="business">Introduction to Business</option>
-    <option value="cs201" data-degrees="computer-science">Advanced Programming</option>
-    <option value="eng201" data-degrees="engineering">Engineering Design</option>
-    <option value="bus201" data-degrees="business">Business Ethics</option>
-</select>
-
-<h2>Selected Degree: <span id="selectedDegree"></span></h2>
-<h2>Selected Course: <span id="selectedCourse"></span></h2>
+   
+<h1>Degrees and Courses</h1>
+<div>
+    <button id="showDegrees">Show Degrees</button>
+    <button id="showCourses">Show Courses</button>
+</div>
+<ul id="contentList"></ul>
 
 
 <script>
-        const degreeSelect = document.getElementById('degreeSelect');
-        const courseSelect = document.getElementById('courseSelect');
-        const selectedDegree = document.getElementById('selectedDegree');
-        const selectedCourse = document.getElementById('selectedCourse');
+const degrees = [
+    { degree: "Bachelor of Science", courses: ["Physics", "Mathematics", "Computer Science"] },
+    { degree: "Bachelor of Arts", courses: ["English", "History", "Psychology"] },
+    { degree: "Master of Business Administration", courses: ["Marketing", "Finance", "Operations"] }
+];
 
-        degreeSelect.addEventListener('change', () => {
-            const selectedDegreeValue = degreeSelect.value;
-            selectedDegree.textContent = selectedDegreeValue;
-            updateCourseList(selectedDegreeValue);
-        });
+const contentList = document.getElementById("contentList");
+const showDegreesBtn = document.getElementById("showDegrees");
+const showCoursesBtn = document.getElementById("showCourses");
 
-        courseSelect.addEventListener('change', () => {
-            const selectedCourseValue = courseSelect.value;
-            selectedCourse.textContent = selectedCourseValue;
-            updateDegreeList(selectedCourseValue);
-        });
+showDegreesBtn.addEventListener("click", () => showContent(degrees, "degree"));
+showCoursesBtn.addEventListener("click", () => showContent(degrees, "courses"));
 
-        function updateCourseList(degree) {
-            const courses = document.querySelectorAll(`[data-degrees="${degree}"]`);
-            courseSelect.innerHTML = '';
-            courses.forEach(course => {
-                courseSelect.appendChild(course.cloneNode(true));
-            });
-        }
-
-        function updateDegreeList(course) {
-            const selectedCourse = document.querySelector(`[value="${course}"]`);
-            const degrees = selectedCourse.getAttribute('data-degrees').split(' ');
-            degreeSelect.value = degrees[0];
-            selectedDegree.textContent = degrees[0];
-        }
-
-        // Initial setup
-        updateCourseList(degreeSelect.value);
-        updateDegreeList(courseSelect.value);
-
+function showContent(dataArray, property) {
+    contentList.innerHTML = "";
+    dataArray.forEach(item => {
+        const listItem = document.createElement("li");
+        listItem.textContent = item[property];
+        contentList.appendChild(listItem);
+    });
+}
 
 
 </script>

@@ -1,0 +1,66 @@
+---
+layout: default
+title: Pathogen Surveillance Training Curricula
+permalink: /courses/bioinformatics-profiles12/
+---
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+
+<style>
+
+</style>
+
+
+<h1>Degree Modules Display</h1>
+  
+<label for="degreeSelect">Select a degree:</label>
+<select id="degreeSelect">
+  <option value="computerScience">Computer Science</option>
+  <option value="engineering">Engineering</option>
+  <!-- Add more degree options as needed -->
+</select>
+
+<button id="showModulesBtn">Show Modules</button>
+
+<div id="moduleTable"></div>
+<script>
+// Get references to the select element and the table body
+
+const modulesData = {
+  computerScience: ["Introduction to Programming", "Data Structures", "Algorithms", "Database Management"],
+  engineering: ["Introduction to Engineering", "Mechanics", "Electronics", "Thermodynamics"],
+  // Add more degree-module mappings here
+};
+
+const degreeSelect = document.getElementById("degreeSelect");
+const showModulesBtn = document.getElementById("showModulesBtn");
+const moduleTable = document.getElementById("moduleTable");
+
+showModulesBtn.addEventListener("click", displayModules);
+
+function displayModules() {
+  const selectedDegree = degreeSelect.value;
+  const modules = modulesData[selectedDegree];
+
+  if (modules) {
+    let tableHTML = "<h2>Modules:</h2><table><tr><th>Module Name</th></tr>";
+
+    for (const module of modules) {
+      tableHTML += `<tr><td>${module}</td></tr>`;
+    }
+
+    tableHTML += "</table>";
+    moduleTable.innerHTML = tableHTML;
+  } else {
+    moduleTable.innerHTML = "<p>No modules found for the selected degree.</p>";
+  }
+}
+
+</script>
+
+<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript" language="javascript"
+    src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/select/1.2.1/js/dataTables.select.min.js" type="text/javascript"></script>

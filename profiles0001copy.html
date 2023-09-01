@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Pathogen Surveillance Training Curricula
-permalink: /courses/bioinformatics-profiles1/
+permalink: /courses/bioinformatics-profiles1copy/
 ---
 
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
@@ -10,53 +10,46 @@ permalink: /courses/bioinformatics-profiles1/
 
 
 
-<h3>Persona Selector</h3>
-<div>
+<h3>Course Selector</h3>
 
-    <label for="category">Pathogen type:</label>
+<label for="degree">Select Degree Type:</label>
+<select id="degree">
+    <option value="bachelor">Bachelor's Degree</option>
+    <option value="master">Master's Degree</option>
+</select>
+
+<label for="category">Select Course Category:</label>
 <select id="category">
-    <option value="foundational">Foundational Skills</option>
-    <option value="viral">Viral Pathogens Skills</option>
-    <option value="bacteria">Bacterial Pathogens Skills</option>
-    <option value="all">All Skills</option>
-</select>
-<label for="degree">Persona:</label>
-<select id="persona">
-    <option value="bio_informatics">Bioinformatics Scientist</option>
-    <option value="wet_lab">Wetlab Scientist</option>
-
+    <option value="programming">Programming</option>
+    <option value="design">Design</option>
+    <option value="business">Business</option>
 </select>
 
-
-</div>
 <div id="course-list">
     <!-- Course records will be displayed here -->
+
+    
 </div>
 
 
 <script>
-
-
 // Sample course data (you can replace this with your actual data)
 const courses = {
-    bio_informatics: {
-        foundational: ["Unix/linux, command line, shell scripting ", "Data analytics", "Programming in Python"],
-        viral: ["Introduction to NGS data processing", "NGS, Illumina, ONT workflows", "Nextclade and Pangolin"],
-        bacteria: ["Introduction to bacterial NGS data processing", "Bacterial pathogen data analysis"],
-        all: ["ALL", "AlL"]
-      
+    bachelor: {
+        programming: ["Introduction to Programming", "Web Development Basics"],
+        design: ["Graphic Design Fundamentals", "User Interface Design"],
+        business: ["Introduction to Marketing", "Entrepreneurship"]
     },
-    wet_lab: {
-        foundational: ["Health and safety protocols", "Lab practical: DNA/RNA sequencing"],
-        viral: ["Sample processing and library preparation (Theory and wet lab practical)", "Lab practical: RNA/DNA sequencing"],
-        bacteria: ["Health and safety protocols", "Sample processing and library preparation (Theory and wet lab practical)"],
-        all: ["ALL", "AlL", "AlL", "AlL"],
+    master: {
+        programming: ["Advanced Algorithms", "Full Stack Development"],
+        design: ["Advanced Typography", "User Experience Design"],
+        business: ["Strategic Management", "Digital Marketing"]
     }
 };
 
 // Function to update the course list based on user's selections
 function updateCourseList() {
-    const degreeSelect = document.getElementById("persona");
+    const degreeSelect = document.getElementById("degree");
     const categorySelect = document.getElementById("category");
     const courseList = document.getElementById("course-list");
 
@@ -78,14 +71,16 @@ function updateCourseList() {
 }
 
 // Attach event listeners to the selects
-document.getElementById("persona").addEventListener("change", updateCourseList);
+document.getElementById("degree").addEventListener("change", updateCourseList);
 document.getElementById("category").addEventListener("change", updateCourseList);
 
 // Initial course list update
 updateCourseList();
 
 
+
 </script>
+
 
 
 
