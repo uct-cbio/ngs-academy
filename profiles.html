@@ -1,74 +1,99 @@
 ---
 layout: default
-title: Bioinformatics Profiles
+title: Pathogen Surveillance Training Curricula
 permalink: /courses/bioinformatics-profiles/
 ---
 
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+
+
+
+<h3>Persona Selector</h3>
+<div>
+
+    <label for="category">Pathogen type:</label>
+<select id="category">
+    <option value="foundational">Foundational Skills</option>
+    <option value="viral">Viral Pathogens Skills</option>
+    <option value="bacteria">Bacterial Pathogens Skills</option>
+    <option value="all">All Skills</option>
+</select>
+<label for="degree">Persona:</label>
+<select id="persona">
+    <option value="bio_informatics">Bioinformatics Scientist</option>
+    <option value="wet_lab">Wetlab Scientist</option>
+
+</select>
+
+
+</div>
+<div id="course-list">
+    <!-- Course records will be displayed here -->
+</div>
+
+
+<script>
+
+
+// Sample course data (you can replace this with your actual data)
+const courses = {
+    bio_informatics: {
+        foundational: ["Unix/linux, command line, shell scripting ", "Data analytics", "Programming in Python"],
+        viral: ["Introduction to NGS data processing", "NGS, Illumina, ONT workflows", "Nextclade and Pangolin"],
+        bacteria: ["Introduction to bacterial NGS data processing", "Bacterial pathogen data analysis"],
+        all: ["ALL", "AlL"]
+      
+    },
+    wet_lab: {
+        foundational: ["Health and safety protocols", "Lab practical: DNA/RNA sequencing"],
+        viral: ["Sample processing and library preparation (Theory and wet lab practical)", "Lab practical: RNA/DNA sequencing"],
+        bacteria: ["Health and safety protocols", "Sample processing and library preparation (Theory and wet lab practical)"],
+        all: ["ALL", "AlL", "AlL", "AlL"],
+    }
+};
+
+// Function to update the course list based on user's selections
+function updateCourseList() {
+    const degreeSelect = document.getElementById("persona");
+    const categorySelect = document.getElementById("category");
+    const courseList = document.getElementById("course-list");
+
+    const selectedDegree = degreeSelect.value;
+    const selectedCategory = categorySelect.value;
+
+    // Clear the previous course list
+    courseList.innerHTML = "";
+
+    // Get courses based on user's selections
+    const selectedCourses = courses[selectedDegree][selectedCategory];
+
+    // Display selected courses
+    selectedCourses.forEach(course => {
+        const courseItem = document.createElement("p");
+        courseItem.textContent = course;
+        courseList.appendChild(courseItem);
+    });
+}
+
+// Attach event listeners to the selects
+document.getElementById("persona").addEventListener("change", updateCourseList);
+document.getElementById("category").addEventListener("change", updateCourseList);
+
+// Initial course list update
+updateCourseList();
+
+
+</script>
+
+
+
+
+
+
+
 <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script type="text/javascript" language="javascript"
     src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/select/1.2.1/js/dataTables.select.min.js" type="text/javascript"></script>
-
-<head>
-
-  <script>
-    function displayCourses() {
-      // Get the selected degree
-      var degreeSelect = document.getElementById("degreeSelect");
-      var selectedDegree = degreeSelect.options[degreeSelect.selectedIndex].value;
-
-      // Define the mapping between degrees and courses
-      var degreeCourses = {
-        "bioinformatics": [" Unix/Linux, Shell Scripting & the Commandline","Data Analytics","Phylogenetics", "Informatics Skills","Workflows, High Performance Computing", "Programming in Python", "R programming","Git and Version Control","Ontologies, Standards and Submission"],
-        "wetlab": ["Health & Safety", "Lab practical: DNA/RNA sequencing",],
-        "lab_manager": ["Ethics and Policies", "Introduction to Genomic Epidemiology for Pathogen Surveillance", "Study Design","Introduction to NGS","Dissemination of results"],
-      };
-
-      // Get the corresponding courses for the selected degree
-      var courses = degreeCourses[selectedDegree];
-
-      // Display the courses
-      var coursesList = document.getElementById("coursesList");
-      coursesList.innerHTML = ""; // Clear previous courses
-
-      if (courses) {
-        for (var i = 0; i < courses.length; i++) {
-          var courseItem = document.createElement("li");
-          courseItem.textContent = courses[i];
-          coursesList.appendChild(courseItem);
-        }
-      } else {
-        var courseItem = document.createElement("li");
-        courseItem.textContent = "No Modules available for the selected Profile";
-        coursesList.appendChild(courseItem);
-      }
-    }
-  </script>
-
-</head>
-<h3>Profile</h3>
-
-<label for="degreeSelect">Select a profile:</label>
-<select id="degreeSelect">
-  <option value="bioinformatics">Bioinformatics Scientist</option>
-  <option value="wetlab">Wetlab Scientist</option>
-  <option value="lab_manager">Policy Maker</option>
-</select>
-<br>
-<br>
-<button class="btn btn-danger btn-sm" onclick="displayCourses()">Display Skills</button>
-<br>
-<br>
-<ul id="coursesList"></ul>
-
-
-
-
-
-<br>
-
-
-

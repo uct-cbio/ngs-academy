@@ -32,18 +32,14 @@ permalink: /courses/bioinformatics-profiles1/
 <div id="course-list">
     <!-- Course records will be displayed here -->
 </div>
-
-
 <script>
-
-
 // Sample course data (you can replace this with your actual data)
 const courses = {
     bio_informatics: {
         foundational: ["Unix/linux, command line, shell scripting ", "Data analytics", "Programming in Python"],
         viral: ["Introduction to NGS data processing", "NGS, Illumina, ONT workflows", "Nextclade and Pangolin"],
         bacteria: ["Introduction to bacterial NGS data processing", "Bacterial pathogen data analysis"],
-        all: ["ALL", "AlL"]
+        all: ['test all bio infor']
       
     },
     wet_lab: {
@@ -84,15 +80,27 @@ document.getElementById("category").addEventListener("change", updateCourseList)
 // Initial course list update
 updateCourseList();
 
+const coursese = {
+            computerScience: [
+                { code: 'CS101', name: 'Introduction to Programming' },
+                { code: 'CS202', name: 'Data Structures and Algorithms' },
+                { code: 'CS303', name: 'Database Management' },
+            ],
+            engineering: [
+                { code: 'ENG101', name: 'Engineering Basics' },
+                { code: 'ENG202', name: 'Electrical Engineering' },
+                { code: 'ENG303', name: 'Mechanical Engineering' },
+            ],
+            biology: [
+                { code: 'BIO101', name: 'Biology Fundamentals' },
+                { code: 'BIO202', name: 'Genetics' },
+                { code: 'BIO303', name: 'Ecology' },
+            ],
+        };
+
+
 
 </script>
-
-
-
-
-
-
-
 <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script type="text/javascript" language="javascript"
     src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>

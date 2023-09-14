@@ -10,56 +10,101 @@ permalink: /courses/bioinformatics-profiles12/
 
 <style>
 
+
 </style>
 
 
-<h1>Degree Modules Display</h1>
-  
-<label for="degreeSelect">Select a degree:</label>
-<select id="degreeSelect">
-  <option value="computerScience">Computer Science</option>
-  <option value="engineering">Engineering</option>
-  <!-- Add more degree options as needed -->
-</select>
-
-<button id="showModulesBtn">Show Modules</button>
-
-<div id="moduleTable"></div>
+<table id="example" class="display" style="width:100%">
+    <thead>
+        <tr>
+            <th>Course ID</th>
+            <th>Description</th>
+            <th>Link</th>
+            <th>Persona</th>
+            <th>Pathogen</th>
+            <th>Level</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>0100</td>
+            <td>Linux administration</td>
+            <td>link</td>
+            <td>Bioinformatician</td>
+            <td>Viral</td>
+            <td>Introduction</td>
+        </tr>
+        <tr>
+            <td>010</td>
+            <td>Python3</td>
+            <td>link</td>
+            <td>Bioinformatician</td>
+            <td>Viral</td>
+            <td>Introduction</td>
+        </tr>
+        <tr>
+            <td>0110</td>
+            <td>MRNA</td>
+            <td>link</td>
+            <td>Wetlab</td>
+            <td>Bacterial</td>
+            <td>Intermediate</td>
+        </tr>
+        <tr>
+            <td>0111</td>
+            <td>Linux administration</td>
+            <td>link</td>
+            <td>Bioinformatician</td>
+            <td>Viral</td>
+            <td>Introduction</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th>Course ID</th>
+            <th>Description</th>
+            <th>Link</th>
+            <th>Persona</th>
+            <th>Pathogen</th>
+            <th>Level</th>
+        </tr>
+    </tfoot>
+</table>
 <script>
-// Get references to the select element and the table body
 
-const modulesData = {
-  computerScience: ["Introduction to Programming", "Data Structures", "Algorithms", "Database Management"],
-  engineering: ["Introduction to Engineering", "Mechanics", "Electronics", "Thermodynamics"],
-  // Add more degree-module mappings here
-};
-
-const degreeSelect = document.getElementById("degreeSelect");
-const showModulesBtn = document.getElementById("showModulesBtn");
-const moduleTable = document.getElementById("moduleTable");
-
-showModulesBtn.addEventListener("click", displayModules);
-
-function displayModules() {
-  const selectedDegree = degreeSelect.value;
-  const modules = modulesData[selectedDegree];
-
-  if (modules) {
-    let tableHTML = "<h2>Modules:</h2><table><tr><th>Module Name</th></tr>";
-
-    for (const module of modules) {
-      tableHTML += `<tr><td>${module}</td></tr>`;
+$('#example').DataTable({
+    initComplete: function () {
+        this.api()
+            .columns()
+            .every(function () {
+                var column = this;
+ 
+                // Create select element and listener
+                var select = $('<select><option value=""></option></select>')
+                    .appendTo($(column.footer()).empty())
+                    .on('change', function () {
+                        var val = DataTable.util.escapeRegex($(this).val());
+ 
+                        column
+                            .search(val ? '^' + val + '$' : '', true, false)
+                            .draw();
+                    });
+ 
+                // Add list of options
+                column
+                    .data()
+                    .unique()
+                    .sort()
+                    .each(function (d, j) {
+                        select.append(
+                            '<option value="' + d + '">' + d + '</option>'
+                        );
+                    });
+            });
     }
-
-    tableHTML += "</table>";
-    moduleTable.innerHTML = tableHTML;
-  } else {
-    moduleTable.innerHTML = "<p>No modules found for the selected degree.</p>";
-  }
-}
+});
 
 </script>
-
 <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script type="text/javascript" language="javascript"
     src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
