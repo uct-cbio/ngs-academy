@@ -1,0 +1,37 @@
+---
+layout: default
+title: Search
+permalink: /search3/
+---
+
+<title>Document</title>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+<label>
+Enter the keyword..
+<input type="text" class="txtInput" id="searchTheKey" placeholder="Enter the keywords to search.....">
+</label>
+<ul id="matchKey">
+<li id="subjectName">JavaScript</li>
+<li id="teacherName"><a href="#">John Smith</a></li>
+<li id="subjectName">Java</li>
+<li id="teacherName"><a href="#">David Miller</a</li>
+<li id="subjectName">MongoDB</li>
+<li id="teacherName"><a href="#">Carol Taylor</a></li>
+</ul>
+<script>
+   $("#searchTheKey").on('keyup', function(){
+      var value = $(this).val().toLowerCase();
+      $("#matchKey li").each(function () {
+         if ($(this).text().toLowerCase().search(value) > -1) {
+            $(this).show();
+            $(this).prev('.subjectName').last().show();
+         } else {
+            $(this).hide();
+         }
+      });
+   })
+</script>

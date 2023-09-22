@@ -1,0 +1,93 @@
+---
+layout: default
+title: Gallery
+permalink: /gallery2/
+---
+
+<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+<style>
+
+.year-scroller {
+    margin: 20px 0;
+}
+
+.year-scroller button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.year-scroller #current-year {
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-gallery img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+}
+</style>
+
+<div class="year-scroller">
+	<button id="prev-year">Previous Year</button>
+	<span id="current-year">2023</span>
+	<button id="next-year">Next Year</button>
+</div>
+<div class="image-gallery">
+	<!-- Images will be displayed here -->
+</div>
+
+
+<script>
+
+$(document).ready(function() {
+    const imagesByYear = {
+        2023: ['<img class="img-fluid img-thumbnail" src="https://picsum.photos/940/650?random=2" alt="Random Image">', '<img class="img-fluid img-thumbnail" src="https://picsum.photos/940/650?random=3" alt="Random Image">', '<img class="img-fluid img-thumbnail" src="https://picsum.photos/940/650?random=5" alt="Random Image">'], // Add your images for each year
+        2022: ['image4.jpg', 'image5.jpg'],
+        // Add more years and images as needed
+    };
+
+    let currentYear = 2023; // Set the initial year
+
+    // Function to update the gallery based on the current year
+    function updateGallery(year) {
+        const imageGallery = $('.image-gallery');
+        imageGallery.empty(); // Clear existing images
+
+        if (imagesByYear.hasOwnProperty(year)) {
+            const images = imagesByYear[year];
+            images.forEach(image => {
+                imageGallery.append(`<img src="images/${image}"`);
+            });
+        }
+    }
+
+    // Initialize the gallery with the current year
+    updateGallery(currentYear);
+
+    // Event listeners for the year scroller buttons
+    $('#prev-year').click(function() {
+        currentYear--;
+        $('#current-year').text(currentYear);
+        updateGallery(currentYear);
+    });
+
+    $('#next-year').click(function() {
+        currentYear++;
+        $('#current-year').text(currentYear);
+        updateGallery(currentYear);
+    });
+});
+
+
+</script>

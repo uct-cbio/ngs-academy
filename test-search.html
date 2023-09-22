@@ -1,0 +1,81 @@
+---
+layout: default
+title: Search
+permalink: /search/
+---
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
+<h1>Search Suggestions Example</h1>
+<input type="text" id="searchInput" placeholder="Type your search...">
+<ul id="suggestions"></ul>
+
+<!-- Include jQuery (you can use vanilla JavaScript as well) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+
+<script>
+
+	
+// Wait for the document to be ready
+$(document).ready(function() {
+    // Reference to the input field and suggestions list
+    const $searchInput = $('#searchInput');
+    const $suggestionsList = $('#suggestions');
+
+    // Event listener for input changes
+    $searchInput.on('input', function() {
+        // Get the current value of the input field
+        const query = $searchInput.val().trim();
+
+        // Clear previous suggestions
+        $suggestionsList.empty();
+
+        // Check if the input is not empty
+        if (query.length > 0) {
+            // Fetch suggestions from the server or use a predefined list
+            const suggestions = fetchSuggestionsFromServer(query);
+
+            // Display the suggestions
+            displaySuggestions(suggestions);
+        }
+    });
+
+    // Function to fetch suggestions from the server (replace with your server logic)
+    function fetchSuggestionsFromServer(query) {
+        // In a real application, you would make an AJAX request to your server here
+        // and return the list of suggestions as an array. For this example, we'll use a static list.
+        const staticSuggestions = [
+            'Apple',
+            'Banana',
+            'Cherry',
+            'Date',
+            'Fig',
+            'Grape',
+            'Lemon',
+            'Mango',
+            'Orange',
+            'Peach',
+            'Pear',
+            'Pineapple',
+            'Strawberry',
+            'Watermelon'
+        ];
+
+        // Filter suggestions based on the current query
+        return staticSuggestions.filter(suggestion => suggestion.toLowerCase().includes(query.toLowerCase()));
+    }
+
+    // Function to display suggestions
+    function displaySuggestions(suggestions) {
+        suggestions.forEach(suggestion => {
+            const listItem = document.createElement('li');
+            listItem.textContent = suggestion;
+            $suggestionsList.append(listItem);
+        });
+    }
+});
+
+</script>
