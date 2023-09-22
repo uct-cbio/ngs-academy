@@ -7,6 +7,9 @@ permalink: /test/
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
 <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
+
 
 
 
@@ -14,6 +17,7 @@ permalink: /test/
 <input type="checkbox" onclick="toggleColumn(1);" checked> Title
 <input type="checkbox" onclick="toggleColumn(2);" checked> Pathogen
 <input type="checkbox" onclick="toggleColumn(3);" checked> Persona
+<br>
 
 <div class="table-responsive" >
 <table id="example" class="" style>
@@ -279,6 +283,7 @@ function toggleColumn(index) {
     var column = table.column(index);
     column.visible(!column.visible());
 }
+
 
 
 </script>
