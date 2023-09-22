@@ -6,7 +6,7 @@ main_menu: courses
 permalink: /:year/:title
 category: past-course
 course_overview: 
-training_provider: "Wellcome Connecting Science"
+training_provider: "Welcome Connecting Science"
 start_date: 2023-06-26
 end_date: 2023-06-29
 group: group1
@@ -18,4 +18,3 @@ link: https://coursesandconferences.wellcomeconnectingscience.org/event/how-to-d
 <p align="left"><b >Course overview:</b></p>
 
 
-<p><a href="https://coursesandconferences.wellcomeconnectingscience.org/event/how-to-design-and-deliver-pathogen-genomics-training-for-health-and-research-professionals-20230626/">https://coursesandconferences.wellcomeconnectingscience.org/event/how-to-design-and-deliver-pathogen-genomics-training-for-health-and-research-professionals-20230626/</a>.</p>

@@ -4,9 +4,9 @@ title: "Science Policy: Improving the Uptake of Research into UK Policy"
 posted_date: 2023-03-17
 main_menu: courses
 permalink: /:year/:title
-category: upcoming
+category: past-course
 course_overview: 
-training_provider: "Wellcome Connecting Science"
+training_provider: Welcome Connecting Science
 start_date: 2023-08-21
 end_date: 2023-08-23
 group: group1
@@ -19,4 +19,3 @@ link: https://coursesandconferences.wellcomeconnectingscience.org/event/science-
 
 
 
-<p><a href="https://coursesandconferences.wellcomeconnectingscience.org/event/bioinformatics-education-summit-20230515/">https://coursesandconferences.wellcomeconnectingscience.org/event/bioinformatics-education-summit-20230515/</a>.</p>
