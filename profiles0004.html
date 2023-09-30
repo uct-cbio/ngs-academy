@@ -8,6 +8,12 @@ permalink: /courses/bioinformatics-profiles0004/
 <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 
+<style>
+
+.narrow-column{
+  width:10% !important;
+}
+</style>
 
 
 <input type="checkbox" onclick="toggleColumn(0);" checked> Code
@@ -20,7 +26,7 @@ permalink: /courses/bioinformatics-profiles0004/
   <thead>
       <tr>
           <th>Code</th>
-          <th class="column_title">Title</th>
+          <th class="narrow-column">Title</th>
           <th>Pathogen</th>
           <th>Persona </th>
           <th>Level</th>
@@ -29,7 +35,7 @@ permalink: /courses/bioinformatics-profiles0004/
   <tbody>
     <tr>
       <td>001</td>
-      <td class="column_title" >Unix/linux, command line, shell scripting </td>
+      <td class="narrow-column" >Unix/linux, command line, shell scripting </td>
       <td>Foundational</td>
       <td>Bioinformatics Scientist</td>
   
@@ -38,7 +44,7 @@ permalink: /courses/bioinformatics-profiles0004/
     </tr>
     <tr>
       <td>002</td>
-      <td>Data analytics</td>
+      <td class="narrow-column">Data analytics</td>
       <td>Foundational</td>
       <td>Bioinformatics Scientist</td>
     
@@ -239,7 +245,7 @@ permalink: /courses/bioinformatics-profiles0004/
   <tfoot>
       <tr>
         <th>Code</th>
-        <th class="column_title">Title</th>
+        <th class="narrow-column">Title</th>
         <th>Pathogen</th>
         <th>Persona </th>
         <th>Level</th>
@@ -279,5 +285,15 @@ function toggleColumn(index) {
     column.visible(!column.visible());
 }
 
+	
+$('#example').dataTable( {
+  "columns": [
+    { "width": "5%" },
+    null,
+    null,
+    null,
+    null
+  ]
+} );
 
 </script>
