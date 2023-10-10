@@ -1,248 +1,527 @@
 ---
 layout: default
 title: Pathogen Surveillance Training Curricula
-permalink: /courses/bioinformatics-profiles0004/
+permalink: /courses/curricula/
 ---
 
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
 <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script src="js/responsive-columns.js"></script>
+
+<style>
+  th,
+  td {
+    padding: 0px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .table-wrapper {
+    /* width: 70%; */
+    /* max-width: 500px; */
+    overflow-x: auto;
+  }
+</style>
+
 
 
 
 <input type="checkbox" onclick="toggleColumn(0);" checked> Code
-<input type="checkbox" onclick="toggleColumn(1);" checked> Title
 <input type="checkbox" onclick="toggleColumn(2);" checked> Pathogen
 <input type="checkbox" onclick="toggleColumn(3);" checked> Persona
+<input type="checkbox" onclick="toggleColumn(1);" checked> Title
 
-<div class="table table-responsive" >
-<table id="example" class="table table-lg">
+<div class="table table-responsive" class="table-wrapper" >
+<table id="example" class=" table table-sm">
+
+
   <thead>
       <tr>
-          <th>Code</th>
-          <th class="column_title">Title</th>
+          <th> Module Code</th>
+      
           <th>Pathogen</th>
           <th>Persona </th>
-          <th>Level</th>
+          <th name="title_column">Title</th>
+
       </tr>
   </thead>
   <tbody>
+
+    <!-- bioinfomatics foundational -->
     <tr>
       <td>001</td>
-      <td class="column_title" >Unix/linux, command line, shell scripting </td>
       <td>Foundational</td>
       <td>Bioinformatics Scientist</td>
+      <td id="title_column" >Unix/linux, command line, shell scripting </td>
+   
   
-      <td>Beginner</td>
 
     </tr>
     <tr>
       <td>002</td>
-      <td>Data analytics</td>
+
       <td>Foundational</td>
       <td>Bioinformatics Scientist</td>
-    
-      <td>Beginner</td>
+      <td id="title_column">Data analytics</td>
+  
+
 
     </tr>
     <tr>
       <td>003</td>
-      <td>Phylogenetics</td>
       <td>Foundational</td>
       <td>Bioinformatics Scientist</td>
-  
-      <td>Beginner</td>
+      <td>Phylogenetics</td>
+     
+
     
     </tr>
     <tr>
       <td>004</td>
-      <td>Informatics skills </td>
+  
       <td>Foundational</td>
       <td>Bioinformatics Scientist</td>
+      <td>Informatics skills </td>
+     
 
-      <td>Beginner</td>
 
     </tr>
     <tr>
       <td>005</td>
-      <td>Workflows and containerization</td>
       <td>Foundational</td>
       <td>Bioinformatics Scientist</td>
+      <td>Workflows and containerization</td>
 
-      <td>Beginner</td>
+
   
     </tr>
     <tr>
       <td>006</td>
-      <td>Programming in Python</td>
       <td>Foundational</td>
       <td>Bioinformatics Scientist</td>
-  
-      <td>Beginner</td>
+      <td>Programming in Python</td>
+      
+
   
     </tr>
     <tr>
       <td>007</td>
-      <td>R programming</td>
       <td>Foundational</td>
       <td>Bioinformatics Scientist</td>
+      <td>R programming</td>
+  
 
-      <td>Beginner</td>
   
     </tr>
     <tr>
       <td>008</td>
-      <td>Github and version control</td>
       <td>Foundational</td>
       <td>Bioinformatics Scientist</td>
-      <td>Beginner</td>
+      <td>Github and version control</td>
+
  
     </tr>
     <tr>
       <td>009</td>
-      <td>Ontologies, standards, data curation and submission</td>
       <td>Foundational</td>
       <td>Bioinformatics Scientist</td>
-      <td>Beginner</td>
+      <td>Ontologies, standards, data curation and submission</td>
+
  
     </tr>
-    <!-- viral -->
+   <!-- bioinfomatics foundational -->
+  <!-- bioinfomatics viral -->
+  <tr>
+    <td>001</td>
+    <td>Viral</td>
+    <td>Bioinformatics Scientist</td>
+    <td>Introduction to NGS data processing</td>
+
+
+  </tr>
+  <tr>
+    <td>002</td>
+    <td>Viral</td>
+    <td>Bioinformatics Scientist</td>
+    <td>NGS, Illumina, ONT workflows</td>
+
+
+  </tr>
+  <tr>
+    <td>003</td>
+    <td>Viral</td>
+    <td>Bioinformatics Scientist</td>
+    <td>Nextclade and Pangolin</td>
+
+
+  </tr>
+  <tr>
+    <td>004</td>
+    <td>Viral</td>
+    <td>Bioinformatics Scientist</td>
+    <td>Galaxy workflow (or other slected workflow(s))</td>
+
+
+  </tr>
+  <tr>
+    <td>005</td>
+    <td>Viral</td>
+    <td>Bioinformatics Scientist</td>
+    <td>Phylogenetics</td>
+
+
+  </tr>
+  <tr>
+    <td>006</td>
+    <td>Viral</td>
+    <td>Bioinformatics Scientist</td>
+    <td>Advanced bioinformatics analysis for viruses</td>
+
+
+  </tr>
+  <tr>
+    <td>007</td>
+    <td>Viral</td>
+    <td>Bioinformatics Scientist</td>
+    <td>Data curation and submission</td>
+
+ 
+  </tr>
+
+  <tr>
+    <td>008</td>
+    <td>Viral</td>
+    <td>Bioinformatics Scientist</td>
+    <td>Dissemination of genomic surveillance findings to policy makers and the public 
+    </td>
+
+
+  </tr>
+
+  <!-- bacterial -->
+  <tr>
+    <td>001</td>
+    <td>Bacterial</td>
+    <td>Bioinformatics Scientist</td>
+    <td>Introduction to bacterial NGS data processing</td>
+
+
+  </tr>
+  <tr>
+    <td>002</td>
+
+    <td>Bacterial</td>
+    <td>Bioinformatics Scientist</td>
+    <td>Bacterial pathogen data analysis</td>
+
+
+  </tr>
+  <tr>
+    <td>003</td>
+    <td>Bacterial</td>
+    <td>Bioinformatics Scientist</td>
+    <td>PATRIC the PathoSystems Resource Integration Center, (a Bioinformatics Resource Center Platform)
+    </td>
+
+
+  </tr>
+  <tr>
+    <td>004</td>
+    <td>Bacterial</td>
+    <td>Bioinformatics Scientist</td>
+    <td>Phylogenetics</td>
+
+
+  </tr>
+  <tr>
+    <td>005</td>
+    <td>Bacterial</td>
+    <td>Bioinformatics Scientist</td>
+    <td>Metagenomics for pathogen surveillance</td>
+
+
+  </tr>
+  <tr>
+    <td>006</td>
+    <td>Bacterial</td>
+    <td>Bioinformatics Scientist</td>
+    <td>Data curation and submission</td>
+
+
+  </tr>
+  <tr>
+    <td>007</td>
+    <td>Bacterial</td>
+    <td>Bioinformatics Scientist</td>
+    <td>Dissemination of genomic surveillance findings to policy makers and the public 
+    </td>
+
+
+  </tr>
+
+    <!-- bioinfomatics viral -->
+
+    <!-- bioinformatics Eukaryotic-->
     <tr>
       <td>001</td>
-      <td>Introduction to NGS data processing</td>
-      <td>Viral</td>
+
+      <td>Eukaryotic</td>
       <td>Bioinformatics Scientist</td>
-      <td>Beginner</td>
-  
+      <td>Data analysis, interpretation, and presentation</td>
+
     </tr>
     <tr>
       <td>002</td>
-      <td>NGS, Illumina, ONT workflows</td>
-      <td>Viral</td>
+
+      <td>Eukaryotic</td>
       <td>Bioinformatics Scientist</td>
-      <td>Beginner</td>
+      <td>Using data for decision-making, data sources for Malaria</td>
+
 
     </tr>
     <tr>
       <td>003</td>
-      <td>Nextclade and Pangolin</td>
-      <td>Viral</td>
+      <td>Eukaryotic</td>
       <td>Bioinformatics Scientist</td>
-      <td>Beginner</td>
-  
-    </tr>
-    <tr>
-      <td>004</td>
-      <td>Galaxy workflow (or other slected workflow(s))</td>
-      <td>Viral</td>
-      <td>Bioinformatics Scientist</td>
-      <td>Beginner</td>
- 
-    </tr>
-    <tr>
-      <td>005</td>
-      <td>Phylogenetics</td>
-      <td>Viral</td>
-      <td>Bioinformatics Scientist</td>
-      <td>Beginner</td>
-
-    </tr>
-    <tr>
-      <td>006</td>
-      <td>Advanced bioinformatics analysis for viruses</td>
-      <td>Viral</td>
-      <td>Bioinformatics Scientist</td>
-      <td>Beginner</td>
-  
-    </tr>
-    <tr>
-      <td>007</td>
-      <td>Data curation and submission</td>
-      <td>Viral</td>
-      <td>Bioinformatics Scientist</td>
-      <td>Beginner</td>
-   
-    </tr>
-
-    <tr>
-      <td>008</td>
-      <td>Dissemination of genomic surveillance findings to policy makers and the public 
+      <td>Phylogenetics
       </td>
-      <td>Viral</td>
-      <td>Bioinformatics Scientist</td>
-      <td>Beginner</td>
- 
-    </tr>
 
-    <!-- bactterial -->
-    <tr>
-      <td>001</td>
-      <td>Introduction to bacterial NGS data processing</td>
-      <td>Bacterial</td>
-      <td>Bioinformatics Scientist</td>
-      <td>Beginner</td>
-
-    </tr>
-    <tr>
-      <td>002</td>
-      <td>Bacterial pathogen data analysis</td>
-      <td>Bacterial</td>
-      <td>Bioinformatics Scientist</td>
-      <td>Beginner</td>
-
-    </tr>
-    <tr>
-      <td>003</td>
-      <td>PATRIC the PathoSystems Resource
-         <!-- Integration Center, a Bioinformatics Resource Center Platform) -->
-        </td>
-      <td>Bacterial</td>
-      <td>Bioinformatics Scientist</td>
-      <td>Beginner</td>
 
     </tr>
     <tr>
       <td>004</td>
-      <td>Phylogenetics</td>
-      <td>Bacterial</td>
+      <td>Eukaryotic</td>
       <td>Bioinformatics Scientist</td>
-      <td>Beginner</td>
-
-    </tr>
-    <tr>
-      <td>005</td>
-      <td>Metagenomics for pathogen surveillance</td>
-      <td>Bacterial</td>
-      <td>Bioinformatics Scientist</td>
-      <td>Beginner</td>
-
-    </tr>
-    <tr>
-      <td>006</td>
       <td>Data curation and submission</td>
-      <td>Bacterial</td>
-      <td>Bioinformatics Scientist</td>
-      <td>Beginner</td>
+
+
+    </tr>
+
+
+      <!-- bioinformatics Eukaryotic-->
+    <!--Wetlab foundational-->
+    <tr>
+      <td>001</td>
+      <td>Foundational</td>
+      <td>Wet-Lab Scientist</td>
+      <td>Health and safety protocols</td>
 
     </tr>
     <tr>
-      <td>007</td>
-      <td>Dissemination of genomic
-         <!-- surveillance findings to policy makers and the public -->
-        </td>
-      <td>Bacterial</td>
-      <td>Bioinformatics Scientist</td>
-      <td>Beginner</td>
+      <td>002</td>
+      <td>Foundational</td>
+      <td>Wet-Lab Scientist</td>
+      <td>Lab practical: DNA/RNA sequencing</td>
+
 
     </tr>
+
+    <!--Wetlab foundational-->
+    <!--Wetlab Viral-->
+    <tr>
+      <td>001</td>
+      <td>Viral</td>
+      <td>Wet-Lab Scientist</td>
+      <td>Lab practical: RNA/DNA sequencing
+      </td>
+
+    </tr>
+    <tr>
+      <td>002</td>
+      <td>Viral</td>
+      <td>Wet-Lab Scientist</td>
+      <td>ARTIC amplicon sequencing</td>
+
+
+    </tr>
+       <!--Wetlab Viral-->
+
+
+
+           <!--Wetlab Bacterial-->
+    <tr>
+      <td>001</td>
+      <td>Bacterial</td>
+      <td>Wet-Lab Scientist</td>
+      <td>Health and safety protocols
+      </td>
+
+    </tr>
+    <tr>
+      <td>002</td>
+      <td>Bacterial</td>
+      <td>Wet-Lab Scientist</td>
+      <td>Sample processing and library preparation (Theory and wet lab practical)</td>
+
+
+    </tr>
+
+
+    <tr>
+      <td>002</td>
+      <td>Bacterial</td>
+      <td>Wet-Lab Scientist</td>
+      <td>Lab practical: DNA sequencing</td>
+
+
+    </tr>
+       <!--Wetlab Bacterial-->
+      <!--Wetlab Eukaryotic-->
+    <tr>
+      <td>001</td>
+   
+      <td>Eukaryotic</td>
+      <td>Wet-Lab Scientist</td>
+      <td>Health and safety protocols</td>
+
+    </tr>
+
+    <tr>
+      <td>002</td>
+      <td>Eukaryotic</td>
+      <td>Wet-Lab Scientist</td>
+      <td>Sample processing and library preparation (Theory and wet lab practical)</td>
+
+
+    </tr>
+
+    <tr>
+      <td>003</td>
+      <td>Eukaryotic</td>
+      <td>Wet-Lab Scientist</td>
+      <td>Lab practical: DNA sequencing</td>
+
+
+    </tr>
+
+    <!--Wetlab Eukaryotic-->
+
+
+    <!--Wetlab/Drylab Foundational-->
+          <tr>
+            <td>001</td>
+            <td> Foundational</td>
+            <td>Wet-lab & Dry-lab Scientist</td>
+            <td>Ethics and policies</td>
+      
+          </tr>
+
+
+          <tr>
+            <td>002</td>
+            <td> Foundational</td>
+            <td>Wet-lab & Dry-lab Scientist</td>
+            <td>Study design </td>
+      
+      
+          </tr>
+
+          <tr>
+            <td>003</td>
+            <td> Foundational</td>
+            <td>Wet-lab & Dry-lab Scientist</td>
+            <td>Dissemination of results</td>
+      
+      
+          </tr>
+      <!--Wetlab/Drylab Foundational-->
+
+          <!-- Wetlab/Drylab viral-->
+          <tr>
+            <td>001</td>
+            <td>Viral</td>
+            <td>Wet-lab & Dry-lab Scientist</td>
+            <td>Introduction to genomic epidemiology </td>
+      
+      
+          </tr>
+      
+          <tr>
+            <td>002</td>
+            <td>Viral</td>
+            <td>Wet-lab & Dry-lab Scientist</td>
+            <td>Study design for viral pathogen surveillance</td>
+      
+      
+          </tr>
+
+
+          <tr>
+            <td>003</td>
+            <td>Viral</td>
+            <td>Wet-lab & Dry-lab Scientist</td>
+            <td>Introduction to NGS </td>
+      
+      
+          </tr>
+      
+    
+           <!--Wetlab-drylab Bacterial-->
+           <tr>
+            <td>001</td>
+            <td>Bacterial</td>
+            <td>Wet-lab & Dry-lab Scientist</td>
+            <td>Introduction to genomic epidemiology 
+            </td>
+      
+          </tr>
+          <tr>
+            <td>002</td>
+            <td>Bacterial</td>
+            <td>Wet-lab & Dry-lab Scientist</td>
+            <td>Study design for bacterial pathogen surveillance</td>
+      
+      
+          </tr>
+      
+      
+          <tr>
+            <td>002</td>
+            <td>Bacterial</td>
+            <td>Wet-lab & Dry-lab Scientist</td>
+            <td>Introduction to NGS </td>
+      
+      
+          </tr>
+             <!--Wetlab drylab Bacterial-->
+
+      <!--Wetlab/Drylab Eukaryotic-->
+      <tr>
+        <td>001</td>
+        <td>Eukaryotic</td>
+        <td>Wet-lab & Dry-lab Scientist</td>
+        <td>Introduction to Surveillance, Monitoring, and Evaluation.</td>
+
+      </tr>
+  
+     <!--Wetlab/Drylab Eukaryotic-->
+
+
+
+
+
+
+
+
+
   </tbody>
   <tfoot>
       <tr>
         <th>Code</th>
-        <th class="column_title">Title</th>
+      
         <th>Pathogen</th>
         <th>Persona </th>
-        <th>Level</th>
+        <th class="column_title">Title</th>
+  
 
       </tr>
   </tfoot>
@@ -269,8 +548,18 @@ $(document).ready(function() {
         table.column( i ).data().unique().sort().each( function ( d, j ) {
             select.append( '<option value="'+d+'">'+d+'</option>' )
         } );
+
+
+
+
+
     } );  
+
+
+
 } );
+
+
 
 
 function toggleColumn(index) {
@@ -280,4 +569,9 @@ function toggleColumn(index) {
 }
 
 
+
+
+
+
 </script>
+
