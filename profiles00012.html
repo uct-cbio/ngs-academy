@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Pathogen Surveillance Training Curricula
-permalink: /courses/bioinformatics-profiles12/
+permalink: /js-test/
 ---
 
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
@@ -14,95 +14,52 @@ permalink: /courses/bioinformatics-profiles12/
 </style>
 
 
-<table id="example" class="display" style="width:100%">
-    <thead>
-        <tr>
-            <th>Course ID</th>
-            <th>Description</th>
-            <th>Link</th>
-            <th>Persona</th>
-            <th>Pathogen</th>
-            <th>Level</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>0100</td>
-            <td>Linux administration</td>
-            <td>link</td>
-            <td>Bioinformatician</td>
-            <td>Viral</td>
-            <td>Introduction</td>
-        </tr>
-        <tr>
-            <td>010</td>
-            <td>Python3</td>
-            <td>link</td>
-            <td>Bioinformatician</td>
-            <td>Viral</td>
-            <td>Introduction</td>
-        </tr>
-        <tr>
-            <td>0110</td>
-            <td>MRNA</td>
-            <td>link</td>
-            <td>Wetlab</td>
-            <td>Bacterial</td>
-            <td>Intermediate</td>
-        </tr>
-        <tr>
-            <td>0111</td>
-            <td>Linux administration</td>
-            <td>link</td>
-            <td>Bioinformatician</td>
-            <td>Viral</td>
-            <td>Introduction</td>
-        </tr>
-    </tbody>
-    <tfoot>
-        <tr>
-            <th>Course ID</th>
-            <th>Description</th>
-            <th>Link</th>
-            <th>Persona</th>
-            <th>Pathogen</th>
-            <th>Level</th>
-        </tr>
-    </tfoot>
-</table>
+
+<input type="text" id="searchInput" placeholder="Search...">
+<select id="selectList">
+    <option value="option1">Option 1</option>
+    <option value="option2">Option 2</option>
+    <option value="option3">Option 3</option>
+    <option value="option4">Option 4</option>
+</select>
+<div id="results"></div>
+
+
+
+
+
 <script>
 
-$('#example').DataTable({
-    initComplete: function () {
-        this.api()
-            .columns()
-            .every(function () {
-                var column = this;
- 
-                // Create select element and listener
-                var select = $('<select><option value=""></option></select>')
-                    .appendTo($(column.footer()).empty())
-                    .on('change', function () {
-                        var val = DataTable.util.escapeRegex($(this).val());
- 
-                        column
-                            .search(val ? '^' + val + '$' : '', true, false)
-                            .draw();
-                    });
- 
-                // Add list of options
-                column
-                    .data()
-                    .unique()
-                    .sort()
-                    .each(function (d, j) {
-                        select.append(
-                            '<option value="' + d + '">' + d + '</option>'
-                        );
-                    });
+
+const searchInput = document.getElementById('searchInput');
+const selectList = document.getElementById('selectList');
+const results = document.getElementById('results');
+
+// Function to filter options based on search input
+function filterOptions() {
+    const searchText = searchInput.value.toLowerCase();
+    const options = selectList.options;
+    
+    results.innerHTML = ''; // Clear previous results
+    
+    for (let i = 0; i < options.length; i++) {
+        const option = options[i];
+        const optionText = option.text.toLowerCase();
+        
+        if (optionText.includes(searchText)) {
+            const resultOption = document.createElement('div');
+            resultOption.textContent = option.text;
+            resultOption.addEventListener('click', () => {
+                selectList.value = option.value;
+                results.innerHTML = '';
             });
+            results.appendChild(resultOption);
+        }
     }
-});
+}
+
+// Event listeners
+searchInput.addEventListener('input', filterOptions);
 
 </script>
 <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>

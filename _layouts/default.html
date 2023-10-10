@@ -64,7 +64,6 @@
     <script src="js/jquery.counterup.js"></script>
     <script type="text/javascript" src="js/bootstrap-sidermenu.js"></script>
     <script src="js/jquery.dataTables.js"></script>
-    
     <!-- Google Map -->
     <!-- <script src="https://maps.googleapis.com/maps/api/js"></script> -->
     <script src="js/google-map-init.js"></script>
@@ -86,15 +85,27 @@
                 "@type": "CourseInstance",
                 "courseMode": "part-time",
                 "endDate": "2022-04-29",
-                "startDate": "2022-04-25"
                 "location": "KEMRI / WELLCOME TRUST Kilifi, Kenya",
+                "startDate": "2022-04-25"
               },
           
   
             ]
       
-            }
+          }
         </script>
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LQVLLC7ZE5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LQVLLC7ZE5');
+</script>
+
 
 </head>
 <!-- Header Start -->
@@ -165,8 +176,8 @@
                                                 Pathogen
                                                 Surveillance Courses</a>
                                         </li>
-                                        <li><a class="dropdown-item" href="{{ site.url }}courses/bioinformatics-profiles4/">
-                                            Pathogen Surveillance Training Curricula</a>
+                                        <li><a class="dropdown-item" href="{{ site.url }}courses/bioinformatics-profiles">
+                                        Bioinformatics Profiles</a>
                                     </li>
 
                                         <!-- <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
@@ -181,13 +192,12 @@
                                     %}><a class="nav-link  dropdown-toggle" href="{{ site.url }}resources"
                                         data-bs-toggle="dropdown-1"> Tools & Resources</a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="{{ site.url }}resources/help-desk/">
-                                            Help-Desk / Ticketing Sys</a>
+                                    <li><a class="dropdown-item" href="{{ site.url }}resources/help-desk/">
+                                            Help-Desk/Ticketing Sys</a>
                                     </li>
                                         <li><a class="dropdown-item" href="{{ site.url }}resources/training-materials/">
                                             Training Materials</a>
                                     </li>
-
                                         <li><a class="dropdown-item" href="{{ site.url }}resources/pha4ge/">
                                             PHA4GE</a>
                                     </li>
@@ -199,6 +209,8 @@
                                     </ul>
 
                                 </li>
+
+
 
                                 <li {% if page.url=="/contact/" %}class="active" {% endif %}><a
                                         href="{{ site.url }}contact">Contact</a>
@@ -219,8 +231,9 @@
         {% include subpage-header.html %}
 
     </div>
-    <div class="container">
 
+
+    <div class="container">
         <div class="row">
             <p></p>
             <div class="container">
@@ -230,11 +243,9 @@
                         <div>
                             {% include side-nav_js.html %}
                             <hr>
-
-                                <div>
                             Click <a href="https://redcap.h3abionet.org/redcap/surveys/?s=FCA9MTKHPH"
-                                class="btn btn-sm btn-default">here</a> for the training survey</div>
-
+                                class="btn btn-sm btn-default">here</a> for the training survey
+pwd
                         </div>
                     </div>
 
@@ -244,7 +255,7 @@
                 <div class="col-lg-10 col-md-10 col-sm-10 main_container_section" class="my-auto">
                     <div class="">
                         {% include subpage-intro.html %}
-                <hr>
+                        <hr>
                     </div>
                     {{content}}
                 </div>
