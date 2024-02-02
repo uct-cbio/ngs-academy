@@ -1,0 +1,49 @@
+---
+layout: default
+title: Courses
+permalink: /datatable1/
+
+---
+
+<!-- jQuery library -->
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+<!-- DataTables JS and CSS -->
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+
+
+    <div class="table-responsive">
+
+      <table id="myDataTable" class="display">
+        <thead>
+            <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
+                <!-- More columns as needed -->
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table rows go here -->
+        </tbody>
+    </table>
+    
+    
+    </div>
+
+
+
+
+
+<script>
+$(document).ready( function () {
+    const myTable = $('#myDataTable').DataTable({
+        // DataTable options
+        "paging": true,
+        "searching": true,
+        // other options
+    });
+});
+
+</script>

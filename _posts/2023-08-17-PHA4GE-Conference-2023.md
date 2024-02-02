@@ -4,7 +4,7 @@ title: "PHA4GE Conference 2023"
 posted_date: 2023-03-17
 main_menu: courses
 permalink: /:year/:title
-category: upcoming
+category: past-course
 course_overview: 
 training_provider: "PHA4GE"
 start_date: 2023-10-30

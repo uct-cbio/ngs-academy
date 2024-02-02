@@ -11,7 +11,7 @@ course_overview :  High-throughput laboratory machines generate large quantities
 start_date: 2023-03-27
 end_date: 2023-03-31
 group: group1
-training_provider: MLWT, KEMRI, ILRI
+training_provider: "MLW, KWTRP,ILRI-Kenya"
 link: https://uct-cbio.github.io/ngs-academy/2023/Advanced-Training-Developing-Workflows-ADV
 ---
 
