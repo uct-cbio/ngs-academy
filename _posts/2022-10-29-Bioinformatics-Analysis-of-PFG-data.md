@@ -5,7 +5,7 @@ posted_date: 2022-10-28
 main_menu: courses
 permalink: /:year/:title
 category: past-course
-course_overview : Genomic Epidemiology of resistant Plasmodium Falciparum training was designed with the aim to uncover the genomic signatures due to various selection pressures to be identified (host immune system? background genetics? epidemiological facies? or other).To understand the spread over the country of populations of parasites carrying any malaria drug resistant-conferring markers (the withdrawn ones as well as the ones on official uset).
+course_overview: The Genomic Epidemiology of resistant Plasmodium Falciparum training was designed to cover topics on the genomic signatures of Plasmodium Falciparum due to various selection pressures (e.g. host immune system, background genetics, epidemiological facies), and understanding the spread over the country of populations of parasites carrying any malaria drug resistant-conferring markers.
 training_provider:  "NGS Academy"
 start_date: 2022-11-28
 end_date: 2022-12-02
@@ -141,7 +141,7 @@ Travaux pratiques :
 <p>Beginner - Intermediate level Bioinformatics working with next-generation sequencing data in Africa
 
 <p align="left"><b class="text-left">Objectives and expected outcomes:</b>
-The training has a double objective, to understand the genomic epidemiology of resistant P. falciparum in Côte d'Ivoire in order to discover the genomic signatures due to the different selection pressures to be identified (immune system of the host, genetic background, facies epidemiological, etc.). It is also a question of understanding the mode of diffusion and the distribution on the territory of the populations of parasites carrying markers conferring resistance to antimalarial drugs.
+The training has a double objective, to understand the genomic epidemiology of resistant P. falciparum in Côte d'Ivoire in order to discover the genomic signatures due to the different selection pressures and to train on methods that can improve our understanding of the mode of diffusion and the distribution of populations of parasites carrying markers conferring resistance to antimalarial drugs.
 </p>
 
 <p align="left"><b class="text-left">Intended audience:</b></p>
