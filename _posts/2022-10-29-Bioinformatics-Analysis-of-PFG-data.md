@@ -316,7 +316,7 @@ The training has a double objective, to understand the genomic epidemiology of r
       <br>
      </th>
       <td>    <ul>
-      <li>2. Use cases of Malaria NGS </li>
+      <li>2. <a href="{{ site.url }}uploads/drugresistanceusecase.pptx" target="_blank">NGS, Use Cases for Malaria Surveillance</a></li>
       <li>2.1 Drug resistance surveillance </li>
 <li>2.2 Transmission Analysis </li>
         <li>2.3 Diagnostic resistance </li>
@@ -492,7 +492,7 @@ The training has a double objective, to understand the genomic epidemiology of r
       <br>
      </th>
       <td>    <ul>
-      <li>5. R, Population Genetic Analysis (Part 1) </li>   
+      <li>5.<a href="{{ site.url }}uploads/malaria_ngs_work.pptx" target="_blank">R, Population Genetic Analysis (Part 1)</a> </li>   
          <li>5.2 R, Population Genetic Analysis (Part 2) </li>     
            <li>5.2.1. Genome scans continue </li>     
            <li>5.2.2. Intro to genome wide association analysis</li>            
