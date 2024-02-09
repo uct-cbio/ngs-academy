@@ -428,7 +428,7 @@ font header .navbar-default .navbar-nav li a:hover {
 #global-header-1 {
   /* background: url("../img/slider-bg2.jpg") no-repeat; */
   background-size: cover;
-  padding-top: 37.5px;
+  /* padding-top: 37.5px; */
   padding-bottom: 18.5px;
   position: relative;
   background-attachment: fixed;
