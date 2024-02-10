@@ -51,10 +51,10 @@ end_date: 2024-03-15
  <b>Patner Institutions:</b>
 
    <div class="row">
-    <div class="col-sm-4" style="background-color:rgb(30, 30, 30);"><img alt="..." src="/ngs-academy/img/uct_logo.svg" /></div>
-    <div class="col-sm-3"><img width="100%" alt="..." src="/ngs-academy/img/sanbi.png" /></div>
-    <div class="col-sm-2" ><img width="100%" alt="..." src="/ngs-academy/img/h3abionet.png" /></div>
-    <div class="col-sm-3" ><img width="100%" alt="..." src="/ngs-academy/img/uwclogo.svg" /></div>
+    <div class="col-sm-4 text-center" style="background-color:rgb(30, 30, 30);"><img alt="..." src="/ngs-academy/img/uct_logo.svg" /></div>
+    <div class="col-sm-3 text-center"><img width="100%" alt="..." src="/ngs-academy/img/sanbi.png" /></div>
+    <div class="col-sm-2 text-center" ><img width="100%" alt="..." src="/ngs-academy/img/h3abionet.png" /></div>
+    <div class="col-sm-3 text-center" ><img width="100%" alt="..." src="/ngs-academy/img/uwclogo.svg" /></div>
   </div>
 
 
