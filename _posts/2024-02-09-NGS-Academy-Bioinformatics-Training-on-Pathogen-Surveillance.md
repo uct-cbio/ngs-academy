@@ -35,26 +35,21 @@ end_date: 2024-03-15
   <li>5. Use case we look at the web tools, but focus on the command line with the Bactopia workflow (which is a well maintained nf-core compliant Nextflow workflow) and visualisation using Microreact and Grapetree.</li>
  
 </ul>
-<p align="left"><b class="text-left">Course prerequisites:</b></p>
-
-<p align="left">Intermediate coding skills in R, computer skills, using basic command lines. Knowledge around some workflow tools.</p>
-
-
-<p align="left"><b class="text-left">Intended audience:</b></p>
-
-<p align="left">Intermediate level bioinformaticians working with next-generation sequencing data for disease surveillance on the African continent.
+<p align="left"><b class="text-left">Course prerequisites:</b>
+<br>Intermediate coding skills in R, computer skills, using basic command lines. Knowledge around some workflow tools.
 </p>
-
-
-
-
+<p align="left"><b class="text-left">Intended audience:</b>
+<br>Intermediate level bioinformaticians working with next-generation sequencing data for disease surveillance on the African continent.</p>
  <b>Patner Institutions:</b>
 
    <div class="row">
-    <div class="col-sm-4" style="background-color:rgb(30, 30, 30);"><img alt="..." src="{{ site.baseurl }}img/uct_logo.svg" /></div>
-    <div class="col-sm-3"><img width="100%" alt="..." src="{{ site.baseurl }}img/sanbi.png" /></div>
-    <div class="col-sm-2" ><img width="100%" alt="..." src="{{ site.baseurl }}img/h3abionet.png" /></div>
-    <div class="col-sm-3" ><img width="100%" alt="..." src="{{ site.baseurl }}img/uwclogo.svg" /></div>
+    <div class="col-sm-4 text-center" style="background-color:rgb(30, 30, 30);"><img alt="..." src="/ngs-academy/img/uct_logo.svg" /></div>
+    <div class="col-sm-3 text-center"><img width="100%" alt="..." src="/ngs-academy/img/sanbi.png" /></div>
+    <div class="col-sm-2 text-center" ><img width="100%" alt="..." src="/ngs-academy/img/h3abionet.png" /></div>
+    <div class="col-sm-3 text-center" ><img width="100%" alt="..." src="/ngs-academy/img/uwclogo.svg" /></div>
   </div>
 
 
+<!-- Course schedule, Trainers and Institutions-->
+   
+   
