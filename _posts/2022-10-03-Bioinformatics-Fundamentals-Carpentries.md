@@ -5,7 +5,7 @@ Carpentries virtual training workshop 2022"
 posted_date: 2022-10-03
 main_menu: courses
 permalink: /:year/:title
-category: past-course
+category: past-course-old
 course_overview :  This Bioinformatics Fundamentals virtual workshop used the Carpentries team to provide training on Linux, Shell Scripts, and other foundational skills. The main focus for this virtual training was to introduce participants to the fundamental tools used to interact with the computer without a graphical user interface, some of which will allow users to perform more advanced tasks, such as automate repetitive tasks, and combine smaller tasks into larger, more complex workflows.   
 start_date: 2022-10-17
 end_date: 2022-10-19
