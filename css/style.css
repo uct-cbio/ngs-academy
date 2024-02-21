@@ -1261,3 +1261,12 @@ a:hover::before {
 
 /* 
 css underline on hoover */
+/* 
+trainer communities css */
+.trainer_communities_border{
+  border: 1.5px solid #8c2133; /* 2px border width, solid style, maroon */
+  padding: 10px; /* Optional: Adds some padding inside the div */
+  margin: 10px; /* Optional: Adds some space outside the div */
+  border-radius: 12px;
+  min-height: 28vh;
+}
