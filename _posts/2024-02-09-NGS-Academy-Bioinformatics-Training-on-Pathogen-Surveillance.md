@@ -4,7 +4,7 @@ title:  "NGS Academy Bioinformatics Training on Pathogen Surveillance 2024"
 posted_date: 2024-02-09
 permalink: /:year/:title
 link: 2024/NGS-Academy-Bioinformatics-Training-on-Pathogen-Surveillance/
-category: upcoming--draft
+category: upcoming
 training_provider: "NGS Academy, SANBI, AFRICA CDC"
 course_overview : The aim of this program is to provide virtual training for personnel at African institutions involved in SARS-CoV-2 sequencing for surveillance. It is primarily aimed at staff who will be preparing samples, doing the sequencing, and running basic data analysis. The content has been divided into modules, some of which are independent, while others form recommended prerequisites for the next module. The content provides theoretical knowledge on the steps required for the workflow from sample selection to analysis, to prepare participants for more practical laboratory training when this is feasible. Virtual sessions generally include videos or live online presentations followed by live Q&A sessions with trainers. Where relevant, participants complete practical exercises and submit assignments 
 start_date: 2024-03-04
@@ -13,6 +13,9 @@ end_date: 2024-03-15
 
 <!-- 
 <b>Course outline:</b> [ Africa NGS SARS-CoV-2 training course 2021]({{ site.url }}/docs/course_outline.pdf) -->
+<style>
+
+</style>
 
 <h3>Logistics: </h3>
 <ol class="list-unstyled">
@@ -90,7 +93,7 @@ end_date: 2024-03-15
 </ul><!-- Tab panes -->
 <div class="tab-content">
 	<div class="tab-pane active" id="tabs-11" role="tabpanel">
-		<p>   <table class="table table-bordered table-responsive">
+		<p>   <table class="day_content table table-bordered table-responsive">
   <thead>
     <tr>
       <th scope="col">Topic</th>
@@ -133,7 +136,7 @@ end_date: 2024-03-15
 </table>    </p>
 	</div>
 	<div class="tab-pane" id="tabs-21" role="tabpanel">
-		<p> <table class="table table-bordered table-responsive">
+		<p> <table class="day_content table table-bordered table-responsive">
   <thead>
     <tr>
       <th scope="col">Topic</th>
@@ -177,7 +180,7 @@ end_date: 2024-03-15
 </p>
 	</div>
 	<div class="tab-pane" id="tabs-31" role="tabpanel">
-		<p>   <table class="table table-bordered table-responsive">
+		<p>   <table class="day_content table table-bordered table-responsive">
   <thead>
     <tr>
       <th scope="col">Topic</th>
@@ -219,7 +222,7 @@ end_date: 2024-03-15
 	</div>
 
   	<div class="tab-pane" id="tabs-41" role="tabpanel">
-		<p> <table class="table table-bordered">
+		<p> <table class="day_content table table-bordered table-responsive">
   <thead>
     <tr>
       <th scope="col">Topic</th>
@@ -260,7 +263,7 @@ end_date: 2024-03-15
 </table>  </p>
 	</div>
     	<div class="tab-pane" id="tabs-51" role="tabpanel">
-		<p> <table class="table table-bordered">
+		<p> <table class="day_content table table-bordered table-responsive">
   <thead>
     <tr>
       <th scope="col">Topic</th>
@@ -340,7 +343,7 @@ end_date: 2024-03-15
 </ul><!-- Tab panes -->
 <div class="tab-content">
 	<div class="tab-pane active" id="tabs-1" role="tabpanel">
-		<p>   <table class="table table-bordered table-responsive">
+		<p>   <table class="day_content table table-bordered table-responsive">
   <thead>
     <tr>
       <th scope="col">Topic</th>
@@ -383,7 +386,7 @@ end_date: 2024-03-15
 </table>    </p>
 	</div>
 	<div class="tab-pane" id="tabs-2" role="tabpanel">
-		<p> <table class="table table-bordered table-responsive">
+		<p> <table class="day_content table table-bordered table-responsive">
   <thead>
     <tr>
       <th scope="col">Topic</th>
@@ -424,7 +427,7 @@ end_date: 2024-03-15
 </p>
 	</div>
 	<div class="tab-pane" id="tabs-3" role="tabpanel">
-		<p>   <table class="table table-bordered table-responsive">
+		<p>   <table class="day_content table table-bordered table-responsive">
   <thead>
     <tr>
       <th scope="col">Topic</th>
@@ -465,7 +468,7 @@ end_date: 2024-03-15
 	</div>
 
   	<div class="tab-pane" id="tabs-4" role="tabpanel">
-		<p> <table class="table table-bordered">
+		<p> <table class="day_content table table-bordered table-responsive">
   <thead>
     <tr>
       <th scope="col">Topic</th>
@@ -505,7 +508,7 @@ end_date: 2024-03-15
 </table>  </p>
 	</div>
     	<div class="tab-pane" id="tabs-5" role="tabpanel">
-		<p> <table class="table table-bordered">
+		<p> <table class="day_content table table-bordered table-responsive">
   <thead>
     <tr>
       <th scope="col">Topic</th>
