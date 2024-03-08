@@ -210,9 +210,17 @@
 
                                 </li>
 
-                                <li {% if page.url=="/trainer-communities/" %}class="active" {% endif %}><a
-                                    href="{{ site.url }}trainer-communities">Trainer Communities</a>
-                            </li>
+                                <li class="nav-item dropdown" {% if page.url=="/trainer-communities/" %}class="active" {% endif
+                                    %}><a class="nav-link  dropdown-toggle" href="{{ site.url }}trainer-communities"
+                                        data-bs-toggle="dropdown-1">Trainer Communities</a>
+                                    <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="{{ site.url }}related-projects/">
+                                            Related Projects</a>
+                                
+                                    
+                                    </ul>
+    
+                                </li>
 
                                 <li {% if page.url=="/contact/" %}class="active" {% endif %}><a
                                         href="{{ site.url }}contact">Contact</a>
