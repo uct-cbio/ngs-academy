@@ -199,7 +199,8 @@ end_date: 2024-03-15
       </b></li>
 <ol>
   <li>3. <a href="#" target="_blank">Link</a>  </li>
- <li>3.1 Coding fundamentals in Conda,, repeating actions with loops, command-line programs</li>
+   <li>3.1.a <a href="{{ site.url }}uploads/Introduction_to_conda_3_24.pdf" target="_blank">Introduction to Conda</a></li>
+ <li>3.2 Coding fundamentals in Conda,, repeating actions with loops, command-line programs</li>
 
     
 
@@ -242,10 +243,9 @@ end_date: 2024-03-15
 <ol>
   <li>4. <a href="#" target="_blank">Link</a>  </li>
   <li>4.1.a <a href="{{ site.url }}uploads/Introduction_to_containerisation_3_24.pdf" target="_blank">Introduction to containerisation</a></li>
- <li>4.1.b <a href="{{ site.url }}uploads/Introduction_to_conda_3_24.pdf" target="_blank">Introduction to Conda</a></li>
-  <li>4.1.c <a href="{{ site.url }}uploads/docker_exercise_3_24.pdf" target="_blank">Docker exercise</a></li>
-   <li>4.1.d <a href="{{ site.url }}uploads/sequences.fasta" target="_blank">Sequences.fasta</a></li>
-    <li>4.1.e <a href="{{ site.url }}uploads/primers.fasta" target="_blank">primers.fasta</a></li>
+  <li>4.1.b <a href="{{ site.url }}uploads/docker_exercise_3_24.pdf" target="_blank">Docker exercise</a></li>
+   <li>4.1.c <a href="{{ site.url }}uploads/sequences.fasta" target="_blank">Sequences.fasta</a></li>
+    <li>4.1.d <a href="{{ site.url }}uploads/primers.fasta" target="_blank">primers.fasta</a></li>
  <li>4.2 Containers workflow, theory, coding</li>
 
     
