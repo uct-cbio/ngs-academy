@@ -84,7 +84,11 @@ The course will be taught in English.
 
 
    	<li class="nav-item">
-		<a class="nav-link" data-toggle="tab" href="#tabs-51" role="tab">Wed 8 March 2024</a>
+		<a class="nav-link" data-toggle="tab" href="#tabs-51" role="tab">Wed 13 March 2024</a>
+	</li>
+
+  <li class="nav-item">
+		<a class="nav-link" data-toggle="tab" href="#tabs-52" role="tab">Thur 14 March 2024</a>
 	</li>
   
 </ul><!-- Tab panes -->
@@ -93,7 +97,7 @@ The course will be taught in English.
 		<p>   <table class="day_content table table-bordered table-responsive">
   <thead>
     <tr>
-      <th scope="col">Topic</th>
+      <th scope="col">Session</th>
       <th scope="col">Course materials</th>
       <th scope="col">Training partner</th>
        <th scope="col">Interactive Sessions with Instructor/s</th>
@@ -101,14 +105,14 @@ The course will be taught in English.
   </thead>
   <tbody>
     <tr>
-      <th scope="row">Introduction Unix/linux, command line, shell scripting
+      <th scope="row">AM
      </th>
       <td>    <ul>
       <li><b> 
       </b></li>
 <ol>
-  <li>1. <a href="#" target="_blank">Link</a>  </li>
- <li>1.1 Linux, unix, command line, Introduction to Shell, finding & working with files and directories, filters and pipes, loops, writing Shell scripts. Command line tools for genomic data.</li>
+  <li>1. Welcome </li>
+ <li>1.1 Team & participant introductions</li>
 
     
 
@@ -116,18 +120,91 @@ The course will be taught in English.
 </ul></td>
       <td><ul>
   
-  <li>South African Bioinformatics Institute (SANBI)</li>
+  <li>Welcome Connecting Science</li>
+   <li>National Institute of Communicable diseases (NICD)</li>
 
  <li> </li>
  
 </ul></td>
             <td><ul>
-             <li>Peter van Heusden</li>
+             <li> Dr Alice Matimba</li>
+              <li>Dr Stanford Kwenda</li>
+</ul></td>
+    </tr>
+  <!-- break -->
+  <!-- break -->
+  <tr>
+    <td class="text-center" colspan="4"><b>Break</b></td> <!-- This creates an empty row -->
+  </tr>
+    <!-- break -->
+    <!-- break -->
+      <tr>
+      <th scope="row">AM
+     </th>
+      <td>    <ul>
+      <li><b> 
+      </b></li>
+<ol>
+  <li>1.2 Advanced learning and training  </li>
+ <li></li>
+
+    
+
+</ol>                 
+</ul></td>
+      <td><ul>
+  
+  <li>Wellcome Connecting Science</li>
+
+ <li> </li>
+ 
+</ul></td>
+            <td><ul>
+             <li>Dr Alice Matimba</li>
               <li></li>
 </ul></td>
     </tr>
+<!-- Trow -->
 
+  <!-- break -->
+  <!-- break -->
+  <tr>
+    <td class="text-center" colspan="4"><b>Lunch</b></td> <!-- This creates an empty row -->
+  </tr>
+    <!-- break -->
+    <!-- break -->
+      <tr>
+      <th scope="row">PM
+     </th>
+      <td>    <ul>
+      <li><b> 
+      </b></li>
+<ol>
+ <li>1.3 Clinical Importance and
+Epidemiology of AMR & National
+Surveillance Programmes in Africa -
+</li>
+
+ <li>1.4 EpiCollect, Intro to outbreak  </li>
+  <li>1.5 Networking  </li>
+
+    
+
+</ol>                 
+</ul></td>
+      <td><ul>
+  
+  <li>NICD</li>
+
+ <li>London School of Hygiene and Tropical Medicine </li>
  
+</ul></td>
+            <td><ul>
+             <li>Olga Perovic</li>
+              <li>Prof Francesc Coll</li>
+</ul></td>
+    </tr>
+<!-- Trow -->
     
   </tbody>
 </table>    </p>
@@ -136,7 +213,7 @@ The course will be taught in English.
 		<p> <table class="day_content table table-bordered table-responsive">
   <thead>
     <tr>
-      <th scope="col">Topic</th>
+      <th scope="col">Session</th>
       <th scope="col">Course materials</th>
       <th scope="col">Training partner</th>
        <th scope="col">Interactive Sessions with Instructor/s</th>
@@ -144,15 +221,23 @@ The course will be taught in English.
   </thead>
   <tbody>
 
-   <tr>
-      <th scope="row">Introduction Unix/linux, command line, shell scripting cont...
+ <tr>
+      <th scope="row">AM
      </th>
       <td>    <ul>
       <li><b> 
       </b></li>
 <ol>
-  <li>2. <a href="#" target="_blank">Link</a>  </li>
- <li>2.1 Linux, unix, command line, Introduction to Shell, finding & working with files and directories, filters and pipes, loops, writing Shell scripts. Command line tools for genomic data.</li>
+  <li>2. Introduction to AMR:
+Historical & Epidemiological Aspects
+ </li>
+ <li>2.1 Study Design &
+Surveillance Methods
+</li>
+ <li>2.2 Lab Practical 1A
+AST Part I
+</li>
+
 
     
 
@@ -160,14 +245,93 @@ The course will be taught in English.
 </ul></td>
       <td><ul>
   
-  <li>South African Bioinformatics Institute (SANBI)</li>
+  <li>University of Liverpool</li>
+   <li></li>
 
  <li> </li>
  
 </ul></td>
             <td><ul>
-             <li>Peter van Heusden</li>
-              <li></li>
+             <li> Ewan Harrison</li>
+              <li>Lillian Musila</li>
+</ul></td>
+    </tr>
+  <!-- break -->
+  <!-- break -->
+  <tr>
+    <td class="text-center" colspan="4"><b>Break</b></td> <!-- This creates an empty row -->
+  </tr>
+    <!-- break -->
+    <!-- break -->
+      <tr>
+      <th scope="row">AM
+     </th>
+      <td>    <ul>
+      <li><b> 
+      </b></li>
+<ol>
+  <li>2.3 Lab Practical 1A cond.
+AST Part I
+</li>
+ <li>Brief Introduction to
+sequencing technologies
+</li>
+
+    
+
+</ol>                 
+</ul></td>
+      <td><ul>
+  
+  <li>Wellcome Connecting Science</li>
+
+ <li> University of Limpopo</li>
+ 
+</ul></td>
+            <td><ul>
+              <li>Lillian Musila</li>
+              <li>Sabelle Jallow</li>
+              <li>Beth Blane</li>
+              <li>Zamantungwa Mnisi</li>
+</ul></td>
+    </tr>
+<!-- Trow -->
+
+  <!-- break -->
+  <!-- break -->
+  <tr>
+    <td class="text-center" colspan="4"><b>Lunch</b></td> <!-- This creates an empty row -->
+  </tr>
+    <!-- break -->
+    <!-- break -->
+      <tr>
+      <th scope="row">PM
+     </th>
+      <td>    <ul>
+      <li><b> 
+      </b></li>
+<ol>
+ <li>2.4 Lab practical 2,
+Nanopore Sequencing
+
+</li>
+
+ <li>2.5 EpiCollect, Intro to outbreak  </li>
+
+    
+
+</ol>                 
+</ul></td>
+      <td><ul>
+  
+  <li></li>
+
+ <li>Kenya Medical Research Institute </li>
+ 
+</ul></td>
+            <td><ul>
+             <li>Fahad Khokar</li>
+              <li>Collins Kigen</li>
 </ul></td>
     </tr>
 
@@ -180,23 +344,24 @@ The course will be taught in English.
 		<p>   <table class="day_content table table-bordered table-responsive">
   <thead>
     <tr>
-      <th scope="col">Topic</th>
+      <th scope="col">Session</th>
       <th scope="col">Course materials</th>
       <th scope="col">Training partner</th>
        <th scope="col">Interactive Sessions with Instructor/s</th>
     </tr>
   </thead>
   <tbody>
-   
-   <tr>
-      <th scope="row">Package management with Conda 
+      <tr>
+      <th scope="row">AM
      </th>
       <td>    <ul>
       <li><b> 
       </b></li>
 <ol>
-  <li>3. <a href="#" target="_blank">Link</a>  </li>
- <li>3.1 Coding fundamentals in Conda,, repeating actions with loops, command-line programs</li>
+  <li>3. Lab Practical 1B
+AST Part II </li>
+ <li>3.1 QA, QC & Quality Management in
+AST Testing </li>
 
     
 
@@ -204,14 +369,93 @@ The course will be taught in English.
 </ul></td>
       <td><ul>
   
-  <li>KEMRI-Wellcome Trust Research Programme</li>
+  <li>University of Cambridge</li>
+   <li>National Institute of Communicable diseases (NICD)</li>
+   <li>Kenya Medical Research Institute </li>
 
  <li> </li>
  
 </ul></td>
             <td><ul>
-             <li>Dr George Githinji</li>
-         
+             <li>Beth Blane</li>
+              <li>Sabelle Jallow</li>
+               <li>Lillian Musila</li>
+</ul></td>
+    </tr>
+  <!-- break -->
+  <!-- break -->
+  <tr>
+    <td class="text-center" colspan="4"><b>Break</b></td> <!-- This creates an empty row -->
+  </tr>
+    <!-- break -->
+    <!-- break -->
+      <tr>
+      <th scope="row">AM
+     </th>
+      <td>    <ul>
+      <li><b> 
+      </b></li>
+<ol>
+  <li>3.2 Computational Practical 1
+Intro to UNIX/Command Line  </li>
+ <li>3.3 Computational Practical 2
+Accessing Data & QC</li>
+
+    
+
+</ol>                 
+</ul></td>
+      <td><ul>
+   <li> Kenya Medical Research Institute</li>
+  <li>NICD</li>
+
+
+ 
+</ul></td>
+            <td><ul>
+             <li>Collins Kigen</li>
+              <li>Mish Moodley</li>
+              <li>Dr Stanford Kwenda</li>
+</ul></td>
+    </tr>
+<!-- Trow -->
+
+  <!-- break -->
+  <!-- break -->
+  <tr>
+    <td class="text-center" colspan="4"><b>Lunch</b></td> <!-- This creates an empty row -->
+  </tr>
+    <!-- break -->
+    <!-- break -->
+      <tr>
+      <th scope="row">PM
+     </th>
+      <td>    <ul>
+      <li><b> 
+      </b></li>
+<ol>
+ <li>3.4 Computational Practical 3
+Assembly (Short Read)
+</li>
+
+ <li>3.5 Computational Practical 4,
+Assembly (Long Read) </li>
+
+ <li>3.6 Computational Practical 5,
+Alignment & Variant Calling </li>
+</ol>                 
+</ul></td>
+      <td><ul>
+  
+  <li>Kenya Medical Research Institute</li>
+
+ <li>University of Cambridge</li>
+ 
+</ul></td>
+            <td><ul>
+            <li>Collins Kigen </li>
+             <li>Narender Kumar</li> 
+            <li>Fahad Khokar</li>
 </ul></td>
     </tr>
   </tbody>
@@ -222,7 +466,7 @@ The course will be taught in English.
 		<p> <table class="day_content table table-bordered table-responsive">
   <thead>
     <tr>
-      <th scope="col">Topic</th>
+      <th scope="col">Session</th>
       <th scope="col">Course materials</th>
       <th scope="col">Training partner</th>
        <th scope="col">Interactive Sessions with Instructor/s</th>
@@ -231,14 +475,19 @@ The course will be taught in English.
   <tbody>
   
    <tr>
-      <th scope="row">Containers
+      <th scope="row">AM
      </th>
       <td>    <ul>
       <li><b> 
       </b></li>
 <ol>
-  <li>4. <a href="#" target="_blank">Link</a>  </li>
- <li>4.1 Containers workflow, theory, coding</li>
+  <li>4. Acquisition & Evolution of
+Resistance: Background, Causes &
+Biological Mechanisms
+</li>
+ <li>4.1 Detecting resistance using command
+line
+</li>
 
     
 
@@ -246,14 +495,108 @@ The course will be taught in English.
 </ul></td>
       <td><ul>
   
-  <li>KEMRI-Wellcome Trust Research Programme</li>
+  <li>Kenya Medical Research Institute</li>
+   <li></li>
 
  <li> </li>
  
 </ul></td>
             <td><ul>
-             <li>Dr George Githinji</li>
-         
+             <li> Collins Kigen </li>
+              <li>Prof Francesc Coll, </li>
+</ul></td>
+    </tr>
+  <!-- break -->
+  <!-- break -->
+  <tr>
+    <td class="text-center" colspan="4"><b>Break</b></td> <!-- This creates an empty row -->
+  </tr>
+    <!-- break -->
+    <!-- break -->
+      <tr>
+      <th scope="row">AM
+     </th>
+      <td>    <ul>
+      <li><b> 
+      </b></li>
+<ol>
+  <li>4.3 Computational Practical 6, cond.
+Detecting resistance using command
+line
+ </li>
+ <li>4.4 Computational Practical 7,
+Online tools (ResFinder,
+PathogenWatch, CARD,
+Enterobase)
+</li>
+
+    
+
+</ol>                 
+</ul></td>
+      <td><ul>
+  
+  <li>Tagomics</li>
+    <li>University of Cambridge</li>
+      <li>Kenya Medical Research Institute</li>
+
+ <li> </li>
+ 
+</ul></td>
+            <td><ul>
+             <li>Anthony Smith</li>
+              <li>Narender Kumar</li>
+               <li>Prof Francesc Coll</li>
+                <li>Collins Kigen </li>
+            
+</ul></td>
+    </tr>
+<!-- Trow -->
+
+  <!-- break -->
+  <!-- break -->
+  <tr>
+    <td class="text-center" colspan="4"><b>Lunch</b></td> <!-- This creates an empty row -->
+  </tr>
+    <!-- break -->
+    <!-- break -->
+      <tr>
+      <th scope="row">PM
+     </th>
+      <td>    <ul>
+      <li><b> 
+      </b></li>
+<ol>
+ <li>4.5 Intro to Metagenomics
+
+</li>
+
+ <li>4.6 Comp. Practical 8, Metagenomics
+QC, Meta Assembly, Classification &
+Quantification
+</li>
+  <li>4.7 Group Project: Detecting Resistance
+& Metagenomics </li>
+
+    
+
+</ol>                 
+</ul></td>
+      <td><ul>
+  
+  <li>University of Liverpool</li>
+    <li>University of Cambridge</li>
+      <li>Chan Zuckerberg Initiative</li>
+       <li>NICD</li>
+ 
+</ul></td>
+            <td><ul>
+             <li>Ewan Harrison</li>
+              <li>Prof Francesc Coll</li>
+                <li>Liz Fahsbender,</li>
+                  <li>Dr Stanford Kwenda</li>
+                 
+
 </ul></td>
     </tr>
   </tbody>
@@ -263,22 +606,60 @@ The course will be taught in English.
 		<p> <table class="day_content table table-bordered table-responsive">
   <thead>
     <tr>
-      <th scope="col">Topic</th>
+      <th scope="col">Session</th>
       <th scope="col">Course materials</th>
       <th scope="col">Training partner</th>
        <th scope="col">Interactive Sessions with Instructor/s</th>
     </tr>
   </thead>
   <tbody>
-   <tr>
-      <th scope="row"> Nextflow workflows
+      <tr>
+      <th scope="row">AM
      </th>
       <td>    <ul>
       <li><b> 
       </b></li>
 <ol>
-  <li>5. <a href="#" target="_blank">Link</a></li>
- <li>5.1 Nextflow theory, coding</li>
+  <li>5. Group Project Presentations </li>
+ <li>5.1 Introduction to Genomic Surveillance
+of AMR </li>
+ <li>5.2 Introduction to Phylogenetics
+ </li>
+</ol>                 
+</ul></td>
+      <td><ul>
+  
+  <li>University of Cambridge</li>
+   <li></li>
+
+ <li> </li>
+ 
+</ul></td>
+            <td><ul>
+             <li>Prof Francesc Coll</li>
+              <li>Dr Stanford Kwenda</li>
+</ul></td>
+    </tr>
+  <!-- break -->
+  <!-- break -->
+  <tr>
+    <td class="text-center" colspan="4"><b>Break</b></td> <!-- This creates an empty row -->
+  </tr>
+    <!-- break -->
+    <!-- break -->
+      <tr>
+      <th scope="row">AM
+     </th>
+      <td>    <ul>
+      <li><b> 
+      </b></li>
+<ol>
+  <li>5.3 Computational Practical 9,
+Analysing Phylogenetics
+ </li>
+ <li>5.4 Computational Practical 10,
+Phylogenetics Visualisation
+(international)</li>
 
     
 
@@ -286,21 +667,180 @@ The course will be taught in English.
 </ul></td>
       <td><ul>
   
-  <li> International Livestock Research Institute (ILRI)</li>
+  <li>University of Cambridge</li>
 
- <li> </li>
+ <li>NICD </li>
  
 </ul></td>
             <td><ul>
-             <li>John Juma</li>
-         
+             <li>Prof Francesc Coll </li>
+              <li>Dr Stanford Kwenda</li>
+</ul></td>
+    </tr>
+<!-- Trow -->
+
+  <!-- break -->
+  <!-- break -->
+  <tr>
+    <td class="text-center" colspan="4"><b>Lunch</b></td> <!-- This creates an empty row -->
+  </tr>
+    <!-- break -->
+    <!-- break -->
+      <tr>
+      <th scope="row">PM
+     </th>
+      <td>    <ul>
+      <li><b> 
+      </b></li>
+<ol>
+ <li>5.5 Computational Practical 10 cond.
+Phylogenetics Visualisation
+(national)
+</li>
+
+ <li>5.6 AMR & One Health </li>
+ 
+
+    
+
+</ol>                 
+</ul></td>
+      <td><ul>
+   <li>University of Cambridge</li>
+  <li>NICD</li>
+
+ 
+</ul></td>
+            <td><ul>
+             <li>Prof Francesc Coll </li>
+              <li>Dr Stanford Kwenda</li>
 </ul></td>
     </tr>
   </tbody>
 </table>  </p>
 	</div>
   <!-- navs --> 
-        <!-- navs- -->
+  	<div class="tab-pane" id="tabs-52" role="tabpanel">
+		<p> <table class="day_content table table-bordered table-responsive">
+  <thead>
+    <tr>
+      <th scope="col">Session</th>
+      <th scope="col">Course materials</th>
+      <th scope="col">Training partner</th>
+       <th scope="col">Interactive Sessions with Instructor/s</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+      <th scope="row">AM
+     </th>
+      <td>    <ul>
+      <li><b> 
+      </b></li>
+<ol>
+  <li>6. Investigation Transmission of Clones &
+AMR Localy Using Genomics
+ </li>
+ <li>6.1 Computational Practical 11
+Analysis of Resistance in Genomes
+of AMR </li>
+ <li>
+ </li>
+</ol>                 
+</ul></td>
+      <td><ul>
+  
+  <li>Tagomics</li>
+   <li>KEMRI</li>
+
+ <li> University of Liverpool</li>
+ 
+</ul></td>
+            <td><ul>
+             <li>Anthony Smith</li>
+              <li>Collins Kigen</li>
+              <li>Ewan Harrison</li>
+</ul></td>
+    </tr>
+  <!-- break -->
+  <!-- break -->
+  <tr>
+    <td class="text-center" colspan="4"><b>Break</b></td> <!-- This creates an empty row -->
+  </tr>
+    <!-- break -->
+    <!-- break -->
+      <tr>
+      <th scope="row">AM
+     </th>
+      <td>    <ul>
+      <li><b> 
+      </b></li>
+<ol>
+  <li>
+ </li>
+ <li>6.2 Presentations - Phylogenetics -
+Typhoid outbreak</li>
+
+    
+
+</ol>                 
+</ul></td>
+      <td><ul>
+  
+  <li></li>
+
+ <li></li>
+ 
+</ul></td>
+            <td><ul>
+             <li></li>
+              <li></li>
+</ul></td>
+    </tr>
+<!-- Trow -->
+
+  <!-- break -->
+  <!-- break -->
+  <tr>
+    <td class="text-center" colspan="4"><b>Lunch</b></td> <!-- This creates an empty row -->
+  </tr>
+    <!-- break -->
+    <!-- break -->
+      <tr>
+      <th scope="row">PM
+     </th>
+      <td>    <ul>
+      <li><b> 
+      </b></li>
+<ol>
+ <li>6.3 Key metrics for reporting genomic
+surveillance results - Q&A - All
+</li>
+
+ <li>6.4 Epi Collect; Genomics Study
+Designs, Genomic Surveillance in
+Africa - All </li>
+ 
+
+    
+
+</ol>                 
+</ul></td>
+      <td><ul>
+   <li></li>
+  <li></li>
+
+ 
+</ul></td>
+            <td><ul>
+             <li> </li>
+              <li></li>
+</ul></td>
+    </tr>
+  </tbody>
+</table>  </p>
+	</div>
+ <!-- navs- -->
       </div>
     </div>
   </div>
