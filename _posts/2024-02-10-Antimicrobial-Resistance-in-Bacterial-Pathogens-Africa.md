@@ -64,7 +64,7 @@ The course will be taught in English.
     </div>
     <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
       <div class="panel-body">
-     Week One
+     <li class="text-center"> <a href="{{ site.url }}uploads/course_data.zip" target="_blank">Course data</a></li>
          <!-- navs -->
 
 <ul class="nav nav-tabs" role="tablist">
@@ -111,6 +111,7 @@ The course will be taught in English.
       <li><b> 
       </b></li>
 <ol>
+<li> <a href="{{ site.url }}uploads/EpiCollect.zip" target="_blank">Epicollect</a></li>
   <li>1. Welcome </li>
  <li>1.1 Team & participant introductions</li>
 
@@ -228,6 +229,7 @@ Surveillance Programmes in Africa -
       <li><b> 
       </b></li>
 <ol>
+<li> <a href="{{ site.url }}uploads/Genomics_Surveillance_AMR.zip" target="_blank">Genomic Surveillance</a></li>
   <li>2. Introduction to AMR:
 Historical & Epidemiological Aspects
  </li>
@@ -358,6 +360,12 @@ Nanopore Sequencing
       <li><b> 
       </b></li>
 <ol>
+<li> <a href="{{ site.url }}uploads/AccessingData_&_QC.zip" target="_blank">Accessing data and QC</a></li>
+<li> <a href="{{ site.url }}uploads/Alignment_&_VariantCalling.zip" target="_blank">Alignment and variant calling</a></li>
+<li> <a href="{{ site.url }}uploads/LongReadAssembly.zip" target="_blank">Long read assembly</a></li>
+<li> <a href="{{ site.url }}uploads/ShortReadAssembly.zip" target="_blank">Short read assembly</a></li>
+<li> <a href="{{ site.url }}uploads/Intro_to_UNIX_CommandLine.zip" target="_blank">Introduction to Unix</a></li>
+
   <li>3. Lab Practical 1B
 AST Part II </li>
  <li>3.1 QA, QC & Quality Management in
@@ -480,7 +488,8 @@ Alignment & Variant Calling </li>
       <td>    <ul>
       <li><b> 
       </b></li>
-<ol>
+<ol><li> <a href="{{ site.url }}uploads/Detecting_resistance_using_CommandLine.zip" target="_blank">Detecting resistance via command line</a></li>
+<li> <a href="{{ site.url }}uploads/Metagenomics.zip" target="_blank">Metagenomics</a></li>
   <li>4. Acquisition & Evolution of
 Resistance: Background, Causes &
 Biological Mechanisms
@@ -619,7 +628,7 @@ Quantification
       <td>    <ul>
       <li><b> 
       </b></li>
-<ol>
+<ol><li> <a href="{{ site.url }}uploads/Phylogenetic.zip" target="_blank">Phylogenetics</a></li>
   <li>5. Group Project Presentations </li>
  <li>5.1 Introduction to Genomic Surveillance
 of AMR </li>
