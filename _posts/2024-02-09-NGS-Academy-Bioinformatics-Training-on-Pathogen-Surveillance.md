@@ -4,9 +4,9 @@ title:  "NGS Academy Bioinformatics Training on Pathogen Surveillance 2024"
 posted_date: 2024-02-09
 permalink: /:year/:title
 link: 2024/NGS-Academy-Bioinformatics-Training-on-Pathogen-Surveillance
-category: upcoming
+category: past-course
 training_provider: "NGS Academy, SANBI, AFRICA CDC"
-course_overview : The aim of this program is to provide virtual training for personnel at African institutions involved in SARS-CoV-2 sequencing for surveillance. It is primarily aimed at staff who will be preparing samples, doing the sequencing, and running basic data analysis. The content has been divided into modules, some of which are independent, while others form recommended prerequisites for the next module. The content provides theoretical knowledge on the steps required for the workflow from sample selection to analysis, to prepare participants for more practical laboratory training when this is feasible. Virtual sessions generally include videos or live online presentations followed by live Q&A sessions with trainers. Where relevant, participants complete practical exercises and submit assignments 
+course_overview : The aim of this program was to provide a virtual training for personnel at African institutions involved in SARS-CoV-2 sequencing for surveillance. It was primarily aimed at staff who were preparing samples, doing the sequencing, and running basic data analysis. The content was divided into modules, some of which were independent, while others form recommended prerequisites for the next module. The content provided theoretical knowledge on the steps required for the workflow from sample selection to analysis, to prepare participants for more practical laboratory training when this is feasible. Virtual sessions generally included videos or live online presentations followed by live Q&A sessions with trainers. Where relevant, participants completed practical exercises and submitted assignments 
 start_date: 2024-03-04
 end_date: 2024-03-15
 ---
