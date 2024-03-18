@@ -22,7 +22,7 @@ end_date: 2024-03-14
 
  <li><b>Venue of course</b>: National Institute of Communicable Diseases (NICD), South Africa </li>
  <li><b>Target audiences:</b> This was a week-long free course opened to applicants based in Africa who were actively engaged in, or who were soon to commence research or work in antimicrobial resistance related fields. This included diagnostic stewardship, antimicrobial stewardship,infection prevention and control, or generate policies related to AMR. Priority was given to postgraduate and postdoctoral scientists, senior technicians and clinical trainees or specialists conducting microbiology work.</li>
-<li><b>Dates for the course:</b> 9-15th  March 2024  </li>
+<li><b>Dates for the course:</b> 9-15th  March 2024 <a href="{{ site.url }}uploads/AMR_2024_Timetable.pdf" target="_blank">Schedule</a> </li>
 <li><b>Training format:</b> 1 Week in-person training</li>
 
 
@@ -48,6 +48,14 @@ Laboratory experience: The laboratory practical sessions required basic microbio
 Computer Proficiency: Prior completion of a free Introduction to Linux for Biologists online course was required to enhance the AMR course learning experience. This course was provided free of charge and it aimed to equip participants with essential bioinformatics skills for pathogen genomics.<br>
 The course was taught in English.
 </p>
+ <b>Patner Institutions:</b>
+
+   <div class="row">
+    <div class="col-sm-4 text-center" style="background-color:rgb(30, 30, 30);"><img alt="..." src="/ngs-academy/img/wcs_logo.svg" /></div>
+    <div class="col-sm-3 text-center"></div>
+    <div class="col-sm-2 text-center" ></div>
+    <div class="col-sm-3 text-center" ></div>
+  </div>
 
 <!-- Course schedule, Trainers and Institutions-->
 
