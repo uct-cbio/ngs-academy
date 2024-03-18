@@ -3,8 +3,8 @@ layout: default
 title:  "Antimicrobial Resistance in Bacterial Pathogens - Africa: 2024"
 posted_date: 2024-02-10
 permalink: /:year/:title
-link: 2024/Antimicrobial-Resistance-in-Bacterial-Pathogens-Africa/dev
-category: past-course-dev
+link: 2024/Antimicrobial-Resistance-in-Bacterial-Pathogens-Africa/dev/
+category: past-course
 training_provider: "Welcome Connecting Science"
 course_overview : The objective of this course was to enhance proficiency in the detection of antimicrobial resistance (AMR) and to cultivate expertise in genomic surveillance of AMR. It aimed to offer a foundational understanding and hands-on training in laboratory methodologies for detecting AMR in bacteria, encompassing both phenotypic and molecular testing. The curriculum also delved into theoretical concepts surrounding the evolution and spread of AMR, while exploring the utilisation of whole-genome sequencing and bioinformatics techniques for AMR surveillance and control. Participants engaged in computational exercises focused on identifying AMR genes, investigating outbreaks, and tracing the transmission of bacterial strains through whole-genome sequence analysis. By providing an end-to-end view of AMR genomics, command-line and web-based analysis tools, the course empowered participants to conduct independent research and apply genomic methodologies in their work. Furthermore, the course fostered collaboration among scientists from diverse regions of Africa, facilitating the establishment of new research networks.
 start_date: 2024-03-09
