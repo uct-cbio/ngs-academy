@@ -3,10 +3,10 @@ layout: default
 title:  "NGS Academy Bioinformatics Training on Pathogen Surveillance 2024"
 posted_date: 2024-02-09
 permalink: /:year/:title
-link: 2024/NGS-Academy-Bioinformatics-Training-on-Pathogen-Surveillance/
-category: upcoming
+link: 2024/NGS-Academy-Bioinformatics-Training-on-Pathogen-Surveillance
+category: past-course
 training_provider: "NGS Academy, SANBI, AFRICA CDC"
-course_overview : The aim of this program is to provide virtual training for personnel at African institutions involved in SARS-CoV-2 sequencing for surveillance. It is primarily aimed at staff who will be preparing samples, doing the sequencing, and running basic data analysis. The content has been divided into modules, some of which are independent, while others form recommended prerequisites for the next module. The content provides theoretical knowledge on the steps required for the workflow from sample selection to analysis, to prepare participants for more practical laboratory training when this is feasible. Virtual sessions generally include videos or live online presentations followed by live Q&A sessions with trainers. Where relevant, participants complete practical exercises and submit assignments 
+course_overview : The aim of this program was to provide a virtual training for personnel at African institutions involved in SARS-CoV-2 sequencing for surveillance. It was primarily aimed at staff who were preparing samples, doing the sequencing, and running basic data analysis. The content was divided into modules, some of which were independent, while others form recommended prerequisites for the next module. The content provided theoretical knowledge on the steps required for the workflow from sample selection to analysis, to prepare participants for more practical laboratory training when this is feasible. Virtual sessions generally included videos or live online presentations followed by live Q&A sessions with trainers. Where relevant, participants completed practical exercises and submitted assignments 
 start_date: 2024-03-04
 end_date: 2024-03-15
 ---
@@ -32,10 +32,10 @@ end_date: 2024-03-15
  <b>Purpose of the course:</b>
 
  <ul>
-  <li>1. Develop fundamental bioinformatics skills. Increasing programming knowledge, developing additional computational skills to allow more capacity building across the  Africa continent</li>
-  <li>2. Introduce different bioinformatic workflows for specific pathogens surveillance.</li>
-  <li>3. Examples on Galaxy, coding in R.</li>
-    <li>4. Use cases of "intermediate bioinformatics": cholera outbreak (which is analysed by mapping reads to reference and is essentially  treated as a clonal organism in an outbreak situation) </li>
+  <li>1. Develop fundamental bioinformatics skills, increasing programming knowledge and developing additional computational skills</li>
+  <li>2. Introduce different bioinformatic workflows for specific pathogen surveillance scenarios</li>
+  <li>3. Provide examples of workflows and analysis using Galaxy, and through coding in R.</li>
+    <li>4. Go through a use case of a cholera outbreak to teach bacterial pathogen surveillance. </li>
   <li>5. Use case we look at the web tools, but focus on the command line with the Bactopia workflow (which is a well maintained nf-core compliant Nextflow workflow) and visualisation using Microreact and Grapetree.</li>
  
 </ul>
@@ -104,13 +104,13 @@ end_date: 2024-03-15
   </thead>
   <tbody>
     <tr>
-      <th scope="row">Introduction Unix/linux, command line, shell scripting
+      <th scope="row"><a href="https://pathogen-genomics-march-2024.sanbi.ac.za/modules/unix-linux-introduction/intro-to-cli/" target="_blank">Introduction Unix/linux, command line, shell scripting</a> 
      </th>
       <td>    <ul>
       <li><b> 
       </b></li>
 <ol>
-  <li>1. <a href="#" target="_blank">Link</a>  </li>
+  <li> </li>
  <li>1.1 Linux, unix, command line, Introduction to Shell, finding & working with files and directories, filters and pipes, loops, writing Shell scripts. Command line tools for genomic data.</li>
 
     
@@ -129,7 +129,7 @@ end_date: 2024-03-15
               <li></li>
 </ul></td>
     </tr>
-  
+
  
     
   </tbody>
@@ -148,13 +148,13 @@ end_date: 2024-03-15
   <tbody>
 
    <tr>
-      <th scope="row">Introduction Unix/linux, command line, shell scripting cont...
+      <th scope="row"><a href="https://pathogen-genomics-march-2024.sanbi.ac.za/modules/unix-linux-introduction/intro-to-cli/" target="_blank">Introduction Unix/linux, command line, shell scripting cont...</a> 
      </th>
       <td>    <ul>
       <li><b> 
       </b></li>
 <ol>
-  <li>2. <a href="#" target="_blank">Link</a>  </li>
+  <li> </li>
  <li>2.1 Linux, unix, command line, Introduction to Shell, finding & working with files and directories, filters and pipes, loops, writing Shell scripts. Command line tools for genomic data.</li>
 
     
@@ -192,14 +192,16 @@ end_date: 2024-03-15
   <tbody>
    
    <tr>
-      <th scope="row">Package management with Conda 
+      <th scope="row">
+      <a href="https://pathogen-genomics-march-2024.sanbi.ac.za/modules/package-management-conda/package-management-conda/" target="_blank">Package management with Conda</a> 
      </th>
       <td>    <ul>
       <li><b> 
       </b></li>
 <ol>
-  <li>3. <a href="#" target="_blank">Link</a>  </li>
- <li>3.1 Coding fundamentals in Conda,, repeating actions with loops, command-line programs</li>
+  <li> <a href="#" target="_blank"></a>  </li>
+   <li>3.1.a <a href="{{ site.url }}uploads/Introduction_to_conda_3_24.pdf" target="_blank">Introduction to Conda</a></li>
+ <li>3.2 Coding fundamentals in Conda,, repeating actions with loops, command-line programs</li>
 
     
 
@@ -234,14 +236,19 @@ end_date: 2024-03-15
   <tbody>
   
    <tr>
-      <th scope="row">Containers
+      <th scope="row">
+         <a href="https://pathogen-genomics-march-2024.sanbi.ac.za/modules/containers/containers/" target="_blank">Containers</a> 
      </th>
       <td>    <ul>
       <li><b> 
       </b></li>
 <ol>
-  <li>4. <a href="#" target="_blank">Link</a>  </li>
- <li>4.1 Containers workflow, theory, coding</li>
+  <li> <a href="#" target="_blank"></a>  </li>
+  <li>4.1.a <a href="{{ site.url }}uploads/Introduction_to_containerisation_3_24.pdf" target="_blank">Introduction to containerisation</a></li>
+  <li>4.1.b <a href="{{ site.url }}uploads/docker_exercise_3_24.pdf" target="_blank">Docker exercise</a></li>
+   <li>4.1.c <a href="{{ site.url }}uploads/sequences.fasta" target="_blank">Sequences.fasta</a></li>
+    <li>4.1.d <a href="{{ site.url }}uploads/primers.fasta" target="_blank">primers.fasta</a></li>
+ <li>4.2 Containers workflow, theory, coding</li>
 
     
 
@@ -274,13 +281,13 @@ end_date: 2024-03-15
   </thead>
   <tbody>
    <tr>
-      <th scope="row"> Nextflow workflows
+      <th scope="row"><a href="https://pathogen-genomics-march-2024.sanbi.ac.za/modules/nextflow/nextflow/" target="_blank">Nextflow workflows</a>
      </th>
       <td>    <ul>
       <li><b> 
       </b></li>
 <ol>
-  <li>5. <a href="#" target="_blank">Link</a></li>
+  <li></li>
  <li>5.1 Nextflow theory, coding</li>
 
     
@@ -354,13 +361,13 @@ end_date: 2024-03-15
   </thead>
   <tbody>
  <tr>
-      <th scope="row"> R programming
+      <th scope="row"> <a href="https://pathogen-genomics-march-2024.sanbi.ac.za/modules/r-programming/r-programming/" target="_blank">R programming</a>
      </th>
       <td>    <ul>
       <li><b> 
       </b></li>
 <ol>
-  <li>6. <a href="#" target="_blank">Link</a></li>
+  <li></li>
  <li>6.1 Introduction R and RStudio IDE, creating functions, R basics analysing multiple datasets R, factors and data frames, dplyr, data visualisation with ggplot2, best practices, producing reports, reading and writing CSV files, loops in R</li>
 
     
@@ -397,13 +404,13 @@ end_date: 2024-03-15
   </thead>
   <tbody>
  <tr>
-      <th scope="row"> R programming cont...
+      <th scope="row"> <a href="https://pathogen-genomics-march-2024.sanbi.ac.za/modules/r-programming/r-programming/" target="_blank">R programming cont...</a>
      </th>
       <td>    <ul>
       <li><b> 
       </b></li>
 <ol>
-  <li>7. <a href="#" target="_blank">Link</a></li>
+  <li></li>
  <li>7.1 Introduction R and RStudio IDE, creating functions, R basics analysing multiple datasets R, factors and data frames, dplyr, data visualisation with ggplot2, best practices, producing reports, reading and writing CSV files, loops in R</li>
 
     
@@ -438,13 +445,13 @@ end_date: 2024-03-15
   </thead>
   <tbody>
     <tr>
-      <th scope="row"> Galaxy introduction
-     </th>
+      <th scope="row"><a href="https://pathogen-genomics-march-2024.sanbi.ac.za/modules/galaxy-introduction/galaxy_topic_1/" target="_blank">Galaxy Introduction</a>
+     </th> 
       <td>    <ul>
       <li><b> 
       </b></li>
 <ol>
-  <li>8. <a href="#" target="_blank">Link</a></li>
+  <li></li>
  <li>8.1 Introduction R and RStudio IDE, creating functions, R basics analysing multiple datasets R, factors and data frames, dplyr, data visualisation with ggplot2, best practices, producing reports, reading and writing CSV files, loops in R</li>
 
     
@@ -479,13 +486,13 @@ end_date: 2024-03-15
   </thead>
   <tbody>
      <tr>
-      <th scope="row"> Cholera case study
+      <th scope="row"> <a href="https://pathogen-genomics-march-2024.sanbi.ac.za/modules/cholera-case-study/cholera-case-study/" target="_blank">Cholera case study</a>
      </th>
       <td>    <ul>
       <li><b> 
       </b></li>
 <ol>
-  <li>9. <a href="#" target="_blank">Link</a></li>
+  <li></li>
  <li>9.1 Cholera examples</li>
 
     
@@ -519,13 +526,14 @@ end_date: 2024-03-15
   </thead>
   <tbody>
  <tr>
-      <th scope="row"> Cholera case study cont...
+      <th scope="row"> <a href="https://pathogen-genomics-march-2024.sanbi.ac.za/modules/cholera-case-study/cholera-case-study/" target="_blank">Cholera case study ...</a> <br>
+       <a href="https://pathogen-genomics-march-2024.sanbi.ac.za/modules/additional/homework/" target="_blank">Additional work</a>
      </th>
       <td>    <ul>
       <li><b> 
       </b></li>
 <ol>
-  <li>10. <a href="#" target="_blank">Link</a></li>
+  <li></li>
  <li>10.1 Cholera examples cont...</li>
 
     
