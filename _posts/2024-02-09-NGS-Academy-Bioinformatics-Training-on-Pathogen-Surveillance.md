@@ -110,10 +110,14 @@ end_date: 2024-03-15
       <li><b> 
       </b></li>
 <ol>
-  <li> </li>
- <li>1.1 Linux, unix, command line, Introduction to Shell, finding & working with files and directories, filters and pipes, loops, writing Shell scripts. Command line tools for genomic data.</li>
 
-    
+ <li>1.1 Linux, unix, command line, Introduction to Shell, finding & working with files and directories, filters and pipes, loops, writing Shell scripts. Command line tools for genomic data.</li>
+ <hr>
+ Videos
+    <li>   <a href="https://www.youtube.com/watch?v=QQjlhNil-FA&list=PL0uR29Znf38zyLE84fdFq9Gmfne2b-o23&index=1" target="_blank">Day 1 Morning Session</a> 
+</li>
+  <li>   <a href="https://www.youtube.com/watch?v=kuwHpPbwhuI&list=PL0uR29Znf38zyLE84fdFq9Gmfne2b-o23&index=2" target="_blank">Day 1 Afternoon Session</a> 
+</li>
 
 </ol>                 
 </ul></td>
@@ -156,9 +160,14 @@ end_date: 2024-03-15
 <ol>
   <li> </li>
  <li>2.1 Linux, unix, command line, Introduction to Shell, finding & working with files and directories, filters and pipes, loops, writing Shell scripts. Command line tools for genomic data.</li>
-
-    
-
+     <hr>
+ Videos
+    <li>   <a href="https://www.youtube.com/watch?v=7SoQJEN5EdI&list=PL0uR29Znf38zyLE84fdFq9Gmfne2b-o23&index=3" target="_blank">Day 2 Morning Session 1</a> 
+</li>
+  <li>   <a href="https://www.youtube.com/watch?v=NcF4KjQ51fM&list=PL0uR29Znf38zyLE84fdFq9Gmfne2b-o23&index=4" target="_blank">Day 2 Morning Session 2</a> 
+</li>
+  <li>   <a href="https://www.youtube.com/watch?v=XNynIsF77pI&list=PL0uR29Znf38zyLE84fdFq9Gmfne2b-o23&index=5" target="_blank">Day 2 Afternoon Session</a> 
+</li>
 </ol>                 
 </ul></td>
       <td><ul>
@@ -202,8 +211,18 @@ end_date: 2024-03-15
   <li> <a href="#" target="_blank"></a>  </li>
    <li>3.1.a <a href="{{ site.url }}uploads/Introduction_to_conda_3_24.pdf" target="_blank">Introduction to Conda</a></li>
  <li>3.2 Coding fundamentals in Conda,, repeating actions with loops, command-line programs</li>
-
-    
+         <hr>
+ Videos
+    <li>   <a href="https://www.youtube.com/watch?v=QXAAMOplO-s&list=PL0uR29Znf38zyLE84fdFq9Gmfne2b-o23&index=6" target="_blank">Day 3 Morning Session 1</a> 
+</li>
+  <li>   <a href="https://www.youtube.com/watch?v=YvE6pPtoz14&list=PL0uR29Znf38zyLE84fdFq9Gmfne2b-o23&index=7" target="_blank">Day 3 Morning Session 2</a> 
+</li>
+ <li>   <a href="https://www.youtube.com/watch?v=4f2QzdYMlsc&list=PL0uR29Znf38zyLE84fdFq9Gmfne2b-o23&index=8" target="_blank">Day 3 Morning Session 3</a> 
+</li>
+  <li>   <a href="https://www.youtube.com/watch?v=fkyHVAxKFPg&list=PL0uR29Znf38zyLE84fdFq9Gmfne2b-o23&index=9" target="_blank">Day 3 Afternoon Session 1</a> 
+</li>
+  <li>   <a href="https://www.youtube.com/watch?v=hC4U1OJp_B8&list=PL0uR29Znf38zyLE84fdFq9Gmfne2b-o23&index=10" target="_blank">Day 3 Afternoon Session 2</a> 
+</li>
 
 </ol>                 
 </ul></td>
@@ -249,8 +268,16 @@ end_date: 2024-03-15
    <li>4.1.c <a href="{{ site.url }}uploads/sequences.fasta" target="_blank">Sequences.fasta</a></li>
     <li>4.1.d <a href="{{ site.url }}uploads/primers.fasta" target="_blank">primers.fasta</a></li>
  <li>4.2 Containers workflow, theory, coding</li>
-
-    
+     <hr>
+ Videos
+    <li>   <a href="https://www.youtube.com/watch?v=q6M8kgDxDYI&list=PL0uR29Znf38zyLE84fdFq9Gmfne2b-o23&index=11" target="_blank">Day 4 Morning Session 1</a> 
+</li>
+  <li>   <a href="https://www.youtube.com/watch?v=k3KMS7wGvbs&list=PL0uR29Znf38zyLE84fdFq9Gmfne2b-o23&index=12" target="_blank">Day 4 Morning Session 2</a> 
+</li>
+  <li>   <a href="https://www.youtube.com/watch?v=ksKlQyzRbKk&list=PL0uR29Znf38zyLE84fdFq9Gmfne2b-o23&index=13" target="_blank">Day 4 Afternoon Session 1</a> 
+</li>
+  <li>   <a href="https://www.youtube.com/watch?v=atRpq8i9avU&list=PL0uR29Znf38zyLE84fdFq9Gmfne2b-o23&index=14" target="_blank">Day 4 Afternoon Session 2</a> 
+</li>
 
 </ol>                 
 </ul></td>
@@ -369,8 +396,14 @@ end_date: 2024-03-15
 <ol>
   <li></li>
  <li>6.1 Introduction R and RStudio IDE, creating functions, R basics analysing multiple datasets R, factors and data frames, dplyr, data visualisation with ggplot2, best practices, producing reports, reading and writing CSV files, loops in R</li>
-
-    
+     <hr>
+ Videos
+    <li>   <a href="https://www.youtube.com/watch?v=mlpj2_kQP0o&list=PL0uR29Znf38zyLE84fdFq9Gmfne2b-o23&index=15" target="_blank">Day 6 Morning Session 1</a> 
+</li>
+  <li>   <a href="https://www.youtube.com/watch?v=z4DOWuMrnss&list=PL0uR29Znf38zyLE84fdFq9Gmfne2b-o23&index=16" target="_blank">Day 6 Morning Session 2</a> 
+</li>
+  <li>   <a href="https://www.youtube.com/watch?v=vk3u354htj0&list=PL0uR29Znf38zyLE84fdFq9Gmfne2b-o23&index=17" target="_blank">Day 6 Afternoon Session 1</a> 
+</li>
 
 </ol>                 
 </ul></td>
@@ -412,8 +445,14 @@ end_date: 2024-03-15
 <ol>
   <li></li>
  <li>7.1 Introduction R and RStudio IDE, creating functions, R basics analysing multiple datasets R, factors and data frames, dplyr, data visualisation with ggplot2, best practices, producing reports, reading and writing CSV files, loops in R</li>
-
-    
+         <hr>
+ Videos
+    <li>   <a href="https://www.youtube.com/watch?v=IpkndYG8G7E&list=PL0uR29Znf38zyLE84fdFq9Gmfne2b-o23&index=18" target="_blank">Day 7 Morning Session 1</a> 
+</li>
+  <li>   <a href="https://www.youtube.com/watch?v=rL8veaeood0&list=PL0uR29Znf38zyLE84fdFq9Gmfne2b-o23&index=19" target="_blank">Day 7 Morning Session 2</a> 
+</li>
+  <li>   <a href="https://www.youtube.com/watch?v=oXZebx6RyYU&list=PL0uR29Znf38zyLE84fdFq9Gmfne2b-o23&index=20" target="_blank">Day 7 Afternoon Session 1</a> 
+</li>
 
 </ol>                 
 </ul></td>
@@ -453,7 +492,18 @@ end_date: 2024-03-15
 <ol>
   <li></li>
  <li>8.1 Introduction R and RStudio IDE, creating functions, R basics analysing multiple datasets R, factors and data frames, dplyr, data visualisation with ggplot2, best practices, producing reports, reading and writing CSV files, loops in R</li>
-
+         <hr>
+ Videos
+    <li>   <a href="https://www.youtube.com/watch?v=NzAL9dWDXrU&list=PL0uR29Znf38zyLE84fdFq9Gmfne2b-o23&index=21" target="_blank">Day 8: Working on remote pc</a> 
+</li>
+  <li>   <a href="https://www.youtube.com/watch?v=l_fWurIJ6SM&list=PL0uR29Znf38zyLE84fdFq9Gmfne2b-o23&index=22" target="_blank">Day 8: Issues checking part 1, cholera case study</a> 
+</li>
+  <li>   <a href="https://www.youtube.com/watch?v=2bRNyuBU3jE&list=PL0uR29Znf38zyLE84fdFq9Gmfne2b-o23&index=23" target="_blank">Day 8: Issues checking part 2</a> 
+</li>
+  <li>   <a href="https://www.youtube.com/watch?v=Akmlz-aqh7M&list=PL0uR29Znf38zyLE84fdFq9Gmfne2b-o23&index=24" target="_blank">Day 8: Morning Session 1</a> 
+</li>
+  <li>   <a href="https://www.youtube.com/watch?v=vELZ1g2cAbI&list=PL0uR29Znf38zyLE84fdFq9Gmfne2b-o23&index=25" target="_blank">Day 8: Afternoon Session 1</a> 
+</li>
     
 
 </ol>                 
@@ -494,8 +544,16 @@ end_date: 2024-03-15
 <ol>
   <li></li>
  <li>9.1 Cholera examples</li>
-
-    
+             <hr>
+ Videos
+    <li>   <a href="https://www.youtube.com/watch?v=keFOTx3igOI&list=PL0uR29Znf38zyLE84fdFq9Gmfne2b-o23&index=26" target="_blank">Day 9 Morning session 1</a> 
+</li>
+  <li>   <a href="https://www.youtube.com/watch?v=BCd9bMDUqug&list=PL0uR29Znf38zyLE84fdFq9Gmfne2b-o23&index=27" target="_blank">Day 9 Morning Session 2</a> 
+</li>
+  <li>   <a href="https://www.youtube.com/watch?v=Nr3_vupxAEA&list=PL0uR29Znf38zyLE84fdFq9Gmfne2b-o23&index=28" target="_blank">Day 9 Afternoon Session 1</a> 
+</li>
+  <li>   <a href="https://www.youtube.com/watch?v=YSFU46lfJq0&list=PL0uR29Znf38zyLE84fdFq9Gmfne2b-o23&index=29" target="_blank">Day 9 Afternoon Session 2</a> 
+</li>
 
 </ol>                 
 </ul></td>
@@ -535,9 +593,14 @@ end_date: 2024-03-15
 <ol>
   <li></li>
  <li>10.1 Cholera examples cont...</li>
-
-    
-
+             <hr>
+ Videos
+    <li>   <a href="https://www.youtube.com/watch?v=TNKpLl73atI&list=PL0uR29Znf38zyLE84fdFq9Gmfne2b-o23&index=30" target="_blank">Day 10 Morning session 1</a> 
+</li>
+  <li>   <a href="https://www.youtube.com/watch?v=b-cVPC61Mmg&list=PL0uR29Znf38zyLE84fdFq9Gmfne2b-o23&index=31" target="_blank">Day 10 Morning Session 2</a> 
+</li>
+  <li>   <a href="https://www.youtube.com/watch?v=YWI0EASZ2K0&list=PL0uR29Znf38zyLE84fdFq9Gmfne2b-o23&index=32" target="_blank">Day 10 Morning Session 3</a> 
+</li>
 </ol>                 
 </ul></td>
       <td><ul>
