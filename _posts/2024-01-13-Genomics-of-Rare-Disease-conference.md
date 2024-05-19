@@ -4,7 +4,7 @@ title: "Genomics of Rare Disease"
 posted_date: 2023-09-10
 main_menu: courses
 permalink: /:year/:title
-category: upcoming
+category: past-course
 course_overview: 
 training_provider: "Wellcome Connecting Science"
 start_date: 2024-03-25
