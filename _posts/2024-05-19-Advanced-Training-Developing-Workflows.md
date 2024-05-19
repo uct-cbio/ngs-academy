@@ -94,8 +94,7 @@ training_provider: "Malawi Liverpool Wellcome Programme, Kenya Welcome Trust Res
 
 <li>Day 1 Bacterial AMR </li>
 <li>Day 2 Metagenomics for diagnostics</li>
-<li>Day 3 Introduction to snakemake</li>
-<li>Day 4 VAriant calling and phylogenetics</li>
+<li>Day 3 VAriant calling and phylogenetics</li>
 
 </ol>
 <br>
