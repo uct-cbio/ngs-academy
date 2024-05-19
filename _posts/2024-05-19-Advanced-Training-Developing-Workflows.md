@@ -88,15 +88,14 @@ training_provider: "Malawi Liverpool Wellcome Programme, Kenya Welcome Trust Res
 <!-- <li><b>Notification date for successful Applicants:</b> </li> -->
 </ol>
 
-<b>Course curriculum:</b>
+<b>Themes:</b>
 <hr>
 <ol class="list-unstyled">
 
-<li>Day 1 HPC and introduction to containers </li>
-<li>Day 2 Introduction to git and file organisation</li>
+<li>Day 1 Bacterial AMR </li>
+<li>Day 2 Metagenomics for diagnostics</li>
 <li>Day 3 Introduction to snakemake</li>
-<li>Day 4 Advanced workflows (Nextflow, CWL) </li>
-<li>Day 5 Practical application </li>
+<li>Day 4 VAriant calling and phylogenetics</li>
 
 </ol>
 <br>
