@@ -156,7 +156,7 @@ training_provider: "Malawi Liverpool Wellcome Programme, Kenya Welcome Trust Res
 <li>1.2 Julia</li>
 <hr>
 Datasets
-<a href="{{ site.url }}uploads/Meta_1-20240520T162153Z-001.zip" target="_blank">Meta 1</a>
+<a href="{{ site.url }}uploads/Meta_1-20240520T162153Z-001.zip" target="_blank">Meta 1</a> <br>
 <a href="{{ site.url }}uploads/Meta_2-20240520T162158Z-001.zip" target="_blank">Meta 2</a>
 </ol>                 
 </ul></td>
