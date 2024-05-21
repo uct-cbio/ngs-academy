@@ -25,7 +25,7 @@ training_provider: "Malawi Liverpool Wellcome Programme, Kenya Welcome Trust Res
 </p>
 <p align="left"><b class="text-left">Purpose:</b></p>
 <p> High-throughput laboratory machines generate large quantities of primary biological data.  Processing these data to generate useful information involves several tools and setting up of complex bioinformatics environments across heterogeneous computing infrastructure. Bioinformatics workflow managers provide portability and reproducibility of analysis and optimization of available computing resources.  </p>
-<p>The Advanced  Bioinformatics workflow workshop was aimed at introducing and deploying Nextflow, a tool that enables scalable and reproducible scientific workflows. </p>
+<p>The Advanced  Bioinformatics workflow workshop is aimed at introducing and deploying Nextflow, a tool that enables scalable and reproducible scientific workflows. </p>
 
 <b>Pre-requisite:</b> 
 
@@ -162,7 +162,7 @@ Datasets
 </ul></td>
       <td><ul>
   
-  <li> KEMRI-Wellcome Trust Research Programme, International Livestock Research Institute (ILRI),Malawi-Liverpool-Wellcome Trust</li>
+  <li> KEMRI-Wellcome Trust Research Programme,International Livestock Research Institute (ILRI),Malawi-Liverpool-Wellcome Trust</li>
 
  <li> </li>
  
