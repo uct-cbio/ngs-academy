@@ -150,12 +150,9 @@ training_provider: "Malawi Liverpool Wellcome Programme, Kenya Welcome Trust Res
      </th>
       <td>    <ul>
 <ol>
-
- <li><a href="#" target="_blank">1.1 ChatGPT</a></li>
-
+ <li>1.1 ChatGPT </li>
 <li>1.2 Julia</li>
 <hr>
-Datasets
 
 </ol>                 
 </ul></td>
