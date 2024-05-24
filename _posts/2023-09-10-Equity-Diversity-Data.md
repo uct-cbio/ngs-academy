@@ -7,8 +7,8 @@ permalink: /:year/:title
 category: past-course
 course_overview: 
 training_provider: "Wellcome Connecting Science"
-start_date: 2023-09-18
-end_date: 2023-09-20
+start_date: "2023-09-18"
+end_date: "2023-09-20"
 group: group1
 link: https://coursesandconferences.wellcomeconnectingscience.org/event/equity-diversity-and-data-20230918/
 ---

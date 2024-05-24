@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Relevant courses offered by edX"
-posted_date: 2021-06-05
+posted_date: "2021-06-05"
 permalink: /:year/:title
 category: available_tag
 

@@ -1,14 +1,14 @@
 ---
 layout: default
 title: "Genomics of Rare Disease"
-posted_date: 2023-09-10
+posted_date: "2023-09-10"
 main_menu: courses
 permalink: /:year/:title
 category: past-course
 course_overview: 
 training_provider: "Wellcome Connecting Science"
-start_date: 2024-03-25
-end_date: 2024-03-27
+start_date: "2024-03-25"
+end_date: "2024-03-27"
 group: group1
 link: https://coursesandconferences.wellcomeconnectingscience.org/event/genomics-of-rare-disease-20240325/?utm_source=paid-landing-page&utm_medium=paid&utm_campaign=&utm_id=grd24&utm_term=&utm_content=
 ---

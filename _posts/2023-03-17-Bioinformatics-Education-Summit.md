@@ -1,14 +1,14 @@
 ---
 layout: default
 title: "Bioinformatics Education Summit"
-posted_date: 2023-03-17
+posted_date: "2023-03-17"
 main_menu: courses
 permalink: /:year/:title
 category: past-course
 course_overview: 
 training_provider: "Welcome Connecting Science"
-start_date: 2023-05-15
-end_date: 2023-05-17
+start_date: "2023-05-15"
+end_date: "2023-05-17"
 group: group1
 link: https://coursesandconferences.wellcomeconnectingscience.org/event/bioinformatics-education-summit-20230515/
 ---

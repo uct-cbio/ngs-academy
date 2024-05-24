@@ -1,14 +1,14 @@
 ---
 layout: default
 title: "Next Generation Sequencing"
-posted_date: 2023-03-06
+posted_date: "2023-03-06"
 main_menu: courses
 permalink: /:year/:title
 category: past-course
 course_overview: 
 training_provider: "Wellcome Connecting Science"
-start_date: 2023-03-24
-end_date: 2023-03-31
+start_date: "2023-03-24"
+end_date: "2023-03-31"
 group: group1
 link: https://coursesandconferences.wellcomeconnectingscience.org/event/next-generation-sequencing-20230324/
 ---

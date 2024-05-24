@@ -1,14 +1,14 @@
 ---
 layout: default
 title: "Mitochondrial Medicine - Therapeutic Development"
-posted_date: 2024-01-12
+posted_date: "2024-01-12"
 main_menu: courses
 permalink: /:year/:title
 category: past-course
 course_overview: 
 training_provider: "Wellcome Connecting Science"
-start_date: 2024-03-18
-end_date: 2024-03-20
+start_date: "2024-03-18"
+end_date: "2024-03-20"
 group: group1
 link: https://coursesandconferences.wellcomeconnectingscience.org/event/mitochondrial-medicine-therapeutic-development-20240318/?utm_source=paid-landing-page&utm_medium=paid&utm_campaign=&utm_id=mitomed24&utm_term=&utm_content=
 ---

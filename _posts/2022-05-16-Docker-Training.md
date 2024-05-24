@@ -1,14 +1,14 @@
 ---
 layout: default
 title:  "Docker training"
-posted_date: 2022-05-16
+posted_date: "2022-05-16"
 main_menu: courses
 permalink: /:year/:title
 training_provider: "NGS Academy"
 category: upcoming-old
 course_overview :  You will learn the fundamentals of Docker and containers from a bioinformatics perspective. First, you will learn what docker is, docker commands and alternatives to docker. Along the way, you will learn how to create Docker images and understand the concept of containers.  
-start_date: 2022-5-16
-end_date: 2022-04-29
+start_date: "2022-5-16"
+end_date: "2022-04-29"
 group: group1
 ---
   

@@ -1,14 +1,14 @@
 ---
 layout: default
 title:  "Virtual software carpentry training workshop"
-posted_date: 2021-09-01
+posted_date: "2021-09-01"
 main_menu: courses
 permalink: /:year/:title
 training_provider: "NGS Academy"
 category: past-course
 course_overview : The Carpentries virtual training workshop was a pre-course to our bioinformatics NGS course. The main focus for this virtual training was to introduce some powerful tools that would allow users to perform complex and powerful tasks, often with just a few keystrokes or lines of code. This helped participants to automate repetitive tasks, easily combine smaller tasks into larger and more powerful workflows.
-start_date: 2021-06-28
-end_date: 2021-07-22
+start_date: "2021-06-28"
+end_date: "2021-07-22"
 group: group1
 
 bioschemas:

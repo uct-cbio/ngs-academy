@@ -1,13 +1,13 @@
 ---
 layout: default
 title: "Advanced Training: Developing Workflows 2024"
-posted_date: 2024-05-20
+posted_date: "2024-05-20"
 permalink: /:year/:title
 link: 2024/Advanced-Training-Developing-Workflows
 category: upcoming
 course_overview : High-throughput laboratory machines generate large quantities of raw biological data. Processing the data to generate useful information involves using several tools and sometimes setting up complex bioinformatics analysis environments across heterogeneous computing devices. Bioinformatics workflows and workflow managers allow reproducibility and portability of analysis plans and optimization of available computing resources. The Advanced Training in Developing Workflows workshop was aimed at introducing, deploying Nextflow, a too which enables scalable and reproducible scientific workflows.     
-start_date: 2024-05-20
-end_date: 2024-05-24
+start_date: "2024-05-20"
+end_date: "2024-05-24"
 group: group1
 training_provider: "Malawi Liverpool Wellcome Programme, Kenya Welcome Trust Research Programme,International Livestock Research Institute-Kenya"
 # link: https://uct-cbio.github.io/ngs-academy/2024/Advanced-Training-Developing-Workflows

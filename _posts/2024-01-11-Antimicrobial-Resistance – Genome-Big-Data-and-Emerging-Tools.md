@@ -1,14 +1,14 @@
 ---
 layout: default
 title: "Antimicrobial Resistance – Genomes, Big Data and Emerging Technologies"
-posted_date: 2024-01-11
+posted_date: "2024-01-11"
 main_menu: courses
 permalink: /:year/:title
 category: past-course
 course_overview: 
 training_provider: "Wellcome Connecting Science"
-start_date: 2024-03-13
-end_date: 2024-03-15
+start_date: "2024-03-13"
+end_date: "2024-03-15"
 group: group1
 link: https://coursesandconferences.wellcomeconnectingscience.org/event/antimicrobial-resistance-genomes-big-data-and-emerging-technologies-20240313/?utm_source=paid-landing-page&utm_medium=paid&utm_campaign=&utm_id=amr24&utm_term=&utm_content=
 ---

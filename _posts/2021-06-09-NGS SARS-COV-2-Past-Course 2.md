@@ -1,12 +1,12 @@
 ---
 layout: default
 title:  "SARS-CoV-2 NGS training course 2021 for Africa CDC"
-posted_date: 2021-06-09
+posted_date: "2021-06-09"
 permalink: /:year/:title
 category: past-course1
 course_overview : The aim of this program was to provide virtual training for personnel at African institutions involved in SARS-CoV-2 sequencing for surveillance. It was primarily aimed at staff preparing samples, doing the sequencing, and running basic data analysis. The content was divided into modules, some of which were independent, while others formed recommended prerequisites for the next module. The content provided theoretical knowledge on the steps required for the workflow from sample selection to analysis, to prepare participants for more practical laboratory training when this is feasible. Virtual sessions generally included videos or live online presentations followed by live Q&A sessions with trainers. Where relevant, participants completed practical exercises and submitted assignments.
-start_date: 2021-06-28
-end_date: 2021-07-22
+start_date: "2021-06-28"
+end_date: "2021-07-22"
 ---
 
 <b>Course outline:</b> [ SARS-CoV-2 NGS training course 2021 for Africa CDC]({{ site.url }}docs/course_outline.pdf)
