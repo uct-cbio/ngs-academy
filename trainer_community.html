@@ -37,7 +37,7 @@ color: white !important
           <div class="row">
               <div class="col-sm-2">
                   <div class="p-3 border bg-light">
-                    <img alt="..." width="90%" src="{{ site.baseurl }}img/globalhealth.png"/>
+                    <img alt="..." width="90%" src="/ngs-academy/img/globalhealth.png"/>
                     <div class="card-footer bg-transparent border-success">How do i join ?<b>Membership:</b><br> <a href="https://pha4ge.org/membership/"
                     target="_blank">https://pha4ge.org/membership
                 </a>
@@ -87,7 +87,7 @@ color: white !important
         <div class="row">
             <div class="col-sm-2">
                 <div class="p-3 border bg-light">
-                  <img alt="..." width="120%" src="{{ site.baseurl }}img/phage-logo-jost-2-q9ekptyqmnek1cgj0oimkdlhuprtm9c3l1erny0z5s.png"/>
+                  <img alt="..." width="120%" src="/ngs-academy/img/phage-logo-jost-2-q9ekptyqmnek1cgj0oimkdlhuprtm9c3l1erny0z5s.png"/>
                 </div>
             </div>
             <div class="col-sm-4">
@@ -128,7 +128,7 @@ color: white !important
               <div class="row">
                   <div class="col-sm-2">
                       <div class="p-3 border bg-light">
-                        <img alt="..." width="70%" src="{{ site.baseurl }}img/ecdc.png"/>
+                        <img alt="..." width="70%" src="/ngs-academy/img/ecdc.png"/>
                         <div class="card-footer bg-transparent border-success">How do i join ?<br><b>Membership:</b> <a href="https://pha4ge.org/membership/"
                           target="_blank">https://eva.ecdc.europa.eu/  
                       </a></div>
@@ -163,6 +163,14 @@ color: white !important
 
 <!--New collapsible -->
 <script>
-
+$(document).ready(function(){
+    
+    $('.collapse').on('shown.bs.collapse', function(){
+ $(this).parent().find(".glyphicon-plus").removeClass("glyphicon-plus").addClass("glyphicon-minus");
+ }).on('hidden.bs.collapse', function(){
+ $(this).parent().find(".glyphicon-minus").removeClass("glyphicon-minus").addClass("glyphicon-plus");
+ }); 
+     
+ });
 
 </script>
