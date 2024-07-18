@@ -1,0 +1,264 @@
+---
+layout: default
+title: Advanced Workflow Communities
+permalink: /advanced-workflow-communities/
+---
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Map with Multiple People</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.1/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.1/dist/MarkerCluster.Default.css" />
+    <style>
+        #map { height: 600px; }
+        .popup-container { max-width: 250px; } /* Adjust max-width as needed */
+        .popup-table { width: 100%; max-height: 300px; overflow-y: auto; }
+        .popup-table img { max-width: 80%; }
+        .popup-table td, .popup-table th { padding: 5px; }
+        .image_border_radius { border-radius: 8px; }
+        @media (max-width: 600px) {
+            .popup-table { max-height: 200px; }
+            .popup-container { max-width: 200px; } /* Adjust max-width as needed for smaller screens */
+        }
+        .hr-wrapper {
+            width: 100%;
+            height: 2px; /* Adjust height as needed */
+            background-color: rgb(204, 204, 204);
+            border: none; /* Remove default border */
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.1/dist/leaflet.markercluster.js"></script>
+    <script>
+        // Initialize the map and set its view to center on the African continent
+        var map = L.map('map').setView([0, 20], 3);
+
+        // Add OpenStreetMap tiles
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Create a marker cluster group
+        var markers = L.markerClusterGroup();
+
+        // Example data with people at specific locations
+        var peopleData = {
+            'Cape Town': {
+                coords: [-33.918861, 18.423300],
+                people: [
+                    {
+                        name: 'Kirsty Lee Garson',
+                        role: 'Bioinformatics Training Coordinator',
+                        institution: 'NGS Academy for the Africa CDC PGI',
+                        focus: 'Developing bioinformatics capacity for disease surveillance',
+                        location: 'Cape Town, RSA',
+                        image: '{{ site.baseurl }}img/klg.png'
+                    },
+                ]
+            },
+
+            'Kisumu': {
+                coords: [-0.091702, 34.767956],
+                people: [
+                    {
+                        name: 'Evalyne',
+                        role: '',
+                        institution: '',
+                        focus: 'Basic Science Lab (Walter Reed Project)',
+                        location: 'Kisumu, Kenya',
+                        image: '{{ site.baseurl }}img/default_pic.png'
+                    },
+
+
+                    {
+                        name: '',
+                        role: '',
+                        institution: '',
+                        focus: '',
+                        location: 'Kisumu, Kenya',
+                        image: '{{ site.baseurl }}img/default_pic.png'
+                    },
+
+                    {
+                        name: '',
+                        role: '',
+                        institution: '',
+                        focus: '',
+                        location: 'Kisumu, Kenya',
+                        image: '{{ site.baseurl }}img/default_pic.png'
+                    },
+                ]
+            },
+
+            'Moshi': {
+                coords: [-3.334883, 37.340382],
+                people: [
+                    {
+                        name: '______',
+                        role: '____',
+                        institution: 'Kilimanjaro Clinical Research Institute',
+                        focus: '___',
+                        location: 'Moshi, Tanzania',
+                        image: '{{ site.baseurl }}img/default_pic.png'
+                    },
+                ]
+            },
+
+
+
+            'Mbarara': {
+                coords: [ -0.607160, 30.654503],
+                people: [
+                    {
+                        name: '______',
+                        role: '____',
+                        institution: 'Mbarara University of Science and Technology',
+                        focus: '___',
+                        location: 'Mbarara, Uganda',
+                        image: '{{ site.baseurl }}img/default_pic.png'
+                    },
+                ]
+            },
+
+            'Goma': {
+                coords: [-1.67409, 29.22845],
+                people: [
+                    {
+                        name: '______',
+                        role: '____',
+                        institution: 'National Institute of Biomedical Research',
+                        focus: '___',
+                        location: 'Goma, Democratic Republic of Congo',
+                        image: '{{ site.baseurl }}img/default_pic.png'
+                    },
+                ]
+            },
+
+            'Nairobi': {
+                coords: [ -1.286389, 36.817223],
+                people: [
+                    {
+                        name: 'Lynette Wangechi',
+                        role: '____',
+                        institution: 'Kenya Medical Research Institute',
+                        focus: '___',
+                        location: 'Nairobi, Kenya',
+                        image: '{{ site.baseurl }}img/default_pic.png'
+                    },
+
+                    {
+                        name: 'Gilbert Kibet',
+                        role: '____',
+                        institution: 'International Livestock Research Institute (ILRI)',
+                        focus: '___',
+                        location: 'Nairobi, Kenya',
+                        image: '{{ site.baseurl }}img/default_pic.png'
+                    },
+
+                    {
+                        name: '______',
+                        role: '____',
+                        institution: 'Kelvin-Kenya Medical Research Institute',
+                        focus: '___',
+                        location: 'Nairobi, Kenya',
+                        image: '{{ site.baseurl }}img/default_pic.png'
+                    },
+                ]
+            },
+
+            'Ibadan': {
+                coords: [7.376736, 3.939786],
+                people: [
+                    {
+                        name: '______',
+                        role: 'Bioinformatician',
+                        institution: 'GHRU, Universiyt of Ibadan Nigeria',
+                        focus: 'Pathogen Bioinformatics, AMR',
+                        location: 'Ibadan, Nigeria',
+                        image: '{{ site.baseurl }}img/default_pic.png'
+                    },
+                ]
+            },
+
+            'Dublin': {
+                coords: [53.350140, -6.266155],
+                people: [
+                    {
+                        name: '______',
+                        role: '',
+                        institution: 'UCD School of Computer Science',
+                        focus: '',
+                        location: 'Dublin, Irieland',
+                        image: '{{ site.baseurl }}img/default_pic.png'
+                    },
+                ]
+            },
+
+            'Malawi': {
+                coords: [-15.786111, 35.005833],
+                people: [
+                    {
+                        name: '____',
+                        role: '____',
+                        institution: 'Malawi-Liverpool-Wellcome Trust Clinical Research Programme',
+                        focus: '',
+                        location: 'Blantyre, Malawi',
+                        image: '{{ site.baseurl }}img/default_pic.png'
+                    },
+                    {
+                        name: '_____ ____',
+                        role: 'Senior Laboratory Technician',
+                        institution: 'Malawi Liverpool Wellcome Programme',
+                        focus: 'Microbial Genomics',
+                        location: 'Blantyre, Malawi',
+                        image: '{{ site.baseurl }}img/default_pic.png'
+                    },
+                    {
+                        name: '____ ____ ____',
+                        role: 'Bioinformatician',
+                        institution: 'Kamuzu University of Health Sciences (KUHeS)',
+                        focus: '',
+                        location: 'Blantyre, Malawi',
+                        image: '{{ site.baseurl }}img/default_pic.png'
+                    }
+                ]
+            }
+        };
+
+        // Add markers to the cluster group
+        for (var place in peopleData) {
+            var data = peopleData[place];
+            var coords = data.coords;
+            var popupContent = '<div class="popup-container"><div class="popup-table">';
+            data.people.forEach(function(person) {
+                popupContent += `
+                    <table>
+                        <hr>
+                        <tr><td colspan="6" style="text-align: center;"><b><h5>${person.name}</h5></b></td></tr>
+                        <tr><td colspan="2" style="text-align: center;"><img class="center_image_text image_border_radius" alt="..." src="${person.image}" /></td></tr>
+                        <tr><th>Current Role</th><td>${person.role}</td></tr>
+                        <tr><th>Institution</th><td>${person.institution}</td></tr>
+                        <tr><th>Focus Areas</th><td>${person.focus}</td></tr>
+                        <tr><th>Location</th><td>${person.location}</td></tr>
+                      
+                    </table>
+                      <hr class="hr-wrapper">
+                `;
+            });
+            popupContent += '</div></div>';
+
+            var marker = L.marker(coords).bindPopup(popupContent);
+            markers.addLayer(marker);
+        }
+
+        // Add the marker cluster group to the map
+        map.addLayer(markers);
+    </script>
+</body>
+</html>
