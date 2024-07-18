@@ -12,7 +12,6 @@ group: group1
 training_provider: "Malawi Liverpool Wellcome Programme, Kenya Welcome Trust Research Programme,International Livestock Research Institute-Kenya"
 # link: https://uct-cbio.github.io/ngs-academy/2024/Advanced-Training-Developing-Workflows
 ---
-
 <!-- 
 <b>Course outline:</b> [ Africa NGS SARS-CoV-2 training course 2021]({{ site.url }}/docs/course_outline.pdf) -->
 <style>
