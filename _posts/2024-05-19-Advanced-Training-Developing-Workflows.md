@@ -14,9 +14,6 @@ training_provider: "Malawi Liverpool Wellcome Programme, Kenya Welcome Trust Res
 ---
 <!-- 
 <b>Course outline:</b> [ Africa NGS SARS-CoV-2 training course 2021]({{ site.url }}/docs/course_outline.pdf) -->
-<style>
-
-</style>
 
 <p align="left"><b class="text-left">Intended audience:</b></p>
 
