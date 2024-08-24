@@ -4,44 +4,34 @@ title: Pathogen Surveillance Training Curricula
 permalink: /courses/curricula/
 ---
 
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
-<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
-<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-<script src="js/responsive-columns.js"></script>
+<head>
 
-<style>
-  th,
-  td {
-    padding: 0px;
-    text-align: left;
-    border: 1px solid #ddd;
-  }
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.7.0/css/buttons.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/select/1.3.3/css/select.dataTables.min.css">
+    
+    <!-- JavaScript -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.7.0/js/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/select/1.3.3/js/dataTables.select.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.7.0/js/buttons.html5.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.7.0/js/buttons.print.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.7.0/js/buttons.colVis.min.js"></script>
+    
+    <!-- Required for Excel export -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    
+    <!-- Required for PDF export -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
 
-  *,
-  *::before,
-  *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  .table-wrapper {
-    /* width: 70%; */
-    /* max-width: 500px; */
-    overflow-x: auto;
-  }
-</style>
+</head>
 
 
-
-
-<input type="checkbox" onclick="toggleColumn(0);" checked> Module code
-<input type="checkbox" onclick="toggleColumn(2);" checked> Pathogen
-<input type="checkbox" onclick="toggleColumn(3);" checked> Persona
-<input type="checkbox" onclick="toggleColumn(1);" checked> Module Title
-
-<div class="table table-responsive" class="table-wrapper" >
-<table id="example" class=" table table-sm">
+<div class="table-responsive-sm" class="table-wrapper" >
+<table id="example" class="table table-striped table-bordered">
 
 
   <thead>
@@ -311,53 +301,7 @@ permalink: /courses/curricula/
 
       <!-- bioinformatics fungal-->
 
-      <!-- <tr>
-        <td>001</td>
-  
-        <td>Fungal</td>
-        <td>Bioinformatics Scientist</td>
-        <td>Fungal NGS data processing</td>
-  
-      </tr>
-      <tr>
-        <td>002</td>
-  
-        <td>Fungal</td>
-        <td>Bioinformatics Scientist</td>
-        <td>Fungal data analysis and FungiDB</td>
-  
-  
-      </tr>
-      <tr>
-        <td>003</td>
-        <td>Fungal</td>
-        <td>Bioinformatics Scientist</td>
-        <td>Phylogenetics
-        </td>
-  
-  
-      </tr>
-      <tr>
-        <td>004</td>
-        <td>Fungal</td>
-        <td>Bioinformatics Scientist</td>
-        <td>Data curation and submission</td>
-  
-  
-      </tr>
-
-      <tr>
-        <td>004</td>
-        <td>Fungal</td>
-        <td>Bioinformatics Scientist</td>
-        <td>Dissemination of genomic surveillance findings <br> to policy makers and the public</td>
-  
-  
-      </tr> -->
-
       <!-- bioinformatics fungal-->
-
-
 
     <!--Wetlab foundational-->
     <tr>
@@ -635,44 +579,86 @@ permalink: /courses/curricula/
 </div>
 <script>
 $(document).ready(function() {
-    var table = $('#example').DataTable();
- 
-    $("#example tfoot th").each( function ( i ) {
-        var select = $('<select><option value=""></option></select>')
-            .appendTo( $(this).empty() )
-            .on( 'change', function () {
-                table.column( i )
-                    .search( $(this).val() )
-                    .draw();
+    function initializeTable(tableId, columnSelectId) {
+        var table = $(tableId).DataTable({
+            dom: 'lBfrtip',
+            buttons: [
+                {
+                    extend: 'collection',
+                    text: 'Export',
+                    buttons: [
+                        {
+                            extend: 'copy',
+                            exportOptions: {
+                                columns: ':visible'
+                            },
+                            action: function(e, dt, button, config) {
+                                var recordCount = dt.page.len();
+                                config.exportOptions.rows = ':lt(' + recordCount + ')';
+                                $.fn.dataTable.ext.buttons.copyHtml5.action.call(this, e, dt, button, config);
+                            }
+                        },
+                        {
+                            extend: 'excel',
+                            exportOptions: {
+                                columns: ':visible'
+                            },
+                            action: function(e, dt, button, config) {
+                                var recordCount = dt.page.len();
+                                config.exportOptions.rows = ':lt(' + recordCount + ')';
+                                $.fn.dataTable.ext.buttons.excelHtml5.action.call(this, e, dt, button, config);
+                            }
+                        },
+                        {
+                            extend: 'csv',
+                            exportOptions: {
+                                columns: ':visible'
+                            },
+                            action: function(e, dt, button, config) {
+                                var recordCount = dt.page.len();
+                                config.exportOptions.rows = ':lt(' + recordCount + ')';
+                                $.fn.dataTable.ext.buttons.csvHtml5.action.call(this, e, dt, button, config);
+                            }
+                        },
+                        {
+                            extend: 'pdf',
+                            exportOptions: {
+                                columns: ':visible'
+                            },
+                            action: function(e, dt, button, config) {
+                                var recordCount = dt.page.len();
+                                config.exportOptions.rows = ':lt(' + recordCount + ')';
+                                $.fn.dataTable.ext.buttons.pdfHtml5.action.call(this, e, dt, button, config);
+                            }
+                        }
+                    ]
+                },
+                'colvis'
+            ],
+            columnDefs: [{
+                targets: '_all',
+                visible: true // Display all columns by default
+            }]
+        });
 
-                    $('#container').css( 'display', 'block' );
-                    table.columns.adjust().draw();
-            } );
- 
-        table.column( i ).data().unique().sort().each( function ( d, j ) {
-            select.append( '<option value="'+d+'">'+d+'</option>' )
-        } );
+        // Create checkboxes for column selection
+        table.columns().every(function(index) {
+            var column = this;
+            var checked = column.visible() ? 'checked' : '';
+            var checkbox = $('<label><input type="checkbox" ' + checked + '>' + $(column.header()).text() + '</label>');
+            
+            // Handle checkbox click event
+            checkbox.find('input').on('click', function() {
+                var isChecked = this.checked;
+                column.visible(isChecked);
+            });
+            $(columnSelectId).append(checkbox);
+        });
+    }
 
-
-
-
-
-    } );  
-
-
-
-} );
-
-
-
-
-function toggleColumn(index) {
-    var table = $('#example').DataTable();
-    var column = table.column(index);
-    column.visible(!column.visible());
-}
-
-
+    initializeTable('#example', '#columnSelect1');
+    // initializeTable('#example3', '#columnSelect2');
+});
 
 
 
