@@ -1,0 +1,121 @@
+---
+layout: default
+title: Home
+permalink: /test-home
+---
+
+
+<style>
+
+    select, button {
+        font-size: 1rem;
+        padding: 0.5rem;
+        margin: 0.5rem 0;
+        width: 200px;
+    }
+    button {
+        background-color: #8c2133;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    button:hover {
+        background-color: #8c2133;
+    }
+    button:disabled {
+        background-color: #cccccc;
+        cursor: not-allowed;
+    }
+  </style>
+  
+  
+  <div class="text-center">
+    <h3>Welcome to NGS Academy Website</h3>
+    <select id="userType">
+        <option value="">Select user type</option>
+        <option value="Trainee">Trainee</option>
+        <option value="Trainer">Trainer</option>
+    </select>
+    <br>
+    <button id="navigateButton" disabled>Go to pages</button>
+  </div>
+  
+  
+  
+  <!-- <div class="row">
+  
+    <div class="col-sm-12">
+      <h3></h3>
+      <p>
+        The Africa CDC Pathogen Genomics Initiative NGS Academy aims to develop and deliver a comprehensive training
+        framework for the implementation of next generation sequencing (NGS) for pathogen surveillance. This
+        includes
+        all
+        aspects of NGS, from sample collection to sequencing and analysis to inform public health interventions.</p>
+  
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-sm-12">
+      <p>
+      <h3>Pathogen genomics and epidemiology training survey </h3>
+      </p>
+      <p>A landscaping exercise is being carried out to identify existing training courses and materials relevant to
+        Pathogen Genomics and Epidemiology. Information about courses and training materials are being collated into
+        a
+        central resource that may be used in training the various role players in this area, most notably in the
+        public
+        health sector.
+        The Survey can be accessed <a href="https://redcap.h3abionet.org/redcap/surveys/?s=FCA9MTKHPH">here</a>.
+      </p>
+    </div>
+  </div>
+  
+  
+  <div class="row ">
+  
+    <div class="col-sm-12">
+  
+      <h3>Upcoming and current courses </h3>
+  
+      <a href="{{ site.baseurl }}/courses">Schedule of upcoming and current
+        courses</a>
+    </div>
+  </div>
+  
+  <div class="row ">
+    <div class="col-sm-12">
+  
+      <p>
+      <h3>Tools and resources </h3>
+      </p>
+      <a href="{{ site.baseurl }}/resources">List of relevant tools</a>
+    </div>
+  </div> -->
+  
+  
+  <script>
+    const userTypeSelect = document.getElementById('userType');
+    const navigateButton = document.getElementById('navigateButton');
+  
+    userTypeSelect.addEventListener('change', function() {
+        const selectedValue = this.value;
+        navigateButton.disabled = !selectedValue;
+        navigateButton.textContent = selectedValue ? `Go to ${selectedValue} pages` : 'Go to pages';
+    });
+  
+    navigateButton.addEventListener('click', function() {
+        const userType = userTypeSelect.value;
+        if (userType === 'Trainee') {
+            console.log('Navigating to Trainee pages');
+            // In a real application, you would redirect here, e.g.:
+             window.location.href = '/courses';
+        } else if (userType === 'Trainer') {
+            console.log('Navigating to Trainer pages');
+            // In a real application, you would redirect here, e.g.:
+            // window.location.href = '/staff-pages';
+        }
+    });
+  </script>
