@@ -3,205 +3,238 @@ layout: default
 title: Home
 permalink: /
 ---
-
-
 <style>
+.containerd {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  /* padding: 20px; */
+  box-sizing: border-box;
+}
+
+.content-selection {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  max-width: 60%;
+  width: 100%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+select, button {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border: 2px solid #ced4da;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
 
 select {
-  font-size: 16px; /* Set the font size for the selected option */
+  background-color: #ffffff;
+  color: #495057;
+  appearance: none;
+  padding-right: 40px;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23495057' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 18px;
 }
 
-select option {
-  font-size: 16px; /* Change the font size for the options */
+select:focus {
+  outline: none;
+  border-color: #8c2133;
+  box-shadow: 0 0 0 3px rgba(140, 33, 51, 0.2);
 }
 
+button {
+  background-color: #8c2133;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
 
-.containerd {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            padding: 0px;
-            /* background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); */
-        }
+button:hover {
+  background-color: #6c1a27;
+  transform: translateY(-2px);
+}
 
-        .content-selection {
-            background: #ffffff;
-            border-radius: 8px;
-            padding: 10px;
-            text-align: center;
-            max-width: 500px;
-            width: 100%;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
+button:active {
+  transform: translateY(0);
+}
 
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 5px;
-            font-weight: 700;
-        
-        }
+button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+  transform: none;
+}
 
-        select, button {
-            width: 100%;
-            padding: 12px;
-            margin: 10px 0;
-            border-radius: 4px;
-            border: 1px solid #ced4da;
-            font-size: 1rem;
-            font-family: 'Open Sans', sans-serif;
-            transition: all 0.3s ease;
-        }
+.section-container {
+  margin-top: 25px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+  opacity: 0;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+}
 
-        select {
-            background-color: #ffffff;
-            color: #495057;
-            appearance: none;
-            padding-right: 30px;
-            cursor: pointer;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23495057' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
-            background-repeat: no-repeat;
-            background-position: right 10px center;
-            background-size: 15px;
-        }
+.section-container.active {
+  max-height: 300px;
+  opacity: 1;
+  overflow-y: auto;
+  border: 2px solid #e9ecef;
+}
 
-        select:focus {
-            outline: none;
-            border-color: #2133;
-            box-shadow: 0 0 0 3px rgba(3, 65, 109, 0.2);
-        }
+.section {
+  padding: 20px;
+  display: none;
+}
 
-        button {
-            background-color: #8c2133;
-            color: #ffffff;
-            font-weight: 600;
-            cursor: pointer;
-            border: none;
-        }
+.section.active {
+  display: block;
+}
 
-        button:hover {
-            background-color: #8c2133;
-        }
+.section h4 {
+  color: #8c2133;
+  margin-top: 0;
+}
 
-        button:disabled {
-            background-color: #6c757d;
-            cursor: not-allowed;
-        }
+.section p, .section ul {
+  color: #495057;
+  line-height: 1.6;
+}
 
-        /* .logo {
-            width: 100px;
-            height: 100px;
-            margin-bottom: 20px;
-        } */
+.section ul {
+  padding-left: 20px;
+}
 
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+/* Scrollbar Styling */
+.section-container::-webkit-scrollbar {
+  width: 8px;
+}
 
-        .content-selection > * {
-            animation: fadeInUp 0.5s ease-out forwards;
-            opacity: 0;
-        }
+.section-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
 
-        .content > *:nth-child(1) { animation-delay: 0.1s; }
-        .content > *:nth-child(2) { animation-delay: 0.2s; }
-        .content > *:nth-child(3) { animation-delay: 0.3s; }
-        .content > *:nth-child(4) { animation-delay: 0.4s; }
+.section-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.section-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.selection-select {
+    height: 35px;  /* Adjust this value as needed */
+    font-size: 13px; /* Adjust to make the text fit nicely */
+    padding: 6px; /* Optional, adjust padding to control inner spacing */
+  }
 
 </style>
+
 <div class="containerd">
-  <div class="content-selection">
-      <h3>Welcome </h3> 
-      <select id="userType">
-        <option value="">Select Your Role</option>
-          <option value="Trainee">Trainee</option>
-          <option value="Trainer">Trainer</option>
-      </select>
-      <button id="navigateButton" disabled><h6>Enter Portal</h6></button>
+<div class="content-selection">
+  <h3>Welcome </h3> 
+  <div class="">
+    <select id="userType" class="selection-select" >
+      <option value="">Select Your Role</option>
+      <option value="Trainee">Trainee</option>
+      <option value="Trainer">Trainer</option>
+  </select>
+  </div>
+  <button id="navigateButton" class="btn-sm"disabled>Enter Portal</button>
+  
+  <div class="section-container">
+      <div id="traineeSection" class="section">
+          <h4>Trainee Information</h4>
+          <p>As a trainee, you will have access to a wide range of courses and learning materials. Our platform is designed to help you develop your skills in pathogen genomics and epidemiology. You'll be able to track your progress, participate in interactive sessions, and connect with experts in the field.</p>
+          <p>Key features for trainees include:</p>
+          <ul>
+              <li>Self-paced learning modules</li>
+              <li>Virtual lab simulations</li>
+              <li>Discussion forums with peers and instructors</li>
+              <li>Regular assessments to track your progress</li>
+          </ul>
+      </div>
+      <div id="trainerSection" class="section">
+          <h4>Trainer Information</h4>
+          <p>As a trainer, you play a crucial role in shaping the next generation of experts in pathogen genomics and epidemiology. Our platform provides you with tools and resources to create engaging and effective training materials.</p>
+          <p>Key features for trainers include:</p>
+          <ul>
+              <li>Course creation and management tools</li>
+              <li>Student progress tracking and analytics</li>
+              <li>Collaboration spaces with other trainers</li>
+              <li>Access to a library of teaching resources and best practices</li>
+          </ul>
+      </div>
   </div>
 </div>
-
-
-<!-- <div class="row">
-
-  <div class="col-sm-12">
-    <h3></h3>
-    <p>
-      The Africa CDC Pathogen Genomics Initiative NGS Academy aims to develop and deliver a comprehensive training
-      framework for the implementation of next generation sequencing (NGS) for pathogen surveillance. This
-      includes
-      all
-      aspects of NGS, from sample collection to sequencing and analysis to inform public health interventions.</p>
-
-  </div>
 </div>
-
-<div class="row">
-  <div class="col-sm-12">
-    <p>
-    <h3>Pathogen genomics and epidemiology training survey </h3>
-    </p>
-    <p>A landscaping exercise is being carried out to identify existing training courses and materials relevant to
-      Pathogen Genomics and Epidemiology. Information about courses and training materials are being collated into
-      a
-      central resource that may be used in training the various role players in this area, most notably in the
-      public
-      health sector.
-      The Survey can be accessed <a href="https://redcap.h3abionet.org/redcap/surveys/?s=FCA9MTKHPH">here</a>.
-    </p>
-  </div>
-</div>
-
-
-<div class="row ">
-
-  <div class="col-sm-12">
-
-    <h3>Upcoming and current courses </h3>
-
-    <a href="{{ site.baseurl }}/courses">Schedule of upcoming and current
-      courses</a>
-  </div>
-</div>
-
-<div class="row ">
-  <div class="col-sm-12">
-
-    <p>
-    <h3>Tools and resources </h3>
-    </p>
-    <a href="{{ site.baseurl }}/resources">List of relevant tools</a>
-  </div>
-</div> -->
-
 
 <script>
 const userTypeSelect = document.getElementById('userType');
-        const navigateButton = document.getElementById('navigateButton');
+const navigateButton = document.getElementById('navigateButton');
+const sectionContainer = document.querySelector('.section-container');
+const traineeSection = document.getElementById('traineeSection');
+const trainerSection = document.getElementById('trainerSection');
 
-        userTypeSelect.addEventListener('change', function() {
-            const selectedValue = this.value;
-            navigateButton.disabled = !selectedValue;
-        });
+userTypeSelect.addEventListener('change', function() {
+  const selectedValue = this.value;
+  navigateButton.disabled = !selectedValue;
+  
+  if (selectedValue === 'Trainee') {
+      navigateButton.textContent = 'Enter Trainee Portal';
+      showSection(traineeSection, trainerSection);
+  } else if (selectedValue === 'Trainer') {
+      navigateButton.textContent = 'Enter Trainer Portal';
+      showSection(trainerSection, traineeSection);
+  } else {
+      navigateButton.textContent = 'Enter Portal';
+      hideAllSections();
+  }
+});
 
-        navigateButton.addEventListener('click', function() {
-            const userType = userTypeSelect.value;
-            if (userType === 'Trainee') {
-                console.log('Navigating to Trainee portal');
-                // In a real application, you would redirect here, e.g.:
-                window.location.href = '/courses/';
-            } else if (userType === 'Trainer') {
-                console.log('Navigating to Trainer dashboard');
-                // In a real application, you would redirect here, e.g.:
-                window.location.href = '/courses/curricula/';
-            }
-        });
+function showSection(showSection, hideSection) {
+  sectionContainer.classList.add('active');
+  showSection.classList.add('active');
+  hideSection.classList.remove('active');
+  
+  // Smooth scroll to the section
+  setTimeout(() => {
+      sectionContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, 100);
+}
+
+function hideAllSections() {
+  sectionContainer.classList.remove('active');
+  traineeSection.classList.remove('active');
+  trainerSection.classList.remove('active');
+}
+
+navigateButton.addEventListener('click', function() {
+  const userType = userTypeSelect.value;
+  if (userType === 'Trainee') {
+      console.log('Navigating to Trainee portal');
+      window.location.href = '/courses/';
+  } else if (userType === 'Trainer') {
+      console.log('Navigating to Trainer dashboard');
+      window.location.href = '/courses/curricula/';
+  }
+});
 </script>
