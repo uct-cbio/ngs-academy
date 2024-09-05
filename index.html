@@ -19,7 +19,7 @@ permalink: /
   border-radius: 12px;
   padding: 15px;
   text-align: center;
-  max-width: 60%;
+  max-width: 80%;
   width: 100%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
@@ -166,10 +166,14 @@ button:disabled {
           <p>As a trainee, you will have access to a wide range of courses and learning materials. Our platform is designed to help you develop your skills in pathogen genomics and epidemiology. You'll be able to track your progress, participate in interactive sessions, and connect with experts in the field.</p>
           <p>Key features for trainees include:</p>
           <ul>
-              <li>Self-paced learning modules</li>
-              <li>Virtual lab simulations</li>
-              <li>Discussion forums with peers and instructors</li>
-              <li>Regular assessments to track your progress</li>
+              <li><a href="{{ site.url }}courses/upcoming-courses/">
+               Upcoming Courses</a></li>
+
+               <li><a href="{{ site.url }}resources/help-desk/">
+                Help-Desk Ticketing System</a></li>
+               
+                <li><a href="{{ site.url }}calendar/">
+                  Calendar</a></li>
           </ul>
       </div>
       <div id="trainerSection" class="section">
@@ -178,9 +182,40 @@ button:disabled {
           <p>Key features for trainers include:</p>
           <ul>
               <li>Course creation and management tools</li>
-              <li>Student progress tracking and analytics</li>
-              <li>Collaboration spaces with other trainers</li>
-              <li>Access to a library of teaching resources and best practices</li>
+              <li><a href="{{ site.url }}courses/curricula/">
+                Pathogen Surveillance Training Curricula</a></li>
+
+                <li><a href="{{ site.url }}resources/help-desk/">
+                  Help-Desk Ticketing System</a></li>
+                <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+     
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+
           </ul>
       </div>
   </div>
