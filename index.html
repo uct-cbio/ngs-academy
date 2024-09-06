@@ -19,8 +19,8 @@ permalink: /
   border-radius: 12px;
   padding: 15px;
   text-align: center;
-  max-width: 80%;
-  width: 100%;
+  max-width: 100%;
+  width: 70%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -150,7 +150,7 @@ button:disabled {
 
 <div class="containerd">
 <div class="content-selection">
-  <h3>Welcome </h3> 
+  <span>Welcome to the NGS Academy website, Select <b>Trainee</b> to embark on your journey to become a genomics expert or <b>Trainer</b> to shape the future of genomics education with your expertise</span> 
   <div class="">
     <select id="userType" class="selection-select" >
       <option value="">Select Your Role</option>
@@ -158,7 +158,12 @@ button:disabled {
       <option value="Trainer">Trainer</option>
   </select>
   </div>
-  <button id="navigateButton" class="btn-sm"disabled>Enter Portal</button>
+
+  <!-- <button id="navigateButton" class="btn-sm"disabled>Enter Portal</button> -->
+
+  <div style="background-color: #8c2133; padding: 2px;color:#ffffff">
+    <span id="navigateButton" class="btn-sm disabled text-white">Enter Portal</span>
+  </div>
   
   <div class="section-container">
       <div id="traineeSection" class="section">
@@ -166,12 +171,13 @@ button:disabled {
           <p>As a trainee, you will have access to a wide range of courses and learning materials. Our platform is designed to help you develop your skills in pathogen genomics and epidemiology. You'll be able to track your progress, participate in interactive sessions, and connect with experts in the field.</p>
           <p>Key features for trainees include:</p>
           <ul>
+            <li><a href="{{ site.url }}resources/help-desk/">
+              Help-Desk Ticketing System</a></li>
+              <li><a href="{{ site.url }}/resources/">
+                Tools & Resources</a></li>
+            
               <li><a href="{{ site.url }}courses/upcoming-courses/">
                Upcoming Courses</a></li>
-
-               <li><a href="{{ site.url }}resources/help-desk/">
-                Help-Desk Ticketing System</a></li>
-               
                 <li><a href="{{ site.url }}calendar/">
                   Calendar</a></li>
           </ul>
@@ -182,39 +188,12 @@ button:disabled {
           <p>Key features for trainers include:</p>
           <ul>
               <li>Course creation and management tools</li>
-              <li><a href="{{ site.url }}courses/curricula/">
-                Pathogen Surveillance Training Curricula</a></li>
+              <li><a href="https://redcap.h3abionet.org/redcap/surveys/?s=FCA9MTKHPH">Pathogen Surveillance Training Survey</a></li>
 
-                <li><a href="{{ site.url }}resources/help-desk/">
-                  Help-Desk Ticketing System</a></li>
+              <li><a href="{{ site.url }}courses/curricula/">Pathogen Surveillance Training Curricula</a></li>
+
+                <li><a href="{{ site.url }}resources/help-desk/">Help-Desk Ticketing System & Trainer database</a></li>
                 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-     
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modal -->
 
           </ul>
       </div>
@@ -234,10 +213,10 @@ userTypeSelect.addEventListener('change', function() {
   navigateButton.disabled = !selectedValue;
   
   if (selectedValue === 'Trainee') {
-      navigateButton.textContent = 'Enter Trainee Portal';
+      navigateButton.textContent = 'Trainee Portal';
       showSection(traineeSection, trainerSection);
   } else if (selectedValue === 'Trainer') {
-      navigateButton.textContent = 'Enter Trainer Portal';
+      navigateButton.textContent = 'Trainer Portal';
       showSection(trainerSection, traineeSection);
   } else {
       navigateButton.textContent = 'Enter Portal';
@@ -266,10 +245,10 @@ navigateButton.addEventListener('click', function() {
   const userType = userTypeSelect.value;
   if (userType === 'Trainee') {
       console.log('Navigating to Trainee portal');
-      window.location.href = '/courses/';
+      //window.location.href = '/courses/';
   } else if (userType === 'Trainer') {
       console.log('Navigating to Trainer dashboard');
-      window.location.href = '/courses/curricula/';
+      //window.location.href = '/courses/curricula/';
   }
 });
 </script>
