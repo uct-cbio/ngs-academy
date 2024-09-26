@@ -606,57 +606,14 @@ $(document).ready(function() {
                     extend: 'collection',
                     text: 'Export',
                     buttons: [
-                        {
-                            extend: 'copy',
-                            exportOptions: {
-                                columns: ':visible'
-                            },
-                            action: function(e, dt, button, config) {
-                                var recordCount = dt.page.len();
-                                config.exportOptions.rows = ':lt(' + recordCount + ')';
-                                $.fn.dataTable.ext.buttons.copyHtml5.action.call(this, e, dt, button, config);
-                            }
-                        },
-                        {
-                            extend: 'excel',
-                            exportOptions: {
-                                columns: ':visible'
-                            },
-                            action: function(e, dt, button, config) {
-                                var recordCount = dt.page.len();
-                                config.exportOptions.rows = ':lt(' + recordCount + ')';
-                                $.fn.dataTable.ext.buttons.excelHtml5.action.call(this, e, dt, button, config);
-                            }
-                        },
-                        {
-                            extend: 'csv',
-                            exportOptions: {
-                                columns: ':visible'
-                            },
-                            action: function(e, dt, button, config) {
-                                var recordCount = dt.page.len();
-                                config.exportOptions.rows = ':lt(' + recordCount + ')';
-                                $.fn.dataTable.ext.buttons.csvHtml5.action.call(this, e, dt, button, config);
-                            }
-                        },
-                        {
-                            extend: 'pdf',
-                            exportOptions: {
-                                columns: ':visible'
-                            },
-                            action: function(e, dt, button, config) {
-                                var recordCount = dt.page.len();
-                                config.exportOptions.rows = ':lt(' + recordCount + ')';
-                                $.fn.dataTable.ext.buttons.pdfHtml5.action.call(this, e, dt, button, config);
-                            }
-                        }
+                        'copy', 'excel', 'csv', 'pdf'
                     ]
                 },
                 'colvis'
             ],
             columnDefs: [{
                 targets: '_all',
-                visible: true // Display all columns by default
+                visible: true
             }]
         });
 
@@ -666,19 +623,43 @@ $(document).ready(function() {
             var checked = column.visible() ? 'checked' : '';
             var checkbox = $('<label><input type="checkbox" ' + checked + '>' + $(column.header()).text() + '</label>');
             
-            // Handle checkbox click event
             checkbox.find('input').on('click', function() {
                 var isChecked = this.checked;
                 column.visible(isChecked);
             });
             $(columnSelectId).append(checkbox);
         });
+
+        // Add filter dropdowns for Pathogen and Persona
+        var pathogenColumn = table.column(1);
+        var personaColumn = table.column(2);
+
+        var pathogenSelect = $('<select><option value="">All Pathogens</option></select>')
+            .appendTo($(tableId + '_wrapper .dataTables_filter'))
+            .on('change', function() {
+                var val = $.fn.dataTable.util.escapeRegex($(this).val());
+                pathogenColumn.search(val ? '^' + val + '$' : '', true, false).draw();
+            });
+
+        var personaSelect = $('<select><option value="">All Personas</option></select>')
+            .appendTo($(tableId + '_wrapper .dataTables_filter'))
+            .on('change', function() {
+                var val = $.fn.dataTable.util.escapeRegex($(this).val());
+                personaColumn.search(val ? '^' + val + '$' : '', true, false).draw();
+            });
+
+        // Populate the dropdowns with unique values
+        pathogenColumn.data().unique().sort().each(function(d, j) {
+            pathogenSelect.append('<option value="' + d + '">' + d + '</option>');
+        });
+
+        personaColumn.data().unique().sort().each(function(d, j) {
+            personaSelect.append('<option value="' + d + '">' + d + '</option>');
+        });
     }
 
     initializeTable('#example', '#columnSelect1');
-    // initializeTable('#example3', '#columnSelect2');
 });
-
 
 
 
