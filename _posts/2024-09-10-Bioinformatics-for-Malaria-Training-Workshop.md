@@ -55,7 +55,7 @@ To understand the spread over the country of populations of parasites carrying a
         </div>
     </div>
     <div class="col-sm-5">
-        <div><img alt="..." src="{{ site.baseurl }}img/bioinformatics-malaria-2024.png" width="90%" />
+        <div><img alt="..." src="{{ site.baseurl }}img/bioinformatics-malaria-2024.png" width="100%" />
             <!-- <p class="small"> Source: CBIO UCT</p> -->
         </div>
     </div>
@@ -139,20 +139,20 @@ To understand the spread over the country of populations of parasites carrying a
   <tbody>
     <tr>
       <th scope="row">
-      <li>1. </li> 
-          <li>2. </li> 
-      <li>3. </li> 
+      <li>1.General Malaria </li> 
+          <li> </li> 
+      <li> </li> 
      </th>
       <td>    <ul>
 <ol>
 
- <li><a href="#" target="_blank">1.1 </a></li>
+ <li><a href="#" target="_blank"> </a></li>
 
-<li>1.2 </li>
+<li></li>
 <hr>
-Datasets
-<a href="#" target="_blank"> 1</a>
-<a href="#" target="_blank">2</a>
+
+<a href="#" target="_blank"> </a>
+<a href="#" target="_blank"></a>
 </ol>                 
 </ul></td>
       <td><ul>
@@ -187,17 +187,21 @@ Datasets
 
    <tr>
       <th>
-      <li>1. </li> 
-          <li>2. </li> 
-      <li>3. </li> 
+      <li>2. Use cases of Malaria NGS </li> 
+          <li>2.1 Drug resistance surveillance
+
+ </li> 
+      <li>2.2 Transmission analysis
+</li>       <li>2.3 Diagnostics resistance
+</li> 
      </th>
       <td>    <ul>
       <li></li>
 <ol>
- <li>2.1 </li>
+ <li> </li>
    <li>
 </li>
-   <li>-
+   <li>
 </li>
      <hr>
 </ol>                 
@@ -206,12 +210,12 @@ Datasets
   
   <li>..</li>
 
- <li> </li>
+ <li>.. </li>
  
 </ul></td>
             <td><ul>
              <li>...</li>
-              <li></li>
+              <li>..</li>
 </ul></td>
     </tr>
 
@@ -234,16 +238,18 @@ Datasets
    
    <tr>
       <th scope="row">
-         <li>1. </li> 
-          <li>2. </li> 
-      <li>3. </li> 
+         <li>3.Targeted Sequencing,
+Metagenomics
+ </li> 
+          <li>..</li> 
+      <li>..</li> 
      </th>
       <td>    <ul>
       <li><b> 
       </b></li>
 <ol>
- <li>3.1</li>
-    <li>-</li>
+ <li></li>
+    <li></li>
 
 </ol>                 
 </ul></td>
@@ -277,15 +283,15 @@ Datasets
   
    <tr>
       <th scope="row">
-         <li>1. </li> 
-          <li>2. </li> 
-      <li>3. </li> 
+         <li>4.Phylogenetic Analysis </li> 
+          <li> </li> 
+      <li></li> 
      </th>
       <td>    <ul>
       <li><b> 
       </b></li>
 <ol>
-  <li>4.1 </li>
+  <li> </li>
     <li>- </li>
       <li>- </li>
 </ol>                 
@@ -318,16 +324,16 @@ Datasets
   <tbody>
    <tr>
       <th scope="row">
-         <li>1. </li> 
-          <li>2. </li> 
-      <li>3. </li> 
+         <li>5. R, Population Genetic Analysis  </li> 
+          <li> </li> 
+      <li></li> 
      </th>
       <td>    <ul>
       <li><b> 
       </b></li>
 <ol>
   <li></li>
- <li>5.1 </li>
+ <li> </li>
   <li>- </li>
 
     
