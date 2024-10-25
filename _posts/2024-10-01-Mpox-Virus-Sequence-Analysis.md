@@ -3,7 +3,6 @@ layout: default
 title: "Mpox Virus Sequence Analysis October 2024"
 posted_date: "2024-10-01"
 permalink: /:year/:title
-link: 2024/Mpox-Virus-Sequence-Analysis
 category: upcoming
 course_overview : An introductory course on Mpox Virus Sequence Analysis for Genomic Epidemiology.The course is a two week (10 days) programme of in-person instruction combining theoretical back with practical instruction and opporunity for hands-on practice of the skills presented.
 start_date: "2024-10-14"
