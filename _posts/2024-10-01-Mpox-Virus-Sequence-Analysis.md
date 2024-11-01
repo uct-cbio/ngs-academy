@@ -8,7 +8,7 @@ course_overview : An introductory course on Mpox Virus Sequence Analysis for Gen
 start_date: "2024-10-14"
 end_date: "2024-10-25"
 group: group1
-training_provider: "Africa CDC, H3ABioNet,SANBI"
+training_provider: "Africa CDC, H3ABioNet, SANBI, ILRI, Thiagen Genomics"
 link: https://mpxv2024.sanbi.ac.za/
 ---
 <!-- test -->
