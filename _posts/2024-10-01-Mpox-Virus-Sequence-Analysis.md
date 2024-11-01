@@ -12,7 +12,7 @@ training_provider: "Africa CDC, H3ABioNet,SANBI"
 link: https://mpxv2024.sanbi.ac.za/
 ---
 <!-- test -->
-<p>The course will cover:</p>
+<p>The course will covered:</p>
 <ul>
 <li>1. Introduction Unix/Linux </li>
 <li>2. Introduction to MPX AND EPI2ME</li>
@@ -20,3 +20,6 @@ link: https://mpxv2024.sanbi.ac.za/
 <li>4. Phylogenetics </li>
 <li>5. Data-Sharing</li>
 </ul>
+
+more detail: https://mpxv2024.sanbi.ac.za/
+---
