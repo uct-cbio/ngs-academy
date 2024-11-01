@@ -4,7 +4,7 @@ title: "Genomics and Clinical Virology 2025"
 posted_date: "2024-09-03"
 main_menu: courses
 permalink: /:year/:title
-category: past-course
+category: upcoming
 course_overview: 
 training_provider: Welcome Connecting Science
 start_date: "2025-03-02"
