@@ -26,6 +26,18 @@ Beginner - intermediate level bioinformaticians working with next-generation seq
 Genomic epidemiology of resistant P. falciparum training in Côte d’Ivoire with the aim to uncover the genomic signatures due to various selection pressures to be identified (host immune system? background genetics? epidemiological facies? or other).
 To understand the spread over the country of populations of parasites carrying any malaria drug resistant-conferring markers.
  </p>
+
+<p align="left"><b class="text-left">Pre-workshop training in Oct 2024. (will be conducted by IPCI team before the training) :</b> <br>
+NGS workflows<br>
+•⁠  ⁠NGS technologies<br>
+•⁠  ⁠NGS file formats<br>
+•⁠  ⁠Linux and the command line<br>
+•⁠  ⁠shell programming<br>
+•⁠  ⁠Conda installation and use<br>
+•⁠  ⁠QC and Trimming<br>
+•⁠  ⁠Mapping, Variant calling, Explore and filter VCF<br>
+ </p>
+
 <b>Pre-requisite:</b> 
 <ol>
 <li>French language is essential
@@ -77,288 +89,521 @@ To understand the spread over the country of populations of parasites carrying a
 
 <li id="endDate"><b>End date: </b>2024-11-29</li>
 
-<!-- <li><b>Course sponsors</b>: TBA</li> -->
-
-<!-- <u><li><b>Participant applications</b></li></u>
-
-<li><b>Registration for participants opened:</b> 25 Feb 2022</li> -->
-
-<!-- <li><b>Registration for participants closed:</b> 04 March 2022</li> -->
-
-<!-- <li><b>Notification date for successful Applicants:</b> </li> -->
 </ol>
 <br>
 
 <!-- Course schedule, Trainers and Institutions-->
-   
 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
   <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="headingOne">
       <h4 class="panel-title">
         <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
- Bioinformatics for Malaria Training Workshop
+          Bioinformatics for Malaria Training Workshop
         </a>
       </h4>
     </div>
     <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
       <div class="panel-body">
-         <!-- navs -->
-
-<ul class="nav nav-tabs" role="tablist">
-	<li class="nav-item">
-		<a class="nav-link active" data-toggle="tab" href="#tabs-11" role="tab">Mon 25 Nov 2024</a>
-	</li>
-	<li class="nav-item">
-		<a class="nav-link" data-toggle="tab" href="#tabs-21" role="tab">Tues 26 Nov 2024</a>
-	</li>
-	<li class="nav-item">
-		<a class="nav-link" data-toggle="tab" href="#tabs-31" role="tab">Wed 27 Nov 2024</a>
-	</li>
- 
-  	<li class="nav-item">
-		<a class="nav-link" data-toggle="tab" href="#tabs-41" role="tab">Thur 28 Nov 2024</a>
-	</li>
-
-
-   	<li class="nav-item">
-		<a class="nav-link" data-toggle="tab" href="#tabs-51" role="tab">Fri 29 Nov 2024</a>
-	</li>
-  
-</ul><!-- Tab panes -->
-<div class="tab-content">
-	<div class="tab-pane active" id="tabs-11" role="tabpanel">
-		<p>   <table class="day_content table table-bordered table-responsive">
-  <thead>
-    <tr>
-      <th scope="col">Themes</th>
-      <th scope="col">Course materials</th>
-      <th scope="col">Training partner</th>
-       <th scope="col">Interactive Sessions with Instructor/s</th>
-    </tr> 
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">
-      <li>1.General Malaria </li> 
-          <li> </li> 
-      <li> </li> 
-     </th>
-      <td>    <ul>
-<ol>
-
- <li><a href="#" target="_blank"> </a></li>
-
-<li></li>
-<hr>
-
-<a href="#" target="_blank"> </a>
-<a href="#" target="_blank"></a>
-</ol>                 
-</ul></td>
-      <td><ul>
-  
-  <li> ...</li>
-
- <li> </li>
- 
-</ul></td>
-            <td><ul>
-             <li>..</li>
-              <li></li>
-</ul></td>
-    </tr>
-
- 
-    
-  </tbody>
-</table>    </p>
-	</div>
-	<div class="tab-pane" id="tabs-21" role="tabpanel">
-		<p> <table class="day_content table table-bordered table-responsive">
-  <thead>
-    <tr>
-      <th scope="col">Themes</th>
-      <th scope="col">Course materials</th>
-      <th scope="col">Training partner</th>
-       <th scope="col">Interactive Sessions with Instructor/s</th>
-    </tr>
-  </thead>
-  <tbody>
-
-   <tr>
-      <th>
-      <li>2. Use cases of Malaria NGS </li> 
-          <li>2.1 Drug resistance surveillance
-
- </li> 
-      <li>2.2 Transmission analysis
-</li>       <li>2.3 Diagnostics resistance
-</li> 
-     </th>
-      <td>    <ul>
-      <li></li>
-<ol>
- <li> </li>
-   <li>
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#tabs-11" role="tab">Mon 25 Nov 2024</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#tabs-21" role="tab">Tues 26 Nov 2024</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#tabs-31" role="tab">Wed 27 Nov 2024</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#tabs-41" role="tab">Thur 28 Nov 2024</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#tabs-51" role="tab">Fri 29 Nov 2024</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="tabs-11" role="tabpanel">
+            <table class="day_content table table-bordered table-responsive">
+              <thead>
+                <tr>
+                  <th scope="col">Time</th>
+                  <th scope="col">Themes</th>
+                  <th scope="col">Course materials</th>
+                  <th scope="col">Training partner</th>
+                  <th scope="col">Interactive Sessions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>09:00 - 10:00</td>
+                  <td>
+                    <ul>
+                      <li>General Malaria</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Materials</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Morning Instructor</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Morning Interactive Session</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>11:00 - 13:00</td>
+                  <td>
+                    <ul>
+                      <li>General Malaria: Session 2</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Materials</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Morning Instructor</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Morning Interactive Session</li>
+                    </ul>
+                  </td>
+                </tr>
+                 <tr>
+                  <td>14:00 - 16:00</td>
+                  <td>
+                    <ul>
+                      <li>General Malaria: Session 3</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Materials</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Afternoon Instructor</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Afternoon Interactive Session</li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tab-pane" id="tabs-21" role="tabpanel">
+            <table class="day_content table table-bordered table-responsive">
+              <thead>
+                <tr>
+                  <th scope="col">Time</th>
+                  <th scope="col">Themes</th>
+                  <th scope="col">Course materials</th>
+                  <th scope="col">Training partner</th>
+                  <th scope="col">Interactive Sessions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>09:00 - 10:00</td>
+                  <td>
+                    <ul>
+                      <li>Session 1: Use cases of Malaria NGS<br>
+-Drug resistance surveillance<br>
+-Transmission analysis<br>
+-Diagnostics resistance<br>
 </li>
-   <li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Materials</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Morning Instructor</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Morning Interactive Session</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>11:00 - 13:00</td>
+                  <td>
+                    <ul>
+                      <li>Session 2</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Materials</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Morning Instructor</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Morning Interactive Session</li>
+                    </ul>
+                  </td>
+                </tr>
+                 <tr>
+                  <td>14:00 - 16:00</td>
+                  <td>
+                    <ul>
+                      <li>Session 3</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Materials</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Afternoon Instructor</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Afternoon Interactive Session</li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tab-pane" id="tabs-31" role="tabpanel">
+            <table class="day_content table table-bordered table-responsive">
+              <thead>
+                <tr>
+                  <th scope="col">Time</th>
+                  <th scope="col">Themes</th>
+                  <th scope="col">Course materials</th>
+                  <th scope="col">Training partner</th>
+                  <th scope="col">Interactive Sessions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>09:00 - 10:00</td>
+                  <td>
+                    <ul>
+                      <li>Session 1:
+                    </li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Materials</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Morning Instructor</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Morning Interactive Session</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>11:00 - 13:00</td>
+                  <td>
+                    <ul>
+                      <li>Targeted Sequencing,
+Metagenomics<br>
+Session 2</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Materials</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Morning Instructor</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Morning Interactive Session</li>
+                    </ul>
+                  </td>
+                </tr>
+                 <tr>
+                  <td>14:00 - 16:00</td>
+                  <td>
+                    <ul>
+                      <li>Session 3</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Materials</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Afternoon Instructor</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Afternoon Interactive Session</li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+   <div class="tab-pane" id="tabs-41" role="tabpanel">
+            <table class="day_content table table-bordered table-responsive">
+              <thead>
+                <tr>
+                  <th scope="col">Time</th>
+                  <th scope="col">Themes</th>
+                  <th scope="col">Course materials</th>
+                  <th scope="col">Training partner</th>
+                  <th scope="col">Interactive Sessions</th>
+                </tr>
+              </thead>
+              <tbody>
+                              <tr>
+                  <td>09:00 - 10:00</td>
+                  <td>
+                    <ul>
+                      <li>Session 1:
+                    </li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Materials</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Morning Instructor</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Morning Interactive Session</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>11:00 - 13:00</td>
+                  <td>
+                    <ul>
+                      <li>
+Session 2</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Materials</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Morning Instructor</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Morning Interactive Session</li>
+                    </ul>
+                  </td>
+                </tr>
+                 <tr>
+                  <td>14:00 - 16:00</td>
+                  <td>
+                    <ul>
+                      <li>Session 3: Phylogenetic Analysis</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Materials</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Afternoon Instructor</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Afternoon Interactive Session</li>
+                    </ul>
+                  </td>
+                </tr>
+                                 <tr>
+                  <td>16:30 - 19:00</td>
+                  <td>
+                    <ul>
+                      <li>Session 3: R, Population Structure</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Materials</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Afternoon Instructor</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Afternoon Interactive Session</li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tab-pane" id="tabs-51" role="tabpanel">
+            <table class="day_content table table-bordered table-responsive">
+              <thead>
+                <tr>
+                  <th scope="col">Time</th>
+                  <th scope="col">Themes</th>
+                  <th scope="col">Course materials</th>
+                  <th scope="col">Training partner</th>
+                  <th scope="col">Interactive Sessions</th>
+                </tr>
+              </thead>
+              <tbody>
+                              <tr>
+                  <td>09:00 - 10:00</td>
+                  <td>
+                    <ul>
+                      <li>Session 1:R, Population Genetic Analysis 
+                    </li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Materials</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Morning Instructor</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Morning Interactive Session</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>11:00 - 13:00</td>
+                  <td>
+                    <ul>
+                      <li>Session 2 <br> R, Population Genetic Analysis (Part 2)<br>
+-Genome scans continue <br>
+-Intro to genome wide association analysis <br>
+
 </li>
-     <hr>
-</ol>                 
-</ul></td>
-      <td><ul>
-  
-  <li>..</li>
-
- <li>.. </li>
- 
-</ul></td>
-            <td><ul>
-             <li>...</li>
-              <li>..</li>
-</ul></td>
-    </tr>
-
- 
-  </tbody>
-</table>  
-</p>
-	</div>
-	<div class="tab-pane" id="tabs-31" role="tabpanel">
-		<p>   <table class="day_content table table-bordered table-responsive">
-  <thead>
-    <tr>
-      <th scope="col">Themes</th>
-      <th scope="col">Course materials</th>
-      <th scope="col">Training partner</th>
-       <th scope="col">Interactive Sessions with Instructor/s</th>
-    </tr>
-  </thead>
-  <tbody>
-   
-   <tr>
-      <th scope="row">
-         <li>3.Targeted Sequencing,
-Metagenomics
- </li> 
-          <li>..</li> 
-      <li>..</li> 
-     </th>
-      <td>    <ul>
-      <li><b> 
-      </b></li>
-<ol>
- <li></li>
-    <li></li>
-
-</ol>                 
-</ul></td>
-      <td><ul>
-  
-  <li>.</li>
-
- <li> </li>
- 
-</ul></td>
-            <td><ul>
-             <li></li>
-         
-</ul></td>
-    </tr>
-  </tbody>
-</table>  </p>
-	</div>
-
-  	<div class="tab-pane" id="tabs-41" role="tabpanel">
-		<p> <table class="day_content table table-bordered table-responsive">
-  <thead>
-    <tr>
-      <th scope="col">Themes</th>
-      <th scope="col">Course materials</th>
-      <th scope="col">Training partner</th>
-       <th scope="col">Interactive Sessions with Instructor/s</th>
-    </tr>
-  </thead>
-  <tbody>
-  
-   <tr>
-      <th scope="row">
-         <li>4.Phylogenetic Analysis </li> 
-          <li> </li> 
-      <li></li> 
-     </th>
-      <td>    <ul>
-      <li><b> 
-      </b></li>
-<ol>
-  <li> </li>
-    <li>- </li>
-      <li>- </li>
-</ol>                 
-</ul></td>
-      <td><ul>
-  
-  <li></li>
-
- <li> </li>
- 
-</ul></td>
-            <td><ul>
-             <li></li>
-         
-</ul></td>
-    </tr>
-  </tbody>
-</table>  </p>
-	</div>
-    	<div class="tab-pane" id="tabs-51" role="tabpanel">
-		<p> <table class="day_content table table-bordered table-responsive">
-  <thead>
-    <tr>
-      <th scope="col">Themes</th>
-      <th scope="col">Course materials</th>
-      <th scope="col">Training partner</th>
-       <th scope="col">Interactive Sessions with Instructor/s</th>
-    </tr>
-  </thead>
-  <tbody>
-   <tr>
-      <th scope="row">
-         <li>5. R, Population Genetic Analysis  </li> 
-          <li> </li> 
-      <li></li> 
-     </th>
-      <td>    <ul>
-      <li><b> 
-      </b></li>
-<ol>
-  <li></li>
- <li> </li>
-  <li>- </li>
-
-    
-
-</ol>                 
-</ul></td>
-      <td><ul>
-  
-  <li></li>
-
- <li> </li>
- 
-</ul></td>
-            <td><ul>
-             <li></li>
-         
-</ul></td>
-    </tr>
-  </tbody>
-</table>  </p>
-	</div>
-  <!-- navs -->
-        <!-- navs- -->
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Materials</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Morning Instructor</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Morning Interactive Session</li>
+                    </ul>
+                  </td>
+                </tr>
+                 <tr>
+                  <td>14:00 - 16:00</td>
+                  <td>
+                    <ul>
+                      <li>Session 3: Review and Feedback</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Materials</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Afternoon Instructor</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Afternoon Interactive Session</li>
+                    </ul>
+                  </td>
+                </tr>
+                                 <tr>
+                  <td>16:30 - 19:00</td>
+                  <td>
+                    <ul>
+                      <li>Session 4:Lab visit</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Materials</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Afternoon Instructor</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Afternoon Interactive Session</li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-
 </div>
