@@ -138,17 +138,18 @@ NGS workflows<br>
                   <td>09:00 - 10:00</td>
                   <td>
                     <ul>
-                      <li>General Malaria</li>
+                      <li>General Malaria 
+                      </li>
                     </ul>
                   </td>
                   <td>
                     <ul>
-                      <li>Materials</li>
+                      <li><a target="_blank" rel="relation_name" href="https://www.youtube.com/watch?v=DRuANTfPfsY&list=PL0uR29Znf38xuAz-xnF0H1CIe9cNMK92V&index=1">Malaria, essential to guide in understanding the key concepts, behaviors malaria</a></li>
                     </ul>
                   </td>
                   <td>
                     <ul>
-                      <li>Morning Instructor</li>
+                      <li> IPCI</li>
                     </ul>
                   </td>
                   <td>
@@ -166,12 +167,12 @@ NGS workflows<br>
                   </td>
                   <td>
                     <ul>
-                      <li>Materials</li>
+                      <li><a target="_blank" rel="relation_name" href="https://www.youtube.com/watch?v=AE4Woy62jvE&list=PL0uR29Znf38xuAz-xnF0H1CIe9cNMK92V&index=2">Malaria, coverage for a malaria sample compared against a reference.</a></li>
                     </ul>
                   </td>
                   <td>
                     <ul>
-                      <li>Morning Instructor</li>
+                      <li> IPCI</li>
                     </ul>
                   </td>
                   <td>
@@ -189,12 +190,14 @@ NGS workflows<br>
                   </td>
                   <td>
                     <ul>
-                      <li>Materials</li>
+                            <li><a target="_blank" rel="relation_name" href="https://www.youtube.com/watch?v=3kRZLppAoHg&list=PL0uR29Znf38xuAz-xnF0H1CIe9cNMK92V&index=3">Malaria, Sample Analysis.</a></li>
+                                              <li><a target="_blank" rel="relation_name" href="https://www.youtube.com/watch?v=ONcPdcvKURk&list=PL0uR29Znf38xuAz-xnF0H1CIe9cNMK92V&index=4">Malaria, Sample Analysis fastqc multiqc.</a></li>
+                                              <li><a target="_blank" rel="relation_name" href="https://www.youtube.com/watch?v=5vVwGhWY_ac&list=PL0uR29Znf38xuAz-xnF0H1CIe9cNMK92V&index=5">Malaria, fastqc nanoplot.</a></li>
                     </ul>
                   </td>
                   <td>
                     <ul>
-                      <li>Afternoon Instructor</li>
+                      <li> IPCI</li>
                     </ul>
                   </td>
                   <td>
@@ -231,12 +234,12 @@ NGS workflows<br>
                   </td>
                   <td>
                     <ul>
-                      <li>Materials</li>
+<li><a target="_blank" rel="relation_name" href="https://www.youtube.com/watch?v=NK4ApX8I4Yo&list=PL0uR29Znf38xuAz-xnF0H1CIe9cNMK92V&index=6">Malaria, Working with fastq files</a></li>
                     </ul>
                   </td>
                   <td>
                     <ul>
-                      <li>Morning Instructor</li>
+                      <li> IPCI</li>
                     </ul>
                   </td>
                   <td>
@@ -254,12 +257,12 @@ NGS workflows<br>
                   </td>
                   <td>
                     <ul>
-                      <li>Materials</li>
+                   <li><a target="_blank" rel="relation_name" href="https://www.youtube.com/watch?v=JEb0COmsk1o&list=PL0uR29Znf38xuAz-xnF0H1CIe9cNMK92V&index=7">Malaria, Working with fastq files results analysis</a></li>
                     </ul>
                   </td>
                   <td>
                     <ul>
-                      <li>Morning Instructor</li>
+                      <li> IPCI</li>
                     </ul>
                   </td>
                   <td>
@@ -277,12 +280,12 @@ NGS workflows<br>
                   </td>
                   <td>
                     <ul>
-                      <li>Materials</li>
+                     <li><a target="_blank" rel="relation_name" href="https://www.youtube.com/watch?v=ORI9SqBs6Mo&list=PL0uR29Znf38xuAz-xnF0H1CIe9cNMK92V&index=8">Malaria, Plasmid database</a></li>
                     </ul>
                   </td>
                   <td>
                     <ul>
-                      <li>Afternoon Instructor</li>
+                      <li> IPCI</li>
                     </ul>
                   </td>
                   <td>
@@ -316,12 +319,12 @@ NGS workflows<br>
                   </td>
                   <td>
                     <ul>
-                      <li>Materials</li>
+                  <li><a target="_blank" rel="relation_name" href="https://www.youtube.com/watch?v=OZftvEANY68&list=PL0uR29Znf38xuAz-xnF0H1CIe9cNMK92V&index=11">Malaria, Trim file data triming</a></li>
                     </ul>
                   </td>
                   <td>
                     <ul>
-                      <li>Morning Instructor</li>
+                      <li>IPCI</li>
                     </ul>
                   </td>
                   <td>
@@ -340,13 +343,13 @@ Session 2</li>
                     </ul>
                   </td>
                   <td>
-                    <ul>
-                      <li>Materials</li>
+                    <ul>                    <li><a target="_blank" rel="relation_name" href="https://www.youtube.com/watch?v=z3m3AFDLgXQ&list=PL0uR29Znf38xuAz-xnF0H1CIe9cNMK92V&index=13">Malaria, Data cleaning processes</a></li>
+                    <li><a target="_blank" rel="relation_name" href="https://www.youtube.com/watch?v=AKLeDfjlAw0&list=PL0uR29Znf38xuAz-xnF0H1CIe9cNMK92V&index=10">Malaria, Data analysis</a></li>
                     </ul>
                   </td>
                   <td>
                     <ul>
-                      <li>Morning Instructor</li>
+                      <li>IPCI</li>
                     </ul>
                   </td>
                   <td>
@@ -364,12 +367,14 @@ Session 2</li>
                   </td>
                   <td>
                     <ul>
-                      <li>Materials</li>
+                    <li><a target="_blank" rel="relation_name" href="https://www.youtube.com/watch?v=raKQuvmZNAM&list=PL0uR29Znf38xuAz-xnF0H1CIe9cNMK92V&index=9">Malaria, Population genetic variation</a></li>
+                                        <li><a target="_blank" rel="relation_name" href="https://www.youtube.com/watch?v=BTLLRMbK1G8&list=PL0uR29Znf38xuAz-xnF0H1CIe9cNMK92V&index=12">Malaria, Troubleshooting</a></li>
+                                                            <li><a target="_blank" rel="relation_name" href="https://www.youtube.com/watch?v=Ws4pHrgAfCg&list=PL0uR29Znf38xuAz-xnF0H1CIe9cNMK92V&index=14">Malaria, Population genetics</a></li>
                     </ul>
                   </td>
                   <td>
                     <ul>
-                      <li>Afternoon Instructor</li>
+                      <li>IPCI</li>
                     </ul>
                   </td>
                   <td>
@@ -403,12 +408,12 @@ Session 2</li>
                   </td>
                   <td>
                     <ul>
-                      <li>Materials</li>
+                      <li><a target="_blank" rel="relation_name" href="https://www.youtube.com/watch?v=LRFDr-JXeUQ&list=PL0uR29Znf38xuAz-xnF0H1CIe9cNMK92V&index=15">Malaria, VC files</a></li>
                     </ul>
                   </td>
                   <td>
                     <ul>
-                      <li>Morning Instructor</li>
+                      <li>IPCI</li>
                     </ul>
                   </td>
                   <td>
@@ -427,12 +432,12 @@ Session 2</li>
                   </td>
                   <td>
                     <ul>
-                      <li>Materials</li>
+                                 <li><a target="_blank" rel="relation_name" href="https://www.youtube.com/watch?v=2Ze1S9-0fH0&list=PL0uR29Znf38xuAz-xnF0H1CIe9cNMK92V&index=16">Malaria, working in R</a></li>
                     </ul>
                   </td>
                   <td>
                     <ul>
-                      <li>Morning Instructor</li>
+                      <li>IPCI</li>
                     </ul>
                   </td>
                   <td>
@@ -450,12 +455,12 @@ Session 2</li>
                   </td>
                   <td>
                     <ul>
-                      <li>Materials</li>
+                   <li><a target="_blank" rel="relation_name" href="https://www.youtube.com/watch?v=2Ze1S9-0fH0&list=PL0uR29Znf38xuAz-xnF0H1CIe9cNMK92V&index=16">Malaria, R</a></li>
                     </ul>
                   </td>
                   <td>
                     <ul>
-                      <li>Afternoon Instructor</li>
+                      <li>IPCI</li>
                     </ul>
                   </td>
                   <td>
@@ -473,7 +478,7 @@ Session 2</li>
                   </td>
                   <td>
                     <ul>
-                      <li>Materials</li>
+                                        <li><a target="_blank" rel="relation_name" href="https://www.youtube.com/watch?v=VRAhqjhysPI&list=PL0uR29Znf38xuAz-xnF0H1CIe9cNMK92V&index=17">Malaria, coding in R</a></li>
                     </ul>
                   </td>
                   <td>
@@ -512,12 +517,13 @@ Session 2</li>
                   </td>
                   <td>
                     <ul>
-                      <li>Materials</li>
+                                      <li><a target="_blank" rel="relation_name" href="https://www.youtube.com/watch?v=ihvs8OhobBw&list=PL0uR29Znf38xuAz-xnF0H1CIe9cNMK92V&index=20">Malaria, Working in R</a></li>
+                <li><a target="_blank" rel="relation_name" href="https://www.youtube.com/watch?v=zGWyNyDen9E&list=PL0uR29Znf38xuAz-xnF0H1CIe9cNMK92V&index=18">Malaria, working in R with drug resistance data malaria samples</a></li>
                     </ul>
                   </td>
                   <td>
                     <ul>
-                      <li>Morning Instructor</li>
+                      <li>IPCI</li>
                     </ul>
                   </td>
                   <td>
@@ -539,12 +545,12 @@ Session 2</li>
                   </td>
                   <td>
                     <ul>
-                      <li>Materials</li>
+                     <li><a target="_blank" rel="relation_name" href="https://www.youtube.com/watch?v=0uTVw2SZgi0&list=PL0uR29Znf38xuAz-xnF0H1CIe9cNMK92V&index=19">Malaria, drug resistance malaria samples in R (French)</a></li>
                     </ul>
                   </td>
                   <td>
                     <ul>
-                      <li>Morning Instructor</li>
+                      <li>IPCI</li>
                     </ul>
                   </td>
                   <td>
@@ -562,12 +568,11 @@ Session 2</li>
                   </td>
                   <td>
                     <ul>
-                      <li>Materials</li>
                     </ul>
                   </td>
                   <td>
                     <ul>
-                      <li>Afternoon Instructor</li>
+                      <li>IPCI</li>
                     </ul>
                   </td>
                   <td>
@@ -585,17 +590,17 @@ Session 2</li>
                   </td>
                   <td>
                     <ul>
-                      <li>Materials</li>
+                      <li></li>
                     </ul>
                   </td>
                   <td>
                     <ul>
-                      <li>Afternoon Instructor</li>
+                      <li>IPCI</li>
                     </ul>
                   </td>
                   <td>
                     <ul>
-                      <li>Afternoon Interactive Session</li>
+                      <li></li>
                     </ul>
                   </td>
                 </tr>
