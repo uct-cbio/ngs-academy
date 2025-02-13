@@ -9,7 +9,7 @@ course_overview : High-throughput laboratory machines generate large quantities 
 start_date: "2024-11-25"
 end_date: "2024-11-29"
 group: group1
-training_provider: "Africa CDC, H3ABioNet, Institut Pasteur de Côte d'Ivoire "
+training_provider: "Africa CDC, NGS Academy, Institut Pasteur de Côte d'Ivoire"
 # link: https://uct-cbio.github.io/ngs-academy/2024/Advanced-Training-Developing-Workflows
 ---
 
@@ -27,7 +27,7 @@ Genomic epidemiology of resistant P. falciparum training in Côte d’Ivoire wit
 To understand the spread over the country of populations of parasites carrying any malaria drug resistant-conferring markers.
  </p>
 
-<p align="left"><b class="text-left">Pre-workshop training in Oct 2024. (will be conducted by IPCI team before the training) :</b> <br>
+<p align="left"><b class="text-left">Pre-workshop training in Oct 2024. [will be conducted by Institut Pasteur de Côte d'Ivoire (I.P.C.I) team before the training] :</b> <br>
 NGS workflows<br>
 •⁠  ⁠NGS technologies<br>
 •⁠  ⁠NGS file formats<br>
@@ -149,7 +149,7 @@ NGS workflows<br>
                   </td>
                   <td>
                     <ul>
-                      <li> IPCI</li>
+                      <li> Africa CDC, NGS Academy, Institut Pasteur de Côte d'Ivoire</li>
                     </ul>
                   </td>
                   <td>
@@ -172,7 +172,7 @@ NGS workflows<br>
                   </td>
                   <td>
                     <ul>
-                      <li> IPCI</li>
+                      <li>Africa CDC, NGS Academy, Institut Pasteur de Côte d'Ivoire</li>
                     </ul>
                   </td>
                   <td>
@@ -197,7 +197,7 @@ NGS workflows<br>
                   </td>
                   <td>
                     <ul>
-                      <li> IPCI</li>
+                      <li> Africa CDC, NGS Academy, Institut Pasteur de Côte d'Ivoire</li>
                     </ul>
                   </td>
                   <td>
@@ -239,7 +239,7 @@ NGS workflows<br>
                   </td>
                   <td>
                     <ul>
-                      <li> IPCI</li>
+                      <li> Africa CDC, NGS Academy, Institut Pasteur de Côte d'Ivoire</li>
                     </ul>
                   </td>
                   <td>
@@ -262,7 +262,7 @@ NGS workflows<br>
                   </td>
                   <td>
                     <ul>
-                      <li> IPCI</li>
+                      <li> Africa CDC, NGS Academy, Institut Pasteur de Côte d'Ivoire</li>
                     </ul>
                   </td>
                   <td>
@@ -285,7 +285,7 @@ NGS workflows<br>
                   </td>
                   <td>
                     <ul>
-                      <li> IPCI</li>
+                      <li> Africa CDC, NGS Academy, Institut Pasteur de Côte d'Ivoire</li>
                     </ul>
                   </td>
                   <td>
@@ -324,7 +324,7 @@ NGS workflows<br>
                   </td>
                   <td>
                     <ul>
-                      <li>IPCI</li>
+                      <li>Africa CDC, NGS Academy, Institut Pasteur de Côte d'Ivoire</li>
                     </ul>
                   </td>
                   <td>
@@ -349,7 +349,7 @@ Session 2</li>
                   </td>
                   <td>
                     <ul>
-                      <li>IPCI</li>
+                      <li>Africa CDC, NGS Academy, Institut Pasteur de Côte d'Ivoire</li>
                     </ul>
                   </td>
                   <td>
@@ -374,7 +374,7 @@ Session 2</li>
                   </td>
                   <td>
                     <ul>
-                      <li>IPCI</li>
+                      <li>Africa CDC, NGS Academy, Institut Pasteur de Côte d'Ivoire</li>
                     </ul>
                   </td>
                   <td>
@@ -413,7 +413,7 @@ Session 2</li>
                   </td>
                   <td>
                     <ul>
-                      <li>IPCI</li>
+                      <li>Africa CDC, NGS Academy, Institut Pasteur de Côte d'Ivoire</li>
                     </ul>
                   </td>
                   <td>
@@ -437,7 +437,7 @@ Session 2</li>
                   </td>
                   <td>
                     <ul>
-                      <li>IPCI</li>
+                      <li>Africa CDC, NGS Academy, Institut Pasteur de Côte d'Ivoire</li>
                     </ul>
                   </td>
                   <td>
@@ -460,7 +460,7 @@ Session 2</li>
                   </td>
                   <td>
                     <ul>
-                      <li>IPCI</li>
+                      <li>Africa CDC, NGS Academy, Institut Pasteur de Côte d'Ivoire</li>
                     </ul>
                   </td>
                   <td>
@@ -523,7 +523,7 @@ Session 2</li>
                   </td>
                   <td>
                     <ul>
-                      <li>IPCI</li>
+                      <li>Africa CDC, NGS Academy, Institut Pasteur de Côte d'Ivoire</li>
                     </ul>
                   </td>
                   <td>
