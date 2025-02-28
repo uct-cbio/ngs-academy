@@ -158,7 +158,44 @@ permalink: /courses/curricula-update-01/
         .tab-content.active {
             display: block;
         }
+        
+        /* DataTables Styling */
+        .dataTables_wrapper .dt-buttons {
+            margin-bottom: 15px;
+        }
+        
+        .dataTables_length, .dataTables_filter {
+            margin-bottom: 15px;
+        }
+        
+        .dataTables_info, .dataTables_paginate {
+            margin-top: 15px;
+        }
+        
+        .dataTables_wrapper .dataTables_paginate .paginate_button {
+            padding: 0.3em 0.8em;
+        }
+        
+        /* Make the search field more visible */
+        .dataTables_filter input {
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-left: 5px;
+        }
+        
+        /* Style for the length menu */
+        .dataTables_length select {
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin: 0 5px;
+        }
     </style>
+
+    <!-- Add DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.4.1/css/buttons.dataTables.min.css">
 
     <div class="accordion">
         <!-- Foundational Section -->
@@ -196,49 +233,49 @@ permalink: /courses/curricula-update-01/
                             <tbody>
                                 <tr>
                                     <td>G01</td>
-                                    <td>Foundational</td>
+                                    <td>All pathogens</td>
                                     <td>Bioinformatics Scientist</td>
                                     <td id="title_column" >Introduction to Public Health Research Ethics and Policies </td>
                                   </tr>
                                   <tr>
                                     <td>G02</td>
-                                    <td>Foundational</td>
+                                    <td>All pathogens</td>
                                     <td>Bioinformatics Scientist</td>
                                     <td>Introduction to Genomic Epidemiology</td>
                                   </tr>
                                   <tr>
                                     <td>G03</td>
-                                    <td>Foundational</td>
+                                    <td>All pathogens</td>
                                     <td>Bioinformatics Scientist</td>
                                     <td>Introduction to Genomic Epidemiological Models for Pathogen Surveillance </td>
                                   </tr>
                                   <tr>
                                     <td>G04</td>
-                                    <td>Foundational</td>
+                                    <td>All pathogens</td>
                                     <td>Bioinformatics Scientist</td>
                                     <td>Basics of Research Study Design</td>
                                   </tr>
                                   <tr>
                                     <td>G05</td>
-                                    <td>Foundational</td>
+                                    <td>All pathogens</td>
                                     <td>Bioinformatics Scientist</td>
                                     <td>Introduction to Genomic Sequencing and NGS</td>
                                   </tr>
                                   <tr>
                                     <td>G06</td>
-                                    <td>Foundational</td>
+                                    <td>All pathogens</td>
                                     <td>Bioinformatics Scientist</td>
                                     <td id="title_column">Introduction to Genomic Data Dissemination</td>
                                   </tr>
                                   <tr>
                                     <td>G07</td>
-                                    <td>Foundational</td>
+                                    <td>All pathogens</td>
                                     <td>Bioinformatics Scientist</td>
                                     <td>Introduction to Data Sharing and Communication</td>
                                   </tr>
                                   <tr>
                                     <td>G08</td>
-                                    <td>Foundational</td>
+                                    <td>All pathogens</td>
                                     <td>Bioinformatics Scientist</td>
                                     <td>Introduction to Antimicrobial Resistance (AMR)</td>
                                   </tr>
@@ -260,67 +297,67 @@ permalink: /courses/curricula-update-01/
                         <tbody>
                             <tr>
                                 <td>B01</td>
-                                <td>Foundational</td>
+                                <td>All pathogens</td>
                                 <td>Bioinformatics Scientist</td>
                                 <td id="title_column" >Unix/linux, command line, shell scripting </td>
                               </tr>
                               <tr>
                                 <td>B02</td>
-                                <td>Foundational</td>
+                                <td>All pathogens</td>
                                 <td>Bioinformatics Scientist</td>
                                 <td>Git and Version Control</td>
                               </tr>
                               <tr>
                                 <td>B03</td>
-                                <td>Foundational</td>
+                                <td>All pathogens</td>
                                 <td>Bioinformatics Scientist</td>
                                 <td>Informatics skills </td>
                               </tr>
                               <tr>
                                 <td>B04</td>
-                                <td>Foundational</td>
+                                <td>All pathogens</td>
                                 <td>Bioinformatics Scientist</td>
                                 <td>Programming in Python</td>
                               </tr>
                               <tr>
                                 <td>B05</td>
-                                <td>Foundational</td>
+                                <td>All pathogens</td>
                                 <td>Bioinformatics Scientist</td>
                                 <td>R programming</td>
                               </tr>
                               <tr>
                                 <td>B06</td>
-                                <td>Foundational</td>
+                                <td>All pathogens</td>
                                 <td>Bioinformatics Scientist</td>
                                 <td id="title_column">Basic Data analytics</td>
                               </tr>
                               <tr>
                                 <td>B07</td>
-                                <td>Foundational</td>
+                                <td>All pathogens</td>
                                 <td>Bioinformatics Scientist</td>
                                 <td>Phylogenetics</td>
                               </tr>
                               <tr>
                                 <td>B08</td>
-                                <td>Foundational</td>
+                                <td>All pathogens</td>
                                 <td>Bioinformatics Scientist</td>
                                 <td>Software Containerisation</td>
                               </tr>
                               <tr>
                                 <td>B09</td>
-                                <td>Foundational</td>
+                                <td>All pathogens</td>
                                 <td>Bioinformatics Scientist</td>
                                 <td>Workflow management systems</td>
                               </tr>
                               <tr>
                                 <td>B10</td>
-                                <td>Foundational</td>
+                                <td>All pathogens</td>
                                 <td>Bioinformatics Scientist</td>
                                 <td>Ontologies, standards, data curation and submission</td>
                               </tr>
                               <tr>
                                 <td>B11</td>
-                                <td>Foundational</td>
+                                <td>All pathogens</td>
                                 <td>Bioinformatics Scientist</td>
                                 <td>Data Visualisation and reporting</td>
                               </tr>
@@ -340,27 +377,27 @@ permalink: /courses/curricula-update-01/
                         <tbody>
                             <tr>
                                 <td>W01</td>
-                                <td>Foundational</td>
-                                <td>Wet-Lab Scientist only</td>
+                                <td>All pathogens</td>
+                                <td>Wet-Lab Scientist</td>
                                 <td>Basic laboratory health and safety protocols</td>
                           
                               </tr>
                               <tr>
                                 <td>W02</td>
-                                <td>Foundational</td>
-                                <td>Wet-Lab Scientist only</td>
+                                <td>All pathogens</td>
+                                <td>Wet-Lab Scientist </td>
                                 <td>Basic laboratory requirements and operational set-up</td>
                               </tr>
                               <tr>
                                 <td>W03</td>
-                                <td>Foundational</td>
-                                <td>Wet-Lab Scientist only</td>
+                                <td>All pathogens</td>
+                                <td>Wet-Lab Scientist</td>
                                 <td>Introduction to fundamental laboratory skills and calculations</td>
                               </tr>
                               <tr>
                                 <td>W04</td>
-                                <td>Foundational</td>
-                                <td>Wet-Lab Scientist only</td>
+                                <td>All pathogens</td>
+                                <td>Wet-Lab Scientist </td>
                                 <td>Introduction to basic PCR techniques</td>
                               </tr>
                         </tbody>
@@ -393,7 +430,7 @@ permalink: /courses/curricula-update-01/
                 <!-- Tab Content -->
                 <div id="tab2-1" class="tab-content active">
                     <div class="table-wrapper">
-                        <table id="table1" class="display">
+                        <table id="table4" class="display">
                             <thead>
                                 <tr>
                                     <th>Module Code</th>
@@ -405,57 +442,57 @@ permalink: /courses/curricula-update-01/
                             <tbody>
                                 <tr>
                                     <td>BA01</td>
-                                    <td>---</td>
+                                    <td>Bacterial</td>
                                     <td>---</td>
                                     <td>Study design for bacterial pathogen surveillance</td>
                             
                                   </tr>
                                   <tr>
                                     <td>BA02</td>
-                                    <td>---</td>
+                                    <td>Bacterial</td>
                                     <td>---</td>
                                     <td>Bacterial sample processing, library preparation and DNA sequencing</td>
                                   </tr>
                                   <tr>
                                     <td>BA03</td>
-                                    <td>---</td>
+                                    <td>Bacterial</td>
                                     <td>---</td>
                                     <td>Bacterial NGS Data Processing</td>
                                   </tr>
                                   <tr>
                                     <td>BA04</td>
-                                    <td>---</td>
+                                    <td>Bacterial</td>
                                     <td>---</td>
                                     <td>Downstream analysis of sequence data</td>
                                   </tr>
                                   <tr>
                                     <td>BA04a</td>
-                                    <td>---</td>
+                                    <td>Bacterial</td>
                                     <td>---</td>
                                     <td>Bacterial Pathogen Data Analysis</td>
                                   </tr>
                                   <tr>
                                     <td>BA4b</td>
-                                    <td>---</td>
+                                    <td>Bacterial</td>
                                     <td>---</td>
                                     <td>Bacterial Bioinformatics Analytical workflows</td>
                                   </tr>
                                   <tr>
                                     <td>BA05</td>
-                                    <td>---</td>
+                                    <td>Bacterial</td>
                                     <td>---</td>
                                     <td>Bacterial Phylogenetics</td>
                                   </tr>
                                   <tr>
                                     <td>BA06</td>
-                                    <td>---</td>
+                                    <td>Bacterial</td>
                                     <td>---</td>
                                     <td>Antibacterial resistance identification and tracking</td>
                                   </tr>
 
                                   <tr>
                                     <td>BA07</td>
-                                    <td>---</td>
+                                    <td>Bacterial</td>
                                     <td>---</td>
                                     <td>Metagenomics for Pathogen Surveillance</td>
                                   </tr>
@@ -465,7 +502,7 @@ permalink: /courses/curricula-update-01/
                     </div>
                 </div>
                 <div id="tab2-2" class="tab-content">
-                    <table id="table1" class="display">
+                    <table id="table5" class="display">
                         <thead>
                             <tr>
                                 <th>Module Code</th>
@@ -477,67 +514,65 @@ permalink: /courses/curricula-update-01/
                         <tbody>
                             <tr>
                                 <td>V01</td>
-                                <td>---</td>
-                                <td>---</td>
+                                <td>Viral</td>
+                                <td>Wet-lab Scientist</td>
                                 <td>Study Design for Viral Pathogen Surveillance</td>
                         
                               </tr>
                               <tr>
                                 <td>V02</td>
-                                <td>---</td>
-                                <td>---</td>
+                                <td>Viral</td>
+                                <td>Wet-lab Scientist</td>
                                 <td>Sample Processing and Library Preparation for Viral Pathogens (Theory and Wet-lab Practical)</td>
                               </tr>
                               <tr>
                                 <td>V03</td>
-                                <td>---</td>
-                                <td>---</td>
+                                <td>Viral</td>
+                                <td>Wet-lab Scientist</td>
                                 <td>ARTIC Viral Amplicon Sequencing</td>
                               </tr>
                               <tr>
                                 <td>V03a</td>
-                                <td>---</td>
-                                <td>---</td>
+                                <td>Viral</td>
+                                <td>Wet-lab Scientist</td>
                                 <td>Illumina Workflow for Viral Genome Sequencing</td>
                               </tr>
                               <tr>
                                 <td>V03b</td>
-                                <td>---</td>
-                                <td>---</td>
+                                <td>Viral</td>
+                                <td>Wet-lab Scientist</td>
                                 <td>ONT Workflow for Viral Genome Sequencing</td>
                               </tr>
                               <tr>
                                 <td>V04</td>
-                                <td>---</td>
-                                <td>---</td>
+                                <td>Viral</td>
+                                <td>Wet-lab Scientist</td>
                                 <td>Introduction to Viral NGS Data Processing</td>
                               </tr>
                               <tr>
                                 <td>V04a</td>
                                 <td>---</td>
-                                <td>---</td>
+                                <td>Wet-lab Scientist</td>
                                 <td>Nextclade and Pangolin</td>
                               </tr>
                               <tr>
                                 <td>V04b</td>
-                                <td>---</td>
-                                <td>---</td>
+                                <td>Viral</td>
+                                <td>Wet-lab Scientist</td>
                                 <td>Galaxy Workflow (or other selected workflow(s))</td>
                               </tr>
 
                               <tr>
                                 <td>V05</td>
-                                <td>---</td>
-                                <td>---</td>
+                                <td>Viral</td>
+                                <td>Wet-lab Scientist</td>
                                 <td>Advanced Bioinformatics Analysis for Viruses</td>
                               </tr>
-
-
                         </tbody>
                     </table>
                 </div>
                 <div id="tab2-3" class="tab-content">
-                    <table id="table1" class="display">
+                    <table id="table6" class="display">
                         <thead>
                             <tr>
                                 <th>Module Code</th>
@@ -620,21 +655,44 @@ permalink: /courses/curricula-update-01/
     <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
     <!-- DataTables Buttons -->
     <script src="https://cdn.datatables.net/buttons/2.4.1/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
     <script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.html5.min.js"></script>
     <script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.print.min.js"></script>
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            // Initialize DataTables for each table
-            ['table1', 'table2'].forEach(tableId => {
-                $(`#${tableId}`).DataTable({
-                    dom: 'Bfrtip',
+            // Initialize DataTables for all tables in the document
+            const tables = document.querySelectorAll('table');
+            tables.forEach(table => {
+                $(table).DataTable({
+                    dom: '<"top"Bfl>rt<"bottom"ip>',
                     buttons: [
-                        'copy', 'csv', 'excel', 'pdf', 'print'
+                        'copy', 
+                        'csv', 
+                        'excel', 
+                        'pdf', 
+                        'print'
                     ],
                     paging: true,
+                    pageLength: 10,
+                    lengthMenu: [10, 20, 50, 100],
                     searching: true,
-                    ordering: true
+                    ordering: true,
+                    info: true,
+                    responsive: true,
+                    language: {
+                        search: "Search:",
+                        lengthMenu: "Show _MENU_ entries per page",
+                        info: "Showing _START_ to _END_ of _TOTAL_ entries",
+                        paginate: {
+                            first: "First",
+                            last: "Last",
+                            next: "Next",
+                            previous: "Previous"
+                        }
+                    }
                 });
             });
 
@@ -682,8 +740,14 @@ permalink: /courses/curricula-update-01/
                     document.getElementById(tabId).classList.add("active");
 
                     // Update active tab
-                    tabs.forEach((t) => t.classList.remove("active"));
+                    const siblingTabs = this.parentElement.querySelectorAll("li");
+                    siblingTabs.forEach((t) => t.classList.remove("active"));
                     this.classList.add("active");
+
+                    // Reinitialize DataTables when switching tabs to ensure proper rendering
+                    setTimeout(() => {
+                        $(window).trigger('resize');
+                    }, 0);
                 });
             });
         });
