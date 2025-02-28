@@ -9,7 +9,7 @@ course_overview : High-throughput laboratory machines generate large quantities 
 start_date: "2024-11-25"
 end_date: "2024-11-29"
 group: group1
-training_provider: "Africa CDC, NGS Academy, Institut Pasteur de Côte d'Ivoire"
+training_provider: "NGS Academy, Africa CDC, Institut Pasteur de Côte d'Ivoire"
 # link: https://uct-cbio.github.io/ngs-academy/2024/Advanced-Training-Developing-Workflows
 ---
 

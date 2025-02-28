@@ -9,7 +9,7 @@ course_overview : High-throughput laboratory machines generate large quantities 
 start_date: 2024-05-20
 end_date: 2024-05-24
 group: group1
-training_provider: "Malawi Liverpool Wellcome Programme, Kenya Welcome Trust Research Programme,International Livestock Research Institute-Kenya"
+training_provider: "NGS Academy,Malawi Liverpool Wellcome Programme, Kenya Welcome Trust Research Programme,International Livestock Research Institute-Kenya"
 # link: https://uct-cbio.github.io/ngs-academy/2024/Advanced-Training-Developing-Workflows
 ---
 <!-- 
