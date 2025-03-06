@@ -1,22 +1,18 @@
 ---
 layout: default
 title:  "Advanced Training: Developing Workflows 2023 (Advanced)"
-post_date: "2023-04-13"
+posted_date: 2023-04-13
 main_menu: courses
 permalink: /:year/:title
-link: 
-training_provider: "NGS Academy"
 category: past-course
 course_overview :  High-throughput laboratory machines generate large quantities of raw biological data. Processing the data to generate useful information involves using several tools and sometimes setting up complex bioinformatics analysis environments across heterogeneous computing devices. Bioinformatics workflows and workflow managers allow reproducibility and portability of analysis plans and optimization of available computing resources. The Advanced Training in Developing Workflows workshop was aimed at introducing, deploying Nextflow, a too which enables scalable and reproducible scientific workflows.    
-start_date: "2023-03-27"
-end_date: "2023-03-31"
+start_date: 2023-03-27
+end_date: 2023-03-31
 group: group1
-training_provider: "MLW, KWTRP,ILRI-Kenya"
+training_provider: "NGS Academy, Malawi Liverpool Wellcome Programme, Kenya Welcome Trust Research Programme,International Livestock Research Institute-Kenya"
 link: https://uct-cbio.github.io/ngs-academy/2023/Advanced-Training-Developing-Workflows-ADV
 ---
 
-  
-<!-- ### SARS-CoV-2 NGS bioinformatics course 2021 -->
 <h3>Advanced Stream</h3> Click <a href="{{site.baseurl}}/2023/Advanced-Training-Developing-Workflows-INT" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">Introductory stream</a> to access the introductory stream training materials
 
 <p align="left"><b class="text-left">Intended audience:</b></p>
@@ -25,12 +21,12 @@ link: https://uct-cbio.github.io/ngs-academy/2023/Advanced-Training-Developing-W
 </p>
 <p align="left"><b class="text-left">Purpose:</b></p>
 <p> High-throughput laboratory machines generate large quantities of primary biological data.  Processing these data to generate useful information involves several tools and setting up of complex bioinformatics environments across heterogeneous computing infrastructure. Bioinformatics workflow managers provide portability and reproducibility of analysis and optimization of available computing resources.  </p>
-<p>We would like to develop and run an advanced  bioinformatics workflow workshop  aimed at introducing and deploying Nextflow, a tool that enables scalable and reproducible scientific workflows. </p>
+<p>The Advanced  Bioinformatics workflow workshop was aimed at introducing and deploying Nextflow, a tool that enables scalable and reproducible scientific workflows. </p>
 
 <b>Pre-requisite:</b> 
 
 <ol>
-<li>For the course, participants do not need a high-performance computer since the trainers will provide access to KEMRI's cluster
+<li>For the course, access to a high-performance computer was organised by trainers
 </li>
 <!-- test -->
 <p>The course will cover:</p>
@@ -73,9 +69,9 @@ link: https://uct-cbio.github.io/ngs-academy/2023/Advanced-Training-Developing-W
  <li id="location"><b>Venue of course</b>: KEMRI / WELLCOME TRUST Kilifi, Kenya  </li>
 
 
-<li id ="startDate"><b>Start date:</b>2023-03-27</li>
+<li id ="startDate"><b>Start date: </b>2023-03-27</li>
 
-<li id="endDate"><b>End date:</b>2023-03-31</li>
+<li id="endDate"><b>End date: </b>2023-03-31</li>
 
 <!-- <li><b>Course sponsors</b>: TBA</li> -->
 
