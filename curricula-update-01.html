@@ -106,6 +106,9 @@ permalink: /courses/curricula-update-01/
 
         th {
             background-color: #f2f2f2;
+            position: relative;
+            vertical-align: top;
+            padding-bottom: 35px; /* Add extra padding at the bottom for the filter */
         }
 
         .table-wrapper {
@@ -190,6 +193,34 @@ permalink: /courses/curricula-update-01/
             border: 1px solid #ddd;
             border-radius: 4px;
             margin: 0 5px;
+        }
+
+        /* Additional CSS for Persona dropdown filter */
+        th select {
+            width: 90%;
+            padding: 4px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: white;
+            font-size: 14px;
+            margin-top: 6px;
+            z-index: 100;
+            position: relative;
+        }
+
+        th select:focus {
+            outline: none;
+            border-color: #8c2133;
+            box-shadow: 0 0 0 2px rgba(140, 33, 51, 0.2);
+        }
+
+        /* Style for the filter dropdown container */
+        .column-filter-container {
+            position: absolute;
+            bottom: 5px;
+            left: 0;
+            width: 100%;
+            padding: 0 5px;
         }
     </style>
 
@@ -541,7 +572,7 @@ permalink: /courses/curricula-update-01/
                               <tr>
                                 <td>V03a</td>
                                 <td>Viral</td>
-                                <td>Wet-lab Scientist</td>
+                                <td>Wet-laboratory</td>
                                 <td>Illumina Workflow for Viral Genome Sequencing</td>
                               </tr>
                               <tr>
@@ -863,6 +894,35 @@ permalink: /courses/curricula-update-01/
                             next: "Next",
                             previous: "Previous"
                         }
+                    },
+                    // Add initComplete function to create persona filter
+                    initComplete: function() {
+                        this.api().columns(2).every(function() {
+                            var column = this;
+                            
+                            // Create a select element for the Persona filter
+                            var select = $('<select><option value="">All Personas</option></select>')
+                                .appendTo($(column.header()))
+                                .on('change', function() {
+                                    var val = $.fn.dataTable.util.escapeRegex(
+                                        $(this).val()
+                                    );
+                                    
+                                    column
+                                        .search(val ? '^'+val+'$' : '', true, false)
+                                        .draw();
+                                });
+                            
+                            // Get unique values for the Persona column
+                            column.data().unique().sort().each(function(d, j) {
+                                select.append('<option value="'+d+'">'+d+'</option>');
+                            });
+                            
+                            // Prevent click on select from propagating to header
+                            $(select).click(function(e) {
+                                e.stopPropagation();
+                            });
+                        });
                     }
                 });
             });
