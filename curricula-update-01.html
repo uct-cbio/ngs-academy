@@ -222,6 +222,222 @@ permalink: /courses/curricula-update-01/
             width: 100%;
             padding: 0 5px;
         }
+
+        /* Reduce Module Code column width by 50% */
+        .display th:first-child,
+        .display td:first-child {
+            width: 75px !important;  /* Set a fixed smaller width */
+            max-width: 75px !important;
+            min-width: 75px !important;
+        }
+        
+        /* Ensure the title column has enough space */
+        .display th[name="title_column"],
+        .display td#title_column,
+        .display th:nth-child(4),
+        .display td:nth-child(4) {
+            width: auto !important;
+            min-width: 300px !important;
+        }
+        
+        /* Make the pathogen and persona columns proportional */
+        .display th:nth-child(2),
+        .display td:nth-child(2),
+        .display th:nth-child(3),
+        .display td:nth-child(3) {
+            width: 120px !important;
+            max-width: 120px !important;
+        }
+
+        /* Ensure DataTables respects our column widths */
+        table.dataTable {
+            table-layout: fixed;
+            width: 100% !important;
+        }
+        
+        /* Make sure content doesn't overflow */
+        .display td {
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        /* NEW RESPONSIVE CSS FOR ALL DEVICES */
+        
+        /* Table Responsiveness */
+        .table-wrapper {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        /* Ensure tables are horizontally scrollable on small screens */
+        .dataTables_wrapper {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            width: 100%;
+        }
+        
+        /* Responsive styling for DataTables controls */
+        @media screen and (max-width: 767px) {
+            /* Stack DataTable controls */
+            .dataTables_wrapper .dataTables_length,
+            .dataTables_wrapper .dataTables_filter,
+            .dataTables_wrapper .dataTables_info,
+            .dataTables_wrapper .dataTables_paginate {
+                text-align: left;
+                float: none;
+                display: block;
+                margin-bottom: 10px;
+                width: 100%;
+            }
+            
+            /* DataTable buttons - stack in mobile view */
+            .dataTables_wrapper .dt-buttons {
+                text-align: center;
+                float: none;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 5px;
+                margin-bottom: 15px;
+            }
+            
+            .dataTables_wrapper .dt-buttons .dt-button {
+                margin: 2px;
+                white-space: nowrap;
+            }
+            
+            /* Adjust table column widths for mobile */
+            .display th:first-child,
+            .display td:first-child {
+                min-width: 60px !important;
+                width: 60px !important;
+            }
+            
+            .display th:nth-child(2),
+            .display td:nth-child(2),
+            .display th:nth-child(3),
+            .display td:nth-child(3) {
+                min-width: 90px !important;
+                width: 90px !important;
+            }
+            
+            .display th:nth-child(4),
+            .display td:nth-child(4) {
+                min-width: 200px !important;
+            }
+            
+            /* Adjust font size for mobile */
+            .dataTables_wrapper {
+                font-size: 14px;
+            }
+            
+            .dataTables_wrapper .dataTables_paginate .paginate_button {
+                padding: 0.3em 0.6em;
+                font-size: 13px;
+            }
+        }
+        
+        /* Accordion responsiveness */
+        @media screen and (max-width: 767px) {
+            .accordion-header {
+                padding: 12px 10px;
+                font-size: 15px;
+            }
+            
+            .accordion-icon {
+                font-size: 18px;
+                margin-left: 5px;
+            }
+            
+            .feature-description {
+                padding: 12px;
+            }
+            
+            .feature-description h3 {
+                font-size: 16px;
+            }
+        }
+        
+        /* Tabs responsiveness */
+        @media screen and (max-width: 767px) {
+            /* Make tabs stack on mobile */
+            .nav-tabs {
+                flex-direction: column;
+                border-bottom: none;
+            }
+            
+            .nav-tabs li {
+                margin-right: 0;
+                margin-bottom: 2px;
+                border-radius: 4px;
+                border: 1px solid #ddd;
+            }
+            
+            .tab-content {
+                border-radius: 4px;
+                padding: 10px;
+            }
+        }
+        
+        /* Small tablets and large phones */
+        @media screen and (min-width: 768px) and (max-width: 991px) {
+            /* Adjust tabs for medium screens */
+            .nav-tabs li {
+                font-size: 14px;
+                padding: 8px 5px;
+            }
+            
+            /* Adjust DataTable buttons spacing */
+            .dataTables_wrapper .dt-buttons .dt-button {
+                padding: 0.3em 0.6em;
+                font-size: 12px;
+            }
+            
+            /* Slight column width adjustments for tablets */
+            .display th:first-child,
+            .display td:first-child {
+                min-width: 70px !important;
+                width: 70px !important;
+            }
+            
+            .display th:nth-child(2),
+            .display td:nth-child(2),
+            .display th:nth-child(3),
+            .display td:nth-child(3) {
+                min-width: 100px !important;
+                width: 100px !important;
+            }
+        }
+        
+        /* Print-specific styles */
+        @media print {
+            .accordion-content {
+                display: block !important;
+            }
+            
+            .nav-tabs, .dataTables_filter, .dataTables_length, .dataTables_paginate, .dt-buttons {
+                display: none !important;
+            }
+            
+            .tab-content {
+                display: block !important;
+                border: none !important;
+            }
+            
+            table, th, td {
+                border-color: #000 !important;
+            }
+            
+            .accordion-header, .feature-description {
+                color: #000 !important;
+                background-color: transparent !important;
+                break-inside: avoid;
+            }
+            
+            .accordion-icon {
+                display: none;
+            }
+        }
     </style>
 
     <!-- Add DataTables CSS -->
@@ -252,7 +468,7 @@ permalink: /courses/curricula-update-01/
                 <!-- Tab Content -->
                 <div id="tab1-1" class="tab-content active">
                     <div class="table-wrapper">
-                        <table id="table1" class="display source-table">
+                        <table id="table1" class="display source-table table-responsive">
                             <thead>
                                 <tr>
                                     <th>Module Code</th>
@@ -322,7 +538,7 @@ permalink: /courses/curricula-update-01/
                     </div>
                 </div>
                 <div id="tab1-2" class="tab-content">
-                    <table id="table2" class="display target-table">
+                    <table id="table2" class="display target-table table-responsive">
                         <thead>
                             <tr>
                                 <th>Module Code</th>
@@ -402,7 +618,7 @@ permalink: /courses/curricula-update-01/
                     </table>
                 </div>
                 <div id="tab1-3" class="tab-content">
-                    <table id="table3" class="display target-table">
+                    <table id="table3" class="display target-table table-responsive">
                         <thead>
                             <tr>
                                 <th>Module Code</th>
@@ -469,7 +685,7 @@ permalink: /courses/curricula-update-01/
                 <!-- Tab Content -->
                 <div id="tab2-1" class="tab-content active">
                     <div class="table-wrapper">
-                        <table id="table4" class="display target-table">
+                        <table id="table4" class="display target-table table-responsive">
                             <thead>
                                 <tr>
                                     <th>Module Code</th>
@@ -540,7 +756,7 @@ permalink: /courses/curricula-update-01/
                     </div>
                 </div>
                 <div id="tab2-2" class="tab-content">
-                    <table id="table5" class="display target-table">
+                    <table id="table5" class="display target-table table-responsive">
                         <thead>
                             <tr>
                                 <th>Module Code</th>
@@ -610,7 +826,7 @@ permalink: /courses/curricula-update-01/
                     </table>
                 </div>
                 <div id="tab2-3" class="tab-content">
-                    <table id="table6" class="display target-table">
+                    <table id="table6" class="display target-table table-responsive">
                         <thead>
                             <tr>
                                 <th>Module Code</th>
@@ -698,7 +914,7 @@ permalink: /courses/curricula-update-01/
                     </table>
                 </div>
                 <div id="tab2-4" class="tab-content">
-                    <table id="table24" class="display target-table">
+                    <table id="table24" class="display target-table table-responsive">
                         <thead>
                             <tr>
                                 <th>Module Code</th>
@@ -742,7 +958,7 @@ permalink: /courses/curricula-update-01/
                     </table>
                 </div>
                 <div id="tab2-5" class="tab-content">
-                    <table id="table25" class="display target-table">
+                    <table id="table25" class="display target-table table-responsive">
                         <thead>
                             <tr>
                                 <th>Module Code</th>
@@ -792,7 +1008,7 @@ permalink: /courses/curricula-update-01/
                     </table>
                 </div>
                 <div id="tab2-6" class="tab-content">
-                    <table id="table26" class="display target-table">
+                    <table id="table26" class="display target-table table-responsive">
                         <thead>
                             <tr>
                                 <th>Module Code</th>
@@ -1034,5 +1250,14 @@ permalink: /courses/curricula-update-01/
             
             // Also reapply on window resize
             window.addEventListener('resize', reapplyColumnWidths);
+            
+            // Additional JavaScript to force DataTables to respect our column widths
+            setTimeout(function() {
+                const tables = document.querySelectorAll('.dataTable');
+                tables.forEach(table => {
+                    // Force DataTables to redraw with the new column widths
+                    $(table).DataTable().columns.adjust().draw();
+                });
+            }, 500);
         });
     </script>
