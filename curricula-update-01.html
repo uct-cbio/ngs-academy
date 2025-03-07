@@ -102,6 +102,7 @@ permalink: /courses/curricula-update-01/
         th, td {
             padding: 8px;
             text-align: left;
+            white-space: nowrap; /* KEY ADDITION: Prevent text wrapping */
         }
 
         th {
@@ -117,6 +118,9 @@ permalink: /courses/curricula-update-01/
             padding: 1rem;
             margin: 1rem 0;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            overflow-x: auto; /* Ensure horizontal scrolling */
+            width: 100%;
+            -webkit-overflow-scrolling: touch; /* Smooth scrolling on touch devices */
         }
 
         /* Tabs Styling */
@@ -253,12 +257,13 @@ permalink: /courses/curricula-update-01/
         table.dataTable {
             table-layout: fixed;
             width: 100% !important;
+            min-width: 800px; /* Minimum width to prevent excessive compression */
         }
         
         /* Make sure content doesn't overflow */
         .display td {
-            word-wrap: break-word;
-            overflow-wrap: break-word;
+            overflow: hidden;
+            text-overflow: ellipsis; /* Add ellipsis for overflowing text */
         }
 
         /* NEW RESPONSIVE CSS FOR ALL DEVICES */
@@ -271,7 +276,7 @@ permalink: /courses/curricula-update-01/
         
         /* Ensure tables are horizontally scrollable on small screens */
         .dataTables_wrapper {
-            overflow-x: auto;
+            overflow-x: visible; /* Allow table to control scrolling */
             -webkit-overflow-scrolling: touch;
             width: 100%;
         }
@@ -304,26 +309,6 @@ permalink: /courses/curricula-update-01/
             .dataTables_wrapper .dt-buttons .dt-button {
                 margin: 2px;
                 white-space: nowrap;
-            }
-            
-            /* Adjust table column widths for mobile */
-            .display th:first-child,
-            .display td:first-child {
-                min-width: 60px !important;
-                width: 60px !important;
-            }
-            
-            .display th:nth-child(2),
-            .display td:nth-child(2),
-            .display th:nth-child(3),
-            .display td:nth-child(3) {
-                min-width: 90px !important;
-                width: 90px !important;
-            }
-            
-            .display th:nth-child(4),
-            .display td:nth-child(4) {
-                min-width: 200px !important;
             }
             
             /* Adjust font size for mobile */
@@ -392,21 +377,6 @@ permalink: /courses/curricula-update-01/
                 padding: 0.3em 0.6em;
                 font-size: 12px;
             }
-            
-            /* Slight column width adjustments for tablets */
-            .display th:first-child,
-            .display td:first-child {
-                min-width: 70px !important;
-                width: 70px !important;
-            }
-            
-            .display th:nth-child(2),
-            .display td:nth-child(2),
-            .display th:nth-child(3),
-            .display td:nth-child(3) {
-                min-width: 100px !important;
-                width: 100px !important;
-            }
         }
         
         /* Print-specific styles */
@@ -468,7 +438,7 @@ permalink: /courses/curricula-update-01/
                 <!-- Tab Content -->
                 <div id="tab1-1" class="tab-content active">
                     <div class="table-wrapper">
-                        <table id="table1" class="display source-table table-responsive">
+                        <table id="table1" class="display source-table">
                             <thead>
                                 <tr>
                                     <th>Module Code</th>
@@ -538,7 +508,7 @@ permalink: /courses/curricula-update-01/
                     </div>
                 </div>
                 <div id="tab1-2" class="tab-content">
-                    <table id="table2" class="display target-table table-responsive">
+                    <table id="table2" class="display target-table">
                         <thead>
                             <tr>
                                 <th>Module Code</th>
@@ -618,7 +588,7 @@ permalink: /courses/curricula-update-01/
                     </table>
                 </div>
                 <div id="tab1-3" class="tab-content">
-                    <table id="table3" class="display target-table table-responsive">
+                    <table id="table3" class="display target-table">
                         <thead>
                             <tr>
                                 <th>Module Code</th>
@@ -685,7 +655,7 @@ permalink: /courses/curricula-update-01/
                 <!-- Tab Content -->
                 <div id="tab2-1" class="tab-content active">
                     <div class="table-wrapper">
-                        <table id="table4" class="display target-table table-responsive">
+                        <table id="table4" class="display target-table">
                             <thead>
                                 <tr>
                                     <th>Module Code</th>
@@ -756,7 +726,7 @@ permalink: /courses/curricula-update-01/
                     </div>
                 </div>
                 <div id="tab2-2" class="tab-content">
-                    <table id="table5" class="display target-table table-responsive">
+                    <table id="table5" class="display target-table">
                         <thead>
                             <tr>
                                 <th>Module Code</th>
@@ -826,7 +796,7 @@ permalink: /courses/curricula-update-01/
                     </table>
                 </div>
                 <div id="tab2-3" class="tab-content">
-                    <table id="table6" class="display target-table table-responsive">
+                    <table id="table6" class="display target-table">
                         <thead>
                             <tr>
                                 <th>Module Code</th>
@@ -914,7 +884,7 @@ permalink: /courses/curricula-update-01/
                     </table>
                 </div>
                 <div id="tab2-4" class="tab-content">
-                    <table id="table24" class="display target-table table-responsive">
+                    <table id="table24" class="display target-table">
                         <thead>
                             <tr>
                                 <th>Module Code</th>
@@ -958,7 +928,7 @@ permalink: /courses/curricula-update-01/
                     </table>
                 </div>
                 <div id="tab2-5" class="tab-content">
-                    <table id="table25" class="display target-table table-responsive">
+                    <table id="table25" class="display target-table">
                         <thead>
                             <tr>
                                 <th>Module Code</th>
@@ -1008,7 +978,7 @@ permalink: /courses/curricula-update-01/
                     </table>
                 </div>
                 <div id="tab2-6" class="tab-content">
-                    <table id="table26" class="display target-table table-responsive">
+                    <table id="table26" class="display target-table">
                         <thead>
                             <tr>
                                 <th>Module Code</th>
@@ -1099,7 +1069,8 @@ permalink: /courses/curricula-update-01/
                     searching: true,
                     ordering: true,
                     info: true,
-                    responsive: true,
+                    responsive: false, // Disable responsive mode to maintain horizontal layout
+                    scrollX: true,     // Enable horizontal scrolling
                     language: {
                         search: "Search:",
                         lengthMenu: "Show _MENU_ entries per page",
