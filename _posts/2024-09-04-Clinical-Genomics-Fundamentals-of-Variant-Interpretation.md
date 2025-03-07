@@ -4,7 +4,7 @@ title: "Clinical Genomics - Fundamentals of Variant Interpretation in Clinical P
 posted_date: "2024-09-04"
 main_menu: courses
 permalink: /:year/:title
-category: upcoming
+category: past-course
 course_overview: 
 training_provider: Welcome Connecting Science
 start_date: "2025-02-03"
