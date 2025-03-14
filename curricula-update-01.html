@@ -109,7 +109,7 @@ permalink: /courses/curricula-update-01/
             background-color: #f2f2f2;
             position: relative;
             vertical-align: top;
-            padding-bottom: 35px; /* Add extra padding at the bottom for the filter */
+            padding: 8px; /* Regular padding - no extra space needed at bottom */
         }
 
         .table-wrapper {
@@ -199,32 +199,30 @@ permalink: /courses/curricula-update-01/
             margin: 0 5px;
         }
 
-        /* Additional CSS for Persona dropdown filter */
+        /* Updated styles for the filter dropdown container */
+        .column-filter-container {
+            position: relative; /* Changed from absolute to relative */
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px; /* Added margin for spacing */
+        }
+
+        /* Style for the filter dropdown */
         th select {
-            width: 90%;
+            width: 100%;
             padding: 4px;
             border: 1px solid #ddd;
             border-radius: 4px;
             background-color: white;
             font-size: 14px;
-            margin-top: 6px;
+            margin-top: 5px; /* Adjusted spacing */
             z-index: 100;
-            position: relative;
         }
 
         th select:focus {
             outline: none;
             border-color: #8c2133;
             box-shadow: 0 0 0 2px rgba(140, 33, 51, 0.2);
-        }
-
-        /* Style for the filter dropdown container */
-        .column-filter-container {
-            position: absolute;
-            bottom: 5px;
-            left: 0;
-            width: 100%;
-            padding: 0 5px;
         }
 
         /* Reduce Module Code column width by 50% */
@@ -435,7 +433,7 @@ permalink: /courses/curricula-update-01/
                     <li data-tab="tab1-3">Wet-lab Foundational Course</li>
                 </ul>
 
-                <!-- Tab Content -->
+                <!-- Tab Generic Foundational-->
                 <div id="tab1-1" class="tab-content active">
                     <div class="table-wrapper">
                         <table id="table1" class="display source-table">
@@ -451,62 +449,64 @@ permalink: /courses/curricula-update-01/
                                 <tr>
                                     <td>G01</td>
                                     <td>All pathogens</td>
-                                    <td>Wet-laboratory</td>
+                                    <td>Wet/Dry lab & Managerial personnel</td>
                                     <td id="title_column" >An Introduction to Basic Molecular and Microbial Biology</td>
                                   </tr>
                                   <tr>
                                     <td>G02</td>
                                     <td>All pathogens</td>
-                                    <td>Wet-laboratory</td>
+                                    <td>Wet/Dry lab & Managerial personnel</td>
                                     <td>Introduction to Traditional, Field, and Genomic Epidemiology </td>
                                   </tr>
                                   <tr>
                                     <td>G03</td>
                                     <td>All pathogens</td>
-                                    <td>Wet-laboratory</td>
+                                    <td>Wet/Dry lab & Managerial personnel</td>
                                     <td>An Overview of the Role of Genomic Epidemiology in Pathogen Genomic Surveillance</td>
                                   </tr>
                                   <tr>
                                     <td>G04</td>
                                     <td>All pathogens</td>
-                                    <td>Wet-laboratory</td>
+                                    <td>Wet/Dry lab & Managerial personnel</td>
                                     <td>Fundamentals of Biostatistics</td>
                                   </tr>
                                   <tr>
                                     <td>G05</td>
                                     <td>All pathogens</td>
-                                    <td>Wet-laboratory</td>
+                                    <td>Wet/Dry lab & Managerial personnel</td>
                                     <td>Fundamentals of Pathogen Genomic Surveillance Study Design</td>
                                   </tr>
                                   <tr>
                                     <td>G06</td>
                                     <td>All pathogens</td>
-                                    <td>Wet-laboratory</td>
+                                    <td>Wet/Dry lab & Managerial personnel</td>
                                     <td id="title_column">Introduction to Genomic Sequencing and NGS</td>
                                   </tr>
                                   <tr>
                                     <td>G07</td>
                                     <td>All pathogens</td>
-                                    <td>Wet-laboratory</td>
+                                    <td>Wet/Dry lab & Managerial personnel</td>
                                     <td>Introduction to Public Health Research and Pathogen Surveillance Ethics and Policies</td>
                                   </tr>
                                   <tr>
                                     <td>G08</td>
                                     <td>All pathogens</td>
-                                    <td>Wet-laboratory</td>
+                                    <td>Wet/Dry lab & Managerial personnel</td>
                                     <td>Introduction to Data Sharing and Dissemination</td>
                                   </tr>
 
                                   <tr>
                                     <td>G09</td>
                                     <td>All pathogens</td>
-                                    <td>Wet-laboratory</td>
+                                    <td>Wet/Dry lab & Managerial personnel</td>
                                     <td><a href="{{ site.url }}uploads/G01-An-Intro-Basic-Molecular-and-Microbial-Biology.pdf" target="_blank">Introduction to Antimicrobial Resistance (AMR).</a></td>
                                   </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
+                 <!-- Tab Generic Foundational-->
+                   <!-- Tab Bio-informatics-->
                 <div id="tab1-2" class="tab-content">
                     <table id="table2" class="display target-table">
                         <thead>
@@ -521,72 +521,75 @@ permalink: /courses/curricula-update-01/
                             <tr>
                                 <td>B01</td>
                                 <td>All pathogens</td>
-                                <td>Dry-laboratory</td>
+                                <td>Dry-lab</td>
                                 <td id="title_column" >Introduction to Unix/Linux, Command Line, and Shell Scripting</td>
                               </tr>
                               <tr>
                                 <td>B02</td>
                                 <td>All pathogens</td>
-                                <td>Dry-laboratory</td>
+                                <td>Dry-lab</td>
                                 <td>Introduction to Version Control</td>
                               </tr>
                               <tr>
                                 <td>B03</td>
                                 <td>All pathogens</td>
-                                <td>Dry-laboratory</td>
+                                <td>Dry-lab</td>
                                 <td>Informatics skills </td>
                               </tr>
                               <tr>
                                 <td>B04</td>
                                 <td>All pathogens</td>
-                                <td>Dry-laboratory</td>
+                                <td>Dry-lab</td>
                                 <td>Introduction to Programming</td>
                               </tr>
                               <tr>
                                 <td>B05</td>
                                 <td>All pathogens</td>
-                                <td>Dry-laboratory</td>
+                                <td>Dry-lab</td>
                                 <td>Introduction to R Programming for Data Analysis</td>
                               </tr>
                               <tr>
                                 <td>B06</td>
                                 <td>All pathogens</td>
-                                <td>Dry-laboratory</td>
+                                <td>Dry-lab</td>
                                 <td id="title_column">Data Management and Basic Analytics</td>
                               </tr>
                               <tr>
                                 <td>B07</td>
                                 <td>All pathogens</td>
-                                <td>Dry-laboratory</td>
+                                <td>Dry-lab</td>
                                 <td>Phylogenetics</td>
                               </tr>
                               <tr>
                                 <td>B08</td>
                                 <td>All pathogens</td>
-                                <td>Dry-laboratory</td>
+                                <td>Dry-lab</td>
                                 <td>Virtual Environments and Containerization</td>
                               </tr>
                               <tr>
                                 <td>B09</td>
                                 <td>All pathogens</td>
-                                <td>Dry-laboratory</td>
+                                <td>Dry-lab</td>
                                 <td>Workflow management systems</td>
                               </tr>
                               <tr>
                                 <td>B10</td>
                                 <td>All pathogens</td>
-                                <td>Dry-laboratory</td>
+                                <td>Dry-lab</td>
                                 <td>Ontologies, standards, data curation and submission</td>
                               </tr>
                               <tr>
                                 <td>B11</td>
                                 <td>All pathogens</td>
-                                <td>Dry-laboratory</td>
+                                <td>Dry-lab</td>
                                 <td>Data Visualisation and Report Generation</td>
                               </tr>
                         </tbody>
                     </table>
                 </div>
+
+                 <!-- Tab Bio-informatics-->
+                   <!-- Tab wet lab-->
                 <div id="tab1-3" class="tab-content">
                     <table id="table3" class="display target-table">
                         <thead>
@@ -601,26 +604,26 @@ permalink: /courses/curricula-update-01/
                             <tr>
                                 <td>W01</td>
                                 <td>All pathogens</td>
-                                <td>Wet-laboratory</td>
+                                <td>Wet-lab</td>
                                 <td>Introduction to Biosafety and Biosecurity</td>
                           
                               </tr>
                               <tr>
                                 <td>W02</td>
                                 <td>All pathogens</td>
-                                <td>Wet-laboratory</td>
+                                <td>Wet-lab</td>
                                 <td>Basic Laboratory Requirements and Operational Setup for NGS Implementation</td>
                               </tr>
                               <tr>
                                 <td>W03</td>
                                 <td>All pathogens</td>
-                                <td>Wet-laboratory</td>
+                                <td>Wet-lab</td>
                                 <td>Introduction to Fundamental Laboratory Skills and Calculations</td>
                               </tr>
                               <tr>
                                 <td>W04</td>
                                 <td>All pathogens</td>
-                                <td>Wet-laboratory</td>
+                                <td>Wet-lab</td>
                                 <td>Basic Molecular Techniques for NGS Implementation</td>
                               </tr>
                         </tbody>
@@ -653,6 +656,7 @@ permalink: /courses/curricula-update-01/
                 </ul>
 
                 <!-- Tab Content -->
+                 <!-- Bacterial -->
                 <div id="tab2-1" class="tab-content active">
                     <div class="table-wrapper">
                         <table id="table4" class="display target-table">
@@ -668,63 +672,65 @@ permalink: /courses/curricula-update-01/
                                 <tr>
                                     <td>BA01</td>
                                     <td>Bacterial</td>
-                                    <td>Wet-laboratory</td>
+                                    <td>Wet/Dry lab & Managerial</td>
                                     <td>Study Design for Bacterial Pathogen Surveillance</td>
                             
                                   </tr>
                                   <tr>
                                     <td>BA02</td>
                                     <td>Bacterial</td>
-                                    <td>Wet-laboratory</td>
+                                    <td>Wet-lab</td>
                                     <td>Bacterial Sample Preparation, Library Preparation and DNA Sequencing</td>
                                   </tr>
                                   <tr>
                                     <td>BA03</td>
                                     <td>Bacterial</td>
-                                    <td>Dry-laboratory</td>
+                                    <td>Dry-lab</td>
                                     <td>Bacterial NGS Data Processing</td>
                                   </tr>
                                   <tr>
                                     <td>BA04a</td>
                                     <td>Bacterial</td>
-                                    <td>Dry-laboratory</td>
+                                    <td>Dry-lab</td>
                                     <td>Bacterial Pathogen Data Analysis</td>
                                   </tr>
                                   <tr>
                                     <td>BA04a</td>
                                     <td>Bacterial</td>
-                                    <td>Dry-laboratory</td>
+                                    <td>Dry-lab</td>
                                     <td>Bacterial Pathogen Data Analysis</td>
                                   </tr>
                                   <tr>
                                     <td>BA4b</td>
                                     <td>Bacterial</td>
-                                    <td>Dry-laboratory</td>
+                                    <td>Dry-lab</td>
                                     <td>Bacterial Bioinformatics Analytical workflows</td>
                                   </tr>
                                   <tr>
                                     <td>BA05</td>
                                     <td>Bacterial</td>
-                                    <td>Dry-laboratory</td>
+                                    <td>Dry-lab</td>
                                     <td>Bacterial Phylogenetics</td>
                                   </tr>
                                   <tr>
                                     <td>BA06</td>
                                     <td>Bacterial</td>
-                                    <td>Dry-laboratory</td>
+                                    <td>Dry-lab</td>
                                     <td>Antibacterial Resistance Identification and Tracking</td>
                                   </tr>
 
                                   <tr>
                                     <td>BA07</td>
                                     <td>Bacterial</td>
-                                    <td>Dry-laboratory</td>
+                                    <td>Dry-lab</td>
                                     <td>BA07. Metagenomics/16S rRNA Amplicon for Bacterial  Surveillance</td>
                                   </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
+                       <!-- Viral-->
+                  <!-- Tab malaria-->
                 <div id="tab2-2" class="tab-content">
                     <table id="table5" class="display target-table">
                         <thead>
@@ -739,57 +745,57 @@ permalink: /courses/curricula-update-01/
                             <tr>
                                 <td>V01</td>
                                 <td>Viral</td>
-                                <td>Wet-laboratory</td>
+                                <td>Wet/Dry lab, Managerial</td>
                                 <td>Study Design and Sequencing Strategies for Viral Pathogen Surveillance</td>
                         
                               </tr>
                               <tr>
                                 <td>V02</td>
                                 <td>Viral</td>
-                                <td>Wet-laboratory</td>
+                                <td>Wet-lab</td>
                                 <td>Sample Processing and Library Preparation for Viral Pathogens (Theory and Wet-lab Practical)</td>
                               </tr>
                               <tr>
                                 <td>V03</td>
                                 <td>Viral</td>
-                                <td>Wet-laboratory</td>
+                                <td>Wet-lab</td>
                                 <td>ARTIC Viral Amplicon Sequencing</td>
                               </tr>
                               <tr>
                                 <td>V03a</td>
                                 <td>Viral</td>
-                                <td>Wet-laboratory</td>
+                                <td>Wet-lab</td>
                                 <td>Illumina Workflow for Viral Genome Sequencing</td>
                               </tr>
                               <tr>
                                 <td>V03b</td>
                                 <td>Viral</td>
-                                <td>Wet-laboratory</td>
+                                <td>Wet-lab</td>
                                 <td>ONT Workflow for Viral Genome Sequencing</td>
                               </tr>
                               <tr>
                                 <td>V04</td>
                                 <td>Viral</td>
-                                <td>Dry-laboratory</td>
+                                <td>Dry-lab</td>
                                 <td>Introduction to Viral NGS Data Processing</td>
                               </tr>
                               <tr>
                                 <td>V04a</td>
                                 <td></td>
-                                <td>Dry-laboratory</td>
+                                <td>Dry-lab</td>
                                 <td>Nextclade and Pangolin</td>
                               </tr>
                               <tr>
                                 <td>V04b</td>
                                 <td>Viral</td>
-                                <td>Dry-laboratory</td>
+                                <td>Dry-lab</td>
                                 <td>Galaxy Workflow (or other selected workflow(s))</td>
                               </tr>
 
                               <tr>
                                 <td>V05</td>
                                 <td>Viral</td>
-                                <td>Dry-laboratory</td>
+                                <td>Dry-lab</td>
                                 <td>Advanced Bioinformatics Analysis for Viruses</td>
                               </tr>
                         </tbody>
@@ -809,75 +815,81 @@ permalink: /courses/curricula-update-01/
                             <tr>
                                 <td>M01</td>
                                 <td>Malaria</td>
-                                <td>Wet-laboratory</td>
+                                <td>Wet/Dry-lab, Managerial</td>
                                 <td>Introduction to Malaria Biology and Genomic Epidemiology</td>
                               </tr>
                               <tr>
                                 <td>M02p</td>
                                 <td>Malaria</td>
-                                <td>Wet-laboratory</td>
+                                <td>Wet/Dry-lab, Managerial</td>
                                 <td>Malaria Pathogen Surveillance Design</td>
                               </tr>
                               <tr>
                                 <td>M02v</td>
                                 <td>Malaria</td>
-                                <td>Wet-laboratory</td>
+                                <td>Wet/Dry-lab, Managerial</td>
                                 <td>Malaria Vector Surveillance Design</td>
                               </tr>
                               <tr>
                                 <td>M03</td>
                                 <td>Malaria</td>
-                                <td>Wet-laboratory</td>
+                                <td>Wet-lab</td>
                                 <td>Sample processing and library preparation for malaria 
                                     (Theory and wet lab practical)</td>
                               </tr>
                               <tr>
+                                <td>M03a</td>
+                                <td>Malaria</td>
+                                <td>Wet-lab</td>
+                                <td>Population Genomics and Adaptive Evolution in P.falciparum</td>
+                              </tr>
+                              <tr>
                                 <td>M04</td>
                                 <td>Malaria</td>
-                                <td>Dry-laboratory</td>
+                                <td>Dry-lab</td>
                                 <td>Introduction to Malaria Bioinformatics</td>
                               </tr>
                               <tr>
                                 <td>M04a</td>
                                 <td>Malaria</td>
-                                <td>Dry-laboratory</td>
+                                <td>Dry-lab</td>
                                 <td>Intermediate Malaria Bioinformatics: SNP Calling Tools
                                     </td>
                               </tr>
                               <tr>
                                 <td>M04b</td>
                                 <td>Malaria</td>
-                                <td>Dry-laboratory</td>
+                                <td>Dry-lab</td>
                                 <td>Intermediate Malaria Bioinformatics: Microhaplotype Calling Tools</td>
                               </tr>
                               <tr>
                                 <td>M05p</td>
                                 <td>Malaria</td>
-                                <td>Dry-laboratory</td>
+                                <td>Dry-lab</td>
                                 <td>Malaria Pathogen Analytics</td>
                               </tr>
                               <tr>
                                 <td>M05v</td>
                                 <td>Malaria</td>
-                                <td>Dry-laboratory</td>
+                                <td>Dry-lab</td>
                                 <td>Introduction to Malaria Vector Biology (Theory)</td>
                               </tr>
                               <tr>
                                 <td>M06v</td>
                                 <td>Malaria</td>
-                                <td>Dry-laboratory</td>
+                                <td>Dry-lab</td>
                                 <td>Whole Genome Analysis for Malaria Vector (Theory and Wet-lab Practical)</td>
                               </tr>
                               <tr>
                                 <td>M07v</td>
                                 <td>Malaria</td>
-                                <td>Dry-laboratory</td>
+                                <td>Dry-lab</td>
                                 <td>Malaria Vector Transcriptomics Data Analysis </td>
                               </tr>
                               <tr>
                                 <td>M08</td>
                                 <td>Malaria</td>
-                                <td>Wet-laboratory</td>
+                                <td>Wet/Dry lab, Managerial</td>
                                 <td>M08. Using Malaria Genomic Data for Decision-Making</td>
                               </tr>
                         </tbody>
@@ -897,31 +909,31 @@ permalink: /courses/curricula-update-01/
                             <tr>
                                 <td>P01</td>
                                 <td>Parasitic</td>
-                                <td>Wet-laboratory</td>
+                                <td>Wet/Dry lab, Managerial</td>
                                 <td>Study Design for Parasitic Pathogen Surveillance</td>
                               </tr>
                               <tr>
                                 <td>P02</td>
                                 <td>Parasitic</td>
-                                <td>Wet-laboratory</td>
+                                <td>Wet-lab</td>
                                 <td>Sample Processing and Library Preparation for Parasitic Pathogens (Theory and Wet-lab Practical)</td>
                               </tr>
                               <tr>
                                 <td>P03</td>
                                 <td>Parasitic</td>
-                                <td>Dry-laboratory</td>
+                                <td>Dry-lab</td>
                                 <td>Introduction to Parasitic NGS Data Processing</td>
                               </tr>
                               <tr>
                                 <td>P04</td>
                                 <td>Parasitic</td>
-                                <td>Dry-laboratory</td>
+                                <td>Dry-lab</td>
                                 <td>NGS Data Analysis Using the Artemis Genome Browser and Annotation Tool</td>
                               </tr>
                               <tr>
                                 <td>P05</td>
                                 <td>Parasitic</td>
-                                <td>Dry-laboratory</td>
+                                <td>Dry-lab</td>
                                 <td>Using Parasitic Databases and Resources</td>
                               </tr>
                         </tbody>
@@ -941,37 +953,37 @@ permalink: /courses/curricula-update-01/
                             <tr>
                                 <td>F01</td>
                                 <td>Fungi</td>
-                                <td>Wet-laboratory</td>
+                                <td>Wet/Dry lab, Managerial</td>
                                 <td>Study Design and Sequencing Strategies for Fungal Pathogen Surveillance</td>
                               </tr>
                               <tr>
                                 <td>F02</td>
                                 <td>Fungi</td>
-                                <td>Wet-laboratory</td>
+                                <td>Wet-lab</td>
                                 <td>Overview of Fungal Pathogen Surveillance Using NGS</td>
                               </tr>
                               <tr>
                                 <td>F03</td>
                                 <td>Fungi</td>
-                                <td>Dry-laboratory</td>
+                                <td>Dry-lab</td>
                                 <td>Introduction to Fungal Databases</td>
                               </tr>
                               <tr>
                                 <td>F04</td>
                                 <td>Fungi</td>
-                                <td>Wet-laboratory</td>
+                                <td>Wet-lab</td>
                                 <td>Fungal Sample Processing and Library Preparation (Theory and Wet-lab Practical)</td>
                               </tr>
                               <tr>
                                 <td>F05</td>
                                 <td>Fungi</td>
-                                <td>Dry-laboratory</td>
+                                <td>Dry-lab</td>
                                 <td>Phylogenetics and Visualization for Fungal Genomes</td>
                               </tr>
                               <tr>
                                 <td>F06</td>
                                 <td>Fungi</td>
-                                <td>Dry-laboratory</td>
+                                <td>Dry-lab</td>
                                 <td>Antifungal Resistance (AMR)</td>
                               </tr>
                         </tbody>
@@ -991,43 +1003,43 @@ permalink: /courses/curricula-update-01/
                             <tr>
                                 <td>MG01</td>
                                 <td>Metagenomics</td>
-                                <td>Wet-laboratory</td>
+                                <td>Wet/Dry lab, Managerial</td>
                                 <td>Introduction to Metagenomics and Use Cases</td>
                               </tr>
                               <tr>
                                 <td>MG02</td>
                                 <td>Metagenomics</td>
-                                <td>Wet-laboratory</td>
+                                <td>Wet/Dry lab, Managerial</td>
                                 <td>Study Design and Lab Setup for Metagenomics </td>
                               </tr>
                               <tr>
                                 <td>MG03</td>
                                 <td>Metagenomics</td>
-                                <td>Wet-laboratory</td>
+                                <td>Wet-lab</td>
                                 <td>Sample Processing and Library Preparation for Metagenomics (Theory and Wet-lab Practical)</td>
                               </tr>
                               <tr>
                                 <td>MG04</td>
                                 <td>Metagenomics</td>
-                                <td>Dry-laboratory</td>
+                                <td>Dry-lab</td>
                                 <td>Introduction to Metagenomics Data Analysis</td>
                               </tr>
                               <tr>
                                 <td>MG05</td>
                                 <td>Metagenomics</td>
-                                <td>Wet-laboratory</td>
+                                <td>Wet-lab</td>
                                 <td>Metagenomics Data Analysis. iSeq 100 Loading</td>
                               </tr>
                               <tr>
                                 <td>MG06</td>
                                 <td>Metagenomics</td>
-                                <td>Wet-laboratory</td>
+                                <td>Wet-lab</td>
                                 <td>Quality Control, Sample QC, Sequencing Run QC</td>
                               </tr>
                               <tr>
                                 <td>MG07</td>
                                 <td>Metagenomics</td>
-                                <td>Dry-laboratory</td>
+                                <td>Dry-lab</td>
                                 <td>Metagenomics Analysis. Cloud-based Metagenomics Platform for Researchers</td>
                               </tr>
                         </tbody>
@@ -1082,14 +1094,18 @@ permalink: /courses/curricula-update-01/
                             previous: "Previous"
                         }
                     },
-                    // Add initComplete function to create persona filter
+                    // Updated initComplete function to create persona filter below header
                     initComplete: function() {
                         this.api().columns(2).every(function() {
                             var column = this;
                             
-                            // Create a select element for the Persona filter
+                            // Create a div container that will hold the select dropdown
+                            var filterDiv = $('<div class="column-filter-container"></div>')
+                                .appendTo($(column.header()));
+                            
+                            // Create a select element for the Persona filter and append to the container
                             var select = $('<select><option value="">All Personas</option></select>')
-                                .appendTo($(column.header()))
+                                .appendTo(filterDiv)
                                 .on('change', function() {
                                     var val = $.fn.dataTable.util.escapeRegex(
                                         $(this).val()
