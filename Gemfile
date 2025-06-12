@@ -28,7 +28,6 @@ end
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 
-
 # Add these lines to your Gemfile
 gem "csv"
 gem "logger"  # Also recommended since the warning mentions this too
