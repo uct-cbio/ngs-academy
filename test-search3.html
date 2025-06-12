@@ -1,37 +1,29 @@
 ---
 layout: default
-title: Search
-permalink: /search3/
+title: Contact Form
+permalink: /form/
 ---
 
-<title>Document</title>
-<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-</head>
-<body>
-<label>
-Enter the keyword..
-<input type="text" class="txtInput" id="searchTheKey" placeholder="Enter the keywords to search.....">
-</label>
-<ul id="matchKey">
-<li id="subjectName">JavaScript</li>
-<li id="teacherName"><a href="#">John Smith</a></li>
-<li id="subjectName">Java</li>
-<li id="teacherName"><a href="#">David Miller</a</li>
-<li id="subjectName">MongoDB</li>
-<li id="teacherName"><a href="#">Carol Taylor</a></li>
-</ul>
-<script>
-   $("#searchTheKey").on('keyup', function(){
-      var value = $(this).val().toLowerCase();
-      $("#matchKey li").each(function () {
-         if ($(this).text().toLowerCase().search(value) > -1) {
-            $(this).show();
-            $(this).prev('.subjectName').last().show();
-         } else {
-            $(this).hide();
-         }
-      });
-   })
-</script>
+<div>
+<form action="" method="POST"  data-netlify="true" class="p-4 border rounded shadow-sm bg-light">
+  <div class="mb-3">
+    <label for="name" class="form-label">Name:</label>
+    <input type="text" name="name" id="name" class="form-control" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="email" class="form-label">Email:</label>
+    <input type="email" name="email" id="email" class="form-control" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="message" class="form-label">Message:</label>
+    <textarea name="message" id="message" rows="5" class="form-control" required></textarea>
+  </div>
+<br>
+  <button type="submit" class="btn btn-primary">Send</button>
+
+</form>
+
+</div>
+
