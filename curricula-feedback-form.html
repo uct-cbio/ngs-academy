@@ -4,168 +4,186 @@ title: Pathogen Surveillance Training Courses Contribution
 permalink: /courses/curricula-contribution/
 ---
 
-
 <div class="container-fluid">
-    <form action="https://submit-form.com/FUPgKVql9" method="POST">
-      <div class="mb-3">
-        <label for="name" class="form-label">Firstname</label>
-        <input type="text" class="form-control" id="name" name="name" placeholder="Firstname" required>
-      </div>
-  
-      <div class="mb-3">
-        <label for="lastname" class="form-label">Lastname</label>
-        <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Lastname" required>
-      </div>
-  
-      <div class="mb-3">
-        <label for="email" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="email" name="email" placeholder="name@domain.com" required>
-      </div>
+  <form action="https://submit-form.com/FUPgKVql9" method="POST">
+    <div class="mb-3">
+      <label for="name" class="form-label">Firstname</label>
+      <input type="text" class="form-control" id="name" name="name" placeholder="Firstname" required>
+    </div>
 
+    <div class="mb-3">
+      <label for="lastname" class="form-label">Lastname</label>
+      <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Lastname" required>
+    </div>
 
-  
-      <!-- Curricula Selection -->
-      <div class="mb-3">
-        <label for="curricula" class="form-label">Courses </label>
-        <select class="form-control" id="curricula" name="curricula" required>
-          <option value="" disabled selected>Select a Course</option>
-          <option value="Generic Foundational">Generic Foundational Course</option>
-          <option value="Wetlab Course">Wet-lab Foundational Course</option>
-          <option value="Bioinformatics Foundational Course">Bioinformatics Foundational Course</option>
-          <option value="Viral Course">Viral</option>
-          <option value="Bacterial Course">Bacterial</option>
-          <option value="Parasitic Course">Parasitic</option>
-          <option value="Fungal Course">Fungal</option>
-          <option value="Malaria Course">Malaria</option>
-          <option value="Metagenomics Course">Metagenomics</option>
-        </select>
-      </div>
-  
-      <!-- Module Selection -->
-      <div class="mb-3">
-        <label for="module" class="form-label">Module</label>
-        <select class="form-control" id="module" name="module" required>
-          <option value="" disabled selected>Select Module</option>
-        </select>
-      </div>
-  
-      <div class="mb-3">
-        <label for="message" class="form-label">Add message</label>
-        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
-      </div>
-      
+    <div class="mb-3">
+      <label for="email" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="email" name="email" placeholder="name@domain.com" required>
+    </div>
 
-      <button type="submit" class="btn btn-primary">Send Message</button>
-    </form>
-  
-    <script>
-      const moduleSelect = document.getElementById('module');
-      const microbeSelect = document.getElementById('curricula');
-  
-      const moduleOptions = {
-        "Generic Foundational": [
-          "Module G01: An Introduction to Basic Molecular and Microbial Biology",
-          "Module G02: Introduction to Traditional, Field, and Genomic Epidemiology",
-          "Module G03: An Overview of the Role of Genomic Epidemiology in Pathogen Genomic Surveillance",
-          "Module G04: Fundamentals of Biostatistics",
-          "Module G05: Fundamentals of Pathogen Genomic Surveillance Study Design",
-          "Module G06: Introduction to Genomic Sequencing and NGS",
-          "Module G07: Introduction to Public Health Research and Pathogen Surveillance Ethics and Policies",
-          "Module G08: Introduction to Data Sharing and Dissemination",
-          "Module G09: Introduction to Antimicrobial Resistance (AMR)"
-        ],
-        "Wetlab Course": [
-          "Module W01: Introduction to Biosafety and Biosecurity",
-          "Module W02: Basic Laboratory Requirements and Operational Setup for NGS Implementation",
-          "Module W03: Introduction to Fundamental Laboratory Skills and Calculations",
-          "Module W04: Basic Molecular Techniques for NGS Implementation"
-        ],
-        "Bioinformatics Foundational Course": [
-          "Module B01: Introduction to Unix/Linux, Command Line, and Shell Scripting",
-          "Module B02: Introduction to Version Control",
-          "Module B03: Informatics Skills",
-          "Module B04: Introduction to Programming",
-          "Module B05: Introduction to R Programming for Data Analysis",
-          "Module B06: Data Management and Basic Analytics",
-          "Module B07: Phylogenetics",
-          "Module B08: Virtual Environments and Containerization",
-          "Module B09: Workflow Management Systems",
-          "Module B10: Ontologies, Standards, Data Curation and Submission",
-          "Module B11: Data Visualisation and Report Generation",
-        ],
-        "Fungal Course": [
-          "Module F01: Study Design and Sequencing Strategies for Fungal Pathogen Surveillance",
-          "Module F02: Overview of Fungal Pathogen Surveillance Using NGS",
-          "Module F03: Introduction to Fungal Databases",
-          "Module F04: Fungal Sample Processing and Library Preparation (Theory and Wet-lab Practical)",
-          "Module F05: Phylogenetics and Visualization for Fungal Genomes",
-          "Module F06: Antifungal Resistance (AMR)",
-        ],
-        "Viral Course": [
-          "Module V01: Study Design and Sequencing Strategies for Viral Pathogen Surveillance",
-          "Module V02: Sample Processing and Library Preparation for Viral Pathogens (Theory and Wet-lab Practical)",
-          "Module V03: ARTIC Viral Amplicon Sequencing",
-          "Module V03a: Illumina Workflow for Viral Genome Sequencing",
-          "Module V03b: ONT Workflow for Viral Genome Sequencing",
-          "Module V04: Introduction to Viral NGS Data Processing",
-          "Module V04a: Nextclade and Pangolin",
-          "Module V04b: Galaxy Workflow (or other selected workflow(s))",
-          "Module V05: Advanced Bioinformatics Analysis for Viruses",
-        ],
+    <!-- Curricula Selection -->
+    <div class="mb-3">
+      <label for="course" class="form-label">Courses</label>
+      <select class="form-control" id="course" name="course" required>
+        <option value="" disabled selected>Select a Course</option>
+        <option value="Generic Foundational">Generic Foundational Course</option>
+        <option value="Wetlab Course">Wet-lab Foundational Course</option>
+        <option value="Bioinformatics Foundational Course">Bioinformatics Foundational Course</option>
+        <option value="Viral Course">Viral</option>
+        <option value="Bacterial Course">Bacterial</option>
+        <option value="Parasitic Course">Parasitic</option>
+        <option value="Fungal Course">Fungal</option>
+        <option value="Malaria Course">Malaria</option>
+        <option value="Metagenomics Course">Metagenomics</option>
+      </select>
+    </div>
 
-        "Bacterial Course": [
-          "Module BA01: Study Design for Bacterial Pathogen Surveillance",
-          "Module BA02: Bacterial Sample Preparation, Library Preparation and DNA Sequencing",
-          "Module BA03: Bacterial NGS Data Processing",
-          "Module BA04a: Bacterial Pathogen Data Analysis",
-          "Module BA04b: Bacterial Bioinformatics Analytical Workflows",
-          "Module BA05: Bacterial Phylogenetics",
-          "Module BA06: Antibacterial Resistance Identification and Tracking",
-          "Module BA07: Metagenomics/16S rRNA Amplicon for Bacterial Surveillance",
-        ],
-        "Parasitic Course": [
-          "Module P01: Study Design for Parasitic Pathogen Surveillance",
-          "Module P02: Sample Processing and Library Preparation for Parasitic Pathogens (Theory and Wet-lab Practical)",
-          "Module P03: Introduction to Parasitic NGS Data Processing",
-          "Module P04: NGS Data Analysis Using the Artemis Genome Browser and Annotation Tool",
-          "Module P05: Using Parasitic Databases and Resources",
-  
-        ]
-        ,
-        "Malaria Course": [
-          "Module M01: Introduction to Malaria Biology and Genomic Epidemiology",
-          "Module M02p: Malaria Pathogen Surveillance Design",
-          "Module M02v: Malaria Vector Surveillance Design",
-          "Module M03: Sample Processing and Library Preparation for Malaria (Theory and Wet-lab Practical)",
-        ]
-        ,
-        "Metagenomics Course": [
-          "Module MG01: Introduction to Metagenomics and Use Cases",
-          "Module MG02: Study Design and Lab Setup for Metagenomics",
-          "Module MG03: Sample Processing and Library Preparation for Metagenomics (Theory and Wet-lab Practical)",
-          "Module MG04: Introduction to Metagenomics Data Analysis",
-          "Module MG05: Metagenomics Data Analysis. iSeq 100 Loading",
-          "Module MG06: Quality Control, Sample QC, Sequencing Run QC",
-          "Module MG07: Metagenomics Analysis. Cloud-based Metagenomics Platform for Researchers",
-  
-        ]
-      };
-  
-      microbeSelect.addEventListener('change', function () {
-        const selectedMicrobe = this.value;
-        const modules = moduleOptions[selectedMicrobe] || [];
-  
-        // Reset module options
-        moduleSelect.innerHTML = '<option value="" disabled selected>Select Module</option>';
-  
-        // Add new options
-        modules.forEach(mod => {
-          const opt = document.createElement('option');
-          opt.value = mod;
-          opt.textContent = mod;
-          moduleSelect.appendChild(opt);
-        });
+    <!-- Module Selection -->
+    <div class="mb-3">
+      <label for="module" class="form-label">Module</label>
+      <select class="form-control" id="module" name="module" required>
+        <option value="" disabled selected>Select Module</option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label for="content" class="form-label">Select Content Type</label>
+      <select class="form-control" id="content" name="content" required>
+        <option value="" disabled selected>Select content type</option>
+        <option value="Module Introduction">Module Introduction</option>
+        <option value="Module Scope">Module Scope</option>
+        <option value="Module Learning Outcomes">Module Learning Outcomes</option>
+        <option value="Module Assessments">Module Assessments</option>
+        <option value="Module Practical">Module Practical</option>
+        <option value="Module Resources">Module Resources</option>
+        <option value="Not Applicable">Not Applicable</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label for="level" class="form-label">Level of Contribution</label>
+      <select class="form-control" id="level" name="level" required>
+        <option value="" disabled selected>Select Level</option>
+        <option value="Introductory">Introductory</option>
+        <option value="Intermediate">Intermediate</option>
+        <option value="Advanced">Advanced</option>
+        <option value="All Levels">All Levels</option>
+        <option value="Not Applicable">Not Applicable</option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label for="message" class="form-label">Your Message</label>
+      <textarea class="form-control" id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+    </div>
+
+    <br>
+    <button type="submit" class="btn btn-danger">Send Message</button>
+  </form>
+
+  <script>
+    const moduleSelect = document.getElementById('module');
+    const microbeSelect = document.getElementById('course');
+
+    const moduleOptions = {
+      "Generic Foundational": [
+        "Module G01: An Introduction to Basic Molecular and Microbial Biology",
+        "Module G02: Introduction to Traditional, Field, and Genomic Epidemiology",
+        "Module G03: An Overview of the Role of Genomic Epidemiology in Pathogen Genomic Surveillance",
+        "Module G04: Fundamentals of Biostatistics",
+        "Module G05: Fundamentals of Pathogen Genomic Surveillance Study Design",
+        "Module G06: Introduction to Genomic Sequencing and NGS",
+        "Module G07: Introduction to Public Health Research and Pathogen Surveillance Ethics and Policies",
+        "Module G08: Introduction to Data Sharing and Dissemination",
+        "Module G09: Introduction to Antimicrobial Resistance (AMR)"
+      ],
+      "Wetlab Course": [
+        "Module W01: Introduction to Biosafety and Biosecurity",
+        "Module W02: Basic Laboratory Requirements and Operational Setup for NGS Implementation",
+        "Module W03: Introduction to Fundamental Laboratory Skills and Calculations",
+        "Module W04: Basic Molecular Techniques for NGS Implementation"
+      ],
+      "Bioinformatics Foundational Course": [
+        "Module B01: Introduction to Unix/Linux, Command Line, and Shell Scripting",
+        "Module B02: Introduction to Version Control",
+        "Module B03: Informatics Skills",
+        "Module B04: Introduction to Programming",
+        "Module B05: Introduction to R Programming for Data Analysis",
+        "Module B06: Data Management and Basic Analytics",
+        "Module B07: Phylogenetics",
+        "Module B08: Virtual Environments and Containerization",
+        "Module B09: Workflow Management Systems",
+        "Module B10: Ontologies, Standards, Data Curation and Submission",
+        "Module B11: Data Visualisation and Report Generation"
+      ],
+      "Fungal Course": [
+        "Module F01: Study Design and Sequencing Strategies for Fungal Pathogen Surveillance",
+        "Module F02: Overview of Fungal Pathogen Surveillance Using NGS",
+        "Module F03: Introduction to Fungal Databases",
+        "Module F04: Fungal Sample Processing and Library Preparation (Theory and Wet-lab Practical)",
+        "Module F05: Phylogenetics and Visualization for Fungal Genomes",
+        "Module F06: Antifungal Resistance (AMR)"
+      ],
+      "Viral Course": [
+        "Module V01: Study Design and Sequencing Strategies for Viral Pathogen Surveillance",
+        "Module V02: Sample Processing and Library Preparation for Viral Pathogens (Theory and Wet-lab Practical)",
+        "Module V03: ARTIC Viral Amplicon Sequencing",
+        "Module V03a: Illumina Workflow for Viral Genome Sequencing",
+        "Module V03b: ONT Workflow for Viral Genome Sequencing",
+        "Module V04: Introduction to Viral NGS Data Processing",
+        "Module V04a: Nextclade and Pangolin",
+        "Module V04b: Galaxy Workflow (or other selected workflow(s))",
+        "Module V05: Advanced Bioinformatics Analysis for Viruses"
+      ],
+      "Bacterial Course": [
+        "Module BA01: Study Design for Bacterial Pathogen Surveillance",
+        "Module BA02: Bacterial Sample Preparation, Library Preparation and DNA Sequencing",
+        "Module BA03: Bacterial NGS Data Processing",
+        "Module BA04a: Bacterial Pathogen Data Analysis",
+        "Module BA04b: Bacterial Bioinformatics Analytical Workflows",
+        "Module BA05: Bacterial Phylogenetics",
+        "Module BA06: Antibacterial Resistance Identification and Tracking",
+        "Module BA07: Metagenomics/16S rRNA Amplicon for Bacterial Surveillance"
+      ],
+      "Parasitic Course": [
+        "Module P01: Study Design for Parasitic Pathogen Surveillance",
+        "Module P02: Sample Processing and Library Preparation for Parasitic Pathogens (Theory and Wet-lab Practical)",
+        "Module P03: Introduction to Parasitic NGS Data Processing",
+        "Module P04: NGS Data Analysis Using the Artemis Genome Browser and Annotation Tool",
+        "Module P05: Using Parasitic Databases and Resources"
+      ],
+      "Malaria Course": [
+        "Module M01: Introduction to Malaria Biology and Genomic Epidemiology",
+        "Module M02p: Malaria Pathogen Surveillance Design",
+        "Module M02v: Malaria Vector Surveillance Design",
+        "Module M03: Sample Processing and Library Preparation for Malaria (Theory and Wet-lab Practical)"
+      ],
+      "Metagenomics Course": [
+        "Module MG01: Introduction to Metagenomics and Use Cases",
+        "Module MG02: Study Design and Lab Setup for Metagenomics",
+        "Module MG03: Sample Processing and Library Preparation for Metagenomics (Theory and Wet-lab Practical)",
+        "Module MG04: Introduction to Metagenomics Data Analysis",
+        "Module MG05: Metagenomics Data Analysis. iSeq 100 Loading",
+        "Module MG06: Quality Control, Sample QC, Sequencing Run QC",
+        "Module MG07: Metagenomics Analysis. Cloud-based Metagenomics Platform for Researchers"
+      ]
+    };
+
+    microbeSelect.addEventListener('change', function () {
+      const selectedMicrobe = this.value;
+      const modules = moduleOptions[selectedMicrobe] || [];
+
+      // Reset module options
+      moduleSelect.innerHTML = '<option value="" disabled selected>Select Module</option>';
+
+      // Add new options
+      modules.forEach(mod => {
+        const opt = document.createElement('option');
+        opt.value = mod;
+        opt.textContent = mod;
+        moduleSelect.appendChild(opt);
       });
-    </script>
-  </div>
-  
+    });
+  </script>
+</div>
