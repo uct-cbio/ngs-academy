@@ -137,7 +137,7 @@ link: https://uct-cbio.github.io/ngs-academy/2023/Advanced-Training-Developing-W
       <br>
      </th>
       <td>    <ul>
-      <li><b> <a href="{{ site.url }}uploads/Day_1_advanced_python.custom_classes.zip" target="_blank">Day 1 slides & files</a></b></li>
+      <li><b> <a href="{{ site.url }}uploads/Day_1_advanced_python_custom_classes.zip" target="_blank">Day 1 slides & files</a></b></li>
 <ol>
   <li>1.0 Get started working on HPC</li>
   <li>1.1 Confirm participant streams</li>
