@@ -4,6 +4,51 @@ title: Pathogen Surveillance Training Curricula
 permalink: /courses/curricula/
 ---
     <style>
+/* Language Selector Styles */
+.module-title-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    white-space: normal;
+}
+
+.module-title-text {
+    font-weight: 500;
+    color: #333;
+    line-height: 1.3;
+}
+
+.language-selector {
+    min-width: 140px;
+    padding: 4px 8px;
+    border: 1px solid #8c2133;
+    border-radius: 4px;
+    background-color: white;
+    color: #8c2133;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.language-selector:hover {
+    background-color: #8c2133;
+    color: white;
+}
+
+.language-selector:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(140, 33, 51, 0.2);
+}
+
+/* Mobile responsive */
+@media (max-width: 767px) {
+    .language-selector {
+        min-width: 120px;
+        font-size: 11px;
+    }
+}
+
         .accordion {
             margin: 0 auto;
         }
@@ -450,7 +495,17 @@ permalink: /courses/curricula/
                                     <td>G01</td>
                                     <td>All pathogens</td>
                                     <td>Wet laboratory personnel</td>
-                                    <td id="title_column" ><a href="{{ site.url }}uploads/Module_G01_An_Introduction_to_Basic_Molecular_and_Microbial_Biology.pdf" target="_blank">An Introduction to Basic Molecular and Microbial Biology</a></td>
+                                    <td id="" name="title_column" >An Introduction to Basic Molecular and Microbial Biology<br>
+              
+                                      <!-- added title section-->
+                                      <div class="module-title-container">
+                                        <select class="language-selector" data-module="G01_An_Introduction_to_Basic_Molecular_and_Microbial_Biology">
+                                            <option value="">Select Language</option>
+                                            <!-- Options will be added by JavaScript -->
+                                        </select>
+                                    </div>
+                                     <!-- Options will be added by JavaScript -->
+                                    </td>
                                   </tr>
                                   <tr>
                                     <td>G01</td>
@@ -1486,4 +1541,64 @@ permalink: /courses/curricula/
                 });
             }, 500);
         });
+
+// Language resources configuration
+const languageResources = {
+    "G01_An_Introduction_to_Basic_Molecular_and_Microbial_Biology": {
+        "English": "Module_G01_An_Introduction_to_Basic_Molecular_and_Microbial_Biology.pdf",
+        "French": "french.pdf",
+        "Spanish": "spanish.pdf"
+    },
+    "G02_Introduction_to_Traditional_Field_and_Genomic_Epidemiology": {
+        "English": "Module_G02_Introduction_to_Traditional_Field_and_Genomic_Epidemiology.pdf",
+        "French": "Module_G02_Introduction_French.pdf"
+    }
+    // Add all other modules following the same pattern
+};
+
+// Allowed languages
+const allowedLanguages = ["English", "French", "Spanish"];
+
+// Initialize language selectors
+function initLanguageSelectors() {
+    document.querySelectorAll('.language-selector').forEach(selector => {
+        const moduleKey = selector.dataset.module;
+        const languages = languageResources[moduleKey] || {};
+
+        // Clear all existing options except the first ("Select Language")
+        while (selector.options.length > 1) {
+            selector.remove(1);
+        }
+
+        // Add allowed language options only
+        allowedLanguages.forEach(language => {
+            if (languages[language]) {
+                const option = document.createElement('option');
+                option.value = `/uploads/${languages[language]}`; // Adjust path as needed
+                option.textContent = language;
+                selector.appendChild(option);
+            }
+        });
+
+        // Prevent duplicate event listeners
+        if (!selector.dataset.listenerAttached) {
+            selector.addEventListener('change', function () {
+                if (this.value) {
+                    window.open(this.value, '_blank');
+                    this.selectedIndex = 0;
+                }
+            });
+            selector.dataset.listenerAttached = 'true';
+        }
+    });
+}
+
+// Initialize when page loads
+document.addEventListener('DOMContentLoaded', initLanguageSelectors);
+
+// Reinitialize when tables are redrawn (for DataTables)
+$(document).on('draw.dt', function () {
+    initLanguageSelectors();
+});
+
     </script>
