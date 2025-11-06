@@ -4,7 +4,7 @@ title: "2025 PHA4GE CONFERENCE"
 posted_date: "2025-09-04"
 main_menu: courses
 permalink: /:year/:title
-category: upcoming
+category: past-course
 course_overview: 
 training_provider: PHA4GE 
 start_date: "2025-10-27"
