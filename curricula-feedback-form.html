@@ -4,12 +4,7 @@ title: Pathogen Surveillance Training Courses Contribution
 permalink: /courses/curricula-contribution/
 ---
 
-
-
 <div class="container-fluid">
-
-  <span>Kindly use this contribution form to make any suggestions, contributions, and/or queries regarding the curriculum. Your feedback is important to ensure the curriculum remains relevant and effective.
-    <span>
   <form action="https://submit-form.com/FUPgKVql9" method="POST">
     <div class="mb-3">
       <label for="name" class="form-label">Firstname</label>
@@ -28,7 +23,7 @@ permalink: /courses/curricula-contribution/
 
     <div class="mb-3">
       <label for="email" class="form-label">Email address</label>
-      <input type="email" class="form-control" id="email" name="email" placeholder="name@domain.com" required>
+      <input type="email" class="form-control" id="email" name="email" placeholder="username@mail.com" required>
     </div>
 
     <!-- Curricula Selection -->
@@ -46,55 +41,62 @@ permalink: /courses/curricula-contribution/
         <option value="Malaria Course">Malaria</option>
         <option value="Metagenomics Course">Metagenomics</option>
       </select>
-    </div>
 
-    <!-- Module Selection -->
-    <div class="mb-3">
-      <label for="module" class="form-label">Module</label>
-      <select class="form-control" id="module" name="module" required>
-        <option value="" disabled selected>Select Module</option>
-      </select>
-    </div>
+      <!-- Description Bubble -->
+      <div id="course-description"
+        style="margin-top: 10px; display:none; background:#8c2133; color:white; border:1px solid #ccc; padding:10px; border-radius:5px; font-size:0.95em;">
+      </div>
 
-    <div class="mb-3">
-      <label for="content" class="form-label">Select Content Type</label>
-      <select class="form-control" id="content" name="content" required>
-        <option value="" disabled selected>Select content type</option>
-        <option value="Module Introduction">Module Introduction</option>
-        <option value="Module Scope">Module Scope</option>
-        <option value="Module Learning Outcomes">Module Learning Outcomes</option>
-        <option value="Module Assessments">Module Assessments</option>
-        <option value="Module Practical">Module Practical</option>
-        <option value="Module Resources">Module Resources</option>
-        <option value="Not Applicable">Not Applicable</option>
-        <option value="Other">Other</option>
-      </select>
-    </div>
 
-    <div class="mb-3">
-      <label for="level" class="form-label">Level of Contribution</label>
-      <select class="form-control" id="level" name="level" required>
-        <option value="" disabled selected>Select Level</option>
-        <option value="Introductory">Introductory</option>
-        <option value="Intermediate">Intermediate</option>
-        <option value="Advanced">Advanced</option>
-        <option value="All Levels">All Levels</option>
-        <option value="Not Applicable">Not Applicable</option>
-      </select>
-    </div>
+      <!-- Module Selection -->
+      <div class="mb-3">
+        <label for="module" class="form-label">Module</label>
+        <select class="form-control" id="module" name="module" required>
+          <option value="" disabled selected>Select Module</option>
+        </select>
+      </div>
 
-    <div class="mb-3">
-      <label for="message" class="form-label">Your contribution</label>
-      <textarea class="form-control" id="message" name="message" rows="5" placeholder="Your suggestions, contributions, and or queries..." required></textarea>
-    </div>
+      <div class="mb-3">
+        <label for="content" class="form-label">Select Content Type</label>
+        <select class="form-control" id="content" name="content" required>
+          <option value="" disabled selected>Select content type</option>
+          <option value="Module Introduction">Module Introduction</option>
+          <option value="Module Scope">Module Scope</option>
+          <option value="Module Learning Outcomes">Module Learning Outcomes</option>
+          <option value="Module Assessments">Module Assessments</option>
+          <option value="Module Practical">Module Practical</option>
+          <option value="Module Resources">Module Resources</option>
+          <option value="Not Applicable">Not Applicable</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
 
-    <br>
-    <button type="submit" class="btn btn-danger">Send</button>
+      <div class="mb-3">
+        <label for="level" class="form-label">Level of Contribution</label>
+        <select class="form-control" id="level" name="level" required>
+          <option value="" disabled selected>Select Level</option>
+          <option value="Introductory">Introductory</option>
+          <option value="Intermediate">Intermediate</option>
+          <option value="Advanced">Advanced</option>
+          <option value="All Levels">All Levels</option>
+          <option value="Not Applicable">Not Applicable</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="message" class="form-label">Your Message</label>
+        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Your message here..."
+          required></textarea>
+      </div>
+
+      <br>
+      <button type="submit" class="btn btn-danger">Send Message</button>
   </form>
 
   <script>
     const moduleSelect = document.getElementById('module');
     const microbeSelect = document.getElementById('course');
+    const descBox = document.getElementById('course-description');
 
     const moduleOptions = {
       "Generic Foundational": [
@@ -180,20 +182,38 @@ permalink: /courses/curricula-contribution/
       ]
     };
 
+    const courseDescriptions = {
+      "Generic Foundational": "Provides essential knowledge in molecular and microbial biology, epidemiology, and genomics for pathogen surveillance.",
+      "Wetlab Course": "Covers foundational wet-lab techniques for safe and effective pathogen genomic surveillance.",
+      "Bioinformatics Foundational Course": "Introduces computational and bioinformatics skills for analyzing genomic data.",
+      "Viral Course": "Focuses on viral pathogen genomics — including sequencing strategies, analysis, and outbreak tracking.",
+      "Bacterial Course": "Covers bacterial genomics, AMR tracking, and analytical workflows for bacterial surveillance.",
+      "Parasitic Course": "Focuses on parasitic pathogen genomics, sequencing, and data analysis pipelines.",
+      "Fungal Course": "Covers fungal pathogen genomics, antifungal resistance, and related bioinformatics methods.",
+      "Malaria Course": "Provides insights into malaria biology, pathogen and vector surveillance, and genomic epidemiology.",
+      "Metagenomics Course": "Explores metagenomic sequencing and analysis for comprehensive pathogen detection."
+    };
+
     microbeSelect.addEventListener('change', function () {
       const selectedMicrobe = this.value;
       const modules = moduleOptions[selectedMicrobe] || [];
 
-      // Reset module options
+      // Reset and repopulate module options
       moduleSelect.innerHTML = '<option value="" disabled selected>Select Module</option>';
-
-      // Add new options
       modules.forEach(mod => {
         const opt = document.createElement('option');
         opt.value = mod;
         opt.textContent = mod;
         moduleSelect.appendChild(opt);
       });
+
+      // Show or hide course description
+      if (courseDescriptions[selectedMicrobe]) {
+        descBox.style.display = 'block';
+        descBox.textContent = courseDescriptions[selectedMicrobe];
+      } else {
+        descBox.style.display = 'none';
+      }
     });
   </script>
 </div>
