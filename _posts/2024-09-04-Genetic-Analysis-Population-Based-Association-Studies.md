@@ -1,18 +1,15 @@
 ---
 layout: default
-title: "Genetic Analysis of Population-based Association Studies"
-posted_date: "2024-09-04"
+title: "From Data to Insight - A Practical Introduction to Interpreting Malaria Genetics for Surveillance"
+posted_date: "2025-12-08"
 main_menu: courses
 permalink: /:year/:title
 category: upcoming
 course_overview: 
-training_provider: Welcome Connecting Science
-start_date: "2024-09-02"
-end_date: "2024-09-06"
+training_provider: University of California San Fransico
+start_date: "2025-12-08"
+end_date: "2026-02-28"
 group: group1
-link: https://coursesandconferences.wellcomeconnectingscience.org/event/genetic-analysis-of-population-based-association-studies-20240902/
+link: https://cppr.ucsfmoodle.org/course/index.php?categoryid=18
 ---
   
-<!-- ### SARS-CoV-2 NGS bioinformatics course 2021 -->
-
-<p align="left"><b >Course overview:</b></p>
