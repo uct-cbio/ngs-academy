@@ -71,7 +71,7 @@
 
     <script src="js/main.js"></script>
     <script type="application/ld+json">
-    
+
         {
             "@context": "https://schema.org/",
             "@id": "./",
@@ -96,15 +96,11 @@
         </script>
 
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LQVLLC7ZE5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-LQVLLC7ZE5');
-</script>
+    <!-- Google tag (gtag.js) -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDNM97P3" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
 
 </head>
@@ -177,8 +173,8 @@
                                                 Surveillance Courses</a>
                                         </li>
                                         <li><a class="dropdown-item" href="{{ site.url }}courses/curricula/">
-                                            Pathogen Surveillance Training Curricula</a>
-                                    </li>
+                                                Pathogen Surveillance Training Curricula</a>
+                                        </li>
 
                                         <!-- <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
                                         <li><a class="dropdown-item" href="#"> Submenu item 3 </a></li> -->
@@ -192,15 +188,15 @@
                                     %}><a class="nav-link  dropdown-toggle" href="{{ site.url }}resources"
                                         data-bs-toggle="dropdown-1"> Tools & Resources</a>
                                     <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="{{ site.url }}resources/help-desk/">
-                                            Help-Desk/Ticketing Sys</a>
-                                    </li>
+                                        <li><a class="dropdown-item" href="{{ site.url }}resources/help-desk/">
+                                                Help-Desk/Ticketing Sys</a>
+                                        </li>
                                         <li><a class="dropdown-item" href="{{ site.url }}resources/training-materials/">
-                                            Training Materials</a>
-                                    </li>
+                                                Training Materials</a>
+                                        </li>
                                         <li><a class="dropdown-item" href="{{ site.url }}resources/pha4ge/">
-                                            PHA4GE</a>
-                                    </li>
+                                                PHA4GE</a>
+                                        </li>
                                         <li><a class="dropdown-item" href="{{ site.url }}resources/publications/">
                                                 Publications</a>
                                         </li>
@@ -210,16 +206,17 @@
 
                                 </li>
 
-                                <li class="nav-item dropdown" {% if page.url=="/trainer-communities/" %}class="active" {% endif
-                                    %}><a class="nav-link  dropdown-toggle" href="{{ site.url }}trainer-communities"
-                                        data-bs-toggle="dropdown-1">Trainer Communities</a>
+                                <li class="nav-item dropdown" {% if page.url=="/trainer-communities/" %}class="active"
+                                    {% endif %}><a class="nav-link  dropdown-toggle"
+                                        href="{{ site.url }}trainer-communities" data-bs-toggle="dropdown-1">Trainer
+                                        Communities</a>
                                     <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="{{ site.url }}related-projects/">
-                                            Related Projects</a>
-                                
-                                    
+                                        <li><a class="dropdown-item" href="{{ site.url }}related-projects/">
+                                                Related Projects</a>
+
+
                                     </ul>
-    
+
                                 </li>
 
                                 <li {% if page.url=="/contact/" %}class="active" {% endif %}><a
@@ -263,7 +260,7 @@
 
 
                 <div class="col-lg-10 col-md-10 col-sm-10 main_container_section" class="my-auto">
-                
+
                     {{content}}
                 </div>
 
@@ -349,7 +346,7 @@
         }
         // end if innerWidth
     });
-// DOMContentLoaded  end
+    // DOMContentLoaded  end
 
 
 </script>
