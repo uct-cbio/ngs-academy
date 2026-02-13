@@ -7,6 +7,7 @@ permalink: /courses/upcoming-courses/
 <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+
 <div class="table-responsive">
 <table id="abiEventsTable" class="display stripe hover" style="width:100%">
 <thead>
@@ -18,25 +19,40 @@ permalink: /courses/upcoming-courses/
 </tr>
 </thead>
 <tbody id="eventsBody">
-  <!-- Jekyll-generated rows (rendered at build time) -->
+
+  <!-- ===================== -->
+  <!-- JEKYLL EVENTS FILTER -->
+  <!-- ===================== -->
+
+  {% assign today = "now" | date: "%Y-%m-%d" %}
   {% assign sorted_posts = site.posts | where: "category", "upcoming" %}
+
   {% for post in sorted_posts %}
-  <tr>
-    <td data-order="{{ post.title }}">
-      <a href="{{ post.link }}" target="_blank" rel="noopener noreferrer">
-        {{ post.title }}
-      </a>
-      <br>
-      <small>Posted: {{ post.posted_date | date_to_string }}</small>
-    </td>
-    <td>{{ post.training_provider }}</td>
-    <td data-order="{{ post.start_date }}">{{ post.start_date | date: "%a, %b %d %Y" }}</td>
-    <td data-order="{{ post.end_date }}">{{ post.end_date | date: "%a, %b %d %Y" }}</td>
-  </tr>
+    {% assign post_end = post.end_date | date: "%Y-%m-%d" %}
+    {% if post_end >= today %}
+    <tr>
+      <td data-order="{{ post.title }}">
+        <a href="{{ post.link }}" target="_blank" rel="noopener noreferrer">
+          {{ post.title }}
+        </a>
+        <br>
+        <small>Posted: {{ post.posted_date | date_to_string }}</small>
+      </td>
+      <td>{{ post.training_provider }}</td>
+      <td data-order="{{ post.start_date | date: '%Y-%m-%d' }}">
+        {{ post.start_date | date: "%a, %b %d %Y" }}
+      </td>
+      <td data-order="{{ post.end_date | date: '%Y-%m-%d' }}">
+        {{ post.end_date | date: "%a, %b %d %Y" }}
+      </td>
+    </tr>
+    {% endif %}
   {% endfor %}
+
 </tbody>
 </table>
 </div>
+
 <script>
 const abiEventsUrl = "https://www.bioinformaticsinstitute.africa/events";
 
@@ -56,6 +72,7 @@ function initDataTable() {
   if ($.fn.DataTable.isDataTable('#abiEventsTable')) {
     $('#abiEventsTable').DataTable().destroy();
   }
+
   $("#abiEventsTable").DataTable({
     pageLength: 10,
     order: [[2, "asc"]],
@@ -73,13 +90,13 @@ function parseEventsFromHtml(html) {
     const cells = row.querySelectorAll("td");
     if (cells.length < 2) return;
 
-    // Column 1: title + link
     const linkEl = cells[0].querySelector("a");
     const title = linkEl ? linkEl.textContent.trim() : cells[0].textContent.trim();
     const href = linkEl ? linkEl.getAttribute("href") : "#";
-    const fullUrl = href.startsWith("http") ? href : "https://www.bioinformaticsinstitute.africa" + href;
+    const fullUrl = href.startsWith("http")
+      ? href
+      : "https://www.bioinformaticsinstitute.africa" + href;
 
-    // Column 2: date string like "Mon, Apr 14 2025 - Thu, Apr 17 2025"
     const dateText = cells[1].textContent.trim();
     let startDate = dateText;
     let endDate = "";
@@ -98,15 +115,35 @@ function parseEventsFromHtml(html) {
 
 function appendAbiRows(events) {
   const tbody = document.getElementById("eventsBody");
+
+  const today = new Date();
+  today.setHours(0,0,0,0);
+
   events.forEach(event => {
+
+    const eventEnd = new Date(event.endDate);
+    eventEnd.setHours(0,0,0,0);
+
+    // Skip past events
+    if (eventEnd < today) return;
+
     const row = `
       <tr>
-        <td><a href="${escapeHtml(event.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(event.title)}</a></td>
+        <td>
+          <a href="${escapeHtml(event.url)}" target="_blank" rel="noopener noreferrer">
+            ${escapeHtml(event.title)}
+          </a>
+        </td>
         <td>ABI</td>
-        <td data-order="${escapeHtml(event.startDate)}">${escapeHtml(event.startDate)}</td>
-        <td data-order="${escapeHtml(event.endDate)}">${escapeHtml(event.endDate)}</td>
+        <td data-order="${new Date(event.startDate).toISOString()}">
+          ${escapeHtml(event.startDate)}
+        </td>
+        <td data-order="${new Date(event.endDate).toISOString()}">
+          ${escapeHtml(event.endDate)}
+        </td>
       </tr>
     `;
+
     tbody.insertAdjacentHTML("beforeend", row);
   });
 }
@@ -114,18 +151,16 @@ function appendAbiRows(events) {
 async function fetchWithFallback() {
   for (const proxy of corsProxies) {
     try {
-      console.log("Trying proxy:", proxy.url);
       const response = await fetch(proxy.url + encodeURIComponent(abiEventsUrl));
       if (!response.ok) continue;
+
       const html = await proxy.parse(response);
       const events = parseEventsFromHtml(html);
-      console.log("Scraped", events.length, "ABI events");
       return events;
     } catch (err) {
-      console.warn("Proxy failed:", proxy.url, err.message);
+      console.warn("Proxy failed:", proxy.url);
     }
   }
-  console.error("All CORS proxies failed");
   return [];
 }
 
@@ -136,8 +171,7 @@ fetchWithFallback()
     }
     initDataTable();
   })
-  .catch(err => {
-    console.error("Unexpected error:", err);
+  .catch(() => {
     initDataTable();
   });
 </script>
