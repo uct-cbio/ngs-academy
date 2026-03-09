@@ -425,43 +425,16 @@ const CompetenciesApp = {
   data: [], results: null, resultMap: {},
   DOMAIN_COLORS: ['#7a1b2e','#2e7d32','#c27803','#5b21b6','#be123c','#0369a1','#047857','#b45309','#a21caf','#4338ca'],
 
-  async init() { 
-    await this.loadData(); 
-    this.bindEvents(); 
-    this.renderLegend(); 
-  },
+  async init() { await this.loadData(); this.bindEvents(); this.renderLegend(); },
 
   async loadData() {
     try {
-      // Use window.location.origin to construct full URL with correct filename (lowercase)
-      const baseUrl = window.location.origin;
-      const csvUrl = baseUrl + '/data/pgcf.csv';
-      
-      console.log('Fetching CSV from:', csvUrl); // Useful for debugging
-      
-      const response = await fetch(csvUrl);
-      if (!response.ok) throw new Error('CSV fetch failed: ' + response.status + ' ' + response.statusText);
+      const response = await fetch('/ngs-academy/data/PGCF.csv');
+      if (!response.ok) throw new Error('CSV fetch failed: ' + response.status);
       const text = await response.text();
       this.data = CSVParser.parse(text);
       console.log('PGCF loaded:', this.data.length, 'topics');
-      
-      if (this.data.length === 0) {
-        console.warn('No topics were parsed from the CSV. Check the file format.');
-      }
-    } catch (e) { 
-      console.error('Error loading CSV:', e); 
-      this.data = []; 
-      
-      // Show error to user
-      const container = document.querySelector('.competencies-app');
-      if (container) {
-        const errorDiv = document.createElement('div');
-        errorDiv.style.cssText = 'background: #fee; color: #c00; padding: 20px; margin: 20px; border-radius: 8px; border: 1px solid #fcc;';
-        errorDiv.innerHTML = `<strong>Error loading competency data:</strong> ${e.message}<br><br>
-                              Please ensure the file <code>/data/pgcf.csv</code> exists and is accessible.`;
-        container.prepend(errorDiv);
-      }
-    }
+    } catch (e) { console.error('Error loading CSV:', e); this.data = []; }
   },
 
   bindEvents() {
@@ -473,11 +446,6 @@ const CompetenciesApp = {
         $$('.comp-tab-panel').forEach(p => p.classList.remove('active'));
         btn.classList.add('active');
         document.getElementById('panel-' + btn.dataset.tab).classList.add('active');
-        
-        // Refresh views when switching tabs
-        if (btn.dataset.tab === 'heatmap' && this.results) this.renderHeatmap();
-        if (btn.dataset.tab === 'dashboard' && this.results) this.renderDashboard();
-        if (btn.dataset.tab === 'gaps' && this.results) this.renderGaps();
       });
     });
     const cb = $('#close-banner'); if (cb) cb.addEventListener('click', () => { const b = $('#info-banner'); if (b) b.style.display = 'none'; });
@@ -498,14 +466,7 @@ const CompetenciesApp = {
   },
 
   runEvaluation() {
-    const ta = document.getElementById('paste-input'); if (!ta || !ta.value.trim()) {
-      alert('Please paste some content to evaluate.');
-      return;
-    }
-    if (this.data.length === 0) {
-      alert('Competency data not loaded yet. Please wait or refresh the page.');
-      return;
-    }
+    const ta = document.getElementById('paste-input'); if (!ta || !ta.value.trim()) return;
     this.results = Evaluator.evaluate(ta.value, this.data);
     this.resultMap = {}; this.results.forEach(r => { this.resultMap[r.topic.id] = r; });
     const el = document.getElementById('eval-results'); if (el) el.style.display = 'block';
@@ -537,8 +498,6 @@ const CompetenciesApp = {
   renderHeatmap() {
     const c = document.getElementById('heatmap-container'); if (!c) return;
     if (!this.results) { c.innerHTML = '<div class="comp-empty"><div class="comp-empty-icon">🔥</div><div class="comp-empty-title">No evaluation yet</div><div class="comp-empty-desc">Paste content in the <strong>Evaluate</strong> tab first.</div></div>'; return; }
-    if (this.data.length === 0) { c.innerHTML = '<div class="comp-empty"><div class="comp-empty-icon">⚠️</div><div class="comp-empty-title">Data not loaded</div><div class="comp-empty-desc">Competency data could not be loaded. Check console for errors.</div></div>'; return; }
-    
     const sv = (document.getElementById('sort-select')||{}).value||'topic';
     const fv = (document.getElementById('filter-select')||{}).value||'all';
     let d = this.data.map(t => ({topic:t, result:this.resultMap[t.id]||null, matchCount:this.resultMap[t.id]?this.resultMap[t.id].matchCount:0, coverage:this.resultMap[t.id]?this.resultMap[t.id].coverage:0}));
@@ -569,44 +528,16 @@ const CompetenciesApp = {
   },
 
   renderDashboard() {
-    if (!this.results||!this.results.length) { 
-      const panel = document.getElementById('panel-dashboard');
-      if(panel) panel.innerHTML = '<div class="comp-empty"><div class="comp-empty-icon">📊</div><div class="comp-empty-title">No evaluation data</div><div class="comp-empty-desc">Run an evaluation first.</div></div>'; 
-      return; 
-    }
-    
+    if (!this.results||!this.results.length) { const el=document.getElementById('panel-dashboard'); if(el) el.innerHTML='<div class="comp-empty"><div class="comp-empty-icon">📊</div><div class="comp-empty-title">No evaluation data</div><div class="comp-empty-desc">Run an evaluation first.</div></div>'; return; }
     const se=document.getElementById('dash-stats');
-    if(se){ 
-      const t=this.data.length,m=this.results.length; 
-      const ab=m>0 ? (this.results.reduce((s,r)=>s+r.maxBloom,0)/m).toFixed(1) : 0;
-      se.innerHTML=`<div class="comp-stat-card maroon"><div class="comp-stat-value">${m}/${t}</div><div class="comp-stat-label">Matched</div></div><div class="comp-stat-card green"><div class="comp-stat-value">${Math.round(m/t*100)}%</div><div class="comp-stat-label">Coverage</div></div><div class="comp-stat-card amber"><div class="comp-stat-value">${ab}</div><div class="comp-stat-label">Avg Bloom</div></div><div class="comp-stat-card rose"><div class="comp-stat-value">${t-m}</div><div class="comp-stat-label">Gaps</div></div>`; 
-    }
-    
+    if(se){ const t=this.data.length,m=this.results.length; const ab=(this.results.reduce((s,r)=>s+r.maxBloom,0)/m).toFixed(1);
+    se.innerHTML=`<div class="comp-stat-card maroon"><div class="comp-stat-value">${m}/${t}</div><div class="comp-stat-label">Matched</div></div><div class="comp-stat-card green"><div class="comp-stat-value">${Math.round(m/t*100)}%</div><div class="comp-stat-label">Coverage</div></div><div class="comp-stat-card amber"><div class="comp-stat-value">${ab}</div><div class="comp-stat-label">Avg Bloom</div></div><div class="comp-stat-card rose"><div class="comp-stat-value">${t-m}</div><div class="comp-stat-label">Gaps</div></div>`; }
     const de=document.getElementById('chart-domain-bars');
-    if(de){ 
-      const doms=[...new Set(this.data.map(t=>t.domain))].filter(Boolean); 
-      let h='<div class="comp-chart-title">Domain Coverage</div>';
-      doms.forEach((d,i)=>{ 
-        const ts=this.data.filter(t=>t.domain===d); 
-        const m=ts.filter(t=>this.resultMap[t.id]).length; 
-        const p=ts.length>0 ? Math.round(m/ts.length*100) : 0; 
-        h+=`<div class="comp-bar-row"><div class="comp-bar-label">${d.replace(/^\d+\.\s*/,'').substring(0,30)}</div><div class="comp-bar-track"><div class="comp-bar-fill" style="width:${p}%;background:${this.DOMAIN_COLORS[i%10]};">${p}%</div></div></div>`; 
-      }); 
-      de.innerHTML=h; 
-    }
-    
+    if(de){ const doms=[...new Set(this.data.map(t=>t.domain))].filter(Boolean); let h='<div class="comp-chart-title">Domain Coverage</div>';
+    doms.forEach((d,i)=>{ const ts=this.data.filter(t=>t.domain===d); const m=ts.filter(t=>this.resultMap[t.id]).length; const p=Math.round(m/ts.length*100); h+=`<div class="comp-bar-row"><div class="comp-bar-label">${d.replace(/^\d+\.\s*/,'').substring(0,30)}</div><div class="comp-bar-track"><div class="comp-bar-fill" style="width:${p}%;background:${this.DOMAIN_COLORS[i%10]};">${p}%</div></div></div>`; }); de.innerHTML=h; }
     const be=document.getElementById('chart-bloom-dist');
-    if(be){ 
-      const dist={}; Evaluator.BLOOM_LEVELS.forEach(l=>dist[l]=0); 
-      this.results.forEach(r=>{if(r.maxBloom>=0)dist[Evaluator.BLOOM_LEVELS[r.maxBloom]]++;}); 
-      let h='<div class="comp-chart-title">Bloom\'s Taxonomy Distribution</div>';
-      Evaluator.BLOOM_LEVELS.forEach((l,i)=>{ 
-        if(i===0) return; 
-        const p=this.results.length>0?Math.round(dist[l]/this.results.length*100):0; 
-        h+=`<div class="comp-bar-row"><div class="comp-bar-label" style="min-width:100px">${l}</div><div class="comp-bar-track"><div class="comp-bar-fill" style="width:${p}%;background:${Evaluator.BLOOM_COLORS[i]};">${dist[l]}</div></div></div>`; 
-      }); 
-      be.innerHTML=h; 
-    }
+    if(be){ const dist={}; Evaluator.BLOOM_LEVELS.forEach(l=>dist[l]=0); this.results.forEach(r=>{if(r.maxBloom>=0)dist[Evaluator.BLOOM_LEVELS[r.maxBloom]]++;}); let h='<div class="comp-chart-title">Bloom\'s Taxonomy Distribution</div>';
+    Evaluator.BLOOM_LEVELS.forEach((l,i)=>{ if(i===0)return; const p=this.results.length>0?Math.round(dist[l]/this.results.length*100):0; h+=`<div class="comp-bar-row"><div class="comp-bar-label" style="min-width:100px">${l}</div><div class="comp-bar-track"><div class="comp-bar-fill" style="width:${p}%;background:${Evaluator.BLOOM_COLORS[i]};">${dist[l]}</div></div></div>`; }); be.innerHTML=h; }
     this.renderRadar();
   },
 
@@ -615,7 +546,7 @@ const CompetenciesApp = {
     const doms=[...new Set(this.data.map(t=>t.domain))].filter(Boolean);
     const n=doms.length; if(n<3){w.innerHTML='';return;}
     const cx=200,cy=200,R=155,step=(2*Math.PI)/n;
-    const vals=doms.map(d=>{const ts=this.data.filter(t=>t.domain===d);return ts.length>0 ? ts.filter(t=>this.resultMap[t.id]).length/ts.length : 0;});
+    const vals=doms.map(d=>{const ts=this.data.filter(t=>t.domain===d);return ts.filter(t=>this.resultMap[t.id]).length/ts.length;});
     const pts=vals.map((v,i)=>{const a=i*step-Math.PI/2;return{x:cx+Math.cos(a)*R*v,y:cy+Math.sin(a)*R*v};});
     let grid='';[0.2,0.4,0.6,0.8,1].forEach(f=>{const gp=doms.map((_,i)=>{const a=i*step-Math.PI/2;return`${cx+Math.cos(a)*R*f},${cy+Math.sin(a)*R*f}`;}).join(' ');grid+=`<polygon points="${gp}" fill="none" stroke="#e5e7eb" stroke-width="1"/>`;});
     let axes='';doms.forEach((d,i)=>{const a=i*step-Math.PI/2;axes+=`<line x1="${cx}" y1="${cy}" x2="${cx+Math.cos(a)*R}" y2="${cy+Math.sin(a)*R}" stroke="#e5e7eb"/>`;const lx=cx+Math.cos(a)*(R+22),ly=cy+Math.sin(a)*(R+22);const anc=Math.abs(Math.cos(a))<0.15?'middle':Math.cos(a)>0?'start':'end';axes+=`<text x="${lx}" y="${ly}" fill="#6b7280" font-size="9" font-weight="600" text-anchor="${anc}" dominant-baseline="middle">${d.replace(/^\d+\.\s*/,'').substring(0,16)}</text>`;});
@@ -626,15 +557,7 @@ const CompetenciesApp = {
 
   renderGaps() {
     const el=document.getElementById('gap-content'); if(!el) return;
-    if(!this.results){
-      el.innerHTML='<div class="comp-empty" style="grid-column:1/-1;"><div class="comp-empty-icon">🔍</div><div class="comp-empty-title">No data</div><div class="comp-empty-desc">Run an evaluation first.</div></div>';
-      return;
-    }
-    if(this.data.length === 0){
-      el.innerHTML='<div class="comp-empty" style="grid-column:1/-1;"><div class="comp-empty-icon">⚠️</div><div class="comp-empty-title">Data not loaded</div><div class="comp-empty-desc">Competency data could not be loaded.</div></div>';
-      return;
-    }
-    
+    if(!this.results){el.innerHTML='<div class="comp-empty" style="grid-column:1/-1;"><div class="comp-empty-icon">🔍</div><div class="comp-empty-title">No data</div><div class="comp-empty-desc">Run an evaluation first.</div></div>';return;}
     const gaps=this.data.filter(t=>!this.resultMap[t.id]);
     const weak=this.results.filter(r=>r.maxBloom<=2);
     const mid=this.results.filter(r=>r.maxBloom>=3&&r.maxBloom<=4);
@@ -642,66 +565,17 @@ const CompetenciesApp = {
     el.innerHTML=`<div class="comp-gap-card"><div class="comp-gap-title" style="color:#dc2626;">🚫 Not Covered (${gaps.length})</div>${gaps.length===0?'<div style="color:#9ca3af;font-size:12px;">All topics matched!</div>':''}${gaps.map(t=>`<div class="comp-gap-item danger"><div class="comp-gap-item-title">${t.id} ${t.name}</div><div class="comp-gap-item-sub">${t.domain}</div></div>`).join('')}</div><div class="comp-gap-card"><div class="comp-gap-title" style="color:#d97706;">⚠ Low — Remember/Understand (${weak.length})</div>${weak.map(r=>`<div class="comp-gap-item warning"><div class="comp-gap-item-title">${r.topic.id} ${r.topic.name}</div><div class="comp-gap-item-sub">${Evaluator.BLOOM_LEVELS[r.maxBloom]}</div></div>`).join('')}</div><div class="comp-gap-card"><div class="comp-gap-title" style="color:#0891b2;">📈 Mid — Apply/Analyse (${mid.length})</div>${mid.map(r=>`<div class="comp-gap-item mid"><div class="comp-gap-item-title">${r.topic.id} ${r.topic.name}</div><div class="comp-gap-item-sub">${Evaluator.BLOOM_LEVELS[r.maxBloom]}</div></div>`).join('')}</div><div class="comp-gap-card"><div class="comp-gap-title" style="color:#2e7d32;">✦ Strengths — Evaluate/Create (${strong.length})</div>${strong.length===0?'<div style="color:#9ca3af;font-size:12px;">No topics at this level yet.</div>':''}${strong.map(r=>`<div class="comp-gap-item success"><div class="comp-gap-item-title">${r.topic.id} ${r.topic.name}</div><div class="comp-gap-item-sub">${Evaluator.BLOOM_LEVELS[r.maxBloom]}</div></div>`).join('')}</div>`;
   },
 
-  clearAll() { 
-    const ta=document.getElementById('paste-input');if(ta)ta.value='';const cc=document.getElementById('char-count');if(cc)cc.textContent='0 characters';this.results=null;this.resultMap={};const el=document.getElementById('eval-results');if(el)el.style.display='none'; 
-    
-    // Reset tab contents
-    const heatmap = document.getElementById('heatmap-container');
-    if(heatmap) heatmap.innerHTML = '<div class="comp-empty"><div class="comp-empty-icon">🔥</div><div class="comp-empty-title">No evaluation yet</div><div class="comp-empty-desc">Paste content in the <strong>Evaluate</strong> tab first.</div></div>';
-    
-    const panel = document.getElementById('panel-dashboard');
-    if(panel) panel.innerHTML = '<div class="comp-empty"><div class="comp-empty-icon">📊</div><div class="comp-empty-title">No evaluation data</div><div class="comp-empty-desc">Run an evaluation first.</div></div>';
-    
-    const gaps = document.getElementById('gap-content');
-    if(gaps) gaps.innerHTML = '<div class="comp-empty" style="grid-column:1/-1;"><div class="comp-empty-icon">🔍</div><div class="comp-empty-title">No data</div><div class="comp-empty-desc">Run an evaluation first.</div></div>';
-  },
+  clearAll() { const ta=document.getElementById('paste-input');if(ta)ta.value='';const cc=document.getElementById('char-count');if(cc)cc.textContent='0 characters';this.results=null;this.resultMap={};const el=document.getElementById('eval-results');if(el)el.style.display='none'; },
 
   loadSample() {
     const ta=document.getElementById('paste-input');if(!ta)return;
-    ta.value=`This advanced training programme in pathogen genomics covers the complete workflow from sample collection and sample preservation through to genome sequencing and data interpretation.
-
-Participants will learn to perform nucleic acid extraction, apply specimen quality control methods, and execute sample preparation for genomic analysis. Ethics and consent requirements are covered for responsible sample handling.
-
-The bioinformatics module teaches learners to use genomic data repositories, implement genomic data analysis workflows using tools like Nextflow, and apply statistical analysis methods. Learners will explain phylogenetic tree construction, use phylogeographic methods to trace pathogen spread, and critically evaluate phylodynamic models.
-
-Practical sessions cover molecular-based techniques including PCR and qPCR for pathogen detection. Participants will design metagenomic workflows for mixed microbial communities and develop integrated pipelines combining epidemiological, laboratory, and genomic data.
-
-The programme addresses antimicrobial resistance through interpretation of genotypic and AMR data, linking genotypic predictions with phenotypic resistance profiles. Genomic reporting standards and data visualisation techniques ensure clear communication.
-
-Clinical decision-making modules explore how to use pathogen genomic data to inform diagnostics and evaluate genomics-informed treatments. Public health applications include designing surveillance systems and applying genomic epidemiology for infectious disease control. Translational genomics bridges research to practice.
-
-Data science competencies include data curation, data management, sample metadata standards, data sharing, ELSI considerations, data repositories, and data tools and workflows.
-
-Cross-cutting skills include scientific writing, communication and presentation, mentorship and leadership, networking and collaboration, equity diversity and inclusion, and science engagement.
-
-Training design follows adult learning principles and evidence-informed strategies using instructional design frameworks. Inclusive training approaches and reflective practice support diverse learners. Equity in pathogen genomics education is prioritised.
-
-Programme management covers program design and stakeholder engagement, infrastructure and workflow development, sustainability and resource mobilisation, and program monitoring and evaluation.`;
+    ta.value=`This advanced training programme in pathogen genomics covers the complete workflow from sample collection and sample preservation through to genome sequencing and data interpretation.\n\nParticipants will learn to perform nucleic acid extraction, apply specimen quality control methods, and execute sample preparation for genomic analysis. Ethics and consent requirements are covered for responsible sample handling.\n\nThe bioinformatics module teaches learners to use genomic data repositories, implement genomic data analysis workflows using tools like Nextflow, and apply statistical analysis methods. Learners will explain phylogenetic tree construction, use phylogeographic methods to trace pathogen spread, and critically evaluate phylodynamic models.\n\nPractical sessions cover molecular-based techniques including PCR and qPCR for pathogen detection. Participants will design metagenomic workflows for mixed microbial communities and develop integrated pipelines combining epidemiological, laboratory, and genomic data.\n\nThe programme addresses antimicrobial resistance through interpretation of genotypic and AMR data, linking genotypic predictions with phenotypic resistance profiles. Genomic reporting standards and data visualisation techniques ensure clear communication.\n\nClinical decision-making modules explore how to use pathogen genomic data to inform diagnostics and evaluate genomics-informed treatments. Public health applications include designing surveillance systems and applying genomic epidemiology for infectious disease control. Translational genomics bridges research to practice.\n\nData science competencies include data curation, data management, sample metadata standards, data sharing, ELSI considerations, data repositories, and data tools and workflows.\n\nCross-cutting skills include scientific writing, communication and presentation, mentorship and leadership, networking and collaboration, equity diversity and inclusion, and science engagement.\n\nTraining design follows adult learning principles and evidence-informed strategies using instructional design frameworks. Inclusive training approaches and reflective practice support diverse learners. Equity in pathogen genomics education is prioritised.\n\nProgramme management covers program design and stakeholder engagement, infrastructure and workflow development, sustainability and resource mobilisation, and program monitoring and evaluation.`;
     const cc=document.getElementById('char-count');if(cc)cc.textContent=ta.value.length.toLocaleString()+' characters';
   },
 
-  exportCSV() { 
-    if(!this.results) {
-      alert('No evaluation results to export.');
-      return;
-    } 
-    let csv='Topic ID,Topic Name,Domain,Matched,Max Bloom Level,Coverage %,Matched Terms\n'; 
-    this.data.forEach(t=>{const r=this.resultMap[t.id];csv+=`"${t.id}","${t.name}","${t.domain}",${r?'Yes':'No'},"${r?Evaluator.BLOOM_LEVELS[r.maxBloom]:'N/A'}",${r?r.coverage:0},"${r?r.matches.join('; '):''}"\n`;}); 
-    this._dl(csv,'pgcf-evaluation.csv','text/csv'); 
-  },
-  
-  exportJSON() { 
-    if(!this.results) {
-      alert('No evaluation results to export.');
-      return;
-    } 
-    const out=this.data.map(t=>{const r=this.resultMap[t.id];return{id:t.id,name:t.name,domain:t.domain,matched:!!r,maxBloomLevel:r?Evaluator.BLOOM_LEVELS[r.maxBloom]:null,coverage:r?r.coverage:0,matchedTerms:r?r.matches:[],bloomMatches:r?Object.keys(r.bloomMatches):[]};}); 
-    this._dl(JSON.stringify(out,null,2),'pgcf-evaluation.json','application/json'); 
-  },
-  
-  _dl(content,filename,type) { 
-    const blob=new Blob([content],{type});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=filename;document.body.appendChild(a);a.click();document.body.removeChild(a);URL.revokeObjectURL(url); 
-  }
+  exportCSV() { if(!this.results)return; let csv='Topic ID,Topic Name,Domain,Matched,Max Bloom Level,Coverage %,Matched Terms\n'; this.data.forEach(t=>{const r=this.resultMap[t.id];csv+=`"${t.id}","${t.name}","${t.domain}",${r?'Yes':'No'},"${r?Evaluator.BLOOM_LEVELS[r.maxBloom]:'N/A'}",${r?r.coverage:0},"${r?r.matches.join('; '):''}"\n`;}); this._dl(csv,'pgcf-evaluation.csv','text/csv'); },
+  exportJSON() { if(!this.results)return; const out=this.data.map(t=>{const r=this.resultMap[t.id];return{id:t.id,name:t.name,domain:t.domain,matched:!!r,maxBloomLevel:r?Evaluator.BLOOM_LEVELS[r.maxBloom]:null,coverage:r?r.coverage:0,matchedTerms:r?r.matches:[],bloomMatches:r?Object.keys(r.bloomMatches):[]};}); this._dl(JSON.stringify(out,null,2),'pgcf-evaluation.json','application/json'); },
+  _dl(content,filename,type) { const blob=new Blob([content],{type});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=filename;document.body.appendChild(a);a.click();document.body.removeChild(a);URL.revokeObjectURL(url); }
 };
 
 document.addEventListener('DOMContentLoaded', () => CompetenciesApp.init());
