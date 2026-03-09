@@ -429,9 +429,11 @@ const CompetenciesApp = {
 
   async loadData() {
     try {
-      const response = await fetch('{{ "/data/pgcf.csv" | relative_url }}');
+      const response = await fetch('{{ "/data/PGCF.csv" | relative_url }}');
+      if (!response.ok) throw new Error('CSV fetch failed: ' + response.status);
       const text = await response.text();
       this.data = CSVParser.parse(text);
+      console.log('PGCF loaded:', this.data.length, 'topics');
     } catch (e) { console.error('Error loading CSV:', e); this.data = []; }
   },
 
