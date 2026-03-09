@@ -545,14 +545,31 @@ const CompetenciesApp = {
     const w=document.getElementById('chart-radar-wrapper'); if(!w) return;
     const doms=[...new Set(this.data.map(t=>t.domain))].filter(Boolean);
     const n=doms.length; if(n<3){w.innerHTML='';return;}
-    const cx=200,cy=200,R=155,step=(2*Math.PI)/n;
+    const SHORT_NAMES = {
+      'Genomes and microbiology': 'Genomes & Microbiology',
+      'Sample Preparation and Processing': 'Sample Prep & Processing',
+      'Sample Analysis and Genomic Data Generation': 'Analysis & Data Generation',
+      'Genomic Data Workflows': 'Data Workflows & Analysis',
+      'Data Interpretation': 'Data Interpretation',
+      'Decision-Making': 'Decision-Making',
+      'Data Science': 'Data Science',
+      'Integrated Skills': 'Integrated Skills',
+      'Learning and Training': 'Learning & Training',
+      'Capacity': 'Capacity Development'
+    };
+    function shortName(d) {
+      const clean = d.replace(/^\d+\.\s*/, '');
+      for (const key in SHORT_NAMES) { if (clean.toLowerCase().startsWith(key.toLowerCase())) return SHORT_NAMES[key]; }
+      return clean.substring(0, 24);
+    }
+    const cx=350,cy=350,R=160,step=(2*Math.PI)/n;
     const vals=doms.map(d=>{const ts=this.data.filter(t=>t.domain===d);return ts.filter(t=>this.resultMap[t.id]).length/ts.length;});
     const pts=vals.map((v,i)=>{const a=i*step-Math.PI/2;return{x:cx+Math.cos(a)*R*v,y:cy+Math.sin(a)*R*v};});
     let grid='';[0.2,0.4,0.6,0.8,1].forEach(f=>{const gp=doms.map((_,i)=>{const a=i*step-Math.PI/2;return`${cx+Math.cos(a)*R*f},${cy+Math.sin(a)*R*f}`;}).join(' ');grid+=`<polygon points="${gp}" fill="none" stroke="#e5e7eb" stroke-width="1"/>`;});
-    let axes='';doms.forEach((d,i)=>{const a=i*step-Math.PI/2;axes+=`<line x1="${cx}" y1="${cy}" x2="${cx+Math.cos(a)*R}" y2="${cy+Math.sin(a)*R}" stroke="#e5e7eb"/>`;const lx=cx+Math.cos(a)*(R+22),ly=cy+Math.sin(a)*(R+22);const anc=Math.abs(Math.cos(a))<0.15?'middle':Math.cos(a)>0?'start':'end';axes+=`<text x="${lx}" y="${ly}" fill="#6b7280" font-size="9" font-weight="600" text-anchor="${anc}" dominant-baseline="middle">${d.replace(/^\d+\.\s*/,'').substring(0,16)}</text>`;});
+    let axes='';doms.forEach((d,i)=>{const a=i*step-Math.PI/2;axes+=`<line x1="${cx}" y1="${cy}" x2="${cx+Math.cos(a)*R}" y2="${cy+Math.sin(a)*R}" stroke="#e5e7eb"/>`;const lx=cx+Math.cos(a)*(R+55),ly=cy+Math.sin(a)*(R+55);const anc=Math.abs(Math.cos(a))<0.15?'middle':Math.cos(a)>0?'start':'end';axes+=`<text x="${lx}" y="${ly}" fill="#333" font-size="12" font-weight="600" text-anchor="${anc}" dominant-baseline="middle">${shortName(d)}</text>`;});
     const poly=pts.map(p=>`${p.x},${p.y}`).join(' ');
-    const dots=pts.map(p=>`<circle cx="${p.x}" cy="${p.y}" r="3.5" fill="#7a1b2e"/>`).join('');
-    w.innerHTML=`<div class="comp-chart-title">Competency Radar — Domain Coverage</div><div style="text-align:center;overflow-x:auto;"><svg viewBox="0 0 400 400" width="380" height="380" style="max-width:100%;">${grid}${axes}<polygon points="${poly}" fill="rgba(122,27,46,0.1)" stroke="#7a1b2e" stroke-width="2"/>${dots}</svg></div>`;
+    const dots=pts.map(p=>`<circle cx="${p.x}" cy="${p.y}" r="4" fill="#7a1b2e"/>`).join('');
+    w.innerHTML=`<div class="comp-chart-title">Competency Radar — Domain Coverage</div><div style="text-align:center;overflow-x:auto;"><svg viewBox="0 0 700 700" width="700" height="700" style="max-width:100%;">${grid}${axes}<polygon points="${poly}" fill="rgba(122,27,46,0.1)" stroke="#7a1b2e" stroke-width="2"/>${dots}</svg></div>`;
   },
 
   renderGaps() {
