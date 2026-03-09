@@ -7,12 +7,12 @@ permalink: /resources/competencies/
 <!-- ╔═══════════════════════════════════════════════════════════════════╗
      ║  competencies.css — Scoped styles for the PGCF Competencies     ║
      ║  Mapper. Uses comp- prefix to avoid conflicts with parent site. ║
-     ║       ║
+     ║  Matches NGS Academy / Africa CDC maroon + green theme.         ║
      ╚═══════════════════════════════════════════════════════════════════╝ -->
 <style>
 /* ═══════════════════════════════════════════
    competencies.css
-   PGCF Competencies Mapper — NGS Academy 
+   PGCF Competencies Mapper — NGS Academy theme
    Light bg, maroon brand (#7a1b2e), green accent (#2e7d32)
    ═══════════════════════════════════════════ */
 
@@ -47,6 +47,7 @@ permalink: /resources/competencies/
   --radius-lg: 10px;
 }
 
+.competencies-app { font-family: inherit; color: var(--text); line-height: 1.6; font-size: 15px; }
 
 /* Page title */
 .comp-page-title { font-family: inherit; font-size: 28px; font-weight: normal; color: var(--text-heading); margin: 0 0 4px; }
@@ -428,9 +429,11 @@ const CompetenciesApp = {
 
   async loadData() {
     try {
-      const response = await fetch('{{ "/data/pgcf.csv" | relative_url }}');
+      const response = await fetch('{{ "/data/PGCF.csv" | relative_url }}');
+      if (!response.ok) throw new Error('CSV fetch failed: ' + response.status);
       const text = await response.text();
       this.data = CSVParser.parse(text);
+      console.log('PGCF loaded:', this.data.length, 'topics');
     } catch (e) { console.error('Error loading CSV:', e); this.data = []; }
   },
 
