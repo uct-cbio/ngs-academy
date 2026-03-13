@@ -147,14 +147,14 @@ permalink: /courses/curricula-wip/
         th, td {
             padding: 8px;
             text-align: left;
-            white-space: nowrap; /* KEY ADDITION: Prevent text wrapping */
+            white-space: nowrap;
         }
 
         th {
             background-color: #f2f2f2;
             position: relative;
             vertical-align: top;
-            padding: 8px; /* Regular padding - no extra space needed at bottom */
+            padding: 8px;
         }
 
         .table-wrapper {
@@ -163,9 +163,9 @@ permalink: /courses/curricula-wip/
             padding: 1rem;
             margin: 1rem 0;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-            overflow-x: auto; /* Ensure horizontal scrolling */
+            overflow-x: auto;
             width: 100%;
-            -webkit-overflow-scrolling: touch; /* Smooth scrolling on touch devices */
+            -webkit-overflow-scrolling: touch;
         }
 
         /* Tabs Styling */
@@ -228,7 +228,6 @@ permalink: /courses/curricula-wip/
             padding: 0.3em 0.8em;
         }
         
-        /* Make the search field more visible */
         .dataTables_filter input {
             padding: 5px;
             border: 1px solid #ddd;
@@ -236,7 +235,6 @@ permalink: /courses/curricula-wip/
             margin-left: 5px;
         }
         
-        /* Style for the length menu */
         .dataTables_length select {
             padding: 5px;
             border: 1px solid #ddd;
@@ -244,15 +242,13 @@ permalink: /courses/curricula-wip/
             margin: 0 5px;
         }
 
-        /* Updated styles for the filter dropdown container */
         .column-filter-container {
-            position: relative; /* Changed from absolute to relative */
+            position: relative;
             width: 100%;
             padding: 5px;
-            margin-top: 5px; /* Added margin for spacing */
+            margin-top: 5px;
         }
 
-        /* Style for the filter dropdown */
         th select {
             width: 100%;
             padding: 4px;
@@ -260,7 +256,7 @@ permalink: /courses/curricula-wip/
             border-radius: 4px;
             background-color: white;
             font-size: 14px;
-            margin-top: 5px; /* Adjusted spacing */
+            margin-top: 5px;
             z-index: 100;
         }
 
@@ -270,15 +266,13 @@ permalink: /courses/curricula-wip/
             box-shadow: 0 0 0 2px rgba(140, 33, 51, 0.2);
         }
 
-        /* Reduce Module Code column width by 50% */
         .display th:first-child,
         .display td:first-child {
-            width: 75px !important;  /* Set a fixed smaller width */
+            width: 75px !important;
             max-width: 75px !important;
             min-width: 75px !important;
         }
         
-        /* Ensure the title column has enough space */
         .display th[name="title_column"],
         .display td#title_column,
         .display th:nth-child(4),
@@ -287,7 +281,6 @@ permalink: /courses/curricula-wip/
             min-width: 300px !important;
         }
         
-        /* Make the pathogen and persona columns proportional */
         .display th:nth-child(2),
         .display td:nth-child(2),
         .display th:nth-child(3),
@@ -296,37 +289,29 @@ permalink: /courses/curricula-wip/
             max-width: 120px !important;
         }
 
-        /* Ensure DataTables respects our column widths */
         table.dataTable {
             table-layout: fixed;
             width: 100% !important;
-            min-width: 800px; /* Minimum width to prevent excessive compression */
+            min-width: 800px;
         }
         
-        /* Make sure content doesn't overflow */
         .display td {
             overflow: hidden;
-            text-overflow: ellipsis; /* Add ellipsis for overflowing text */
+            text-overflow: ellipsis;
         }
 
-        /* NEW RESPONSIVE CSS FOR ALL DEVICES */
-        
-        /* Table Responsiveness */
         .table-wrapper {
             overflow-x: auto;
             -webkit-overflow-scrolling: touch;
         }
         
-        /* Ensure tables are horizontally scrollable on small screens */
         .dataTables_wrapper {
-            overflow-x: visible; /* Allow table to control scrolling */
+            overflow-x: visible;
             -webkit-overflow-scrolling: touch;
             width: 100%;
         }
         
-        /* Responsive styling for DataTables controls */
         @media screen and (max-width: 767px) {
-            /* Stack DataTable controls */
             .dataTables_wrapper .dataTables_length,
             .dataTables_wrapper .dataTables_filter,
             .dataTables_wrapper .dataTables_info,
@@ -338,7 +323,6 @@ permalink: /courses/curricula-wip/
                 width: 100%;
             }
             
-            /* DataTable buttons - stack in mobile view */
             .dataTables_wrapper .dt-buttons {
                 text-align: center;
                 float: none;
@@ -354,7 +338,6 @@ permalink: /courses/curricula-wip/
                 white-space: nowrap;
             }
             
-            /* Adjust font size for mobile */
             .dataTables_wrapper {
                 font-size: 14px;
             }
@@ -365,7 +348,6 @@ permalink: /courses/curricula-wip/
             }
         }
         
-        /* Accordion responsiveness */
         @media screen and (max-width: 767px) {
             .accordion-header {
                 padding: 12px 10px;
@@ -386,9 +368,7 @@ permalink: /courses/curricula-wip/
             }
         }
         
-        /* Tabs responsiveness */
         @media screen and (max-width: 767px) {
-            /* Make tabs stack on mobile */
             .nav-tabs {
                 flex-direction: column;
                 border-bottom: none;
@@ -407,22 +387,18 @@ permalink: /courses/curricula-wip/
             }
         }
         
-        /* Small tablets and large phones */
         @media screen and (min-width: 768px) and (max-width: 991px) {
-            /* Adjust tabs for medium screens */
             .nav-tabs li {
                 font-size: 14px;
                 padding: 8px 5px;
             }
             
-            /* Adjust DataTable buttons spacing */
             .dataTables_wrapper .dt-buttons .dt-button {
                 padding: 0.3em 0.6em;
                 font-size: 12px;
             }
         }
         
-        /* Print-specific styles */
         @media print {
             .accordion-content {
                 display: block !important;
@@ -462,23 +438,21 @@ permalink: /courses/curricula-wip/
       <div class="accordion-item">
           <button class="accordion-header">
               <span class="accordion-title">Foundational</span>
-              <span class="accordion-icon">-</span> <!-- Default icon for open state -->
+              <span class="accordion-icon">-</span>
           </button>
-          <div class="accordion-content active"> <!-- Default open state -->
-              <!-- Overview Section -->
+          <div class="accordion-content active">
               <div class="feature-description">
                   <h3>Basic Foundational Courses</h3>
                   <p>Basic Foundational Courses</p>
               </div>
 
-              <!-- Tabs -->
               <ul class="nav-tabs">
                   <li class="active" data-tab="tab1-1">Generic Foundational Course</li>
                   <li data-tab="tab1-2">Bioinformatics Foundational Course</li>
                   <li data-tab="tab1-3">Wet-lab Foundational Course</li>
               </ul>
 
-              <!-- Tab Generic Foundational-->
+              <!-- Tab Generic Foundational -->
               <div id="tab1-1" class="tab-content active">
                   <div class="table-wrapper">
                       <table id="table1" class="display source-table">
@@ -495,199 +469,170 @@ permalink: /courses/curricula-wip/
                                   <td>G01</td>
                                   <td>All pathogens</td>
                                   <td>Wet laboratory personnel</td>
-        
-
-                              <td id="" name="title_column" >An Introduction to Basic Molecular and Microbial Biology<br>
-              
-                                <!-- added title section-->
-                                  <div class="module-title-container">
-                                 <select class="language-selector" data-module="G01_An_Introduction_to_Basic_Molecular_and_Microbial_Biology">
-                                  <option value="">Select Language</option>
-                                 <!-- Options will be added by JavaScript -->
-                                  </select>
-                                  </div>
-                                    <!-- Options will be added by JavaScript -->
-                                  </td>
-
-                                </tr>
-                                <tr>
+                                  <td>An Introduction to Basic Molecular and Microbial Biology</td>
+                              </tr>
+                              <tr>
                                   <td>G01</td>
                                   <td>All pathogens</td>
                                   <td>Dry laboratory personnel</td>
-                                  <td id="title_column">An Introduction to Basic Molecular and Microbial Biology<br>
-                                                                    <!-- added title section-->
-                                  <div class="module-title-container">
-                                    <select class="language-selector" data-module="G01_An_Introduction_to_Basic_Molecular_and_Microbial_Biology">
-                                     <option value="">Select Language</option>
-                                    <!-- Options will be added by JavaScript -->
-                                     </select>
-                                     </div>
-                                       <!-- Options will be added by JavaScript -->
-                                     </td>
-                                </tr>
-                                <tr>
+                                  <td>An Introduction to Basic Molecular and Microbial Biology</td>
+                              </tr>
+                              <tr>
                                   <td>G01</td>
                                   <td>All pathogens</td>
                                   <td>Managerial personnel</td>
-                                  <td id="title_column" ><a href="{{ site.url }}uploads/Module_G01_An_Introduction_to_Basic_Molecular_and_Microbial_Biology.pdf" target="_blank">An Introduction to Basic Molecular and Microbial Biology</a></td>
-                                </tr>
-                                <tr>
+                                  <td>An Introduction to Basic Molecular and Microbial Biology</td>
+                              </tr>
+                              <tr>
                                   <td>G02</td>
                                   <td>All pathogens</td>
                                   <td>Wet laboratory personnel</td>
-                                  <td><a href="{{ site.url }}uploads/Module_G02_Introduction_to_Traditional_Field_and_Genomic_Epidemiology.pdf" target="_blank">Introduction to Traditional, Field, and Genomic Epidemiology</a> </td>
-                                </tr>
-                                <tr>
+                                  <td>Introduction to Traditional, Field, and Genomic Epidemiology</td>
+                              </tr>
+                              <tr>
                                   <td>G02</td>
                                   <td>All pathogens</td>
                                   <td>Dry laboratory personnel</td>
-                                  <td><a href="{{ site.url }}uploads/Module_G02_Introduction_to_Traditional_Field_and_Genomic_Epidemiology.pdf" target="_blank">Introduction to Traditional, Field, and Genomic Epidemiology </a></td>
-                                </tr>
-                                <tr>
+                                  <td>Introduction to Traditional, Field, and Genomic Epidemiology</td>
+                              </tr>
+                              <tr>
                                   <td>G02</td>
                                   <td>All pathogens</td>
                                   <td>Managerial personnel</td>
-                                  <td><a href="{{ site.url }}uploads/Module_G02_Introduction_to_Traditional_Field_and_Genomic_Epidemiology.pdf" target="_blank">Introduction to Traditional, Field, and Genomic Epidemiology</a> </td>
-                                </tr>
-                                <tr>
+                                  <td>Introduction to Traditional, Field, and Genomic Epidemiology</td>
+                              </tr>
+                              <tr>
                                   <td>G03</td>
                                   <td>All pathogens</td>
                                   <td>Wet laboratory personnel</td>
-                                  <td><a href="{{ site.url }}uploads/Module_G03_An_Overview_of_the_Role_of_Genomic_Epidemiology_in_Pathogen_Genomic_Surveillance.pdf" target="_blank">An Overview of the Role of Genomic Epidemiology in Pathogen Genomic Surveillance</a></td>
-                                </tr>
-                                <tr>
+                                  <td>An Overview of the Role of Genomic Epidemiology in Pathogen Genomic Surveillance</td>
+                              </tr>
+                              <tr>
                                   <td>G03</td>
                                   <td>All pathogens</td>
                                   <td>Dry laboratory personnel</td>
-                                  <td><a href="{{ site.url }}uploads/Module_G03_An_Overview_of_the_Role_of_Genomic_Epidemiology_in_Pathogen_Genomic_Surveillance.pdf" target="_blank">An Overview of the Role of Genomic Epidemiology in Pathogen Genomic Surveillance</a></td>
-                                </tr>
-                                <tr>
+                                  <td>An Overview of the Role of Genomic Epidemiology in Pathogen Genomic Surveillance</td>
+                              </tr>
+                              <tr>
                                   <td>G03</td>
                                   <td>All pathogens</td>
                                   <td>Managerial personnel</td>
-                                  <td><a href="{{ site.url }}uploads/Module_G03_An_Overview_of_the_Role_of_Genomic_Epidemiology_in_Pathogen_Genomic_Surveillance.pdf" target="_blank">An Overview of the Role of Genomic Epidemiology in Pathogen Genomic Surveillance</a></td>
-                                </tr>
-                                <tr>
+                                  <td>An Overview of the Role of Genomic Epidemiology in Pathogen Genomic Surveillance</td>
+                              </tr>
+                              <tr>
                                   <td>G04</td>
                                   <td>All pathogens</td>
                                   <td>Wet laboratory personnel</td>
-                                  <td><a href="{{ site.url }}uploads/Module_G04_Fundamentals_of_Biostatistics.pdf" target="_blank">Fundamentals of Biostatistics</a></td>
-                                </tr>
-                                <tr>
+                                  <td>Fundamentals of Biostatistics</td>
+                              </tr>
+                              <tr>
                                   <td>G04</td>
                                   <td>All pathogens</td>
                                   <td>Dry laboratory personnel</td>
-                                  <td><a href="{{ site.url }}uploads/Module_G04_Fundamentals_of_Biostatistics.pdf" target="_blank">Fundamentals of Biostatistics</a></td>
-                                </tr>
-                                <tr>
+                                  <td>Fundamentals of Biostatistics</td>
+                              </tr>
+                              <tr>
                                   <td>G04</td>
                                   <td>All pathogens</td>
                                   <td>Managerial personnel</td>
-                                  <td><a href="{{ site.url }}uploads/Module_G04_Fundamentals_of_Biostatistics.pdf" target="_blank">Fundamentals of Biostatistics</a></td>
-                                </tr>
-                                <tr>
+                                  <td>Fundamentals of Biostatistics</td>
+                              </tr>
+                              <tr>
                                   <td>G05</td>
                                   <td>All pathogens</td>
                                   <td>Wet laboratory personnel</td>
-                                  <td><a href="{{ site.url }}uploads/Module_G05_Fundamentals_of_Pathogen_Genomic_Surveillance_Study_Design.pdf" target="_blank">Fundamentals of Pathogen Genomic Surveillance Study Design</a></td>
-                                </tr>
-                                
-                                <tr>
+                                  <td>Fundamentals of Pathogen Genomic Surveillance Study Design</td>
+                              </tr>
+                              <tr>
                                   <td>G05</td>
                                   <td>All pathogens</td>
                                   <td>Dry laboratory personnel</td>
-                                  <td><a href="{{ site.url }}uploads/Module_G05_Fundamentals_of_Pathogen_Genomic_Surveillance_Study_Design.pdf" target="_blank">Fundamentals of Pathogen Genomic Surveillance Study Design</a></td>
-                                </tr>
-
-                                <tr>
+                                  <td>Fundamentals of Pathogen Genomic Surveillance Study Design</td>
+                              </tr>
+                              <tr>
                                   <td>G05</td>
                                   <td>All pathogens</td>
                                   <td>Managerial personnel</td>
-                                  <td><a href="{{ site.url }}uploads/Module_G05_Fundamentals_of_Pathogen_Genomic_Surveillance_Study_Design.pdf" target="_blank">Fundamentals of Pathogen Genomic Surveillance Study Design</a></td>
-                                </tr>
-                                <tr>
+                                  <td>Fundamentals of Pathogen Genomic Surveillance Study Design</td>
+                              </tr>
+                              <tr>
                                   <td>G06</td>
                                   <td>All pathogens</td>
                                   <td>Wet laboratory personnel</td>
-                                  <td id="title_column"><a href="{{ site.url }}uploads/Module_G06_Introduction_to_Genomic_Sequencing_and_NGS.pdf" target="_blank">Introduction to Genomic Sequencing and NGS</a></td>
-                                </tr>
-                                <tr>
+                                  <td>Introduction to Genomic Sequencing and NGS</td>
+                              </tr>
+                              <tr>
                                   <td>G06</td>
                                   <td>All pathogens</td>
                                   <td>Dry laboratory personnel</td>
-                                  <td id="title_column"><a href="{{ site.url }}uploads/Module_G06_Introduction_to_Genomic_Sequencing_and_NGS.pdf" target="_blank">Introduction to Genomic Sequencing and NGS</a></td>
-                                </tr>
-                                <tr>
+                                  <td>Introduction to Genomic Sequencing and NGS</td>
+                              </tr>
+                              <tr>
                                   <td>G06</td>
                                   <td>All pathogens</td>
                                   <td>Managerial personnel</td>
-                                  <td id="title_column"><a href="{{ site.url }}uploads/Module_G06_Introduction_to_Genomic_Sequencing_and_NGS.pdf" target="_blank">Introduction to Genomic Sequencing and NGS</a></td>
-                                </tr>
-                                <tr>
+                                  <td>Introduction to Genomic Sequencing and NGS</td>
+                              </tr>
+                              <tr>
                                   <td>G07</td>
                                   <td>All pathogens</td>
                                   <td>Wet laboratory personnel</td>
-                                  <td><a href="{{ site.url }}uploads/Module_G07_Introduction_to_Public_Health_Research_and_Pathogen_Surveillance_Ethics_and_Policies.pdf" target="_blank">Introduction to Public Health Research and Pathogen Surveillance Ethics and Policies</a></td>
-                                </tr>
-                                <tr>
+                                  <td>Introduction to Public Health Research and Pathogen Surveillance Ethics and Policies</td>
+                              </tr>
+                              <tr>
                                   <td>G07</td>
                                   <td>All pathogens</td>
                                   <td>Dry laboratory personnel</td>
-                                  <td><a href="{{ site.url }}uploads/Module_G07_Introduction_to_Public_Health_Research_and_Pathogen_Surveillance_Ethics_and_Policies.pdf" target="_blank">Introduction to Public Health Research and Pathogen Surveillance Ethics and Policies</a></td>
-                                </tr>
-                                <tr>
+                                  <td>Introduction to Public Health Research and Pathogen Surveillance Ethics and Policies</td>
+                              </tr>
+                              <tr>
                                   <td>G07</td>
                                   <td>All pathogens</td>
                                   <td>Managerial personnel</td>
-                                  <td><a href="{{ site.url }}uploads/Module_G07_Introduction_to_Public_Health_Research_and_Pathogen_Surveillance_Ethics_and_Policies.pdf" target="_blank">Introduction to Public Health Research and Pathogen Surveillance Ethics and Policies</a></td>
-                                </tr>
-                                <tr>
+                                  <td>Introduction to Public Health Research and Pathogen Surveillance Ethics and Policies</td>
+                              </tr>
+                              <tr>
                                   <td>G08</td>
                                   <td>All pathogens</td>
                                   <td>Wet laboratory personnel</td>
-                                  <td><a href="{{ site.url }}uploads/Module_G08_Introduction_to_Data_Sharing_and_Dissemination.pdf" target="_blank">Introduction to Data Sharing and Dissemination</a></td>
-                                </tr>
-
-                                <tr>
+                                  <td>Introduction to Data Sharing and Dissemination</td>
+                              </tr>
+                              <tr>
                                   <td>G08</td>
                                   <td>All pathogens</td>
                                   <td>Dry laboratory personnel</td>
-                                  <td><a href="{{ site.url }}uploads/Module_G08_Introduction_to_Data_Sharing_and_Dissemination.pdf" target="_blank">Introduction to Data Sharing and Dissemination</a></td>
-                                </tr>
-
-                                <tr>
+                                  <td>Introduction to Data Sharing and Dissemination</td>
+                              </tr>
+                              <tr>
                                   <td>G08</td>
                                   <td>All pathogens</td>
                                   <td>Managerial personnel</td>
-                                  <td><a href="{{ site.url }}uploads/Module_G08_Introduction_to_Data_Sharing_and_Dissemination.pdf" target="_blank">Introduction to Data Sharing and Dissemination</a></td>
-                                </tr>
-
-                                <tr>
+                                  <td>Introduction to Data Sharing and Dissemination</td>
+                              </tr>
+                              <tr>
                                   <td>G09</td>
                                   <td>All pathogens</td>
                                   <td>Wet laboratory personnel</td>
-                                  <td><a href="{{ site.url }}uploads/Module_G09_Introduction_to_Antimicrobial_Resistance_AMR.pdf" target="_blank">Introduction to Antimicrobial Resistance (AMR).</a></td>
-                                </tr>
-
-                                <tr>
+                                  <td>Introduction to Antimicrobial Resistance (AMR).</td>
+                              </tr>
+                              <tr>
                                   <td>G09</td>
                                   <td>All pathogens</td>
                                   <td>Dry laboratory personnel</td>
-                                  <td><a href="{{ site.url }}uploads/Module_G09_Introduction_to_Antimicrobial_Resistance_AMR.pdf" target="_blank">Introduction to Antimicrobial Resistance (AMR).</a></td>
-                                </tr>
-
-                                <tr>
+                                  <td>Introduction to Antimicrobial Resistance (AMR).</td>
+                              </tr>
+                              <tr>
                                   <td>G09</td>
                                   <td>All pathogens</td>
                                   <td>Managerial personnel</td>
-                                  <td><a href="{{ site.url }}uploads/Module_G09_Introduction_to_Antimicrobial_Resistance_AMR.pdf" target="_blank">Introduction to Antimicrobial Resistance (AMR).</a></td>
-                                </tr>
+                                  <td>Introduction to Antimicrobial Resistance (AMR).</td>
+                              </tr>
                           </tbody>
                       </table>
                   </div>
               </div>
-               <!-- Tab Generic Foundational-->
-                 <!-- Tab Bio-informatics-->
+
+              <!-- Tab Bioinformatics -->
               <div id="tab1-2" class="tab-content">
                   <table id="table2" class="display target-table">
                       <thead>
@@ -703,74 +648,73 @@ permalink: /courses/curricula-wip/
                               <td>B01</td>
                               <td>All pathogens</td>
                               <td>Dry laboratory personnel</td>
-                              <td><a href="{{ site.url }}uploads/Module-B01-Introduction-to-Unix_Linux_Command-Line-and-Shell-Scripting.pdf" target="_blank">Introduction to Unix/Linux, Command Line, and Shell Scripting.</a></td>
-                            </tr>
-                            <tr>
+                              <td>Introduction to Unix/Linux, Command Line, and Shell Scripting.</td>
+                          </tr>
+                          <tr>
                               <td>B02</td>
                               <td>All pathogens</td>
                               <td>Dry laboratory personnel</td>
-                              <td><a href="{{ site.url }}uploads/Module-B02-Introduction-to-Version-Control.pdf" target="_blank">Introduction to Version Control.</a></td>
-                            </tr>
-                            <tr>
+                              <td>Introduction to Version Control.</td>
+                          </tr>
+                          <tr>
                               <td>B03</td>
                               <td>All pathogens</td>
                               <td>Dry laboratory personnel</td>
-                              <td><a href="{{ site.url }}uploads/Module-B03-Informatics-Skills.pdf" target="_blank">Informatics skills</a> </td>
-                            </tr>
-                            <tr>
+                              <td>Informatics skills</td>
+                          </tr>
+                          <tr>
                               <td>B04</td>
                               <td>All pathogens</td>
                               <td>Dry laboratory personnel</td>
-                              <td> <a href="{{ site.url }}uploads/Module-B04-Introduction-to-Programming.pdf" target="_blank">Introduction to Programming</a></td>
-                            </tr>
-                            <tr>
+                              <td>Introduction to Programming</td>
+                          </tr>
+                          <tr>
                               <td>B05</td>
                               <td>All pathogens</td>
                               <td>Dry laboratory personnel</td>
-                              <td><a href="{{ site.url }}uploads/Module-B05-Introduction-to-R-Programming-for-Data-Analysis.pdf" target="_blank">Introduction to R Programming for Data Analysis</a></td>
-                            </tr>
-                            <tr>
+                              <td>Introduction to R Programming for Data Analysis</td>
+                          </tr>
+                          <tr>
                               <td>B06</td>
                               <td>All pathogens</td>
                               <td>Dry laboratory personnel</td>
-                              <td><a href="{{ site.url }}uploads/Module-B06-Data-Management-and-Basic-Analytics.pdf" target="_blank">Data Management and Basic Analytics</a></td>
-                            </tr>
-                            <tr>
+                              <td>Data Management and Basic Analytics</td>
+                          </tr>
+                          <tr>
                               <td>B07</td>
                               <td>All pathogens</td>
                               <td>Dry laboratory personnel</td>
-                              <td> <a href="{{ site.url }}uploads/Module-B07-Phylogenetics.pdf" target="_blank">Phylogenetics</a> </td>
-                            </tr>
-                            <tr>
+                              <td>Phylogenetics</td>
+                          </tr>
+                          <tr>
                               <td>B08</td>
                               <td>All pathogens</td>
                               <td>Dry laboratory personnel</td>
-                              <td><a href="{{ site.url }}uploads/Module-B08-Virtual-Environments-and-Containerization.pdf" target="_blank">Virtual Environments and Containerization</a></td>
-                            </tr>
-                            <tr>
+                              <td>Virtual Environments and Containerization</td>
+                          </tr>
+                          <tr>
                               <td>B09</td>
                               <td>All pathogens</td>
                               <td>Dry laboratory personnel</td>
-                              <td> <a href="{{ site.url }}uploads/Module-B09-Workflow-Management-Systems.pdf" target="_blank">Workflow management systems</a></td>
-                            </tr>
-                            <tr>
+                              <td>Workflow management systems</td>
+                          </tr>
+                          <tr>
                               <td>B10</td>
                               <td>All pathogens</td>
                               <td>Dry laboratory personnel</td>
-                              <td> <a href="{{ site.url }}uploads/Module-B10-Ontologies-Standards-Data-Curation-and-Submission.pdf" target="_blank">Ontologies, standards, data curation and submission</a></td>
-                            </tr>
-                            <tr>
+                              <td>Ontologies, standards, data curation and submission</td>
+                          </tr>
+                          <tr>
                               <td>B11</td>
                               <td>All pathogens</td>
                               <td>Dry laboratory personnel</td>
-                              <td> <a href="{{ site.url }}uploads/Module-B11-Data-Visualization-and-Report-Generation.pdf" target="_blank">Data Visualisation and Report Generation</a></td>
-                            </tr>
+                              <td>Data Visualisation and Report Generation</td>
+                          </tr>
                       </tbody>
                   </table>
               </div>
 
-               <!-- Tab Bio-informatics-->
-                 <!-- Tab wet lab-->
+              <!-- Tab Wet lab -->
               <div id="tab1-3" class="tab-content">
                   <table id="table3" class="display target-table">
                       <thead>
@@ -786,27 +730,26 @@ permalink: /courses/curricula-wip/
                               <td>W01</td>
                               <td>All pathogens</td>
                               <td>Wet laboratory personnel</td>
-                              <td><a href="{{ site.url }}uploads/Module_W01_An_Introduction_to_Biosafety_and_Biosecurity.pdf" target="_blank">Introduction to Biosafety and Biosecurity</a></td>
-                        
-                            </tr>
-                            <tr>
+                              <td>Introduction to Biosafety and Biosecurity</td>
+                          </tr>
+                          <tr>
                               <td>W02</td>
                               <td>All pathogens</td>
                               <td>Wet laboratory personnel</td>
-                              <td><a href="{{ site.url }}uploads/Module_W02_ Basic_Laboratory_Requirements_and_Operational_Setup_for_NGS_Implementation.pdf" target="_blank">Basic Laboratory Requirements Set-Up</a></td>
-                            </tr>
-                            <tr>
+                              <td>Basic Laboratory Requirements Set-Up</td>
+                          </tr>
+                          <tr>
                               <td>W03</td>
                               <td>All pathogens</td>
                               <td>Wet laboratory personnel</td>
-                              <td><a href="{{ site.url }}uploads/Module_W03_Introduction_to_Fundamental_Laboratory_Skills_and_Calculations.pdf" target="_blank">Introduction to Fundamental Laboratory Skills and Calculations</a></td>
-                            </tr>
-                            <tr>
+                              <td>Introduction to Fundamental Laboratory Skills and Calculations</td>
+                          </tr>
+                          <tr>
                               <td>W04</td>
                               <td>All pathogens</td>
                               <td>Wet laboratory personnel</td>
-                              <td><a href="{{ site.url }}uploads/Module_W04_Basic_Molecular_Techniques_for_NGS_Implementation.pdf" target="_blank">Basic Molecular Techniques for NGS Implementation</a></td>
-                            </tr>
+                              <td>Basic Molecular Techniques for NGS Implementation</td>
+                          </tr>
                       </tbody>
                   </table>
               </div>
@@ -817,16 +760,14 @@ permalink: /courses/curricula-wip/
       <div class="accordion-item">
           <button class="accordion-header">
               <span class="accordion-title">Pathogen Specific</span>
-              <span class="accordion-icon">+</span> <!-- Default icon for closed state -->
+              <span class="accordion-icon">+</span>
           </button>
           <div class="accordion-content">
-              <!-- Overview Section -->
               <div class="feature-description">
                   <h3>Pathogen-Specific Courses</h3>
                   <p>Pathogen-Specific Courses like bacteria, viruses, and fungi.</p>
               </div>
 
-              <!-- Tabs -->
               <ul class="nav-tabs">
                   <li class="active" data-tab="tab2-1">Bacterial Course</li>
                   <li data-tab="tab2-2">Viral Course</li>
@@ -836,8 +777,7 @@ permalink: /courses/curricula-wip/
                   <li data-tab="tab2-6">Metagenomics</li>
               </ul>
 
-              <!-- Tab Content -->
-               <!-- Bacterial -->
+              <!-- Bacterial -->
               <div id="tab2-1" class="tab-content active">
                   <div class="table-wrapper">
                       <table id="table4" class="display target-table">
@@ -855,77 +795,73 @@ permalink: /courses/curricula-wip/
                                   <td>Bacterial</td>
                                   <td>Wet laboratory personnel</td>
                                   <td>Study Design for Bacterial Pathogen Surveillance</td>
-                          
-                                </tr>
-                                <tr>
+                              </tr>
+                              <tr>
                                   <td>BA01</td>
                                   <td>Bacterial</td>
                                   <td>Dry laboratory personnel</td>
                                   <td>Study Design for Bacterial Pathogen Surveillance</td>
-                          
-                                </tr>
-                                <tr>
+                              </tr>
+                              <tr>
                                   <td>BA01</td>
                                   <td>Bacterial</td>
                                   <td>Managerial personnel</td>
                                   <td>Study Design for Bacterial Pathogen Surveillance</td>
-                          
-                                </tr>
-                                <tr>
+                              </tr>
+                              <tr>
                                   <td>BA02</td>
                                   <td>Bacterial</td>
                                   <td>Wet laboratory personnel</td>
                                   <td>Bacterial Sample Preparation, Library Preparation and DNA Sequencing</td>
-                                </tr>
-                                <tr>
+                              </tr>
+                              <tr>
                                   <td>BA03</td>
-                                  <td>Bacterial </td>
+                                  <td>Bacterial</td>
                                   <td>Dry laboratory personnel</td>
                                   <td>Bacterial NGS Data Processing</td>
-                                </tr>
-                                <tr>
+                              </tr>
+                              <tr>
                                   <td>BA04a</td>
                                   <td>Bacterial</td>
                                   <td>Dry laboratory personnel</td>
                                   <td>Bacterial Pathogen Data Analysis</td>
-                                </tr>
-                                <tr>
+                              </tr>
+                              <tr>
                                   <td>BA04a</td>
                                   <td>Bacterial</td>
                                   <td>Dry laboratory personnel</td>
                                   <td>Bacterial Pathogen Data Analysis</td>
-                                </tr>
-                                <tr>
+                              </tr>
+                              <tr>
                                   <td>BA4b</td>
                                   <td>Bacterial</td>
                                   <td>Dry laboratory personnel</td>
                                   <td>Bacterial Bioinformatics Analytical workflows</td>
-                                </tr>
-                                <tr>
+                              </tr>
+                              <tr>
                                   <td>BA05</td>
                                   <td>Bacterial</td>
                                   <td>Dry laboratory personnel</td>
                                   <td>Bacterial Phylogenetics</td>
-                                </tr>
-                                <tr>
+                              </tr>
+                              <tr>
                                   <td>BA06</td>
                                   <td>Bacterial</td>
                                   <td>Dry laboratory personnel</td>
                                   <td>Antibacterial Resistance Identification and Tracking</td>
-                                </tr>
-
-                                <tr>
+                              </tr>
+                              <tr>
                                   <td>BA07</td>
                                   <td>Bacterial</td>
                                   <td>Dry laboratory personnel</td>
-                                  <td>BA07. Metagenomics/16S rRNA Amplicon for Bacterial  Surveillance</td>
-                                </tr>
+                                  <td>BA07. Metagenomics/16S rRNA Amplicon for Bacterial Surveillance</td>
+                              </tr>
                           </tbody>
                       </table>
                   </div>
               </div>
-                     <!-- Viral-->
-                <!-- Tab malaria-->
+
+              <!-- Viral -->
               <div id="tab2-2" class="tab-content">
                   <table id="table5" class="display target-table">
                       <thead>
@@ -942,74 +878,72 @@ permalink: /courses/curricula-wip/
                               <td>Viral</td>
                               <td>Wet laboratory personnel</td>
                               <td>Study Design and Sequencing Strategies for Viral Pathogen Surveillance</td>
-                      
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>V01</td>
                               <td>Viral</td>
                               <td>Dry laboratory personnel</td>
                               <td>Study Design and Sequencing Strategies for Viral Pathogen Surveillance</td>
-                      
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>V01</td>
                               <td>Viral</td>
                               <td>Managerial personnel</td>
                               <td>Study Design and Sequencing Strategies for Viral Pathogen Surveillance</td>
-                      
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>V02</td>
                               <td>Viral</td>
                               <td>Wet laboratory personnel</td>
                               <td>Sample Processing and Library Preparation for Viral Pathogens (Theory and Wet-lab Practical)</td>
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>V03</td>
                               <td>Viral</td>
                               <td>Wet laboratory personnel</td>
                               <td>ARTIC Viral Amplicon Sequencing</td>
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>V03a</td>
                               <td>Viral</td>
                               <td>Wet laboratory personnel</td>
                               <td>Illumina Workflow for Viral Genome Sequencing</td>
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>V03b</td>
                               <td>Viral</td>
                               <td>Wet laboratory personnel</td>
                               <td>ONT Workflow for Viral Genome Sequencing</td>
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>V04</td>
                               <td>Viral</td>
                               <td>Dry laboratory personnel</td>
                               <td>Introduction to Viral NGS Data Processing</td>
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>V04a</td>
                               <td></td>
                               <td>Dry laboratory personnel</td>
                               <td>Nextclade and Pangolin</td>
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>V04b</td>
                               <td>Viral</td>
                               <td>Dry laboratory personnel</td>
                               <td>Galaxy Workflow (or other selected workflow(s))</td>
-                            </tr>
-
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>V05</td>
                               <td>Viral</td>
                               <td>Dry laboratory personnel</td>
                               <td>Advanced Bioinformatics Analysis for Viruses</td>
-                            </tr>
+                          </tr>
                       </tbody>
                   </table>
               </div>
+
+              <!-- Malaria -->
               <div id="tab2-3" class="tab-content">
                   <table id="table6" class="display target-table">
                       <thead>
@@ -1026,133 +960,132 @@ permalink: /courses/curricula-wip/
                               <td>Malaria</td>
                               <td>Wet laboratory personnel</td>
                               <td>Introduction to Malaria Biology and Genomic Epidemiology</td>
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>M01</td>
                               <td>Malaria</td>
                               <td>Dry laboratory personnel</td>
                               <td>Introduction to Malaria Biology and Genomic Epidemiology</td>
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>M01</td>
                               <td>Malaria</td>
                               <td>Managerial personnel</td>
                               <td>Introduction to Malaria Biology and Genomic Epidemiology</td>
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>M02p</td>
                               <td>Malaria</td>
                               <td>Wet laboratory personnel</td>
                               <td>Malaria Pathogen Surveillance Design</td>
-                            </tr>
-
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>M02p</td>
                               <td>Malaria</td>
                               <td>Dry laboratory personnel</td>
                               <td>Malaria Pathogen Surveillance Design</td>
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>M02p</td>
                               <td>Malaria</td>
                               <td>Managerial personnel</td>
                               <td>Malaria Pathogen Surveillance Design</td>
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>M02v</td>
                               <td>Malaria</td>
                               <td>Wet laboratory personnel</td>
                               <td>Malaria Vector Surveillance Design</td>
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>M02v</td>
                               <td>Malaria</td>
                               <td>Dry laboratory personnel</td>
                               <td>Malaria Vector Surveillance Design</td>
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>M02v</td>
                               <td>Malaria</td>
                               <td>Managerial personnel</td>
                               <td>Malaria Vector Surveillance Design</td>
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>M03</td>
                               <td>Malaria</td>
                               <td>Wet laboratory personnel</td>
-                              <td>Sample processing and library preparation for malaria 
-                                  (Theory and wet lab practical)</td>
-                            </tr>
-                            <tr>
+                              <td>Sample processing and library preparation for malaria (Theory and wet lab practical)</td>
+                          </tr>
+                          <tr>
                               <td>M03a</td>
                               <td>Malaria</td>
                               <td>Wet laboratory personnel</td>
                               <td>Population Genomics and Adaptive Evolution in P.falciparum</td>
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>M04</td>
                               <td>Malaria</td>
                               <td>Dry laboratory personnel</td>
                               <td>Introduction to Malaria Bioinformatics</td>
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>M04a</td>
                               <td>Malaria</td>
                               <td>Dry laboratory personnel</td>
-                              <td>Intermediate Malaria Bioinformatics: SNP Calling Tools
-                                  </td>
-                            </tr>
-                            <tr>
+                              <td>Intermediate Malaria Bioinformatics: SNP Calling Tools</td>
+                          </tr>
+                          <tr>
                               <td>M04b</td>
                               <td>Malaria</td>
                               <td>Dry laboratory personnel</td>
                               <td>Intermediate Malaria Bioinformatics: Microhaplotype Calling Tools</td>
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>M05p</td>
                               <td>Malaria</td>
                               <td>Dry laboratory personnel</td>
                               <td>Malaria Pathogen Analytics</td>
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>M05v</td>
                               <td>Malaria</td>
                               <td>Dry laboratory personnel</td>
                               <td>Introduction to Malaria Vector Biology (Theory)</td>
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>M06v</td>
                               <td>Malaria</td>
                               <td>Dry laboratory personnel</td>
                               <td>Whole Genome Analysis for Malaria Vector (Theory and Wet-lab Practical)</td>
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>M07v</td>
                               <td>Malaria</td>
                               <td>Dry laboratory personnel</td>
-                              <td>Malaria Vector Transcriptomics Data Analysis </td>
-                            </tr>
-                            <tr>
+                              <td>Malaria Vector Transcriptomics Data Analysis</td>
+                          </tr>
+                          <tr>
                               <td>M08</td>
                               <td>Malaria</td>
                               <td>Wet laboratory personnel</td>
                               <td>M08. Using Malaria Genomic Data for Decision-Making</td>
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>M08</td>
                               <td>Malaria</td>
                               <td>Dry laboratory personnel</td>
                               <td>M08. Using Malaria Genomic Data for Decision-Making</td>
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>M08</td>
                               <td>Malaria</td>
                               <td>Managerial personnel</td>
                               <td>M08. Using Malaria Genomic Data for Decision-Making</td>
-                            </tr>
+                          </tr>
                       </tbody>
                   </table>
               </div>
+
+              <!-- Parasitic -->
               <div id="tab2-4" class="tab-content">
                   <table id="table24" class="display target-table">
                       <thead>
@@ -1169,46 +1102,48 @@ permalink: /courses/curricula-wip/
                               <td>Parasitic</td>
                               <td>Wet laboratory personnel</td>
                               <td>Study Design for Parasitic Pathogen Surveillance</td>
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>P01</td>
                               <td>Parasitic</td>
                               <td>Dry laboratory personnel</td>
                               <td>Study Design for Parasitic Pathogen Surveillance</td>
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>P01</td>
                               <td>Parasitic</td>
                               <td>Managerial personnel</td>
                               <td>Study Design for Parasitic Pathogen Surveillance</td>
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>P02</td>
                               <td>Parasitic</td>
                               <td>Wet laboratory personnel</td>
                               <td>Sample Processing and Library Preparation for Parasitic Pathogens (Theory and Wet-lab Practical)</td>
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>P03</td>
                               <td>Parasitic</td>
                               <td>Dry laboratory personnel</td>
                               <td>Introduction to Parasitic NGS Data Processing</td>
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>P04</td>
                               <td>Parasitic</td>
                               <td>Dry laboratory personnel</td>
                               <td>NGS Data Analysis Using the Artemis Genome Browser and Annotation Tool</td>
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>P05</td>
                               <td>Parasitic</td>
                               <td>Dry laboratory personnel</td>
                               <td>Using Parasitic Databases and Resources</td>
-                            </tr>
+                          </tr>
                       </tbody>
                   </table>
               </div>
+
+              <!-- Fungal -->
               <div id="tab2-5" class="tab-content">
                   <table id="table25" class="display target-table">
                       <thead>
@@ -1225,52 +1160,54 @@ permalink: /courses/curricula-wip/
                               <td>Fungi</td>
                               <td>Wet laboratory personnel</td>
                               <td>Study Design and Sequencing Strategies for Fungal Pathogen Surveillance</td>
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>F01</td>
                               <td>Fungi</td>
                               <td>Dry laboratory personnel</td>
                               <td>Study Design and Sequencing Strategies for Fungal Pathogen Surveillance</td>
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>F01</td>
                               <td>Fungi</td>
                               <td>Managerial personnel</td>
                               <td>Study Design and Sequencing Strategies for Fungal Pathogen Surveillance</td>
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>F02</td>
                               <td>Fungi</td>
                               <td>Wet laboratory personnel</td>
                               <td>Overview of Fungal Pathogen Surveillance Using NGS</td>
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>F03</td>
                               <td>Fungi</td>
                               <td>Dry laboratory personnel</td>
                               <td>Introduction to Fungal Databases</td>
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>F04</td>
                               <td>Fungi</td>
                               <td>Wet laboratory personnel</td>
                               <td>Fungal Sample Processing and Library Preparation (Theory and Wet-lab Practical)</td>
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>F05</td>
                               <td>Fungi</td>
                               <td>Dry laboratory personnel</td>
                               <td>Phylogenetics and Visualization for Fungal Genomes</td>
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>F06</td>
                               <td>Fungi</td>
                               <td>Dry laboratory personnel</td>
                               <td>Antifungal Resistance (AMR)</td>
-                            </tr>
+                          </tr>
                       </tbody>
                   </table>
               </div>
+
+              <!-- Metagenomics -->
               <div id="tab2-6" class="tab-content">
                   <table id="table26" class="display target-table">
                       <thead>
@@ -1287,67 +1224,67 @@ permalink: /courses/curricula-wip/
                               <td>Metagenomics</td>
                               <td>Wet laboratory personnel</td>
                               <td>Introduction to Metagenomics and Use Cases</td>
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>MG01</td>
                               <td>Metagenomics</td>
                               <td>Dry laboratory personnel</td>
                               <td>Introduction to Metagenomics and Use Cases</td>
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>MG01</td>
                               <td>Metagenomics</td>
                               <td>Managerial personnel</td>
                               <td>Introduction to Metagenomics and Use Cases</td>
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>MG02</td>
                               <td>Metagenomics</td>
                               <td>Dry laboratory personnel</td>
-                              <td>Study Design and Lab Setup for Metagenomics </td>
-                            </tr>
-                            <tr>
+                              <td>Study Design and Lab Setup for Metagenomics</td>
+                          </tr>
+                          <tr>
                               <td>MG02</td>
                               <td>Metagenomics</td>
                               <td>Wet laboratory personnel</td>
-                              <td>Study Design and Lab Setup for Metagenomics </td>
-                            </tr>
-                            <tr>
+                              <td>Study Design and Lab Setup for Metagenomics</td>
+                          </tr>
+                          <tr>
                               <td>MG02</td>
                               <td>Metagenomics</td>
                               <td>Managerial personnel</td>
-                              <td>Study Design and Lab Setup for Metagenomics </td>
-                            </tr>
-                            <tr>
+                              <td>Study Design and Lab Setup for Metagenomics</td>
+                          </tr>
+                          <tr>
                               <td>MG03</td>
                               <td>Metagenomics</td>
                               <td>Wet laboratory personnel</td>
                               <td>Sample Processing and Library Preparation for Metagenomics (Theory and Wet-lab Practical)</td>
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>MG04</td>
                               <td>Metagenomics</td>
                               <td>Dry laboratory personnel</td>
                               <td>Introduction to Metagenomics Data Analysis</td>
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>MG05</td>
                               <td>Metagenomics</td>
                               <td>Wet laboratory personnel</td>
                               <td>Metagenomics Data Analysis. iSeq 100 Loading</td>
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>MG06</td>
                               <td>Metagenomics</td>
                               <td>Wet laboratory personnel</td>
                               <td>Quality Control, Sample QC, Sequencing Run QC</td>
-                            </tr>
-                            <tr>
+                          </tr>
+                          <tr>
                               <td>MG07</td>
                               <td>Metagenomics</td>
                               <td>Dry laboratory personnel</td>
                               <td>Metagenomics Analysis. Cloud-based Metagenomics Platform for Researchers</td>
-                            </tr>
+                          </tr>
                       </tbody>
                   </table>
               </div>
@@ -1369,100 +1306,59 @@ permalink: /courses/curricula-wip/
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            // Initialize DataTables for all tables in the document
             const tables = document.querySelectorAll('table');
             tables.forEach(table => {
                 $(table).DataTable({
                     dom: '<"top"Bfl>rt<"bottom"ip>',
-                    buttons: [
-                        'copy', 
-                        'csv', 
-                        'excel', 
-                        'pdf', 
-                        'print'
-                    ],
+                    buttons: ['copy', 'csv', 'excel', 'pdf', 'print'],
                     paging: true,
                     pageLength: 10,
                     lengthMenu: [10, 20, 50, 100],
                     searching: true,
                     ordering: true,
                     info: true,
-                    responsive: false, // Disable responsive mode to maintain horizontal layout
-                    scrollX: true,     // Enable horizontal scrolling
+                    responsive: false,
+                    scrollX: true,
                     language: {
                         search: "Search:",
                         lengthMenu: "Show _MENU_ entries per page",
                         info: "Showing _START_ to _END_ of _TOTAL_ entries",
-                        paginate: {
-                            first: "First",
-                            last: "Last",
-                            next: "Next",
-                            previous: "Previous"
-                        }
+                        paginate: { first: "First", last: "Last", next: "Next", previous: "Previous" }
                     },
-                    // Updated initComplete function to create persona filter below header
                     initComplete: function() {
                         this.api().columns(2).every(function() {
                             var column = this;
-                            
-                            // Create a div container that will hold the select dropdown
                             var filterDiv = $('<div class="column-filter-container"></div>')
                                 .appendTo($(column.header()));
-                            
-                            // Create a select element for the Persona filter and append to the container
                             var select = $('<select><option value="">All Personas</option></select>')
                                 .appendTo(filterDiv)
                                 .on('change', function() {
-                                    var val = $.fn.dataTable.util.escapeRegex(
-                                        $(this).val()
-                                    );
-                                    
-                                    column
-                                        .search(val ? '^'+val+'$' : '', true, false)
-                                        .draw();
+                                    var val = $.fn.dataTable.util.escapeRegex($(this).val());
+                                    column.search(val ? '^'+val+'$' : '', true, false).draw();
                                 });
-                            
-                            // Get unique values for the Persona column
                             column.data().unique().sort().each(function(d, j) {
                                 select.append('<option value="'+d+'">'+d+'</option>');
                             });
-                            
-                            // Prevent click on select from propagating to header
-                            $(select).click(function(e) {
-                                e.stopPropagation();
-                            });
+                            $(select).click(function(e) { e.stopPropagation(); });
                         });
                     }
                 });
             });
             
-            // Function to copy column widths from source table to target tables
             function copyColumnWidths() {
-                // Wait for tables to be fully rendered
                 setTimeout(function() {
-                    // Get the source table (Generic table)
                     const sourceTable = document.querySelector('.source-table');
                     if (!sourceTable) return;
-                    
-                    // Get column widths from source table
                     const sourceHeaders = sourceTable.querySelectorAll('th');
                     const columnWidths = [];
-                    
                     sourceHeaders.forEach((header, index) => {
-                        // Get the actual rendered width of each column header
                         const computedStyle = window.getComputedStyle(header);
                         const width = header.getBoundingClientRect().width;
                         const paddingLeft = parseFloat(computedStyle.paddingLeft);
                         const paddingRight = parseFloat(computedStyle.paddingRight);
-                        
-                        // Calculate the actual content width
                         const contentWidth = width - paddingLeft - paddingRight;
                         columnWidths.push(contentWidth + 'px');
                     });
-                    
-                    console.log('Source column widths:', columnWidths);
-                    
-                    // Apply these widths to all target tables
                     const targetTables = document.querySelectorAll('.target-table');
                     targetTables.forEach(table => {
                         const headers = table.querySelectorAll('th');
@@ -1472,40 +1368,29 @@ permalink: /courses/curricula-wip/
                                 header.style.minWidth = columnWidths[index];
                             }
                         });
-                        
-                        // Force DataTables to redraw with the new widths
                         $(table).DataTable().columns.adjust().draw();
                     });
-                }, 300); // Wait for tables to be fully rendered
+                }, 300);
             }
             
-            // Apply column widths after initial load
             copyColumnWidths();
             
-            // Ensure column widths are reapplied when tabs change or accordions open
             function reapplyColumnWidths() {
                 setTimeout(copyColumnWidths, 100);
             }
 
-            // Accordion functionality
             const headers = document.querySelectorAll(".accordion-header");
             headers.forEach((header) => {
                 header.addEventListener("click", function () {
                     const content = this.nextElementSibling;
                     const icon = this.querySelector(".accordion-icon");
-
-                    // Toggle content visibility
                     content.classList.toggle("active");
-
-                    // Toggle icon between + and -
                     if (content.classList.contains("active")) {
                         icon.textContent = "-";
                         reapplyColumnWidths();
                     } else {
                         icon.textContent = "+";
                     }
-
-                    // Close other accordion items
                     headers.forEach((otherHeader) => {
                         if (otherHeader !== header) {
                             otherHeader.nextElementSibling.classList.remove("active");
@@ -1515,107 +1400,214 @@ permalink: /courses/curricula-wip/
                 });
             });
 
-            // Tab functionality
             const tabs = document.querySelectorAll(".nav-tabs li");
             tabs.forEach((tab) => {
                 tab.addEventListener("click", function () {
                     const tabId = this.getAttribute("data-tab");
                     const parent = this.closest(".accordion-content");
                     const allTabs = parent.querySelectorAll(".tab-content");
-
-                    // Hide all tab content
-                    allTabs.forEach((content) => {
-                        content.classList.remove("active");
-                    });
-
-                    // Show the selected tab content
+                    allTabs.forEach((content) => { content.classList.remove("active"); });
                     document.getElementById(tabId).classList.add("active");
-
-                    // Update active tab
                     const siblingTabs = this.parentElement.querySelectorAll("li");
                     siblingTabs.forEach((t) => t.classList.remove("active"));
                     this.classList.add("active");
-
-                    // Reapply column widths when switching tabs
                     reapplyColumnWidths();
                 });
             });
             
-            // Also reapply on window resize
             window.addEventListener('resize', reapplyColumnWidths);
             
-            // Additional JavaScript to force DataTables to respect our column widths
             setTimeout(function() {
                 const tables = document.querySelectorAll('.dataTable');
                 tables.forEach(table => {
-                    // Force DataTables to redraw with the new column widths
                     $(table).DataTable().columns.adjust().draw();
                 });
             }, 500);
         });
 
-// Language resources configuration
-const languageResources = {
-    "G01_An_Introduction_to_Basic_Molecular_and_Microbial_Biology": {
-        "English": "Module_G01_An_Introduction_to_Basic_Molecular_and_Microbial_Biology.pdf",
-        "French": "french.pdf",
-        "Arabic": "arabic.pdf",
-        "Portuguesse": "portuguesse.pdf",
-        
-    },
-    "G02_Introduction_to_Traditional_Field_and_Genomic_Epidemiology": {
-        "English": "Module_G02_Introduction_to_Traditional_Field_and_Genomic_Epidemiology.pdf",
-        "French": "Module_G02_Introduction_French.pdf"
-    }
-    // Add all other modules following the same pattern
+// ============================================================
+// Dynamic Language Selector for ALL modules
+// ============================================================
+
+// Language configuration — default folder per language
+const languages = [
+    { code: "en", label: "English",    folder: "eng-generic" },
+    { code: "fr", label: "French",     folder: "fren-generic" },
+    { code: "ar", label: "Arabic",     folder: "ar-generic" },
+    { code: "pt", label: "Portuguese", folder: "pt-generic" }
+];
+
+// Explicit file map: key = "ModuleCode_langCode", value = exact filename
+const fileMap = {
+    // ---- English (G-series) — folder: eng-generic ----
+    "G01_en": "Module_G01_An_Introduction_to_Basic_Molecular_and_Microbial_Biology_en.pdf",
+    "G02_en": "Module_G02_Introduction_to_Traditional_Field_and_Genomic_Epidemiology_en.pdf",
+    "G03_en": "Module_G03_An_Overview_of_the_Role_of_Genomic_Epidemiology_in_Pathogen_Genomic_Surveillance_en.pdf",
+    "G04_en": "Module_G04_Fundamentals_of_Biostatistics_en.pdf",
+    "G05_en": "Module_G05_Fundamentals_of_Pathogen_Genomic_Surveillance_Study_Design_en.pdf",
+    "G06_en": "Module_G06_Introduction_to_Genomic_Sequencing_and_NGS_en.pdf",
+    "G07_en": "Module_G07_Introduction_to_Public_Health_Research_and_Pathogen_Surveillance_Ethics_and_Policies_en.pdf",
+    "G08_en": "Module_G08_Introduction_to_Data_Sharing_and_Dissemination_en.pdf",
+    "G09_en": "Module_G09_Introduction_to_Antimicrobial_Resistance_AMR_en.pdf",
+
+    // ---- English (W-series) — folder: eng-wetlab ----
+    "W01_en": "Module_W01_An_Introduction_to_Biosafety_and_Biosecurity_en.pdf",
+    "W02_en": "Module_W02_Basic_Laboratory_Requirements_and_Operational_Setup_for_NGS_Implementation_en.pdf",
+    "W03_en": "Module_W03_Introduction_to_Fundamental_Laboratory_Skills_and_Calculations_en.pdf",
+    "W04_en": "Module_W04_Basic_Molecular_Techniques_for_NGS_Implementation_en.pdf",
+
+    // ---- French (G-series) — folder: fren-generic ----
+    "G01_fr": "Module_G01_An_Introduction_to_Basic_Molecular_and_Microbial_Biology_fr.pdf",
+    "G02_fr": "Module_G02_Introduction_to_Traditional_Field_and_Genomic_Epidemiology_fr.pdf",
+    "G03_fr": "Module_G03_An_Overview_of_the_Role_of_Genomic_Epidemiology_in_Pathogen_Genomic_Surveillance_fr.pdf",
+    "G04_fr": "Module_G04_Fundamentals_of_Biostatistics_fr.pdf",
+    "G05_fr": "Module_G05_Fundamentals_of_Pathogen_Genomic_Surveillance_Study_Design_fr.pdf",
+    "G06_fr": "Module_G06_Introduction_to_Genomic_Sequencing_and_NGS_fr.pdf",
+    "G07_fr": "Module_G07_Introduction_to_Public_Health_Research_and_Pathogen_Surveillance_Ethics_and_Policies_fr.pdf",
+    "G08_fr": "Module_G08_Introduction_to_Data_Sharing_and_Dissemination_fr.pdf",
+    "G09_fr": "Module_G09_Introduction_to_Antimicrobial_Resistance_AMR_fr.pdf",
+
+    // ---- French (W-series wetlab) — folder: fren-wetlab ----
+    "W01_fr": "Module_W01_An_Introduction_to_Biosafety_and_Biosecurity_fr.pdf",
+    "W02_fr": "Module_W02_Basic_Laboratory_Requirements_and_Operational_Setup_for_NGS_Implementation_fr.pdf",
+    "W03_fr": "Module_W03_Introduction_to_Fundamental_Laboratory_Skills_and_Calculations_fr.pdf",
+    "W04_fr": "Module_W04_Basic_Molecular_Techniques_for_NGS_Implementation_fr.pdf",
+
+    // ---- French (B-series bioinformatics) — folder: fren-bioinf ----
+    "B01_fr": "Module_B01_Introduction_to_Unix_Linux_fr.pdf",
+    "B02_fr": "Module_B02_Introduction_to_Version_Control_fr.pdf",
+    "B03_fr": "Module_B03_Informatics_Skills_fr.pdf",
+    "B04_fr": "Module_B04_Introduction_to_Programming_fr.pdf",
+    "B05_fr": "Module_B05_Introduction_to_R_programming_for_Data_Analysis_fr.pdf",
+    "B06_fr": "Module_B06_Data_Management_and_Basic_Analysis_fr.pdf",
+    "B07_fr": "Module_B07_Phylogenetics_fr.pdf",
+    "B08_fr": "Module_B08_Virtual_Environments_and_Containerisation_fr.pdf",
+    "B09_fr": "Module_B09_Workflow_Management_Systems_fr.pdf",
+    "B10_fr": "Module_B10_Ontologies_standards_fr.pdf",
+    "B11_fr": "Module_B11_Data_Visualisation_and_Report_Generation_fr.pdf"
 };
 
-// Allowed languages
-const allowedLanguages = ["English", "French", "Arabic","Portuguesse",];
+// Folder overrides for modules that live in a different folder than the language default
+const folderOverrides = {
+    // English W-series lives in eng-wetlab, not eng-generic
+    "W01_en": "eng-wetlab",
+    "W02_en": "eng-wetlab",
+    "W03_en": "eng-wetlab",
+    "W04_en": "eng-wetlab",
+    // French W-series lives in fren-wetlab, not fren-generic
+    "W01_fr": "fren-wetlab",
+    "W02_fr": "fren-wetlab",
+    "W03_fr": "fren-wetlab",
+    "W04_fr": "fren-wetlab",
+    // French B-series lives in fren-bioinf, not fren-generic
+    "B01_fr": "fren-bioinf",
+    "B02_fr": "fren-bioinf",
+    "B03_fr": "fren-bioinf",
+    "B04_fr": "fren-bioinf",
+    "B05_fr": "fren-bioinf",
+    "B06_fr": "fren-bioinf",
+    "B07_fr": "fren-bioinf",
+    "B08_fr": "fren-bioinf",
+    "B09_fr": "fren-bioinf",
+    "B10_fr": "fren-bioinf",
+    "B11_fr": "fren-bioinf"
+};
 
-// Initialize language selectors
-function initLanguageSelectors() {
-    document.querySelectorAll('.language-selector').forEach(selector => {
-        const moduleKey = selector.dataset.module;
-        const languages = languageResources[moduleKey] || {};
+// Build a filename-safe slug from a module title (fallback for unmapped files)
+function titleToSlug(title) {
+    return title
+        .replace(/\s*\(.*?\)\s*/g, '')           // remove parenthetical text
+        .replace(/[^a-zA-Z0-9\s]/g, '')          // remove special chars
+        .trim()
+        .replace(/\s+/g, '_');                    // spaces to underscores
+}
 
-        // Clear all existing options except the first ("Select Language")
-        while (selector.options.length > 1) {
-            selector.remove(1);
-        }
+// Get the file path for a module + language combination
+function getFilePath(moduleCode, titleText, lang) {
+    const mapKey = moduleCode + '_' + lang.code;
+    const folder = folderOverrides[mapKey] || lang.folder;
 
-        // Add allowed language options only
-        allowedLanguages.forEach(language => {
-            if (languages[language]) {
-                const option = document.createElement('option');
-                option.value = `/uploads/${languages[language]}`; // Adjust path as needed
-                option.textContent = language;
-                selector.appendChild(option);
+    // Check explicit map first
+    if (fileMap[mapKey]) {
+        return '/uploads/' + folder + '/' + fileMap[mapKey];
+    }
+
+    // Fallback: auto-generate from title slug (will 404 if file doesn't exist)
+    const slug = titleToSlug(titleText);
+    return '/uploads/' + folder + '/Module_' + moduleCode + '_' + slug + '_' + lang.code + '.pdf';
+}
+
+// Inject a language <select> into every Module Title cell (4th column)
+function injectLanguageSelectors() {
+    document.querySelectorAll('table.display tbody tr').forEach(row => {
+        const cells = row.querySelectorAll('td');
+        if (cells.length < 4) return;
+
+        const codeCell = cells[0];
+        const titleCell = cells[3];
+
+        // Skip if already processed
+        if (titleCell.querySelector('.language-selector')) return;
+
+        const moduleCode = codeCell.textContent.trim();
+
+        // Extract the plain title text
+        let titleText = titleCell.textContent.trim();
+
+        // Clean up titles that start with module code prefix like "BA07. " or "M08. "
+        titleText = titleText.replace(/^[A-Z]+\d+[a-z]*\.\s*/, '');
+
+        // Build the select dropdown
+        const container = document.createElement('div');
+        container.className = 'module-title-container';
+
+        const select = document.createElement('select');
+        select.className = 'language-selector';
+
+        const defaultOpt = document.createElement('option');
+        defaultOpt.value = '';
+        defaultOpt.textContent = 'Select Language';
+        select.appendChild(defaultOpt);
+
+        languages.forEach(lang => {
+            const opt = document.createElement('option');
+            opt.value = getFilePath(moduleCode, titleText, lang);
+            opt.textContent = lang.label;
+            select.appendChild(opt);
+        });
+
+        select.addEventListener('change', function() {
+            if (this.value) {
+                window.open(this.value, '_blank');
+                this.selectedIndex = 0;
             }
         });
 
-        // Prevent duplicate event listeners
-        if (!selector.dataset.listenerAttached) {
-            selector.addEventListener('change', function () {
-                if (this.value) {
-                    window.open(this.value, '_blank');
-                    this.selectedIndex = 0;
-                }
-            });
-            selector.dataset.listenerAttached = 'true';
-        }
+        select.addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+
+        container.appendChild(select);
+
+        // Replace cell content: show title text + dropdown
+        titleCell.innerHTML = '';
+        const titleSpan = document.createElement('span');
+        titleSpan.className = 'module-title-text';
+        titleSpan.textContent = titleText;
+        titleCell.appendChild(titleSpan);
+        titleCell.appendChild(document.createElement('br'));
+        titleCell.appendChild(container);
     });
 }
 
-// Initialize when page loads
-document.addEventListener('DOMContentLoaded', initLanguageSelectors);
+// Run after DOM and DataTables are ready
+document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(injectLanguageSelectors, 600);
+});
 
-// Reinitialize when tables are redrawn (for DataTables)
-$(document).on('draw.dt', function () {
-    initLanguageSelectors();
+// Re-inject when DataTables redraws (pagination, search, etc.)
+$(document).on('draw.dt', function() {
+    injectLanguageSelectors();
 });
 
     </script>
-
-
-
