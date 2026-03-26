@@ -48,6 +48,44 @@ permalink: /courses/curricula-wip/
     }
 }
 
+/* PDF Availability Notice */
+.pdf-availability-notice {
+    background-color: #fff8e1;
+    border: 1px solid #ffcc02;
+    border-left: 4px solid #f5a623;
+    border-radius: 5px;
+    padding: 12px 16px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    color: #6d5a00;
+    line-height: 1.5;
+}
+
+.pdf-availability-notice .notice-icon {
+    font-size: 18px;
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+.pdf-availability-notice .notice-text strong {
+    color: #856404;
+}
+
+/* Inline file-not-available notice (appears below the dropdown) */
+.file-not-available {
+    font-size: 12px;
+    color: #b91c1c;
+    background-color: #fef2f2;
+    border: 1px solid #fecaca;
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin-top: 4px;
+    transition: opacity 0.3s ease;
+}
+
         .accordion { margin: 0 auto; }
         .accordion-item { border: 1px solid #ddd; margin-bottom: 5px; border-radius: 5px; overflow: hidden; }
         .accordion-header { display: flex; justify-content: space-between; align-items: center; width: 100%; padding: 15px; text-align: left; background-color: #8c2133; color: white; border: none; cursor: pointer; font-size: 16px; transition: background-color 0.3s; }
@@ -116,6 +154,7 @@ permalink: /courses/curricula-wip/
             table, th, td { border-color: #000 !important; }
             .accordion-header, .feature-description { color: #000 !important; background-color: transparent !important; break-inside: avoid; }
             .accordion-icon { display: none; }
+            .pdf-availability-notice { background-color: transparent !important; border-color: #000 !important; color: #000 !important; }
         }
     </style>
 
@@ -132,6 +171,11 @@ permalink: /courses/curricula-wip/
               <div class="feature-description">
                   <h3>Basic Foundational Courses</h3>
                   <p>Basic Foundational Courses</p>
+              </div>
+
+              <div class="pdf-availability-notice">
+                  <span class="notice-icon">&#9888;</span>
+                  <span class="notice-text"><strong>Note:</strong> PDF course materials are not yet available for all modules and languages. Where a file is not available, the download link may not work. Materials are being added progressively.</span>
               </div>
 
               <ul class="nav-tabs">
@@ -230,6 +274,11 @@ permalink: /courses/curricula-wip/
               <div class="feature-description">
                   <h3>Pathogen-Specific Courses</h3>
                   <p>Pathogen-Specific Courses like bacteria, viruses, and fungi.</p>
+              </div>
+
+              <div class="pdf-availability-notice">
+                  <span class="notice-icon">&#9888;</span>
+                  <span class="notice-text"><strong>Note:</strong> PDF course materials are not yet available for all modules and languages. Where a file is not available, the download link may not work. Materials are being added progressively.</span>
               </div>
 
               <ul class="nav-tabs">
@@ -593,6 +642,25 @@ function getFilePath(moduleCode, titleText, lang) {
     return '/ngs-academy/uploads/' + folder + '/Module_' + moduleCode + '_' + slug + '_' + lang.code + '.pdf';
 }
 
+function showFileNotice(selectEl, message) {
+    // Remove any existing notice on this row first
+    const existing = selectEl.closest('.module-title-container').querySelector('.file-not-available');
+    if (existing) existing.remove();
+
+    const notice = document.createElement('div');
+    notice.className = 'file-not-available';
+    notice.innerHTML = '&#9888; ' + message;
+    selectEl.closest('.module-title-container').appendChild(notice);
+
+    // Auto-remove after 5 seconds
+    setTimeout(() => {
+        if (notice.parentNode) {
+            notice.style.opacity = '0';
+            setTimeout(() => notice.remove(), 300);
+        }
+    }, 5000);
+}
+
 function injectLanguageSelectors() {
     document.querySelectorAll('table.display tbody tr').forEach(row => {
         const cells = row.querySelectorAll('td');
@@ -627,8 +695,25 @@ function injectLanguageSelectors() {
 
         select.addEventListener('change', function() {
             if (this.value) {
-                window.open(this.value, '_blank');
-                this.selectedIndex = 0;
+                const url = this.value;
+                const selectEl = this;
+                selectEl.disabled = true;
+
+                fetch(url, { method: 'HEAD' })
+                    .then(response => {
+                        if (response.ok) {
+                            window.open(url, '_blank');
+                        } else {
+                            showFileNotice(selectEl, 'This file is not yet available. Materials are being added progressively.');
+                        }
+                    })
+                    .catch(() => {
+                        showFileNotice(selectEl, 'This file is not yet available. Materials are being added progressively.');
+                    })
+                    .finally(() => {
+                        selectEl.selectedIndex = 0;
+                        selectEl.disabled = false;
+                    });
             }
         });
 
