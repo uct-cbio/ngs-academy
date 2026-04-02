@@ -223,6 +223,9 @@ permalink: /courses/curricula/
                               <tr><td>G09</td><td>All pathogens</td><td>Wet laboratory personnel</td><td>Introduction to Antimicrobial Resistance (AMR).</td></tr>
                               <tr><td>G09</td><td>All pathogens</td><td>Dry laboratory personnel</td><td>Introduction to Antimicrobial Resistance (AMR).</td></tr>
                               <tr><td>G09</td><td>All pathogens</td><td>Managerial personnel</td><td>Introduction to Antimicrobial Resistance (AMR).</td></tr>
+                              <tr><td>G10</td><td>All pathogens</td><td>Wet laboratory personnel</td><td>Generic Foundational Course Introduction</td></tr>
+                              <tr><td>G10</td><td>All pathogens</td><td>Dry laboratory personnel</td><td>Generic Foundational Course Introduction</td></tr>
+                              <tr><td>G10</td><td>All pathogens</td><td>Managerial personnel</td><td>Generic Foundational Course Introduction</td></tr>
                           </tbody>
                       </table>
                   </div>
@@ -259,6 +262,9 @@ permalink: /courses/curricula/
                           <tr><td>W02</td><td>All pathogens</td><td>Wet laboratory personnel</td><td>Basic Laboratory Requirements Set-Up</td></tr>
                           <tr><td>W03</td><td>All pathogens</td><td>Wet laboratory personnel</td><td>Introduction to Fundamental Laboratory Skills and Calculations</td></tr>
                           <tr><td>W04</td><td>All pathogens</td><td>Wet laboratory personnel</td><td>Basic Molecular Techniques for NGS Implementation</td></tr>
+                              <tr><td>W05</td><td>All pathogens</td><td>Wet laboratory personnel</td><td>Wet-lab Foundational Course Introduction</td></tr>
+                              <tr><td>W05</td><td>All pathogens</td><td>Dry laboratory personnel</td><td>Wet-lab Foundational Course Introduction</td></tr>
+                              <tr><td>W05</td><td>All pathogens</td><td>Managerial personnel</td><td>Wet-lab Foundational Course Introduction</td></tr>
                       </tbody>
                   </table>
               </div>
@@ -561,6 +567,7 @@ permalink: /courses/curricula/
 const languages = [
     { code: "en", label: "English",    folder: "eng-generic" },
     { code: "fr", label: "French",     folder: "fren-generic" },
+    { code: "spn", label: "Spanish",   folder: "spn-generic" },
     { code: "ar", label: "Arabic",     folder: "ar-generic" },
     { code: "pt", label: "Portuguese", folder: "pt-generic" }
 ];
@@ -593,6 +600,7 @@ const fileMap = {
     "G07_fr": "Module_G07_Introduction_to_Public_Health_Research_and_Pathogen_Surveillance_Ethics_and_Policies_fr.pdf",
     "G08_fr": "Module_G08_Introduction_to_Data_Sharing_and_Dissemination_fr.pdf",
     "G09_fr": "Module_G09_Introduction_to_Antimicrobial_Resistance_AMR_fr.pdf",
+    "G10_fr": "Module_G10_FRENCH_Generic_Foundational_Course_Introduction.pdf",
 
     // ---- French (W-series wetlab) — folder: fren-wetlab ----
     "W01_fr": "Module_W01_An_Introduction_to_Biosafety_and_Biosecurity_fr.pdf",
@@ -611,7 +619,14 @@ const fileMap = {
     "B08_fr": "Module_B08_Virtual_Environments_and_Containerisation_fr.pdf",
     "B09_fr": "Module_B09_Workflow_Management_Systems_fr.pdf",
     "B10_fr": "Module_B10_Ontologies_standards_fr.pdf",
-    "B11_fr": "Module_B11_Data_Visualisation_and_Report_Generation_fr.pdf"
+    "B11_fr": "Module_B11_Data_Visualisation_and_Report_Generation_fr.pdf",
+
+    // ---- Spanish (W-series wetlab) — folder: spanish-wetlab ----
+    "W01_spn": "Module_W01_An_Introduction_to_Biosafety_and_Biosecurity_spn.pdf",
+    "W02_spn": "Module_W02_Basic_Laboratory_Requirements_spn.pdf",
+    "W03_spn": "Module_W03_Introduction_to_Fundamental_Laboratory_spn.pdf",
+    "W04_spn": "Module_W04_Basic_Molecular_Techniques_for_NGS_Implementation_spn.pdf",
+    "W05_spn": "Wet-lab_Foundational_Course_-_Introduction_spn.pdf"
 };
 
 const folderOverrides = {
@@ -619,7 +634,9 @@ const folderOverrides = {
     "W01_fr": "fren-wetlab", "W02_fr": "fren-wetlab", "W03_fr": "fren-wetlab", "W04_fr": "fren-wetlab",
     "B01_fr": "fren-bioinf", "B02_fr": "fren-bioinf", "B03_fr": "fren-bioinf", "B04_fr": "fren-bioinf",
     "B05_fr": "fren-bioinf", "B06_fr": "fren-bioinf", "B07_fr": "fren-bioinf", "B08_fr": "fren-bioinf",
-    "B09_fr": "fren-bioinf", "B10_fr": "fren-bioinf", "B11_fr": "fren-bioinf"
+    "B09_fr": "fren-bioinf", "B10_fr": "fren-bioinf", "B11_fr": "fren-bioinf",
+    "W01_spn": "spanish-wetlab", "W02_spn": "spanish-wetlab", "W03_spn": "spanish-wetlab", "W04_spn": "spanish-wetlab",
+    "W05_spn": "spanish-wetlab"
 };
 
 function titleToSlug(title) {
