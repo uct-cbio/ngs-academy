@@ -736,29 +736,23 @@ function injectLanguageSelectors() {
             if (this.value) {
                 const url = this.value;
                 const selectEl = this;
-                selectEl.disabled = true;
 
+                // Open immediately within the user gesture (avoids Safari popup blocker)
+                const newWindow = window.open(url, '_blank');
+
+                // Validate in the background — close the tab if file is missing
                 fetch(url, { method: 'HEAD', cache: 'no-cache' })
                     .then(response => {
-                        if (response.ok) {
-                            // File exists — open it
-                            window.open(url, '_blank');
-                        } else if (response.status === 404) {
-                            // Definitely missing
+                        if (response.status === 404) {
+                            if (newWindow) newWindow.close();
                             showFileNotice(selectEl, 'This file is not yet available. Materials are being added progressively.');
-                        } else {
-                            // Server returned non-404 error (e.g. 405 Method Not Allowed) — try opening anyway
-                            window.open(url, '_blank');
                         }
                     })
                     .catch(() => {
-                        // Network/fetch error — fall back to opening directly,
-                        // browser will show a 404 if the file truly doesn't exist
-                        window.open(url, '_blank');
+                        // Network/HEAD error — leave the tab open, browser handles 404
                     })
                     .finally(() => {
                         selectEl.selectedIndex = 0;
-                        selectEl.disabled = false;
                     });
             }
         });
