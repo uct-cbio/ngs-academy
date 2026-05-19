@@ -21,6 +21,84 @@
         .survey_button {
             color: white !important;
         }
+
+        /* Header title + search layout */
+        .name_on_nav {
+            text-align: left;
+        }
+        .header-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 8px 0;
+        }
+        .header-bar h3 {
+            margin: 0;
+        }
+
+        /* Search box — self-contained flex row */
+        .header-search {
+            display: flex;
+            align-items: stretch;
+            width: 280px;
+            max-width: 100%;
+            height: 34px;
+        }
+        .header-search input[type="text"] {
+            flex: 1;
+            min-width: 0;
+            height: 34px;
+            padding: 6px 10px;
+            font-size: 13px;
+            line-height: 1;
+            border: 1px solid #ccc;
+            border-right: none;
+            border-radius: 4px 0 0 4px;
+            background: #fff;
+            box-sizing: border-box;
+            outline: none;
+            margin: 0;
+        }
+        .header-search input[type="text"]:focus {
+            border-color: #999;
+        }
+        .header-search button {
+            height: 34px;
+            width: 38px;
+            padding: 0;
+            margin: 0;
+            border: 1px solid #ccc;
+            border-radius: 0 4px 4px 0;
+            background: #f5f5f5;
+            cursor: pointer;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #555;
+        }
+        .header-search button:hover {
+            background: #e8e8e8;
+        }
+        .header-search button i {
+            font-size: 13px;
+            line-height: 1;
+        }
+
+        @media (max-width: 768px) {
+            .header-search {
+                width: 100%;
+            }
+            .header-bar {
+                justify-content: center;
+            }
+            .header-bar h3 {
+                text-align: center;
+                width: 100%;
+            }
+        }
     </style>
     <!-- CSS -->
     <link rel="stylesheet" href="css/owl.carousel.css">
@@ -78,8 +156,8 @@
             "@type": "Course",
             "name": "Advanced Training: Developing Workflows",
             "description": "High-throughput laboratory machines generate large quantities of raw biological data. Processing the data to generate useful information involves using several tools and sometimes setting up complex bioinformatics analysis environments across heterogeneous computing devices. Bioinformatics workflows and workflow managers allow reproducibility and portability of analysis plans and optimization of available computing resources. The Advanced Training: Developing Workflows workshop was aimed at introducing, deploying Nextflow, a too which enables scalable and reproducible scientific workflows. ",
-            
-            "hasCourseInstance": 
+
+            "hasCourseInstance":
             [
               {
                 "@type": "CourseInstance",
@@ -88,10 +166,10 @@
                 "location": "KEMRI / WELLCOME TRUST Kilifi, Kenya",
                 "startDate": "2022-04-25"
               },
-          
-  
+
+
             ]
-      
+
           }
         </script>
 
@@ -109,10 +187,17 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="name_on_nav text-center">
-                    <p>
-                    <h3>NGS Academy for the Africa CDC Pathogen Genomics Initiative</h3>
-                    </p>
+                <div class="name_on_nav">
+                    <div class="header-bar">
+                        <h3>NGS Academy for the Africa CDC Pathogen Genomics Initiative</h3>
+
+                        <form class="header-search" action="{{ '/search/' | relative_url }}" method="get" role="search">
+                            <input type="text" name="q" placeholder="Search courses, resources…" aria-label="Search">
+                            <button type="submit" aria-label="Submit search">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
                 </div>
 
                 <!-- header Nav Start -->
@@ -135,94 +220,45 @@
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav navbar-right">
 
-                                <li {% if page.url=="/" %}class="active" {% endif %}><a href="{{ site.url }}">Home</a>
+                                <li {% if page.url == "/" %}class="active"{% endif %}>
+                                    <a href="{{ site.url }}">Home</a>
                                 </li>
 
-                                <li {% if page.url=="/about/" %}class="active" {% endif %}><a
-                                        href="{{ site.url }}about/">About</a>
+                                <li {% if page.url == "/about/" %}class="active"{% endif %}>
+                                    <a href="{{ site.url }}about/">About</a>
+                                </li>
 
-
-                                    <!-- <li {% if page.url=="/courses/" %}class="active" {% endif %}><a
-                                        href="courses">Courses</a>
-                                </li> -->
-
-
-                                <li class="nav-item dropdown" {% if page.url=="/courses/" %}class="active" {% endif %}>
-                                    <a class="nav-link  dropdown-toggle" href="{{ site.url }}courses/"
-                                        data-bs-toggle="dropdown-1">Courses</a>
+                                <li class="nav-item dropdown" {% if page.url == "/courses/" %}class="active"{% endif %}>
+                                    <a class="nav-link dropdown-toggle" href="{{ site.url }}courses/" data-bs-toggle="dropdown-1">Courses</a>
                                     <ul class="dropdown-menu">
-
-                                        <li><a class="dropdown-item" href="{{ site.url }}calendar/">Calendar</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="{{ site.url }}courses/upcoming-courses/">
-                                                Upcoming
-                                                Courses & Events</a>
-                                        </li>
-
-                                        <!-- <li><a class="dropdown-item"
-                                                href="{{ site.url }}courses/available-courses/">Available Courses</a>
-                                        </li> -->
-
-                                        <li><a class="dropdown-item" href="{{ site.url }}courses/past-courses/"> Past
-                                                Courses and
-                                                Training Events</a>
-                                        </li>
-
-                                        <li><a class="dropdown-item" href="{{ site.url }}courses/other-courses">Other
-                                                Pathogen
-                                                Surveillance Courses</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="{{ site.url }}courses/curricula/">
-                                                Pathogen Surveillance Training Curricula</a>
-                                        </li>
-
-                                        <!-- <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
-                                        <li><a class="dropdown-item" href="#"> Submenu item 3 </a></li> -->
+                                        <li><a class="dropdown-item" href="{{ site.url }}calendar/">Calendar</a></li>
+                                        <li><a class="dropdown-item" href="{{ site.url }}courses/upcoming-courses/">Upcoming Courses &amp; Events</a></li>
+                                        <li><a class="dropdown-item" href="{{ site.url }}courses/past-courses/">Past Courses and Training Events</a></li>
+                                        <li><a class="dropdown-item" href="{{ site.url }}courses/other-courses">Other Pathogen Surveillance Courses</a></li>
+                                        <li><a class="dropdown-item" href="{{ site.url }}courses/curricula/">Pathogen Surveillance Training Curricula</a></li>
                                     </ul>
-
                                 </li>
 
-
-
-                                <li class="nav-item dropdown" {% if page.url=="/resources/" %}class="active" {% endif
-                                    %}><a class="nav-link  dropdown-toggle" href="{{ site.url }}resources"
-                                        data-bs-toggle="dropdown-1"> Tools & Resources</a>
+                                <li class="nav-item dropdown" {% if page.url == "/resources/" %}class="active"{% endif %}>
+                                    <a class="nav-link dropdown-toggle" href="{{ site.url }}resources" data-bs-toggle="dropdown-1">Tools &amp; Resources</a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="{{ site.url }}resources/help-desk/">
-                                                Help-Desk/Ticketing Sys</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="{{ site.url }}resources/training-materials/">
-                                                Training Materials</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="{{ site.url }}resources/pha4ge/">
-                                                PHA4GE</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="{{ site.url }}resources/publications/">
-                                                Publications</a>
-                                        </li>
-                                        <!-- <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
-                                        <li><a class="dropdown-item" href="#"> Submenu item 3 </a></li> -->
+                                        <li><a class="dropdown-item" href="{{ site.url }}resources/help-desk/">Help-Desk/Ticketing Sys</a></li>
+                                        <li><a class="dropdown-item" href="{{ site.url }}resources/training-materials/">Training Materials</a></li>
+                                        <li><a class="dropdown-item" href="{{ site.url }}resources/pha4ge/">PHA4GE</a></li>
+                                        <li><a class="dropdown-item" href="{{ site.url }}resources/publications/">Publications</a></li>
                                     </ul>
-
                                 </li>
 
-                                <li class="nav-item dropdown" {% if page.url=="/trainer-communities/" %}class="active"
-                                    {% endif %}><a class="nav-link  dropdown-toggle"
-                                        href="{{ site.url }}trainer-communities" data-bs-toggle="dropdown-1">Trainer
-                                        Communities</a>
+                                <li class="nav-item dropdown" {% if page.url == "/trainer-communities/" %}class="active"{% endif %}>
+                                    <a class="nav-link dropdown-toggle" href="{{ site.url }}trainer-communities" data-bs-toggle="dropdown-1">Trainer Communities</a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="{{ site.url }}related-projects/">
-                                                Related Projects</a>
-
-
+                                        <li><a class="dropdown-item" href="{{ site.url }}related-projects/">Related Projects</a></li>
                                     </ul>
-
                                 </li>
 
-                                <li {% if page.url=="/contact/" %}class="active" {% endif %}><a
-                                        href="{{ site.url }}contact">Contact</a>
+                                <li {% if page.url == "/contact/" %}class="active"{% endif %}>
+                                    <a href="{{ site.url }}contact">Contact</a>
                                 </li>
-
 
                             </ul>
                         </div><!-- /.navbar-collapse -->
@@ -259,7 +295,7 @@
                 </div>
 
 
-                <div class="col-lg-10 col-md-10 col-sm-10 main_container_section" class="my-auto">
+                <div class="col-lg-10 col-md-10 col-sm-10 main_container_section">
 
                     {{content}}
                 </div>
