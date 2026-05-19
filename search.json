@@ -1,21 +1,15 @@
 ---
-layout: none
+layout: null
+permalink: /search.json
 ---
 [
-  {% for page in site.pages %}
+  {% assign pages = site.pages | where_exp: "p", "p.title" %}
+  {% assign all_docs = pages | concat: site.posts %}
+  {% for doc in all_docs %}
     {
-      "title": {{ page.title | jsonify }},
-      "url": "{{ site.url }}{{ page.url }}",
-      "content": {{ page.content | strip_html | strip_newlines | jsonify }},
-      "description": {{ page.description | jsonify }}
-    }{% unless forloop.last %},{% endunless %}
-  {% endfor %}
-  {% for post in site.posts %}
-    {
-      "title": {{ post.title | jsonify }},
-      "url": "{{ site.url }}{{ post.url }}",
-      "content": {{ post.content | strip_html | strip_newlines | jsonify }},
-      "description": {{ post.description | jsonify }}
+      "title": {{ doc.title | jsonify }},
+      "url": {{ doc.url | relative_url | jsonify }},
+      "content": {{ doc.content | strip_html | strip_newlines | truncate: 1500 | jsonify }}
     }{% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]
