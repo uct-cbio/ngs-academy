@@ -45,6 +45,7 @@
             width: 280px;
             max-width: 100%;
             height: 34px;
+            position: relative;
         }
         .header-search input[type="text"] {
             flex: 1;
@@ -85,6 +86,84 @@
         .header-search button i {
             font-size: 13px;
             line-height: 1;
+        }
+
+        /* Live search dropdown — flush with search box (left:0 right:0) */
+        .header-search-dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            margin-top: 2px;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            max-height: 420px;
+            overflow-y: auto;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+            display: none;
+        }
+        .header-search-dropdown.is-open {
+            display: block;
+        }
+        .header-search-result {
+            display: block;
+            padding: 10px 14px;
+            border-bottom: 1px solid #eee;
+            text-decoration: none;
+            color: #333;
+        }
+        .header-search-result:last-child {
+            border-bottom: none;
+        }
+        .header-search-result:hover,
+        .header-search-result:focus,
+        .header-search-result.is-active {
+            background: #f5f5f5;
+            text-decoration: none;
+            color: #333;
+        }
+        .header-search-result-title {
+            font-size: 13px;
+            font-weight: 500;
+            color: #1a1a1a;
+            margin-bottom: 2px;
+        }
+        .header-search-result-snippet {
+            font-size: 12px;
+            color: #777;
+            line-height: 1.4;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+        .header-search-meta {
+            padding: 8px 14px;
+            color: #888;
+            font-size: 12px;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+        .header-search-meta:last-child {
+            border-bottom: none;
+        }
+        .header-search-all {
+            display: block;
+            padding: 10px 14px;
+            text-align: center;
+            background: #fafafa;
+            font-size: 12px;
+            color: #555;
+            text-decoration: none;
+            border-top: 1px solid #eee;
+        }
+        .header-search-all:hover {
+            background: #f0f0f0;
+            color: #333;
+            text-decoration: none;
         }
 
         @media (max-width: 768px) {
@@ -130,6 +209,9 @@
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
         crossorigin=""></script>
+
+    <!-- Lunr (for live search) -->
+    <script src="https://unpkg.com/lunr@2.3.9/lunr.min.js" defer></script>
 
     <!-- Js -->
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -191,7 +273,7 @@
                     <div class="header-bar">
                         <h3>NGS Academy for the Africa CDC Pathogen Genomics Initiative</h3>
 
-                        <form class="header-search" action="{{ '/search/' | relative_url }}" method="get" role="search">
+                        <form class="header-search" action="{{ '/search/' | relative_url }}" method="get" role="search" autocomplete="off">
                             <input type="text" name="q" placeholder="Search courses, resources…" aria-label="Search">
                             <button type="submit" aria-label="Submit search">
                                 <i class="fa fa-search"></i>
@@ -384,5 +466,194 @@
     });
     // DOMContentLoaded  end
 
+</script>
 
+<!-- Live search-as-you-type -->
+<script>
+(function () {
+    var form = document.querySelector('.header-search');
+    var input = form && form.querySelector('input[name="q"]');
+    if (!form || !input) return;
+
+    var SEARCH_URL = '{{ "/search/" | relative_url }}';
+    var INDEX_URL = '{{ "/search.json" | relative_url }}';
+    var MIN_CHARS = 2;
+    var DEBOUNCE_MS = 150;
+    var MAX_RESULTS = 8;
+
+    var dropdown = document.createElement('div');
+    dropdown.className = 'header-search-dropdown';
+    form.appendChild(dropdown);
+
+    var idx = null;
+    var docs = null;
+    var docsByUrl = {};
+    var indexPromise = null;
+    var debounceTimer = null;
+    var activeIndex = -1;
+
+    function escapeHtml(s) {
+        return String(s).replace(/[&<>"']/g, function (c) {
+            return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+        });
+    }
+
+    function showDropdown(html) {
+        dropdown.innerHTML = html;
+        dropdown.classList.add('is-open');
+        activeIndex = -1;
+    }
+
+    function hideDropdown() {
+        dropdown.classList.remove('is-open');
+        activeIndex = -1;
+    }
+
+    function waitForLunr() {
+        return new Promise(function (resolve, reject) {
+            if (typeof lunr !== 'undefined') return resolve();
+            var tries = 0;
+            var t = setInterval(function () {
+                if (typeof lunr !== 'undefined') {
+                    clearInterval(t);
+                    resolve();
+                } else if (++tries > 50) {
+                    clearInterval(t);
+                    reject(new Error('lunr did not load'));
+                }
+            }, 100);
+        });
+    }
+
+    function loadIndex() {
+        if (indexPromise) return indexPromise;
+        indexPromise = waitForLunr()
+            .then(function () { return fetch(INDEX_URL); })
+            .then(function (r) { return r.json(); })
+            .then(function (data) {
+                docs = data;
+                docs.forEach(function (d) { docsByUrl[d.url] = d; });
+                idx = lunr(function () {
+                    this.ref('url');
+                    this.field('title', { boost: 10 });
+                    this.field('content');
+                    var builder = this;
+                    docs.forEach(function (doc) { builder.add(doc); });
+                });
+            });
+        return indexPromise;
+    }
+
+    function runQuery(query) {
+        if (!idx) return [];
+        try {
+            return idx.query(function (q) {
+                query.split(/\s+/).filter(Boolean).forEach(function (term) {
+                    var clean = term.toLowerCase().replace(/[^\w]/g, '');
+                    if (!clean) return;
+                    q.term(clean, { boost: 10 });
+                    q.term(clean, { wildcard: lunr.Query.wildcard.TRAILING, boost: 5 });
+                    if (clean.length > 3) {
+                        q.term(clean, { editDistance: 1, boost: 1 });
+                    }
+                });
+            });
+        } catch (e) {
+            return [];
+        }
+    }
+
+    function renderResults(query, matches) {
+        if (matches.length === 0) {
+            showDropdown('<div class="header-search-meta">No results for "' + escapeHtml(query) + '"</div>');
+            return;
+        }
+
+        var html = '';
+        matches.slice(0, MAX_RESULTS).forEach(function (m) {
+            var doc = docsByUrl[m.ref];
+            if (!doc) return;
+            var snippet = doc.content ? doc.content.substring(0, 140) + '…' : '';
+            html += '<a class="header-search-result" href="' + escapeHtml(doc.url) + '">'
+                + '<div class="header-search-result-title">' + escapeHtml(doc.title) + '</div>'
+                + (snippet ? '<div class="header-search-result-snippet">' + escapeHtml(snippet) + '</div>' : '')
+                + '</a>';
+        });
+
+        if (matches.length > MAX_RESULTS) {
+            html += '<a class="header-search-all" href="' + SEARCH_URL + '?q=' + encodeURIComponent(query) + '">'
+                + 'View all ' + matches.length + ' results →</a>';
+        }
+
+        showDropdown(html);
+    }
+
+    function updateActive() {
+        var items = dropdown.querySelectorAll('.header-search-result');
+        items.forEach(function (el, i) {
+            if (i === activeIndex) {
+                el.classList.add('is-active');
+                el.scrollIntoView({ block: 'nearest' });
+            } else {
+                el.classList.remove('is-active');
+            }
+        });
+    }
+
+    input.addEventListener('input', function () {
+        var query = input.value.trim();
+        clearTimeout(debounceTimer);
+
+        if (query.length < MIN_CHARS) {
+            hideDropdown();
+            return;
+        }
+
+        showDropdown('<div class="header-search-meta">Searching…</div>');
+
+        debounceTimer = setTimeout(function () {
+            loadIndex().then(function () {
+                renderResults(query, runQuery(query));
+            }).catch(function (err) {
+                console.error(err);
+                showDropdown('<div class="header-search-meta">Search unavailable</div>');
+            });
+        }, DEBOUNCE_MS);
+    });
+
+    input.addEventListener('focus', function () {
+        if (input.value.trim().length >= MIN_CHARS && dropdown.innerHTML) {
+            dropdown.classList.add('is-open');
+        }
+    });
+
+    input.addEventListener('keydown', function (e) {
+        var items = dropdown.querySelectorAll('.header-search-result');
+        if (e.key === 'ArrowDown') {
+            if (items.length === 0) return;
+            e.preventDefault();
+            activeIndex = (activeIndex + 1) % items.length;
+            updateActive();
+        } else if (e.key === 'ArrowUp') {
+            if (items.length === 0) return;
+            e.preventDefault();
+            activeIndex = activeIndex <= 0 ? items.length - 1 : activeIndex - 1;
+            updateActive();
+        } else if (e.key === 'Enter') {
+            if (activeIndex >= 0 && items[activeIndex]) {
+                e.preventDefault();
+                window.location.href = items[activeIndex].getAttribute('href');
+            }
+        } else if (e.key === 'Escape') {
+            hideDropdown();
+            input.blur();
+        }
+    });
+
+    document.addEventListener('click', function (e) {
+        if (!form.contains(e.target)) {
+            hideDropdown();
+        }
+    });
+})();
 </script>
