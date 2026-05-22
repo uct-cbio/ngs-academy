@@ -43,6 +43,9 @@ permalink: /resources/competencies/
   --bloom-4: #059669;
   --bloom-5: #d97706;
   --bloom-6: #dc2626;
+  --ksa-k: #0369a1;
+  --ksa-s: #2e7d32;
+  --ksa-a: #b45309;
   --radius: 6px;
   --radius-lg: 10px;
 }
@@ -52,6 +55,10 @@ permalink: /resources/competencies/
 /* Page title */
 .comp-page-title { font-family: inherit; font-size: 28px; font-weight: normal; color: var(--text-heading); margin: 0 0 4px; }
 .comp-page-subtitle { font-size: 14px; color: var(--text-dim); margin: 0 0 24px; }
+
+/* Saved-state indicator */
+.comp-saved-badge { display: inline-flex; align-items: center; gap: 5px; font-size: 11px; color: var(--green-accent); background: var(--green-light); border: 1px solid #c8e6c9; padding: 3px 8px; border-radius: 10px; font-weight: 600; margin-left: 8px; vertical-align: middle; }
+.comp-saved-badge::before { content: '●'; font-size: 8px; }
 
 /* Tabs */
 .comp-tab-bar { display: flex; gap: 0; border-bottom: 2px solid var(--border); margin-bottom: 0; overflow-x: auto; }
@@ -65,19 +72,26 @@ permalink: /resources/competencies/
 /* Info banner */
 .comp-info-banner { display: flex; align-items: flex-start; gap: 12px; padding: 14px 16px; margin-bottom: 18px; background: var(--maroon-bg); border: 1px solid var(--border-maroon); border-left: 4px solid var(--maroon); border-radius: var(--radius); font-size: 13px; color: var(--text); line-height: 1.6; }
 .comp-info-banner strong { color: var(--maroon); }
+.comp-info-banner kbd { background: var(--surface); border: 1px solid var(--border); border-bottom-width: 2px; border-radius: 4px; padding: 1px 6px; font-family: ui-monospace, monospace; font-size: 11px; color: var(--text); }
 .comp-info-content { flex: 1; }
 .comp-info-close { background: none; border: none; color: var(--text-light); font-size: 18px; cursor: pointer; padding: 0; line-height: 1; }
 .comp-info-close:hover { color: var(--text); }
 
 /* Paste card */
-.comp-paste-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; margin-bottom: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
-.comp-paste-header { padding: 12px 16px; display: flex; align-items: center; justify-content: space-between; background: var(--surface-alt); border-bottom: 1px solid var(--border); }
+.comp-paste-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; margin-bottom: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); transition: border-color 0.2s, background 0.2s; }
+.comp-paste-card.dragover { border-color: var(--maroon); background: var(--maroon-bg); }
+.comp-paste-header { padding: 12px 16px; display: flex; align-items: center; justify-content: space-between; background: var(--surface-alt); border-bottom: 1px solid var(--border); flex-wrap: wrap; gap: 8px; }
 .comp-paste-title { font-weight: 700; font-size: 14px; color: var(--text-heading); }
-.comp-paste-actions { display: flex; gap: 6px; }
+.comp-paste-actions { display: flex; gap: 6px; flex-wrap: wrap; }
 .comp-paste-textarea { width: 100%; min-height: 180px; max-height: 500px; resize: vertical; padding: 14px 16px; background: var(--surface); border: none; color: var(--text); font-family: inherit; font-size: 14px; line-height: 1.7; outline: none; }
 .comp-paste-textarea::placeholder { color: var(--text-light); }
 .comp-paste-textarea:focus { background: #fefefe; }
-.comp-paste-footer { padding: 10px 16px; border-top: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; background: var(--surface-alt); font-size: 12px; color: var(--text-dim); }
+.comp-paste-footer { padding: 10px 16px; border-top: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; background: var(--surface-alt); font-size: 12px; color: var(--text-dim); gap: 8px; flex-wrap: wrap; }
+.comp-drop-hint { font-size: 11px; color: var(--text-light); }
+.comp-drop-hint kbd { background: #fff; border: 1px solid var(--border); border-bottom-width: 2px; border-radius: 3px; padding: 1px 5px; font-family: ui-monospace, monospace; font-size: 10px; }
+
+/* Hidden file input */
+.comp-file-input { display: none; }
 
 /* Buttons */
 .comp-btn { padding: 7px 14px; border-radius: var(--radius); border: 1px solid var(--border); background: var(--surface); color: var(--text); font-family: inherit; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.15s; white-space: nowrap; display: inline-flex; align-items: center; gap: 4px; text-decoration: none; }
@@ -89,6 +103,14 @@ permalink: /resources/competencies/
 .comp-btn.danger:hover { background: #fef2f2; }
 .comp-btn.small { padding: 4px 10px; font-size: 12px; }
 
+/* Search input */
+.comp-search-wrap { position: relative; flex: 1; min-width: 200px; max-width: 320px; }
+.comp-search-input { width: 100%; padding: 6px 28px 6px 30px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); color: var(--text); font-family: inherit; font-size: 13px; outline: none; }
+.comp-search-input:focus { border-color: var(--maroon); }
+.comp-search-icon { position: absolute; left: 9px; top: 50%; transform: translateY(-50%); color: var(--text-light); font-size: 13px; pointer-events: none; }
+.comp-search-clear { position: absolute; right: 6px; top: 50%; transform: translateY(-50%); background: none; border: none; color: var(--text-light); cursor: pointer; padding: 0 4px; font-size: 14px; line-height: 1; }
+.comp-search-clear:hover { color: var(--text); }
+
 /* Stats bar */
 .comp-stats-bar { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; margin-bottom: 20px; }
 .comp-stat-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 14px 12px; position: relative; overflow: hidden; box-shadow: 0 1px 2px rgba(0,0,0,0.03); }
@@ -98,13 +120,20 @@ permalink: /resources/competencies/
 .comp-stat-card.violet::before { background: #8b5cf6; }
 .comp-stat-card.amber::before { background: #d97706; }
 .comp-stat-card.rose::before { background: #dc2626; }
+.comp-stat-card.ksa-k::before { background: var(--ksa-k); }
+.comp-stat-card.ksa-s::before { background: var(--ksa-s); }
+.comp-stat-card.ksa-a::before { background: var(--ksa-a); }
 .comp-stat-value { font-size: 24px; font-weight: 800; letter-spacing: -0.5px; }
 .comp-stat-card.maroon .comp-stat-value { color: var(--maroon); }
 .comp-stat-card.green .comp-stat-value { color: var(--green-accent); }
 .comp-stat-card.violet .comp-stat-value { color: #7c3aed; }
 .comp-stat-card.amber .comp-stat-value { color: #b45309; }
 .comp-stat-card.rose .comp-stat-value { color: #dc2626; }
+.comp-stat-card.ksa-k .comp-stat-value { color: var(--ksa-k); }
+.comp-stat-card.ksa-s .comp-stat-value { color: var(--ksa-s); }
+.comp-stat-card.ksa-a .comp-stat-value { color: var(--ksa-a); }
 .comp-stat-label { font-size: 11px; color: var(--text-dim); margin-top: 2px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.4px; }
+.comp-stat-sub { font-size: 11px; color: var(--text-light); margin-top: 2px; }
 
 /* Controls */
 .comp-controls-row { display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; align-items: center; }
@@ -117,6 +146,14 @@ select.comp-select:focus { border-color: var(--maroon); }
 .comp-legend { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; padding: 10px 14px; background: var(--surface-alt); border: 1px solid var(--border); border-radius: var(--radius); }
 .comp-legend-item { display: flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 600; color: var(--text-dim); }
 .comp-legend-dot { width: 12px; height: 12px; border-radius: 3px; }
+.comp-legend-section-title { font-size: 11px; color: var(--text-dim); font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; margin-right: 4px; }
+
+/* KSA badge */
+.comp-ksa-badge { display: inline-block; min-width: 18px; padding: 1px 5px; border-radius: 3px; font-size: 9px; font-weight: 700; text-align: center; color: #fff; letter-spacing: 0.3px; }
+.comp-ksa-badge.k { background: var(--ksa-k); }
+.comp-ksa-badge.s { background: var(--ksa-s); }
+.comp-ksa-badge.a { background: var(--ksa-a); }
+.comp-ksa-badge.ks { background: linear-gradient(90deg, var(--ksa-k) 50%, var(--ksa-s) 50%); }
 
 /* Heatmap */
 .comp-heatmap-wrap { overflow-x: auto; border-radius: var(--radius-lg); border: 1px solid var(--border); background: var(--surface); box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
@@ -125,11 +162,13 @@ select.comp-select:focus { border-color: var(--maroon); }
 .comp-heatmap th.col-bloom { text-align: center; min-width: 46px; writing-mode: vertical-rl; text-orientation: mixed; transform: rotate(180deg); padding: 10px 4px; }
 .comp-heatmap td { padding: 6px; border-bottom: 1px solid var(--border-light); vertical-align: middle; }
 .comp-heatmap tr:hover td { background: var(--surface-hover); }
+.comp-heatmap tr.matched-row { cursor: pointer; }
+.comp-heatmap tr.matched-row:hover .comp-topic-id { text-decoration: underline; }
 .comp-topic-id { font-weight: 700; color: var(--maroon); font-size: 12px; white-space: nowrap; }
-.comp-topic-name { font-weight: 600; color: var(--text-heading); font-size: 12.5px; max-width: 240px; }
-.comp-topic-short { color: var(--text-dim); font-size: 11px; max-width: 240px; margin-top: 1px; }
+.comp-topic-name { font-weight: 600; color: var(--text-heading); font-size: 12.5px; max-width: 280px; }
+.comp-topic-short { color: var(--text-dim); font-size: 11px; max-width: 280px; margin-top: 1px; }
 .comp-bloom-cell { text-align: center; min-width: 42px; }
-.comp-bloom-dot { width: 28px; height: 28px; border-radius: 5px; display: inline-flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; cursor: default; transition: all 0.2s; }
+.comp-bloom-dot { width: 28px; height: 28px; border-radius: 5px; display: inline-flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; cursor: default; transition: all 0.2s; position: relative; }
 .comp-bloom-dot.empty { background: #f9fafb; color: #e5e7eb; }
 .comp-bloom-dot.has-desc { background: #f3f4f6; color: #d1d5db; cursor: help; }
 .comp-bloom-dot.match { color: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.15); }
@@ -149,20 +188,33 @@ select.comp-select:focus { border-color: var(--maroon); }
 .comp-domain-title { font-weight: 700; font-size: 13px; color: var(--text-heading); display: flex; align-items: center; gap: 8px; }
 .comp-domain-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
 
+/* Detail drawer (shows when a heatmap row is clicked) */
+.comp-detail-drawer { background: var(--maroon-bg); border-left: 4px solid var(--maroon); margin: 0; padding: 14px 18px; font-size: 12.5px; line-height: 1.6; }
+.comp-detail-drawer h4 { margin: 0 0 6px; font-size: 13px; font-weight: 700; color: var(--maroon); }
+.comp-detail-drawer .comp-snippet { background: var(--surface); border: 1px solid var(--border-maroon); border-radius: var(--radius); padding: 8px 10px; margin: 5px 0; font-size: 12px; color: var(--text); }
+.comp-detail-drawer .comp-snippet mark { background: #fef3c7; color: var(--maroon-dark); padding: 1px 3px; border-radius: 2px; font-weight: 600; }
+.comp-detail-drawer .comp-terms-found { font-size: 11px; color: var(--text-dim); margin-top: 4px; }
+.comp-detail-drawer .comp-terms-found code { background: var(--green-light); color: var(--green-accent); padding: 1px 6px; border-radius: 3px; margin-right: 4px; font-family: ui-monospace, monospace; font-size: 11px; }
+
 /* Chart cards */
 .comp-chart-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 18px; }
 .comp-chart-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 18px; box-shadow: 0 1px 2px rgba(0,0,0,0.03); }
 .comp-chart-card.full { grid-column: 1 / -1; }
 .comp-chart-title { font-size: 14px; font-weight: 700; margin-bottom: 14px; color: var(--text-heading); }
+.comp-chart-help { font-size: 11px; color: var(--text-light); font-weight: 400; margin-left: 6px; }
 .comp-bar-row { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
 .comp-bar-label { min-width: 150px; font-size: 12px; font-weight: 600; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .comp-bar-track { flex: 1; height: 18px; background: #f3f4f6; border-radius: 4px; overflow: hidden; }
 .comp-bar-fill { height: 100%; border-radius: 4px; transition: width 0.6s ease; display: flex; align-items: center; padding-left: 8px; font-size: 11px; font-weight: 700; color: #fff; min-width: fit-content; }
 
-/* Gap analysis */
-.comp-gap-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+/* Coverage / gap section */
+.comp-section-block { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 16px 18px; margin-bottom: 16px; box-shadow: 0 1px 2px rgba(0,0,0,0.03); }
+.comp-section-heading { font-size: 15px; font-weight: 700; margin: 0 0 4px; color: var(--text-heading); }
+.comp-section-desc { font-size: 12px; color: var(--text-dim); margin: 0 0 14px; }
+.comp-depth-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
 .comp-gap-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 16px; max-height: 480px; overflow-y: auto; box-shadow: 0 1px 2px rgba(0,0,0,0.03); }
-.comp-gap-title { font-size: 14px; font-weight: 700; margin-bottom: 12px; display: flex; align-items: center; gap: 6px; }
+.comp-gap-title { font-size: 13.5px; font-weight: 700; margin-bottom: 6px; display: flex; align-items: center; gap: 6px; }
+.comp-gap-blurb { font-size: 11px; color: var(--text-dim); margin: 0 0 10px; line-height: 1.4; }
 .comp-gap-item { padding: 8px 10px; background: var(--surface-alt); border-radius: var(--radius); margin-bottom: 5px; border-left: 3px solid transparent; transition: background 0.15s; }
 .comp-gap-item:hover { background: #f0f1f3; }
 .comp-gap-item.warning { border-left-color: #d97706; }
@@ -171,10 +223,11 @@ select.comp-select:focus { border-color: var(--maroon); }
 .comp-gap-item.mid { border-left-color: #0891b2; }
 .comp-gap-item-title { font-weight: 700; font-size: 12.5px; color: var(--text-heading); }
 .comp-gap-item-sub { font-size: 11px; color: var(--text-dim); margin-top: 1px; }
+.comp-gap-item-keys { font-size: 10.5px; color: var(--text-light); margin-top: 4px; font-family: ui-monospace, monospace; }
 
 /* Tooltip */
-.comp-tooltip { position: fixed; background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 10px 14px; font-size: 12px; color: var(--text); max-width: 280px; pointer-events: none; z-index: 9999; box-shadow: 0 4px 16px rgba(0,0,0,0.12); display: none; }
-.comp-tooltip-title { font-weight: 700; color: var(--maroon); margin-bottom: 4px; }
+.comp-tooltip { position: fixed; background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 10px 14px; font-size: 12px; color: var(--text); max-width: 300px; pointer-events: none; z-index: 9999; box-shadow: 0 4px 16px rgba(0,0,0,0.12); display: none; }
+.comp-tooltip-title { font-weight: 700; color: var(--maroon); margin-bottom: 4px; display: flex; align-items: center; gap: 6px; }
 .comp-tooltip-desc { color: var(--text-dim); line-height: 1.5; }
 
 /* Empty state */
@@ -184,14 +237,21 @@ select.comp-select:focus { border-color: var(--maroon); }
 .comp-empty-desc { font-size: 13px; }
 
 /* Export */
-.comp-export-row { display: flex; gap: 8px; margin-top: 16px; justify-content: flex-end; }
+.comp-export-row { display: flex; gap: 8px; margin-top: 16px; justify-content: flex-end; flex-wrap: wrap; }
+
+/* Toast */
+.comp-toast { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: var(--text-heading); color: #fff; padding: 10px 18px; border-radius: var(--radius); font-size: 13px; font-weight: 600; box-shadow: 0 8px 24px rgba(0,0,0,0.2); z-index: 10000; opacity: 0; transition: opacity 0.2s, transform 0.2s; pointer-events: none; }
+.comp-toast.show { opacity: 1; transform: translateX(-50%) translateY(-4px); }
+.comp-toast.error { background: #dc2626; }
+.comp-toast.success { background: var(--green-accent); }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .comp-chart-grid, .comp-gap-grid { grid-template-columns: 1fr; }
+  .comp-chart-grid, .comp-depth-grid { grid-template-columns: 1fr; }
   .comp-bar-label { min-width: 90px; }
   .comp-page-title { font-size: 22px; }
   .comp-tab-btn { padding: 8px 14px; font-size: 13px; }
+  .comp-paste-header, .comp-paste-footer { flex-direction: column; align-items: flex-start; }
 }
 </style>
 
@@ -203,42 +263,53 @@ select.comp-select:focus { border-color: var(--maroon); }
   <div class="comp-tooltip-desc" id="comp-tooltip-desc"></div>
 </div>
 
+<!-- Toast for in-app messages -->
+<div class="comp-toast" id="comp-toast"></div>
+
 <!-- ╔═══════════════════════════════════════════════════════════════════╗
      ║  HTML — Page content                                            ║
      ╚═══════════════════════════════════════════════════════════════════╝ -->
 <div class="competencies-app">
 
-  <h2 class="comp-page-title">Competencies Mapper</h2>
+  <h2 class="comp-page-title">
+    Competencies Mapper
+
+  </h2>
   <p class="comp-page-subtitle">Map content against the Pathogen Genomics Competency Framework</p>
 
   <div class="comp-tab-bar">
     <button class="comp-tab-btn active" data-tab="evaluate"><span class="comp-tab-icon">📝</span>Evaluate</button>
     <button class="comp-tab-btn" data-tab="heatmap"><span class="comp-tab-icon">🔥</span>Heatmap</button>
     <button class="comp-tab-btn" data-tab="dashboard"><span class="comp-tab-icon">📊</span>Dashboard</button>
-    <button class="comp-tab-btn" data-tab="gaps"><span class="comp-tab-icon">🔍</span>Gap Analysis</button>
+    <button class="comp-tab-btn" data-tab="gaps"><span class="comp-tab-icon">🔍</span>Coverage &amp; Depth</button>
   </div>
 
   <!-- ═══ TAB 1: EVALUATE ═══ -->
   <div class="comp-tab-panel active" id="panel-evaluate">
     <div class="comp-info-banner" id="info-banner">
       <div class="comp-info-content">
-        <strong>How to use:</strong> Paste any text — curriculum, course outline, job description, CV, training record,
-        or self-assessment — and click <em>Evaluate Competencies</em>. The engine scans for PGCF topic keywords and
-        Bloom's taxonomy action verbs to map coverage and cognitive level.
+        <strong>How to use:</strong> Paste a curriculum, course outline, job description, CV, training record, or
+        self-assessment — or drop a <code>.txt</code>, <code>.md</code>, <code>.pdf</code>, or <code>.docx</code> file
+        onto the box below — then click <em>Evaluate</em>. The engine scans for PGCF topic keywords and Bloom's
+        taxonomy action verbs in the same sentence to map both coverage and cognitive level. Tip: press
+        <kbd>Ctrl</kbd>+<kbd>Enter</kbd> (or <kbd>⌘</kbd>+<kbd>Enter</kbd>) inside the box to evaluate.
       </div>
-      <button class="comp-info-close" id="close-banner">&times;</button>
+      <button class="comp-info-close" id="close-banner" aria-label="Dismiss">&times;</button>
     </div>
-    <div class="comp-paste-card">
+    <div class="comp-paste-card" id="paste-card">
       <div class="comp-paste-header">
-        <div class="comp-paste-title">📄 Paste Content to Evaluate</div>
+        <div class="comp-paste-title">📄 Paste or Drop Content to Evaluate</div>
         <div class="comp-paste-actions">
+          <button class="comp-btn small" id="btn-load-file">📁 Upload File</button>
+          <input type="file" id="file-input" class="comp-file-input" accept=".txt,.md,.markdown,.csv,.tsv,.pdf,.docx,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,text/plain">
           <button class="comp-btn small" id="btn-load-sample">Load Sample</button>
           <button class="comp-btn small danger" id="btn-clear-text">Clear</button>
         </div>
       </div>
-      <textarea class="comp-paste-textarea" id="paste-input" placeholder="Paste a curriculum, course outline, job description, CV, training record, or self-assessment here..."></textarea>
+      <textarea class="comp-paste-textarea" id="paste-input" placeholder="Paste a curriculum, course outline, job description, CV, training record, or self-assessment here — or drop a .txt / .md / .pdf / .docx file onto this card..."></textarea>
       <div class="comp-paste-footer">
-        <span id="char-count">0 characters</span>
+        <span><span id="char-count">0 characters</span> · <span id="word-count">0 words</span></span>
+        <span class="comp-drop-hint"><kbd>Ctrl</kbd>+<kbd>Enter</kbd> to evaluate</span>
         <button class="comp-btn primary" id="btn-evaluate">🔬 Evaluate Competencies</button>
       </div>
     </div>
@@ -252,6 +323,11 @@ select.comp-select:focus { border-color: var(--maroon); }
   <div class="comp-tab-panel" id="panel-heatmap">
     <div class="comp-legend" id="bloom-legend"></div>
     <div class="comp-controls-row">
+      <div class="comp-search-wrap">
+        <span class="comp-search-icon">🔎</span>
+        <input type="text" class="comp-search-input" id="heatmap-search" placeholder="Filter topics by name or keyword…">
+        <button class="comp-search-clear" id="heatmap-search-clear" style="display:none;" aria-label="Clear search">&times;</button>
+      </div>
       <div class="comp-control-group">
         <span class="comp-control-label">Sort</span>
         <select class="comp-select" id="sort-select">
@@ -269,6 +345,15 @@ select.comp-select:focus { border-color: var(--maroon); }
           <option value="gaps">Gaps (≤1 match)</option>
         </select>
       </div>
+      <div class="comp-control-group">
+        <span class="comp-control-label">KSA</span>
+        <select class="comp-select" id="ksa-select">
+          <option value="all">All Types</option>
+          <option value="K">Knowledge (K)</option>
+          <option value="S">Skills (S)</option>
+          <option value="A">Attitudes (A)</option>
+        </select>
+      </div>
     </div>
     <div class="comp-heatmap-wrap" id="heatmap-container">
       <div class="comp-empty"><div class="comp-empty-icon">🔥</div><div class="comp-empty-title">No evaluation yet</div><div class="comp-empty-desc">Paste content in the <strong>Evaluate</strong> tab first.</div></div>
@@ -278,6 +363,7 @@ select.comp-select:focus { border-color: var(--maroon); }
   <!-- ═══ TAB 3: DASHBOARD ═══ -->
   <div class="comp-tab-panel" id="panel-dashboard">
     <div class="comp-stats-bar" id="dash-stats"></div>
+    <div class="comp-stats-bar" id="dash-ksa-stats" style="margin-top:-10px;"></div>
     <div class="comp-chart-grid">
       <div class="comp-chart-card" id="chart-domain-bars"></div>
       <div class="comp-chart-card" id="chart-bloom-dist"></div>
@@ -286,18 +372,36 @@ select.comp-select:focus { border-color: var(--maroon); }
     <div class="comp-export-row">
       <button class="comp-btn" id="btn-export-csv">📥 Export CSV</button>
       <button class="comp-btn" id="btn-export-json">📥 Export JSON</button>
+      <button class="comp-btn" id="btn-print">🖨 Print Report</button>
     </div>
   </div>
 
-  <!-- ═══ TAB 4: GAP ANALYSIS ═══ -->
+  <!-- ═══ TAB 4: COVERAGE & DEPTH ═══ -->
   <div class="comp-tab-panel" id="panel-gaps">
-    <div class="comp-gap-grid" id="gap-content"></div>
+    <div class="comp-section-block">
+      <h3 class="comp-section-heading">🚫 Coverage Gaps</h3>
+      <p class="comp-section-desc">Topics the evaluator found no evidence of in your text. These are the real <em>content gaps</em> — areas your material doesn't currently touch. Each entry shows the keywords that were searched for but not found.</p>
+      <div id="coverage-gaps"></div>
+    </div>
+    <div class="comp-section-block">
+      <h3 class="comp-section-heading">📐 Depth Profile</h3>
+      <p class="comp-section-desc">For topics that <em>are</em> covered, this shows the highest cognitive level at which they appear — based on Bloom's taxonomy verbs found in the same sentence as the topic keywords. Not gaps, but useful for understanding the depth of treatment.</p>
+      <div class="comp-depth-grid" id="depth-profile"></div>
+    </div>
   </div>
 
 </div>
 
 <!-- ╔═══════════════════════════════════════════════════════════════════╗
+     ║  External libraries — pdf.js (PDF) + mammoth.js (DOCX)          ║
+     ║  Both expose a global; loaded async, used only on file upload.  ║
+     ╚═══════════════════════════════════════════════════════════════════╝ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.6.0/mammoth.browser.min.js" defer></script>
+
+<!-- ╔═══════════════════════════════════════════════════════════════════╗
      ║  csv-parser.js — Parses the PGCF CSV into structured topics     ║
+     ║  v2: Extracts KSA tags + parenthetical aliases                  ║
      ╚═══════════════════════════════════════════════════════════════════╝ -->
 <script>
 /* ═══════════════════════════════════════════
@@ -310,43 +414,90 @@ const CSVParser = {
     const topics = [];
     let currentDomain = '';
     let currentDomainIdx = -1;
-    for (let i = 1; i < lines.length; i++) {
-      const line = lines[i].trim();
+    // CSV rows can contain embedded newlines inside quoted fields. Re-stitch.
+    const stitched = this._stitchQuotedRows(lines);
+    for (let i = 1; i < stitched.length; i++) {
+      const line = stitched[i].trim();
       if (!line) continue;
       const fields = this.parseLine(line);
       const topicName = (fields[0] || '').trim();
       const description = (fields[1] || '').trim();
       const shortDesc = (fields[2] || '').trim();
-      const bloomDescs = fields.slice(3, 10).map(f => (f || '').trim());
+      const bloomRaw = fields.slice(3, 10).map(f => (f || '').trim());
       const idMatch = topicName.match(/^(\d+)\.(\d+)\s/);
       const domainMatch = topicName.match(/^(\d+)\.\s/);
       if (domainMatch && !idMatch) {
         currentDomainIdx++;
         currentDomain = topicName;
       } else if (idMatch) {
+        // Split each Bloom cell into { text, ksa } pair
+        const bloomLevels = ['Unfamiliar','Remember','Understand','Apply','Analyse','Evaluate','Create'];
+        const bloom = {}; const bloomKSA = {};
+        bloomLevels.forEach((lvl, j) => {
+          const parsed = this._extractKSA(bloomRaw[j] || '');
+          bloom[lvl] = parsed.text;
+          bloomKSA[lvl] = parsed.ksa;
+        });
+        // Extract acronym aliases from topic name e.g. "...(ELSI)" -> ["ELSI"]
+        const aliases = this._extractAliases(topicName);
+        // Clean name strips parenthetical acronyms for display
+        const cleanName = topicName.replace(/^\d+\.\d+\s*/, '').replace(/\s*\([A-Z]{2,}\)\s*/g, ' ').trim();
         topics.push({
           id: idMatch[1] + '.' + idMatch[2],
           domainIdx: currentDomainIdx,
           domain: currentDomain,
-          name: topicName.replace(/^\d+\.\d+\s*/, ''),
+          name: cleanName,
+          rawName: topicName.replace(/^\d+\.\d+\s*/, ''),
+          aliases: aliases,
           description: description,
           short: shortDesc,
-          bloom: {
-            'Unfamiliar': bloomDescs[0], 'Remember': bloomDescs[1],
-            'Understand': bloomDescs[2], 'Apply': bloomDescs[3],
-            'Analyse': bloomDescs[4], 'Evaluate': bloomDescs[5],
-            'Create': bloomDescs[6]
-          }
+          bloom: bloom,
+          bloomKSA: bloomKSA,
+          // Aggregate KSA: which competency types this topic spans across its descriptors
+          ksaTypes: [...new Set(Object.values(bloomKSA).filter(Boolean).flatMap(t => t.split('').map(c=>c).reduce((a,c,i,arr)=>{ if(c==='K'||c==='S'||c==='A')a.push(c);return a;},[])))]
         });
       }
     }
     return topics;
   },
+
+  _stitchQuotedRows(lines) {
+    // Reconstruct rows where quoted fields contain CRLF/LF
+    const out = []; let buf = ''; let q = 0;
+    for (const ln of lines) {
+      for (const ch of ln) if (ch === '"') q++;
+      buf += (buf ? '\n' : '') + ln;
+      if (q % 2 === 0) { out.push(buf); buf = ''; q = 0; }
+    }
+    if (buf) out.push(buf);
+    return out;
+  },
+
+  _extractKSA(cell) {
+    // Match a trailing (K), (S), (A), (KS), (KSA) etc.
+    if (!cell) return { text: '', ksa: null };
+    const m = cell.match(/\s*\(([KSA]+)\)\s*\.?\s*$/);
+    if (m) return { text: cell.substring(0, m.index).trim(), ksa: m[1] };
+    return { text: cell.trim(), ksa: null };
+  },
+
+  _extractAliases(name) {
+    const aliases = []; let m;
+    const re = /\(([A-Z]{2,})\)/g;
+    while ((m = re.exec(name)) !== null) {
+      if (!/^(K|S|A|KS|KSA)$/.test(m[1])) aliases.push(m[1]);
+    }
+    return aliases;
+  },
+
   parseLine(line) {
     const fields = []; let inQuote = false; let field = '';
     for (let c = 0; c < line.length; c++) {
       const ch = line[c];
-      if (ch === '"') { inQuote = !inQuote; }
+      if (ch === '"') {
+        if (inQuote && line[c+1] === '"') { field += '"'; c++; }
+        else { inQuote = !inQuote; }
+      }
       else if (ch === ',' && !inQuote) { fields.push(field); field = ''; }
       else { field += ch; }
     }
@@ -358,44 +509,128 @@ const CSVParser = {
 
 <!-- ╔═══════════════════════════════════════════════════════════════════╗
      ║  evaluator.js — Scans text for PGCF keywords + Bloom's verbs   ║
+     ║  v2: Acronym aliasing, stemming, windowed Bloom detection,     ║
+     ║      position tracking for match highlighting                   ║
      ╚═══════════════════════════════════════════════════════════════════╝ -->
 <script>
 /* ═══════════════════════════════════════════
    evaluator.js
    Evaluator.evaluate(text, topics) → results[]
+
+   Match score sources (must reach SCORE_THRESHOLD to register):
+     +4  topic ID literal (e.g. "1.1") appears in text
+     +3  compound (two adjacent meaningful words from name) found
+     +3  acronym alias (e.g. "ELSI") found
+     +2  compound from short-description found
+     +1  any single word from the name (with stem-aware matching)
+
+   Bloom level detection uses a per-keyword WINDOW (BLOOM_WINDOW chars
+   either side of each keyword hit) — not the whole document. This is
+   the key accuracy fix: verbs must appear near the topic, not just
+   anywhere in the text.
    ═══════════════════════════════════════════ */
 const Evaluator = {
   BLOOM_LEVELS: ['Unfamiliar','Remember','Understand','Apply','Analyse','Evaluate','Create'],
   BLOOM_COLORS: ['#9ca3af','#6366f1','#8b5cf6','#0891b2','#059669','#d97706','#dc2626'],
   BLOOM_VERBS: {
     'Remember':   ['recall','identify','list','define','name','state','recognise','recognize','acknowledge','label'],
-    'Understand': ['explain','describe','discuss','illustrate','outline','summarise','summarize','classify'],
-    'Apply':      ['apply','use','implement','execute','perform','utilise','utilize','demonstrate','integrate','conduct','carry out'],
-    'Analyse':    ['analyse','analyze','examine','compare','differentiate','interpret','review','validate','investigate','deconstruct','distinguish'],
+    'Understand': ['explain','describe','discuss','illustrate','outline','summarise','summarize','classify','cover','introduce','teach'],
+    'Apply':      ['apply','use','implement','execute','perform','utilise','utilize','demonstrate','integrate','conduct','carry'],
+    'Analyse':    ['analyse','analyze','examine','compare','differentiate','interpret','review','validate','investigate','deconstruct','distinguish','trace'],
     'Evaluate':   ['evaluate','assess','critique','appraise','measure','judge','justify','recommend','critically','prioritise','prioritize'],
     'Create':     ['create','design','develop','formulate','innovate','build','construct','produce','translate','optimise','optimize','devise','compose']
   },
+  SCORE_THRESHOLD: 2,
+  BLOOM_WINDOW: 200,   // chars before/after each keyword hit to search for verbs
+
   evaluate(text, topics) {
     const lower = text.toLowerCase();
     const results = [];
+
     topics.forEach(topic => {
-      const result = { topic, matches: [], bloomMatches: {}, maxBloom: -1, matchCount: 0, coverage: 0 };
-      let keywordScore = 0;
+      const result = {
+        topic,
+        matches: [],
+        searched: [],
+        matchPositions: [],
+        bloomMatches: {},
+        bloomEvidence: {},
+        maxBloom: -1,
+        matchCount: 0,
+        coverage: 0,
+        snippets: []
+      };
+      let score = 0;
       const matchedTerms = new Set();
-      if (lower.includes(topic.id.toLowerCase())) { keywordScore += 4; matchedTerms.add(topic.id); }
+      const searchedTerms = [];
+      const allPositions = [];
+
+      // 1. Topic ID literal
+      if (lower.includes(topic.id.toLowerCase())) {
+        score += 4; matchedTerms.add(topic.id);
+        const idx = lower.indexOf(topic.id.toLowerCase());
+        if (idx >= 0) allPositions.push(idx);
+      }
+
+      // 2. Single keywords from name (>4 chars), stem-aware
       const nameWords = topic.name.toLowerCase().split(/[\s,;()\-\/]+/).filter(w => w.length > 4);
-      nameWords.forEach(kw => { if (new RegExp('\\b' + this._esc(kw) + '\\w*\\b', 'i').test(lower)) { keywordScore += 1; matchedTerms.add(kw); } });
-      this._compounds(topic.name.toLowerCase()).forEach(ct => { if (lower.includes(ct)) { keywordScore += 3; matchedTerms.add(ct); } });
-      if (topic.short) { this._compounds(topic.short.toLowerCase()).forEach(ct => { if (lower.includes(ct)) { keywordScore += 2; matchedTerms.add(ct); } }); }
-      if (keywordScore < 3) return;
-      result.matchCount = keywordScore;
+      // Highly distinctive single-word topic (e.g. "Phylogenetics"): give matches more weight.
+      // These are domain jargon unlikely to overmatch, and text usually has the adjective form.
+      const distinctiveSingleton = nameWords.length === 1 && nameWords[0].length >= 10;
+      nameWords.forEach(kw => {
+        searchedTerms.push(kw);
+        const hits = this._findHits(lower, kw);
+        if (hits.length) {
+          score += distinctiveSingleton ? 3 : 1;
+          matchedTerms.add(kw);
+          allPositions.push(...hits);
+        }
+      });
+
+      // 3. Acronym aliases (e.g. ELSI, AMR) — strong signal
+      (topic.aliases || []).forEach(alias => {
+        searchedTerms.push(alias);
+        const re = new RegExp('\\b' + this._esc(alias) + '\\b', 'i');
+        const m = re.exec(text);
+        if (m) {
+          score += 3;
+          matchedTerms.add(alias);
+          allPositions.push(m.index);
+        }
+      });
+
+      // 4. Compound terms from name (e.g. "phylogenetic tree")
+      this._compounds(topic.name.toLowerCase()).forEach(ct => {
+        searchedTerms.push(ct);
+        const idx = lower.indexOf(ct);
+        if (idx >= 0) { score += 3; matchedTerms.add(ct); allPositions.push(idx); }
+      });
+
+      // 5. Compound terms from short description
+      if (topic.short) {
+        this._compounds(topic.short.toLowerCase()).forEach(ct => {
+          searchedTerms.push(ct);
+          const idx = lower.indexOf(ct);
+          if (idx >= 0) { score += 2; matchedTerms.add(ct); allPositions.push(idx); }
+        });
+      }
+
+      result.searched = [...new Set(searchedTerms)];
+      if (score < this.SCORE_THRESHOLD) return;  // not a real match
+
+      result.matchCount = score;
       result.matches = [...matchedTerms];
+      result.matchPositions = [...new Set(allPositions)].sort((a,b) => a-b);
+
+      // 6. Windowed Bloom level detection — verbs must appear NEAR a keyword hit
       this.BLOOM_LEVELS.forEach((level, idx) => {
         if (idx === 0) return;
         const verbs = this.BLOOM_VERBS[level] || [];
         for (const verb of verbs) {
-          if (new RegExp('\\b' + this._esc(verb) + '\\w*\\b', 'i').test(lower)) {
+          const evidence = this._verbNearPositions(text, verb, result.matchPositions);
+          if (evidence) {
             result.bloomMatches[level] = true;
+            result.bloomEvidence[level] = { verb, snippet: evidence };
             if (idx > result.maxBloom) result.maxBloom = idx;
             break;
           }
@@ -403,10 +638,78 @@ const Evaluator = {
       });
       if (result.maxBloom === -1) result.maxBloom = 1;
       result.coverage = Math.round((Object.keys(result.bloomMatches).length / 6) * 100);
+
+      // 7. Snippets for the detail drawer (first few keyword hits with ±70 char context)
+      result.snippets = this._extractSnippets(text, result.matchPositions, [...matchedTerms]);
+
       results.push(result);
     });
     return results;
   },
+
+  _findHits(lower, keyword) {
+    const positions = [];
+    const baseRe = new RegExp('\\b' + this._esc(keyword) + '\\w*\\b', 'gi');
+    let m;
+    while ((m = baseRe.exec(lower)) !== null) positions.push(m.index);
+
+    // Singular form if keyword ends in s
+    if (keyword.length >= 5 && keyword.endsWith('s') && !keyword.endsWith('ss')) {
+      const sing = keyword.slice(0, -1);
+      const r2 = new RegExp('\\b' + this._esc(sing) + '\\b', 'gi');
+      while ((m = r2.exec(lower)) !== null) positions.push(m.index);
+    }
+
+    // Common-suffix stem for longer words (handles phylogenetics ↔ phylogenetic,
+    // phylogeography ↔ phylogeographic, microbiological ↔ microbiology, etc.)
+    if (keyword.length >= 7) {
+      const stem = keyword.replace(/(ics|ies|ing|ed|ic|y|s)$/, '');
+      if (stem.length >= 5 && stem !== keyword) {
+        const r3 = new RegExp('\\b' + this._esc(stem) + '\\w*\\b', 'gi');
+        while ((m = r3.exec(lower)) !== null) positions.push(m.index);
+      }
+    }
+    return positions;
+  },
+
+  _verbNearPositions(text, verb, positions) {
+    // Returns a short evidence snippet if `verb` appears within BLOOM_WINDOW of any keyword position
+    const re = new RegExp('\\b' + this._esc(verb) + '\\w*\\b', 'i');
+    for (const pos of positions) {
+      const start = Math.max(0, pos - this.BLOOM_WINDOW);
+      const end = Math.min(text.length, pos + this.BLOOM_WINDOW);
+      const window = text.substring(start, end);
+      const m = re.exec(window);
+      if (m) return window.substring(Math.max(0, m.index-30), Math.min(window.length, m.index+60));
+    }
+    return null;
+  },
+
+  _extractSnippets(text, positions, terms) {
+    if (!positions.length) return [];
+    const ctx = 70;
+    const snippets = [];
+    const seen = new Set();
+    for (const pos of positions.slice(0, 4)) {
+      const start = Math.max(0, pos - ctx);
+      const end = Math.min(text.length, pos + ctx);
+      const key = start + '-' + end;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      let snip = text.substring(start, end);
+      // Highlight matched terms
+      terms.forEach(t => {
+        if (t.length < 3) return;
+        const re = new RegExp('(\\b' + this._esc(t) + '\\w*\\b)', 'gi');
+        snip = snip.replace(re, '<mark>$1</mark>');
+      });
+      const prefix = start > 0 ? '…' : '';
+      const suffix = end < text.length ? '…' : '';
+      snippets.push(prefix + snip + suffix);
+    }
+    return snippets;
+  },
+
   _compounds(text) { const t = []; (text.match(/[a-z]+\s+[a-z]+/gi)||[]).forEach(m => { if (m.split(/\s+/).every(w => w.length > 3)) t.push(m.toLowerCase()); }); return t; },
   _esc(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); },
   escapeHTML(s) { return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
@@ -415,6 +718,8 @@ const Evaluator = {
 
 <!-- ╔═══════════════════════════════════════════════════════════════════╗
      ║  app.js — Main controller: tabs, rendering, events, export      ║
+     ║  v2: file upload, localStorage, detail drawer, search,         ║
+     ║      KSA breakdown, improved gap analysis                       ║
      ╚═══════════════════════════════════════════════════════════════════╝ -->
 <script>
 /* ═══════════════════════════════════════════
@@ -423,23 +728,39 @@ const Evaluator = {
    ═══════════════════════════════════════════ */
 const CompetenciesApp = {
   data: [], results: null, resultMap: {},
+  lastText: '', lastEvalDate: null,
+  expandedRow: null,
+  searchTerm: '',
+  ksaFilter: 'all',
+  STORAGE_KEY: 'pgcf-mapper-v2',
   DOMAIN_COLORS: ['#7a1b2e','#2e7d32','#c27803','#5b21b6','#be123c','#0369a1','#047857','#b45309','#a21caf','#4338ca'],
 
-  async init() { await this.loadData(); this.bindEvents(); this.renderLegend(); },
+  async init() {
+    await this.loadData();
+    this.bindEvents();
+    this.renderLegend();
+    this.restoreState();
+  },
 
   async loadData() {
     try {
-      const response = await fetch('/ngs-academy/data/PGCF.csv');
+      const response = await fetch('{{ "/data/PGCF.csv" | relative_url }}');
       if (!response.ok) throw new Error('CSV fetch failed: ' + response.status);
       const text = await response.text();
       this.data = CSVParser.parse(text);
       console.log('PGCF loaded:', this.data.length, 'topics');
-    } catch (e) { console.error('Error loading CSV:', e); this.data = []; }
+    } catch (e) {
+      console.error('Error loading CSV:', e);
+      this.data = [];
+      this.toast('Could not load PGCF framework. Check console.', 'error');
+    }
   },
 
   bindEvents() {
     const $ = s => document.querySelector(s);
     const $$ = s => document.querySelectorAll(s);
+
+    // Tabs
     $$('.comp-tab-btn').forEach(btn => {
       btn.addEventListener('click', () => {
         $$('.comp-tab-btn').forEach(b => b.classList.remove('active'));
@@ -448,30 +769,224 @@ const CompetenciesApp = {
         document.getElementById('panel-' + btn.dataset.tab).classList.add('active');
       });
     });
-    const cb = $('#close-banner'); if (cb) cb.addEventListener('click', () => { const b = $('#info-banner'); if (b) b.style.display = 'none'; });
-    const ta = $('#paste-input'); if (ta) ta.addEventListener('input', () => { const el = $('#char-count'); if (el) el.textContent = ta.value.length.toLocaleString() + ' characters'; });
+
+    // Banner
+    const cb = $('#close-banner');
+    if (cb) cb.addEventListener('click', () => { const b = $('#info-banner'); if (b) b.style.display = 'none'; localStorage.setItem('pgcf-banner-hidden','1'); });
+    if (localStorage.getItem('pgcf-banner-hidden') === '1') { const b = $('#info-banner'); if (b) b.style.display = 'none'; }
+
+    // Textarea
+    const ta = $('#paste-input');
+    if (ta) {
+      ta.addEventListener('input', () => this.updateCounts());
+      ta.addEventListener('keydown', e => {
+        if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') { e.preventDefault(); this.runEvaluation(); }
+      });
+    }
+
+    // Action buttons
     if ($('#btn-evaluate')) $('#btn-evaluate').addEventListener('click', () => this.runEvaluation());
     if ($('#btn-clear-text')) $('#btn-clear-text').addEventListener('click', () => this.clearAll());
     if ($('#btn-load-sample')) $('#btn-load-sample').addEventListener('click', () => this.loadSample());
+    if ($('#btn-load-file')) $('#btn-load-file').addEventListener('click', () => $('#file-input').click());
+    if ($('#file-input')) $('#file-input').addEventListener('change', e => this.handleFile(e.target.files[0]));
+
+    // Drag and drop
+    const pc = $('#paste-card');
+    if (pc) {
+      ['dragenter','dragover'].forEach(ev => pc.addEventListener(ev, e => { e.preventDefault(); pc.classList.add('dragover'); }));
+      ['dragleave','drop'].forEach(ev => pc.addEventListener(ev, e => { e.preventDefault(); pc.classList.remove('dragover'); }));
+      pc.addEventListener('drop', e => { const f = e.dataTransfer.files[0]; if (f) this.handleFile(f); });
+    }
+
+    // Heatmap controls
     if ($('#sort-select')) $('#sort-select').addEventListener('change', () => this.renderHeatmap());
     if ($('#filter-select')) $('#filter-select').addEventListener('change', () => this.renderHeatmap());
+    if ($('#ksa-select')) $('#ksa-select').addEventListener('change', e => { this.ksaFilter = e.target.value; this.renderHeatmap(); });
+    const hs = $('#heatmap-search');
+    if (hs) {
+      hs.addEventListener('input', e => {
+        this.searchTerm = e.target.value.trim().toLowerCase();
+        const clearBtn = $('#heatmap-search-clear');
+        if (clearBtn) clearBtn.style.display = this.searchTerm ? 'block' : 'none';
+        this.renderHeatmap();
+      });
+    }
+    if ($('#heatmap-search-clear')) $('#heatmap-search-clear').addEventListener('click', () => {
+      $('#heatmap-search').value = ''; this.searchTerm = ''; $('#heatmap-search-clear').style.display = 'none'; this.renderHeatmap();
+    });
+
+    // Export
     if ($('#btn-export-csv')) $('#btn-export-csv').addEventListener('click', () => this.exportCSV());
     if ($('#btn-export-json')) $('#btn-export-json').addEventListener('click', () => this.exportJSON());
-    document.addEventListener('mousemove', e => { const tt = $('#comp-tooltip'); if (tt) { tt.style.left = (e.clientX+14)+'px'; tt.style.top = (e.clientY+14)+'px'; } });
+    if ($('#btn-print')) $('#btn-print').addEventListener('click', () => window.print());
+
+    // Tooltip mouse tracker
+    document.addEventListener('mousemove', e => {
+      const tt = $('#comp-tooltip');
+      if (tt && tt.style.display === 'block') {
+        tt.style.left = Math.min(window.innerWidth - 320, e.clientX + 14) + 'px';
+        tt.style.top  = Math.min(window.innerHeight - 120, e.clientY + 14) + 'px';
+      }
+    });
+  },
+
+  updateCounts() {
+    const ta = document.getElementById('paste-input'); if (!ta) return;
+    const cc = document.getElementById('char-count');
+    const wc = document.getElementById('word-count');
+    if (cc) cc.textContent = ta.value.length.toLocaleString() + ' characters';
+    if (wc) { const w = ta.value.trim() ? ta.value.trim().split(/\s+/).length : 0; wc.textContent = w.toLocaleString() + ' words'; }
+  },
+
+  async handleFile(file) {
+    if (!file) return;
+    const name = file.name;
+    const lower = name.toLowerCase();
+    const isPDF  = lower.endsWith('.pdf')  || file.type === 'application/pdf';
+    const isDOCX = lower.endsWith('.docx') || file.type === 'application/vnd.openxmlformats-officedocument.wordprocessingml.document';
+    const isDOC  = lower.endsWith('.doc')  && !isDOCX;
+    const isBinary = isPDF || isDOCX;
+
+    // Size limits: 10 MB for binaries, 2 MB for text
+    const limit = isBinary ? 10 * 1024 * 1024 : 2 * 1024 * 1024;
+    if (file.size > limit) {
+      this.toast(`File too large (limit ${isBinary ? '10' : '2'} MB).`, 'error');
+      return;
+    }
+    if (isDOC) {
+      this.toast('Old .doc format is not supported — please save as .docx or paste the text.', 'error');
+      return;
+    }
+
+    const uploadBtn = document.getElementById('btn-load-file');
+    const restoreBtn = () => { if (uploadBtn) { uploadBtn.disabled = false; uploadBtn.innerHTML = '📁 Upload File'; } };
+    if (uploadBtn) { uploadBtn.disabled = true; uploadBtn.innerHTML = '⏳ Reading…'; }
+
+    try {
+      let text = '';
+      if (isPDF)       text = await this._extractPDF(file);
+      else if (isDOCX) text = await this._extractDOCX(file);
+      else             text = await file.text();
+
+      text = text.replace(/[\u00A0\u202F]/g, ' ').replace(/[ \t]+\n/g, '\n').trim();
+      if (!text) {
+        this.toast(`No readable text found in ${name}. It may be a scanned image.`, 'error');
+        restoreBtn(); return;
+      }
+
+      const ta = document.getElementById('paste-input');
+      if (ta) {
+        ta.value = text;
+        this.updateCounts();
+        this.toast(`Loaded ${name} — ${text.length.toLocaleString()} characters`, 'success');
+      }
+    } catch (err) {
+      console.error('File read error:', err);
+      this.toast(`Could not read ${name}: ${err.message || 'unknown error'}`, 'error');
+    } finally {
+      restoreBtn();
+    }
+  },
+
+  async _extractPDF(file) {
+    if (typeof pdfjsLib === 'undefined') throw new Error('PDF library not loaded — check network');
+    // Worker source must be set before getDocument
+    pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+    const arrayBuffer = await file.arrayBuffer();
+    const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
+    const pages = [];
+    for (let i = 1; i <= pdf.numPages; i++) {
+      if (pdf.numPages > 5 && i % 5 === 0) this.toast(`Reading PDF page ${i} / ${pdf.numPages}…`);
+      const page = await pdf.getPage(i);
+      const content = await page.getTextContent();
+      // Items come in reading order; join with spaces but preserve line breaks where pdf.js indicates them
+      let pageText = '';
+      let lastY = null;
+      content.items.forEach(item => {
+        if (lastY !== null && item.transform && Math.abs(item.transform[5] - lastY) > 2) pageText += '\n';
+        pageText += item.str + ' ';
+        if (item.transform) lastY = item.transform[5];
+      });
+      pages.push(pageText.trim());
+    }
+    return pages.join('\n\n');
+  },
+
+  async _extractDOCX(file) {
+    if (typeof mammoth === 'undefined') throw new Error('DOCX library not loaded — check network');
+    const arrayBuffer = await file.arrayBuffer();
+    const result = await mammoth.extractRawText({ arrayBuffer });
+    if (result.messages && result.messages.length) console.log('DOCX extraction notes:', result.messages);
+    return result.value || '';
   },
 
   renderLegend() {
     const el = document.getElementById('bloom-legend'); if (!el) return;
-    el.innerHTML = Evaluator.BLOOM_LEVELS.map((l,i) => `<div class="comp-legend-item"><div class="comp-legend-dot" style="background:${Evaluator.BLOOM_COLORS[i]}"></div>${l}</div>`).join('');
+    let h = '<span class="comp-legend-section-title">Bloom level</span>';
+    h += Evaluator.BLOOM_LEVELS.map((l,i) => `<div class="comp-legend-item"><div class="comp-legend-dot" style="background:${Evaluator.BLOOM_COLORS[i]}"></div>${l}</div>`).join('');
+    h += '<span class="comp-legend-section-title" style="margin-left:14px;">Competency</span>';
+    h += `<div class="comp-legend-item"><span class="comp-ksa-badge k">K</span>Knowledge</div>`;
+    h += `<div class="comp-legend-item"><span class="comp-ksa-badge s">S</span>Skill</div>`;
+    h += `<div class="comp-legend-item"><span class="comp-ksa-badge a">A</span>Attitude</div>`;
+    el.innerHTML = h;
   },
 
   runEvaluation() {
-    const ta = document.getElementById('paste-input'); if (!ta || !ta.value.trim()) return;
+    const ta = document.getElementById('paste-input'); if (!ta || !ta.value.trim()) { this.toast('Paste or upload some content first', 'error'); return; }
+    this.lastText = ta.value;
     this.results = Evaluator.evaluate(ta.value, this.data);
     this.resultMap = {}; this.results.forEach(r => { this.resultMap[r.topic.id] = r; });
-    const el = document.getElementById('eval-results'); if (el) el.style.display = 'block';
-    this.renderEvalStats(); this.renderEvalMatches(); this.renderHeatmap(); this.renderDashboard(); this.renderGaps();
+    this.lastEvalDate = new Date().toISOString();
+    this.saveState();
+    document.getElementById('eval-results').style.display = 'block';
+    this.renderEvalStats(); this.renderEvalMatches();
+    this.renderHeatmap(); this.renderDashboard(); this.renderGaps();
+    this.toast(`Evaluated ${this.results.length} / ${this.data.length} topics`, 'success');
   },
+
+  /* ═══════════════════════════════════════════ LocalStorage ═══════════════════════════════════════════ */
+
+  saveState() {
+    try {
+      const payload = {
+        text: this.lastText,
+        date: this.lastEvalDate,
+        // Don't save full results — they're regenerable from text. Saves space.
+      };
+      localStorage.setItem(this.STORAGE_KEY, JSON.stringify(payload));
+      const badge = document.getElementById('saved-badge');
+      if (badge) badge.style.display = 'inline-flex';
+    } catch (e) { console.warn('Could not save state:', e); }
+  },
+
+  restoreState() {
+    try {
+      const raw = localStorage.getItem(this.STORAGE_KEY);
+      if (!raw) return;
+      const payload = JSON.parse(raw);
+      if (payload.text) {
+        const ta = document.getElementById('paste-input');
+        if (ta) { ta.value = payload.text; this.updateCounts(); }
+        this.lastText = payload.text;
+        this.lastEvalDate = payload.date;
+        // Auto re-evaluate to restore the view
+        if (this.data.length) {
+          this.results = Evaluator.evaluate(payload.text, this.data);
+          this.resultMap = {}; this.results.forEach(r => { this.resultMap[r.topic.id] = r; });
+          document.getElementById('eval-results').style.display = 'block';
+          this.renderEvalStats(); this.renderEvalMatches();
+          this.renderHeatmap(); this.renderDashboard(); this.renderGaps();
+          const badge = document.getElementById('saved-badge');
+          if (badge && this.lastEvalDate) { badge.style.display = 'inline-flex'; badge.title = 'Last evaluated: ' + new Date(this.lastEvalDate).toLocaleString(); }
+        }
+      }
+    } catch (e) { console.warn('Could not restore state:', e); }
+  },
+
+  clearStoredState() { try { localStorage.removeItem(this.STORAGE_KEY); } catch (e) {} },
+
+  /* ═══════════════════════════════════════════ Eval tab rendering ═══════════════════════════════════════════ */
 
   renderEvalStats() {
     const el = document.getElementById('eval-stats'); if (!el) return;
@@ -484,115 +999,363 @@ const CompetenciesApp = {
   renderEvalMatches() {
     const el = document.getElementById('eval-matches'); if (!el) return;
     const sorted = [...this.results].sort((a,b) => b.matchCount - a.matchCount);
-    let h = '<div class="comp-chart-title">🔬 Top Competency Matches</div><div style="max-height:340px;overflow-y:auto;">';
+    let h = '<div class="comp-chart-title">🔬 Top Competency Matches <span class="comp-chart-help">— sorted by match strength</span></div><div style="max-height:340px;overflow-y:auto;">';
     sorted.slice(0,25).forEach(r => {
       const lbl = r.maxBloom>=0 ? Evaluator.BLOOM_LEVELS[r.maxBloom] : '—';
       const col = r.maxBloom>=0 ? Evaluator.BLOOM_COLORS[r.maxBloom] : '#9ca3af';
-      h += `<div style="display:flex;align-items:center;gap:10px;padding:7px 10px;border-bottom:1px solid #f0f0f0;"><span class="comp-topic-id">${r.topic.id}</span><span style="flex:1;font-size:12.5px;font-weight:600;color:#1f2937;">${r.topic.name}</span><span style="font-size:10.5px;color:#9ca3af;max-width:160px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${r.matches.slice(0,3).join(', ')}</span><span style="background:${col};color:#fff;padding:3px 10px;border-radius:12px;font-size:10.5px;font-weight:700;white-space:nowrap;">${lbl}</span></div>`;
+      const ksaBadges = (r.topic.ksaTypes || []).map(c => `<span class="comp-ksa-badge ${c.toLowerCase()}" title="Competency type: ${c}">${c}</span>`).join(' ');
+      h += `<div style="display:flex;align-items:center;gap:10px;padding:7px 10px;border-bottom:1px solid #f0f0f0;"><span class="comp-topic-id">${r.topic.id}</span><span style="flex:1;font-size:12.5px;font-weight:600;color:#1f2937;">${r.topic.name}</span>${ksaBadges ? `<span style="display:inline-flex;gap:3px;">${ksaBadges}</span>` : ''}<span style="font-size:10.5px;color:#9ca3af;max-width:160px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${r.matches.slice(0,3).join(', ')}</span><span style="background:${col};color:#fff;padding:3px 10px;border-radius:12px;font-size:10.5px;font-weight:700;white-space:nowrap;">${lbl}</span></div>`;
     });
     h += '</div>';
     if (sorted.length>25) h += `<div style="padding:6px 10px;color:#9ca3af;font-size:11px;">…and ${sorted.length-25} more</div>`;
     el.innerHTML = h;
   },
 
+  /* ═══════════════════════════════════════════ Heatmap rendering ═══════════════════════════════════════════ */
+
   renderHeatmap() {
     const c = document.getElementById('heatmap-container'); if (!c) return;
     if (!this.results) { c.innerHTML = '<div class="comp-empty"><div class="comp-empty-icon">🔥</div><div class="comp-empty-title">No evaluation yet</div><div class="comp-empty-desc">Paste content in the <strong>Evaluate</strong> tab first.</div></div>'; return; }
-    const sv = (document.getElementById('sort-select')||{}).value||'topic';
-    const fv = (document.getElementById('filter-select')||{}).value||'all';
+
+    const sv = (document.getElementById('sort-select')||{}).value || 'topic';
+    const fv = (document.getElementById('filter-select')||{}).value || 'all';
+    const term = this.searchTerm;
+    const ksa = this.ksaFilter || 'all';
+
     let d = this.data.map(t => ({topic:t, result:this.resultMap[t.id]||null, matchCount:this.resultMap[t.id]?this.resultMap[t.id].matchCount:0, coverage:this.resultMap[t.id]?this.resultMap[t.id].coverage:0}));
-    if (fv==='matched') d=d.filter(x=>x.result); else if (fv==='unmatched') d=d.filter(x=>!x.result); else if (fv==='gaps') d=d.filter(x=>x.matchCount<=1);
-    if (sv==='coverage') d.sort((a,b)=>b.coverage-a.coverage); else if (sv==='matches') d.sort((a,b)=>b.matchCount-a.matchCount);
+    if (fv==='matched') d = d.filter(x=>x.result);
+    else if (fv==='unmatched') d = d.filter(x=>!x.result);
+    else if (fv==='gaps') d = d.filter(x=>x.matchCount<=1);
+    if (ksa !== 'all') d = d.filter(x => (x.topic.ksaTypes || []).includes(ksa));
+    if (term) {
+      d = d.filter(x => x.topic.name.toLowerCase().includes(term)
+        || x.topic.id.includes(term)
+        || (x.topic.short && x.topic.short.toLowerCase().includes(term))
+        || (x.topic.aliases || []).some(a => a.toLowerCase().includes(term)));
+    }
+    if (sv==='coverage') d.sort((a,b)=>b.coverage-a.coverage);
+    else if (sv==='matches') d.sort((a,b)=>b.matchCount-a.matchCount);
+
+    if (!d.length) { c.innerHTML = '<div class="comp-empty"><div class="comp-empty-icon">🔍</div><div class="comp-empty-title">No topics match the current filters</div><div class="comp-empty-desc">Try clearing the search or relaxing the filter.</div></div>'; return; }
+
     let h = '<table class="comp-heatmap"><thead><tr><th>ID</th><th>Topic</th>';
     Evaluator.BLOOM_LEVELS.forEach((l,i) => { h += `<th class="col-bloom" style="color:${Evaluator.BLOOM_COLORS[i]}">${l}</th>`; });
     h += '<th>Coverage</th></tr></thead><tbody>';
     let lastDom = '';
     d.forEach(x => {
-      if (x.topic.domain!==lastDom && sv==='topic') { lastDom=x.topic.domain; const col=this.DOMAIN_COLORS[x.topic.domainIdx%10]; h += `<tr class="comp-domain-row"><td colspan="${Evaluator.BLOOM_LEVELS.length+3}"><div class="comp-domain-title"><span class="comp-domain-dot" style="background:${col}"></span>${x.topic.domain}</div></td></tr>`; }
-      h += `<tr><td><span class="comp-topic-id">${x.topic.id}</span></td><td><div class="comp-topic-name">${x.topic.name}</div><div class="comp-topic-short">${x.topic.short||''}</div></td>`;
-      Evaluator.BLOOM_LEVELS.forEach((level,idx) => {
+      if (x.topic.domain !== lastDom && sv === 'topic' && !term) {
+        lastDom = x.topic.domain;
+        const col = this.DOMAIN_COLORS[x.topic.domainIdx % 10];
+        h += `<tr class="comp-domain-row"><td colspan="${Evaluator.BLOOM_LEVELS.length+3}"><div class="comp-domain-title"><span class="comp-domain-dot" style="background:${col}"></span>${x.topic.domain}</div></td></tr>`;
+      }
+      const ksaBadges = (x.topic.ksaTypes || []).map(c => `<span class="comp-ksa-badge ${c.toLowerCase()}" style="margin-left:4px;">${c}</span>`).join('');
+      const rowCls = x.result ? 'matched-row' : '';
+      h += `<tr class="${rowCls}" data-topic-id="${x.topic.id}"><td><span class="comp-topic-id">${x.topic.id}</span></td><td><div class="comp-topic-name">${this._highlight(x.topic.name, term)}${ksaBadges}</div><div class="comp-topic-short">${this._highlight(x.topic.short||'', term)}</div></td>`;
+      Evaluator.BLOOM_LEVELS.forEach((level, idx) => {
         const match = x.result && x.result.bloomMatches[level];
-        const desc = x.topic.bloom[level] && x.topic.bloom[level].length>5;
-        let cls = 'comp-bloom-dot '+(match?`match level-${idx}`:desc?'has-desc':'empty');
-        const tt = desc?` data-tt-title="${level}" data-tt-desc="${Evaluator.escapeHTML(x.topic.bloom[level])}"` :'';
-        h += `<td class="comp-bloom-cell"><div class="${cls}"${tt}>${match?'✓':(desc?'·':'')}</div></td>`;
+        const desc = x.topic.bloom[level] && x.topic.bloom[level].length > 5;
+        const cls = 'comp-bloom-dot ' + (match ? `match level-${idx}` : desc ? 'has-desc' : 'empty');
+        const ksaTag = x.topic.bloomKSA && x.topic.bloomKSA[level];
+        const tt = desc ? ` data-tt-title="${level}${ksaTag ? ' (' + ksaTag + ')' : ''}" data-tt-desc="${Evaluator.escapeHTML(x.topic.bloom[level])}"` : '';
+        h += `<td class="comp-bloom-cell"><div class="${cls}"${tt}>${match ? '✓' : (desc ? '·' : '')}</div></td>`;
       });
-      const cv=x.coverage; const cc=cv>=60?'#059669':cv>=30?'#d97706':cv>0?'#dc2626':'#e5e7eb';
+      const cv = x.coverage;
+      const cc = cv >= 60 ? '#059669' : cv >= 30 ? '#d97706' : cv > 0 ? '#dc2626' : '#e5e7eb';
       h += `<td class="comp-coverage-cell"><div class="comp-coverage-bar"><div class="comp-coverage-fill" style="width:${cv}%;background:${cc}"></div></div><div class="comp-coverage-text">${cv}%</div></td></tr>`;
+      // Expandable detail drawer
+      if (this.expandedRow === x.topic.id && x.result) {
+        h += this._renderDrawer(x.result);
+      }
     });
-    h += '</tbody></table>'; c.innerHTML = h;
+    h += '</tbody></table>';
+    c.innerHTML = h;
+
+    // Tooltips
     document.querySelectorAll('.comp-bloom-dot[data-tt-title]').forEach(el => {
-      el.addEventListener('mouseenter', e => { document.getElementById('comp-tooltip-title').textContent=e.target.dataset.ttTitle; document.getElementById('comp-tooltip-desc').textContent=e.target.dataset.ttDesc; document.getElementById('comp-tooltip').style.display='block'; });
-      el.addEventListener('mouseleave', () => { document.getElementById('comp-tooltip').style.display='none'; });
+      el.addEventListener('mouseenter', e => {
+        document.getElementById('comp-tooltip-title').textContent = e.target.dataset.ttTitle;
+        document.getElementById('comp-tooltip-desc').textContent = e.target.dataset.ttDesc;
+        document.getElementById('comp-tooltip').style.display = 'block';
+      });
+      el.addEventListener('mouseleave', () => { document.getElementById('comp-tooltip').style.display = 'none'; });
+    });
+
+    // Row click → expand drawer
+    document.querySelectorAll('tr.matched-row').forEach(row => {
+      row.addEventListener('click', e => {
+        if (e.target.closest('.comp-bloom-dot')) return; // Ignore dot hovers
+        const tid = row.dataset.topicId;
+        this.expandedRow = (this.expandedRow === tid) ? null : tid;
+        this.renderHeatmap();
+      });
     });
   },
 
+  _renderDrawer(result) {
+    const ev = result.bloomEvidence || {};
+    const evidenceLines = Object.entries(ev).map(([level, info]) => {
+      return `<div style="margin-bottom:4px;"><strong style="color:${Evaluator.BLOOM_COLORS[Evaluator.BLOOM_LEVELS.indexOf(level)]};">${level}</strong> via verb <code style="background:#f3f4f6;padding:1px 5px;border-radius:3px;">${info.verb}</code> — <span style="color:#6b7280;">…${Evaluator.escapeHTML(info.snippet)}…</span></div>`;
+    }).join('');
+    const colspan = Evaluator.BLOOM_LEVELS.length + 3;
+    return `<tr><td colspan="${colspan}" class="comp-detail-drawer">
+      <h4>Why this matched</h4>
+      ${result.snippets.length ? result.snippets.map(s => `<div class="comp-snippet">${s}</div>`).join('') : '<div style="color:#9ca3af;font-size:11px;">No snippet context available.</div>'}
+      <div class="comp-terms-found"><strong>Matched terms:</strong> ${result.matches.map(t => `<code>${Evaluator.escapeHTML(t)}</code>`).join(' ')}</div>
+      ${evidenceLines ? `<div style="margin-top:8px;"><strong style="font-size:12px;color:#1f2937;">Bloom evidence (verb near keyword):</strong><div style="margin-top:4px;font-size:11.5px;">${evidenceLines}</div></div>` : ''}
+    </td></tr>`;
+  },
+
+  _highlight(text, term) {
+    if (!term || !text) return text || '';
+    try { return text.replace(new RegExp('(' + term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi'), '<mark style="background:#fef3c7;padding:0 2px;">$1</mark>'); }
+    catch (e) { return text; }
+  },
+
+  /* ═══════════════════════════════════════════ Dashboard ═══════════════════════════════════════════ */
+
   renderDashboard() {
-    if (!this.results||!this.results.length) { const el=document.getElementById('panel-dashboard'); if(el) el.innerHTML='<div class="comp-empty"><div class="comp-empty-icon">📊</div><div class="comp-empty-title">No evaluation data</div><div class="comp-empty-desc">Run an evaluation first.</div></div>'; return; }
-    const se=document.getElementById('dash-stats');
-    if(se){ const t=this.data.length,m=this.results.length; const ab=(this.results.reduce((s,r)=>s+r.maxBloom,0)/m).toFixed(1);
-    se.innerHTML=`<div class="comp-stat-card maroon"><div class="comp-stat-value">${m}/${t}</div><div class="comp-stat-label">Matched</div></div><div class="comp-stat-card green"><div class="comp-stat-value">${Math.round(m/t*100)}%</div><div class="comp-stat-label">Coverage</div></div><div class="comp-stat-card amber"><div class="comp-stat-value">${ab}</div><div class="comp-stat-label">Avg Bloom</div></div><div class="comp-stat-card rose"><div class="comp-stat-value">${t-m}</div><div class="comp-stat-label">Gaps</div></div>`; }
-    const de=document.getElementById('chart-domain-bars');
-    if(de){ const doms=[...new Set(this.data.map(t=>t.domain))].filter(Boolean); let h='<div class="comp-chart-title">Domain Coverage</div>';
-    doms.forEach((d,i)=>{ const ts=this.data.filter(t=>t.domain===d); const m=ts.filter(t=>this.resultMap[t.id]).length; const p=Math.round(m/ts.length*100); h+=`<div class="comp-bar-row"><div class="comp-bar-label">${d.replace(/^\d+\.\s*/,'').substring(0,30)}</div><div class="comp-bar-track"><div class="comp-bar-fill" style="width:${p}%;background:${this.DOMAIN_COLORS[i%10]};">${p}%</div></div></div>`; }); de.innerHTML=h; }
-    const be=document.getElementById('chart-bloom-dist');
-    if(be){ const dist={}; Evaluator.BLOOM_LEVELS.forEach(l=>dist[l]=0); this.results.forEach(r=>{if(r.maxBloom>=0)dist[Evaluator.BLOOM_LEVELS[r.maxBloom]]++;}); let h='<div class="comp-chart-title">Bloom\'s Taxonomy Distribution</div>';
-    Evaluator.BLOOM_LEVELS.forEach((l,i)=>{ if(i===0)return; const p=this.results.length>0?Math.round(dist[l]/this.results.length*100):0; h+=`<div class="comp-bar-row"><div class="comp-bar-label" style="min-width:100px">${l}</div><div class="comp-bar-track"><div class="comp-bar-fill" style="width:${p}%;background:${Evaluator.BLOOM_COLORS[i]};">${dist[l]}</div></div></div>`; }); be.innerHTML=h; }
+    if (!this.results || !this.results.length) {
+      const el = document.getElementById('panel-dashboard');
+      if (el) el.innerHTML = '<div class="comp-empty"><div class="comp-empty-icon">📊</div><div class="comp-empty-title">No evaluation data</div><div class="comp-empty-desc">Run an evaluation first.</div></div>';
+      return;
+    }
+    const se = document.getElementById('dash-stats');
+    if (se) {
+      const t = this.data.length, m = this.results.length;
+      const ab = (this.results.reduce((s,r) => s + r.maxBloom, 0) / m).toFixed(1);
+      se.innerHTML = `<div class="comp-stat-card maroon"><div class="comp-stat-value">${m}/${t}</div><div class="comp-stat-label">Matched</div></div><div class="comp-stat-card green"><div class="comp-stat-value">${Math.round(m/t*100)}%</div><div class="comp-stat-label">Coverage</div></div><div class="comp-stat-card amber"><div class="comp-stat-value">${ab}</div><div class="comp-stat-label">Avg Bloom</div></div><div class="comp-stat-card rose"><div class="comp-stat-value">${t-m}</div><div class="comp-stat-label">Gaps</div></div>`;
+    }
+    this.renderKSABreakdown();
+    this.renderDomainBars();
+    this.renderBloomDist();
     this.renderRadar();
   },
 
-  renderRadar() {
-    const w=document.getElementById('chart-radar-wrapper'); if(!w) return;
-    const doms=[...new Set(this.data.map(t=>t.domain))].filter(Boolean);
-    const n=doms.length; if(n<3){w.innerHTML='';return;}
-    const SHORT_NAMES = {
-      'Genomes and microbiology': 'Genomes & Microbiology',
-      'Sample Preparation and Processing': 'Sample Prep & Processing',
-      'Sample Analysis and Genomic Data Generation': 'Analysis & Data Generation',
-      'Genomic Data Workflows': 'Data Workflows & Analysis',
-      'Data Interpretation': 'Data Interpretation',
-      'Decision-Making': 'Decision-Making',
-      'Data Science': 'Data Science',
-      'Integrated Skills': 'Integrated Skills',
-      'Learning and Training': 'Learning & Training',
-      'Capacity': 'Capacity Development'
-    };
-    function shortName(d) {
-      const clean = d.replace(/^\d+\.\s*/, '');
-      for (const key in SHORT_NAMES) { if (clean.toLowerCase().startsWith(key.toLowerCase())) return SHORT_NAMES[key]; }
-      return clean.substring(0, 24);
-    }
-    const cx=350,cy=350,R=160,step=(2*Math.PI)/n;
-    const vals=doms.map(d=>{const ts=this.data.filter(t=>t.domain===d);return ts.filter(t=>this.resultMap[t.id]).length/ts.length;});
-    const pts=vals.map((v,i)=>{const a=i*step-Math.PI/2;return{x:cx+Math.cos(a)*R*v,y:cy+Math.sin(a)*R*v};});
-    let grid='';[0.2,0.4,0.6,0.8,1].forEach(f=>{const gp=doms.map((_,i)=>{const a=i*step-Math.PI/2;return`${cx+Math.cos(a)*R*f},${cy+Math.sin(a)*R*f}`;}).join(' ');grid+=`<polygon points="${gp}" fill="none" stroke="#e5e7eb" stroke-width="1"/>`;});
-    let axes='';doms.forEach((d,i)=>{const a=i*step-Math.PI/2;axes+=`<line x1="${cx}" y1="${cy}" x2="${cx+Math.cos(a)*R}" y2="${cy+Math.sin(a)*R}" stroke="#e5e7eb"/>`;const lx=cx+Math.cos(a)*(R+55),ly=cy+Math.sin(a)*(R+55);const anc=Math.abs(Math.cos(a))<0.15?'middle':Math.cos(a)>0?'start':'end';axes+=`<text x="${lx}" y="${ly}" fill="#333" font-size="12" font-weight="600" text-anchor="${anc}" dominant-baseline="middle">${shortName(d)}</text>`;});
-    const poly=pts.map(p=>`${p.x},${p.y}`).join(' ');
-    const dots=pts.map(p=>`<circle cx="${p.x}" cy="${p.y}" r="4" fill="#7a1b2e"/>`).join('');
-    w.innerHTML=`<div class="comp-chart-title">Competency Radar — Domain Coverage</div><div style="text-align:center;overflow-x:auto;"><svg viewBox="0 0 700 700" width="700" height="700" style="max-width:100%;">${grid}${axes}<polygon points="${poly}" fill="rgba(122,27,46,0.1)" stroke="#7a1b2e" stroke-width="2"/>${dots}</svg></div>`;
+  renderKSABreakdown() {
+    const el = document.getElementById('dash-ksa-stats'); if (!el) return;
+    const buckets = { K: { total: 0, matched: 0 }, S: { total: 0, matched: 0 }, A: { total: 0, matched: 0 } };
+    this.data.forEach(t => {
+      const types = t.ksaTypes || [];
+      types.forEach(c => {
+        if (!buckets[c]) return;
+        buckets[c].total++;
+        if (this.resultMap[t.id]) buckets[c].matched++;
+      });
+    });
+    el.innerHTML = `<div class="comp-stat-card ksa-k"><div class="comp-stat-value">${buckets.K.matched}/${buckets.K.total}</div><div class="comp-stat-label">Knowledge (K)</div><div class="comp-stat-sub">${buckets.K.total ? Math.round(buckets.K.matched/buckets.K.total*100) : 0}% covered</div></div><div class="comp-stat-card ksa-s"><div class="comp-stat-value">${buckets.S.matched}/${buckets.S.total}</div><div class="comp-stat-label">Skills (S)</div><div class="comp-stat-sub">${buckets.S.total ? Math.round(buckets.S.matched/buckets.S.total*100) : 0}% covered</div></div><div class="comp-stat-card ksa-a"><div class="comp-stat-value">${buckets.A.matched}/${buckets.A.total}</div><div class="comp-stat-label">Attitudes (A)</div><div class="comp-stat-sub">${buckets.A.total ? Math.round(buckets.A.matched/buckets.A.total*100) : 0}% covered</div></div>`;
   },
+
+  renderDomainBars() {
+    const de = document.getElementById('chart-domain-bars'); if (!de) return;
+    const doms = [...new Set(this.data.map(t => t.domain))].filter(Boolean);
+    let h = '<div class="comp-chart-title">Domain Coverage</div>';
+    doms.forEach((d,i) => {
+      const ts = this.data.filter(t => t.domain === d);
+      const m = ts.filter(t => this.resultMap[t.id]).length;
+      const p = Math.round(m / ts.length * 100);
+      h += `<div class="comp-bar-row"><div class="comp-bar-label" title="${d}">${d.replace(/^\d+\.\s*/, '').substring(0, 30)}</div><div class="comp-bar-track"><div class="comp-bar-fill" style="width:${p}%;background:${this.DOMAIN_COLORS[i%10]};">${p}%</div></div></div>`;
+    });
+    de.innerHTML = h;
+  },
+
+  renderBloomDist() {
+    const be = document.getElementById('chart-bloom-dist'); if (!be) return;
+    const dist = {}; Evaluator.BLOOM_LEVELS.forEach(l => dist[l] = 0);
+    this.results.forEach(r => { if (r.maxBloom >= 0) dist[Evaluator.BLOOM_LEVELS[r.maxBloom]]++; });
+    let h = '<div class="comp-chart-title">Bloom\'s Taxonomy Distribution <span class="comp-chart-help">— max level per matched topic</span></div>';
+    Evaluator.BLOOM_LEVELS.forEach((l,i) => {
+      if (i === 0) return;
+      const p = this.results.length > 0 ? Math.round(dist[l] / this.results.length * 100) : 0;
+      h += `<div class="comp-bar-row"><div class="comp-bar-label" style="min-width:100px">${l}</div><div class="comp-bar-track"><div class="comp-bar-fill" style="width:${p}%;background:${Evaluator.BLOOM_COLORS[i]};">${dist[l]}</div></div></div>`;
+    });
+    be.innerHTML = h;
+  },
+
+  renderRadar() {
+    const w = document.getElementById('chart-radar-wrapper'); if (!w) return;
+    const doms = [...new Set(this.data.map(t => t.domain))].filter(Boolean);
+    const n = doms.length; if (n < 3) { w.innerHTML = ''; return; }
+    const cx = 200, cy = 200, R = 150, step = (2 * Math.PI) / n;
+    const vals = doms.map(d => { const ts = this.data.filter(t => t.domain === d); return ts.filter(t => this.resultMap[t.id]).length / ts.length; });
+    const pts = vals.map((v,i) => { const a = i*step - Math.PI/2; return { x: cx + Math.cos(a)*R*v, y: cy + Math.sin(a)*R*v }; });
+
+    let grid = '';
+    [0.2, 0.4, 0.6, 0.8, 1].forEach(f => {
+      const gp = doms.map((_,i) => { const a = i*step - Math.PI/2; return `${cx + Math.cos(a)*R*f},${cy + Math.sin(a)*R*f}`; }).join(' ');
+      grid += `<polygon points="${gp}" fill="none" stroke="#e5e7eb" stroke-width="1"/>`;
+    });
+
+    let axes = '';
+    doms.forEach((d, i) => {
+      const a = i*step - Math.PI/2;
+      axes += `<line x1="${cx}" y1="${cy}" x2="${cx + Math.cos(a)*R}" y2="${cy + Math.sin(a)*R}" stroke="#e5e7eb"/>`;
+      const lx = cx + Math.cos(a) * (R + 18);
+      const ly = cy + Math.sin(a) * (R + 18);
+      const anc = Math.abs(Math.cos(a)) < 0.2 ? 'middle' : Math.cos(a) > 0 ? 'start' : 'end';
+      const labelText = d.replace(/^\d+\.\s*/, '');
+      const lines = this._wrapLabel(labelText, 18);
+      // Position first line so the block is vertically centered at ly
+      const firstDy = lines.length > 1 ? '-0.4em' : '0.35em';
+      const tspans = lines.map((line, li) =>
+        `<tspan x="${lx}" dy="${li === 0 ? firstDy : '1.05em'}">${Evaluator.escapeHTML(line)}</tspan>`
+      ).join('');
+      axes += `<text x="${lx}" y="${ly}" fill="#6b7280" font-size="10" font-weight="600" text-anchor="${anc}">${tspans}</text>`;
+    });
+
+    const poly = pts.map(p => `${p.x},${p.y}`).join(' ');
+    const dots = pts.map(p => `<circle cx="${p.x}" cy="${p.y}" r="3.5" fill="#7a1b2e"/>`).join('');
+    // viewBox extended with generous padding on all sides so end/start-anchored
+    // labels never clip. Center stays at (200,200); chart radius is R=150.
+    // Negative x and y in the viewBox = canvas extending into negative coords.
+    w.innerHTML = `<div class="comp-chart-title">Competency Radar <span class="comp-chart-help">— Domain coverage</span></div>
+      <div style="text-align:center;overflow:visible;">
+        <svg viewBox="-140 -35 680 470" preserveAspectRatio="xMidYMid meet" style="max-width:640px;width:100%;height:auto;display:inline-block;" xmlns="http://www.w3.org/2000/svg">
+          ${grid}${axes}<polygon points="${poly}" fill="rgba(122,27,46,0.1)" stroke="#7a1b2e" stroke-width="2"/>${dots}
+        </svg>
+      </div>`;
+  },
+
+  _wrapLabel(text, maxChars) {
+    if (text.length <= maxChars) return [text];
+    // Split at the space closest to the middle so both lines balance
+    const mid = Math.floor(text.length / 2);
+    let bestSplit = -1, bestDist = Infinity;
+    for (let i = 0; i < text.length; i++) {
+      if (text[i] === ' ') {
+        const dist = Math.abs(i - mid);
+        if (dist < bestDist) { bestDist = dist; bestSplit = i; }
+      }
+    }
+    if (bestSplit > 0) {
+      const l1 = text.substring(0, bestSplit).trim();
+      let l2 = text.substring(bestSplit + 1).trim();
+      if (l2.length > maxChars + 6) l2 = l2.substring(0, maxChars + 5) + '…';
+      return [l1, l2];
+    }
+    // No space found — hard truncate with ellipsis
+    return [text.substring(0, maxChars) + '…'];
+  },
+
+  /* ═══════════════════════════════════════════ Coverage & Depth tab ═══════════════════════════════════════════ */
 
   renderGaps() {
-    const el=document.getElementById('gap-content'); if(!el) return;
-    if(!this.results){el.innerHTML='<div class="comp-empty" style="grid-column:1/-1;"><div class="comp-empty-icon">🔍</div><div class="comp-empty-title">No data</div><div class="comp-empty-desc">Run an evaluation first.</div></div>';return;}
-    const gaps=this.data.filter(t=>!this.resultMap[t.id]);
-    const weak=this.results.filter(r=>r.maxBloom<=2);
-    const mid=this.results.filter(r=>r.maxBloom>=3&&r.maxBloom<=4);
-    const strong=this.results.filter(r=>r.maxBloom>=5);
-    el.innerHTML=`<div class="comp-gap-card"><div class="comp-gap-title" style="color:#dc2626;">🚫 Not Covered (${gaps.length})</div>${gaps.length===0?'<div style="color:#9ca3af;font-size:12px;">All topics matched!</div>':''}${gaps.map(t=>`<div class="comp-gap-item danger"><div class="comp-gap-item-title">${t.id} ${t.name}</div><div class="comp-gap-item-sub">${t.domain}</div></div>`).join('')}</div><div class="comp-gap-card"><div class="comp-gap-title" style="color:#d97706;">⚠ Low — Remember/Understand (${weak.length})</div>${weak.map(r=>`<div class="comp-gap-item warning"><div class="comp-gap-item-title">${r.topic.id} ${r.topic.name}</div><div class="comp-gap-item-sub">${Evaluator.BLOOM_LEVELS[r.maxBloom]}</div></div>`).join('')}</div><div class="comp-gap-card"><div class="comp-gap-title" style="color:#0891b2;">📈 Mid — Apply/Analyse (${mid.length})</div>${mid.map(r=>`<div class="comp-gap-item mid"><div class="comp-gap-item-title">${r.topic.id} ${r.topic.name}</div><div class="comp-gap-item-sub">${Evaluator.BLOOM_LEVELS[r.maxBloom]}</div></div>`).join('')}</div><div class="comp-gap-card"><div class="comp-gap-title" style="color:#2e7d32;">✦ Strengths — Evaluate/Create (${strong.length})</div>${strong.length===0?'<div style="color:#9ca3af;font-size:12px;">No topics at this level yet.</div>':''}${strong.map(r=>`<div class="comp-gap-item success"><div class="comp-gap-item-title">${r.topic.id} ${r.topic.name}</div><div class="comp-gap-item-sub">${Evaluator.BLOOM_LEVELS[r.maxBloom]}</div></div>`).join('')}</div>`;
+    if (!this.results) {
+      const cg = document.getElementById('coverage-gaps');
+      const dp = document.getElementById('depth-profile');
+      if (cg) cg.innerHTML = '<div class="comp-empty"><div class="comp-empty-icon">🔍</div><div class="comp-empty-title">No data</div><div class="comp-empty-desc">Run an evaluation first.</div></div>';
+      if (dp) dp.innerHTML = '';
+      return;
+    }
+    const cg = document.getElementById('coverage-gaps');
+    const dp = document.getElementById('depth-profile');
+    const gaps = this.data.filter(t => !this.resultMap[t.id]);
+    if (cg) {
+      if (gaps.length === 0) {
+        cg.innerHTML = '<div style="color:var(--green-accent);font-weight:600;font-size:13px;padding:8px;">✓ All PGCF topics have some evidence in your text.</div>';
+      } else {
+        // Group by domain
+        const byDom = {};
+        gaps.forEach(t => { (byDom[t.domain] = byDom[t.domain] || []).push(t); });
+        let h = `<div style="font-size:12px;color:var(--text-dim);margin-bottom:10px;"><strong style="color:#dc2626;">${gaps.length}</strong> of ${this.data.length} topics not detected.</div>`;
+        Object.entries(byDom).forEach(([dom, items]) => {
+          h += `<div style="font-weight:700;font-size:12px;color:var(--text-heading);margin:14px 0 6px;">${dom} <span style="color:var(--text-light);font-weight:600;">(${items.length})</span></div>`;
+          items.forEach(t => {
+            const searched = (t.name.toLowerCase().split(/[\s,;()\-\/]+/).filter(w => w.length > 4)).slice(0, 6);
+            h += `<div class="comp-gap-item danger"><div class="comp-gap-item-title">${t.id} ${t.name}</div>${searched.length ? `<div class="comp-gap-item-keys">searched: ${searched.map(k => `<code style="background:#fef2f2;color:#dc2626;padding:1px 5px;border-radius:3px;font-family:ui-monospace,monospace;font-size:10.5px;">${k}</code>`).join(' ')}</div>` : ''}</div>`;
+          });
+        });
+        cg.innerHTML = h;
+      }
+    }
+    if (dp) {
+      const weak = this.results.filter(r => r.maxBloom <= 2);
+      const mid = this.results.filter(r => r.maxBloom >= 3 && r.maxBloom <= 4);
+      const strong = this.results.filter(r => r.maxBloom >= 5);
+      dp.innerHTML = `
+        <div class="comp-gap-card">
+          <div class="comp-gap-title" style="color:#d97706;">Surface · Remember / Understand (${weak.length})</div>
+          <p class="comp-gap-blurb">Topics mentioned but only described or defined — no evidence of doing, analysing, or evaluating.</p>
+          ${weak.map(r => `<div class="comp-gap-item warning"><div class="comp-gap-item-title">${r.topic.id} ${r.topic.name}</div><div class="comp-gap-item-sub">Highest verb level: ${Evaluator.BLOOM_LEVELS[r.maxBloom]}</div></div>`).join('')}
+        </div>
+        <div class="comp-gap-card">
+          <div class="comp-gap-title" style="color:#0891b2;">Practical · Apply / Analyse (${mid.length})</div>
+          <p class="comp-gap-blurb">Topics where learners are expected to <em>do</em> the work — implement, interpret, compare.</p>
+          ${mid.map(r => `<div class="comp-gap-item mid"><div class="comp-gap-item-title">${r.topic.id} ${r.topic.name}</div><div class="comp-gap-item-sub">Highest verb level: ${Evaluator.BLOOM_LEVELS[r.maxBloom]}</div></div>`).join('')}
+        </div>
+        <div class="comp-gap-card">
+          <div class="comp-gap-title" style="color:#2e7d32;">Advanced · Evaluate / Create (${strong.length})</div>
+          <p class="comp-gap-blurb">Highest-order treatment — critique, design, develop, optimise.</p>
+          ${strong.length === 0 ? '<div style="color:#9ca3af;font-size:12px;">No topics at this level yet.</div>' : ''}
+          ${strong.map(r => `<div class="comp-gap-item success"><div class="comp-gap-item-title">${r.topic.id} ${r.topic.name}</div><div class="comp-gap-item-sub">Highest verb level: ${Evaluator.BLOOM_LEVELS[r.maxBloom]}</div></div>`).join('')}
+        </div>`;
+    }
   },
 
-  clearAll() { const ta=document.getElementById('paste-input');if(ta)ta.value='';const cc=document.getElementById('char-count');if(cc)cc.textContent='0 characters';this.results=null;this.resultMap={};const el=document.getElementById('eval-results');if(el)el.style.display='none'; },
+  /* ═══════════════════════════════════════════ Misc ═══════════════════════════════════════════ */
+
+  clearAll() {
+    const ta = document.getElementById('paste-input');
+    if (ta && ta.value && !confirm('Clear all pasted text and results?')) return;
+    if (ta) ta.value = '';
+    this.updateCounts();
+    this.results = null; this.resultMap = {}; this.lastText = ''; this.lastEvalDate = null; this.expandedRow = null;
+    this.clearStoredState();
+    const el = document.getElementById('eval-results'); if (el) el.style.display = 'none';
+    const badge = document.getElementById('saved-badge'); if (badge) badge.style.display = 'none';
+    this.renderHeatmap(); this.renderDashboard(); this.renderGaps();
+    this.toast('Cleared');
+  },
 
   loadSample() {
-    const ta=document.getElementById('paste-input');if(!ta)return;
-    ta.value=`This advanced training programme in pathogen genomics covers the complete workflow from sample collection and sample preservation through to genome sequencing and data interpretation.\n\nParticipants will learn to perform nucleic acid extraction, apply specimen quality control methods, and execute sample preparation for genomic analysis. Ethics and consent requirements are covered for responsible sample handling.\n\nThe bioinformatics module teaches learners to use genomic data repositories, implement genomic data analysis workflows using tools like Nextflow, and apply statistical analysis methods. Learners will explain phylogenetic tree construction, use phylogeographic methods to trace pathogen spread, and critically evaluate phylodynamic models.\n\nPractical sessions cover molecular-based techniques including PCR and qPCR for pathogen detection. Participants will design metagenomic workflows for mixed microbial communities and develop integrated pipelines combining epidemiological, laboratory, and genomic data.\n\nThe programme addresses antimicrobial resistance through interpretation of genotypic and AMR data, linking genotypic predictions with phenotypic resistance profiles. Genomic reporting standards and data visualisation techniques ensure clear communication.\n\nClinical decision-making modules explore how to use pathogen genomic data to inform diagnostics and evaluate genomics-informed treatments. Public health applications include designing surveillance systems and applying genomic epidemiology for infectious disease control. Translational genomics bridges research to practice.\n\nData science competencies include data curation, data management, sample metadata standards, data sharing, ELSI considerations, data repositories, and data tools and workflows.\n\nCross-cutting skills include scientific writing, communication and presentation, mentorship and leadership, networking and collaboration, equity diversity and inclusion, and science engagement.\n\nTraining design follows adult learning principles and evidence-informed strategies using instructional design frameworks. Inclusive training approaches and reflective practice support diverse learners. Equity in pathogen genomics education is prioritised.\n\nProgramme management covers program design and stakeholder engagement, infrastructure and workflow development, sustainability and resource mobilisation, and program monitoring and evaluation.`;
-    const cc=document.getElementById('char-count');if(cc)cc.textContent=ta.value.length.toLocaleString()+' characters';
+    const ta = document.getElementById('paste-input'); if (!ta) return;
+    ta.value = `This advanced training programme in pathogen genomics covers the complete workflow from sample collection and sample preservation through to genome sequencing and data interpretation.\n\nParticipants will learn to perform nucleic acid extraction, apply specimen quality control methods, and execute sample preparation for genomic analysis. Ethics and consent requirements are covered for responsible sample handling.\n\nThe bioinformatics module teaches learners to use genomic data repositories, implement genomic data analysis workflows using tools like Nextflow, and apply statistical analysis methods. Learners will explain phylogenetic tree construction, use phylogeographic methods to trace pathogen spread, and critically evaluate phylodynamic models.\n\nPractical sessions cover molecular-based techniques including PCR and qPCR for pathogen detection. Participants will design metagenomic workflows for mixed microbial communities and develop integrated pipelines combining epidemiological, laboratory, and genomic data.\n\nThe programme addresses antimicrobial resistance through interpretation of genotypic and AMR data, linking genotypic predictions with phenotypic resistance profiles. Genomic reporting standards and data visualisation techniques ensure clear communication.\n\nClinical decision-making modules explore how to use pathogen genomic data to inform diagnostics and evaluate genomics-informed treatments. Public health applications include designing surveillance systems and applying genomic epidemiology for infectious disease control. Translational genomics bridges research to practice.\n\nData science competencies include data curation, data management, sample metadata standards, data sharing, ELSI considerations, data repositories, and data tools and workflows.\n\nCross-cutting skills include scientific writing, communication and presentation, mentorship and leadership, networking and collaboration, equity diversity and inclusion, and science engagement.\n\nTraining design follows adult learning principles and evidence-informed strategies using instructional design frameworks. Inclusive training approaches and reflective practice support diverse learners. Equity in pathogen genomics education is prioritised.\n\nProgramme management covers program design and stakeholder engagement, infrastructure and workflow development, sustainability and resource mobilisation, and program monitoring and evaluation.`;
+    this.updateCounts();
   },
 
-  exportCSV() { if(!this.results)return; let csv='Topic ID,Topic Name,Domain,Matched,Max Bloom Level,Coverage %,Matched Terms\n'; this.data.forEach(t=>{const r=this.resultMap[t.id];csv+=`"${t.id}","${t.name}","${t.domain}",${r?'Yes':'No'},"${r?Evaluator.BLOOM_LEVELS[r.maxBloom]:'N/A'}",${r?r.coverage:0},"${r?r.matches.join('; '):''}"\n`;}); this._dl(csv,'pgcf-evaluation.csv','text/csv'); },
-  exportJSON() { if(!this.results)return; const out=this.data.map(t=>{const r=this.resultMap[t.id];return{id:t.id,name:t.name,domain:t.domain,matched:!!r,maxBloomLevel:r?Evaluator.BLOOM_LEVELS[r.maxBloom]:null,coverage:r?r.coverage:0,matchedTerms:r?r.matches:[],bloomMatches:r?Object.keys(r.bloomMatches):[]};}); this._dl(JSON.stringify(out,null,2),'pgcf-evaluation.json','application/json'); },
-  _dl(content,filename,type) { const blob=new Blob([content],{type});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=filename;document.body.appendChild(a);a.click();document.body.removeChild(a);URL.revokeObjectURL(url); }
+  exportCSV() {
+    if (!this.results) return;
+    let csv = 'Topic ID,Topic Name,Domain,KSA Types,Matched,Max Bloom Level,Coverage %,Matched Terms\n';
+    this.data.forEach(t => {
+      const r = this.resultMap[t.id];
+      csv += `"${t.id}","${t.name}","${t.domain}","${(t.ksaTypes||[]).join('+')}",${r?'Yes':'No'},"${r?Evaluator.BLOOM_LEVELS[r.maxBloom]:'N/A'}",${r?r.coverage:0},"${r?r.matches.join('; '):''}"\n`;
+    });
+    this._dl(csv, 'pgcf-evaluation.csv', 'text/csv');
+  },
+
+  exportJSON() {
+    if (!this.results) return;
+    const out = this.data.map(t => {
+      const r = this.resultMap[t.id];
+      return {
+        id: t.id, name: t.name, domain: t.domain,
+        ksaTypes: t.ksaTypes || [],
+        matched: !!r,
+        maxBloomLevel: r ? Evaluator.BLOOM_LEVELS[r.maxBloom] : null,
+        coverage: r ? r.coverage : 0,
+        matchedTerms: r ? r.matches : [],
+        searchedTerms: r ? r.searched : [],
+        bloomMatches: r ? Object.keys(r.bloomMatches) : []
+      };
+    });
+    this._dl(JSON.stringify(out, null, 2), 'pgcf-evaluation.json', 'application/json');
+  },
+
+  _dl(content, filename, type) {
+    const blob = new Blob([content], { type });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = filename;
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  },
+
+  toast(msg, kind) {
+    const el = document.getElementById('comp-toast'); if (!el) return;
+    el.textContent = msg;
+    el.className = 'comp-toast show' + (kind ? ' ' + kind : '');
+    clearTimeout(this._toastT);
+    this._toastT = setTimeout(() => { el.classList.remove('show'); }, 2400);
+  }
 };
 
 document.addEventListener('DOMContentLoaded', () => CompetenciesApp.init());
